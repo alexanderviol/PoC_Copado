@@ -1,0 +1,2329 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Complaint</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Complaints</value>
+    </caseValues>
+    <fields>
+        <help><!-- Stores only the numeric value of latest number. Not displayed on layout as this is only used in code to simplify getting the highest number when custom setting data doesn&apos;t exist. --></help>
+        <label><!-- CI Running Number --></label>
+        <name>CI_Running_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Doctors Letter --></label>
+        <name>Doctors_Letter__c</name>
+    </fields>
+    <fields>
+        <label><!-- Order --></label>
+        <name>MDRF_Order__c</name>
+        <relationshipLabel><!-- Complaints --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- MDR Running Number --></label>
+        <name>MDR_Running_Number__c</name>
+    </fields>
+    <fields>
+        <help><!-- If Report Source = &quot;Other&quot;, enter details here. --></help>
+        <label><!-- Other Report Source Comment --></label>
+        <name>Other_Report_Source_Comment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pending My Approval --></label>
+        <name>Pending_My_Approval__c</name>
+    </fields>
+    <fields>
+        <label><!-- ProductIdType --></label>
+        <name>ProductIdType__c</name>
+    </fields>
+    <fields>
+        <label><!-- RP Number --></label>
+        <name>RP_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- RP Running Number --></label>
+        <name>RP_Running_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Submit to Can --></label>
+        <name>Submit_to_Can__c</name>
+    </fields>
+    <fields>
+        <help><!-- Including any adverse outcomes for patient --></help>
+        <label><!-- Additional Adverse Event Information --></label>
+        <name>additional_adverse_event_information__c</name>
+    </fields>
+    <fields>
+        <label><!-- Additional Information, Other --></label>
+        <name>additional_information_other__c</name>
+    </fields>
+    <fields>
+        <label><!-- Additional VI Information --></label>
+        <name>additional_information_vi__c</name>
+        <picklistValues>
+            <masterLabel>Angiographic Material</masterLabel>
+            <translation><!-- Angiographic Material --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cath Lab Report</masterLabel>
+            <translation><!-- Cath Lab Report --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>None</masterLabel>
+            <translation><!-- None --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>X-rays</masterLabel>
+            <translation><!-- X-rays --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Additional Manufacturer Narrative --></label>
+        <name>additional_manufacturer_narrative__c</name>
+    </fields>
+    <fields>
+        <label><!-- Adverse Event --></label>
+        <name>adverse_event__c</name>
+    </fields>
+    <fields>
+        <help><!-- in bars --></help>
+        <label><!-- Applied Max. Pressure --></label>
+        <name>applied_max_pressure__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>approval_status__c</name>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation><!-- Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Closed</masterLabel>
+            <translation><!-- Closed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FDA Response: Fail</masterLabel>
+            <translation><!-- FDA Response: Fail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FDA Response: Pass</masterLabel>
+            <translation><!-- FDA Response: Pass --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Submitted</masterLabel>
+            <translation><!-- Not Submitted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending Manager Approval</masterLabel>
+            <translation><!-- Pending Manager Approval --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending Peer Approval</masterLabel>
+            <translation><!-- Pending Peer Approval --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected</masterLabel>
+            <translation><!-- Rejected --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Submitted to EMDR: Pending</masterLabel>
+            <translation><!-- Submitted to EMDR: Pending --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Submitted to EMDR: Transmit Failed</masterLabel>
+            <translation><!-- Submitted to EMDR: Transmit Failed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Submitted to EMDR: Transmit OK</masterLabel>
+            <translation><!-- Submitted to EMDR: Transmit OK --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Asset --></label>
+        <name>asset__c</name>
+        <relationshipLabel><!-- Complaints --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Implant Date --></label>
+        <name>asset_implant_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lot Number --></label>
+        <name>asset_lot_number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Manufacturer --></label>
+        <name>asset_manufacturer__c</name>
+        <picklistValues>
+            <masterLabel>AMERICAN PACEMAKER CORP.</masterLabel>
+            <translation><!-- AMERICAN PACEMAKER CORP. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ANGEION CORP.</masterLabel>
+            <translation><!-- ANGEION CORP. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BIOMEC</masterLabel>
+            <translation><!-- BIOMEC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BIOTRONIK</masterLabel>
+            <translation><!-- BIOTRONIK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BOSTON SCIENTIFIC</masterLabel>
+            <translation><!-- BOSTON SCIENTIFIC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CARDIAC CONTROL</masterLabel>
+            <translation><!-- CARDIAC CONTROL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CARDIAC IMPULSE</masterLabel>
+            <translation><!-- CARDIAC IMPULSE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CARDIAC PACEMAKER</masterLabel>
+            <translation><!-- CARDIAC PACEMAKER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CARDIAC PRODUCTS</masterLabel>
+            <translation><!-- CARDIAC PRODUCTS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CARDIO-PACE MEDICAL</masterLabel>
+            <translation><!-- CARDIO-PACE MEDICAL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CHRONIC</masterLabel>
+            <translation><!-- CHRONIC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>COOK</masterLabel>
+            <translation><!-- COOK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CORATOMIC INC.</masterLabel>
+            <translation><!-- CORATOMIC INC. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CORDIS</masterLabel>
+            <translation><!-- CORDIS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Competitor Product</masterLabel>
+            <translation><!-- Competitor Product --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DAIG CORP.</masterLabel>
+            <translation><!-- DAIG CORP. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EA</masterLabel>
+            <translation><!-- EA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ELA MEDICAL</masterLabel>
+            <translation><!-- ELA MEDICAL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ELS</masterLabel>
+            <translation><!-- ELS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ENPATH MEDICAL INC.</masterLabel>
+            <translation><!-- ENPATH MEDICAL INC. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GREATBATCH</masterLabel>
+            <translation><!-- GREATBATCH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GUIDANT</masterLabel>
+            <translation><!-- GUIDANT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IMPLANTRONIK</masterLabel>
+            <translation><!-- IMPLANTRONIK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>INHO A</masterLabel>
+            <translation><!-- INHO A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>INHOUEE</masterLabel>
+            <translation><!-- INHOUEE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>INHOUSEN</masterLabel>
+            <translation><!-- INHOUSEN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>INNOMEDICA LTD.</masterLabel>
+            <translation><!-- INNOMEDICA LTD. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>INTERMEDICS INC.</masterLabel>
+            <translation><!-- INTERMEDICS INC. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MEDICO</masterLabel>
+            <translation><!-- MEDICO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MEDTRONIC, INC</masterLabel>
+            <translation><!-- MEDTRONIC, INC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MYOPORE</masterLabel>
+            <translation><!-- MYOPORE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OSCOR MEDICAL CORPORATION</masterLabel>
+            <translation><!-- OSCOR MEDICAL CORPORATION --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OSYPKA</masterLabel>
+            <translation><!-- OSYPKA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OTHER</masterLabel>
+            <translation><!-- OTHER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SIEMENS</masterLabel>
+            <translation><!-- SIEMENS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SIEMENS/PACESETTER</masterLabel>
+            <translation><!-- SIEMENS/PACESETTER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SOMEDICS</masterLabel>
+            <translation><!-- SOMEDICS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SORIN</masterLabel>
+            <translation><!-- SORIN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ST JUDE MEDICAL</masterLabel>
+            <translation><!-- ST JUDE MEDICAL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>STOECKERT</masterLabel>
+            <translation><!-- STOECKERT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TELETRONICS</masterLabel>
+            <translation><!-- TELETRONICS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VASCOR MEDICAL CORPORATION</masterLabel>
+            <translation><!-- VASCOR MEDICAL CORPORATION --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VENTRITEX</masterLabel>
+            <translation><!-- VENTRITEX --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Model Name --></label>
+        <name>asset_model_name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Model Number --></label>
+        <name>asset_model_number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Serial Number --></label>
+        <name>asset_serial_number__c</name>
+    </fields>
+    <fields>
+        <label><!-- BIOSMART ID --></label>
+        <name>biosmart_id__c</name>
+    </fields>
+    <fields>
+        <label><!-- CAN Case Number --></label>
+        <name>can_case_number__c</name>
+    </fields>
+    <fields>
+        <label><!-- CAN Error Message --></label>
+        <name>can_error_message__c</name>
+    </fields>
+    <fields>
+        <label><!-- Case --></label>
+        <name>case__c</name>
+        <relationshipLabel><!-- Complaints --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Change Comments --></label>
+        <name>change_comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- CI Number --></label>
+        <name>ci_number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Clarification --></label>
+        <name>clarification__c</name>
+        <picklistValues>
+            <masterLabel>mild</masterLabel>
+            <translation><!-- mild --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>moderate</masterLabel>
+            <translation><!-- moderate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>severe</masterLabel>
+            <translation><!-- severe --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Combination Product --></label>
+        <name>combination_product__c</name>
+    </fields>
+    <fields>
+        <label><!-- Concomitant Medical Products and Therapy --></label>
+        <name>concomitant_medical_products_and_therapy__c</name>
+    </fields>
+    <fields>
+        <label><!-- Corrected Data --></label>
+        <name>corrected_data__c</name>
+    </fields>
+    <fields>
+        <label><!-- Corrected Data Comment --></label>
+        <name>corrected_data_comment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Info Received by Manufacturer --></label>
+        <name>date_info_received_by_manufacturer__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date of Birth --></label>
+        <name>date_of_birth__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date of Death --></label>
+        <name>date_of_death__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date of Event --></label>
+        <name>date_of_event__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date of Last Transmission to CAN --></label>
+        <name>date_of_last_transmission_to_can__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date of Manufacture --></label>
+        <name>date_of_manufacture__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Product Received by MDR Team --></label>
+        <name>date_product_received_by_mdr_team__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Product Returned by Reporter --></label>
+        <name>date_product_returned_by_reporter__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Product Returned to Manufacturer --></label>
+        <name>date_product_returned_to_manufacturer__c</name>
+    </fields>
+    <fields>
+        <label><!-- Death was Device-related --></label>
+        <name>death_device_related__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unknown</masterLabel>
+            <translation><!-- Unknown --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Device Status --></label>
+        <name>device_asset_status__c</name>
+        <picklistValues>
+            <masterLabel>Capped</masterLabel>
+            <translation><!-- Capped --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Discarded</masterLabel>
+            <translation><!-- Discarded --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Explanted</masterLabel>
+            <translation><!-- Explanted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Implanted</masterLabel>
+            <translation><!-- Implanted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partially Capped</masterLabel>
+            <translation><!-- Partially Capped --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Patient Deceased</masterLabel>
+            <translation><!-- Patient Deceased --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Device Available for Evaluation --></label>
+        <name>device_available_for_evaluation__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Device Available for Investigation --></label>
+        <name>device_available_for_investigation__c</name>
+        <picklistValues>
+            <masterLabel>no</masterLabel>
+            <translation><!-- no --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>yes</masterLabel>
+            <translation><!-- yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Device Code --></label>
+        <name>device_code_global__c</name>
+    </fields>
+    <fields>
+        <label><!-- Did Device Parts Remain in the Patient --></label>
+        <name>did_device_parts_remain_in_the_patient__c</name>
+        <picklistValues>
+            <masterLabel>no</masterLabel>
+            <translation><!-- no --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>yes</masterLabel>
+            <translation><!-- yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Disability or Permanent Damage --></label>
+        <name>disability_or_permanent_damage__c</name>
+        <picklistValues>
+            <masterLabel>no</masterLabel>
+            <translation><!-- no --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>yes</masterLabel>
+            <translation><!-- yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Doctors Letter Required --></label>
+        <name>doctors_letter_required__c</name>
+    </fields>
+    <fields>
+        <label><!-- Doctors Letter Sent Date --></label>
+        <name>doctors_letter_sent_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- EMDR Record Ids --></label>
+        <name>emdr_record_ids__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ethnicity --></label>
+        <name>ethnicity__c</name>
+        <picklistValues>
+            <masterLabel>Hispanic/Latino</masterLabel>
+            <translation><!-- Hispanic/Latino --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Hispanic/Latino</masterLabel>
+            <translation><!-- Not Hispanic/Latino --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Explanation --></label>
+        <name>evaluated_by_manufacturer_explanation__c</name>
+    </fields>
+    <fields>
+        <label><!-- Evaluation Summary Attached --></label>
+        <name>evaluation_summary_attached__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event Country --></label>
+        <name>event_country__c</name>
+        <picklistValues>
+            <masterLabel>Afghanistan</masterLabel>
+            <translation><!-- Afghanistan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Aland Islands</masterLabel>
+            <translation><!-- Aland Islands --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Albania</masterLabel>
+            <translation><!-- Albania --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Algeria</masterLabel>
+            <translation><!-- Algeria --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Andorra</masterLabel>
+            <translation><!-- Andorra --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Angola</masterLabel>
+            <translation><!-- Angola --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Anguilla</masterLabel>
+            <translation><!-- Anguilla --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Antarctica</masterLabel>
+            <translation><!-- Antarctica --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Antigua and Barbuda</masterLabel>
+            <translation><!-- Antigua and Barbuda --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Argentina</masterLabel>
+            <translation><!-- Argentina --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Armenia</masterLabel>
+            <translation><!-- Armenia --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Aruba</masterLabel>
+            <translation><!-- Aruba --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Australia</masterLabel>
+            <translation><!-- Australia --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Austria</masterLabel>
+            <translation><!-- Austria --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Azerbaijan</masterLabel>
+            <translation><!-- Azerbaijan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bahamas</masterLabel>
+            <translation><!-- Bahamas --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bahrain</masterLabel>
+            <translation><!-- Bahrain --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bangladesh</masterLabel>
+            <translation><!-- Bangladesh --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Barbados</masterLabel>
+            <translation><!-- Barbados --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Belarus</masterLabel>
+            <translation><!-- Belarus --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Belgium</masterLabel>
+            <translation><!-- Belgium --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Belize</masterLabel>
+            <translation><!-- Belize --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Benin</masterLabel>
+            <translation><!-- Benin --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bermuda</masterLabel>
+            <translation><!-- Bermuda --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bhutan</masterLabel>
+            <translation><!-- Bhutan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bolivia, Plurinational State of</masterLabel>
+            <translation><!-- Bolivia, Plurinational State of --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bonaire, Sint Eustatius and Saba</masterLabel>
+            <translation><!-- Bonaire, Sint Eustatius and Saba --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bosnia and Herzegovina</masterLabel>
+            <translation><!-- Bosnia and Herzegovina --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Botswana</masterLabel>
+            <translation><!-- Botswana --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bouvet Island</masterLabel>
+            <translation><!-- Bouvet Island --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Brazil</masterLabel>
+            <translation><!-- Brazil --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>British Indian Ocean Territory</masterLabel>
+            <translation><!-- British Indian Ocean Territory --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Brunei Darussalam</masterLabel>
+            <translation><!-- Brunei Darussalam --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bulgaria</masterLabel>
+            <translation><!-- Bulgaria --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Burkina Faso</masterLabel>
+            <translation><!-- Burkina Faso --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Burundi</masterLabel>
+            <translation><!-- Burundi --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cambodia</masterLabel>
+            <translation><!-- Cambodia --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cameroon</masterLabel>
+            <translation><!-- Cameroon --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Canada</masterLabel>
+            <translation><!-- Canada --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cape Verde</masterLabel>
+            <translation><!-- Cape Verde --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cayman Islands</masterLabel>
+            <translation><!-- Cayman Islands --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Central African Republic</masterLabel>
+            <translation><!-- Central African Republic --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chad</masterLabel>
+            <translation><!-- Chad --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chile</masterLabel>
+            <translation><!-- Chile --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>China</masterLabel>
+            <translation><!-- China --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Christmas Island</masterLabel>
+            <translation><!-- Christmas Island --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cocos (Keeling) Islands</masterLabel>
+            <translation><!-- Cocos (Keeling) Islands --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Colombia</masterLabel>
+            <translation><!-- Colombia --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Comoros</masterLabel>
+            <translation><!-- Comoros --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Congo</masterLabel>
+            <translation><!-- Congo --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Congo, the Democratic Republic of the</masterLabel>
+            <translation><!-- Congo, the Democratic Republic of the --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cook Islands</masterLabel>
+            <translation><!-- Cook Islands --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Costa Rica</masterLabel>
+            <translation><!-- Costa Rica --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cote d&apos;Ivoire</masterLabel>
+            <translation><!-- Cote d&apos;Ivoire --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Croatia</masterLabel>
+            <translation><!-- Croatia --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cuba</masterLabel>
+            <translation><!-- Cuba --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Curaçao</masterLabel>
+            <translation><!-- Curaçao --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cyprus</masterLabel>
+            <translation><!-- Cyprus --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Czech Republic</masterLabel>
+            <translation><!-- Czech Republic --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Denmark</masterLabel>
+            <translation><!-- Denmark --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Djibouti</masterLabel>
+            <translation><!-- Djibouti --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dominica</masterLabel>
+            <translation><!-- Dominica --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dominican Republic</masterLabel>
+            <translation><!-- Dominican Republic --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ecuador</masterLabel>
+            <translation><!-- Ecuador --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Egypt</masterLabel>
+            <translation><!-- Egypt --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>El Salvador</masterLabel>
+            <translation><!-- El Salvador --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Equatorial Guinea</masterLabel>
+            <translation><!-- Equatorial Guinea --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Eritrea</masterLabel>
+            <translation><!-- Eritrea --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Estonia</masterLabel>
+            <translation><!-- Estonia --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ethiopia</masterLabel>
+            <translation><!-- Ethiopia --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Falkland Islands (Malvinas)</masterLabel>
+            <translation><!-- Falkland Islands (Malvinas) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Faroe Islands</masterLabel>
+            <translation><!-- Faroe Islands --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fiji</masterLabel>
+            <translation><!-- Fiji --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Finland</masterLabel>
+            <translation><!-- Finland --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>France</masterLabel>
+            <translation><!-- France --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>French Guiana</masterLabel>
+            <translation><!-- French Guiana --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>French Polynesia</masterLabel>
+            <translation><!-- French Polynesia --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>French Southern Territories</masterLabel>
+            <translation><!-- French Southern Territories --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gabon</masterLabel>
+            <translation><!-- Gabon --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gambia</masterLabel>
+            <translation><!-- Gambia --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Georgia</masterLabel>
+            <translation><!-- Georgia --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Germany</masterLabel>
+            <translation><!-- Germany --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ghana</masterLabel>
+            <translation><!-- Ghana --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gibraltar</masterLabel>
+            <translation><!-- Gibraltar --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Greece</masterLabel>
+            <translation><!-- Greece --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Greenland</masterLabel>
+            <translation><!-- Greenland --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Grenada</masterLabel>
+            <translation><!-- Grenada --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Guadeloupe</masterLabel>
+            <translation><!-- Guadeloupe --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Guatemala</masterLabel>
+            <translation><!-- Guatemala --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Guernsey</masterLabel>
+            <translation><!-- Guernsey --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Guinea</masterLabel>
+            <translation><!-- Guinea --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Guinea-Bissau</masterLabel>
+            <translation><!-- Guinea-Bissau --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Guyana</masterLabel>
+            <translation><!-- Guyana --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Haiti</masterLabel>
+            <translation><!-- Haiti --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Heard Island and McDonald Islands</masterLabel>
+            <translation><!-- Heard Island and McDonald Islands --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Holy See (Vatican City State)</masterLabel>
+            <translation><!-- Holy See (Vatican City State) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Honduras</masterLabel>
+            <translation><!-- Honduras --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hungary</masterLabel>
+            <translation><!-- Hungary --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Iceland</masterLabel>
+            <translation><!-- Iceland --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>India</masterLabel>
+            <translation><!-- India --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Indonesia</masterLabel>
+            <translation><!-- Indonesia --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Iran, Islamic Republic of</masterLabel>
+            <translation><!-- Iran, Islamic Republic of --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Iraq</masterLabel>
+            <translation><!-- Iraq --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ireland</masterLabel>
+            <translation><!-- Ireland --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Isle of Man</masterLabel>
+            <translation><!-- Isle of Man --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Israel</masterLabel>
+            <translation><!-- Israel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Italy</masterLabel>
+            <translation><!-- Italy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Jamaica</masterLabel>
+            <translation><!-- Jamaica --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Japan</masterLabel>
+            <translation><!-- Japan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Jersey</masterLabel>
+            <translation><!-- Jersey --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Jordan</masterLabel>
+            <translation><!-- Jordan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kazakhstan</masterLabel>
+            <translation><!-- Kazakhstan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kenya</masterLabel>
+            <translation><!-- Kenya --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kiribati</masterLabel>
+            <translation><!-- Kiribati --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Korea, Democratic People&apos;s Republic of</masterLabel>
+            <translation><!-- Korea, Democratic People&apos;s Republic of --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Korea, Republic of</masterLabel>
+            <translation><!-- Korea, Republic of --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kuwait</masterLabel>
+            <translation><!-- Kuwait --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kyrgyzstan</masterLabel>
+            <translation><!-- Kyrgyzstan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lao People&apos;s Democratic Republic</masterLabel>
+            <translation><!-- Lao People&apos;s Democratic Republic --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Latvia</masterLabel>
+            <translation><!-- Latvia --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lebanon</masterLabel>
+            <translation><!-- Lebanon --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lesotho</masterLabel>
+            <translation><!-- Lesotho --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Liberia</masterLabel>
+            <translation><!-- Liberia --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Libya</masterLabel>
+            <translation><!-- Libya --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Liechtenstein</masterLabel>
+            <translation><!-- Liechtenstein --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lithuania</masterLabel>
+            <translation><!-- Lithuania --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Luxembourg</masterLabel>
+            <translation><!-- Luxembourg --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Macao</masterLabel>
+            <translation><!-- Macao --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Macedonia, the former Yugoslav Republic of</masterLabel>
+            <translation><!-- Macedonia, the former Yugoslav Republic of --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Madagascar</masterLabel>
+            <translation><!-- Madagascar --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Malawi</masterLabel>
+            <translation><!-- Malawi --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Malaysia</masterLabel>
+            <translation><!-- Malaysia --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Maldives</masterLabel>
+            <translation><!-- Maldives --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mali</masterLabel>
+            <translation><!-- Mali --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Malta</masterLabel>
+            <translation><!-- Malta --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Martinique</masterLabel>
+            <translation><!-- Martinique --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mauritania</masterLabel>
+            <translation><!-- Mauritania --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mauritius</masterLabel>
+            <translation><!-- Mauritius --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mayotte</masterLabel>
+            <translation><!-- Mayotte --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mexico</masterLabel>
+            <translation><!-- Mexico --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Moldova, Republic of</masterLabel>
+            <translation><!-- Moldova, Republic of --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Monaco</masterLabel>
+            <translation><!-- Monaco --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mongolia</masterLabel>
+            <translation><!-- Mongolia --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Montenegro</masterLabel>
+            <translation><!-- Montenegro --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Montserrat</masterLabel>
+            <translation><!-- Montserrat --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Morocco</masterLabel>
+            <translation><!-- Morocco --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mozambique</masterLabel>
+            <translation><!-- Mozambique --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Myanmar</masterLabel>
+            <translation><!-- Myanmar --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Namibia</masterLabel>
+            <translation><!-- Namibia --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nauru</masterLabel>
+            <translation><!-- Nauru --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nepal</masterLabel>
+            <translation><!-- Nepal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Netherlands</masterLabel>
+            <translation><!-- Netherlands --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New Caledonia</masterLabel>
+            <translation><!-- New Caledonia --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New Zealand</masterLabel>
+            <translation><!-- New Zealand --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nicaragua</masterLabel>
+            <translation><!-- Nicaragua --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Niger</masterLabel>
+            <translation><!-- Niger --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nigeria</masterLabel>
+            <translation><!-- Nigeria --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Niue</masterLabel>
+            <translation><!-- Niue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Norfolk Island</masterLabel>
+            <translation><!-- Norfolk Island --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Norway</masterLabel>
+            <translation><!-- Norway --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Oman</masterLabel>
+            <translation><!-- Oman --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pakistan</masterLabel>
+            <translation><!-- Pakistan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Palestine</masterLabel>
+            <translation><!-- Palestine --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Panama</masterLabel>
+            <translation><!-- Panama --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Papua New Guinea</masterLabel>
+            <translation><!-- Papua New Guinea --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Paraguay</masterLabel>
+            <translation><!-- Paraguay --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Peru</masterLabel>
+            <translation><!-- Peru --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Philippines</masterLabel>
+            <translation><!-- Philippines --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pitcairn</masterLabel>
+            <translation><!-- Pitcairn --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Poland</masterLabel>
+            <translation><!-- Poland --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Portugal</masterLabel>
+            <translation><!-- Portugal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Qatar</masterLabel>
+            <translation><!-- Qatar --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reunion</masterLabel>
+            <translation><!-- Reunion --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Romania</masterLabel>
+            <translation><!-- Romania --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Russian Federation</masterLabel>
+            <translation><!-- Russian Federation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rwanda</masterLabel>
+            <translation><!-- Rwanda --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Saint Barthélemy</masterLabel>
+            <translation><!-- Saint Barthélemy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Saint Helena, Ascension and Tristan da Cunha</masterLabel>
+            <translation><!-- Saint Helena, Ascension and Tristan da Cunha --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Saint Kitts and Nevis</masterLabel>
+            <translation><!-- Saint Kitts and Nevis --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Saint Lucia</masterLabel>
+            <translation><!-- Saint Lucia --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Saint Martin (French part)</masterLabel>
+            <translation><!-- Saint Martin (French part) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Saint Pierre and Miquelon</masterLabel>
+            <translation><!-- Saint Pierre and Miquelon --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Saint Vincent and the Grenadines</masterLabel>
+            <translation><!-- Saint Vincent and the Grenadines --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Samoa</masterLabel>
+            <translation><!-- Samoa --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>San Marino</masterLabel>
+            <translation><!-- San Marino --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sao Tome and Principe</masterLabel>
+            <translation><!-- Sao Tome and Principe --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Saudi Arabia</masterLabel>
+            <translation><!-- Saudi Arabia --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Senegal</masterLabel>
+            <translation><!-- Senegal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Serbia</masterLabel>
+            <translation><!-- Serbia --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Seychelles</masterLabel>
+            <translation><!-- Seychelles --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sierra Leone</masterLabel>
+            <translation><!-- Sierra Leone --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Singapore</masterLabel>
+            <translation><!-- Singapore --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sint Maarten (Dutch part)</masterLabel>
+            <translation><!-- Sint Maarten (Dutch part) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Slovakia</masterLabel>
+            <translation><!-- Slovakia --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Slovenia</masterLabel>
+            <translation><!-- Slovenia --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Solomon Islands</masterLabel>
+            <translation><!-- Solomon Islands --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Somalia</masterLabel>
+            <translation><!-- Somalia --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>South Africa</masterLabel>
+            <translation><!-- South Africa --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>South Georgia and the South Sandwich Islands</masterLabel>
+            <translation><!-- South Georgia and the South Sandwich Islands --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>South Sudan</masterLabel>
+            <translation><!-- South Sudan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Spain</masterLabel>
+            <translation><!-- Spain --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sri Lanka</masterLabel>
+            <translation><!-- Sri Lanka --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sudan</masterLabel>
+            <translation><!-- Sudan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Suriname</masterLabel>
+            <translation><!-- Suriname --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Svalbard and Jan Mayen</masterLabel>
+            <translation><!-- Svalbard and Jan Mayen --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Swaziland</masterLabel>
+            <translation><!-- Swaziland --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sweden</masterLabel>
+            <translation><!-- Sweden --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Switzerland</masterLabel>
+            <translation><!-- Switzerland --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Syrian Arab Republic</masterLabel>
+            <translation><!-- Syrian Arab Republic --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Taiwan</masterLabel>
+            <translation><!-- Taiwan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tajikistan</masterLabel>
+            <translation><!-- Tajikistan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tanzania, United Republic of</masterLabel>
+            <translation><!-- Tanzania, United Republic of --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Thailand</masterLabel>
+            <translation><!-- Thailand --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Timor-Leste</masterLabel>
+            <translation><!-- Timor-Leste --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Togo</masterLabel>
+            <translation><!-- Togo --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tokelau</masterLabel>
+            <translation><!-- Tokelau --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tonga</masterLabel>
+            <translation><!-- Tonga --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trinidad and Tobago</masterLabel>
+            <translation><!-- Trinidad and Tobago --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tunisia</masterLabel>
+            <translation><!-- Tunisia --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Turkey</masterLabel>
+            <translation><!-- Turkey --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Turkmenistan</masterLabel>
+            <translation><!-- Turkmenistan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Turks and Caicos Islands</masterLabel>
+            <translation><!-- Turks and Caicos Islands --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tuvalu</masterLabel>
+            <translation><!-- Tuvalu --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Uganda</masterLabel>
+            <translation><!-- Uganda --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ukraine</masterLabel>
+            <translation><!-- Ukraine --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>United Arab Emirates</masterLabel>
+            <translation><!-- United Arab Emirates --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>United Kingdom</masterLabel>
+            <translation><!-- United Kingdom --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>United States</masterLabel>
+            <translation><!-- United States --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Uruguay</masterLabel>
+            <translation><!-- Uruguay --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Uzbekistan</masterLabel>
+            <translation><!-- Uzbekistan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vanuatu</masterLabel>
+            <translation><!-- Vanuatu --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Venezuela, Bolivarian Republic of</masterLabel>
+            <translation><!-- Venezuela, Bolivarian Republic of --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vietnam</masterLabel>
+            <translation><!-- Vietnam --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Virgin Islands, British</masterLabel>
+            <translation><!-- Virgin Islands, British --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wallis and Futuna</masterLabel>
+            <translation><!-- Wallis and Futuna --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Western Sahara</masterLabel>
+            <translation><!-- Western Sahara --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yemen</masterLabel>
+            <translation><!-- Yemen --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Zambia</masterLabel>
+            <translation><!-- Zambia --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Zimbabwe</masterLabel>
+            <translation><!-- Zimbabwe --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Event Description --></label>
+        <name>event_description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event Occured --></label>
+        <name>event_occured__c</name>
+        <picklistValues>
+            <masterLabel>Inside Patient</masterLabel>
+            <translation><!-- Inside Patient --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Outside Patient</masterLabel>
+            <translation><!-- Outside Patient --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Event Reason --></label>
+        <name>event_reason_global__c</name>
+    </fields>
+    <fields>
+        <label><!-- Expiration Date --></label>
+        <name>expiration_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Explant Date --></label>
+        <name>explant_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- FDA Acceptance Date --></label>
+        <name>fda_acceptance_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- FDA Rejection Date --></label>
+        <name>fda_rejection_date__c</name>
+    </fields>
+    <fields>
+        <help><!-- This is the date of the most recent followup report. See history for dates of previous reports. --></help>
+        <label><!-- Followup Report Date --></label>
+        <name>followup_report_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Gender --></label>
+        <name>gender__c</name>
+        <picklistValues>
+            <masterLabel>Female</masterLabel>
+            <translation><!-- Female --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Male</masterLabel>
+            <translation><!-- Male --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Hospitalization was Device-related --></label>
+        <name>hospitalization_device_related__c</name>
+        <picklistValues>
+            <masterLabel>no</masterLabel>
+            <translation><!-- no --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>yes</masterLabel>
+            <translation><!-- yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- If Follow-up, What Type --></label>
+        <name>if_follow_up_what_type__c</name>
+        <picklistValues>
+            <masterLabel>Additional Information</masterLabel>
+            <translation><!-- Additional Information --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Correction</masterLabel>
+            <translation><!-- Correction --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Device Evaluation</masterLabel>
+            <translation><!-- Device Evaluation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Response to FDA Request</masterLabel>
+            <translation><!-- Response to FDA Request --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- The initial approver for review. --></help>
+        <label><!-- Initial Approver --></label>
+        <name>initial_approver__c</name>
+        <relationshipLabel><!-- Complaints (Initial Approver) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Also Sent Report to FDA --></label>
+        <name>initial_reporter_also_sent_report_to_fda__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unknown</masterLabel>
+            <translation><!-- Unknown --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Initial Reporter --></label>
+        <name>initial_reporter_user__c</name>
+        <relationshipLabel><!-- Complaints (Initial Reporter) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Complaint is Invalid? --></label>
+        <name>is_invalid__c</name>
+    </fields>
+    <fields>
+        <label><!-- IsLocked --></label>
+        <name>is_locked__c</name>
+    </fields>
+    <fields>
+        <label><!-- Labeled for Single Use --></label>
+        <name>labeled_for_single_use__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lesion Length --></label>
+        <name>lesion_length__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lesion Location --></label>
+        <name>lesion_location__c</name>
+        <picklistValues>
+            <masterLabel>Bifurcation</masterLabel>
+            <translation><!-- Bifurcation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Distal</masterLabel>
+            <translation><!-- Distal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ostial</masterLabel>
+            <translation><!-- Ostial --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Proximal</masterLabel>
+            <translation><!-- Proximal --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Lesion Location, Other --></label>
+        <name>lesion_location_other__c</name>
+    </fields>
+    <fields>
+        <label><!-- Life Threatening, Device-related --></label>
+        <name>life_threatening_device_related__c</name>
+        <picklistValues>
+            <masterLabel>no</masterLabel>
+            <translation><!-- no --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>yes</masterLabel>
+            <translation><!-- yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Location Where Event Occurred --></label>
+        <name>location_where_event_occurred__c</name>
+        <picklistValues>
+            <masterLabel>Ambulatory Surgical Facility</masterLabel>
+            <translation><!-- Ambulatory Surgical Facility --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Home</masterLabel>
+            <translation><!-- Home --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hospital</masterLabel>
+            <translation><!-- Hospital --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nursing Home</masterLabel>
+            <translation><!-- Nursing Home --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Outpatient Diagnostic Facility</masterLabel>
+            <translation><!-- Outpatient Diagnostic Facility --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Outpatient Treatment Facility</masterLabel>
+            <translation><!-- Outpatient Treatment Facility --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- #1- Manufacturer/Compounder --></label>
+        <name>manufacturer_compounder__c</name>
+    </fields>
+    <fields>
+        <label><!-- MDR Decision --></label>
+        <name>mdr_decision__c</name>
+    </fields>
+    <fields>
+        <label><!-- MDR Event Description --></label>
+        <name>mdr_event_description__c</name>
+    </fields>
+    <fields>
+        <label><!-- MDR Number --></label>
+        <name>mdr_number__c</name>
+    </fields>
+    <fields>
+        <label><!-- MDR Report Date --></label>
+        <name>mdr_report_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- #1-Name and Strength --></label>
+        <name>name_and_strength__c</name>
+    </fields>
+    <fields>
+        <label><!-- #1- NDC # or Unique ID --></label>
+        <name>ndc_or_unique_id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Operator of Device --></label>
+        <name>operator_of_device__c</name>
+        <picklistValues>
+            <masterLabel>Health Professional</masterLabel>
+            <translation><!-- Health Professional --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lay User/Patient</masterLabel>
+            <translation><!-- Lay User/Patient --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Operator of Device, Other --></label>
+        <name>operator_of_device_other__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other Location --></label>
+        <name>other_location__c</name>
+    </fields>
+    <fields>
+        <label><!-- Out of Service Date --></label>
+        <name>out_of_service_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Outcome Attributed to Adverse Event --></label>
+        <name>outcome_attributed_to_adverse_event__c</name>
+        <picklistValues>
+            <masterLabel>Congenital Anomaly/Birth Defects</masterLabel>
+            <translation><!-- Congenital Anomaly/Birth Defects --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Death</masterLabel>
+            <translation><!-- Death --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Disability or Permanent Damage</masterLabel>
+            <translation><!-- Disability or Permanent Damage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hospitalization - initial or prolonged</masterLabel>
+            <translation><!-- Hospitalization - initial or prolonged --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Impairment/Damage (Devices)</masterLabel>
+            <translation><!-- Impairment/Damage (Devices) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Life Threatening</masterLabel>
+            <translation><!-- Life Threatening --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other serious (Important Medical Events)</masterLabel>
+            <translation><!-- Other serious (Important Medical Events) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Required Intervention to Prevent Permanent</masterLabel>
+            <translation><!-- Required Intervention to Prevent Permanent --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Owned by Queue --></label>
+        <name>owned_by_queue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Patient Code --></label>
+        <name>patient_code_global__c</name>
+    </fields>
+    <fields>
+        <label><!-- Patient Identifier --></label>
+        <name>patient_identifier__c</name>
+    </fields>
+    <fields>
+        <label><!-- Patient Injury --></label>
+        <name>patient_injury__c</name>
+        <picklistValues>
+            <masterLabel>no</masterLabel>
+            <translation><!-- no --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>yes</masterLabel>
+            <translation><!-- yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Patient Injury, Comment --></label>
+        <name>patient_injury_comment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Patient Outcome --></label>
+        <name>patient_outcome__c</name>
+        <picklistValues>
+            <masterLabel>Death</masterLabel>
+            <translation><!-- Death --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Disability or Permanent Damage</masterLabel>
+            <translation><!-- Disability or Permanent Damage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Discharged Home</masterLabel>
+            <translation><!-- Discharged Home --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hospitalization Prolonged</masterLabel>
+            <translation><!-- Hospitalization Prolonged --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Life Threatening</masterLabel>
+            <translation><!-- Life Threatening --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Required Intervention to Prevent Permanent Damage</masterLabel>
+            <translation><!-- Required Intervention to Prevent Permanent Damage --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Patient Outcome, Comment --></label>
+        <name>patient_outcome_comment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Weight --></label>
+        <name>patient_weight__c</name>
+    </fields>
+    <fields>
+        <label><!-- PMA/510k # --></label>
+        <name>pma_510k__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pre-dilation --></label>
+        <name>pre_dilation__c</name>
+        <picklistValues>
+            <masterLabel>no</masterLabel>
+            <translation><!-- no --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>unknown</masterLabel>
+            <translation><!-- unknown --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>yes</masterLabel>
+            <translation><!-- yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Procode --></label>
+        <name>procode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Problem --></label>
+        <name>product_problem__c</name>
+    </fields>
+    <fields>
+        <label><!-- Race --></label>
+        <name>race__c</name>
+        <picklistValues>
+            <masterLabel>American Indian or Alaskan Native</masterLabel>
+            <translation><!-- American Indian or Alaskan Native --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Asian</masterLabel>
+            <translation><!-- Asian --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Black or African American</masterLabel>
+            <translation><!-- Black or African American --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Native Hawaiian or Other Pacific Islander</masterLabel>
+            <translation><!-- Native Hawaiian or Other Pacific Islander --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>White</masterLabel>
+            <translation><!-- White --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Remedial Action Type --></label>
+        <name>remedial_action_type__c</name>
+        <picklistValues>
+            <masterLabel>Inspection</masterLabel>
+            <translation><!-- Inspection --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Modification/Adjustment</masterLabel>
+            <translation><!-- Modification/Adjustment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Notification</masterLabel>
+            <translation><!-- Notification --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Patient Monitoring</masterLabel>
+            <translation><!-- Patient Monitoring --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Recall</masterLabel>
+            <translation><!-- Recall --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Relabeling</masterLabel>
+            <translation><!-- Relabeling --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Repair</masterLabel>
+            <translation><!-- Repair --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Replace</masterLabel>
+            <translation><!-- Replace --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Remedial Action Type, Other --></label>
+        <name>remedial_action_type_other__c</name>
+    </fields>
+    <fields>
+        <label><!-- Report Date --></label>
+        <name>report_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Report Source --></label>
+        <name>report_source__c</name>
+        <picklistValues>
+            <masterLabel>Company Representative</masterLabel>
+            <translation><!-- Company Representative --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Consumer</masterLabel>
+            <translation><!-- Consumer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Distributor</masterLabel>
+            <translation><!-- Distributor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Foreign</masterLabel>
+            <translation><!-- Foreign --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Health Professional</masterLabel>
+            <translation><!-- Health Professional --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Literature</masterLabel>
+            <translation><!-- Literature --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Study</masterLabel>
+            <translation><!-- Study --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>User Facility</masterLabel>
+            <translation><!-- User Facility --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Report Type (timing) --></label>
+        <name>report_type_timing__c</name>
+        <picklistValues>
+            <masterLabel>10 Day</masterLabel>
+            <translation><!-- 10 Day --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>15 Day</masterLabel>
+            <translation><!-- 15 Day --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>30 Day</masterLabel>
+            <translation><!-- 30 Day --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5 Day</masterLabel>
+            <translation><!-- 5 Day --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7 Day</masterLabel>
+            <translation><!-- 7 Day --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Periodic</masterLabel>
+            <translation><!-- Periodic --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Required Intervention, device related --></label>
+        <name>required_intervention_device_related__c</name>
+        <picklistValues>
+            <masterLabel>no</masterLabel>
+            <translation><!-- no --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>yes</masterLabel>
+            <translation><!-- yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Returned to Manufacturer on --></label>
+        <name>returned_to_manufacturer_on__c</name>
+    </fields>
+    <fields>
+        <label><!-- Company Code --></label>
+        <name>sap_company_code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Software Version --></label>
+        <name>software_version__c</name>
+    </fields>
+    <fields>
+        <label><!-- Stenosis Degree --></label>
+        <name>stenosis_degree__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tracking Number --></label>
+        <name>tracking_number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Treated Vessel, Segment --></label>
+        <name>treated_vessel_segment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type of Report --></label>
+        <name>type_of_report__c</name>
+        <picklistValues>
+            <masterLabel>Follow Up Report</masterLabel>
+            <translation><!-- Follow Up Report --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Initial</masterLabel>
+            <translation><!-- Initial --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Follow-up # --></label>
+        <name>type_of_report_follow_up__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type of Reportable Event --></label>
+        <name>type_of_reportable_event__c</name>
+        <picklistValues>
+            <masterLabel>Death</masterLabel>
+            <translation><!-- Death --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Malfunction</masterLabel>
+            <translation><!-- Malfunction --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Serious Injury</masterLabel>
+            <translation><!-- Serious Injury --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Type of Reportable Event, Other --></label>
+        <name>type_of_reportable_event_other__c</name>
+    </fields>
+    <fields>
+        <label><!-- UDI --></label>
+        <name>udi__c</name>
+    </fields>
+    <fields>
+        <label><!-- Usage of Device --></label>
+        <name>usage_of_device__c</name>
+        <picklistValues>
+            <masterLabel>Initial Use of Device</masterLabel>
+            <translation><!-- Initial Use of Device --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reuse</masterLabel>
+            <translation><!-- Reuse --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unknown</masterLabel>
+            <translation><!-- Unknown --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- in mm --></help>
+        <label><!-- Vessel Reference Diameter --></label>
+        <name>vessel_reference_diameter__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vessel Tortuosity --></label>
+        <name>vessel_tortuosity__c</name>
+        <picklistValues>
+            <masterLabel>mild</masterLabel>
+            <translation><!-- mild --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>moderate</masterLabel>
+            <translation><!-- moderate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>severe</masterLabel>
+            <translation><!-- severe --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Warranty Approval --></label>
+        <name>warranty_approval__c</name>
+    </fields>
+    <fields>
+        <label><!-- Warranty Consideration --></label>
+        <name>warranty_consideration__c</name>
+    </fields>
+    <fields>
+        <help><!-- Was a single-use device reused in another patient? --></help>
+        <label><!-- Was Device Reused? --></label>
+        <name>was_device_reused__c</name>
+    </fields>
+    <fields>
+        <label><!-- #1- Lot # --></label>
+        <name>x1_Lot__c</name>
+    </fields>
+    <fields>
+        <label><!-- #2- Name and Strength --></label>
+        <name>x2_Name_and_Strength__c</name>
+    </fields>
+    <fields>
+        <label><!-- #2- Lot # --></label>
+        <name>x2_lot__c</name>
+    </fields>
+    <fields>
+        <label><!-- #2- Manufacturer/Compounder --></label>
+        <name>x2_manufacturer_compounder__c</name>
+    </fields>
+    <fields>
+        <label><!-- #2- NDC # or Unique ID --></label>
+        <name>x2_ndc_or_unique_id__c</name>
+    </fields>
+    <recordTypes>
+        <label><!-- OUS/OEM Report --></label>
+        <name>OUS_OEM_Report</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Returned Product Report --></label>
+        <name>Returned_Product_Report</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- CardioMessenger Report --></label>
+        <name>cardiomessenger_report</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- General Report --></label>
+        <name>general_report</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Out Of Service Report --></label>
+        <name>oos_report</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Programmer Report --></label>
+        <name>programmer_report</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Revision Report --></label>
+        <name>revision_report</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- VI Report --></label>
+        <name>vi_report</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Please check that the Asset&apos;s fields match the fields on the Complaint before adding an MDR Number and submitting to the FDA. --></errorMessage>
+        <name>Asset_matches_Complaint_for_MDR_Number</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The Date Product Received by MDR Team must be after the Explant Date. --></errorMessage>
+        <name>Date_Prod_Rec_must_be_after_Explant_Date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The Explant Date must be after the Implant Date. --></errorMessage>
+        <name>Explant_Date_must_be_after_Implant_Date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- If Location Where Event Occurred is Other, please add a comment here with more details. --></errorMessage>
+        <name>If_Other_Location_require_Comment</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- If Outcome Attributed to Adverse Event = Other, please add a comment. --></errorMessage>
+        <name>If_Outcome_Attr_Adverse_Event_Other</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- If Remedial Action Type = Other, please enter comments. --></errorMessage>
+        <name>If_Rem_Action_Type_is_Other_req_comments</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please enter the other lesion location. --></errorMessage>
+        <name>Lesion_location_other_required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Running the MDR Decision Tree is required before assigning a CI or MDR number. --></errorMessage>
+        <name>MDR_Decision_Tree_required_for_MDR_Numbe</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You must add a CI number before adding an MDR number. --></errorMessage>
+        <name>Need_CI_Number_before_MDR_Number</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You must add a Date Info Received by MDR Team before adding an MDR number. --></errorMessage>
+        <name>Need_Date_Info_Received_before_MDR_Numb</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The Out of Service Date must be before or equal to the Explant Date.  Please correct the OOS Date or Explant Date. --></errorMessage>
+        <name>OOS_Date_must_be_before_Explant_Date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please enter other operator of device --></errorMessage>
+        <name>Operator_of_device_other_required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please check that the Patient Contact&apos;s fields match the fields on the Complaint before adding an MDR Number and submitting to the FDA. --></errorMessage>
+        <name>Patient_matches_Complaint_for_MDR_Number</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please check that the Asset&apos;s Product has a Manufacturer Account before adding an MDR Number and submitting to the FDA. --></errorMessage>
+        <name>Prod_Manufr_Acct_required_for_MDR_Number</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Before generating an RP Number, you must enter the Date Product Received by MDR Team. --></errorMessage>
+        <name>RP_Number_needs_Date_Product_Received</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The Report Date must be equal to or after the Date of Event.  Please correct the Report Date or Date of Event. --></errorMessage>
+        <name>Report_Date_must_be_before_Date_of_Event</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please ensure Date of Event and Event Description are filled in. --></errorMessage>
+        <name>Required_fields_for_non_migrated_records</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- If Type of Reportable Event = Other, please add comments. --></errorMessage>
+        <name>Type_of_Reportable_Event_Other</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- If the Report Source = Other, please enter a comment. --></errorMessage>
+        <name>if_report_source_other_require_comment</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The complaint is not required to be submitted to the FDA. You cannot assign a MDR number. --></errorMessage>
+        <name>no_mdr_required_prevents_mdr_number</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Cardio_Messenger_Order --></label>
+        <name>Cardio_Messenger_Order</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Submit_To_CAN --></label>
+        <name>Submit_To_CAN</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- UpsellCrosssellOpportunity --></label>
+        <name>UpsellCrosssellOpportunity</name>
+    </webLinks>
+</CustomObjectTranslation>

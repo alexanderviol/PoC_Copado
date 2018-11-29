@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- Criteria field that is set to the entity. --></help>
+        <label><!-- Criteria Field --></label>
+        <name>QIDC__Criteria_Field_ims__c</name>
+    </fields>
+    <fields>
+        <help><!-- Criteria value that is set to the entity. --></help>
+        <label><!-- Criteria Value --></label>
+        <name>QIDC__Criteria_Value_ims__c</name>
+    </fields>
+    <fields>
+        <help><!-- The MDM entity that the fields being mapped belong to. --></help>
+        <label><!-- Object Mapping --></label>
+        <name>QIDC__Object_Mapping_ims__c</name>
+        <relationshipLabel><!-- MDM Entity Type Filter --></relationshipLabel>
+    </fields>
+</CustomObjectTranslation>

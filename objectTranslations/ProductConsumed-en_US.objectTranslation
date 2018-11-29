@@ -1,0 +1,694 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Implant Procedure</value>
+        </caseValues>
+        <name>productconsumed_workorder</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Implant Procedure Line Item</value>
+        </caseValues>
+        <name>productconsumed_workorderlineitem</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <label><!-- Asset --></label>
+        <name>asset__c</name>
+        <relationshipLabel><!-- Products Consumed --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- AV Delay Pace --></label>
+        <name>av_delay_pace__c</name>
+    </fields>
+    <fields>
+        <label><!-- Brady Channel --></label>
+        <name>brady_channel__c</name>
+        <picklistValues>
+            <masterLabel>Inactive</masterLabel>
+            <translation><!-- Inactive --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LA</masterLabel>
+            <translation><!-- LA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LV</masterLabel>
+            <translation><!-- LV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>None</masterLabel>
+            <translation><!-- None --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RA</masterLabel>
+            <translation><!-- RA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RA+RV</masterLabel>
+            <translation><!-- RA+RV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RV</masterLabel>
+            <translation><!-- RV --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Charge Time --></label>
+        <name>charge_time__c</name>
+    </fields>
+    <fields>
+        <help><!-- Checkbox on Device record, if CM was activated. --></help>
+        <label><!-- CM active --></label>
+        <name>cm_active__c</name>
+    </fields>
+    <fields>
+        <label><!-- Defib --></label>
+        <name>defib__c</name>
+    </fields>
+    <fields>
+        <label><!-- DFT --></label>
+        <name>dft__c</name>
+    </fields>
+    <fields>
+        <help><!-- Date after which product expires and must not be used --></help>
+        <label><!-- Expiration date (UBD) --></label>
+        <name>expiration_date_ubd__c</name>
+    </fields>
+    <fields>
+        <label><!-- Expired UBD acknowledged --></label>
+        <name>expired_ubd_acknowledged__c</name>
+    </fields>
+    <fields>
+        <label><!-- Impedance --></label>
+        <name>impedance__c</name>
+    </fields>
+    <fields>
+        <label><!-- Implant Date --></label>
+        <name>implant_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Movement Date --></label>
+        <name>last_movement_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lead Tip Location --></label>
+        <name>lead_tip_location__c</name>
+        <picklistValues>
+            <masterLabel>Cardiac Vein / No details</masterLabel>
+            <translation><!-- Cardiac Vein / No details --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cardiac Vein, Anterior</masterLabel>
+            <translation><!-- Cardiac Vein, Anterior --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cardiac Vein, Anterior, Lateral</masterLabel>
+            <translation><!-- Cardiac Vein, Anterior, Lateral --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cardiac Vein, Great</masterLabel>
+            <translation><!-- Cardiac Vein, Great --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cardiac Vein, Lateral</masterLabel>
+            <translation><!-- Cardiac Vein, Lateral --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cardiac Vein, Middle</masterLabel>
+            <translation><!-- Cardiac Vein, Middle --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cardiac Vein, Posterior</masterLabel>
+            <translation><!-- Cardiac Vein, Posterior --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cardiac Vein, Posterior, Lateral</masterLabel>
+            <translation><!-- Cardiac Vein, Posterior, Lateral --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Coronary Sinus / No details</masterLabel>
+            <translation><!-- Coronary Sinus / No details --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Coronary Sinus, Anterior</masterLabel>
+            <translation><!-- Coronary Sinus, Anterior --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Coronary Sinus, Anterior, Lateral</masterLabel>
+            <translation><!-- Coronary Sinus, Anterior, Lateral --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Coronary Sinus, Lateral</masterLabel>
+            <translation><!-- Coronary Sinus, Lateral --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Coronary Sinus, Posterior</masterLabel>
+            <translation><!-- Coronary Sinus, Posterior --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Coronary Sinus, Posterior, Lateral</masterLabel>
+            <translation><!-- Coronary Sinus, Posterior, Lateral --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LA</masterLabel>
+            <translation><!-- LA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LV / No details</masterLabel>
+            <translation><!-- LV / No details --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LV, Apex</masterLabel>
+            <translation><!-- LV, Apex --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LV, Epicardial</masterLabel>
+            <translation><!-- LV, Epicardial --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LV, Lateral</masterLabel>
+            <translation><!-- LV, Lateral --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LV, Posterior</masterLabel>
+            <translation><!-- LV, Posterior --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LV, Septum</masterLabel>
+            <translation><!-- LV, Septum --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RA / No details</masterLabel>
+            <translation><!-- RA / No details --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RA, Anterior</masterLabel>
+            <translation><!-- RA, Anterior --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RA, FreeWall</masterLabel>
+            <translation><!-- RA, FreeWall --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RA, HISbundle</masterLabel>
+            <translation><!-- RA, HISbundle --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RA, Septum</masterLabel>
+            <translation><!-- RA, Septum --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RV / No details</masterLabel>
+            <translation><!-- RV / No details --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RV, Anterior</masterLabel>
+            <translation><!-- RV, Anterior --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RV, Apex</masterLabel>
+            <translation><!-- RV, Apex --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RV, Epicardial</masterLabel>
+            <translation><!-- RV, Epicardial --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RV, HISbundle</masterLabel>
+            <translation><!-- RV, HISbundle --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RV, Lateral</masterLabel>
+            <translation><!-- RV, Lateral --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RV, OutflowTract</masterLabel>
+            <translation><!-- RV, OutflowTract --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RV, Septum</masterLabel>
+            <translation><!-- RV, Septum --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Subcutaneous / No details</masterLabel>
+            <translation><!-- Subcutaneous / No details --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Subcutaneous, Left</masterLabel>
+            <translation><!-- Subcutaneous, Left --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Subcutaneous, Right</masterLabel>
+            <translation><!-- Subcutaneous, Right --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unknown</masterLabel>
+            <translation><!-- Unknown --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vena Cava, Superior</masterLabel>
+            <translation><!-- Vena Cava, Superior --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Lower Rate --></label>
+        <name>lower_rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Manufacturer --></label>
+        <name>manufacturer__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mode --></label>
+        <name>mode__c</name>
+        <picklistValues>
+            <masterLabel>AAI</masterLabel>
+            <translation><!-- AAI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AAIR</masterLabel>
+            <translation><!-- AAIR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DDD</masterLabel>
+            <translation><!-- DDD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DDD/CLS</masterLabel>
+            <translation><!-- DDD/CLS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DDDR</masterLabel>
+            <translation><!-- DDDR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DDI</masterLabel>
+            <translation><!-- DDI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DDIR</masterLabel>
+            <translation><!-- DDIR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TEST</masterLabel>
+            <translation><!-- TEST --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VDD</masterLabel>
+            <translation><!-- VDD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VDI</masterLabel>
+            <translation><!-- VDI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VVI</masterLabel>
+            <translation><!-- VVI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VVI/CLS</masterLabel>
+            <translation><!-- VVI/CLS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VVIR</masterLabel>
+            <translation><!-- VVIR --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Mode Switch --></label>
+        <name>mode_switch__c</name>
+    </fields>
+    <fields>
+        <label><!-- Model No. --></label>
+        <name>model_no__c</name>
+    </fields>
+    <fields>
+        <label><!-- OOS - Additional Information --></label>
+        <name>oos_additional_information__c</name>
+    </fields>
+    <fields>
+        <label><!-- OOS Date --></label>
+        <name>oos_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- OOS Reason --></label>
+        <name>oos_reason__c</name>
+        <picklistValues>
+            <masterLabel>tdb</masterLabel>
+            <translation><!-- tdb --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Other Comments --></label>
+        <name>other_comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- P AMP --></label>
+        <name>p_amp__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pace/Sense --></label>
+        <name>pace_sense__c</name>
+    </fields>
+    <fields>
+        <label><!-- Patient --></label>
+        <name>patient__c</name>
+        <relationshipLabel><!-- Products Consumed (Patient) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Product identifier assigned by BIOTRONIK for use with Home Monitoring Service Center registrations. --></help>
+        <label><!-- PID --></label>
+        <name>pid__c</name>
+    </fields>
+    <fields>
+        <label><!-- PID --></label>
+        <name>pid_ui__c</name>
+    </fields>
+    <fields>
+        <label><!-- Polarity --></label>
+        <name>polarity__c</name>
+        <picklistValues>
+            <masterLabel>Bipolar</masterLabel>
+            <translation><!-- Bipolar --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>QUAD</masterLabel>
+            <translation><!-- QUAD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unipolar</masterLabel>
+            <translation><!-- Unipolar --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Polarity Pacing Atrium --></label>
+        <name>polarity_pacing_atrium__c</name>
+        <picklistValues>
+            <masterLabel>Bipolar</masterLabel>
+            <translation><!-- Bipolar --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N</masterLabel>
+            <translation><!-- N --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>QUAD</masterLabel>
+            <translation><!-- QUAD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unipolar</masterLabel>
+            <translation><!-- Unipolar --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Polarity Pacing LV --></label>
+        <name>polarity_pacing_lv__c</name>
+        <picklistValues>
+            <masterLabel>Bipolar</masterLabel>
+            <translation><!-- Bipolar --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N</masterLabel>
+            <translation><!-- N --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>QUAD</masterLabel>
+            <translation><!-- QUAD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unipolar</masterLabel>
+            <translation><!-- Unipolar --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Polarity Pacing RV --></label>
+        <name>polarity_pacing_rv__c</name>
+        <picklistValues>
+            <masterLabel>Bipolar</masterLabel>
+            <translation><!-- Bipolar --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N</masterLabel>
+            <translation><!-- N --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>QUAD</masterLabel>
+            <translation><!-- QUAD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unipolar</masterLabel>
+            <translation><!-- Unipolar --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Polarity Sensing Atrium --></label>
+        <name>polarity_sensing_atrium__c</name>
+        <picklistValues>
+            <masterLabel>Bipolar</masterLabel>
+            <translation><!-- Bipolar --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N</masterLabel>
+            <translation><!-- N --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>QUAD</masterLabel>
+            <translation><!-- QUAD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unipolar</masterLabel>
+            <translation><!-- Unipolar --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Polarity Sensing LV --></label>
+        <name>polarity_sensing_lv__c</name>
+        <picklistValues>
+            <masterLabel>Bipolar</masterLabel>
+            <translation><!-- Bipolar --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N</masterLabel>
+            <translation><!-- N --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>QUAD</masterLabel>
+            <translation><!-- QUAD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unipolar</masterLabel>
+            <translation><!-- Unipolar --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Polarity Sensing RV --></label>
+        <name>polarity_sensing_rv__c</name>
+        <picklistValues>
+            <masterLabel>Bipolar</masterLabel>
+            <translation><!-- Bipolar --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N</masterLabel>
+            <translation><!-- N --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>QUAD</masterLabel>
+            <translation><!-- QUAD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unipolar</masterLabel>
+            <translation><!-- Unipolar --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Product Name --></help>
+        <label><!-- Model Name --></label>
+        <name>product2_id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Code --></label>
+        <name>product_code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Type --></label>
+        <name>product_type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pulse Amplitude (V) Atrium --></label>
+        <name>pulse_amplitude_v__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pulse Amplitude (V) LV --></label>
+        <name>pulse_amplitude_v_lv__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pulse Amplitude (V) RV --></label>
+        <name>pulse_amplitude_v_rv__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pulse Width --></label>
+        <name>pulse_width__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pulse Width (ms) Atrium --></label>
+        <name>pulse_width_ms_atrium__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pulse Width (ms) LV --></label>
+        <name>pulse_width_ms_lv__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pulse Width (ms) RV --></label>
+        <name>pulse_width_ms_rv__c</name>
+    </fields>
+    <fields>
+        <label><!-- Quantity Unit Of Measure --></label>
+        <name>quantity_unit_of_measure__c</name>
+    </fields>
+    <fields>
+        <label><!-- R AMP --></label>
+        <name>r_amp__c</name>
+    </fields>
+    <fields>
+        <label><!-- Replenish --></label>
+        <name>replenish__c</name>
+    </fields>
+    <fields>
+        <label><!-- SAP Account No --></label>
+        <name>sap_account_no__c</name>
+    </fields>
+    <fields>
+        <help><!-- Loaded price at time of order --></help>
+        <label><!-- SAP Price --></label>
+        <name>sap_price__c</name>
+    </fields>
+    <fields>
+        <label><!-- SAP Stock Location --></label>
+        <name>sap_stock_location__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sensitivity - A --></label>
+        <name>sensitivity_a__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sensitivity (mV) Atrium --></label>
+        <name>sensitivity_mv_atrium__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sensitivity (mV) LV --></label>
+        <name>sensitivity_mv_lv__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sensitivity (mV) RV --></label>
+        <name>sensitivity_mv_rv__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sensitivity - V --></label>
+        <name>sensitivity_v__c</name>
+    </fields>
+    <fields>
+        <label><!-- Serial Number --></label>
+        <name>serial_number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Shock Impedance --></label>
+        <name>shock_impedance__c</name>
+    </fields>
+    <fields>
+        <label><!-- Slew Rate --></label>
+        <name>slew_rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>status__c</name>
+        <picklistValues>
+            <masterLabel>Capped</masterLabel>
+            <translation><!-- Capped --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Discarded</masterLabel>
+            <translation><!-- Discarded --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Explanted</masterLabel>
+            <translation><!-- Explanted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Implanted</masterLabel>
+            <translation><!-- Implanted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Implantable Product</masterLabel>
+            <translation><!-- Not Implantable Product --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partially Capped</masterLabel>
+            <translation><!-- Partially Capped --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Patient Deceased</masterLabel>
+            <translation><!-- Patient Deceased --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Stock Type --></label>
+        <name>stock_type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tachy Channel --></label>
+        <name>tachy_channel__c</name>
+        <picklistValues>
+            <masterLabel>Inactive</masterLabel>
+            <translation><!-- Inactive --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RV</masterLabel>
+            <translation><!-- RV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RV+SVC</masterLabel>
+            <translation><!-- RV+SVC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SVC</masterLabel>
+            <translation><!-- SVC --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Threshold --></label>
+        <name>threshold__c</name>
+    </fields>
+    <fields>
+        <label><!-- UBD expired --></label>
+        <name>ubd_expired__c</name>
+    </fields>
+    <fields>
+        <label><!-- UDI --></label>
+        <name>udi__c</name>
+    </fields>
+    <fields>
+        <label><!-- Upper Rate --></label>
+        <name>upper_rate__c</name>
+    </fields>
+    <recordTypes>
+        <label><!-- BIOTRONIK Product --></label>
+        <name>biotronik_product</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- The use-by date is expired! --></errorMessage>
+        <name>ExpiredUbdHasToBeAcknowledged</name>
+    </validationRules>
+</CustomObjectTranslation>

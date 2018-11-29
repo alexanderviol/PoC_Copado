@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- Libellés IMS --></value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value><!-- Libellés IMS --></value>
+    </caseValues>
+    <fields>
+        <help>Indique où le texte est utilisé.</help>
+        <label><!-- Category --></label>
+        <name>QIDC__Category_ims__c</name>
+    </fields>
+    <fields>
+        <help>Description pour donner le détail du texte à traduire</help>
+        <label><!-- Description --></label>
+        <name>QIDC__Description_ims__c</name>
+    </fields>
+    <fields>
+        <help>Numéro unique assigné au lien texte-clé qui mentionne que ce champ &amp;a été créé par IMS et ne peut pas être modifiés par les clients.</help>
+        <label><!-- ID --></label>
+        <name>QIDC__ID_ims__c</name>
+    </fields>
+    <fields>
+        <help>External ID qui est utilisé uniquement pour le chargement de donnée.</help>
+        <label><!-- Integration ID --></label>
+        <name>QIDC__Integration_ID_ims__c</name>
+    </fields>
+    <fields>
+        <help>Version du produit IMS dans lequel ces données de configuration ont été créés.</help>
+        <label><!-- Product Version --></label>
+        <name>QIDC__Product_Version_ims__c</name>
+    </fields>
+    <fields>
+        <help>&quot;Le Type de texte a traduire , tel que le Libellé, Liste de valeurs, message d&apos;erreur, message de validation, ou d&apos;information.&quot;</help>
+        <label><!-- Type --></label>
+        <name>QIDC__Type_ims__c</name>
+        <picklistValues>
+            <masterLabel>Alert</masterLabel>
+            <translation><!-- Alert --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Button</masterLabel>
+            <translation><!-- Button --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Column Header</masterLabel>
+            <translation><!-- Column Header --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Label</masterLabel>
+            <translation><!-- Label --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Link</masterLabel>
+            <translation><!-- Link --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Message</masterLabel>
+            <translation><!-- Message --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Picklist</masterLabel>
+            <translation><!-- Picklist --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Section Header</masterLabel>
+            <translation><!-- Section Header --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Setting</masterLabel>
+            <translation><!-- Setting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Title</masterLabel>
+            <translation><!-- Title --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Le texte actuel à traduire.</help>
+        <label><!-- Value --></label>
+        <name>QIDC__Value_ims__c</name>
+    </fields>
+    <gender><!-- Masculine --></gender>
+    <nameFieldLabel><!-- Key --></nameFieldLabel>
+    <startsWith><!-- Consonant --></startsWith>
+</CustomObjectTranslation>

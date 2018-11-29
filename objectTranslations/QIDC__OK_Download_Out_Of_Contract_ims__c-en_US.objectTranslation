@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- True to allow the download button for country else False --></help>
+        <label><!-- Download for Country --></label>
+        <name>QIDC__Download_for_Country_ims__c</name>
+    </fields>
+    <fields>
+        <help><!-- It stores the multiple codes selected by admin to restrict the download button for that specialty code. --></help>
+        <label><!-- Primary Specialty Code --></label>
+        <name>QIDC__Primary_Specialty1_Code_ims__c</name>
+    </fields>
+    <fields>
+        <label><!-- Professional Type Code --></label>
+        <name>QIDC__Professional_Type_Code_ims__c</name>
+    </fields>
+    <fields>
+        <help><!-- It stores the OneKey_User_Settings_ims__c record id with combination of country code --></help>
+        <label><!-- User Settings External ID --></label>
+        <name>QIDC__User_Setting_External_ID_ims__c</name>
+    </fields>
+    <fields>
+        <help><!-- It stores selected Country Code --></help>
+        <label><!-- User Settings Country --></label>
+        <name>QIDC__User_Settings_Country_ims__c</name>
+    </fields>
+    <fields>
+        <help><!-- It stores pull codes selected by admin to restrict the download button for the selected location --></help>
+        <label><!-- Workplace Category LEX Code --></label>
+        <name>QIDC__Workplace_Category_LEX_Code_ims__c</name>
+    </fields>
+    <fields>
+        <help><!-- It stores multiple codes selected by admin to restrict the download button for the selected location --></help>
+        <label><!-- Workplace Type TET Code --></label>
+        <name>QIDC__Workplace_Type_TET_Code_ims__c</name>
+    </fields>
+</CustomObjectTranslation>

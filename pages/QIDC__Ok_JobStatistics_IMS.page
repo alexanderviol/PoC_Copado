@@ -1,0 +1,40 @@
+<apex:page standardStylesheets="false" Controller="QIDC.JobStatisticsController_ims" sidebar="false" showHeader="false" tabStyle="Data_Connector_Setup_ims__tab">
+<apex:stylesheet value="{!URLFOR($Resource.QIDC__SLDS, 'assets/styles/salesforce-lightning-design-system-vf.min.css')}" />
+<apex:includeScript value="/lightning/lightning.out.js" />
+    <apex:includeLightning />
+ <apex:include pageName="QIDC__SetupLightningCSSHack"/>
+    
+<div id = "lightning">
+   
+
+    <script> 
+     var nameSpacePrefix ='{!nameSpacePrefixForComponent}'; 
+       var lightningAppBundle = nameSpacePrefix+":DataConnector_ims";
+       var lightningComponent = nameSpacePrefix+":jobStatistics_ims";
+        
+        
+        $Lightning.use(lightningAppBundle, function() {
+            $Lightning.createComponent(lightningComponent,{"dataParams":{
+                        "sObject":"Refresh_My_OneKey_Statistics_ims__c",
+                        "fields":{'Id':'Id','JobName':'CodeBase_ims__c','JobId':'Job_Id_ims__c','fromDate':'From_Date_ims__c','toDate':'Job_Start_Date_ims__c','recordProcessed':'Number_Of_Records_Processed_ims__c','recordErrored':'Number_Of_Records_Errored_ims__c','status':'Status_ims__c','createdDate':'LastModifiedDate', 'createdById':'CreatedBy.Id', 'createdByName':'CreatedBy.Name', 'createdByPhotoUrl':'CreatedBy.SmallPhotoUrl', 'inDetailJobCounts':'Additional_Statistics_ims__c', 'RelationStatus':'Relation_Statistics_Status_ims__c'},
+                        "isJobFilterOn": false,
+                        "errorLabel" : "OM_SETUP_ERRORLOG_ERROR_1001",
+                        "selectedEntity":null,
+                        "entitySelected": null,
+                        "entityValues" :null }
+                
+            },
+                "lightning",
+                function(cmp) {
+            // do some stuff
+            });
+        });
+     </script> 
+     <style type="text/css">
+    /*to remove extra padding on classic salesforce theme*/
+    .noSidebarCell {
+        padding: 0px !important;
+    }
+</style>  
+   </div>
+</apex:page>

@@ -1,0 +1,2 @@
+<apex:page standardController="Order" recordSetVar="orders" extensions="OrderReviewMassTransfer" action="{!updateOrders}">
+</apex:page>

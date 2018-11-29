@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Both</fullName>
+        <default>false</default>
+        <label>Both</label>
+    </customValue>
+    <customValue>
+        <fullName>Dislodgement</fullName>
+        <default>false</default>
+        <label>Dislodgement</label>
+    </customValue>
+    <customValue>
+        <fullName>ERI</fullName>
+        <default>false</default>
+        <label>ERI</label>
+    </customValue>
+    <customValue>
+        <fullName>Erosion</fullName>
+        <default>false</default>
+        <label>Erosion</label>
+    </customValue>
+    <customValue>
+        <fullName>Error Message</fullName>
+        <default>false</default>
+        <label>Error Message</label>
+    </customValue>
+    <customValue>
+        <fullName>High shock impedance/High impedance</fullName>
+        <default>false</default>
+        <label>High shock impedance/High impedance</label>
+    </customValue>
+    <customValue>
+        <fullName>High threshold</fullName>
+        <default>false</default>
+        <label>High threshold</label>
+    </customValue>
+    <customValue>
+        <fullName>Infection</fullName>
+        <default>false</default>
+        <label>Infection</label>
+    </customValue>
+    <customValue>
+        <fullName>Landline Issue</fullName>
+        <default>false</default>
+        <label>Landline Issue</label>
+    </customValue>
+    <customValue>
+        <fullName>Lead Reposition</fullName>
+        <default>false</default>
+        <label>Lead Reposition</label>
+    </customValue>
+    <customValue>
+        <fullName>Loss of Capture</fullName>
+        <default>false</default>
+        <label>Loss of Capture</label>
+    </customValue>
+    <customValue>
+        <fullName>Low impedance</fullName>
+        <default>false</default>
+        <label>Low impedance</label>
+    </customValue>
+    <customValue>
+        <fullName>Noise</fullName>
+        <default>false</default>
+        <label>Noise</label>
+    </customValue>
+    <customValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </customValue>
+    <customValue>
+        <fullName>Oversensing</fullName>
+        <default>false</default>
+        <label>Oversensing</label>
+    </customValue>
+    <customValue>
+        <fullName>Patient Anatomy</fullName>
+        <default>false</default>
+        <label>Patient Anatomy</label>
+    </customValue>
+    <customValue>
+        <fullName>Patient Death</fullName>
+        <default>false</default>
+        <label>Patient Death</label>
+    </customValue>
+    <customValue>
+        <fullName>Pocket Revision</fullName>
+        <default>false</default>
+        <label>Pocket Revision</label>
+    </customValue>
+    <customValue>
+        <fullName>Power Issue</fullName>
+        <default>false</default>
+        <label>Power Issue</label>
+    </customValue>
+    <customValue>
+        <fullName>Printer</fullName>
+        <default>false</default>
+        <label>Printer</label>
+    </customValue>
+    <customValue>
+        <fullName>Safe mode/Back up Mode</fullName>
+        <default>false</default>
+        <label>Safe mode/Back up Mode</label>
+    </customValue>
+    <customValue>
+        <fullName>Screen Freeze</fullName>
+        <default>false</default>
+        <label>Screen Freeze</label>
+    </customValue>
+    <customValue>
+        <fullName>Start Up</fullName>
+        <default>false</default>
+        <label>Start Up</label>
+    </customValue>
+    <customValue>
+        <fullName>Storm Damage</fullName>
+        <default>false</default>
+        <label>Storm Damage</label>
+    </customValue>
+    <customValue>
+        <fullName>Telephone Complaint</fullName>
+        <default>false</default>
+        <label>Telephone Complaint</label>
+    </customValue>
+    <customValue>
+        <fullName>Unable to Transmit</fullName>
+        <default>false</default>
+        <label>Unable to Transmit</label>
+    </customValue>
+    <customValue>
+        <fullName>Undersensing</fullName>
+        <default>false</default>
+        <label>Undersensing</label>
+    </customValue>
+    <customValue>
+        <fullName>Upgrade</fullName>
+        <default>false</default>
+        <label>Upgrade</label>
+    </customValue>
+    <customValue>
+        <fullName>Exposed to bodily fluids</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Exposed to bodily fluids</label>
+    </customValue>
+    <customValue>
+        <fullName>Diaphragmatic Stimulation</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Diaphragmatic Stimulation</label>
+    </customValue>
+    <customValue>
+        <fullName>Interm. Loss of Capture</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Interm. Loss of Capture</label>
+    </customValue>
+    <customValue>
+        <fullName>Interm. Output</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Interm. Output</label>
+    </customValue>
+    <customValue>
+        <fullName>Interm. Oversensing</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Interm. Oversensing</label>
+    </customValue>
+    <customValue>
+        <fullName>Interm. Undersensing</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Interm. Undersensing</label>
+    </customValue>
+    <customValue>
+        <fullName>No Output</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>No Output</label>
+    </customValue>
+    <customValue>
+        <fullName>No Shock/Therapy</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>No Shock/Therapy</label>
+    </customValue>
+    <customValue>
+        <fullName>Total Loss of Capture</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Total Loss of Capture</label>
+    </customValue>
+    <customValue>
+        <fullName>Total Loss of Sensing</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Total Loss of Sensing</label>
+    </customValue>
+    <masterLabel>Event Reason</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- Target Salesforce fields that are mapped to the attribute. --></help>
+        <label><!-- Additional SObject Fields --></label>
+        <name>QIDC__Additional_SObject_Fields_ims__c</name>
+    </fields>
+    <fields>
+        <label><!-- Country_ims --></label>
+        <name>QIDC__Country_ims__c</name>
+    </fields>
+    <fields>
+        <help><!-- If checked, this mapping will determine record type mappings. --></help>
+        <label><!-- Defines Record Mapping? --></label>
+        <name>QIDC__Has_Record_Mapping_ims__c</name>
+    </fields>
+    <fields>
+        <help><!-- The Primary Key for the object mapping. Only one field can be Primary Key for a given mapping. --></help>
+        <label><!-- Is Primary Key? --></label>
+        <name>QIDC__Is_Primary_Key_ims__c</name>
+    </fields>
+    <fields>
+        <help><!-- The OneKey entity that the fields being mapped belong to. --></help>
+        <label><!-- OneKey Object Mapping --></label>
+        <name>QIDC__OK_Object_Mapping_ims__c</name>
+        <relationshipLabel><!-- OneKey Field Mappings --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Developer name of attribute that links to the target Salesforce field. --></help>
+        <label><!-- OneKey Attribute --></label>
+        <name>QIDC__OneKey_Attribute_ims__c</name>
+    </fields>
+    <fields>
+        <help><!-- Target Salesforce field that is mapped to the attribute. --></help>
+        <label><!-- SObject Field --></label>
+        <name>QIDC__SObject_Field_ims__c</name>
+    </fields>
+</CustomObjectTranslation>

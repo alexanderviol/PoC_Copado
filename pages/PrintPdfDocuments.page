@@ -1,0 +1,18 @@
+<!--
+This page combine all the template pages. This page will be shown when user selects and clicks on the 'Print Document' button on Order. 
+-->
+<apex:page showHeader="false" applyBodyTag="false" controller="PrintDocumentController">
+    <!-- Add your page here, Don't change the sequence -->
+    <!-- apex:include pageName="OOSFormPdf" rendered="{!renderOos}" / 
+      Moved over to Asset
+    -->
+    <apex:include pageName="SalesVoucher" rendered="{!renderSv}" />
+    <apex:include pageName="MDRF" rendered="{!renderMdrf}" />
+    <apex:include pageName="Temporary_Patient_ID_Card" rendered="{!renderTpid}" />
+    <apex:include pageName="DefibReport" rendered="{!renderDr}" />
+    <!-- apex:include pageName="Pacemaker_Report" rendered="{!renderPr}" /
+      Retired. There is only the Implant Record left, implemented in DefibReport
+    -->
+    <apex:include pageName="PatientDataSheet" rendered="{!renderPds}" />
+    <apex:include pageName="DeliveryConfirmation" rendered="{!renderDc}" />
+</apex:page>

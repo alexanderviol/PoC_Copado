@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Implanted</fullName>
+        <default>true</default>
+        <label>Implanted</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Explanted</fullName>
+        <default>false</default>
+        <label>Explanted</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Discarded</fullName>
+        <default>false</default>
+        <label>Discarded</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Capped</fullName>
+        <default>false</default>
+        <label>Capped</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Partially Capped</fullName>
+        <default>false</default>
+        <label>Partially Capped</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Patient Deceased</fullName>
+        <default>false</default>
+        <label>Patient Deceased</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Not Implantable Product</fullName>
+        <default>false</default>
+        <label>Not Implantable Product</label>
+    </standardValue>
+</StandardValueSet>

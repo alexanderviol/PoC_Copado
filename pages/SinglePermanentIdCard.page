@@ -1,0 +1,310 @@
+<!--
+ *
+ *  VF Page to generate single Id Card
+ * 
+ * @author              Sumit
+ * @created             2018-08-16
+ *  
+ -->
+<apex:page standardController="contact" extensions="PermanentIdcardGenerator" 
+            contentType="application/msword#PermanentIdCards.doc" id="frmId" action="{!updatePrintDate}">
+    <style>
+        .deviceFont {
+            font-size:9px;
+        	font-family: Arial;
+        } 
+        .detailsFont {
+            font-size:10px; 
+        	font-family: Arial;
+        }
+        table.patientId {
+    		width: 100%;
+        }
+        
+    </style>
+    <apex:form style="font-family:Arial;font-size:13px; margin-top:0.0in; margin-bottom:0.0in;">        
+        <apex:outputPanel rendered="{!renderPanel}">
+            <apex:repeat value="{!patAndAssetInfoList}" var="patient">
+                <apex:repeat value="{!patient.con.Assets}" var="dev">
+                    <div align="right" style="width:100%">{!dev.SerialNumber}</div>
+                </apex:repeat>
+                <apex:outputPanel rendered="{!patient.con.Assets.size == 0}">
+                    <br/>
+                </apex:outputPanel> 
+                <br/><br/><br/><br/><br/><br/>
+                <div> <b>
+                    <apex:outputText value="{!UPPER(patient.con.FirstName)}"/>
+                    <apex:outputText value=" "/>
+                    <apex:outputText value="{!UPPER(patient.con.MiddleName)}"/>
+                    <apex:outputText value=" "/>
+                    <apex:outputText value="{!UPPER(patient.con.LastName)}"/></b>
+                </div>
+                <div> <b><apex:outputText value="{!UPPER(patient.con.MailingStreet)}"/></b></div>
+                <div> <b><apex:outputText value="{!UPPER(patient.con.MailingCity)}"/>, 
+                    	<apex:outputText value=" "/>
+                    	<apex:outputText value="{! UPPER(patient.con.MailingState)}"/> 
+                     	<apex:outputText value=" "/>
+                    	<apex:outputText value="{! UPPER(patient.con.MailingPostalCode)}"/></b></div>
+                <br/><br/><br/><br/><br/><br/><br/><br/>
+                
+                <div style="margin-left: 50px;">                    
+                    <div> <b>
+                        <apex:outputText value="{!patient.patientPhone}"/>  
+                    </b></div>
+                    <br/>
+                    <b><apex:outputField value="{!patient.con.Birthdate}"/></b>
+                    <br/><br/><br/><br/><br/><br/><br/>
+                    <div><b><apex:outputText value="{!UPPER(patient.con.following_physician__r.FirstName)}"/> 
+                        	<apex:outputText value=" "/>
+                        	<apex:outputText value="{! UPPER(patient.con.following_physician__r.MiddleName)}"/>
+                        	<apex:outputText value=" "/>
+                        	<apex:outputText value="{! UPPER(patient.con.following_physician__r.LastName)}"/></b></div>
+                    <br/>
+                    <div><b><apex:outputText value="{!UPPER(patient.con.following_physician__r.MailingStreet)}"/> </b></div>
+                        <div><b> 
+                            <apex:outputText value="{! UPPER(patient.con.following_physician__r.MailingCity)}"/>,
+                            <apex:outputText value=" "/>
+                            <apex:outputText value="{! UPPER(patient.con.following_physician__r.MailingState)}"/>
+                            <apex:outputText value=" "/>
+                            <apex:outputText value="{! UPPER(patient.con.following_physician__r.MailingPostalCode)}"/>
+                        </b></div>
+                        <br/><br/>
+                        <br/>
+                    <div><b> <apex:outputText value="{!patient.physicianPhone}"/> </b></div>
+                    <br/><br/><br/><br/><br/><br/><br/><br/><br/> 
+                </div>
+                
+                <table class="patientId">
+                    <tr>
+                        <td style="width:48%;font-size:11px;font-family:Arial;"><b>
+                            <apex:outputText style="font-weight:800" value="PATIENT I.D. CARD"/></b>
+                        </td>
+                        <td></td>
+                        <td style="width:48%;font-size:11px;font-family:Arial;">
+                            <b><apex:outputText style="font-weight:800" value="PATIENT I.D. CARD"/></b>                        
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="deviceFont"/>
+                        <td></td>
+                        <td class="deviceFont"/>
+                    </tr>
+                    <tr>
+                        <td>
+                            <table class="detailsFont" style="width:100%;">
+                                <tr><b>
+                                    <td >
+                                        <apex:outputText value="{!UPPER(patient.con.LastName)}"/>,
+                                        <apex:outputText value=" "/>
+                                        <apex:outputText value="{! UPPER(patient.con.FirstName)}"/>
+                                        <apex:outputText value=" "/>
+                                        <apex:outputText value="{! UPPER(patient.con.MiddleName)}"/>
+                                    </td>
+                                	</b>
+                                </tr>
+                                <tr>
+                                    <td/>
+                                </tr>
+                                <apex:repeat value="{!patient.con.Assets}" var="device">
+                                    <tr class="deviceFont"><b>
+                                         <td style="width:50%">{!device.Name}</td>
+                                         <td style="width:20%">{!device.SerialNumber}</td>
+                                        <td style="width:30%">
+                                            <apex:outputField value="{!device.InstallDate}"/>
+                                         </td>
+                                     </b>
+                                    </tr>
+                                </apex:repeat>
+                                <apex:repeat value="{!patient.assetList}" var="lead">
+                                    <tr class="deviceFont">
+                                        <!-- Commented as Lead name is not shown in the template -->
+                                        <td style="width:50%">{!lead.Name}</td>
+                                        <td style="width:20%">{!lead.SerialNumber}</td>
+                                        <td style="width:30%">
+                                            <apex:outputField value="{!lead.InstallDate}"/>
+                                        </td>
+                                    </tr>
+                                </apex:repeat>
+                            </table>
+                        </td>
+                        <td></td>
+                        <td>
+                            <table class="detailsFont" style="width:100%;">
+                                <tr><b>
+                                    <td >
+                                    	<apex:outputText value="{!UPPER(patient.con.LastName)}"/>,
+                                        <apex:outputText value=" "/>
+                                        <apex:outputText value="{! UPPER(patient.con.FirstName)}"/>
+                                        <apex:outputText value=" "/>
+                                        <apex:outputText value="{! UPPER(patient.con.MiddleName)}"/>
+                                    </td>
+                                </b>
+                                </tr>
+                                <tr>
+                                    <td/>
+                                </tr>
+                                <apex:repeat value="{!patient.con.Assets}" var="device">
+                                    <tr class="deviceFont"><b>
+                                        <td style="width:50%">{!device.Name}</td>
+                                        <td style="width:20%">{!device.SerialNumber}</td>
+                                        <td style="width:30%">
+                                            <apex:outputField value="{!device.InstallDate}"/>
+                                        </td>
+                                    </b></tr>
+                                </apex:repeat>
+                                <apex:repeat value="{!patient.assetList}" var="lead">
+                                    <tr class="deviceFont">
+                                        <!-- Commented as Lead name is not shown in the template -->
+                                        <td style="width:50%">{!lead.Name}</td>
+                                        <td style="width:20%">{!lead.SerialNumber}</td>
+                                        <td style="width:30%">
+                                            <apex:outputField value="{!lead.InstallDate}"/>
+                                        </td>
+                                    </tr>
+                                </apex:repeat>
+                            </table>
+                        </td>
+                    </tr>
+                    <apex:outputPanel rendered="{!patient.totalSpaces > 0}">
+                    <tr>
+                        <td class="deviceFont"></td>
+                        <td></td>
+                        <td class="deviceFont"/>
+                    </tr>
+                        <tr>
+                        <td class="deviceFont"></td>
+                        <td></td>
+                        <td class="deviceFont"/>
+                    </tr>
+                    <tr>
+                        <td class="deviceFont"></td>
+                        <td></td>
+                        <td class="deviceFont"/>
+                    </tr>
+                	</apex:outputPanel>
+                    <apex:outputPanel rendered="{!patient.totalSpaces > 1}">
+                    <tr>
+                        <td class="deviceFont"></td>
+                        <td></td>
+                        <td class="deviceFont"/>
+                    </tr>
+                        <tr>
+                    	<td class="deviceFont"/>
+                        <td></td>
+                        <td class="deviceFont"/>
+                    </tr>
+                    <tr>
+                        <td class="deviceFont"></td>
+                        <td></td>
+                        <td class="deviceFont"/>
+                    </tr>
+                	</apex:outputPanel>
+                    <apex:outputPanel rendered="{!patient.totalSpaces > 2}">
+                    <tr>
+                        <td class="deviceFont"></td>
+                        <td></td>
+                        <td class="deviceFont"/>
+                    </tr>
+                        <tr>
+                    	<td class="deviceFont"/>
+                        <td></td>
+                        <td class="deviceFont"/>
+                    </tr>
+                    <tr>
+                        <td class="deviceFont"></td>
+                        <td></td>
+                        <td class="deviceFont"/>
+                    </tr>
+                	</apex:outputPanel>
+                    <apex:outputPanel rendered="{!patient.totalSpaces > 3}">
+                    <tr>
+                        <td class="deviceFont"></td>
+                        <td></td>
+                        <td class="deviceFont"/>
+                    </tr>
+                        <tr>
+                    	<td class="deviceFont"/>
+                        <td></td>
+                        <td class="deviceFont"/>
+                    </tr>
+                    <tr>
+                        <td class="deviceFont"></td>
+                        <td></td>
+                        <td class="deviceFont"/>
+                    </tr>
+                	</apex:outputPanel>                 
+                    <tr>
+                        <td style="width:48%;" class="deviceFont"><b><i>Physician/Facility to contact:</i></b></td>
+                        <td></td>
+                        <td style="width:48%;" class="deviceFont"><b><i>Physician/Facility to contact:</i></b></td>
+                    </tr>
+                    <tr>
+                        <td class="deviceFont">
+                            <table class="deviceFont" style="width:100%">
+                                <tr>
+                                    <td style="width: 50%"><apex:outputText value="{!patient.physicianPhone}"/></td>
+                                    <td style="width:50%">
+                                        <div align="right">
+                                            <apex:outputText value="{!UPPER(patient.con.following_physician__r.FirstName) }"/>
+                                            <apex:outputText value=" "/>
+                                            <apex:outputText value="{!UPPER(patient.con.following_physician__r.LastName)}"/>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td></td>
+                        <td class="deviceFont">
+                            <table class="deviceFont" style="width:100%">
+                                <tr>
+                                    <td style="width: 50%"><apex:outputText value="{!patient.physicianPhone}"/></td>
+                                    <td style="width:50%">
+                                        <div align="right">
+                                            <apex:outputText value="{!UPPER(patient.con.following_physician__r.FirstName) }"/>
+                                            <apex:outputText value=" "/>
+                                            <apex:outputText value="{!UPPER(patient.con.following_physician__r.LastName)}"/>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr> 
+                	<tr>
+                        <td style="align:center;font-size:9px;font-family:Arial;font-weight:900;">
+                            <apex:repeat value="{!patient.con.Assets}" var="dev">
+                            	<div align="center">
+                                	<apex:outputText value="IMPLANTABLE CARDIAC PACEMAKER"
+                                             rendered="{!OR(dev.product_type__c == 'Pacemaker', 
+                                                       dev.product_type__c == 'CRT-P')}"/>
+                                    <apex:outputText value="IMPLANTABLE CARDIOVERTER DEFIBRILLATOR"
+                                                     rendered="{!OR(dev.product_type__c == 'ICD', 
+                                                               dev.product_type__c == 'CRT-D')}"/>
+                                    <apex:outputText value="INSERTABLE CARDIAC MONITOR"
+                                                     rendered="{!dev.product_type__c == 'Loop Recorder'}"/>
+                                </div>
+                            </apex:repeat> 
+                        </td>
+                        <td></td>
+                        <td style="align:center;font-size:9px;font-family:Arial;font-weight:900;">
+                            <apex:repeat value="{!patient.con.Assets}" var="dev">
+                            	<div align="center">
+                                	<apex:outputText value="IMPLANTABLE CARDIAC PACEMAKER"
+                                             rendered="{!OR(dev.product_type__c == 'Pacemaker', 
+                                                       dev.product_type__c == 'CRT-P')}"/>
+                                    <apex:outputText value="IMPLANTABLE CARDIOVERTER DEFIBRILLATOR"
+                                                     rendered="{!OR(dev.product_type__c == 'ICD', 
+                                                               dev.product_type__c == 'CRT-D')}"/>
+                                    <apex:outputText value="INSERTABLE CARDIAC MONITOR"
+                                                     rendered="{!dev.product_type__c == 'Loop Recorder'}"/>
+                                </div>
+                            </apex:repeat> 
+                        </td>
+                    </tr>   
+                </table>
+                <!-- NOTE : Since fixed layout does not work in word doc so used break -->            	
+            </apex:repeat>
+            <apex:actionFunction name="dateUpdator" action="{!updatePrintDate}"/>
+        </apex:outputPanel>
+    </apex:form> 
+</apex:page>

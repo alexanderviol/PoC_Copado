@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>BIOTRONIK</fullName>
+        <default>true</default>
+        <label>BIOTRONIK</label>
+    </customValue>
+    <customValue>
+        <fullName>5500_APC</fullName>
+        <default>false</default>
+        <label>AMERICAN PACEMAKER CORP.</label>
+    </customValue>
+    <customValue>
+        <fullName>5500_ACO</fullName>
+        <default>false</default>
+        <label>ANGEION CORP.</label>
+    </customValue>
+    <customValue>
+        <fullName>5500_BME</fullName>
+        <default>false</default>
+        <label>BIOMEC</label>
+    </customValue>
+    <customValue>
+        <fullName>5500_BSX</fullName>
+        <default>false</default>
+        <label>BOSTON SCIENTIFIC</label>
+    </customValue>
+    <customValue>
+        <fullName>5500_CAC</fullName>
+        <default>false</default>
+        <label>CARDIAC CONTROL</label>
+    </customValue>
+    <customValue>
+        <fullName>5500_CAI</fullName>
+        <default>false</default>
+        <label>CARDIAC IMPULSE</label>
+    </customValue>
+    <customValue>
+        <fullName>5500_CAP</fullName>
+        <default>false</default>
+        <label>CARDIAC PACEMAKER</label>
+    </customValue>
+    <customValue>
+        <fullName>5500_CPR</fullName>
+        <default>false</default>
+        <label>CARDIAC PRODUCTS</label>
+    </customValue>
+    <customValue>
+        <fullName>5500_CPM</fullName>
+        <default>false</default>
+        <label>CARDIO-PACE MEDICAL</label>
+    </customValue>
+    <customValue>
+        <fullName>5500_CHR</fullName>
+        <default>false</default>
+        <label>CHRONIC</label>
+    </customValue>
+    <customValue>
+        <fullName>5500_COK</fullName>
+        <default>false</default>
+        <label>COOK</label>
+    </customValue>
+    <customValue>
+        <fullName>5500_COI</fullName>
+        <default>false</default>
+        <label>CORATOMIC INC.</label>
+    </customValue>
+    <customValue>
+        <fullName>5500_COR</fullName>
+        <default>false</default>
+        <label>CORDIS</label>
+    </customValue>
+    <customValue>
+        <fullName>5500_DAI</fullName>
+        <default>false</default>
+        <label>DAIG CORP.</label>
+    </customValue>
+    <customValue>
+        <fullName>5500_ES</fullName>
+        <default>false</default>
+        <label>EA</label>
+    </customValue>
+    <customValue>
+        <fullName>5500_ELM</fullName>
+        <default>false</default>
+        <label>ELA MEDICAL</label>
+    </customValue>
+    <customValue>
+        <fullName>5500_ELS</fullName>
+        <default>false</default>
+        <label>ELS</label>
+    </customValue>
+    <customValue>
+        <fullName>5500_ENP</fullName>
+        <default>false</default>
+        <label>ENPATH MEDICAL INC.</label>
+    </customValue>
+    <customValue>
+        <fullName>5500_GRE</fullName>
+        <default>false</default>
+        <label>GREATBATCH</label>
+    </customValue>
+    <customValue>
+        <fullName>5500_GDT</fullName>
+        <default>false</default>
+        <label>GUIDANT</label>
+    </customValue>
+    <customValue>
+        <fullName>5500_IMP</fullName>
+        <default>false</default>
+        <label>IMPLANTRONIK</label>
+    </customValue>
+    <customValue>
+        <fullName>5500_INA</fullName>
+        <default>false</default>
+        <label>INHO A</label>
+    </customValue>
+    <customValue>
+        <fullName>5500_INH</fullName>
+        <default>false</default>
+        <label>INHOUEE</label>
+    </customValue>
+    <customValue>
+        <fullName>5500_INN</fullName>
+        <default>false</default>
+        <label>INHOUSEN</label>
+    </customValue>
+    <customValue>
+        <fullName>5500_INO</fullName>
+        <default>false</default>
+        <label>INNOMEDICA LTD.</label>
+    </customValue>
+    <customValue>
+        <fullName>5500_INT</fullName>
+        <default>false</default>
+        <label>INTERMEDICS INC.</label>
+    </customValue>
+    <customValue>
+        <fullName>5500_MDO</fullName>
+        <default>false</default>
+        <label>MEDICO</label>
+    </customValue>
+    <customValue>
+        <fullName>5500_MDT</fullName>
+        <default>false</default>
+        <label>MEDTRONIC, INC</label>
+    </customValue>
+    <customValue>
+        <fullName>5500_MYO</fullName>
+        <default>false</default>
+        <label>MYOPORE</label>
+    </customValue>
+    <customValue>
+        <fullName>5500_OSC</fullName>
+        <default>false</default>
+        <label>OSCOR MEDICAL CORPORATION</label>
+    </customValue>
+    <customValue>
+        <fullName>5500_OSY</fullName>
+        <default>false</default>
+        <label>OSYPKA</label>
+    </customValue>
+    <customValue>
+        <fullName>5500_OTH</fullName>
+        <default>false</default>
+        <label>OTHER</label>
+    </customValue>
+    <customValue>
+        <fullName>5500_SMS</fullName>
+        <default>false</default>
+        <label>SIEMENS</label>
+    </customValue>
+    <customValue>
+        <fullName>5500_SMP</fullName>
+        <default>false</default>
+        <label>SIEMENS/PACESETTER</label>
+    </customValue>
+    <customValue>
+        <fullName>5500_SOM</fullName>
+        <default>false</default>
+        <label>SOMEDICS</label>
+    </customValue>
+    <customValue>
+        <fullName>5500_SRN</fullName>
+        <default>false</default>
+        <label>SORIN</label>
+    </customValue>
+    <customValue>
+        <fullName>5500_SJM</fullName>
+        <default>false</default>
+        <label>ST JUDE MEDICAL</label>
+    </customValue>
+    <customValue>
+        <fullName>5500_STO</fullName>
+        <default>false</default>
+        <label>STOECKERT</label>
+    </customValue>
+    <customValue>
+        <fullName>5500_TEL</fullName>
+        <default>false</default>
+        <label>TELETRONICS</label>
+    </customValue>
+    <customValue>
+        <fullName>5500_VAS</fullName>
+        <default>false</default>
+        <label>VASCOR MEDICAL CORPORATION</label>
+    </customValue>
+    <customValue>
+        <fullName>5500_VTX</fullName>
+        <default>false</default>
+        <label>VENTRITEX</label>
+    </customValue>
+    <customValue>
+        <fullName>Competitor Product</fullName>
+        <default>false</default>
+        <label>Competitor Product</label>
+    </customValue>
+    <description>Manufacturer value used on Asset, Product2 and Product Item</description>
+    <masterLabel>Manufacturer Name</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

@@ -1,0 +1,2 @@
+<apex:page standardController="Order" extensions="SystemPricingPreController" lightningStylesheets="true" action="{!initInfo}">
+</apex:page>

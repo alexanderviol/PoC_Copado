@@ -1,0 +1,41 @@
+<apex:page standardController="Order" extensions="SystemPricingController" lightningStylesheets="true" >
+    <h1>
+        Matching System prices
+    </h1>
+    <apex:messages />
+    <apex:form >
+    <table>
+    
+    <apex:repeat value="{!matchedSystems}" var="systems" id="systemsblock">
+        <tr><th>
+            <apex:outputText value="{!systems.rule.system_product__r.Name}" id="systemName"/>
+            </th>
+            <td>
+                <apex:outputText value="{!currency}" /><apex:outputText value="{!systems.systemPrice}" />
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" style="padding-bottom: 8px;">
+        
+            Included products:&nbsp;
+        <apex:repeat value="{!systems.matchedProducts}" var="prods" id="systemProducts">
+            <apex:outputText value="{!prods.productName}" id="products"/> &nbsp; 
+            
+        </apex:repeat>
+                <br/>
+        <!-- apex:commandLink action="{!selectSystem}" value="Select this system" styleClass="slds-m-top_xx-small slds-button slds-button_neutral btnSubmit" -->
+
+        <!-- button styleClass="slds-button slds-button_neutral" -->
+            <apex:commandLink action="{!selectSystem}" value="Select this system" >
+            <apex:param name="sysId" value="{!systems.rule.Id}" assignto="{!selectedSystemId}"/>
+        </apex:commandLink>
+            <!-- /button -->
+            <br/>
+        </td></tr>
+    </apex:repeat>
+    </table>
+        <br/><br/>
+        <apex:commandButton value="Cancel" action="{!cancelSystem}" />
+        </apex:form>
+
+    </apex:page>

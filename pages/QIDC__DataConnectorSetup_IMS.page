@@ -1,0 +1,189 @@
+<apex:page showHeader="true" sidebar="false" tabStyle="Data_Connector_Setup_ims__tab" docType="html-5.0" controller="QIDC.LocalizationRemoteUtils_ims">
+		<html xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">    
+		    <head>
+				<apex:includeScript value="{!URLFOR($Resource.QIDC__Connectors_ims, 'lib/angular.min.js')}"/>
+				<apex:includeScript value="{!URLFOR($Resource.QIDC__Connectors_ims, 'lib/angular-route.min.js')}" />			
+				<apex:includeScript value="{!URLFOR($Resource.QIDC__Connectors_ims, 'lib/angular-sanitize.min.js')}" />
+
+			<apex:stylesheet value="{!URLFOR($Resource.QIDC__SLDS, 'assets/styles/salesforce-lightning-design-system-vf.min.css')}"/>
+
+				<apex:includeScript value="{!URLFOR($Resource.QIDC__Connectors_ims, 'lib/angular-translate.min.js')}"/>
+				<apex:includeScript value="{!URLFOR($Resource.QIDC__Connectors_ims, 'ok/js/admin/app.js')}" />
+				<apex:includeScript value="{!URLFOR($Resource.QIDC__Connectors_ims, 'ok/js/admin/factories.js')}" />
+				<apex:includeScript value="{!URLFOR($Resource.QIDC__Connectors_ims, 'ok/js/common/directives.js')}" />
+
+				<script type="text/javascript">
+				    // inline js
+				    // used in 'ok/js/search/app.js for $routeProvider.
+				    var sitePrefix = '{!$Site.Prefix}';
+				    // used in 'ok/js/search/factories.js for OkSearchFactory
+				    var SEARCH_REMOTE_LOCALIZE = '{!$RemoteAction.LocalizationRemoteUtils_ims.localize}';
+				</script>
+
+				<apex:outputPanel rendered="{! $User.UIThemeDisplayed == 'Theme4d' }">
+					<style type="text/css">
+				    	html, body
+						{
+						    height: 100%;
+						    background: rgb(244, 246, 249) !important;
+						}
+					</style>
+				</apex:outputPanel>
+
+				<style type="text/css">
+					
+					.bodyDiv {
+						background: rgb(244, 246, 249) !important;
+					}
+
+					.module-tile {
+						width: 25rem;
+						min-width: 25rem;
+					}
+
+					.module-tile-body {
+						height: 6rem;
+						min-height: 6rem;
+						background: #eef1f6;
+						border-bottom-right-radius: .25rem;
+                        border-top-right-radius: .25rem;
+
+					}
+
+					.module-tile-icon {
+						width: 6rem;
+                        min-width: 6rem;
+                    	height: 6rem;
+                    	min-height: 6rem;
+                        background: #ffffff;
+                        border-bottom-left-radius: .25rem;
+                        border-top-left-radius: .25rem;
+					}
+
+					span.module-icon-image {
+                       width: 4.5rem;
+                       height: 4.5rem;
+                       min-width: 4.5rem;
+                       min-height: 4.5rem;
+                   }
+
+                   .slds-text-link {
+                   		font-size: 12pt;
+                   }
+					
+				</style>
+
+			<!-- The category(ies) specified should match the category of the labels -->
+			<c:JsLabelLoader_ims categories="Data Connector Setup,Common"/>
+
+		</head>   
+	    <body ng-app="adminConsole">
+			<div class="slds" ng-controller="OkDataConnectorCtrl">
+				<div class="slds-p-top--large slds-p-left--large">
+					<h1 class="slds-section__title" style="font-size:1.35rem;" translate="DC_SETUP_APPS"></h1>
+				</div>
+				<div class="slds-p-around--medium">        
+					<ul class="slds-grid slds-grid--pull-padded slds-wrap">
+						<li class="slds-p-horizontal--small module-tile">
+							<a href="{!$Page.OK_SetupHome_IMS}" class="slds-app-launcher__tile slds-text-link--reset handle-lightning-navigation">
+							 <div class="module-tile-icon slds-grid slds-grid--vertical-align-center slds-grid--align-center">
+								<div class="slds-app-launcher__tile-figure ">
+								  <span class="slds-avatar slds-avatar--large module-icon-image">
+									<apex:image url="{!URLFOR($Resource.QIDC__SLDS,'assets/icons/admin-console/one-key.png')}"/>
+									</span>
+								</div>
+								</div>
+								<div class="module-tile-body slds-grid slds-grid--vertical-align-center">
+									<div class="slds-app-launcher__tile-body">
+										<span class="slds-text-link " title="OneKey Setup" translate="DC_SETUP_ONEKEY_TITLE"></span>
+										<p>{{ 'DC_SETUP_ONEKEYSETUP_DESCRIPTION' |translate  | trim:true:60:' ...'}} 
+										 <span  ng-init="showOneKeySetupTooltip = false" style="cursor: pointer; color:#0070d2;" ng-show="showToolTip('DC_SETUP_ONEKEYSETUP_DESCRIPTION')" ng-mouseover="showOneKeySetupTooltip = true" ng-mouseleave="showOneKeySetupTooltip = false" >{{'DC_SETUP_MORE'|translate}}</span>
+										</p>
+									    <div class="slds-popover slds-popover--tooltip slds-nubbin--top" role="dialog" style="position:absolute;" ng-show="showOneKeySetupTooltip">
+	                                        <div class="slds-popover__body">
+	                                             <p>{{'DC_SETUP_ONEKEYSETUP_DESCRIPTION'|translate}} </p> 
+	                                        </div>
+	                                    </div>
+	                                </div>
+                                </div>
+                              </a>
+						  </li>
+						  <li class="slds-p-horizontal--small module-tile">
+							 <a href="{!$Page.MKT_SetupHome_QIMS}" class="slds-app-launcher__tile slds-text-link--reset handle-lightning-navigation">
+							 <div class="module-tile-icon slds-grid slds-grid--vertical-align-center slds-grid--align-center">
+								<div class="slds-app-launcher__tile-figure ">
+								 <span class="slds-avatar slds-avatar--large module-icon-image">
+									<apex:image url="{!URLFOR($Resource.QIDC__marketing_connector_ims,'assets/icons/logo.png')}"/>
+									</span>
+								</div>
+								</div>
+								<div class="module-tile-body slds-grid slds-grid--vertical-align-center">
+								<div class="slds-app-launcher__tile-body ">
+									<span class="slds-text-link" title="Marketing Connector" translate="DC_SETUP_MARKETING_CONNECTOR_TITLE"></span>
+											<p>{{ 'DC_SETUP_MARKETING_CONNECTOR_DESCRIPTION' |translate  | trim:true:60:' ...'}} 
+									 <span class="slds-text-link" ng-init="showMarketingSetupTooltip = false" ng-show="showToolTip('DC_SETUP_MARKETING_CONNECTOR_DESCRIPTION')"  ng-mouseover="showMarketingSetupTooltip = true" ng-mouseleave="showMarketingSetupTooltip = false">{{'DC_SETUP_MORE'|translate}}</span>
+									</p>
+								<div class="slds-popover slds-popover--tooltip slds-nubbin--top" role="dialog" style="position:absolute;" ng-show="showMarketingSetupTooltip==true">
+                                        <div class="slds-popover__body">
+                                            <p>{{'DC_SETUP_MARKETING_CONNECTOR_DESCRIPTION'|translate}} </p> 
+                                        </div>
+                                    </div>
+                               </div>
+                               </div>
+							</a>
+						</li>
+						<li class="slds-p-horizontal--small module-tile">
+							 <a href="{!$Page.OM_SetupHome_ims}" class="slds-app-launcher__tile slds-text-link--reset handle-lightning-navigation">
+							 <div class="module-tile-icon slds-grid slds-grid--vertical-align-center slds-grid--align-center">
+									<div class="slds-app-launcher__tile-figure ">
+									 <span class="slds-avatar slds-avatar--large module-icon-image">
+										<apex:image url="{!URLFOR($Resource.QIDC__SLDS,'assets/icons/admin-console/organization-manager.png')}"/>
+										</span>
+									</div>
+								</div>
+								<div class="module-tile-body slds-grid slds-grid--vertical-align-center">
+								<div class="slds-app-launcher__tile-body ">
+									<span class="slds-text-link" title="Org Manager Connector" translate="DC_SETUP_ORG_MANAGER_CONNECTOR_TITLE"></span>
+											<p>{{ 'DC_SETUP_ORG_MANAGER_CONNECTOR_DESCRIPTION' |translate  | trim:true:60:' ...'}} 
+									 <span class="slds-text-link" ng-init="showOrgManagerSetupTooltip = false" ng-show="showToolTip('DC_SETUP_ORG_MANAGER_CONNECTOR_DESCRIPTION')"  ng-mouseover="showOrgManagerSetupTooltip = true" ng-mouseleave="showOrgManagerSetupTooltip = false">{{'DC_SETUP_MORE'|translate}}</span>
+									</p>
+								<div class="slds-popover slds-popover--tooltip slds-nubbin--top" role="dialog" style="position:absolute;" ng-show="showOrgManagerSetupTooltip==true">
+                                        <div class="slds-popover__body">
+                                            <p>{{'DC_SETUP_ORG_MANAGER_CONNECTOR_DESCRIPTION'|translate}} </p> 
+                                        </div>
+                                    </div>
+                               </div>
+                               </div>
+							</a>
+						</li>
+						<li class="slds-p-horizontal--small module-tile">
+							 <a href="{!$Page.MDM_Setup_ims}" class="slds-app-launcher__tile slds-text-link--reset handle-lightning-navigation">
+							 <div class="module-tile-icon slds-grid slds-grid--vertical-align-center slds-grid--align-center">
+									<div class="slds-app-launcher__tile-figure ">
+									 <span class="slds-avatar slds-avatar--large module-icon-image">
+										<apex:image url="{!URLFOR($Resource.QIDC__SLDS,'assets/icons/admin-console/reltio.png')}"/>
+										</span>
+									</div>
+								</div>
+								<div class="module-tile-body slds-grid slds-grid--vertical-align-center">
+								<div class="slds-app-launcher__tile-body ">
+									<span class="slds-text-link" title="MDM Connector" translate="DC_SETUP_MDM_CONNECTOR_TITLE"/>
+									<p>
+									{{ 'DC_SETUP_MDM_CONNECTOR_DESCRIPTION' |translate  | trim:true:70:' ...'}}				
+									 <span class="slds-text-link" ng-init="showMDMConnectorSetupTooltip = false" ng-show="showToolTip('DC_SETUP_MDM_CONNECTOR_DESCRIPTION')"  ng-mouseover="showMDMConnectorSetupTooltip = true" ng-mouseleave="showMDMConnectorSetupTooltip = false">{{'DC_SETUP_MORE'|translate}}</span>
+									</p>
+								<div class="slds-popover slds-popover--tooltip slds-nubbin--top" role="dialog" style="position:absolute;" ng-show="showMDMConnectorSetupTooltip==true">
+                                        <div class="slds-popover__body">
+                                            <p>{{'DC_SETUP_MDM_CONNECTOR_DESCRIPTION'|translate}} </p> 
+                                        </div>
+                                    </div>
+                               </div>
+                               </div>
+							</a>
+						</li>						
+					</ul>
+				</div>    
+			</div>
+		</body>
+	</html>
+</apex:page>

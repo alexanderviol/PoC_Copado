@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <description>This object holds the mapping information between the OneKey code and country to the SF picklist values.</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>false</enableBulkApi>
+    <enableChangeDataCapture>false</enableChangeDataCapture>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>false</enableReports>
+    <enableSearch>false</enableSearch>
+    <enableSharing>false</enableSharing>
+    <enableStreamingApi>false</enableStreamingApi>
+    <externalSharingModel>ControlledByParent</externalSharingModel>
+    <fields>
+        <fullName>QIDC__Code_ims__c</fullName>
+        <deprecated>false</deprecated>
+        <description>OneKey code that will be mapped to the Salesforce picklist value.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>OneKey code that will be mapped to the Salesforce picklist value.</inlineHelpText>
+        <label>OneKey Code</label>
+        <referenceTo>QIDC__OK_Code_ims__c</referenceTo>
+        <relationshipLabel>OneKey Code Mappings</relationshipLabel>
+        <relationshipName>OneKey_Code_Mappings</relationshipName>
+        <relationshipOrder>1</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>QIDC__Field_Mapping_ims__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The field ID which this code is mapped to.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The field ID which this code is mapped to.</inlineHelpText>
+        <label>OneKey Field Mapping</label>
+        <referenceTo>QIDC__OK_Field_Mapping_ims__c</referenceTo>
+        <relationshipLabel>OneKey Code Mappings</relationshipLabel>
+        <relationshipName>OneKey_Code_Mappings</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>QIDC__Picklist_Value_ims__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The Salesforce picklist value that is mapped to the OneKey code.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The Salesforce picklist value that is mapped to the OneKey code.</inlineHelpText>
+        <label>Picklist Value</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>QIDC__Record_Type_Name_ims__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Developer name of the record type to map with the OneKey code.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Developer name of the record type to map with the OneKey code.</inlineHelpText>
+        <label>Record Type</label>
+        <length>80</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>OneKey Code Mapping</label>
+    <nameField>
+        <label>OneKey Code Mapping Name</label>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>OneKey Code Mappings</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

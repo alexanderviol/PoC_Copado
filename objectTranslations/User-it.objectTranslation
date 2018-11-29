@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- MDM Available Countries --></label>
+        <name>QIDC__MDM_Available_Countries_ims__c</name>
+        <picklistValues>
+            <masterLabel>AT</masterLabel>
+            <translation><!-- AT --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- MDM Preferred Country --></label>
+        <name>QIDC__MDM_Preferred_Country_ims__c</name>
+        <picklistValues>
+            <masterLabel>AT</masterLabel>
+            <translation><!-- AT --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- OneKey Available Countries --></label>
+        <name>QIDC__OK_Available_Countries_ims__c</name>
+        <picklistValues>
+            <masterLabel>FR</masterLabel>
+            <translation><!-- FR --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- OneKey Preferred Country --></label>
+        <name>QIDC__OK_Preferred_Country_ims__c</name>
+        <picklistValues>
+            <masterLabel>FR</masterLabel>
+            <translation><!-- FR --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Org Manager Id --></label>
+        <name>QIDC__OrgManagerId_IMS__c</name>
+    </fields>
+    <fields>
+        <label><!-- BIOSMART ID --></label>
+        <name>biosmart_id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Brady Certification --></label>
+        <name>brady_certification__c</name>
+    </fields>
+    <fields>
+        <label><!-- CAN Session Id --></label>
+        <name>can_session_id__c</name>
+    </fields>
+    <fields>
+        <label><!-- API_URL --></label>
+        <name>copado__API_URL__c</name>
+    </fields>
+    <fields>
+        <help><!-- The visibility of the message asking users to rate &amp; feedback Copado on the AppExchange is controlled here. --></help>
+        <label><!-- Hide Copado feedback --></label>
+        <name>copado__Hide_Copado_feedback__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cost Center --></label>
+        <name>cost_center__c</name>
+    </fields>
+    <fields>
+        <label><!-- CRM Region --></label>
+        <name>crm_region__c</name>
+    </fields>
+    <fields>
+        <label><!-- CRM Region ID --></label>
+        <name>crm_region_id__c</name>
+    </fields>
+    <fields>
+        <label><!-- CRT Certification --></label>
+        <name>crt_certification__c</name>
+    </fields>
+    <fields>
+        <label><!-- Employee Group --></label>
+        <name>employee_group__c</name>
+    </fields>
+    <fields>
+        <label><!-- Employee Group ID --></label>
+        <name>employee_group_id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Employee Subgroup --></label>
+        <name>employee_subgroup__c</name>
+    </fields>
+    <fields>
+        <label><!-- Employee Subgroup ID --></label>
+        <name>employee_subgroup_id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Health Professional --></label>
+        <name>health_professional__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Is Service Resource --></label>
+        <name>is_service_resource__c</name>
+    </fields>
+    <fields>
+        <label><!-- Locator --></label>
+        <name>locator__c</name>
+    </fields>
+    <fields>
+        <label><!-- Manager VI --></label>
+        <name>manager_vi__c</name>
+        <relationshipLabel><!-- Users --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Preferred Name --></label>
+        <name>preferred_name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Salutation --></label>
+        <name>salutation__c</name>
+        <picklistValues>
+            <masterLabel>Dr.</masterLabel>
+            <translation><!-- Dr. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Frau</masterLabel>
+            <translation><!-- Frau --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Herr</masterLabel>
+            <translation><!-- Herr --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mr.</masterLabel>
+            <translation><!-- Mr. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ms.</masterLabel>
+            <translation><!-- Ms. --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Company Code --></label>
+        <name>sap_company_code__c</name>
+    </fields>
+    <fields>
+        <label><!-- SAP Customer Number --></label>
+        <name>sap_no__c</name>
+    </fields>
+    <fields>
+        <label><!-- Person ID --></label>
+        <name>sap_person_id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Shipping City --></label>
+        <name>shipping_city__c</name>
+    </fields>
+    <fields>
+        <label><!-- Shipping Country --></label>
+        <name>shipping_country__c</name>
+    </fields>
+    <fields>
+        <label><!-- Shipping State/Province --></label>
+        <name>shipping_state_province__c</name>
+    </fields>
+    <fields>
+        <label><!-- Shipping Street --></label>
+        <name>shipping_street__c</name>
+    </fields>
+    <fields>
+        <label><!-- Shipping Zip/Postal Code --></label>
+        <name>shipping_zip_postal_code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Start Date --></label>
+        <name>start_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tachy Certification --></label>
+        <name>trachy_certification__c</name>
+    </fields>
+    <fields>
+        <label><!-- Unique Count --></label>
+        <name>unique_count__c</name>
+    </fields>
+    <fields>
+        <label><!-- User Division --></label>
+        <name>user_division__c</name>
+        <picklistValues>
+            <masterLabel>CRM</masterLabel>
+            <translation><!-- CRM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CVI</masterLabel>
+            <translation><!-- CVI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PVI</masterLabel>
+            <translation><!-- PVI --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- VI Area --></label>
+        <name>vi_area__c</name>
+    </fields>
+    <fields>
+        <label><!-- VI Area ID --></label>
+        <name>vi_area_id__c</name>
+    </fields>
+    <fields>
+        <label><!-- VI Certification --></label>
+        <name>vi_certification__c</name>
+    </fields>
+    <validationRules>
+        <errorMessage><!-- Please enter a Country --></errorMessage>
+        <name>User_Country</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please use capitalize letter for First Name --></errorMessage>
+        <name>User_First_Name</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please use capitalize letter for Last Name --></errorMessage>
+        <name>User_Last_Name</name>
+    </validationRules>
+</CustomObjectTranslation>

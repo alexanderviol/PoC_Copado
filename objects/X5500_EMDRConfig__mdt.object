@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Holds run time configs for complaints related applications.</description>
+    <fields>
+        <fullName>admin_email__c</fullName>
+        <description>Use for testing, sending support requests</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Admin Email</label>
+        <length>64</length>
+        <required>true</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>analysis_report_emdr_rectype__c</fullName>
+        <description>The developer name of the Analysis Report record type used for returns from the EMDR system.</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Analysis Report EMDR Record Type</label>
+        <length>64</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>analysis_report_status_submitted__c</fullName>
+        <description>Status of items submitted to EMDR System pending response.</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Analysis Report: Submitted to EMDR</label>
+        <length>40</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>emdr_rec_type_test__c</fullName>
+        <description>The developername of the Complaints record type used in unit testing</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Test EMDR Record Type</label>
+        <length>18</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>g1_contact_city__c</fullName>
+        <description>value to put in g1_contact_city field of the Medwatch 3500A form</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>G1 Contact City</label>
+        <length>32</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>g1_contact_country_code__c</fullName>
+        <description>value to put in g1_contact_country_code in the Medwatch 3500A form</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>G1 Contact Country Code</label>
+        <length>4</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>g1_contact_facility_name__c</fullName>
+        <description>value to put in G1 Contact Facility name</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>G1 Contact Facility Name</label>
+        <length>64</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>g1_contact_state_code__c</fullName>
+        <description>value to put in g1_contact_state_code in the Medwatch 3500A form</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>G1 Contact State Code</label>
+        <length>2</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>g1_contact_street__c</fullName>
+        <description>value to put in g1_contact_street_line_1 in Medwatch 3500A form</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>G1 Contact Street</label>
+        <length>32</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>g1_contact_telecom__c</fullName>
+        <description>value to put in g1_contact_telecom_1 in the Medwatch 3500A form</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>G1 Contact Phone</label>
+        <length>64</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>g1_contact_zip_code__c</fullName>
+        <description>value to put in g1_contact_zip_code in the Medwatch 3500A form</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>G1 Contact Zip Code</label>
+        <length>16</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>mdr_prefix__c</fullName>
+        <description>Prefix used to identify MDR reports</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>MDR Prefix</label>
+        <length>20</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>occupation__c</fullName>
+        <description>occupation to be sent to FDA (Field E3)</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Occupation</label>
+        <length>50</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>patient_rec_type__c</fullName>
+        <description>Contact Record Type used for Patients</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Patient Record Type</label>
+        <length>64</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>status_fda_fail__c</fullName>
+        <description>The FDA failed the submitted report (final)</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Complaint Status: FDA Fail</label>
+        <length>32</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>status_fda_pass__c</fullName>
+        <description>Status on Complaint: FDA passed (final)</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Complaint Status: FDA Pass</label>
+        <length>32</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>status_final_fail__c</fullName>
+        <description>final EMDR status from the FDA: fail</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>EMDR Final Status Fail</label>
+        <length>10</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>status_final_pass__c</fullName>
+        <description>Final EMDR status from FDA: passed</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>EMDR Final Status Pass</label>
+        <length>10</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>status_submit_to_emdr_fail__c</fullName>
+        <description>Status set in complaint__c.approval_process_c when downstream system response indicates an error has occurred.</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Complaint Status: EMDR Submit Failed</label>
+        <length>40</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>status_submit_to_emdr_ok__c</fullName>
+        <description>Status set in approval_status__c when downstream emdr system returns successful receipt of transmission</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Complaint Status: EMDR Submit OK</label>
+        <length>40</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>status_submit_to_emdr_ready__c</fullName>
+        <description>Status set in complaint__c.approval_process__c for records that are ready to submit to emdr system.</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Complaint Status: Ready to Submit</label>
+        <length>40</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>test_emdr_recordids__c</fullName>
+        <description>test emdr system record ids separated by ; delimiters</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Test EMDR Record Ids</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>triggers_enabled__c</fullName>
+        <defaultValue>true</defaultValue>
+        <description>Enable or disable apex triggers that call the submit method. Set to disable for updates/migrations/bulk updates.</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Triggers Enabled</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>ws_endpoint_fdastatus__c</fullName>
+        <description>endpoint for requesting fda status of emdr with specified Id</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Web Service Endpoint: FDA Status</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ws_endpoint_submit__c</fullName>
+        <description>The endpoint for submitting EMDRs</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Web Service Endpoint: Submit</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ws_password__c</fullName>
+        <description>password used in downstream web service</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Web Service Password</label>
+        <length>40</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ws_username__c</fullName>
+        <description>username for emdr webservice</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Web Service Username</label>
+        <length>40</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>EMDR Runtime Configuration</label>
+    <pluralLabel>EMDR Runtime Configurations</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

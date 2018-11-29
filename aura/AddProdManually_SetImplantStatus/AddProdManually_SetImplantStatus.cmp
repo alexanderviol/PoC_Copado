@@ -1,0 +1,19 @@
+<aura:component controller="AddProdManually">
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    <aura:attribute name="data" type="String" />
+    <aura:attribute name="status" type="String" default="Implanted"/>
+
+    <ui:inputSelect class="single" aura:id="InputSelectSingle" change="{!c.onSingleSelectChange}">
+        <ui:inputSelectOption text="Implanted" />
+        <ui:inputSelectOption text="Discarded" />
+        <ui:inputSelectOption text="Patient Deceased" />
+        <ui:inputSelectOption text="Partially Capped" />
+        <ui:inputSelectOption text="Not Implantable" />
+
+        
+    </ui:inputSelect>
+    
+    <lightning:button variant="brand" label="Next" onclick="{!c.confirmStatus}" />
+
+	
+</aura:component>

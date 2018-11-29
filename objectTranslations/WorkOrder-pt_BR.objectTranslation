@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- Deprecated --></label>
+        <name>Emergency_Current_WorkORder_Fields</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Gantt Lightbox --></label>
+        <name>Gantt_Lightbox</name>
+    </fieldSets>
+    <fields>
+        <label><!-- Is Fill In Candidate --></label>
+        <name>FSL__IsFillInCandidate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Prevent Geocoding For Chatter Actions --></label>
+        <name>FSL__Prevent_Geocoding_For_Chatter_Actions__c</name>
+    </fields>
+    <fields>
+        <label><!-- Scheduling Priority --></label>
+        <name>FSL__Scheduling_Priority__c</name>
+    </fields>
+    <fields>
+        <label><!-- Visiting Hours --></label>
+        <name>FSL__VisitingHours__c</name>
+        <relationshipLabel><!-- Work Orders --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- AFIB --></label>
+        <name>afib__c</name>
+    </fields>
+    <fields>
+        <label><!-- Atrial Tachycardia --></label>
+        <name>atrial_tachycadria__c</name>
+    </fields>
+    <fields>
+        <label><!-- Brady/Tachy Syndrome --></label>
+        <name>brady_tachy_syndrome__c</name>
+    </fields>
+    <fields>
+        <label><!-- CHF --></label>
+        <name>chf__c</name>
+    </fields>
+    <fields>
+        <label><!-- Following Physician --></label>
+        <name>following_physician__c</name>
+        <relationshipLabel><!-- Implant Procedures (Following Physician) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- implanting physician CONTACT record assigned by SFDC --></help>
+        <label><!-- Implanting Physician --></label>
+        <name>implanting_physician__c</name>
+        <relationshipLabel><!-- Implant Procedures (Implanting Physician) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Medical Record No. --></label>
+        <name>medical_record_no__c</name>
+    </fields>
+    <fields>
+        <label><!-- MI --></label>
+        <name>mi__c</name>
+    </fields>
+    <fields>
+        <label><!-- No Rep present at implant --></label>
+        <name>no_rep_present_at_implant__c</name>
+    </fields>
+    <fields>
+        <label><!-- NPI --></label>
+        <name>npi__c</name>
+    </fields>
+    <fields>
+        <label><!-- 1° HB --></label>
+        <name>one_hb__c</name>
+    </fields>
+    <fields>
+        <label><!-- Order --></label>
+        <name>order__c</name>
+        <relationshipLabel><!-- Implant Procedures --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- OUS Patient --></label>
+        <name>ous_patient__c</name>
+    </fields>
+    <fields>
+        <help><!-- Link to Patient record --></help>
+        <label><!-- Patient --></label>
+        <name>patient__c</name>
+        <relationshipLabel><!-- Implant Procedures (Patient) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Physician who referred the patient --></help>
+        <label><!-- Referring Physician --></label>
+        <name>referring_physician__c</name>
+        <relationshipLabel><!-- Implant Procedures (Referring Physician) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Identifier for the BIOTRONIK representative (Sales Rep, FCS) CONTACT record in attendance at the implant --></help>
+        <label><!-- Rep at implant --></label>
+        <name>rep_at_implant__c</name>
+        <relationshipLabel><!-- Implant Procedures (Rep at implant) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Identifier for sales rep who will receive credit for the sale. --></help>
+        <label><!-- Rep for Credit --></label>
+        <name>rep_for_credit__c</name>
+        <relationshipLabel><!-- Implant Procedures (Rep for Credit) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Company Code --></label>
+        <name>sap_company_code__c</name>
+    </fields>
+    <fields>
+        <label><!-- SCD --></label>
+        <name>scd__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sick Sinus Syndrome --></label>
+        <name>sick_sinus_syndrome__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sinus Arrest --></label>
+        <name>sinus_arrest__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sinus Bradycardia --></label>
+        <name>sinus_bradycardia__c</name>
+    </fields>
+    <fields>
+        <label><!-- 3° HB/CHB --></label>
+        <name>three_hb_chb__c</name>
+    </fields>
+    <fields>
+        <label><!-- 2° HB --></label>
+        <name>two_hb__c</name>
+    </fields>
+    <fields>
+        <label><!-- VF --></label>
+        <name>vf__c</name>
+    </fields>
+    <fields>
+        <label><!-- VT --></label>
+        <name>vt__c</name>
+    </fields>
+    <validationRules>
+        <errorMessage><!-- Your role dose not allow these changes in this status --></errorMessage>
+        <name>Field_update_during_status_changes</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- It is not allowed to change the status away from &apos;Transmitted&apos; --></errorMessage>
+        <name>No_status_change_away_from_transmitted</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Select either &quot;Rep at Implant&quot; or &quot;No Rep present at implant&quot; --></errorMessage>
+        <name>Rep_at_implant_empty_when_no_rep_present</name>
+    </validationRules>
+</CustomObjectTranslation>

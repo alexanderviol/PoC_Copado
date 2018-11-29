@@ -1,0 +1,504 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Created date</value>
+        </caseValues>
+        <name>order_effective_date</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Total price</value>
+        </caseValues>
+        <name>order_total_amount</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <label><!-- Account CRM Region --></label>
+        <name>account_crm_region__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account VI Region --></label>
+        <name>account_vi_region__c</name>
+    </fields>
+    <fields>
+        <help><!-- Verification status of the selected Patient address --></help>
+        <label><!-- Address Verified --></label>
+        <name>address_verified__c</name>
+    </fields>
+    <fields>
+        <label><!-- AFIB --></label>
+        <name>afib__c</name>
+    </fields>
+    <fields>
+        <label><!-- Atrial Tachycadria --></label>
+        <name>atrial_tachycadria__c</name>
+    </fields>
+    <fields>
+        <label><!-- BIOSMART ID --></label>
+        <name>biosmart_id__c</name>
+    </fields>
+    <fields>
+        <help><!-- Shows the total unit price of Brady items on the Order. --></help>
+        <label><!-- Brady Gross Sales --></label>
+        <name>brady_gross_sales__c</name>
+    </fields>
+    <fields>
+        <label><!-- Brady Leads --></label>
+        <name>brady_leads__c</name>
+    </fields>
+    <fields>
+        <help><!-- Shows the Brady Gross Sales minus 2.75%. --></help>
+        <label><!-- Brady Projected Net Sales --></label>
+        <name>brady_projected_net_sales__c</name>
+    </fields>
+    <fields>
+        <label><!-- Brady/Tachy Syndrome --></label>
+        <name>brady_tachy_syndrome__c</name>
+    </fields>
+    <fields>
+        <help><!-- Shows the number of Brady units used in the Order. --></help>
+        <label><!-- Brady Units --></label>
+        <name>brady_units__c</name>
+    </fields>
+    <fields>
+        <label><!-- CardioMessenger Units --></label>
+        <name>cardiomessenger_units__c</name>
+    </fields>
+    <fields>
+        <label><!-- CAS validation completed --></label>
+        <name>cas_validation_completed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cash on Delivery --></label>
+        <name>cash_on_delivery__c</name>
+    </fields>
+    <fields>
+        <label><!-- CHF --></label>
+        <name>chf__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments (Ship to) --></label>
+        <name>comments_ship_to__c</name>
+    </fields>
+    <fields>
+        <help><!-- Verification date of the selected Patient Address --></help>
+        <label><!-- Date Address Verified --></label>
+        <name>date_address_verified__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date CM Approved --></label>
+        <name>date_cm_approved__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date CM Shipped --></label>
+        <name>date_cm_shipped__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date CM Submitted --></label>
+        <name>date_cm_submitted__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date PO Entered --></label>
+        <name>date_po_entered__c</name>
+    </fields>
+    <fields>
+        <label><!-- Days Since Procedure --></label>
+        <name>days_since_procedure__c</name>
+    </fields>
+    <fields>
+        <help><!-- Shows the total unit price of Diagnostic items on the Order. --></help>
+        <label><!-- Diagnostic Gross Sales --></label>
+        <name>diagnostic_gross_sales__c</name>
+    </fields>
+    <fields>
+        <help><!-- Shows the Diagnostic Gross Sales minus 2.75%. --></help>
+        <label><!-- Diagnostic Projected Net Sales --></label>
+        <name>diagnostic_projected_net_sales__c</name>
+    </fields>
+    <fields>
+        <help><!-- The number of Diagnostic units on the Order. --></help>
+        <label><!-- Diagnostic Units --></label>
+        <name>diagnostic_units__c</name>
+    </fields>
+    <fields>
+        <label><!-- Division (MDRF) --></label>
+        <name>division_mdrf__c</name>
+    </fields>
+    <fields>
+        <label><!-- Division Number (MDRF) --></label>
+        <name>division_number_mdrf__c</name>
+    </fields>
+    <fields>
+        <label><!-- Donation --></label>
+        <name>donation__c</name>
+    </fields>
+    <fields>
+        <label><!-- Donation reviewed --></label>
+        <name>donation_reviewed__c</name>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>external_id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Following Physician --></label>
+        <name>following_physican__c</name>
+        <relationshipLabel><!-- Orders (Following Physican) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Date of the Implant Procedure --></help>
+        <label><!-- Implant date --></label>
+        <name>implant_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Implanting Physician --></label>
+        <name>implanting_physician__c</name>
+        <relationshipLabel><!-- Orders (Implanting Physician) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Customer Solutions Review Completed --></label>
+        <name>inventory_review_completed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Invoice Unpaid/Over Credit Limit --></label>
+        <name>invoice_unpaid_over_credit_limit__c</name>
+    </fields>
+    <fields>
+        <label><!-- IsLocked --></label>
+        <name>is_locked__c</name>
+    </fields>
+    <fields>
+        <label><!-- MDRF Is Mine --></label>
+        <name>mdrf_is_mine__c</name>
+    </fields>
+    <fields>
+        <label><!-- MDRF Reimport Timestamp --></label>
+        <name>mdrf_reimport_timestamp__c</name>
+    </fields>
+    <fields>
+        <label><!-- Medical Record No. --></label>
+        <name>medical_record_no__c</name>
+    </fields>
+    <fields>
+        <label><!-- MI --></label>
+        <name>mi__c</name>
+    </fields>
+    <fields>
+        <label><!-- No Rep present at implant --></label>
+        <name>no_rep_present_at_implant__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Cardio Messenger Products --></label>
+        <name>num_cm_products__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Home Monitoring Products --></label>
+        <name>num_hm_products__c</name>
+    </fields>
+    <fields>
+        <label><!-- 1° HB --></label>
+        <name>one_hb__c</name>
+    </fields>
+    <fields>
+        <label><!-- Order Owner Queue Value --></label>
+        <name>order_owner_queue_value__c</name>
+    </fields>
+    <fields>
+        <label><!-- OUS Patient --></label>
+        <name>ous_patient__c</name>
+    </fields>
+    <fields>
+        <label><!-- Patient --></label>
+        <name>patient__c</name>
+        <relationshipLabel><!-- Orders (Patient) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Patient Verified --></label>
+        <name>patient_verified__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pricebook --></label>
+        <name>pricebook__c</name>
+        <picklistValues>
+            <masterLabel>CRM</masterLabel>
+            <translation><!-- CRM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CVI</masterLabel>
+            <translation><!-- CVI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PVI</masterLabel>
+            <translation><!-- PVI --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Reached Cancelled Status --></label>
+        <name>reached_cancelled_status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reached Invoiced Status --></label>
+        <name>reached_invoiced_status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reached Processing Status --></label>
+        <name>reached_processing_status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reached Submitted Status --></label>
+        <name>reached_submitted_status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Referring Physician --></label>
+        <name>referring_physician__c</name>
+        <relationshipLabel><!-- Orders (Referring Physician) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Rep at implant --></label>
+        <name>rep_at_implant__c</name>
+        <relationshipLabel><!-- Orders (Rep at implant) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Rep for Credit --></label>
+        <name>rep_for_credit__c</name>
+        <relationshipLabel><!-- Orders (Rep for Credit) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- SAP Billing Block --></label>
+        <name>sap_billing_block__c</name>
+    </fields>
+    <fields>
+        <label><!-- Company Code --></label>
+        <name>sap_company_code__c</name>
+    </fields>
+    <fields>
+        <label><!-- SAP Error Message --></label>
+        <name>sap_error_message__c</name>
+    </fields>
+    <fields>
+        <label><!-- SAP Inquiry No --></label>
+        <name>sap_inquiry_no__c</name>
+    </fields>
+    <fields>
+        <label><!-- SAP Invoice No --></label>
+        <name>sap_invoice_no__c</name>
+    </fields>
+    <fields>
+        <label><!-- SAP Order No --></label>
+        <name>sap_order_no__c</name>
+    </fields>
+    <fields>
+        <label><!-- SCD --></label>
+        <name>scd__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ship to --></label>
+        <name>ship_to__c</name>
+        <picklistValues>
+            <masterLabel>Direct Hand-out</masterLabel>
+            <translation><!-- Direct Hand-out --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Direct Ship</masterLabel>
+            <translation><!-- Direct Ship --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Direct Ship Replacement</masterLabel>
+            <translation><!-- Direct Ship Replacement --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Sick Sinus Syndrome --></label>
+        <name>sick_sinus_syndrome__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sinus Arrest --></label>
+        <name>sinus_arrest__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sinus Bradycardia --></label>
+        <name>sinus_bradycardia__c</name>
+    </fields>
+    <fields>
+        <label><!-- Submission Attempts --></label>
+        <name>submission_attempts__c</name>
+    </fields>
+    <fields>
+        <label><!-- Submit to SAP --></label>
+        <name>submit_to_sap__c</name>
+    </fields>
+    <fields>
+        <label><!-- Submitted Date --></label>
+        <name>submitted_date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Shows the total unit price of Tachy items on the Order. --></help>
+        <label><!-- Tachy Gross Sales --></label>
+        <name>tachy_gross_sales__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tachy Leads --></label>
+        <name>tachy_leads__c</name>
+    </fields>
+    <fields>
+        <help><!-- Shows the Tachy Gross Sales minus 2.75%. --></help>
+        <label><!-- Tachy Projected Net Sales --></label>
+        <name>tachy_projected_net_sales__c</name>
+    </fields>
+    <fields>
+        <help><!-- Shows the number of Tachy devices on the Order. --></help>
+        <label><!-- Tachy Units --></label>
+        <name>tachy_units__c</name>
+    </fields>
+    <fields>
+        <label><!-- 3° HB/CHB --></label>
+        <name>three_hc_chb__c</name>
+    </fields>
+    <fields>
+        <help><!-- The number of days between the date the PO was entered and the implant date. --></help>
+        <label><!-- Time to PO --></label>
+        <name>time_to_po__c</name>
+    </fields>
+    <fields>
+        <label><!-- Time to Submit --></label>
+        <name>time_to_submit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tracking No. --></label>
+        <name>tracking_no__c</name>
+    </fields>
+    <fields>
+        <label><!-- 2° HB --></label>
+        <name>two_hb__c</name>
+    </fields>
+    <fields>
+        <label><!-- Validation Reason --></label>
+        <name>validation_reason__c</name>
+        <picklistValues>
+            <masterLabel>$0 Product outside System</masterLabel>
+            <translation><!-- $0 Product outside System --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Alphanumeric PO Number**</masterLabel>
+            <translation><!-- Alphanumeric PO Number** --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bulk Product with Price &gt; $0</masterLabel>
+            <translation><!-- Bulk Product with Price &gt; $0 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Device with no leads</masterLabel>
+            <translation><!-- Device with no leads --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Device with only one Lead</masterLabel>
+            <translation><!-- Device with only one Lead --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Donation**</masterLabel>
+            <translation><!-- Donation** --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Implanting facility in Puerto Rico**</masterLabel>
+            <translation><!-- Implanting facility in Puerto Rico** --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lead with no Device</masterLabel>
+            <translation><!-- Lead with no Device --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>More than 1 Device on MDRF</masterLabel>
+            <translation><!-- More than 1 Device on MDRF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>None</masterLabel>
+            <translation><!-- None --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Part of System &amp; Price &gt; $0</masterLabel>
+            <translation><!-- Part of System &amp; Price &gt; $0 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Patient Shipping Address is P.O. Box</masterLabel>
+            <translation><!-- Patient Shipping Address is P.O. Box --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Price Discrepancy Reason = Bulk swap</masterLabel>
+            <translation><!-- Price Discrepancy Reason = Bulk swap --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unverified Patient Shipping Address</masterLabel>
+            <translation><!-- Unverified Patient Shipping Address --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unverified physician</masterLabel>
+            <translation><!-- Unverified physician --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- VF --></label>
+        <name>vf__c</name>
+    </fields>
+    <fields>
+        <label><!-- VT --></label>
+        <name>vt__c</name>
+    </fields>
+    <recordTypes>
+        <description><!-- Records with shipping relevant information about cardio messengers --></description>
+        <label><!-- Cardio Messenger Order --></label>
+        <name>cardio_messenger_order</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Records with sales related information about an implant --></description>
+        <label><!-- Implant Order --></label>
+        <name>mdrf_order</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- You are not allowed to cancel an implant order. --></errorMessage>
+        <name>CHECK_ROLE_FOR_CANCEL_MDRF_ORDER</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Your role does not allow these field changes --></errorMessage>
+        <name>CM_field_updates_not_allowed</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You are not allowed to change the status to this value. --></errorMessage>
+        <name>Check_role_for_status_change</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Your role does not allow these changes in this status --></errorMessage>
+        <name>MDRF_field_updates_not_allowed</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You are not allowed to cancel this order because you are not the owner or the creator. --></errorMessage>
+        <name>ONLY_OWNER_CANCEL_ORDER</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You are not allowed to change the Created date! --></errorMessage>
+        <name>Order_Created_Date_is_read_Only</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please enter a patient. --></errorMessage>
+        <name>PATIENT_REQUIRED_EXCEPT_FOR_CANCELLATION</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Select either &quot;Rep at Implant&quot; or &quot;No Rep present at implant&quot; --></errorMessage>
+        <name>Rep_at_implant_empty_when_no_rep_present</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Print_Defib_Report --></label>
+        <name>Print_Defib_Report</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Submit_to_SAP --></label>
+        <name>Submit_to_SAP</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- System_Pricing --></label>
+        <name>System_Pricing</name>
+    </webLinks>
+</CustomObjectTranslation>

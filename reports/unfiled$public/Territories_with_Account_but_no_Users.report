@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Territory2Model.Territory2s.ObjectTerritory2Associations$Object</field>
+    </columns>
+    <crossFilters>
+        <operation>without</operation>
+        <primaryTableColumn>Territory2Model.Territory2s$Id</primaryTableColumn>
+        <relatedTable>UserTerritory2Association-User</relatedTable>
+        <relatedTableJoinColumn>Territory2</relatedTableJoinColumn>
+    </crossFilters>
+    <crossFilters>
+        <operation>with</operation>
+        <primaryTableColumn>Territory2Model.Territory2s$Id</primaryTableColumn>
+        <relatedTable>ObjectTerritory2Association</relatedTable>
+        <relatedTableJoinColumn>Territory2</relatedTableJoinColumn>
+    </crossFilters>
+    <currency>USD</currency>
+    <filter>
+        <criteriaItems>
+            <column>Territory2Model.Territory2s$Name</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>5500</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Territory2Model.Territory2s$Name</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Territories with Account but no Users</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Territories_with_without_Accounts__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Territory2Model$ActivatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

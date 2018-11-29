@@ -1,0 +1,35 @@
+<aura:component implements="force:lightningQuickActionWithoutHeader" controller="SubmitComplaintToCANcontrollerExt" access="global">
+     
+    <div role="dialog" tabindex="-1" aria-labelledby="header99" class="slds-modal slds-fade-in-open ">
+        <div class="slds-modal__container">
+            <!-- ###### MODAL BOX HEADER Part Start From Here ######-->
+            <div class="slds-modal__header">
+                <button class="slds-button slds-modal__close slds-button--icon-inverse" title="Close" onclick="{!c.closeModel}">
+                    X
+                    <span class="slds-assistive-text">Close</span>
+                </button>
+                <h2 id="header99" class="slds-text-heading--medium">Authentication</h2>
+            </div>
+            <!--###### MODAL BOX BODY Part Start From Here ######-->
+            
+            <div class="slds-modal__content slds-p-around_xx-large slds-p-left_xx-large">
+                
+                    <div class="row">
+                      <lightning:input name="username" label="Username" required="true" aura:id='a' />
+                      <lightning:input name="pwd"      label="Password" required="true" type="password" aura:id='b'/>
+                    </div>
+                <br/>
+                
+            </div>
+            <!--###### MODAL BOX FOOTER Part Start From Here ######-->
+            
+            <div class="slds-modal__footer slds-modal__footer_directional" >
+                <button class="slds-button slds-button--neutral" onclick="{!c.closeModel}" >Cancel</button>
+                <button class="slds-button slds-button--brand" onclick="{!c.redirect}" type="submit">authenticate</button>  
+            </div>
+        
+        </div>
+    </div>
+    <div class="slds-backdrop slds-backdrop--open"></div>
+    
+</aura:component>

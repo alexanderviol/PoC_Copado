@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>55C0</fullName>
+        <default>false</default>
+        <label>Minneapolis</label>
+    </customValue>
+    <customValue>
+        <fullName>55C1</fullName>
+        <default>false</default>
+        <label>Chicago</label>
+    </customValue>
+    <customValue>
+        <fullName>55C2</fullName>
+        <default>false</default>
+        <label>St. Louis</label>
+    </customValue>
+    <customValue>
+        <fullName>55C3</fullName>
+        <default>false</default>
+        <label>New Orleans</label>
+    </customValue>
+    <customValue>
+        <fullName>55C4</fullName>
+        <default>false</default>
+        <label>Ohio Valley</label>
+    </customValue>
+    <customValue>
+        <fullName>55C5</fullName>
+        <default>false</default>
+        <label>West Great Lakes</label>
+    </customValue>
+    <customValue>
+        <fullName>55CE</fullName>
+        <default>false</default>
+        <label>Upper Midwest</label>
+    </customValue>
+    <customValue>
+        <fullName>55CS</fullName>
+        <default>false</default>
+        <label>DO NOT USE (55CS)</label>
+    </customValue>
+    <customValue>
+        <fullName>55CT</fullName>
+        <default>false</default>
+        <label>DO NOT USE (55CT)</label>
+    </customValue>
+    <customValue>
+        <fullName>55DC</fullName>
+        <default>false</default>
+        <label>DO NOT USE (55DC)</label>
+    </customValue>
+    <customValue>
+        <fullName>55DR</fullName>
+        <default>false</default>
+        <label>DO NOT USE (55DR)</label>
+    </customValue>
+    <customValue>
+        <fullName>55E0</fullName>
+        <default>false</default>
+        <label>New England</label>
+    </customValue>
+    <customValue>
+        <fullName>55E1</fullName>
+        <default>false</default>
+        <label>Pittsburgh</label>
+    </customValue>
+    <customValue>
+        <fullName>55E2</fullName>
+        <default>false</default>
+        <label>North Atlantic</label>
+    </customValue>
+    <customValue>
+        <fullName>55E3</fullName>
+        <default>false</default>
+        <label>Virginia</label>
+    </customValue>
+    <customValue>
+        <fullName>55E4</fullName>
+        <default>false</default>
+        <label>Carolinas</label>
+    </customValue>
+    <customValue>
+        <fullName>55E5</fullName>
+        <default>false</default>
+        <label>Atlanta</label>
+    </customValue>
+    <customValue>
+        <fullName>55E6</fullName>
+        <default>false</default>
+        <label>DO NOT USE (55E6)</label>
+    </customValue>
+    <customValue>
+        <fullName>55E7</fullName>
+        <default>false</default>
+        <label>Mid Atlantic</label>
+    </customValue>
+    <customValue>
+        <fullName>55E8</fullName>
+        <default>false</default>
+        <label>South Atlantic</label>
+    </customValue>
+    <customValue>
+        <fullName>55E9</fullName>
+        <default>false</default>
+        <label>DO NOT USE (55E9)</label>
+    </customValue>
+    <customValue>
+        <fullName>55EA</fullName>
+        <default>false</default>
+        <label>Mid-Atlantic</label>
+    </customValue>
+    <customValue>
+        <fullName>55EB</fullName>
+        <default>false</default>
+        <label>West Florida</label>
+    </customValue>
+    <customValue>
+        <fullName>55EC</fullName>
+        <default>false</default>
+        <label>East Florida</label>
+    </customValue>
+    <customValue>
+        <fullName>55ED</fullName>
+        <default>false</default>
+        <label>Miami</label>
+    </customValue>
+    <customValue>
+        <fullName>55EF</fullName>
+        <default>false</default>
+        <label>Georgia</label>
+    </customValue>
+    <customValue>
+        <fullName>55EV</fullName>
+        <default>false</default>
+        <label>VI SouthEast Sales</label>
+    </customValue>
+    <customValue>
+        <fullName>55GF</fullName>
+        <default>false</default>
+        <label>DO NOT USE (55GF)</label>
+    </customValue>
+    <customValue>
+        <fullName>55GL</fullName>
+        <default>false</default>
+        <label>DO NOT USE (55GL)</label>
+    </customValue>
+    <customValue>
+        <fullName>55HA</fullName>
+        <default>false</default>
+        <label>Executive Management</label>
+    </customValue>
+    <customValue>
+        <fullName>55HC</fullName>
+        <default>false</default>
+        <label>Clinical Studies</label>
+    </customValue>
+    <customValue>
+        <fullName>55HM</fullName>
+        <default>false</default>
+        <label>Marketing</label>
+    </customValue>
+    <customValue>
+        <fullName>55HO</fullName>
+        <default>false</default>
+        <label>House Account</label>
+    </customValue>
+    <customValue>
+        <fullName>55HS</fullName>
+        <default>false</default>
+        <label>Sales Administration</label>
+    </customValue>
+    <customValue>
+        <fullName>55MA</fullName>
+        <default>false</default>
+        <label>DO NOT USE (55MA)</label>
+    </customValue>
+    <customValue>
+        <fullName>55ME</fullName>
+        <default>false</default>
+        <label>DO NOT USE (55ME)</label>
+    </customValue>
+    <customValue>
+        <fullName>55MN</fullName>
+        <default>false</default>
+        <label>DO NOT USE (55MN)</label>
+    </customValue>
+    <customValue>
+        <fullName>55MS</fullName>
+        <default>false</default>
+        <label>DO NOT USE (55MS)</label>
+    </customValue>
+    <customValue>
+        <fullName>55MT</fullName>
+        <default>false</default>
+        <label>DO NOT USE (55MT)</label>
+    </customValue>
+    <customValue>
+        <fullName>55MW</fullName>
+        <default>false</default>
+        <label>DO NOT USE (55MW)</label>
+    </customValue>
+    <customValue>
+        <fullName>55NC</fullName>
+        <default>false</default>
+        <label>DO NOT USE (55NC)</label>
+    </customValue>
+    <customValue>
+        <fullName>55NE</fullName>
+        <default>false</default>
+        <label>DO NOT USE (55NE)</label>
+    </customValue>
+    <customValue>
+        <fullName>55NW</fullName>
+        <default>false</default>
+        <label>DO NOT USE (55NW)</label>
+    </customValue>
+    <customValue>
+        <fullName>55NY</fullName>
+        <default>false</default>
+        <label>DO NOT USE (55NY)</label>
+    </customValue>
+    <customValue>
+        <fullName>55PN</fullName>
+        <default>false</default>
+        <label>DO NOT USE (55PN)</label>
+    </customValue>
+    <customValue>
+        <fullName>55PR</fullName>
+        <default>false</default>
+        <label>Puerto Rico</label>
+    </customValue>
+    <customValue>
+        <fullName>55SC</fullName>
+        <default>false</default>
+        <label>DO NOT USE (55SC)</label>
+    </customValue>
+    <customValue>
+        <fullName>55SE</fullName>
+        <default>false</default>
+        <label>DO NOT USE (55SE)</label>
+    </customValue>
+    <customValue>
+        <fullName>55SW</fullName>
+        <default>false</default>
+        <label>DO NOT USE (55SW)</label>
+    </customValue>
+    <customValue>
+        <fullName>55VE</fullName>
+        <default>false</default>
+        <label>VI NorthEast Sales</label>
+    </customValue>
+    <customValue>
+        <fullName>55VW</fullName>
+        <default>false</default>
+        <label>VI MidWest Sales</label>
+    </customValue>
+    <customValue>
+        <fullName>55W0</fullName>
+        <default>false</default>
+        <label>San Francisco</label>
+    </customValue>
+    <customValue>
+        <fullName>55W1</fullName>
+        <default>false</default>
+        <label>Western</label>
+    </customValue>
+    <customValue>
+        <fullName>55W2</fullName>
+        <default>false</default>
+        <label>Denver</label>
+    </customValue>
+    <customValue>
+        <fullName>55W3</fullName>
+        <default>false</default>
+        <label>Texas</label>
+    </customValue>
+    <customValue>
+        <fullName>55W4</fullName>
+        <default>false</default>
+        <label>Houston</label>
+    </customValue>
+    <customValue>
+        <fullName>55W5</fullName>
+        <default>false</default>
+        <label>Portland</label>
+    </customValue>
+    <customValue>
+        <fullName>55W6</fullName>
+        <default>false</default>
+        <label>Seattle</label>
+    </customValue>
+    <customValue>
+        <fullName>55W7</fullName>
+        <default>false</default>
+        <label>Spokane</label>
+    </customValue>
+    <customValue>
+        <fullName>55W8</fullName>
+        <default>false</default>
+        <label>LA / Las Vegas</label>
+    </customValue>
+    <customValue>
+        <fullName>55W9</fullName>
+        <default>false</default>
+        <label>Southwest</label>
+    </customValue>
+    <customValue>
+        <fullName>55WA</fullName>
+        <default>false</default>
+        <label>San Diego</label>
+    </customValue>
+    <customValue>
+        <fullName>55WB</fullName>
+        <default>false</default>
+        <label>Northwest</label>
+    </customValue>
+    <customValue>
+        <fullName>55WC</fullName>
+        <default>false</default>
+        <label>Rocky Mountain</label>
+    </customValue>
+    <customValue>
+        <fullName>55WE</fullName>
+        <default>false</default>
+        <label>DO NOT USE (55WE)</label>
+    </customValue>
+    <customValue>
+        <fullName>55WP</fullName>
+        <default>false</default>
+        <label>East Great Lakes</label>
+    </customValue>
+    <customValue>
+        <fullName>55WV</fullName>
+        <default>false</default>
+        <label>VI West Sales</label>
+    </customValue>
+    <masterLabel>Account Region</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

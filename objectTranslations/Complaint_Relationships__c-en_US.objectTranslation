@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Complaint Relationships</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Complaint Relationships</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account --></label>
+        <name>account__c</name>
+        <relationshipLabel><!-- Complaint Relationships --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Complaint --></label>
+        <name>complaint__c</name>
+        <relationshipLabel><!-- Complaint Relationships --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Used in automation to prevent duplicate Implanting or Explanting Physician Complaint Relationship records. --></help>
+        <label><!-- Complaint ID &amp; Relationship Role --></label>
+        <name>complaint_id_relationship_role__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact --></label>
+        <name>contact__c</name>
+        <relationshipLabel><!-- Complaint Relationships --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Type of contact --></label>
+        <name>type_of_contact__c</name>
+        <picklistValues>
+            <masterLabel>Biotronik Contact Person</masterLabel>
+            <translation><!-- Biotronik Contact Person --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dr Letter Recipient</masterLabel>
+            <translation><!-- Dr Letter Recipient --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Event Physician</masterLabel>
+            <translation><!-- Event Physician --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Explanting Physician</masterLabel>
+            <translation><!-- Explanting Physician --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Following Physician</masterLabel>
+            <translation><!-- Following Physician --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Implanting Physician</masterLabel>
+            <translation><!-- Implanting Physician --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nurse</masterLabel>
+            <translation><!-- Nurse --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Returned Product Sender</masterLabel>
+            <translation><!-- Returned Product Sender --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Revising Physician</masterLabel>
+            <translation><!-- Revising Physician --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- User --></label>
+        <name>user__c</name>
+        <relationshipLabel><!-- Complaint Relationships --></relationshipLabel>
+    </fields>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- If the relationship you are adding is with a Biotronik employee, please add a User. --></errorMessage>
+        <name>If_Bio_employee_require_User</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- If the relationship you are adding is with a physician or nurse, please enter the Contact.  If no Contact exists, please create a new one. --></errorMessage>
+        <name>If_Physician_require_Contact</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You may only enter one relationship: Contact OR Account OR User.  Please create additional Complaint Relationships for other people. --></errorMessage>
+        <name>Only_one_relationship</name>
+    </validationRules>
+</CustomObjectTranslation>

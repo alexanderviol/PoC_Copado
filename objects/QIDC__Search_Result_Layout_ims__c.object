@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <description>The Search Result Layout object allows the Administrator to configure the search result columns that are returned after searching.</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableChangeDataCapture>false</enableChangeDataCapture>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>false</enableReports>
+    <enableSearch>false</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ReadWrite</externalSharingModel>
+    <fields>
+        <fullName>QIDC__Layout_Type_ims__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The type of Search Result Layout (Simple, Individual, or Workplace).</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The type of Search Result Layout (Simple, Individual, or Workplace).</inlineHelpText>
+        <label>Layout Type</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Simple Search</fullName>
+                    <default>false</default>
+                    <label>Simple Search</label>
+                </value>
+                <value>
+                    <fullName>Individual Search</fullName>
+                    <default>false</default>
+                    <label>Individual Search</label>
+                </value>
+                <value>
+                    <fullName>Workplace Search</fullName>
+                    <default>false</default>
+                    <label>Workplace Search</label>
+                </value>
+                <value>
+                    <fullName>HCO Search</fullName>
+                    <default>false</default>
+                    <label>HCO Search</label>
+                </value>
+                <value>
+                    <fullName>HCP Search</fullName>
+                    <default>false</default>
+                    <label>HCP Search</label>
+                </value>
+                <value>
+                    <fullName>HCO Search Result</fullName>
+                    <default>false</default>
+                    <label>HCO Search Result</label>
+                </value>
+                <value>
+                    <fullName>HCP Search Result</fullName>
+                    <default>false</default>
+                    <label>HCP Search Result</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>QIDC__Search_Result_Columns_ims__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The names of the columns that will appear in the search results.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The names of the columns that will appear in the search results.</inlineHelpText>
+        <label>Search Result Columns</label>
+        <length>131072</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <label>Search Result Layout</label>
+    <listViews>
+        <fullName>QIDC__All</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <label>Layout Name</label>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Search Result Layouts</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <description>Defines mappings between OneKey entities and SFDC Objects (SObject)</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>false</enableBulkApi>
+    <enableChangeDataCapture>false</enableChangeDataCapture>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>false</enableReports>
+    <enableSearch>false</enableSearch>
+    <enableSharing>false</enableSharing>
+    <enableStreamingApi>false</enableStreamingApi>
+    <externalSharingModel>ReadWrite</externalSharingModel>
+    <fields>
+        <fullName>QIDC__OneKey_Entity_ims__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The name of the OneKey entity type.</description>
+        <externalId>false</externalId>
+        <label>OneKey Entity</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Activity</fullName>
+                    <default>false</default>
+                    <label>Activity</label>
+                </value>
+                <value>
+                    <fullName>Activity ExternalKey</fullName>
+                    <default>false</default>
+                    <label>Activity ExternalKey</label>
+                </value>
+                <value>
+                    <fullName>Activity Indicator</fullName>
+                    <default>false</default>
+                    <label>Activity Indicator</label>
+                </value>
+                <value>
+                    <fullName>Activity License</fullName>
+                    <default>false</default>
+                    <label>Activity License</label>
+                </value>
+                <value>
+                    <fullName>Activity OpeningHour</fullName>
+                    <default>false</default>
+                    <label>Activity OpeningHour</label>
+                </value>
+                <value>
+                    <fullName>Activity ProfileData</fullName>
+                    <default>false</default>
+                    <label>Activity ProfileData</label>
+                </value>
+                <value>
+                    <fullName>Activity Qualification</fullName>
+                    <default>false</default>
+                    <label>Activity Qualification</label>
+                </value>
+                <value>
+                    <fullName>Activity ReceptionDay</fullName>
+                    <default>false</default>
+                    <label>Activity ReceptionDay</label>
+                </value>
+                <value>
+                    <fullName>Activity Relation</fullName>
+                    <default>false</default>
+                    <label>Activity Relation</label>
+                </value>
+                <value>
+                    <fullName>Activity Segmentation</fullName>
+                    <default>false</default>
+                    <label>Activity Segmentation</label>
+                </value>
+                <value>
+                    <fullName>Address</fullName>
+                    <default>false</default>
+                    <label>Address</label>
+                </value>
+                <value>
+                    <fullName>Address Affiliation</fullName>
+                    <default>false</default>
+                    <label>Address Affiliation</label>
+                </value>
+                <value>
+                    <fullName>Address Segmentation</fullName>
+                    <default>false</default>
+                    <label>Address Segmentation</label>
+                </value>
+                <value>
+                    <fullName>Individual</fullName>
+                    <default>false</default>
+                    <label>Individual</label>
+                </value>
+                <value>
+                    <fullName>Individual Address</fullName>
+                    <default>false</default>
+                    <label>Individual Address</label>
+                </value>
+                <value>
+                    <fullName>Individual AddressOpeningHour</fullName>
+                    <default>false</default>
+                    <label>Individual AddressOpeningHour</label>
+                </value>
+                <value>
+                    <fullName>Individual ExternalKey</fullName>
+                    <default>false</default>
+                    <label>Individual ExternalKey</label>
+                </value>
+                <value>
+                    <fullName>Individual Indicator</fullName>
+                    <default>false</default>
+                    <label>Individual Indicator</label>
+                </value>
+                <value>
+                    <fullName>Individual License</fullName>
+                    <default>false</default>
+                    <label>Individual License</label>
+                </value>
+                <value>
+                    <fullName>Individual ProfileData</fullName>
+                    <default>false</default>
+                    <label>Individual ProfileData</label>
+                </value>
+                <value>
+                    <fullName>Individual Qualification</fullName>
+                    <default>false</default>
+                    <label>Individual Qualification</label>
+                </value>
+                <value>
+                    <fullName>Individual Relation</fullName>
+                    <default>false</default>
+                    <label>Individual Relation</label>
+                </value>
+                <value>
+                    <fullName>Workplace</fullName>
+                    <default>false</default>
+                    <label>Workplace</label>
+                </value>
+                <value>
+                    <fullName>Workplace Address</fullName>
+                    <default>false</default>
+                    <label>Workplace Address</label>
+                </value>
+                <value>
+                    <fullName>Workplace AddressOpeningHour</fullName>
+                    <default>false</default>
+                    <label>Workplace AddressOpeningHour</label>
+                </value>
+                <value>
+                    <fullName>Workplace ExternalKey</fullName>
+                    <default>false</default>
+                    <label>Workplace ExternalKey</label>
+                </value>
+                <value>
+                    <fullName>Workplace Hierarchy</fullName>
+                    <default>false</default>
+                    <label>Workplace Hierarchy</label>
+                </value>
+                <value>
+                    <fullName>Workplace License</fullName>
+                    <default>false</default>
+                    <label>Workplace License</label>
+                </value>
+                <value>
+                    <fullName>Workplace OpeningHour</fullName>
+                    <default>false</default>
+                    <label>Workplace OpeningHour</label>
+                </value>
+                <value>
+                    <fullName>Workplace ProfileData</fullName>
+                    <default>false</default>
+                    <label>Workplace ProfileData</label>
+                </value>
+                <value>
+                    <fullName>Workplace Qualification</fullName>
+                    <default>false</default>
+                    <label>Workplace Qualification</label>
+                </value>
+                <value>
+                    <fullName>Workplace Relation</fullName>
+                    <default>false</default>
+                    <label>Workplace Relation</label>
+                </value>
+                <value>
+                    <fullName>Workplace Segmentation</fullName>
+                    <default>false</default>
+                    <label>Workplace Segmentation</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>QIDC__Parent_Entity_ims__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Stores relationships to other entities.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Stores relationships to other entities.</inlineHelpText>
+        <label>Parent Entity</label>
+        <length>50</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>QIDC__Parent_Relation_Type_ims__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Parent Relation Type</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>ParentId</fullName>
+                    <default>false</default>
+                    <label>ParentId</label>
+                </value>
+                <value>
+                    <fullName>One to Many</fullName>
+                    <default>false</default>
+                    <label>One to Many</label>
+                </value>
+                <value>
+                    <fullName>Many to Many</fullName>
+                    <default>false</default>
+                    <label>Many to Many</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>QIDC__SObjectType_ims__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The API Name of the SObject type.</description>
+        <externalId>false</externalId>
+        <label>Salesforce Object</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>OneKey Object Mapping</label>
+    <listViews>
+        <fullName>QIDC__All</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <label>OneKey Object Mapping Name</label>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>OneKey Object Mappings</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

@@ -1,0 +1,14 @@
+<aura:component controller="WorkOrderUpdator" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global">
+    <aura:attribute name="selectedLookUpRecord1" type="sObject" default="{}"/>
+    <aura:attribute name="selectedLookUpRecord2" type="sObject" default="{}"/>
+    <aura:attribute name="objworkorder" type="WorkOrder" default="{'sobjectType':'WorkOrder'}"/>
+    <aura:attribute name="recordId" type="String" />  
+   <div class="slds-m-around_large"> 
+      <c:customLookup RepCreditOrImplant="RepforCredit" objectAPIName="user" IconName="standard:user" label="Rep for Credit" selectedRecord="{!v.selectedLookUpRecord1}"/>     
+      <c:customLookup RepCreditOrImplant="RepforImplant" objectAPIName="user" IconName="standard:user" label="Rep for Implant" selectedRecord="{!v.selectedLookUpRecord2}"/>
+      <ui:inputCheckbox value="{!v.objworkorder.no_rep_present_at_implant__c}" label="No Rep present at implant"/>
+
+		<br/> 
+    <button class="slds-utton slds-button_brand" onclick="{!c.updateWorkOrderRecord}">Add Representatives</button>      
+  </div>       
+</aura:component>

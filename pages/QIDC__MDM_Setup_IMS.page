@@ -1,0 +1,21 @@
+<apex:page standardStylesheets="false" controller="QIDC.SetupController_IMS" extensions="QIDC.MDM_Setup_IMS" sidebar="false" tabStyle="Data_Connector_Setup_ims__tab">
+	<apex:includeLightning />
+	<apex:include pageName="QIDC__SetupLightningCSSHack"/>
+
+	<div id = "lightning">
+		<script>
+	       var nameSpacePrefix ='{!nameSpacePrefix}';
+	       var applicationName = nameSpacePrefix+":DataConnector_ims";
+	       var landingPage = nameSpacePrefix+":MDM_SetupPage_ims";
+	        $Lightning.use(applicationName, function() {
+	            $Lightning.createComponent(landingPage,
+	                {label : "",
+	                 sessionId:'{!$Api.Session_Id}'},
+	                "lightning",
+	                function(cmp) {
+	            // do some stuff
+	            });
+	        });
+	    </script>
+	</div>
+</apex:page>

@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>0100</fullName>
+        <default>false</default>
+        <label>0100_BIO Berlin</label>
+    </customValue>
+    <customValue>
+        <fullName>0110</fullName>
+        <default>false</default>
+        <label>0110_BIO Erlangen</label>
+    </customValue>
+    <customValue>
+        <fullName>0500</fullName>
+        <default>false</default>
+        <label>0500_LITRONIK GmbH</label>
+    </customValue>
+    <customValue>
+        <fullName>0800</fullName>
+        <default>false</default>
+        <label>0800_CORTRONIK</label>
+    </customValue>
+    <customValue>
+        <fullName>1000</fullName>
+        <default>false</default>
+        <label>1000_BIO-V Germany</label>
+    </customValue>
+    <customValue>
+        <fullName>1210</fullName>
+        <default>false</default>
+        <label>1210_BIO Switzerland</label>
+    </customValue>
+    <customValue>
+        <fullName>1270</fullName>
+        <default>false</default>
+        <label>1270_DYCONEX AG</label>
+    </customValue>
+    <customValue>
+        <fullName>1290</fullName>
+        <default>false</default>
+        <label>1290_MSTI Lake Oswego</label>
+    </customValue>
+    <customValue>
+        <fullName>1300</fullName>
+        <default>false</default>
+        <label>1300_MSE Berg GmbH</label>
+    </customValue>
+    <customValue>
+        <fullName>1400</fullName>
+        <default>false</default>
+        <label>1400_BIO Switzerland AG</label>
+    </customValue>
+    <customValue>
+        <fullName>1420</fullName>
+        <default>false</default>
+        <label>1420_CRC Lake Oswego</label>
+    </customValue>
+    <customValue>
+        <fullName>1800</fullName>
+        <default>false</default>
+        <label>1800_VascoMed GmbH</label>
+    </customValue>
+    <customValue>
+        <fullName>2000</fullName>
+        <default>false</default>
+        <label>2000_MSEI Lake Oswego</label>
+    </customValue>
+    <customValue>
+        <fullName>3110</fullName>
+        <default>false</default>
+        <label>3110_BIOTRONIK APMII Pte.</label>
+    </customValue>
+    <customValue>
+        <fullName>3140</fullName>
+        <default>false</default>
+        <label>3140_BIOTRONIK APM Pte.</label>
+    </customValue>
+    <customValue>
+        <fullName>5110</fullName>
+        <default>false</default>
+        <label>5110_BIO France</label>
+    </customValue>
+    <customValue>
+        <fullName>5120</fullName>
+        <default>false</default>
+        <label>5120_BIO Austria</label>
+    </customValue>
+    <customValue>
+        <fullName>5130</fullName>
+        <default>false</default>
+        <label>5130_BIO UK</label>
+    </customValue>
+    <customValue>
+        <fullName>5140</fullName>
+        <default>false</default>
+        <label>5140_BIO Belgium N.V.</label>
+    </customValue>
+    <customValue>
+        <fullName>5150</fullName>
+        <default>false</default>
+        <label>5150_BIO Netherlands B.V.</label>
+    </customValue>
+    <customValue>
+        <fullName>5160</fullName>
+        <default>false</default>
+        <label>5160_BIOTRONIK Spain S.A.</label>
+    </customValue>
+    <customValue>
+        <fullName>5170</fullName>
+        <default>false</default>
+        <label>5170_BIO DK</label>
+    </customValue>
+    <customValue>
+        <fullName>5180</fullName>
+        <default>false</default>
+        <label>5180_BIO SE</label>
+    </customValue>
+    <customValue>
+        <fullName>5190</fullName>
+        <default>false</default>
+        <label>5190_BIO Portugal</label>
+    </customValue>
+    <customValue>
+        <fullName>5200</fullName>
+        <default>false</default>
+        <label>5200_BIO FI</label>
+    </customValue>
+    <customValue>
+        <fullName>5300</fullName>
+        <default>false</default>
+        <label>5300_BIO Czech</label>
+    </customValue>
+    <customValue>
+        <fullName>5370</fullName>
+        <default>false</default>
+        <label>5370_BIO Italy</label>
+    </customValue>
+    <customValue>
+        <fullName>5500</fullName>
+        <default>false</default>
+        <label>5500_BIO Inc., USA.</label>
+    </customValue>
+    <customValue>
+        <fullName>5515</fullName>
+        <default>false</default>
+        <label>5515_BIOTRONIK Canada Inc</label>
+    </customValue>
+    <customValue>
+        <fullName>5520</fullName>
+        <default>false</default>
+        <label>5520_BIOTRONIK Brazil</label>
+    </customValue>
+    <customValue>
+        <fullName>5560</fullName>
+        <default>false</default>
+        <label>5560_BIOTRONIK Vasc. Inc.</label>
+    </customValue>
+    <customValue>
+        <fullName>5600</fullName>
+        <default>false</default>
+        <label>5600_BIOTRONIK Australia</label>
+    </customValue>
+    <customValue>
+        <fullName>5630</fullName>
+        <default>false</default>
+        <label>5630_BIOTRONIK Japan</label>
+    </customValue>
+    <customValue>
+        <fullName>5640</fullName>
+        <default>false</default>
+        <label>5640_BIOTRONIK Beijing</label>
+    </customValue>
+    <description>All org units in SAP are uniquely identified with 4 digits (salesorg, plant, company code are all 4 digits).</description>
+    <masterLabel>Company Code</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

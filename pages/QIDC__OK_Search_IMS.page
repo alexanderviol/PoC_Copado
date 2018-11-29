@@ -1,0 +1,97 @@
+<apex:page showHeader="true" sidebar="false" controller="QIDC.OK_SearchController_IMS" extensions="QIDC.OK_CountryController_IMS" tabStyle="OneKey_Search_ims__tab" docType="html-5.0">
+    <html xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">    
+
+		<head>
+
+			<apex:includeScript value="{!URLFOR($Resource.QIDC__Connectors_ims, 'lib/angular.min.js')}"/>
+			
+			<apex:includeScript value="{!URLFOR($Resource.QIDC__Connectors_ims, 'lib/angular-route.min.js')}" />
+
+			<apex:includeScript value="{!URLFOR($Resource.QIDC__Connectors_ims, 'lib/angular-sanitize.min.js')}" />
+			
+			<apex:includeScript value="{!URLFOR($Resource.QIDC__Connectors_ims, 'lib/angular-translate.min.js')}"/>
+			
+			<!-- <apex:stylesheet value="{!URLFOR($Resource.SLDS, 'assets/styles/salesforce-lightning-design-system-vf.min.css')}"/> -->
+			
+			<apex:includeScript value="{!URLFOR($Resource.QIDC__Connectors_ims, 'lib/jquery.min.js')}"/>
+
+			<apex:includeScript value="{!URLFOR($Resource.QIDC__Connectors_ims, 'lib/svg4everybody.js')}"/>
+
+			<apex:includeScript value="{!URLFOR($Resource.QIDC__Connectors_ims, 'ok/js/ok.sdk.js')}"/>
+
+			<apex:includeScript value="{!URLFOR($Resource.QIDC__Connectors_ims, 'ok/js/search/app.js')}"/>
+
+			<apex:includeScript value="{!URLFOR($Resource.QIDC__Connectors_ims, 'ok/js/search/advancedSearch.js')}"/>
+
+			<apex:includeScript value="{!URLFOR($Resource.QIDC__Connectors_ims, 'ok/js/search/controllers.js')}"/>
+
+			<apex:includeScript value="{!URLFOR($Resource.QIDC__Connectors_ims, 'ok/js/common/controllers.js')}"/>
+
+			<apex:includeScript value="{!URLFOR($Resource.QIDC__Connectors_ims, 'ok/js/common/directives.js')}"/>
+			
+			<apex:includeScript value="{!URLFOR($Resource.QIDC__Connectors_ims, 'ok/js/search/factories.js')}"/>
+
+			<apex:includeScript value="{!URLFOR($Resource.QIDC__Connectors_ims, 'lib/jquery.floatThead.js')}"/>
+
+			<apex:includeScript value="{!URLFOR($Resource.QIDC__Connectors_ims, 'ok/js/common/services.js')}"/>
+            
+            <apex:stylesheet value="{!URLFOR($Resource.QIDC__Connectors_ims, 'styles/search.css')}"/>
+
+			<!-- <apex:stylesheet value="{!URLFOR($Resource.Connectors_ims, 'lib/fht-defaultTheme.css')}"/> -->
+			
+			<!-- <apex:includeScript value="{!URLFOR($Resource.Connectors_ims, 'lib/jquery.fixedheadertable.min.js')}"/> -->
+
+			<script type="text/javascript">
+				// inline js
+				// used in 'ok/js/search/app.js for $routeProvider.
+				var sitePrefix = '{!$Site.Prefix}';
+				var nameSpacePrefix ='{!nameSpacePrefix}'; 
+				//Getting user prefered country for simple search
+				var GET_OK_PREFERED_COUNTRY = '{!$RemoteAction.OK_CountryController_IMS.preferredCountry}';
+				
+				// used in 'ok/js/search/factories.js for OkSearchFactory
+				var SEARCH_REMOTE_LOCALIZE = '{!$RemoteAction.OK_SearchController_IMS.localize}';
+				var GET_ONEKEY_USER_SETTING = '{!$RemoteAction.OK_SearchController_IMS.getOneKeyUserSetting}';
+				var OK_ORGANIZATION_SETTINGS_GET_RECORD  = '{!$RemoteAction.OK_CountryController_IMS.getOrganizationSettingsData}';
+				var SEARCH_REMOTE_API = '{!$RemoteAction.OK_SearchController_IMS.search}';
+				var DOWNLOAD_REMOTE_API = '{!$RemoteAction.OK_SearchController_IMS.download}';
+				var SEARCH_RESULT_CONFIG_FIELDS_REMOTE_API = '{!$RemoteAction.OK_SearchController_IMS.searchResultColumns}';
+                var USERACCESSCHECK_REMOTE_API = '{!$RemoteAction.OK_SearchController_IMS.userAccessCheck}';
+                var GET_DOWNLOAD_USER_SETTING = '{!$RemoteAction.OK_SearchController_IMS.getDownloadOutOfContractSettings}';
+				var vfConfig = {
+					staticresources: {
+						connectorURL: '{!URLFOR($Resource.Connectors_ims)}',
+						sldsURL: '{!URLFOR($Resource.SLDS)}'
+					}
+				};
+			</script>
+
+			<!-- The category(ies) specified should match the category of the labels -->
+			<c:JsLabelLoader_ims categories="OneKey Search,Common"/>
+			<!-- Accessing Salesforce Lightning Design System Stylesheets -->
+			<apex:slds />
+		</head>    
+
+		<body ng-app="okSearch">
+		    <div class="slds slds-p-left--small">
+				<!-- Include Header -->
+
+				<div class="bs container">
+			        <div class="ng-view"></div>
+			    </div>
+
+			    <!-- Include Results -->
+				
+			</div>
+
+			<script type="text/ng-template" id="OK_SimpleSearch_IMS.template"><c:OK_SimpleSearch_IMS /></script>
+			<script type="text/ng-template" id="OK_ActivityAdvancedSearch_IMS.template"><c:OK_AdvancedSearch_IMS type="Activity" /></script>
+			<script type="text/ng-template" id="OK_WorkplaceAdvancedSearch_IMS.template"><c:OK_AdvancedSearch_IMS type="Workplace" /></script>
+			<script type="text/ng-template" id="OK_SearchResults_IMS.template"><c:OK_SearchResults_IMS /></script>
+			<script type="text/ng-template" id="AutoComplete_IMS.template"><c:AutoComplete_IMS /></script>
+
+		</body>
+		<!--To support svg usage in IE-->
+		<script type="text/javascript">svg4everybody();</script>
+	</html>
+</apex:page>

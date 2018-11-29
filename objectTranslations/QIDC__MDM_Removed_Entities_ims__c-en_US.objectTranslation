@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- This field is used to store Entity SFDC ID --></help>
+        <label><!-- Entity SFID --></label>
+        <name>QIDC__Entity_SFID_ims__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field is used to store the MDM entity URI --></help>
+        <label><!-- Entity URI --></label>
+        <name>QIDC__Entity_URI_ims__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field is used to store the MDM event type. --></help>
+        <label><!-- Event Type --></label>
+        <name>QIDC__Event_Type_ims__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field is used to store the entity updated time in MDM --></help>
+        <label><!-- Last Updated Time --></label>
+        <name>QIDC__Last_Updated_Time_ims__c</name>
+    </fields>
+</CustomObjectTranslation>

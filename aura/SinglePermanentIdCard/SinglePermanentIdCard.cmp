@@ -1,0 +1,10 @@
+<!--
+/* 
+ *  Description  - Component to generate Single Id Card. 
+ *  Created Date - 2018-08-16
+ *  Created by   - Sumit
+ */
+-->
+<aura:component implements="force:lightningQuickAction,force:hasRecordId" >
+	<aura:handler name="init" value="{!this}" action="{!c.generateIDCard}"/>
+</aura:component>

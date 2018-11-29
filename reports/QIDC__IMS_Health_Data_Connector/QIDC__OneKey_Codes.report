@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>QIDC__OK_Code_ims__c.QIDC__Label_ims__c</field>
+    </columns>
+    <columns>
+        <field>QIDC__OK_Code_ims__c.QIDC__UID_Code_ims__c</field>
+    </columns>
+    <columns>
+        <field>QIDC__OK_Code_ims__c.QIDC__Is_Active_ims__c</field>
+    </columns>
+    <description>OneKey Codes Report which gives me the status of the OK Codes I download</description>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>QIDC__OK_Code_ims__c.QIDC__Country_ims__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>QIDC__OK_Code_ims__c.QIDC__LIS_Code_ims__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>OneKey Codes</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$QIDC__OK_Code_ims__c</reportType>
+    <scope>user</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>false</showGrandTotal>
+    <showSubTotals>false</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CUST_CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

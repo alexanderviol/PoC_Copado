@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- Represents New WorkplaceEid of REM Relation. --></help>
+        <label><!-- New WorkplaceEid --></label>
+        <name>QIDC__New_WorkplaceEid_ims__c</name>
+    </fields>
+    <fields>
+        <help><!-- Represents Old WorkplaceEid of REM Relation. --></help>
+        <label><!-- Old WorkplaceEid --></label>
+        <name>QIDC__Old_WorkplaceEid_ims__c</name>
+    </fields>
+</CustomObjectTranslation>

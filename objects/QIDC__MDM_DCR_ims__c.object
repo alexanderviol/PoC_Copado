@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <description>This Object is used to store Data change request details</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableChangeDataCapture>false</enableChangeDataCapture>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>false</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ReadWrite</externalSharingModel>
+    <fields>
+        <fullName>QIDC__Country_ims__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field is used to store the country for which DCR is sent.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field is used to store the country for which DCR is sent.</inlineHelpText>
+        <label>Country</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>QIDC__Entity_MDM_URI_ims__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field is used to store Entity MDM URI for which DCR is sent.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field is used to store Entity MDM URI for which DCR is sent.</inlineHelpText>
+        <label>Entity MDM URI</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>QIDC__Entity_SF_ID_ims__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field is used to store Salesforce record ID of the entity.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field is used to store Salesforce record ID of the entity.</inlineHelpText>
+        <label>Entity SF ID</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>QIDC__Entity_Type_ims__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field is used to store the Entity Type for which DCR is sent.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field is used to store the Entity Type for which DCR is sent.</inlineHelpText>
+        <label>Entity Type</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>QIDC__External_Info_ims__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field is used to provide external information to Reltio server while sending the DCR.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field is used to provide external information to Reltio server while sending the DCR.</inlineHelpText>
+        <label>External Information</label>
+        <length>32768</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>QIDC__OK_Activity_ID__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Individual, workplace Activity ID</description>
+        <externalId>true</externalId>
+        <label>OK Activity ID</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>QIDC__OK_Individual_ID__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Onkey Id of the Individual</description>
+        <externalId>true</externalId>
+        <label>OK Individual ID</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>QIDC__OK_Trace_Status__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Trace status from Onekey</description>
+        <externalId>false</externalId>
+        <label>OK Trace Status</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>QIDC__OK_Workplace_ID__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Onekey Id of the workplace</description>
+        <externalId>true</externalId>
+        <label>OK Workplace ID</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>QIDC__Parent_URI_ims__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field is used to store parent MDM DCR URI vlaue for every related DCR.</description>
+        <externalId>true</externalId>
+        <inlineHelpText>This field is used to store parent MDM DCR URI vlaue for every related DCR.</inlineHelpText>
+        <label>Parent URI</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>QIDC__Request_Comments_ims__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Field to store DCR comments</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Field to store DCR comments</inlineHelpText>
+        <label>Request Comments</label>
+        <length>32768</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>QIDC__Request_JSON_ims__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field is used to store the Request JSON while sending DCR.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field is used to store the Request JSON while sending DCR.</inlineHelpText>
+        <label>Request JSON</label>
+        <length>131072</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>QIDC__Request_Type_ims__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Field to store the request type of the DCR with New or Update.</description>
+        <externalId>false</externalId>
+        <label>Request Type</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>QIDC__Response_JSON_ims__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field is used to store the Response JSON for DCR.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field is used to store the Response JSON for DCR.</inlineHelpText>
+        <label>Response JSON</label>
+        <length>131072</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>QIDC__SF_Record_ID__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Field to store the SF Id of DCR record being updated/created.</description>
+        <externalId>false</externalId>
+        <label>SF Record ID</label>
+        <length>20</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>QIDC__Status_Reason_ims__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field is used to store the Reason of Status.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field is used to store the Reason of Status.</inlineHelpText>
+        <label>Status Reason</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>QIDC__Status_ims__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field will be used to identify DCR Status.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field will be used to identify DCR Status.</inlineHelpText>
+        <label>Status</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>ACCEPTED</fullName>
+                    <default>false</default>
+                    <label>ACCEPTED</label>
+                </value>
+                <value>
+                    <fullName>AWAITING_REVIEW</fullName>
+                    <default>false</default>
+                    <label>AWAITING_REVIEW</label>
+                </value>
+                <value>
+                    <fullName>ERROR</fullName>
+                    <default>false</default>
+                    <label>ERROR</label>
+                </value>
+                <value>
+                    <fullName>FAILED</fullName>
+                    <default>false</default>
+                    <label>FAILED</label>
+                </value>
+                <value>
+                    <fullName>REJECTED-DS</fullName>
+                    <default>false</default>
+                    <label>REJECTED-DS</label>
+                </value>
+                <value>
+                    <fullName>REJECTED-OneKey</fullName>
+                    <default>false</default>
+                    <label>REJECTED-OneKey</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>QIDC__URI_ims__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <deprecated>false</deprecated>
+        <description>This field is used to store unique MDM DCR URI vlaue for every DCR.</description>
+        <externalId>true</externalId>
+        <inlineHelpText>This field is used to store unique MDM DCR URI vlaue for every DCR.</inlineHelpText>
+        <label>URI</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <label>Data Change Request</label>
+    <listViews>
+        <fullName>QIDC__All</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <label>MDM DCR Name</label>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Data Change Requests</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

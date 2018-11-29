@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>User ID</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>User ID</value>
+    </caseValues>
+    <fields>
+        <label><!-- BINC Default Initial Reporter&apos;s User ID --></label>
+        <name>binc_default_initial_reporter_s_user_id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Laurie Morrisey&apos;s User ID --></label>
+        <name>laurie_morrisey_s_user_id__c</name>
+    </fields>
+    <fields>
+        <label><!-- MDR Queue ID --></label>
+        <name>mdr_queue_id__c</name>
+    </fields>
+    <fields>
+        <label><!-- MDR User #2 ID --></label>
+        <name>melissa_irish_s_user_id__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

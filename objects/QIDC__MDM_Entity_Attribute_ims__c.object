@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <description>This object is used to store Attributes for MDM Entities and Relations.</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableChangeDataCapture>false</enableChangeDataCapture>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>false</enableReports>
+    <enableSearch>false</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ControlledByParent</externalSharingModel>
+    <fields>
+        <fullName>QIDC__Attribute_Expression_ims__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field is used to define JSON structure for attribute value. It should have dataSource, list of criteria and result field.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field is used to define JSON structure for attribute value. It should have dataSource, list of criteria and result field.</inlineHelpText>
+        <label>Attribute Expression</label>
+        <length>32768</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>10</visibleLines>
+    </fields>
+    <fields>
+        <fullName>QIDC__Description_ims__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Description for the attribute type.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Description for the attribute type.</inlineHelpText>
+        <label>Description</label>
+        <length>5000</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>10</visibleLines>
+    </fields>
+    <fields>
+        <fullName>QIDC__ForeignKeyEntityTypeURI_ims__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field is used to store either start / end object uri for relations.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field is used to store either start / end object uri for relations.</inlineHelpText>
+        <label>Foreign Key Entity Type URI</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>QIDC__Is_Denormalized_ims__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>This field is used to indicate whether the MDM attribute is denormalized or not.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field is used to indicate whether the MDM attribute is denormalized or not.</inlineHelpText>
+        <label>Is Denormalized?</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>QIDC__Is_Required_ims__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>This field is used to indicate whether the MDM attribute is required or not in mappings.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field is used to indicate whether the MDM attribute is required or not in mappings.</inlineHelpText>
+        <label>Is Required?</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>QIDC__Label_ims__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Readable name of the attribute.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Readable name of the attribute.</inlineHelpText>
+        <label>Label</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>QIDC__Lookup_Code_ims__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field is used to store the lookup type code of an attribute.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field is used to store the lookup type code of an attribute.</inlineHelpText>
+        <label>Lookup Code</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>QIDC__MDM_Entity_ims__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field is used to store the reference of MDM Entity or Relation</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field is used to store the reference of MDM Entity or Relation</inlineHelpText>
+        <label>MDM Entity</label>
+        <referenceTo>QIDC__MDM_Entity_ims__c</referenceTo>
+        <relationshipLabel>MDM Entity Attributes</relationshipLabel>
+        <relationshipName>MDM_Entity_Attributes</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>true</reparentableMasterDetail>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>QIDC__Parent_Attribute_ims__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>This attribute is used to store the parent reference for 1- level down of nested attributes.(DEPRECATED)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This attribute is used to store the parent reference for 1- level down of nested attributes. (DEPRECATED)</inlineHelpText>
+        <label>Parent Attribute (DEPRECATED)</label>
+        <referenceTo>QIDC__MDM_Entity_Attribute_ims__c</referenceTo>
+        <relationshipLabel>MDM Entity Attributes</relationshipLabel>
+        <relationshipName>Parent_Attributes</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>QIDC__ReferencedEntityTypeURI_ims__c</fullName>
+        <deprecated>false</deprecated>
+        <description>URI of entity type or role that is referenced from an entity though &apos;ReferencedEntityTypeURI&apos;. This field is applicable only for &apos;Reference&apos; Type attributes.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>URI of entity type or role that is referenced from an entity though &apos;ReferencedEntityTypeURI&apos;. This field is applicable only for &apos;Reference&apos; Type attributes.</inlineHelpText>
+        <label>Referenced Entity Type URI</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>QIDC__RelationshipTypeURI_ims__c</fullName>
+        <deprecated>false</deprecated>
+        <description>URI of a relationship type used in the reference attribute.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>URI of a relationship type used in the reference attribute.</inlineHelpText>
+        <label>Relationship Type URI</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>QIDC__Type_ims__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Data type of attribute. (Simple, Nested or Reference)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Data type of attribute. (Simple, Nested or Reference)</inlineHelpText>
+        <label>Type</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>String</fullName>
+                    <default>false</default>
+                    <label>String</label>
+                </value>
+                <value>
+                    <fullName>StringNotTokenized</fullName>
+                    <default>false</default>
+                    <label>StringNotTokenized</label>
+                </value>
+                <value>
+                    <fullName>Long</fullName>
+                    <default>false</default>
+                    <label>Long</label>
+                </value>
+                <value>
+                    <fullName>Int</fullName>
+                    <default>false</default>
+                    <label>Int</label>
+                </value>
+                <value>
+                    <fullName>Number</fullName>
+                    <default>false</default>
+                    <label>Number</label>
+                </value>
+                <value>
+                    <fullName>Float</fullName>
+                    <default>false</default>
+                    <label>Float</label>
+                </value>
+                <value>
+                    <fullName>Boolean</fullName>
+                    <default>false</default>
+                    <label>Boolean</label>
+                </value>
+                <value>
+                    <fullName>Date</fullName>
+                    <default>false</default>
+                    <label>Date</label>
+                </value>
+                <value>
+                    <fullName>Timestamp</fullName>
+                    <default>false</default>
+                    <label>Timestamp</label>
+                </value>
+                <value>
+                    <fullName>Blob</fullName>
+                    <default>false</default>
+                    <label>Blob</label>
+                </value>
+                <value>
+                    <fullName>URL</fullName>
+                    <default>false</default>
+                    <label>URL</label>
+                </value>
+                <value>
+                    <fullName>Blog URL</fullName>
+                    <default>false</default>
+                    <label>Blog URL</label>
+                </value>
+                <value>
+                    <fullName>Image URL</fullName>
+                    <default>false</default>
+                    <label>Image URL</label>
+                </value>
+                <value>
+                    <fullName>SSN</fullName>
+                    <default>false</default>
+                    <label>SSN</label>
+                </value>
+                <value>
+                    <fullName>Id card (Passport)</fullName>
+                    <default>false</default>
+                    <label>Id card (Passport)</label>
+                </value>
+                <value>
+                    <fullName>SIC-code</fullName>
+                    <default>false</default>
+                    <label>SIC-code</label>
+                </value>
+                <value>
+                    <fullName>NAICS-code</fullName>
+                    <default>false</default>
+                    <label>NAICS-code</label>
+                </value>
+                <value>
+                    <fullName>Email domains</fullName>
+                    <default>false</default>
+                    <label>Email domains</label>
+                </value>
+                <value>
+                    <fullName>Ticker symbol</fullName>
+                    <default>false</default>
+                    <label>Ticker symbol</label>
+                </value>
+                <value>
+                    <fullName>CIK id</fullName>
+                    <default>false</default>
+                    <label>CIK id</label>
+                </value>
+                <value>
+                    <fullName>Stock exchange</fullName>
+                    <default>false</default>
+                    <label>Stock exchange</label>
+                </value>
+                <value>
+                    <fullName>GeoLocation</fullName>
+                    <default>false</default>
+                    <label>GeoLocation</label>
+                </value>
+                <value>
+                    <fullName>Nested</fullName>
+                    <default>false</default>
+                    <label>Nested</label>
+                </value>
+                <value>
+                    <fullName>Time</fullName>
+                    <default>false</default>
+                    <label>Time</label>
+                </value>
+                <value>
+                    <fullName>Reference</fullName>
+                    <default>false</default>
+                    <label>Reference</label>
+                </value>
+                <value>
+                    <fullName>MDM ID</fullName>
+                    <default>false</default>
+                    <label>MDM ID</label>
+                </value>
+                <value>
+                    <fullName>Picklist</fullName>
+                    <default>false</default>
+                    <label>Picklist</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>QIDC__URI_ims__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Path that is used to reach the attribute configuration.
+Format: configuration/{objectType}/attributes/{AttributeName}</description>
+        <externalId>true</externalId>
+        <inlineHelpText>Path that is used to reach the attribute configuration.
+Format: configuration/{objectType}/attributes/{AttributeName}</inlineHelpText>
+        <label>URI</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>MDM Entity Attribute</label>
+    <nameField>
+        <label>Attribute Name</label>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>MDM Entity Attributes</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

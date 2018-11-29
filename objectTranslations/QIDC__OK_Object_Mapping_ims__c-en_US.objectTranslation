@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- OneKey Entity --></label>
+        <name>QIDC__OneKey_Entity_ims__c</name>
+        <picklistValues>
+            <masterLabel>Activity</masterLabel>
+            <translation><!-- Activity --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Activity ExternalKey</masterLabel>
+            <translation><!-- Activity ExternalKey --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Activity Indicator</masterLabel>
+            <translation><!-- Activity Indicator --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Activity License</masterLabel>
+            <translation><!-- Activity License --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Activity OpeningHour</masterLabel>
+            <translation><!-- Activity OpeningHour --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Activity ProfileData</masterLabel>
+            <translation><!-- Activity ProfileData --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Activity Qualification</masterLabel>
+            <translation><!-- Activity Qualification --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Activity ReceptionDay</masterLabel>
+            <translation><!-- Activity ReceptionDay --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Activity Relation</masterLabel>
+            <translation><!-- Activity Relation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Activity Segmentation</masterLabel>
+            <translation><!-- Activity Segmentation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Address</masterLabel>
+            <translation><!-- Address --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Address Affiliation</masterLabel>
+            <translation><!-- Address Affiliation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Address Segmentation</masterLabel>
+            <translation><!-- Address Segmentation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Individual</masterLabel>
+            <translation><!-- Individual --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Individual Address</masterLabel>
+            <translation><!-- Individual Address --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Individual AddressOpeningHour</masterLabel>
+            <translation><!-- Individual AddressOpeningHour --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Individual ExternalKey</masterLabel>
+            <translation><!-- Individual ExternalKey --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Individual Indicator</masterLabel>
+            <translation><!-- Individual Indicator --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Individual License</masterLabel>
+            <translation><!-- Individual License --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Individual ProfileData</masterLabel>
+            <translation><!-- Individual ProfileData --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Individual Qualification</masterLabel>
+            <translation><!-- Individual Qualification --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Individual Relation</masterLabel>
+            <translation><!-- Individual Relation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Workplace</masterLabel>
+            <translation><!-- Workplace --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Workplace Address</masterLabel>
+            <translation><!-- Workplace Address --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Workplace AddressOpeningHour</masterLabel>
+            <translation><!-- Workplace AddressOpeningHour --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Workplace ExternalKey</masterLabel>
+            <translation><!-- Workplace ExternalKey --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Workplace Hierarchy</masterLabel>
+            <translation><!-- Workplace Hierarchy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Workplace License</masterLabel>
+            <translation><!-- Workplace License --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Workplace OpeningHour</masterLabel>
+            <translation><!-- Workplace OpeningHour --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Workplace ProfileData</masterLabel>
+            <translation><!-- Workplace ProfileData --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Workplace Qualification</masterLabel>
+            <translation><!-- Workplace Qualification --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Workplace Relation</masterLabel>
+            <translation><!-- Workplace Relation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Workplace Segmentation</masterLabel>
+            <translation><!-- Workplace Segmentation --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Stores relationships to other entities. --></help>
+        <label><!-- Parent Entity --></label>
+        <name>QIDC__Parent_Entity_ims__c</name>
+    </fields>
+    <fields>
+        <label><!-- Parent Relation Type --></label>
+        <name>QIDC__Parent_Relation_Type_ims__c</name>
+        <picklistValues>
+            <masterLabel>Many to Many</masterLabel>
+            <translation><!-- Many to Many --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>One to Many</masterLabel>
+            <translation><!-- One to Many --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ParentId</masterLabel>
+            <translation><!-- ParentId --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Salesforce Object --></label>
+        <name>QIDC__SObjectType_ims__c</name>
+    </fields>
+</CustomObjectTranslation>

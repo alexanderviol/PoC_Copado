@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Order$sap_order_no__c</field>
+    </columns>
+    <columns>
+        <field>Order$implant_date__c</field>
+    </columns>
+    <columns>
+        <field>Order$implanting_physician__c</field>
+    </columns>
+    <columns>
+        <field>Order.OrderItems$asset__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Order.OrderItems$TotalPrice</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <criteriaItems>
+            <column>Order$PoNumber</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value></value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Order$Status</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Not Submitted,Canceled</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Order$Account</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>notContain</operator>
+            <value>Cardio Messenger</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Order$TotalAmount</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>USD 0</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Order$Account</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Order$rep_for_credit__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Order$OrderNumber</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Orders Missing a PO</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Orders_With_Order_Products__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Order$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

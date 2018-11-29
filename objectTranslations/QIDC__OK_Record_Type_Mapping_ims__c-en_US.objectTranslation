@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- To store the country code --></help>
+        <label><!-- Country --></label>
+        <name>QIDC__Country_ims__c</name>
+    </fields>
+    <fields>
+        <help><!-- The OneKey entity that the record type mappings being mapped belong to. --></help>
+        <label><!-- OneKey Object Mapping --></label>
+        <name>QIDC__OK_Object_Mapping_ims__c</name>
+        <relationshipLabel><!-- OneKey Record Type Mappings --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- This field is used to know priority of record --></help>
+        <label><!-- Priority --></label>
+        <name>QIDC__Priority_ims__c</name>
+    </fields>
+    <fields>
+        <help><!-- Record Type Criteria using multiple pick lists
+Format: OK Field Developer Name 1:Value 1,Value 2;OK Field Developer Name 2: Value 1,Value 2; --></help>
+        <label><!-- Record Type Criteria --></label>
+        <name>QIDC__Record_Type_Criteria_ims__c</name>
+    </fields>
+    <fields>
+        <help><!-- Developer name of the record type to map --></help>
+        <label><!-- Record Type --></label>
+        <name>QIDC__Record_Type_Name_ims__c</name>
+    </fields>
+</CustomObjectTranslation>

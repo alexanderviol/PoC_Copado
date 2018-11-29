@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>FSL__Compact_Opt_Request</compactLayoutAssignment>
+    <compactLayouts>
+        <fullName>FSL__Compact_Opt_Request</fullName>
+        <fields>FSL__Finish__c</fields>
+        <fields>FSL__Scheduling_Policy__c</fields>
+        <fields>FSL__Status__c</fields>
+        <fields>FSL__Objects_Scheduled__c</fields>
+        <label>Compact_Opt_Request</label>
+    </compactLayouts>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableChangeDataCapture>false</enableChangeDataCapture>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>false</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ReadWrite</externalSharingModel>
+    <fields>
+        <fullName>FSL__All_Tasks_Mode__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>All Tasks Mode</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>FSL__Avg_Travel_After_Rso__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Avg Travel After Rso In Minutes</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>FSL__Avg_Travel_Before_Rso__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Avg Travel Before Rso In Minutes</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>FSL__CandidatesIds_Json__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>CandidatesIds Json</label>
+        <length>32768</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>FSL__Failure_Details__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Failure Details</label>
+        <length>32768</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>FSL__Failure_Reason__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Failure Reason</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Click Authorize</fullName>
+                    <default>false</default>
+                    <label>Click Authorize</label>
+                </value>
+                <value>
+                    <fullName>Unknown</fullName>
+                    <default>false</default>
+                    <label>Unknown</label>
+                </value>
+                <value>
+                    <fullName>Already Running</fullName>
+                    <default>false</default>
+                    <label>Already Running</label>
+                </value>
+                <value>
+                    <fullName>No Availability Rule</fullName>
+                    <default>false</default>
+                    <label>No Availability Rule</label>
+                </value>
+                <value>
+                    <fullName>Corrupted data</fullName>
+                    <default>false</default>
+                    <label>Corrupted data</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>FSL__Finish__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Finish</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>FSL__Include_Services_With_Empty_Location__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Include Services With Empty Location</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>FSL__Objects_Scheduled__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Objects Scheduled</label>
+        <precision>8</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>FSL__Objects_To_Schedule__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Objects To Schedule</label>
+        <precision>8</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>FSL__Optimization_Data__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Optimization Data</label>
+        <referenceTo>FSL__Optimization_Data__c</referenceTo>
+        <relationshipLabel>Optimization Requests</relationshipLabel>
+        <relationshipName>Optimization_Requests</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>FSL__Originating_Resource_Absence__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Originating Resource Absence</label>
+        <referenceTo>ResourceAbsence</referenceTo>
+        <relationshipLabel>Optimization Requests</relationshipLabel>
+        <relationshipName>Optimization_Requests</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>FSL__Originating_Service_Appointment__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Originating Service Appointment</label>
+        <referenceTo>ServiceAppointment</referenceTo>
+        <relationshipLabel>Optimization Requests (Originating_Service Appointment)</relationshipLabel>
+        <relationshipName>Optimization_Requests1</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>FSL__Result_Json__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Result Json</label>
+        <length>32768</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>FSL__Result__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Result</label>
+        <length>32768</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>FSL__Scheduling_Policy__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Scheduling Policy</label>
+        <referenceTo>FSL__Scheduling_Policy__c</referenceTo>
+        <relationshipLabel>Optimization Requests</relationshipLabel>
+        <relationshipName>Optimization_Requests</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>FSL__Service_Appointment__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Service Appointment</label>
+        <referenceTo>ServiceAppointment</referenceTo>
+        <relationshipLabel>Optimization Requests</relationshipLabel>
+        <relationshipName>Optimization_Requests</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>FSL__Service_Resource__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Service Resource</label>
+        <referenceTo>ServiceResource</referenceTo>
+        <relationshipLabel>Optimization Requests</relationshipLabel>
+        <relationshipName>Optimization_Requests</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>FSL__Start__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Start</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>FSL__Status__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Status</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Open</fullName>
+                    <default>false</default>
+                    <label>Open</label>
+                </value>
+                <value>
+                    <fullName>Queued</fullName>
+                    <default>false</default>
+                    <label>Queued</label>
+                </value>
+                <value>
+                    <fullName>In Progress</fullName>
+                    <default>false</default>
+                    <label>In Progress</label>
+                </value>
+                <value>
+                    <fullName>Failed</fullName>
+                    <default>false</default>
+                    <label>Failed</label>
+                </value>
+                <value>
+                    <fullName>Completed</fullName>
+                    <default>false</default>
+                    <label>Completed</label>
+                </value>
+                <value>
+                    <fullName>Completed First Optimization Day</fullName>
+                    <default>false</default>
+                    <label>Completed First Optimization Day</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>FSL__Text_Status__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>true</externalId>
+        <label>Text Status</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>FSL__Type__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Type</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Global Optimization</fullName>
+                    <default>true</default>
+                    <label>Global Optimization</label>
+                </value>
+                <value>
+                    <fullName>Fix Overlaps</fullName>
+                    <default>false</default>
+                    <label>Fix Overlaps</label>
+                </value>
+                <value>
+                    <fullName>SA Reshuffle</fullName>
+                    <default>false</default>
+                    <label>SA Reshuffle</label>
+                </value>
+                <value>
+                    <fullName>Fill-In Schedule</fullName>
+                    <default>false</default>
+                    <label>Fill-In Schedule</label>
+                </value>
+                <value>
+                    <fullName>Group Nearby SAs</fullName>
+                    <default>false</default>
+                    <label>Group Nearby SAs</label>
+                </value>
+                <value>
+                    <fullName>Resource Schedule Optimization</fullName>
+                    <default>false</default>
+                    <label>Resource Schedule Optimization</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <label>Optimization Request</label>
+    <listViews>
+        <fullName>FSL__All_Optimization_Requests</fullName>
+        <columns>NAME</columns>
+        <columns>FSL__Start__c</columns>
+        <columns>FSL__Finish__c</columns>
+        <columns>FSL__Status__c</columns>
+        <columns>FSL__Objects_To_Schedule__c</columns>
+        <columns>FSL__Objects_Scheduled__c</columns>
+        <columns>FSL__Failure_Reason__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All Optimization Requests</label>
+    </listViews>
+    <nameField>
+        <displayFormat>OR-{YYYY}-{MM}-{0}</displayFormat>
+        <label>Optimization Request Number</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Optimization Requests</pluralLabel>
+    <searchLayouts>
+        <customTabListAdditionalFields>CREATEDBY_USER</customTabListAdditionalFields>
+        <customTabListAdditionalFields>CREATED_DATE</customTabListAdditionalFields>
+        <customTabListAdditionalFields>FSL__Status__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>FSL__Finish__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>FSL__Start__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>FSL__Scheduling_Policy__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>FSL__Objects_Scheduled__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>FSL__Failure_Reason__c</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>FSL__Status__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>FSL__Scheduling_Policy__c</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>FSL__Status__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>FSL__Scheduling_Policy__c</lookupPhoneDialogsAdditionalFields>
+        <searchFilterFields>FSL__Status__c</searchFilterFields>
+        <searchFilterFields>CREATEDBY_USER</searchFilterFields>
+        <searchResultsAdditionalFields>FSL__Status__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>FSL__Scheduling_Policy__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+    <sharingReasons>
+        <fullName>FSL__Related_Service_Territory_Member__c</fullName>
+        <label>Related Service Territory Member</label>
+    </sharingReasons>
+    <sharingReasons>
+        <fullName>FSL__Related_Service_Territory__c</fullName>
+        <label>Related Service Territory</label>
+    </sharingReasons>
+    <visibility>Public</visibility>
+</CustomObject>

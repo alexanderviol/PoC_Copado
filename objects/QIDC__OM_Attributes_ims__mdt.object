@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>This object store org manager related attributes.</description>
+    <fields>
+        <fullName>QIDC__Attribute_Expression_ims__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field is used to store OrgManager attribute of download result response. This field will act as an expression field and would allow to prefix or postfix value before saving the value in SF.</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>This field is used to store OrgManager attribute of download result response. This field will act as an expression field and would allow to prefix or postfix value before saving the value in SF.</inlineHelpText>
+        <label>Attribute Expression</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>QIDC__Attribute_ims__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Indicates Org Manager field API name.</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>Indicates Org Manager field API name.</inlineHelpText>
+        <label>Attribute Name</label>
+        <length>80</length>
+        <required>true</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>QIDC__CodeRole_Label_ims__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Code Role label of the attribute.</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>Code Role label of the attribute.</inlineHelpText>
+        <label>Code Role Label</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>QIDC__Code_Role_ims__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Code group of the attribute.</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>Code group of the attribute.</inlineHelpText>
+        <label>Code Role</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>QIDC__Data_Type_ims__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This represents the Field data type for the Field.</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>This represents the Field data type for the Field.</inlineHelpText>
+        <label>Data Type</label>
+        <required>true</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>String</fullName>
+                    <default>true</default>
+                    <label>String</label>
+                </value>
+                <value>
+                    <fullName>Date</fullName>
+                    <default>false</default>
+                    <label>Date</label>
+                </value>
+                <value>
+                    <fullName>DateTime</fullName>
+                    <default>false</default>
+                    <label>DateTime</label>
+                </value>
+                <value>
+                    <fullName>Boolean</fullName>
+                    <default>false</default>
+                    <label>Boolean</label>
+                </value>
+                <value>
+                    <fullName>Number</fullName>
+                    <default>false</default>
+                    <label>Number</label>
+                </value>
+                <value>
+                    <fullName>OrgManagerId</fullName>
+                    <default>false</default>
+                    <label>OrgManagerId</label>
+                </value>
+                <value>
+                    <fullName>Email</fullName>
+                    <default>false</default>
+                    <label>Email</label>
+                </value>
+                <value>
+                    <fullName>Picklist</fullName>
+                    <default>false</default>
+                    <label>Picklist</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>QIDC__Description_ims__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This represents the field description.</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>This represents the field description.</inlineHelpText>
+        <label>Description</label>
+        <required>false</required>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>QIDC__Entity_ims__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This represents entity API name in Org Manager.</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>This represents entity API name in Org Manager.</inlineHelpText>
+        <label>Entity</label>
+        <required>true</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Employee_API</fullName>
+                    <default>false</default>
+                    <label>Employee_API</label>
+                </value>
+                <value>
+                    <fullName>Employee_Address_API</fullName>
+                    <default>false</default>
+                    <label>Employee_Address_API</label>
+                </value>
+                <value>
+                    <fullName>Employee_Communication_API</fullName>
+                    <default>false</default>
+                    <label>Employee_Communication_API</label>
+                </value>
+                <value>
+                    <fullName>Sales_Area_API</fullName>
+                    <default>false</default>
+                    <label>Sales_Area_API</label>
+                </value>
+                <value>
+                    <fullName>Sales_Area_Relation_API</fullName>
+                    <default>false</default>
+                    <label>Sales_Area_Relation_API</label>
+                </value>
+                <value>
+                    <fullName>Employee_Sales_Area_API</fullName>
+                    <default>false</default>
+                    <label>Employee_Sales_Area_API</label>
+                </value>
+                <value>
+                    <fullName>Product_API</fullName>
+                    <default>false</default>
+                    <label>Product_API</label>
+                </value>
+                <value>
+                    <fullName>Product_Relation_API</fullName>
+                    <default>false</default>
+                    <label>Product_Relation_API</label>
+                </value>
+                <value>
+                    <fullName>Product_Lot_API</fullName>
+                    <default>false</default>
+                    <label>Product_Lot_API</label>
+                </value>
+                <value>
+                    <fullName>Product_Sales_Force_API</fullName>
+                    <default>false</default>
+                    <label>Product_Sales_Force_API</label>
+                </value>
+                <value>
+                    <fullName>Product_Inclusion_API</fullName>
+                    <default>false</default>
+                    <label>Product_Inclusion_API</label>
+                </value>
+                <value>
+                    <fullName>Product_Exclusion_API</fullName>
+                    <default>false</default>
+                    <label>Product_Exclusion_API</label>
+                </value>
+                <value>
+                    <fullName>Organization_Sales_Area_API</fullName>
+                    <default>false</default>
+                    <label>Organization_Sales_Area_API</label>
+                </value>
+                <value>
+                    <fullName>Individual_Sales_Area_API</fullName>
+                    <default>false</default>
+                    <label>Individual_Sales_Area_API</label>
+                </value>
+                <value>
+                    <fullName>Product_Sales_Area_Exception_API</fullName>
+                    <default>false</default>
+                    <label>Product_Sales_Area_Exception_API</label>
+                </value>
+                <value>
+                    <fullName>Individual_API</fullName>
+                    <default>false</default>
+                    <label>Individual_API</label>
+                </value>
+                <value>
+                    <fullName>Organization_API</fullName>
+                    <default>false</default>
+                    <label>Organization_API</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>QIDC__Foreign_Key_Entity_ims__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Foreign Key Entity</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Employee_API</fullName>
+                    <default>false</default>
+                    <label>Employee_API</label>
+                </value>
+                <value>
+                    <fullName>Employee_Address_API</fullName>
+                    <default>false</default>
+                    <label>Employee_Address_API</label>
+                </value>
+                <value>
+                    <fullName>Sales_Area_API</fullName>
+                    <default>false</default>
+                    <label>Sales_Area_API</label>
+                </value>
+                <value>
+                    <fullName>Product_API</fullName>
+                    <default>false</default>
+                    <label>Product_API</label>
+                </value>
+                <value>
+                    <fullName>Organization_Sales_Area_API</fullName>
+                    <default>false</default>
+                    <label>Organization_Sales_Area_API</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>QIDC__IsEditable_ims__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Defines if the field mapping is editable through mappings screen.</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>Defines if the field mapping is editable through mappings screen.</inlineHelpText>
+        <label>IsEditable</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>QIDC__IsVisible_ims__c</fullName>
+        <defaultValue>true</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Defines if the field is visible on mappings screen.</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>Defines if the field is visible on mappings screen.</inlineHelpText>
+        <label>IsVisible</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>QIDC__Is_Primary_Key_ims__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Is Primary Key</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>QIDC__Is_Required_ims__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>This field is used to indicate whether the OM attribute is required or not in mappings.</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>This field is used to indicate whether the OM attribute is required or not in mappings.</inlineHelpText>
+        <label>Is Required?</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>QIDC__Sort_Order_ims__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Sort Order</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <label>Org Manager Attributes</label>
+    <pluralLabel>Org Manager Attributes</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Auto Running Numbers</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Auto Running Numbers</value>
+    </caseValues>
+    <fields>
+        <help><!-- Store recent number that is to be assigned to CI number --></help>
+        <label><!-- CI Number --></label>
+        <name>CI_Number__c</name>
+    </fields>
+    <fields>
+        <help><!-- Store recent number that is to be assigned to RP number --></help>
+        <label><!-- MDR Number --></label>
+        <name>MDR_Number__c</name>
+    </fields>
+    <fields>
+        <help><!-- Store recent number that is to be assigned to RP number --></help>
+        <label><!-- RP Number --></label>
+        <name>RP_Number__c</name>
+    </fields>
+    <fields>
+        <help><!-- Store the year to which the current running numbers in the custom settings belong --></help>
+        <label><!-- Running Number Year --></label>
+        <name>Running_Number_Year__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

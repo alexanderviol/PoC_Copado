@@ -1,0 +1,7 @@
+<aura:component
+	controller="X5500_EMDR_Controller"
+		implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" 
+		access="global">
+    <aura:handler name="init" action="{!c.getStatusSingle}" value="{!this}"/>
+	<lightning:spinner size="large" alternativeText="Getting EMDR Status..." />
+</aura:component>

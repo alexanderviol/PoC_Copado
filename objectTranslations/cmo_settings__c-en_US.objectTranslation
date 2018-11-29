@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Cardio Messenger Orders</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Cardio Messenger Orders</value>
+    </caseValues>
+    <fields>
+        <label><!-- Description --></label>
+        <name>description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Key --></label>
+        <name>key__c</name>
+    </fields>
+    <fields>
+        <label><!-- Company Code --></label>
+        <name>sap_company_code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Value --></label>
+        <name>value__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

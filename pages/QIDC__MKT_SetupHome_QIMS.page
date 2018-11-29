@@ -1,0 +1,26 @@
+<apex:page standardStylesheets="false" controller="QIDC.MKT_Admin_Console_ims" sidebar="false" tabStyle="Data_Connector_Setup_ims__tab">
+<apex:stylesheet value="{!URLFOR($Resource.QIDC__SLDS, 'assets/styles/salesforce-lightning-design-system-vf.min.css')}" />
+<apex:includeScript value="/lightning/lightning.out.js" />
+<apex:includeLightning />
+<div id = "lightning">
+<script>
+       var nameSpacePrefix ='{!nameSpacePrefixForComponent}'; 
+       var applicationName = nameSpacePrefix+":MKT_DataConnector_ims";
+       var landingPage = nameSpacePrefix+":MKT_DataConnectorLandingPage_ims";
+        $Lightning.use(applicationName, function() {
+          $Lightning.createComponent(landingPage,
+          { label : "" },
+          "lightning",
+          function(cmp) {
+            // do some stuff
+          });
+        });
+    </script>
+    <style type="text/css">
+        /*to remove extra padding on classic salesforce theme*/
+        .noSidebarCell {
+            padding: 0px !important;
+        }
+    </style>
+</div>
+</apex:page>

@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- Demande de mise à jour --></value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value><!-- Demande de mise à jour --></value>
+    </caseValues>
+    <fields>
+        <label><!-- Activity ID --></label>
+        <name>QIDC__Activity_ID_ims__c</name>
+    </fields>
+    <fields>
+        <label><!-- Activity SF ID --></label>
+        <name>QIDC__Activity_SF_ID_ims__c</name>
+    </fields>
+    <fields>
+        <label><!-- Address ID --></label>
+        <name>QIDC__Address_ID_ims__c</name>
+    </fields>
+    <fields>
+        <label><!-- Address Line 1 --></label>
+        <name>QIDC__Address_Line_1_ims__c</name>
+    </fields>
+    <fields>
+        <label><!-- Address SF ID --></label>
+        <name>QIDC__Address_SF_ID_ims__c</name>
+    </fields>
+    <fields>
+        <label><!-- Category --></label>
+        <name>QIDC__Category_ims__c</name>
+        <picklistValues>
+            <masterLabel>B</masterLabel>
+            <translation><!-- B --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- City --></label>
+        <name>QIDC__City_ims__c</name>
+    </fields>
+    <fields>
+        <label><!-- Client Request Id --></label>
+        <name>QIDC__Client_Request_Id_ims__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact --></label>
+        <name>QIDC__Contact_ims__c</name>
+    </fields>
+    <fields>
+        <label><!-- Country --></label>
+        <name>QIDC__Country_ISO_Code_ims__c</name>
+        <picklistValues>
+            <masterLabel>FR</masterLabel>
+            <translation><!-- FR --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- County --></label>
+        <name>QIDC__County_ims__c</name>
+    </fields>
+    <fields>
+        <help><!-- Courtesy Title of the individual in the workplace. --></help>
+        <label><!-- Courtesy Title --></label>
+        <name>QIDC__Courtesy_Title_ims__c</name>
+        <picklistValues>
+            <masterLabel>0</masterLabel>
+            <translation><!-- 0 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation><!-- 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation><!-- 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation><!-- 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>9</masterLabel>
+            <translation><!-- 9 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Created By --></label>
+        <name>QIDC__CreatedBy_ims__c</name>
+    </fields>
+    <fields>
+        <label><!-- District --></label>
+        <name>QIDC__District_ims__c</name>
+    </fields>
+    <fields>
+        <label><!-- First Name --></label>
+        <name>QIDC__First_Name_ims__c</name>
+    </fields>
+    <fields>
+        <label><!-- Further Processing Required --></label>
+        <name>QIDC__Further_Processing_Required_ims__c</name>
+    </fields>
+    <fields>
+        <help><!-- Gender of the individual in the workplace. --></help>
+        <label><!-- Gender --></label>
+        <name>QIDC__Gender_ims__c</name>
+        <picklistValues>
+            <masterLabel>F</masterLabel>
+            <translation><!-- F --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>M</masterLabel>
+            <translation><!-- M --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>U</masterLabel>
+            <translation><!-- U --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Individual Address ID --></label>
+        <name>QIDC__Individual_Address_ID_ims__c</name>
+    </fields>
+    <fields>
+        <label><!-- Individual Address SF ID --></label>
+        <name>QIDC__Individual_Address_SF_ID_ims__c</name>
+    </fields>
+    <fields>
+        <label><!-- Individual_ID --></label>
+        <name>QIDC__Individual_ID_ims__c</name>
+    </fields>
+    <fields>
+        <label><!-- Individual SF ID --></label>
+        <name>QIDC__Individual_SF_ID_ims__c</name>
+    </fields>
+    <fields>
+        <label><!-- Individual Title --></label>
+        <name>QIDC__Individual_Title_ims__c</name>
+        <picklistValues>
+            <masterLabel>03</masterLabel>
+            <translation><!-- 03 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>05</masterLabel>
+            <translation><!-- 05 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>11</masterLabel>
+            <translation><!-- 11 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>20</masterLabel>
+            <translation><!-- 20 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>21</masterLabel>
+            <translation><!-- 21 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>22</masterLabel>
+            <translation><!-- 22 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DR</masterLabel>
+            <translation><!-- DR --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Professional Type --></label>
+        <name>QIDC__Individual_Type_ims__c</name>
+        <picklistValues>
+            <masterLabel>IR</masterLabel>
+            <translation><!-- IR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MX</masterLabel>
+            <translation><!-- MX --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Individual --></label>
+        <name>QIDC__Individual_ims__c</name>
+        <relationshipLabel><!-- Validation Requests --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Last Name --></label>
+        <name>QIDC__Last_Name_ims__c</name>
+    </fields>
+    <fields>
+        <label><!-- Middle Name --></label>
+        <name>QIDC__Middle_Name_ims__c</name>
+    </fields>
+    <fields>
+        <label><!-- Name --></label>
+        <name>QIDC__Name_ims__c</name>
+    </fields>
+    <fields>
+        <label><!-- OneKey Integration Date --></label>
+        <name>QIDC__OKE_Integration_Date_ims__c</name>
+    </fields>
+    <fields>
+        <label><!-- OneKey Request Eid --></label>
+        <name>QIDC__OneKey_Request_Eid_ims__c</name>
+    </fields>
+    <fields>
+        <label><!-- OneKey Response Date --></label>
+        <name>QIDC__OneKey_Response_Date_ims__c</name>
+    </fields>
+    <fields>
+        <label><!-- Organization Name --></label>
+        <name>QIDC__Organization_Name_ims__c</name>
+    </fields>
+    <fields>
+        <label><!-- Postal Code --></label>
+        <name>QIDC__Postal_Code_ims__c</name>
+    </fields>
+    <fields>
+        <label><!-- Primary Specialty --></label>
+        <name>QIDC__Primary_Specialty_ims__c</name>
+        <picklistValues>
+            <masterLabel>AM</masterLabel>
+            <translation><!-- AM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>B</masterLabel>
+            <translation><!-- B --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Record Type --></label>
+        <name>QIDC__Record_Type_ims__c</name>
+    </fields>
+    <fields>
+        <label><!-- Request Comments --></label>
+        <name>QIDC__Request_Comments_ims__c</name>
+    </fields>
+    <fields>
+        <label><!-- Request Date --></label>
+        <name>QIDC__Request_Date_ims__c</name>
+    </fields>
+    <fields>
+        <label><!-- Request Type --></label>
+        <name>QIDC__Request_Type_ims__c</name>
+        <picklistValues>
+            <masterLabel>New</masterLabel>
+            <translation><!-- New --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Update</masterLabel>
+            <translation><!-- Update --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Response Change Date --></label>
+        <name>QIDC__Response_Change_Date_ims__c</name>
+    </fields>
+    <fields>
+        <label><!-- Response Status Reason --></label>
+        <name>QIDC__Response_Status_Reason_ims__c</name>
+    </fields>
+    <fields>
+        <label><!-- Role --></label>
+        <name>QIDC__Role_ims__c</name>
+        <picklistValues>
+            <masterLabel>AZ</masterLabel>
+            <translation><!-- AZ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>D</masterLabel>
+            <translation><!-- D --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Specialty 2 --></label>
+        <name>QIDC__Specialty2_ims__c</name>
+        <picklistValues>
+            <masterLabel>IC</masterLabel>
+            <translation><!-- IC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IR</masterLabel>
+            <translation><!-- IR --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Specialty 3 --></label>
+        <name>QIDC__Specialty3_ims__c</name>
+        <picklistValues>
+            <masterLabel>IC</masterLabel>
+            <translation><!-- IC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IR</masterLabel>
+            <translation><!-- IR --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>QIDC__Status_ims__c</name>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation><!-- Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending</masterLabel>
+            <translation><!-- Pending --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected</masterLabel>
+            <translation><!-- Rejected --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Telephone No --></label>
+        <name>QIDC__Telephone_No_ims__c</name>
+    </fields>
+    <fields>
+        <label><!-- Validated Act OneKeyID --></label>
+        <name>QIDC__Validated_Act_OneKeyID_ims__c</name>
+    </fields>
+    <fields>
+        <label><!-- Validated Ind OneKeyID --></label>
+        <name>QIDC__Validated_Ind_OneKeyID_ims__c</name>
+    </fields>
+    <fields>
+        <label><!-- Validated Wkp OneKeyID --></label>
+        <name>QIDC__Validated_Wkp_OneKeyID_ims__c</name>
+    </fields>
+    <fields>
+        <label><!-- Web Service Call Status --></label>
+        <name>QIDC__Web_Service_Call_Status_ims__c</name>
+    </fields>
+    <fields>
+        <label><!-- Workplace Address ID --></label>
+        <name>QIDC__Workplace_Address_ID_ims__c</name>
+    </fields>
+    <fields>
+        <label><!-- Workplace Address SF ID --></label>
+        <name>QIDC__Workplace_Address_SF_ID_ims__c</name>
+    </fields>
+    <fields>
+        <label><!-- Workplace ID --></label>
+        <name>QIDC__Workplace_ID_ims__c</name>
+    </fields>
+    <fields>
+        <label><!-- Workplace SF ID --></label>
+        <name>QIDC__Workplace_SF_ID_ims__c</name>
+    </fields>
+    <fields>
+        <label><!-- Workplace Type --></label>
+        <name>QIDC__Workplace_Type_ims__c</name>
+        <picklistValues>
+            <masterLabel>IC</masterLabel>
+            <translation><!-- IC --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Workplace --></label>
+        <name>QIDC__Workplace_ims__c</name>
+        <relationshipLabel><!-- Validation Requests (Workplace) --></relationshipLabel>
+    </fields>
+    <gender><!-- Masculine --></gender>
+    <nameFieldLabel><!-- Validation Request Name --></nameFieldLabel>
+    <recordTypes>
+        <description><!-- Record type to differentiate Activities --></description>
+        <label><!-- Activity --></label>
+        <name>Activity</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Record type to differentiate Workplace --></description>
+        <label><!-- Workplace --></label>
+        <name>Workplace</name>
+    </recordTypes>
+    <startsWith><!-- Consonant --></startsWith>
+</CustomObjectTranslation>

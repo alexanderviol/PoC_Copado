@@ -1,0 +1,10 @@
+.THIS {
+}
+.THIS .myCheckbox{
+  display: inline-block;
+  float: left;
+}
+
+.THIS .uiInput--default .form-element__label {
+    margin-left:10px;  
+}

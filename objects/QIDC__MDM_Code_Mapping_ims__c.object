@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <description>This object holds the mapping information between the MDM lookup code and country to the SF picklist values.</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableChangeDataCapture>false</enableChangeDataCapture>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>false</enableReports>
+    <enableSearch>false</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ControlledByParent</externalSharingModel>
+    <fields>
+        <fullName>QIDC__Field_Mapping_ims__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The field ID which this code is mapped to.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The field ID which this code is mapped to.</inlineHelpText>
+        <label>Field Mapping</label>
+        <referenceTo>QIDC__MDM_Field_Mapping_ims__c</referenceTo>
+        <relationshipLabel>MDM Code Mappings</relationshipLabel>
+        <relationshipName>MDM_Code_Mappings</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>QIDC__LookupType_ims__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The LookupType ID which this code is mapped to.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The LookupType ID which this code is mapped to.</inlineHelpText>
+        <label>Lookup Type</label>
+        <referenceTo>QIDC__MDM_LookupType_ims__c</referenceTo>
+        <relationshipLabel>MDM Code Mappings</relationshipLabel>
+        <relationshipName>MDM_Code_Mappings</relationshipName>
+        <relationshipOrder>1</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>QIDC__Picklist_Value_ims__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The Salesforce picklist value that is mapped to the MDM code.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The Salesforce picklist value that is mapped to the MDM code.</inlineHelpText>
+        <label>Picklist Value</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>QIDC__Record_Type_Name_ims__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Developer name of the record type to map with the MDM code.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Developer name of the record type to map with the MDM code.</inlineHelpText>
+        <label>Record Type</label>
+        <length>80</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>MDM Code Mapping</label>
+    <nameField>
+        <displayFormat>MDMCM-{000000}</displayFormat>
+        <label>MDM Code Mappings</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>MDM Code Mappings</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

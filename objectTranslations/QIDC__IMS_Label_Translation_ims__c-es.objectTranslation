@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- Traducciones IMS --></value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value><!-- Traducciones IMS --></value>
+    </caseValues>
+    <fields>
+        <help>Id de Traducción IMS por lo que no puede ser modificada por el Cliente</help>
+        <label><!-- ID --></label>
+        <name>QIDC__ID_ims__c</name>
+    </fields>
+    <fields>
+        <help>Lugar donde la Etiqueta será usada</help>
+        <label><!-- IMS Label --></label>
+        <name>QIDC__IMS_Label_ims__c</name>
+        <relationshipLabel><!-- IMS Label Translations --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Código de Idioma donde será usado</help>
+        <label><!-- ISO Language Code --></label>
+        <name>QIDC__ISO_Language_Code_ims__c</name>
+        <picklistValues>
+            <masterLabel>de</masterLabel>
+            <translation><!-- de --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>el</masterLabel>
+            <translation><!-- el --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>en_US</masterLabel>
+            <translation><!-- en_US --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>es</masterLabel>
+            <translation><!-- es --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>fr</masterLabel>
+            <translation><!-- fr --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>fr_CA</masterLabel>
+            <translation><!-- fr_CA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>hu</masterLabel>
+            <translation><!-- hu --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>it</masterLabel>
+            <translation><!-- it --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ja</masterLabel>
+            <translation><!-- ja --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>nl_NL</masterLabel>
+            <translation><!-- nl_NL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>pl</masterLabel>
+            <translation><!-- pl --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>pt_PT</masterLabel>
+            <translation><!-- pt_PT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ro</masterLabel>
+            <translation><!-- ro --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ru</masterLabel>
+            <translation><!-- ru --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>tr</masterLabel>
+            <translation><!-- tr --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>uk</masterLabel>
+            <translation><!-- uk --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>zh_CN</masterLabel>
+            <translation><!-- zh_CN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>zh_TW</masterLabel>
+            <translation><!-- zh_TW --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Id Externo usado para Carga de Datos</help>
+        <label><!-- Integration ID --></label>
+        <name>QIDC__Integration_ID_ims__c</name>
+    </fields>
+    <fields>
+        <help>Muestra si la Traducción IMS está activa</help>
+        <label><!-- Active --></label>
+        <name>QIDC__Is_Active_ims__c</name>
+    </fields>
+    <fields>
+        <help>&quot;ID unico de IMS del registro principal (Este campo contiene el valor sólo si existe un registro principal asociado con uno maestro. Por ejemplo, el detalle del gráfico es hijo del gráfico.)&quot;</help>
+        <label><!-- Parent ID --></label>
+        <name>QIDC__Parent_ID_ims__c</name>
+    </fields>
+    <fields>
+        <help>Versión de Producto IMS para el que el Dato de Configuración fue creado</help>
+        <label><!-- Product Version --></label>
+        <name>QIDC__Product_Version_ims__c</name>
+    </fields>
+    <fields>
+        <help>Traducción de la Etiqueta Original de IMS</help>
+        <label><!-- Value --></label>
+        <name>QIDC__Value_ims__c</name>
+    </fields>
+    <gender><!-- Feminine --></gender>
+    <nameFieldLabel><!-- Custom Label Translation Name --></nameFieldLabel>
+</CustomObjectTranslation>

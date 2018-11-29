@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ApexComponent xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>40.0</apiVersion>
+    <description>To reduce number soqls add keys in the super constructor.
+Ex: class1 { 
+class1() { 
+LocalizationUtils_ims.LocalizeStrings(&lt;all keys to translate inlcuding component labels&gt;)
+}
+}</description>
+    <label>IMSLabel_ims</label>
+</ApexComponent>

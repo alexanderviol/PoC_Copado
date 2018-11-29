@@ -1,0 +1,4 @@
+<design:component>
+	<design:attribute name="Id" label="Record Id" />
+    <design:attribute name="WO_Id" label="WO Id" />
+</design:component>

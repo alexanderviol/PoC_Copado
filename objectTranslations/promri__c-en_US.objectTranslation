@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>ProMRI</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>ProMRIs</value>
+    </caseValues>
+    <fields>
+        <label><!-- Field strength --></label>
+        <name>field_strength__c</name>
+        <picklistValues>
+            <masterLabel>1.5 T</masterLabel>
+            <translation><!-- 1.5 T --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3.0 T</masterLabel>
+            <translation><!-- 3.0 T --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Isocenter position --></label>
+        <name>isocenter_position__c</name>
+        <picklistValues>
+            <masterLabel>FULL_BODY</masterLabel>
+            <translation><!-- FULL_BODY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HIP_EYE</masterLabel>
+            <translation><!-- HIP_EYE --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Patient --></label>
+        <name>patient__c</name>
+        <relationshipLabel><!-- ProMRIs --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- ProMRI ready --></label>
+        <name>promri_ready__c</name>
+    </fields>
+    <fields>
+        <label><!-- Slew rate --></label>
+        <name>slewrate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Whole body SAR --></label>
+        <name>whole_body_sar__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

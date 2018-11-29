@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>MDR Queue</name>
+    <queueMembers>
+        <users>
+            <user>andrew.gladow@extern.biotronik.com</user>
+            <user>arne.wenzel@extern.biotronik.com</user>
+            <user>christine.gaertner@extern.biotronik.com</user>
+            <user>emily.knox@biotronik.com</user>
+            <user>emna.masmoudi@extern.biotronik.com</user>
+            <user>florian.faust@extern.biotronik.com</user>
+            <user>f.heer@extern.biotronik.com</user>
+            <user>mms_func@extern.biotronik.com</user>
+            <user>mms_sfdx@extern.biotronik.com</user>
+            <user>michael.gross@biotronik.com</user>
+            <user>patrick.kaiser@extern.biotronik.com</user>
+            <user>peter.bosch@extern.biotronik.com</user>
+            <user>saara-maria.kallio@extern.biotronik.com</user>
+            <user>sweicht@extern.biotronik.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+    <queueSobject>
+        <sobjectType>QIDC__MDM_Entity_ims__c</sobjectType>
+    </queueSobject>
+    <queueSobject>
+        <sobjectType>QIDC__MDM_LookupType_ims__c</sobjectType>
+    </queueSobject>
+    <queueSobject>
+        <sobjectType>QIDC__MDM_Merge_Object_ims__c</sobjectType>
+    </queueSobject>
+    <queueSobject>
+        <sobjectType>QIDC__MDM_Object_Mapping_ims__c</sobjectType>
+    </queueSobject>
+    <queueSobject>
+        <sobjectType>QIDC__MDM_Removed_Entities_ims__c</sobjectType>
+    </queueSobject>
+    <queueSobject>
+        <sobjectType>QIDC__MDM_SQS_Caching_ims__c</sobjectType>
+    </queueSobject>
+    <queueSobject>
+        <sobjectType>complaint__c</sobjectType>
+    </queueSobject>
+</Queue>

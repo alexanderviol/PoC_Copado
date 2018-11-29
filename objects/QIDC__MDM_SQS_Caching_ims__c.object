@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <description>This Object is used for Storing Data from SQS</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableChangeDataCapture>false</enableChangeDataCapture>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>false</enableReports>
+    <enableSearch>false</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ReadWrite</externalSharingModel>
+    <fields>
+        <fullName>QIDC__Entity_SFID_ims__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field is used to store Entity SFDC ID</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field is used to store Entity SFDC ID</inlineHelpText>
+        <label>Entity SFID</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>QIDC__Entity_URI_ims__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field is used to store the MDM entity URI</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field is used to store the MDM entity URI</inlineHelpText>
+        <label>Entity URI</label>
+        <length>250</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>QIDC__Event_Type_ims__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field is used to store the MDM event type.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field is used to store the MDM event type.</inlineHelpText>
+        <label>Event Type</label>
+        <length>250</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>QIDC__IsError_ims__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>This flag is used to maintain the error record in download</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This flag is used to maintain the error record in download</inlineHelpText>
+        <label>IsError</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>QIDC__Last_Updated_Time_ims__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field is used to store the entity updated time in MDM</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field is used to store the entity updated time in MDM</inlineHelpText>
+        <label>Last Updated Time</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>QIDC__Relationship_Type_URI_ims__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field is used to store the MDM relationship type URI.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field is used to store the MDM relationship type URI.</inlineHelpText>
+        <label>Relationship Type URI</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>QIDC__Response_JSON_ims__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field is used to store the Response JSON in delta download.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field is used to store the Response JSON in delta download.</inlineHelpText>
+        <label>Response JSON</label>
+        <length>131072</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <label>MDM_SQS_Caching</label>
+    <listViews>
+        <fullName>MDR_Queue_MDM_SQS_Caching_ims</fullName>
+        <filterScope>Queue</filterScope>
+        <label>MDR Queue</label>
+        <queue>MDR_Queue</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>QIDC__All</fullName>
+        <columns>NAME</columns>
+        <columns>QIDC__Entity_URI_ims__c</columns>
+        <columns>QIDC__Event_Type_ims__c</columns>
+        <columns>QIDC__Last_Updated_Time_ims__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>QIDC__All1</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <label>SQS Name</label>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>MDM_SQS_Cachings</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

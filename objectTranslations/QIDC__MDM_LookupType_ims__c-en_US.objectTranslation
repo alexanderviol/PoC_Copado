@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Country Code --></label>
+        <name>QIDC__Country_Code_ims__c</name>
+    </fields>
+    <fields>
+        <label><!-- Data Tenant code --></label>
+        <name>QIDC__Data_Tenant_Code_ims__c</name>
+    </fields>
+    <fields>
+        <label><!-- Data Tenant Label --></label>
+        <name>QIDC__Data_Tenant_Label__c</name>
+    </fields>
+    <fields>
+        <help><!-- To store Source Value of the Lookup Type. --></help>
+        <label><!-- Label --></label>
+        <name>QIDC__Label_ims__c</name>
+    </fields>
+    <fields>
+        <help><!-- To store Lookup Code --></help>
+        <label><!-- Lookup Code --></label>
+        <name>QIDC__Lookup_Code_ims__c</name>
+    </fields>
+    <fields>
+        <help><!-- To store unique id as External Key --></help>
+        <label><!-- Lookup External Key --></label>
+        <name>QIDC__Lookup_ExternalKey_ims__c</name>
+    </fields>
+    <fields>
+        <help><!-- To store Lookup Type Name --></help>
+        <label><!-- Lookup Type Name --></label>
+        <name>QIDC__Lookup_Type_Name_ims__c</name>
+    </fields>
+    <fields>
+        <label><!-- Salesforce Code --></label>
+        <name>QIDC__Salesforce_Code_ims__c</name>
+    </fields>
+    <fields>
+        <label><!-- Salesforce Label --></label>
+        <name>QIDC__Salesforce_Label_ims__c</name>
+    </fields>
+</CustomObjectTranslation>

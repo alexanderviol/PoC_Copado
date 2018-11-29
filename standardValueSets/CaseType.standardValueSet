@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Clinical Trial</fullName>
+        <color>#0B6FCE</color>
+        <default>false</default>
+        <label>Clinical Trial</label>
+    </standardValue>
+    <standardValue>
+        <fullName>General Report</fullName>
+        <color>#78C953</color>
+        <default>false</default>
+        <label>General Report</label>
+    </standardValue>
+    <standardValue>
+        <fullName>OUS Report</fullName>
+        <color>#E27001</color>
+        <default>false</default>
+        <label>OUS Report</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Out of Service Report</fullName>
+        <color>#A845DC</color>
+        <default>false</default>
+        <label>Out of Service Report</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Returned Product Report</fullName>
+        <color>#F3D904</color>
+        <default>false</default>
+        <label>Returned Product Report</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Revision Report</fullName>
+        <color>#A53711</color>
+        <default>false</default>
+        <label>Revision Report</label>
+    </standardValue>
+    <standardValue>
+        <fullName>US Report</fullName>
+        <color>#66E9BD</color>
+        <default>false</default>
+        <label>US Report</label>
+    </standardValue>
+</StandardValueSet>

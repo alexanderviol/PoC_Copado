@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingCriteriaRules>
+        <fullName>X5500_MDR_Cases_APS</fullName>
+        <accessLevel>Read</accessLevel>
+        <description>Shares BINC MDR Cases with APS</description>
+        <label>5500 MDR Cases -&gt; APS</label>
+        <sharedTo>
+            <role>BINC_Advanced_Product_Support</role>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Medical Device Reporting Case</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>sap_company_code__c</field>
+            <operation>equals</operation>
+            <value>&quot;5500_BIO Inc., USA.&quot;</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>X5500_MDR_Cases_Clinical_Studies</fullName>
+        <accessLevel>Read</accessLevel>
+        <description>Shares BINC MDR Cases with Clinical Studies</description>
+        <label>5500 MDR Cases -&gt; Clinical Studies</label>
+        <sharedTo>
+            <role>BINC_Clinical_Studies</role>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Medical Device Reporting Case</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>sap_company_code__c</field>
+            <operation>equals</operation>
+            <value>&quot;5500_BIO Inc., USA.&quot;</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>X5500_MDR_Cases_MDR</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>Gives edit access on all BINC MDR Cases to the MDR team</description>
+        <label>5500 MDR Cases -&gt; MDR</label>
+        <sharedTo>
+            <role>BINC_Medical_Device_Reporting</role>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Medical Device Reporting Case</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>sap_company_code__c</field>
+            <operation>equals</operation>
+            <value>&quot;5500_BIO Inc., USA.&quot;</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+</SharingRules>

@@ -1,0 +1,37 @@
+<apex:page standardController="Contact" recordSetVar="conList" extensions="ProMRICheckControllerExt" >
+    <apex:pageMessages />
+    <style>
+        .deviceFont {
+            font-size:11px;     
+        } 
+        body {
+            font-family: Sans-serif;
+        }
+    </style>
+    <apex:includeScript value="/soap/ajax/36.0/connection.js"/>
+   <script>
+    window.onload = function(){
+        // Encoded contIds to prevent XSS attacks.   
+        var ifPatient = '{!JSENCODE(patient)}'
+        var nbOfSelected = '{!JSENCODE(TEXT(contNb))}';
+        var myList = '{!contactIds}';
+              
+        if(nbOfSelected == null || nbOfSelected == 0) {
+            alert('{!($Label.SELECT_ATLEAST_ONE_PATIENT)}');
+            redirect();  
+        } else if (ifPatient == 'Not All Patients'){
+           alert('{!($Label.SELECT_ALL_PATIENTS)}');
+           redirect(); 
+        } else { 
+            ProMRICheckControllerExt.CheckProMRI(myList, function(result, event) {
+                alert('{!($Label.PROMRI_CHECK_STARTED)}');
+                redirect();
+            });            
+        }
+    }
+    
+    function redirect() {
+        location.href = '/one/one.app#/sObject/Contact/list?filterName=Recent';
+    }
+    </script>
+</apex:page>

@@ -1,0 +1,22 @@
+<apex:page standardController="Order" recordSetVar="orders" extensions="OrderSapSubmissionListCtrl" action="{!updateOrders}" lightningStylesheets="true">
+    <apex:messages />
+     <style>
+        .deviceFont {
+            font-size:11px;     
+        } 
+        body {
+            font-family: Sans-serif;
+        }
+        ul.slds-vf-messages{
+         	margin-right: 50%;
+    		margin-left: 50%;
+        }
+    </style>
+    <script>
+        var cancel = '{!cancel}';
+    	window.setTimeout(function(){
+        // Move back to the last list view
+        this.parent.location.href = cancel;
+    }, 1000);
+    </script>
+</apex:page>

@@ -1,0 +1,254 @@
+<aura:component controller ="CmOrderCreationController" implements="force:lightningQuickAction,force:hasRecordId,force:hasSObjectName,flexipage:availableForAllPageTypes" access="global">
+    
+    <aura:handler name="init" value="{!this}" action="{!c.init}" />
+    
+    <aura:attribute name="sobjecttype" type="String" default="{!v.sObjectName}"/>
+    <aura:attribute name="recordId" type="Id" />
+    <aura:attribute name="contact" type="Contact"/>
+    
+    <aura:attribute name="d_ordertype" type="String" access="PRIVATE"/>
+    <aura:attribute name="options" type="List" access="PRIVATE"/>
+    <aura:attribute name="selectedValue" type="String" access="PRIVATE"/>
+    <aura:attribute name="comboselectedValue" type="String" access="PRIVATE"/>
+    <aura:attribute name="HandOut" type="Boolean" default="true"/>
+    
+    <aura:attribute name="optionsRadio" type="List" access="PRIVATE"/>
+    <aura:attribute name="value" type="String" />
+    
+    <aura:attribute name="serial_number" type="String" default=""/>
+    <aura:attribute name="inventory_name" type="String" default=""/>
+    
+    <aura:attribute name="products" type="List" default="[]" access="PRIVATE"/>
+    <aura:attribute name="product_value" type="Id"/>
+    
+    <aura:attribute name="tempContact" type="Contact"/>
+    <aura:attribute name="ourProductItem" type="ProductItem"/>
+    <aura:attribute name="ourProduct" type="Product2"/>
+    
+    <aura:attribute name="collect" type="Boolean" default="true"/>
+    <aura:attribute name="summary" type="Boolean" default="false"/>
+    <aura:attribute name="recap" type="Boolean" default="false"/>
+    <aura:attribute name="showError" type="Boolean" default="false"/>
+    <aura:attribute name="errorText" type="String" default=""/>
+    <aura:attribute name="goBack" type="Boolean" default="true"/>
+    
+    <aura:attribute name="addessToUpdate" type="List" access="PRIVATE" />
+    <aura:attribute name="selectedAddressToUpdate" type="String" default="none"/>
+    <aura:attribute name="showAddressInput" type="Boolean" default="false"/>
+    
+    <aura:attribute name="addressList" type="List" default="[]"/>
+    <aura:attribute name="street" type="String" default=""/>
+    <aura:attribute name="city" type="String" default=""/>
+    <aura:attribute name="province" type="String" default=""/>
+    <aura:attribute name="country" type="String" default=""/>
+    <aura:attribute name="postalCode" type="String" default=""/>
+    <!--<aura:attribute name="provinceOptions" type="List" default="[]"/>
+    <aura:attribute name="countryOptions" type="List" default="[]"/>-->
+    <aura:attribute name="countryOps" type="List" default="[]"/>
+    <aura:attribute name="statesOp" type="List" default="[]"/>
+    
+    <aura:attribute name="rep_for_credit" type="List" default="[]" access="PRIVATE"/>
+    <aura:attribute name="repSelected" type="Id"/>
+    <aura:attribute name="showCollectRep" type="Boolean" default="false"/>
+    
+    <aura:handler name="change" value="{! v.country }" action="{! c.updateProvinces }"/>
+    
+    <aura:attribute name="spinner" type="Boolean" default="false"/>
+    
+    <lightning:layout class="slds-page-header slds-page-header--object-home">
+    	<lightning:layoutItem>
+            <lightning:icon iconName="standard:scan_card" alternativeText="Contact" />
+
+        </lightning:layoutItem>
+        <lightning:layoutItem padding="horizontal-small">
+            <div class="page-section page-header">
+                <h1 class="slds-text-heading--label">{!$Label.c.LBL_CM_ORDER_HEADLINE2}</h1>
+                <h2 class="slds-text-heading--medium"> <ui:outputText value="{!v.contact.LastName}"/>, <ui:outputText value="{!v.contact.FirstName}"/></h2>
+            </div>
+            
+        </lightning:layoutItem>
+    </lightning:layout>
+    
+    <aura:if isTrue="{!v.spinner}">
+        <div role="status" class="slds-spinner slds-spinner_medium">
+            <span class="slds-assistive-text">Loading</span>
+            <div class="slds-spinner__dot-a"></div>
+            <div class="slds-spinner__dot-b"></div>
+        </div>
+    </aura:if>
+    
+    <aura:if isTrue="{!v.showError}">
+        <br/>
+        <div class="slds-notify slds-notify_alert slds-theme_alert-texture slds-theme_error" role="alert">
+            <h2>{!v.errorText}</h2>
+        </div> 
+        <br/><br/>
+        <aura:if isTrue="{!v.goBack}">
+            <button class="slds-button slds-button--brand" onclick="{!c.previous}">{!$Label.c.LBL_CM_BUTTON_PREVIOUS}</button>
+        </aura:if>
+        
+        <aura:set attribute="else">
+            
+            
+            <!-- start collect-->
+            <aura:if isTrue="{!v.collect}">
+              <br/>  
+                <!-- select a rep for credit -->
+                <aura:if isTrue="{!v.showCollectRep}">
+                    <div class="slds-section slds-is-open">
+                        <h3 class="slds-section__title slds-theme_shade">
+                            <span class="slds-truncate slds-p-horizontal_small" title="Section Title"> {!$Label.c.LBL_RESPONSIBILITIES}</span>
+                        </h3>
+                        <div aria-hidden="false" class="slds-section__content">
+                            <lightning:combobox aura:id="inputCmp" label="{!$Label.c.LBL_SELEC_REP_FOR_CREDIT}" value="{!v.repSelected}" required="true" options="{! v.rep_for_credit }" onchange="{! c.selectRepCredit }"/>
+                        </div>
+                    </div>
+                    <br/>
+                </aura:if>
+                
+                <div class="slds-section slds-is-open">
+                    <h3 class="slds-section__title slds-theme_shade">
+                        <span class="slds-truncate slds-p-horizontal_small" title="Section Title">{!$Label.c.LBL_CM_ORDER_TYPE_OF_SHIPMENT}</span>
+                    </h3>
+                    <div aria-hidden="false" class="slds-section__content">
+                        <lightning:combobox  label="{!$Label.c.LBL_CM_ORDER_TYPE_OF_SHIPMENT_LIST}" value="{!v.comboselectedValue}" options="{! v.options }" onchange="{! c.handleChange }"/>
+                    </div>
+                </div>
+                <br/>
+                <aura:if isTrue="{!v.HandOut}">  
+                    <div class="slds-section slds-is-open">
+                        <h3 class="slds-section__title slds-theme_shade">
+                            <span class="slds-truncate slds-p-horizontal_small" title="Section Title">{!$Label.c.LBL_PRODUCT_SEARCH_TITLE}</span>
+                        </h3>
+                        <div aria-hidden="false" class="slds-section__content">
+                            <div class="row">
+                                <lightning:input name="serial_number" value="{!v.serial_number}" label="{!$Label.c.LBL_SEARCH_BY_SERIAL_NUMBER}" />
+                            </div>
+                            <div class="row">
+                                <lightning:input name="inventory_name" value="{!v.inventory_name}" label="{!$Label.c.LBL_SEARCH_BY_NAME_INVENTORY}" />
+                            </div>
+                            <br/>
+                            <div class="row">
+                                <lightning:button label="{!$Label.c.BUTTON_CMORDER_SEARCH}" title="Neutral action" onclick="{!c.searchProduct}"/>
+                            </div>
+                        </div>
+                    </div>
+                </aura:if>    
+                
+                <div class="slds-section slds-is-open">
+                    <h3 class="slds-section__title slds-theme_shade">
+                        <span class="slds-truncate slds-p-horizontal_small" title="Section Title">{!$Label.c.LBL_AVAILABLE_PRODUCTS}</span>
+                    </h3>
+                    <div aria-hidden="false" class="slds-section__content">
+                        <lightning:combobox aura:id = "fieldId" label="{!$Label.c.LBL_AVAILABLE_PRODUCTS_SELECT}" required="true" value="{!v.product_value}" placeholder="Select Product" options="{! v.products }" onchange="{! c.selectOneProduct }" />
+                    </div>
+                </div>
+                <br/>
+                <aura:if isTrue="{!v.HandOut}">
+                    <aura:set attribute="else">
+                        
+                        
+                        <aura:if isTrue="{!v.showAddressInput}">
+                            <aura:set attribute="else">
+                                <div class="slds-section slds-is-open">
+                                    <h3 class="slds-section__title slds-theme_shade">
+                                        <span class="slds-truncate slds-p-horizontal_small" title="Section Title">{!$Label.c.LBL_ADRESS_INPUT_TITEL}</span>
+                                    </h3>
+                                    <div aria-hidden="false" class="slds-section__content">
+                                        <lightning:radioGroup name="radioGroup"
+                                                              label="Please select an address"
+                                                              options="{! v.optionsRadio }"
+                                                              value="{! v.value }"
+                                                              type="radio"
+                                                              onchange="{! c.handleparamChange }"/>
+                                        <br/>  <br/> 
+                                        <lightning:button label="{!$Label.c.BUTTON_NEW_SHIPPING_ADRESS}" title="Neutral action" onclick="{! c.createNewAddress }"/>
+                                    </div>
+                                </div>
+                            </aura:set>
+                            <div class="slds-section slds-is-open">
+                                <h3 class="slds-section__title slds-theme_shade">
+                                    <span class="slds-truncate slds-p-horizontal_small" title="Section Title">{!$Label.c.BUTTON_NEW_SHIPPING_ADRESS}</span>
+                                </h3>
+                                <div aria-hidden="false" class="slds-section__content">
+                                    <div style="max-width: 600px;">
+                                        <lightning:inputAddress
+                                                                aura:id="myaddress"
+                                                                addressLabel="Address"
+                                                                streetLabel="Street"
+                                                                cityLabel="City"
+                                                                countryLabel="Country"
+                                                                provinceLabel="Province/State"
+                                                                postalCodeLabel="PostalCode"
+                                                                street="{! v.street }"
+                                                                city="{! v.city }"
+                                                                province="{! v.province }"
+                                                                country="{! v.country }"
+                                                                postalCode="{! v.postalCode }"
+                                                                countryOptions="{! v.countryOps }"
+                                                                provinceOptions="{! v.statesOp }"
+                                                                />
+                                    </div>
+                                </div>                
+                            </div>
+                            <div class="slds-section slds-is-open">
+                                <h3 class="slds-section__title slds-theme_shade">
+                                    <span class="slds-truncate slds-p-horizontal_small" title="Section Title">{!$Label.c.LBL_CM_ORDER_PATIENT_ADRESS_UPDATE}</span>
+                                </h3>
+                                <div aria-hidden="false" class="slds-section__content">
+                                    <lightning:combobox  label="{!$Label.c.LBL_CM_ORDER_PATIENT_ADRESS_UPDATE}" aura:id="a" value="{!v.selectedAddressToUpdate}" 
+                                                        placeholder="Select Address" options="{! v.addessToUpdate }" onchange="{! c.updateAddresspatient }" /> 
+                                </div>
+                            </div>
+                        </aura:if>
+                    </aura:set>
+                </aura:if>     
+                <br/> <br/> <br/><br/><br/><br/>
+                <button class="slds-button slds-button--brand" onclick="{!c.navigate}" type="submit">{!$Label.c.BUTTON_CMORDER_NEXT}</button>
+            </aura:if>
+            
+            
+            <!-- finish collect -->
+            <!-- start summary -->
+            <aura:if isTrue="{!v.summary}">
+                <br/>
+                <div class="slds-section slds-is-open">
+                    <h3 class="slds-section__title slds-theme_shade">
+                        <span class="slds-truncate slds-p-horizontal_small" title="Section Title">{!$Label.c.LBL_CM_ORDER_SUMMARY}</span>
+                    </h3>
+                    <div aria-hidden="false" class="slds-section__content">
+                        <div class="slds-box">   
+                            
+                            <aura:if isTrue="{!v.HandOut}">
+                                {!$Label.c.LBL_CM_ORDER_DIRECT_HANDOUT}<br/>
+                                <ui:outputText value="{!v.ourProductItem.Product2.Name}"/>, {!$Label.c.SERIAL_NUMBER}: <ui:outputText value="{!v.ourProductItem.SerialNumber}"/>
+                                <aura:set attribute="else">
+                                    {!$Label.c.LBL_THIS_IS} &nbsp;<ui:outputText value="{!v.comboselectedValue}"/> &nbsp;{!$Label.c.LBL_OF}&nbsp; <ui:outputText value="{!v.ourProduct.Name}"/>&nbsp;&nbsp;<br/>
+                                    {!$Label.c.LBL_CM_ORDER_DIRECT_HANDOUT_SHIPPED_TO}&nbsp;<ui:outputText value="{!v.selectedValue}"/> &nbsp;&nbsp;<br/>
+                                    {!v.tempContact.MailingStreet} <br/>
+                                    {!v.tempContact.MailingCity} &nbsp;&nbsp; {!v.tempContact.MailingPostalCode}<br/>
+                                    {!v.tempContact.MailingStateCode} &nbsp;&nbsp; {!v.tempContact.MailingCountry}<br/>
+                                </aura:set>
+                            </aura:if>
+                        </div>   
+                    </div>
+                </div>
+                
+                <br/> <br/> <br/>
+                <button class="slds-button slds-button--brand" onclick="{!c.createmyOrder}" type="submit">{!$Label.c.BUTTON_CMORDER_SUBMIT}</button>
+                <button class="slds-button slds-button--brand" onclick="{!c.previous}">{!$Label.c.LBL_CM_BUTTON_PREVIOUS}</button>
+                
+            </aura:if>
+            <!-- finish summary -->
+            <!-- recap -->
+            <aura:if isTrue="{!v.recap}">
+                <br/>
+                <div class="slds-box">
+                    <div><ui:outputText value="{!$Label.c.LBL_RESULT_ORDER_CREATED}"/></div>
+                </div>                
+                <br/>
+                <button class="slds-button slds-button--brand" onclick="{!c.close}">{!$Label.c.LBL_CM_BUTTON_CLOSE}</button>
+            </aura:if> 
+        </aura:set>  
+    </aura:if>
+</aura:component>

@@ -1,0 +1,39 @@
+<apex:page standardStylesheets="false" Controller="QIDC.JobStatisticsController_ims" sidebar="false" showHeader="false" tabStyle="Data_Connector_Setup_ims__tab">
+<apex:stylesheet value="{!URLFOR($Resource.QIDC__SLDS, 'assets/styles/salesforce-lightning-design-system-vf.min.css')}" />
+<apex:includeScript value="/lightning/lightning.out.js" />
+    <apex:includeLightning />
+ <apex:include pageName="QIDC__SetupLightningCSSHack"/>
+    
+<div id = "lightning">
+   
+
+    <script> 
+     var nameSpacePrefix ='{!nameSpacePrefixForComponent}'; 
+       var lightningAppBundle = nameSpacePrefix+":DataConnector_ims";
+       var lightningComponent = nameSpacePrefix+":ErrorLog_ims";
+       
+        
+        $Lightning.use(lightningAppBundle, function() {
+            $Lightning.createComponent(lightningComponent,{"dataParams":{
+                        "sObject":"Error_Log_ims__c",
+                        "fields":{'id':'Id','name':'Name','origin':'Origin_ims__c','message':'Message_ims__c','errorCode':'Error_Code_ims__c','status':'Status_ims__c','cause':'Cause_ims__c','type':'Type_ims__c','createdDate':'CreatedDate', 'userId':'User_ims__c', 'userName':'User_Name_ims__c','createdById':'CreatedBy.Id', 'createdByName':'CreatedBy.Name', 'createdByPhotoUrl':'CreatedBy.SmallPhotoUrl'},
+                        "errorTypeSelected": {'value':'OK_','label':'All'},
+                        "isErrorFilterOn" : true,
+                        "errorTypes" :[ {'value':'OK_','label':'All'},{'value':'OK_DOWNLOAD','label':'Search and Download Errors'}, {'value':'OK_BULK_DOWNLOAD','label':'Delta Download Errors'},{'value':'OK_VALIDATION_REQUEST','label':'Validation Request Errors'},{'value':'OK_SETUP','label':'OneKey Setup Errors'}],
+                        "errorLabel1" : "OK_SETUP_ERRORLOG_ERROR_1001",
+                        "errorLabel2" : "OK_SETUP_ERRORLOG_ERROR_1002"
+                }},
+                "lightning",
+                function(cmp) {
+            // do some stuff
+            });
+        });
+     </script> 
+     <style type="text/css">
+    /*to remove extra padding on classic salesforce theme*/
+    .noSidebarCell {
+        padding: 0px !important;
+    }
+</style>  
+   </div>
+</apex:page>

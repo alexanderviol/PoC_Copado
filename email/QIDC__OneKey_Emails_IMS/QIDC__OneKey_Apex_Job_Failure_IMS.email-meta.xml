@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Email Templete for Onekey Apex Job Failed.</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>OneKey Apex Job Failure</name>
+    <style>none</style>
+    <subject>Failure: Job for {!QIDC__Refresh_My_OneKey_Statistics_ims__c.QIDC__CodeBase_ims__c} has failed</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

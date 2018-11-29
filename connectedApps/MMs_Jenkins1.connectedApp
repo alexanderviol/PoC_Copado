@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConnectedApp xmlns="http://soap.sforce.com/2006/04/metadata">
+    <contactEmail>peter.bosch@t-systems.com</contactEmail>
+    <contactPhone>+4915114629138</contactPhone>
+    <label>MMs_Jenkins1</label>
+    <oauthConfig>
+        <callbackUrl>Http://localhost:1717/OauthRedirect</callbackUrl>
+        <certificate>MIID5jCCAs4CCQCyAAulD73S3jANBgkqhkiG9w0BAQsFADCBtDELMAkGA1UEBhMCREUxDzANBgNVBAgMBlNheG9ueTEQMA4GA1UEBwwHRHJlc2RlbjEsMCoGA1UECgwjVC1TeXN0ZW1zIE11bHRpbWVkaWEgU29sdXRpb25zIEdtYkgxFzAVBgNVBAsMDkNPRSBTYWxlc2ZvcmNlMRcwFQYDVQQDDA5KZW5raW5zIFNlcnZlcjEiMCAGCSqGSIb3DQEJARYTbXJ3ZUBtbXMtZHJlc2Rlbi5kZTAeFw0xNzExMTAxMDU0MzRaFw0xODExMTAxMDU0MzRaMIG0MQswCQYDVQQGEwJERTEPMA0GA1UECAwGU2F4b255MRAwDgYDVQQHDAdEcmVzZGVuMSwwKgYDVQQKDCNULVN5c3RlbXMgTXVsdGltZWRpYSBTb2x1dGlvbnMgR21iSDEXMBUGA1UECwwOQ09FIFNhbGVzZm9yY2UxFzAVBgNVBAMMDkplbmtpbnMgU2VydmVyMSIwIAYJKoZIhvcNAQkBFhNtcndlQG1tcy1kcmVzZGVuLmRlMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAuTQMPjrCgvbzKd+UiQljE3SmzHW9IcT90B4yA/QXx/M7S3GVp5MaDvONbdNZupNlVJdlfuzJyZuGhXu/GPFs1sXw0T3/60FeOYSe2P9DJGQV66qiijvkngzkSUnDtm79J/jVOjTrvsnKnsa0CDPr6Ed83/t8tsXer+NdVQsNQbW828g66VFJMH6aOPNpuEx6IDB498XwwH0q6aB0IVx0lqlQisDzjLe+JWB0YIlZBkLGZIlurv7nGcszoVh1peDbG6FZxuhfKHC4wpzYm/UB8HS8C9XIK8E7ShFH4TmfbQhWWDZrgRtoFNlchucjBVK4S+oerygqLXd3qpocOoHS/QIDAQABMA0GCSqGSIb3DQEBCwUAA4IBAQA62R5ODZhEipMs9ld3CaiOiP+8SX5TEsASPx9Q6iQEOUVa66STnwCf6I/Ea/5NP1a+cF3+T0F+RLGpOcwhBLdKFmEu0awwtz97hQ2tWTCDy9WeCOq/Gg4tBmjSVHN+fzDwzFa7WSZhHnGaEbDwSxrIi/PHur/XC1I7o1TIu0Nym1x3ylv/eLzN6BsPfU2wkcKwG2Trvuxn2pM7hg53VlamgYxW24qMdJZqyg1Ks2g9wp6c5UqCsLwyP3gvNV+MThyx88ZRT/oB1rwxeznEsPWUOP+pIAN72O9C039sKbP/Lzh6M3Mg4yNt/Gpo+5+JTqK4CnNJEhieS3JCOXHTHB4m</certificate>
+        <consumerKey>3MVG9llQY5kM9T6ft1Y9n7M2VbW0xdd8BH5png5QOy9VMrg6_Vd82vl3i5wvsI3R7DhwTP.FqrWnFkS1x0fcJ</consumerKey>
+        <scopes>Basic</scopes>
+        <scopes>Api</scopes>
+        <scopes>Web</scopes>
+        <scopes>Full</scopes>
+        <scopes>Chatter</scopes>
+        <scopes>CustomApplications</scopes>
+        <scopes>RefreshToken</scopes>
+        <scopes>OpenID</scopes>
+        <scopes>CustomPermissions</scopes>
+        <scopes>Wave</scopes>
+        <scopes>Eclair</scopes>
+    </oauthConfig>
+</ConnectedApp>

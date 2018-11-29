@@ -1,0 +1,15 @@
+<apex:page standardController="QIDC__MDM_DCR_ims__c" extensions="QIDC.MDM_DCR_IMS" standardStylesheets="false" sidebar="false" >
+    <apex:includeLightning />
+    <div id="lightning"/>
+    <apex:include pageName="QIDC__SetupLightningCSSHack"/>
+    
+    <script>
+ 		var nameSpacePrefix ='{!nameSpacePrefixForComponent}';
+        var lightningAppBundle = nameSpacePrefix+":MDM_DCR_VIEW_LTNG_APP_IMS";
+        var lightningComponent = nameSpacePrefix+":MDM_DCR_VIEW_IMS";
+        
+        $Lightning.use(lightningAppBundle, function() {
+            $Lightning.createComponent( lightningComponent,{dcrId:"{!$CurrentPage.parameters.id}"},"lightning",function(cmp) {});
+        });
+    </script>
+</apex:page>

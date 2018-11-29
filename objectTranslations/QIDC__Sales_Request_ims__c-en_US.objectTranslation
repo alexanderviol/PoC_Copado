@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Account --></label>
+        <name>QIDC__Account_ims__c</name>
+        <relationshipLabel><!-- Sales Requests --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Integration Id --></label>
+        <name>QIDC__IntegrationID_ims__c</name>
+    </fields>
+    <fields>
+        <label><!-- Journey External Id --></label>
+        <name>QIDC__Journey_ExternalID_ims__c</name>
+    </fields>
+    <fields>
+        <label><!-- Journey --></label>
+        <name>QIDC__Journey_ims__c</name>
+        <relationshipLabel><!-- Sales Requests --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>QIDC__Status_ims__c</name>
+        <picklistValues>
+            <masterLabel>Failed</masterLabel>
+            <translation><!-- Failed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending</masterLabel>
+            <translation><!-- Pending --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Refreshed</masterLabel>
+            <translation><!-- Refreshed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Synced</masterLabel>
+            <translation><!-- Synced --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- User Email --></label>
+        <name>QIDC__User_Email_ims__c</name>
+    </fields>
+    <fields>
+        <label><!-- User Name --></label>
+        <name>QIDC__User_Name_ims__c</name>
+    </fields>
+</CustomObjectTranslation>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>EMDR Runtime Configuration</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>EMDR Runtime Configurations</value>
+    </caseValues>
+    <fields>
+        <label><!-- Admin Email --></label>
+        <name>admin_email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Analysis Report EMDR Record Type --></label>
+        <name>analysis_report_emdr_rectype__c</name>
+    </fields>
+    <fields>
+        <label><!-- Analysis Report: Submitted to EMDR --></label>
+        <name>analysis_report_status_submitted__c</name>
+    </fields>
+    <fields>
+        <label><!-- Test EMDR Record Type --></label>
+        <name>emdr_rec_type_test__c</name>
+    </fields>
+    <fields>
+        <label><!-- G1 Contact City --></label>
+        <name>g1_contact_city__c</name>
+    </fields>
+    <fields>
+        <label><!-- G1 Contact Country Code --></label>
+        <name>g1_contact_country_code__c</name>
+    </fields>
+    <fields>
+        <label><!-- G1 Contact Facility Name --></label>
+        <name>g1_contact_facility_name__c</name>
+    </fields>
+    <fields>
+        <label><!-- G1 Contact State Code --></label>
+        <name>g1_contact_state_code__c</name>
+    </fields>
+    <fields>
+        <label><!-- G1 Contact Street --></label>
+        <name>g1_contact_street__c</name>
+    </fields>
+    <fields>
+        <label><!-- G1 Contact Phone --></label>
+        <name>g1_contact_telecom__c</name>
+    </fields>
+    <fields>
+        <label><!-- G1 Contact Zip Code --></label>
+        <name>g1_contact_zip_code__c</name>
+    </fields>
+    <fields>
+        <label><!-- MDR Prefix --></label>
+        <name>mdr_prefix__c</name>
+    </fields>
+    <fields>
+        <label><!-- Occupation --></label>
+        <name>occupation__c</name>
+    </fields>
+    <fields>
+        <label><!-- Patient Record Type --></label>
+        <name>patient_rec_type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Complaint Status: FDA Fail --></label>
+        <name>status_fda_fail__c</name>
+    </fields>
+    <fields>
+        <label><!-- Complaint Status: FDA Pass --></label>
+        <name>status_fda_pass__c</name>
+    </fields>
+    <fields>
+        <label><!-- EMDR Final Status Fail --></label>
+        <name>status_final_fail__c</name>
+    </fields>
+    <fields>
+        <label><!-- EMDR Final Status Pass --></label>
+        <name>status_final_pass__c</name>
+    </fields>
+    <fields>
+        <label><!-- Complaint Status: EMDR Submit Failed --></label>
+        <name>status_submit_to_emdr_fail__c</name>
+    </fields>
+    <fields>
+        <label><!-- Complaint Status: EMDR Submit OK --></label>
+        <name>status_submit_to_emdr_ok__c</name>
+    </fields>
+    <fields>
+        <label><!-- Complaint Status: Ready to Submit --></label>
+        <name>status_submit_to_emdr_ready__c</name>
+    </fields>
+    <fields>
+        <label><!-- Test EMDR Record Ids --></label>
+        <name>test_emdr_recordids__c</name>
+    </fields>
+    <fields>
+        <label><!-- Triggers Enabled --></label>
+        <name>triggers_enabled__c</name>
+    </fields>
+    <fields>
+        <label><!-- Web Service Endpoint: FDA Status --></label>
+        <name>ws_endpoint_fdastatus__c</name>
+    </fields>
+    <fields>
+        <label><!-- Web Service Endpoint: Submit --></label>
+        <name>ws_endpoint_submit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Web Service Password --></label>
+        <name>ws_password__c</name>
+    </fields>
+    <fields>
+        <label><!-- Web Service Username --></label>
+        <name>ws_username__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

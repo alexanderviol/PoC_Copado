@@ -1,0 +1,2890 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Rep Allocation</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Rep Allocations</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account --></label>
+        <name>account__c</name>
+        <relationshipLabel><!-- Rep Allocations --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Incoterms --></label>
+        <name>incoterms__c</name>
+        <picklistValues>
+            <masterLabel>CFR</masterLabel>
+            <translation><!-- CFR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CFR, packaging included</masterLabel>
+            <translation><!-- CFR, packaging included --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CIF</masterLabel>
+            <translation><!-- CIF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CIP</masterLabel>
+            <translation><!-- CIP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CPT</masterLabel>
+            <translation><!-- CPT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CPT, packaging excluded</masterLabel>
+            <translation><!-- CPT, packaging excluded --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CPT, packaging included</masterLabel>
+            <translation><!-- CPT, packaging included --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DAF</masterLabel>
+            <translation><!-- DAF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DAP</masterLabel>
+            <translation><!-- DAP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DDP</masterLabel>
+            <translation><!-- DDP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DDU</masterLabel>
+            <translation><!-- DDU --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DEQ</masterLabel>
+            <translation><!-- DEQ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DES</masterLabel>
+            <translation><!-- DES --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EXW</masterLabel>
+            <translation><!-- EXW --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EXW, packaging excluded</masterLabel>
+            <translation><!-- EXW, packaging excluded --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EXW, packaging included</masterLabel>
+            <translation><!-- EXW, packaging included --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FAS</masterLabel>
+            <translation><!-- FAS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FCA</masterLabel>
+            <translation><!-- FCA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FH</masterLabel>
+            <translation><!-- FH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FOB</masterLabel>
+            <translation><!-- FOB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FOB, packaging excluded</masterLabel>
+            <translation><!-- FOB, packaging excluded --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Special arangement in P.O.</masterLabel>
+            <translation><!-- Special arangement in P.O. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Special arangement, packaging excluded</masterLabel>
+            <translation><!-- Special arangement, packaging excluded --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Special arangement, packaging included</masterLabel>
+            <translation><!-- Special arangement, packaging included --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UN</masterLabel>
+            <translation><!-- UN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>XXX</masterLabel>
+            <translation><!-- XXX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>as agreed</masterLabel>
+            <translation><!-- as agreed --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Line of Business and Roles --></label>
+        <name>line_of_business_and_roles__c</name>
+        <picklistValues>
+            <masterLabel>Bradycardia</masterLabel>
+            <translation><!-- Bradycardia --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Diagnostic</masterLabel>
+            <translation><!-- Diagnostic --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Electrophysiology</masterLabel>
+            <translation><!-- Electrophysiology --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tachycardia</masterLabel>
+            <translation><!-- Tachycardia --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vascular Intervention</masterLabel>
+            <translation><!-- Vascular Intervention --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Payment Terms --></label>
+        <name>payment_terms__c</name>
+        <picklistValues>
+            <masterLabel>1. paymt 10% 60d, then 10% 30d</masterLabel>
+            <translation><!-- 1. paymt 10% 60d, then 10% 30d --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>10 days 0.5% / 21 days due net</masterLabel>
+            <translation><!-- 10 days 0.5% / 21 days due net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>10 days 1% / 30 days due net</masterLabel>
+            <translation><!-- 10 days 1% / 30 days due net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>10 days 1.5% / 30 days due net</masterLabel>
+            <translation><!-- 10 days 1.5% / 30 days due net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>10 days 2% / 30 days due net</masterLabel>
+            <translation><!-- 10 days 2% / 30 days due net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>10 days 2% /45 days net</masterLabel>
+            <translation><!-- 10 days 2% /45 days net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>10 days 2% /60 days net</masterLabel>
+            <translation><!-- 10 days 2% /60 days net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>10 days 2% cash discount</masterLabel>
+            <translation><!-- 10 days 2% cash discount --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>10 days 2.75% /30 days due net</masterLabel>
+            <translation><!-- 10 days 2.75% /30 days due net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>10 days 3% / 20 days due net</masterLabel>
+            <translation><!-- 10 days 3% / 20 days due net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>10 days 3% / 30 days due net</masterLabel>
+            <translation><!-- 10 days 3% / 30 days due net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>10 days 3%, 16 2%, 31 net</masterLabel>
+            <translation><!-- 10 days 3%, 16 2%, 31 net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>10 days 4% / 30 days due net</masterLabel>
+            <translation><!-- 10 days 4% / 30 days due net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>10 days 4%, 20/2%, 30 net</masterLabel>
+            <translation><!-- 10 days 4%, 20/2%, 30 net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>10 days 5% / 30 days due net</masterLabel>
+            <translation><!-- 10 days 5% / 30 days due net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>10 days 9% / 30 days due net</masterLabel>
+            <translation><!-- 10 days 9% / 30 days due net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>10 days 9% cash discount</masterLabel>
+            <translation><!-- 10 days 9% cash discount --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>10 days due net</masterLabel>
+            <translation><!-- 10 days due net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>100 days 5% discount</masterLabel>
+            <translation><!-- 100 days 5% discount --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>100 days due net</masterLabel>
+            <translation><!-- 100 days due net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>100 days end of month</masterLabel>
+            <translation><!-- 100 days end of month --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>102 days due net</masterLabel>
+            <translation><!-- 102 days due net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>105 days 10% Discount</masterLabel>
+            <translation><!-- 105 days 10% Discount --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>105 days due net</masterLabel>
+            <translation><!-- 105 days due net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>10d 4% / 14d 3% / 60 Days net</masterLabel>
+            <translation><!-- 10d 4% / 14d 3% / 60 Days net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>10d/2% - 30d/1% - 50d net</masterLabel>
+            <translation><!-- 10d/2% - 30d/1% - 50d net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>10d/3% - 15d/2% - 20 days net</masterLabel>
+            <translation><!-- 10d/3% - 15d/2% - 20 days net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>10th next month PN 60</masterLabel>
+            <translation><!-- 10th next month PN 60 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>10th next month PN 90</masterLabel>
+            <translation><!-- 10th next month PN 90 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>10th next month PN 92</masterLabel>
+            <translation><!-- 10th next month PN 92 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>10th next month PN 95</masterLabel>
+            <translation><!-- 10th next month PN 95 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>10th next month: Combination 1</masterLabel>
+            <translation><!-- 10th next month: Combination 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>10th next month: Combination 5</masterLabel>
+            <translation><!-- 10th next month: Combination 5 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>10th or 3 months after</masterLabel>
+            <translation><!-- 10th or 3 months after --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>12 days net</masterLabel>
+            <translation><!-- 12 days net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>120 day net from monthend</masterLabel>
+            <translation><!-- 120 day net from monthend --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>120 days 10%</masterLabel>
+            <translation><!-- 120 days 10% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>120 days 3% discount</masterLabel>
+            <translation><!-- 120 days 3% discount --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>120 days 6% discount</masterLabel>
+            <translation><!-- 120 days 6% discount --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>120 days due net</masterLabel>
+            <translation><!-- 120 days due net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>120 days from date of invoice</masterLabel>
+            <translation><!-- 120 days from date of invoice --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>135 days due net</masterLabel>
+            <translation><!-- 135 days due net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>14 Days 3%, 30/2%, 45 net</masterLabel>
+            <translation><!-- 14 Days 3%, 30/2%, 45 net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>14 days 1% / 30 days due net</masterLabel>
+            <translation><!-- 14 days 1% / 30 days due net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>14 days 1,5 %/ 60 day net</masterLabel>
+            <translation><!-- 14 days 1,5 %/ 60 day net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>14 days 1.5% / 30 days due net</masterLabel>
+            <translation><!-- 14 days 1.5% / 30 days due net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>14 days 2% / 120 days due net</masterLabel>
+            <translation><!-- 14 days 2% / 120 days due net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>14 days 2% / 20 days due net</masterLabel>
+            <translation><!-- 14 days 2% / 20 days due net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>14 days 2% / 21 days due net</masterLabel>
+            <translation><!-- 14 days 2% / 21 days due net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>14 days 2% / 30 days due net</masterLabel>
+            <translation><!-- 14 days 2% / 30 days due net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>14 days 2% / 45 days due net</masterLabel>
+            <translation><!-- 14 days 2% / 45 days due net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>14 days 2% / 60 days due net</masterLabel>
+            <translation><!-- 14 days 2% / 60 days due net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>14 days 2% /60 days net</masterLabel>
+            <translation><!-- 14 days 2% /60 days net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>14 days 2% /90 days net</masterLabel>
+            <translation><!-- 14 days 2% /90 days net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>14 days 2% cash discount</masterLabel>
+            <translation><!-- 14 days 2% cash discount --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>14 days 2,5 % cash discount</masterLabel>
+            <translation><!-- 14 days 2,5 % cash discount --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>14 days 3% / 30 days due net</masterLabel>
+            <translation><!-- 14 days 3% / 30 days due net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>14 days 3% /60 days net</masterLabel>
+            <translation><!-- 14 days 3% /60 days net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>14 days 3% cash discount</masterLabel>
+            <translation><!-- 14 days 3% cash discount --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>14 days 3% discount</masterLabel>
+            <translation><!-- 14 days 3% discount --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>14 days 3%/ 180 days net</masterLabel>
+            <translation><!-- 14 days 3%/ 180 days net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>14 days 4% /30 days net</masterLabel>
+            <translation><!-- 14 days 4% /30 days net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>14 days 5% /30 days net</masterLabel>
+            <translation><!-- 14 days 5% /30 days net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>14 days after implantation</masterLabel>
+            <translation><!-- 14 days after implantation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>14 days due net</masterLabel>
+            <translation><!-- 14 days due net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>140 days due net</masterLabel>
+            <translation><!-- 140 days due net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>14d 2% / 20 days 0% after impl</masterLabel>
+            <translation><!-- 14d 2% / 20 days 0% after impl --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>14d 2% / 30d 0% after implant.</masterLabel>
+            <translation><!-- 14d 2% / 30d 0% after implant. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>14d 2% / 90d 0% after implant.</masterLabel>
+            <translation><!-- 14d 2% / 90d 0% after implant. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>14d 3% / 21d 2% / 30d due net</masterLabel>
+            <translation><!-- 14d 3% / 21d 2% / 30d due net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>14d 3% / 30d 0% after impl.</masterLabel>
+            <translation><!-- 14d 3% / 30d 0% after impl. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>14d 3% / 30d 2% / 45 days net</masterLabel>
+            <translation><!-- 14d 3% / 30d 2% / 45 days net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>14d 3% / 30d 2% / 60 Days net</masterLabel>
+            <translation><!-- 14d 3% / 30d 2% / 60 Days net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>14d 5% / 30d 3% / 31 Days net</masterLabel>
+            <translation><!-- 14d 5% / 30d 3% / 31 Days net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>14d/3% - 20d/2% - 30d net</masterLabel>
+            <translation><!-- 14d/3% - 20d/2% - 30d net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>14d/3% - 30d/1% - 60d net</masterLabel>
+            <translation><!-- 14d/3% - 30d/1% - 60d net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>14d/3% -30d/1,5% - 45d net bas</masterLabel>
+            <translation><!-- 14d/3% -30d/1,5% - 45d net bas --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>14d/3% -30d/2% - 45d net</masterLabel>
+            <translation><!-- 14d/3% -30d/2% - 45d net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>14d/4% - 30d/2% - 60d net</masterLabel>
+            <translation><!-- 14d/4% - 30d/2% - 60d net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>15 days 2% /45 days net</masterLabel>
+            <translation><!-- 15 days 2% /45 days net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>15 days 3% /30 days net</masterLabel>
+            <translation><!-- 15 days 3% /30 days net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>15 days 3% /60 days net</masterLabel>
+            <translation><!-- 15 days 3% /60 days net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>15 days 3% /90 days net</masterLabel>
+            <translation><!-- 15 days 3% /90 days net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>15 days due net</masterLabel>
+            <translation><!-- 15 days due net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>150 days due net</masterLabel>
+            <translation><!-- 150 days due net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>15th next month PN 105</masterLabel>
+            <translation><!-- 15th next month PN 105 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>15th next month PN 110</masterLabel>
+            <translation><!-- 15th next month PN 110 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>15th next month PN 60</masterLabel>
+            <translation><!-- 15th next month PN 60 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>15th next month PN 75</masterLabel>
+            <translation><!-- 15th next month PN 75 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>15th next month PN 90</masterLabel>
+            <translation><!-- 15th next month PN 90 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>15th next month PN 95</masterLabel>
+            <translation><!-- 15th next month PN 95 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>15th next month: Combination 1</masterLabel>
+            <translation><!-- 15th next month: Combination 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>15th next month: Combination 5</masterLabel>
+            <translation><!-- 15th next month: Combination 5 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>15th or end of next month</masterLabel>
+            <translation><!-- 15th or end of next month --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>16 days 2%, 31 days net.</masterLabel>
+            <translation><!-- 16 days 2%, 31 days net. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>17 days due net</masterLabel>
+            <translation><!-- 17 days due net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>180 days 2% after implantation</masterLabel>
+            <translation><!-- 180 days 2% after implantation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>180 days 3% cash discount</masterLabel>
+            <translation><!-- 180 days 3% cash discount --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>180 days delay payment</masterLabel>
+            <translation><!-- 180 days delay payment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>180 days due net</masterLabel>
+            <translation><!-- 180 days due net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1st rate 60 days due net</masterLabel>
+            <translation><!-- 1st rate 60 days due net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2 Rates 50%/90d / 50%/180d net</masterLabel>
+            <translation><!-- 2 Rates 50%/90d / 50%/180d net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2 rates</masterLabel>
+            <translation><!-- 2 rates --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2 rates a 50% (45, 60 days)</masterLabel>
+            <translation><!-- 2 rates a 50% (45, 60 days) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2 rates a 50% (60, 90 days)</masterLabel>
+            <translation><!-- 2 rates a 50% (60, 90 days) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2 rates directly, 90 days</masterLabel>
+            <translation><!-- 2 rates directly, 90 days --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2 rates, 0 (10% dis.),105 days</masterLabel>
+            <translation><!-- 2 rates, 0 (10% dis.),105 days --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2 rates, 0&amp;30 days</masterLabel>
+            <translation><!-- 2 rates, 0&amp;30 days --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2 rates, 0/120 days no disc.</masterLabel>
+            <translation><!-- 2 rates, 0/120 days no disc. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2 rates, 120 d, from monthend</masterLabel>
+            <translation><!-- 2 rates, 120 d, from monthend --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2 rates, 15&amp;45 days, 10%</masterLabel>
+            <translation><!-- 2 rates, 15&amp;45 days, 10% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2 rates, 20 &amp; 40 days</masterLabel>
+            <translation><!-- 2 rates, 20 &amp; 40 days --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2 rates, 30 &amp; 640 days</masterLabel>
+            <translation><!-- 2 rates, 30 &amp; 640 days --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2 rates, 30&amp;45 days</masterLabel>
+            <translation><!-- 2 rates, 30&amp;45 days --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2 rates, 30&amp;60 days, 10%</masterLabel>
+            <translation><!-- 2 rates, 30&amp;60 days, 10% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2 rates, 30&amp;60 days, 15%</masterLabel>
+            <translation><!-- 2 rates, 30&amp;60 days, 15% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2 rates, 30&amp;60 days, 30%</masterLabel>
+            <translation><!-- 2 rates, 30&amp;60 days, 30% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2 rates, 30&amp;60 days, 7,5%</masterLabel>
+            <translation><!-- 2 rates, 30&amp;60 days, 7,5% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2 rates, 45&amp;60 days, 20&amp;</masterLabel>
+            <translation><!-- 2 rates, 45&amp;60 days, 20&amp; --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2 rates, 60 &amp; 90 days</masterLabel>
+            <translation><!-- 2 rates, 60 &amp; 90 days --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2 rates, 60&amp;90 days, 12%</masterLabel>
+            <translation><!-- 2 rates, 60&amp;90 days, 12% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2 rates, 60&amp;90 days, 15%</masterLabel>
+            <translation><!-- 2 rates, 60&amp;90 days, 15% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2 rates, 60/90 days, 20% disc.</masterLabel>
+            <translation><!-- 2 rates, 60/90 days, 20% disc. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2 rates, 90 &amp; 120 days</masterLabel>
+            <translation><!-- 2 rates, 90 &amp; 120 days --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2 rates, in advance &amp; 180 days</masterLabel>
+            <translation><!-- 2 rates, in advance &amp; 180 days --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2 rates, no disc, 180/210 days</masterLabel>
+            <translation><!-- 2 rates, no disc, 180/210 days --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2 rates,30,60 days, 7,5% disc.</masterLabel>
+            <translation><!-- 2 rates,30,60 days, 7,5% disc. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>20 days 2% /30 days net</masterLabel>
+            <translation><!-- 20 days 2% /30 days net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>20 days 2%, 30 days net</masterLabel>
+            <translation><!-- 20 days 2%, 30 days net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>20 days 3% / 60 days due net</masterLabel>
+            <translation><!-- 20 days 3% / 60 days due net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>20 days 3% discount</masterLabel>
+            <translation><!-- 20 days 3% discount --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>20 days due net</masterLabel>
+            <translation><!-- 20 days due net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>20% advance payment / 80% 45 d</masterLabel>
+            <translation><!-- 20% advance payment / 80% 45 d --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>200 days due net</masterLabel>
+            <translation><!-- 200 days due net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>20th next month PN 100</masterLabel>
+            <translation><!-- 20th next month PN 100 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>20th next month PN 105</masterLabel>
+            <translation><!-- 20th next month PN 105 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>20th next month PN 110</masterLabel>
+            <translation><!-- 20th next month PN 110 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>20th next month PN 120</masterLabel>
+            <translation><!-- 20th next month PN 120 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>20th next month PN 60</masterLabel>
+            <translation><!-- 20th next month PN 60 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>20th next month PN 70</masterLabel>
+            <translation><!-- 20th next month PN 70 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>20th next month PN 80</masterLabel>
+            <translation><!-- 20th next month PN 80 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>20th next month PN 90</masterLabel>
+            <translation><!-- 20th next month PN 90 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>20th next month PN 95</masterLabel>
+            <translation><!-- 20th next month PN 95 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>20th next month: Combination 2</masterLabel>
+            <translation><!-- 20th next month: Combination 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>20th next month: Combination 4</masterLabel>
+            <translation><!-- 20th next month: Combination 4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>20th next month: Combination 6</masterLabel>
+            <translation><!-- 20th next month: Combination 6 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>20th or end of the month</masterLabel>
+            <translation><!-- 20th or end of the month --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>20th, &gt;100000 end nxt 3mth(T)</masterLabel>
+            <translation><!-- 20th, &gt;100000 end nxt 3mth(T) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>20th, &gt;99999 Due 15th nxt mth</masterLabel>
+            <translation><!-- 20th, &gt;99999 Due 15th nxt mth --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>20th, &gt;99999Due10thnxtmth(P90)</masterLabel>
+            <translation><!-- 20th, &gt;99999Due10thnxtmth(P90) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>20th, Due 10th next Month (T)</masterLabel>
+            <translation><!-- 20th, Due 10th next Month (T) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>20th, Due 15th next Month (T)</masterLabel>
+            <translation><!-- 20th, Due 15th next Month (T) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>20th, Due 5th 4 month later(T)</masterLabel>
+            <translation><!-- 20th, Due 5th 4 month later(T) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>20th,&gt;100000Due10thnxtmth(P90)</masterLabel>
+            <translation><!-- 20th,&gt;100000Due10thnxtmth(P90) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>20th,&gt;199999Due10thnxtmth(P92)</masterLabel>
+            <translation><!-- 20th,&gt;199999Due10thnxtmth(P92) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>20th,&gt;199999Due15thnxtmth(P60)</masterLabel>
+            <translation><!-- 20th,&gt;199999Due15thnxtmth(P60) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>20th,&gt;200000Due10thnxtmth(P60)</masterLabel>
+            <translation><!-- 20th,&gt;200000Due10thnxtmth(P60) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>20th,&gt;200000Due15thnxtmth(P60)</masterLabel>
+            <translation><!-- 20th,&gt;200000Due15thnxtmth(P60) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>20th,&gt;299999Due10thnxtmth(P90)</masterLabel>
+            <translation><!-- 20th,&gt;299999Due10thnxtmth(P90) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>20th,&gt;499999 Due5thnxtmth(P90)</masterLabel>
+            <translation><!-- 20th,&gt;499999 Due5thnxtmth(P90) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>20th,Due 10th 2 Month later(T)</masterLabel>
+            <translation><!-- 20th,Due 10th 2 Month later(T) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>20th,Due 10th 3 Month later(T)</masterLabel>
+            <translation><!-- 20th,Due 10th 3 Month later(T) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>20th,Due 10th 4 month later(T)</masterLabel>
+            <translation><!-- 20th,Due 10th 4 month later(T) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>20th,Due 10th nxt mth (P60)</masterLabel>
+            <translation><!-- 20th,Due 10th nxt mth (P60) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>20th,Due 10th nxt mth (P90)</masterLabel>
+            <translation><!-- 20th,Due 10th nxt mth (P90) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>20th,Due 15th 2 Month later(T)</masterLabel>
+            <translation><!-- 20th,Due 15th 2 Month later(T) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>20th,Due 15th 3 Month later(T)</masterLabel>
+            <translation><!-- 20th,Due 15th 3 Month later(T) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>20th,Due 15th nxt mth (P90)</masterLabel>
+            <translation><!-- 20th,Due 15th nxt mth (P90) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>20th,Due 20th 2 Month later(T)</masterLabel>
+            <translation><!-- 20th,Due 20th 2 Month later(T) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>20th,Due 20th 3 Month later(T)</masterLabel>
+            <translation><!-- 20th,Due 20th 3 Month later(T) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>20th,Due 20th 5 month later(T)</masterLabel>
+            <translation><!-- 20th,Due 20th 5 month later(T) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>20th,Due 20th nxt mth (P100)</masterLabel>
+            <translation><!-- 20th,Due 20th nxt mth (P100) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>20th,Due 20th nxt mth (P110)</masterLabel>
+            <translation><!-- 20th,Due 20th nxt mth (P110) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>20th,Due 20th nxt mth (P60)</masterLabel>
+            <translation><!-- 20th,Due 20th nxt mth (P60) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>20th,Due 20th nxt mth (P80)</masterLabel>
+            <translation><!-- 20th,Due 20th nxt mth (P80) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>20th,Due EOM 2 Month later(T)</masterLabel>
+            <translation><!-- 20th,Due EOM 2 Month later(T) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>21 days 2% / 30 days due net</masterLabel>
+            <translation><!-- 21 days 2% / 30 days due net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>21 days 2,5% /35 days net</masterLabel>
+            <translation><!-- 21 days 2,5% /35 days net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>21 days 3% / 30 days due net</masterLabel>
+            <translation><!-- 21 days 3% / 30 days due net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>21 days 3% /180 days due net</masterLabel>
+            <translation><!-- 21 days 3% /180 days due net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>21 days after invoice date</masterLabel>
+            <translation><!-- 21 days after invoice date --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>21 days due net</masterLabel>
+            <translation><!-- 21 days due net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>210 days after implantation</masterLabel>
+            <translation><!-- 210 days after implantation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>210 days due net</masterLabel>
+            <translation><!-- 210 days due net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>21d 3% / 30d 2% / 60 days net</masterLabel>
+            <translation><!-- 21d 3% / 30d 2% / 60 days net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>220 days due net</masterLabel>
+            <translation><!-- 220 days due net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>240 days due net</masterLabel>
+            <translation><!-- 240 days due net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>270 days due net</masterLabel>
+            <translation><!-- 270 days due net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>28 days 3%</masterLabel>
+            <translation><!-- 28 days 3% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2nd rate 90 days due net</masterLabel>
+            <translation><!-- 2nd rate 90 days due net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3 Rates, 30/60/90, no discount</masterLabel>
+            <translation><!-- 3 Rates, 30/60/90, no discount --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3 Rates, 90/105/120, no disc.</masterLabel>
+            <translation><!-- 3 Rates, 90/105/120, no disc. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3 days due net</masterLabel>
+            <translation><!-- 3 days due net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3 rates  60,120,150  days</masterLabel>
+            <translation><!-- 3 rates  60,120,150  days --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3 rates  90,105,120  days</masterLabel>
+            <translation><!-- 3 rates  90,105,120  days --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3 rates, 30&amp;45&amp;60 days, 20%</masterLabel>
+            <translation><!-- 3 rates, 30&amp;45&amp;60 days, 20% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3 rates, 30&amp;60&amp;90 days net</masterLabel>
+            <translation><!-- 3 rates, 30&amp;60&amp;90 days net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3 rates, 30&amp;60&amp;90 days, 20%</masterLabel>
+            <translation><!-- 3 rates, 30&amp;60&amp;90 days, 20% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3 rates, 30&amp;60&amp;90 days, net</masterLabel>
+            <translation><!-- 3 rates, 30&amp;60&amp;90 days, net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3 rates, 30/45/90days no disc.</masterLabel>
+            <translation><!-- 3 rates, 30/45/90days no disc. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3 rates, 30/60/90 days 30%</masterLabel>
+            <translation><!-- 3 rates, 30/60/90 days 30% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3 rates, 40&amp;70&amp;100 days, net</masterLabel>
+            <translation><!-- 3 rates, 40&amp;70&amp;100 days, net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3 rates, 45&amp;60&amp;75 days, 10%</masterLabel>
+            <translation><!-- 3 rates, 45&amp;60&amp;75 days, 10% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3 rates, 45&amp;60&amp;75 days, net</masterLabel>
+            <translation><!-- 3 rates, 45&amp;60&amp;75 days, net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3 rates, 60&amp;90&amp;120 days, net</masterLabel>
+            <translation><!-- 3 rates, 60&amp;90&amp;120 days, net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3 rates, 90&amp;120&amp;150 days, net</masterLabel>
+            <translation><!-- 3 rates, 90&amp;120&amp;150 days, net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3 rates, immed./ 30&amp; 60 d, net</masterLabel>
+            <translation><!-- 3 rates, immed./ 30&amp; 60 d, net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3 weeks 3% / 6 weeks due net</masterLabel>
+            <translation><!-- 3 weeks 3% / 6 weeks due net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>30 days 1% disc/ 90 days net</masterLabel>
+            <translation><!-- 30 days 1% disc/ 90 days net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>30 days 2% / 45 days due net</masterLabel>
+            <translation><!-- 30 days 2% / 45 days due net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>30 days 2% / 60 days due net</masterLabel>
+            <translation><!-- 30 days 2% / 60 days due net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>30 days 2% /120 days net</masterLabel>
+            <translation><!-- 30 days 2% /120 days net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>30 days 2% /90 days net</masterLabel>
+            <translation><!-- 30 days 2% /90 days net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>30 days 2% cash discount</masterLabel>
+            <translation><!-- 30 days 2% cash discount --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>30 days 2% discount</masterLabel>
+            <translation><!-- 30 days 2% discount --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>30 days 2,5% /31 days net</masterLabel>
+            <translation><!-- 30 days 2,5% /31 days net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>30 days 3% / 45 days due net</masterLabel>
+            <translation><!-- 30 days 3% / 45 days due net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>30 days 3% / 90 days due net</masterLabel>
+            <translation><!-- 30 days 3% / 90 days due net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>30 days 3% /60 days net</masterLabel>
+            <translation><!-- 30 days 3% /60 days net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>30 days 3% cash discount</masterLabel>
+            <translation><!-- 30 days 3% cash discount --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>30 days 3% discount</masterLabel>
+            <translation><!-- 30 days 3% discount --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>30 days 5% discount</masterLabel>
+            <translation><!-- 30 days 5% discount --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>30 days 8% discount</masterLabel>
+            <translation><!-- 30 days 8% discount --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>30 days due net</masterLabel>
+            <translation><!-- 30 days due net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>30 days end of month</masterLabel>
+            <translation><!-- 30 days end of month --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>30% adv. paymt./ 70% 30 d. net</masterLabel>
+            <translation><!-- 30% adv. paymt./ 70% 30 d. net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>30/ 60/ 90 days 30%</masterLabel>
+            <translation><!-- 30/ 60/ 90 days 30% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>300 days due net</masterLabel>
+            <translation><!-- 300 days due net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>30d 2,5% /60d 1,5%/90 days net</masterLabel>
+            <translation><!-- 30d 2,5% /60d 1,5%/90 days net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>30d 3% /60d due net after impl</masterLabel>
+            <translation><!-- 30d 3% /60d due net after impl --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>30d month end + 10d</masterLabel>
+            <translation><!-- 30d month end + 10d --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>35 days 2% cash discount</masterLabel>
+            <translation><!-- 35 days 2% cash discount --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>35 days 2,5% cash discount</masterLabel>
+            <translation><!-- 35 days 2,5% cash discount --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>35 days 5% / 36 days due net</masterLabel>
+            <translation><!-- 35 days 5% / 36 days due net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>35 days due net</masterLabel>
+            <translation><!-- 35 days due net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>35% advance / 65% 150 days</masterLabel>
+            <translation><!-- 35% advance / 65% 150 days --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>360 days net</masterLabel>
+            <translation><!-- 360 days net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>365 days net</masterLabel>
+            <translation><!-- 365 days net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4 Inst. a 25% 30,60, 90,120 D</masterLabel>
+            <translation><!-- 4 Inst. a 25% 30,60, 90,120 D --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4 Rates  0,30,60, 90 Days</masterLabel>
+            <translation><!-- 4 Rates  0,30,60, 90 Days --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4 days 3% / 30 days due net</masterLabel>
+            <translation><!-- 4 days 3% / 30 days due net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4 rates, 0&amp;30&amp;60&amp;90 days</masterLabel>
+            <translation><!-- 4 rates, 0&amp;30&amp;60&amp;90 days --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4 rates, 30&amp;60&amp;90&amp;120 days</masterLabel>
+            <translation><!-- 4 rates, 30&amp;60&amp;90&amp;120 days --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4 rates, 30/45/60/75 days</masterLabel>
+            <translation><!-- 4 rates, 30/45/60/75 days --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4 rates, 45&amp;75&amp;105&amp;135 days</masterLabel>
+            <translation><!-- 4 rates, 45&amp;75&amp;105&amp;135 days --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4 rates, 60&amp;90&amp;120&amp;150 days</masterLabel>
+            <translation><!-- 4 rates, 60&amp;90&amp;120&amp;150 days --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>40 days due net</masterLabel>
+            <translation><!-- 40 days due net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>40d net due, month mid 10%</masterLabel>
+            <translation><!-- 40d net due, month mid 10% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>42 days 2% / 56 days due net</masterLabel>
+            <translation><!-- 42 days 2% / 56 days due net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>42 days 3% / 56 days due net</masterLabel>
+            <translation><!-- 42 days 3% / 56 days due net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>45 d net due from month mid</masterLabel>
+            <translation><!-- 45 d net due from month mid --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>45 days 3% /90 days net</masterLabel>
+            <translation><!-- 45 days 3% /90 days net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>45 days 4% cash discount</masterLabel>
+            <translation><!-- 45 days 4% cash discount --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>45 days due net</masterLabel>
+            <translation><!-- 45 days due net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>45 days net, 30 days printed o</masterLabel>
+            <translation><!-- 45 days net, 30 days printed o --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>45/ 75/ 105 days 0%</masterLabel>
+            <translation><!-- 45/ 75/ 105 days 0% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>45d net from monthend 10%</masterLabel>
+            <translation><!-- 45d net from monthend 10% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>45d net from monthend 20%</masterLabel>
+            <translation><!-- 45d net from monthend 20% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>45d net from monthend 5%</masterLabel>
+            <translation><!-- 45d net from monthend 5% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>45d net from monthend 8%</masterLabel>
+            <translation><!-- 45d net from monthend 8% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5 days 2%, 10 days net</masterLabel>
+            <translation><!-- 5 days 2%, 10 days net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5 rates, 0&amp;30&amp;60&amp;90&amp;120 days</masterLabel>
+            <translation><!-- 5 rates, 0&amp;30&amp;60&amp;90&amp;120 days --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>50 days due net</masterLabel>
+            <translation><!-- 50 days due net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>50 days from date of invoice</masterLabel>
+            <translation><!-- 50 days from date of invoice --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>50% adv. paymt./ 50% 30 d. L/C</masterLabel>
+            <translation><!-- 50% adv. paymt./ 50% 30 d. L/C --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>50% adv. paymt./ 50% 30 d. net</masterLabel>
+            <translation><!-- 50% adv. paymt./ 50% 30 d. net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>50% adv. paymt./ 50% 60 d. net</masterLabel>
+            <translation><!-- 50% adv. paymt./ 50% 60 d. net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>50% adv. paymt./45% 15d/5% 30d</masterLabel>
+            <translation><!-- 50% adv. paymt./45% 15d/5% 30d --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>50% adv. paymt./50% 100 d. net</masterLabel>
+            <translation><!-- 50% adv. paymt./50% 100 d. net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>50% adv. paymt./50% 180 d. net</masterLabel>
+            <translation><!-- 50% adv. paymt./50% 180 d. net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>50% adv. paymt./50% 240 d. net</masterLabel>
+            <translation><!-- 50% adv. paymt./50% 240 d. net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>50% advance payment</masterLabel>
+            <translation><!-- 50% advance payment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>50% advance payment / 50% 120</masterLabel>
+            <translation><!-- 50% advance payment / 50% 120 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>50% in adv. &amp; 50% with 90 days</masterLabel>
+            <translation><!-- 50% in adv. &amp; 50% with 90 days --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>50% prepaymt./50% with GR</masterLabel>
+            <translation><!-- 50% prepaymt./50% with GR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>50%L/C at sight/50% 360d.a.AWB</masterLabel>
+            <translation><!-- 50%L/C at sight/50% 360d.a.AWB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>50d net from monthmid</masterLabel>
+            <translation><!-- 50d net from monthmid --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>540 days due net</masterLabel>
+            <translation><!-- 540 days due net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5th next month PN 90</masterLabel>
+            <translation><!-- 5th next month PN 90 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6 R.  30,60,90,120,150,180 D</masterLabel>
+            <translation><!-- 6 R.  30,60,90,120,150,180 D --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6 days due net</masterLabel>
+            <translation><!-- 6 days due net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6 rates, 0&amp;30&amp;60&amp;90&amp;120&amp;150 d.</masterLabel>
+            <translation><!-- 6 rates, 0&amp;30&amp;60&amp;90&amp;120&amp;150 d. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6 rates, 60&amp;90&amp;120&amp;150&amp;180&amp;120</masterLabel>
+            <translation><!-- 6 rates, 60&amp;90&amp;120&amp;150&amp;180&amp;120 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6 weeks 2% cash discount</masterLabel>
+            <translation><!-- 6 weeks 2% cash discount --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>60 days 2% / 90 days due net</masterLabel>
+            <translation><!-- 60 days 2% / 90 days due net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>60 days 2,5% cash discount</masterLabel>
+            <translation><!-- 60 days 2,5% cash discount --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>60 days 3% / 75 days due net</masterLabel>
+            <translation><!-- 60 days 3% / 75 days due net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>60 days 3% / 90 days due net</masterLabel>
+            <translation><!-- 60 days 3% / 90 days due net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>60 days 4% / 90 days 3%</masterLabel>
+            <translation><!-- 60 days 4% / 90 days 3% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>60 days due net</masterLabel>
+            <translation><!-- 60 days due net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>60 days end of month</masterLabel>
+            <translation><!-- 60 days end of month --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>60 days net, 30 days printed o</masterLabel>
+            <translation><!-- 60 days net, 30 days printed o --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>60 days, 13% Discount</masterLabel>
+            <translation><!-- 60 days, 13% Discount --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>60/ 90/ 120 days 20%</masterLabel>
+            <translation><!-- 60/ 90/ 120 days 20% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>60d 3% /90d 1,5% /150 Days net</masterLabel>
+            <translation><!-- 60d 3% /90d 1,5% /150 Days net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>60d 3% /90d 1,5% /210 Days net</masterLabel>
+            <translation><!-- 60d 3% /90d 1,5% /210 Days net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>65 days due net</masterLabel>
+            <translation><!-- 65 days due net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>69 days due net</masterLabel>
+            <translation><!-- 69 days due net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7 days 1% / 30 days due net</masterLabel>
+            <translation><!-- 7 days 1% / 30 days due net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7 days 2% / 30 days due net</masterLabel>
+            <translation><!-- 7 days 2% / 30 days due net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7 days 3% cash discount</masterLabel>
+            <translation><!-- 7 days 3% cash discount --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7 days due net</masterLabel>
+            <translation><!-- 7 days due net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>70 days 5% / 71 days due net</masterLabel>
+            <translation><!-- 70 days 5% / 71 days due net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>70 days due net</masterLabel>
+            <translation><!-- 70 days due net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>70 days end of month</masterLabel>
+            <translation><!-- 70 days end of month --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>70% adv. paymt./ 30% 30 d. net</masterLabel>
+            <translation><!-- 70% adv. paymt./ 30% 30 d. net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>75 d. net, if &lt; 250 EUR 30 d.</masterLabel>
+            <translation><!-- 75 d. net, if &lt; 250 EUR 30 d. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>75 days 25% discount</masterLabel>
+            <translation><!-- 75 days 25% discount --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>75 days due net</masterLabel>
+            <translation><!-- 75 days due net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>75 days end of month</masterLabel>
+            <translation><!-- 75 days end of month --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>8 Month, 3.5%</masterLabel>
+            <translation><!-- 8 Month, 3.5% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>8 days 1% / 10 days due net</masterLabel>
+            <translation><!-- 8 days 1% / 10 days due net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>8 days 2% / 21 days due net</masterLabel>
+            <translation><!-- 8 days 2% / 21 days due net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>8 days 2% / 30 days due net</masterLabel>
+            <translation><!-- 8 days 2% / 30 days due net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>8 days 3%  30 days due net</masterLabel>
+            <translation><!-- 8 days 3%  30 days due net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>8 days 3% / 30 days due net</masterLabel>
+            <translation><!-- 8 days 3% / 30 days due net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>8 days 5%, 14/2%, 21 net</masterLabel>
+            <translation><!-- 8 days 5%, 14/2%, 21 net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>8 days due net</masterLabel>
+            <translation><!-- 8 days due net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>80 days 1,5% discount</masterLabel>
+            <translation><!-- 80 days 1,5% discount --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>80 days due net</masterLabel>
+            <translation><!-- 80 days due net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>80% prep./20% 30d after deliv.</masterLabel>
+            <translation><!-- 80% prep./20% 30d after deliv. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>86d 3%/106d 2%/120 days net</masterLabel>
+            <translation><!-- 86d 3%/106d 2%/120 days net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>8d 3% / 30d 0% after impl.</masterLabel>
+            <translation><!-- 8d 3% / 30d 0% after impl. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>8d 3% / 30d due net after impl</masterLabel>
+            <translation><!-- 8d 3% / 30d due net after impl --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>8d 3% /14d 2% /30 days due net</masterLabel>
+            <translation><!-- 8d 3% /14d 2% /30 days due net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>9 month due net</masterLabel>
+            <translation><!-- 9 month due net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>90 days 2% / 120 days due net</masterLabel>
+            <translation><!-- 90 days 2% / 120 days due net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>90 days 2,5%, 104 days net</masterLabel>
+            <translation><!-- 90 days 2,5%, 104 days net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>90 days 3 % cash discount</masterLabel>
+            <translation><!-- 90 days 3 % cash discount --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>90 days 3% / 105 days due net</masterLabel>
+            <translation><!-- 90 days 3% / 105 days due net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>90 days 3% discount</masterLabel>
+            <translation><!-- 90 days 3% discount --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>90 days 4% discount</masterLabel>
+            <translation><!-- 90 days 4% discount --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>90 days 6% discount</masterLabel>
+            <translation><!-- 90 days 6% discount --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>90 days after implantation</masterLabel>
+            <translation><!-- 90 days after implantation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>90 days against bank guarantee</masterLabel>
+            <translation><!-- 90 days against bank guarantee --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>90 days due net</masterLabel>
+            <translation><!-- 90 days due net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>90 days end of month</masterLabel>
+            <translation><!-- 90 days end of month --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>90 days net, 30 days printed o</masterLabel>
+            <translation><!-- 90 days net, 30 days printed o --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>90 days, from monthend 10%</masterLabel>
+            <translation><!-- 90 days, from monthend 10% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>90 days, from monthend 20%</masterLabel>
+            <translation><!-- 90 days, from monthend 20% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>95 days due net after receipt</masterLabel>
+            <translation><!-- 95 days due net after receipt --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>99% forever</masterLabel>
+            <translation><!-- 99% forever --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Adjustment against commission</masterLabel>
+            <translation><!-- Adjustment against commission --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bank Transfer 120 day inv date</masterLabel>
+            <translation><!-- Bank Transfer 120 day inv date --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bank Transfer 14 days inv date</masterLabel>
+            <translation><!-- Bank Transfer 14 days inv date --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bank Transfer 240 dys inv date</masterLabel>
+            <translation><!-- Bank Transfer 240 dys inv date --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bank transfer immediate</masterLabel>
+            <translation><!-- Bank transfer immediate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Baseline date 23rd next mont</masterLabel>
+            <translation><!-- Baseline date 23rd next mont --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Baseline date on 20 of next mo</masterLabel>
+            <translation><!-- Baseline date on 20 of next mo --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Baseline date on 25 of next mo</masterLabel>
+            <translation><!-- Baseline date on 25 of next mo --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Baseline date on End of next m</masterLabel>
+            <translation><!-- Baseline date on End of next m --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Before 10th in 1 month due net</masterLabel>
+            <translation><!-- Before 10th in 1 month due net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Before 10th in 2 month due net</masterLabel>
+            <translation><!-- Before 10th in 2 month due net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Before 10th in 3 month due net</masterLabel>
+            <translation><!-- Before 10th in 3 month due net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Before 10th in 4 month due net</masterLabel>
+            <translation><!-- Before 10th in 4 month due net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Before 15th in 1 month due net</masterLabel>
+            <translation><!-- Before 15th in 1 month due net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Before 15th in 2 month due net</masterLabel>
+            <translation><!-- Before 15th in 2 month due net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Before 15th in 4 month due net</masterLabel>
+            <translation><!-- Before 15th in 4 month due net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Before 20 in 5 month due net</masterLabel>
+            <translation><!-- Before 20 in 5 month due net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Before 20th in 1 month due net</masterLabel>
+            <translation><!-- Before 20th in 1 month due net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Before 20th in 2 month due net</masterLabel>
+            <translation><!-- Before 20th in 2 month due net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Before 20th in 3 month due net</masterLabel>
+            <translation><!-- Before 20th in 3 month due net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Before 20th in 4 month due net</masterLabel>
+            <translation><!-- Before 20th in 4 month due net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Before 25th in 1 month due net</masterLabel>
+            <translation><!-- Before 25th in 1 month due net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Before 25th in 2 month due net</masterLabel>
+            <translation><!-- Before 25th in 2 month due net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Before 5th in 2 month due net</masterLabel>
+            <translation><!-- Before 5th in 2 month due net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Before 5th in 3 month due net</masterLabel>
+            <translation><!-- Before 5th in 3 month due net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Before 5th in 4 month due net</masterLabel>
+            <translation><!-- Before 5th in 4 month due net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Before End in 10months due net</masterLabel>
+            <translation><!-- Before End in 10months due net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Before End in 2 months</masterLabel>
+            <translation><!-- Before End in 2 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Before End in 3 months due net</masterLabel>
+            <translation><!-- Before End in 3 months due net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Before End in 4 months due net</masterLabel>
+            <translation><!-- Before End in 4 months due net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Before End in 7 months due net</masterLabel>
+            <translation><!-- Before End in 7 months due net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Before End in 8 months due net</masterLabel>
+            <translation><!-- Before End in 8 months due net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Before End in 9 months due net</masterLabel>
+            <translation><!-- Before End in 9 months due net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Before End of next month</masterLabel>
+            <translation><!-- Before End of next month --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Before End of next month due n</masterLabel>
+            <translation><!-- Before End of next month due n --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C.O.D. Cash on delivery</masterLabel>
+            <translation><!-- C.O.D. Cash on delivery --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cash against doc.</masterLabel>
+            <translation><!-- Cash against doc. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cash against doc. or 30 d. net</masterLabel>
+            <translation><!-- Cash against doc. or 30 d. net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cash in advance / L/C at sight</masterLabel>
+            <translation><!-- Cash in advance / L/C at sight --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cash in advance at 2% discount</masterLabel>
+            <translation><!-- Cash in advance at 2% discount --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cash in advance at 3% discount</masterLabel>
+            <translation><!-- Cash in advance at 3% discount --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cash in advance at 4% discount</masterLabel>
+            <translation><!-- Cash in advance at 4% discount --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cash in advance at 5% discount</masterLabel>
+            <translation><!-- Cash in advance at 5% discount --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cash in advance partially/10 d</masterLabel>
+            <translation><!-- Cash in advance partially/10 d --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Compensation</masterLabel>
+            <translation><!-- Compensation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Credit Card / eCheck Payment</masterLabel>
+            <translation><!-- Credit Card / eCheck Payment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Due 20th in two installments</masterLabel>
+            <translation><!-- Due 20th in two installments --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Due 20th in two month</masterLabel>
+            <translation><!-- Due 20th in two month --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Due 20th next month</masterLabel>
+            <translation><!-- Due 20th next month --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Due on 12th next month</masterLabel>
+            <translation><!-- Due on 12th next month --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Due on 26 next month</masterLabel>
+            <translation><!-- Due on 26 next month --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EOM &gt;199999Due10th nxtmth(P90)</masterLabel>
+            <translation><!-- EOM &gt;199999Due10th nxtmth(P90) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EOM, &gt; 99999 end nxt 3 mth(T)</masterLabel>
+            <translation><!-- EOM, &gt; 99999 end nxt 3 mth(T) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EOM, &gt;100000 end nxt 3 mth(T)</masterLabel>
+            <translation><!-- EOM, &gt;100000 end nxt 3 mth(T) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EOM, &gt;100000 end nxt 4 mth(T)</masterLabel>
+            <translation><!-- EOM, &gt;100000 end nxt 4 mth(T) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EOM, Due 10th nxt mth(P60)</masterLabel>
+            <translation><!-- EOM, Due 10th nxt mth(P60) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EOM, Due 10th nxt mth(P90)</masterLabel>
+            <translation><!-- EOM, Due 10th nxt mth(P90) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EOM, Due 20th next Month (T)</masterLabel>
+            <translation><!-- EOM, Due 20th next Month (T) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EOM, Due 20th nxt mth(P100)</masterLabel>
+            <translation><!-- EOM, Due 20th nxt mth(P100) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EOM, Due 20th nxt mth(P60)</masterLabel>
+            <translation><!-- EOM, Due 20th nxt mth(P60) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EOM, Due 20th nxt mth(P90)</masterLabel>
+            <translation><!-- EOM, Due 20th nxt mth(P90) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EOM, Due 25th next Month (T)</masterLabel>
+            <translation><!-- EOM, Due 25th next Month (T) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EOM, Due 3 times EOM (T)-1st</masterLabel>
+            <translation><!-- EOM, Due 3 times EOM (T)-1st --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EOM, Due 3 times EOM (T)-2nd</masterLabel>
+            <translation><!-- EOM, Due 3 times EOM (T)-2nd --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EOM, Due 3 times EOM (T)-3rd</masterLabel>
+            <translation><!-- EOM, Due 3 times EOM (T)-3rd --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EOM, Due 3 times EOM (T)-Main</masterLabel>
+            <translation><!-- EOM, Due 3 times EOM (T)-Main --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EOM, Due EOM next Month (T)</masterLabel>
+            <translation><!-- EOM, Due EOM next Month (T) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EOM, Due EOM nxt mth(P60)</masterLabel>
+            <translation><!-- EOM, Due EOM nxt mth(P60) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EOM, Due EOM nxt mth(P90)</masterLabel>
+            <translation><!-- EOM, Due EOM nxt mth(P90) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EOM, Due EOM nxt mth(P95)</masterLabel>
+            <translation><!-- EOM, Due EOM nxt mth(P95) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EOM,Due 10th 3 Month later(T)</masterLabel>
+            <translation><!-- EOM,Due 10th 3 Month later(T) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EOM,Due 10th 4 Month later(T)</masterLabel>
+            <translation><!-- EOM,Due 10th 4 Month later(T) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EOM,Due 15th 2 Month later(T)</masterLabel>
+            <translation><!-- EOM,Due 15th 2 Month later(T) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EOM,Due 20th 2 Month later(T)</masterLabel>
+            <translation><!-- EOM,Due 20th 2 Month later(T) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EOM,Due 20th 3 Month later(T)</masterLabel>
+            <translation><!-- EOM,Due 20th 3 Month later(T) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EOM,Due 20th 4 Month later(T)</masterLabel>
+            <translation><!-- EOM,Due 20th 4 Month later(T) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EOM,Due 25th 2 Month later(T)</masterLabel>
+            <translation><!-- EOM,Due 25th 2 Month later(T) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EOM,Due 5th 2 Month later(T)</masterLabel>
+            <translation><!-- EOM,Due 5th 2 Month later(T) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EOM,Due 5th 3 Month later(T)</masterLabel>
+            <translation><!-- EOM,Due 5th 3 Month later(T) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EOM,Due 5th 4 Month later(T)</masterLabel>
+            <translation><!-- EOM,Due 5th 4 Month later(T) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EOM,Due EOM 2 Month later(T)</masterLabel>
+            <translation><!-- EOM,Due EOM 2 Month later(T) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EOM,Due EOM 3 Month later(T)</masterLabel>
+            <translation><!-- EOM,Due EOM 3 Month later(T) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EOM,Due EOM 4 Month later(T)</masterLabel>
+            <translation><!-- EOM,Due EOM 4 Month later(T) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EOM,Due EOM 5 Month later(T)</masterLabel>
+            <translation><!-- EOM,Due EOM 5 Month later(T) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EOM&gt;100000 Due EOM (P90)</masterLabel>
+            <translation><!-- EOM&gt;100000 Due EOM (P90) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EOM&gt;199999 Due EOM (P115)</masterLabel>
+            <translation><!-- EOM&gt;199999 Due EOM (P115) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EOM&gt;199999 Due20thnxtmth(P90)</masterLabel>
+            <translation><!-- EOM&gt;199999 Due20thnxtmth(P90) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EOM&gt;200000 Due20th nxtmth(P90)</masterLabel>
+            <translation><!-- EOM&gt;200000 Due20th nxtmth(P90) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EOM&gt;299999 Due20thnxtmth(P90)</masterLabel>
+            <translation><!-- EOM&gt;299999 Due20thnxtmth(P90) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EOM&gt;300000 Due20thnxtmth(P60)</masterLabel>
+            <translation><!-- EOM&gt;300000 Due20thnxtmth(P60) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EOM&gt;499999 Due20thnxtmth(P90)</masterLabel>
+            <translation><!-- EOM&gt;499999 Due20thnxtmth(P90) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>End of next month PN 115</masterLabel>
+            <translation><!-- End of next month PN 115 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>End of next month PN 60</masterLabel>
+            <translation><!-- End of next month PN 60 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>End of next month PN 90</masterLabel>
+            <translation><!-- End of next month PN 90 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>End of next month PN 95</masterLabel>
+            <translation><!-- End of next month PN 95 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>End of next month, 4 or 7 mon.</masterLabel>
+            <translation><!-- End of next month, 4 or 7 mon. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>End of next month: Comb. 3</masterLabel>
+            <translation><!-- End of next month: Comb. 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>End of next month: Comb. 7</masterLabel>
+            <translation><!-- End of next month: Comb. 7 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Exchange</masterLabel>
+            <translation><!-- Exchange --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gift free of charge</masterLabel>
+            <translation><!-- Gift free of charge --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>L/C 120 days</masterLabel>
+            <translation><!-- L/C 120 days --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>L/C 180 days</masterLabel>
+            <translation><!-- L/C 180 days --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>L/C 45 days</masterLabel>
+            <translation><!-- L/C 45 days --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>L/C 60 days</masterLabel>
+            <translation><!-- L/C 60 days --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>L/C 90 days</masterLabel>
+            <translation><!-- L/C 90 days --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>L/C at sight</masterLabel>
+            <translation><!-- L/C at sight --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>L/C at sight -2% discount</masterLabel>
+            <translation><!-- L/C at sight -2% discount --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>L/C, payable 360d after AWB</masterLabel>
+            <translation><!-- L/C, payable 360d after AWB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pay immediately w/o deduction</masterLabel>
+            <translation><!-- Pay immediately w/o deduction --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Payable immedia. 20 % cash dis</masterLabel>
+            <translation><!-- Payable immedia. 20 % cash dis --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Payable immedia. 25 % cash dis</masterLabel>
+            <translation><!-- Payable immedia. 25 % cash dis --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Payable immediately 10% disc.</masterLabel>
+            <translation><!-- Payable immediately 10% disc. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Payable immediately Due net</masterLabel>
+            <translation><!-- Payable immediately Due net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Payable immediately due net_</masterLabel>
+            <translation><!-- Payable immediately due net_ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Payable in 4 rates 25%</masterLabel>
+            <translation><!-- Payable in 4 rates 25% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Within 10 days 20 % cash disco</masterLabel>
+            <translation><!-- Within 10 days 20 % cash disco --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Within 105 days 20 % cash disc</masterLabel>
+            <translation><!-- Within 105 days 20 % cash disc --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Within 120 days 15% discount</masterLabel>
+            <translation><!-- Within 120 days 15% discount --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Within 120 days 17 % cash disc</masterLabel>
+            <translation><!-- Within 120 days 17 % cash disc --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Within 120 days 30 % cash disc</masterLabel>
+            <translation><!-- Within 120 days 30 % cash disc --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Within 120 days 40% discount</masterLabel>
+            <translation><!-- Within 120 days 40% discount --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Within 15 days 13% discount</masterLabel>
+            <translation><!-- Within 15 days 13% discount --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Within 15 days 15% discount</masterLabel>
+            <translation><!-- Within 15 days 15% discount --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Within 15 days 20% discount</masterLabel>
+            <translation><!-- Within 15 days 20% discount --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Within 15 days 22% discount</masterLabel>
+            <translation><!-- Within 15 days 22% discount --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Within 220 days 1,5 % cash dis</masterLabel>
+            <translation><!-- Within 220 days 1,5 % cash dis --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Within 220 days 2 % cash disc</masterLabel>
+            <translation><!-- Within 220 days 2 % cash disc --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Within 30 days 11% discount</masterLabel>
+            <translation><!-- Within 30 days 11% discount --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Within 30 days 14% discount</masterLabel>
+            <translation><!-- Within 30 days 14% discount --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Within 30 days 26,27% discount</masterLabel>
+            <translation><!-- Within 30 days 26,27% discount --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Within 30 days 7,5 % cash disc</masterLabel>
+            <translation><!-- Within 30 days 7,5 % cash disc --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Within 30 days, fixed date 10</masterLabel>
+            <translation><!-- Within 30 days, fixed date 10 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Within 30 days, fixed date 12</masterLabel>
+            <translation><!-- Within 30 days, fixed date 12 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Within 40 days 10% discount</masterLabel>
+            <translation><!-- Within 40 days 10% discount --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Within 45 days 10 % cash disco</masterLabel>
+            <translation><!-- Within 45 days 10 % cash disco --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Within 45 days 30% discount</masterLabel>
+            <translation><!-- Within 45 days 30% discount --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Within 5 days 3% cash discount</masterLabel>
+            <translation><!-- Within 5 days 3% cash discount --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Within 50 days 10% discount</masterLabel>
+            <translation><!-- Within 50 days 10% discount --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Within 60 days 26,27% discount</masterLabel>
+            <translation><!-- Within 60 days 26,27% discount --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Within 60 days 28 % cash disco</masterLabel>
+            <translation><!-- Within 60 days 28 % cash disco --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Within 60 days 8% cash discoun</masterLabel>
+            <translation><!-- Within 60 days 8% cash discoun --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Within 60 days with fixed date</masterLabel>
+            <translation><!-- Within 60 days with fixed date --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Within 7 days 7 % cash discoun</masterLabel>
+            <translation><!-- Within 7 days 7 % cash discoun --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Within 70 days 15 % cash disc.</masterLabel>
+            <translation><!-- Within 70 days 15 % cash disc. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Within 75 days 11% discount</masterLabel>
+            <translation><!-- Within 75 days 11% discount --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Within 75 days 2,5 % cash disc</masterLabel>
+            <translation><!-- Within 75 days 2,5 % cash disc --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Within 90 days 12,5% discount</masterLabel>
+            <translation><!-- Within 90 days 12,5% discount --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Within 90 days 2 % cash disc</masterLabel>
+            <translation><!-- Within 90 days 2 % cash disc --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Within 90 days 8% cash discoun</masterLabel>
+            <translation><!-- Within 90 days 8% cash discoun --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Within 90 days, fixed date 20.</masterLabel>
+            <translation><!-- Within 90 days, fixed date 20. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ZJ01</masterLabel>
+            <translation><!-- ZJ01 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ZJ02</masterLabel>
+            <translation><!-- ZJ02 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ZJ51</masterLabel>
+            <translation><!-- ZJ51 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ZJ52</masterLabel>
+            <translation><!-- ZJ52 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ZJ53</masterLabel>
+            <translation><!-- ZJ53 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ZJ54</masterLabel>
+            <translation><!-- ZJ54 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ZJ55</masterLabel>
+            <translation><!-- ZJ55 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ZJ56</masterLabel>
+            <translation><!-- ZJ56 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ZJ57</masterLabel>
+            <translation><!-- ZJ57 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ZJ58</masterLabel>
+            <translation><!-- ZJ58 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ZJ59</masterLabel>
+            <translation><!-- ZJ59 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ZJ60</masterLabel>
+            <translation><!-- ZJ60 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ZJ61</masterLabel>
+            <translation><!-- ZJ61 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ZJ62</masterLabel>
+            <translation><!-- ZJ62 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ZJ63</masterLabel>
+            <translation><!-- ZJ63 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ZJ64</masterLabel>
+            <translation><!-- ZJ64 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ZJ65</masterLabel>
+            <translation><!-- ZJ65 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ZJ66</masterLabel>
+            <translation><!-- ZJ66 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>adv.paym 5%/60d 2%/90d 1%/120d</masterLabel>
+            <translation><!-- adv.paym 5%/60d 2%/90d 1%/120d --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>as agreed</masterLabel>
+            <translation><!-- as agreed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>end of next month 2,125%</masterLabel>
+            <translation><!-- end of next month 2,125% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>from month end 45 day due</masterLabel>
+            <translation><!-- from month end 45 day due --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>immed. net due - based month e</masterLabel>
+            <translation><!-- immed. net due - based month e --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>immediately 2 % cash discount</masterLabel>
+            <translation><!-- immediately 2 % cash discount --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>mont end 4% - 15th next/2% - 1</masterLabel>
+            <translation><!-- mont end 4% - 15th next/2% - 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>net due within 340 days</masterLabel>
+            <translation><!-- net due within 340 days --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>no payment required</masterLabel>
+            <translation><!-- no payment required --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>pre-paid 2.5% discount</masterLabel>
+            <translation><!-- pre-paid 2.5% discount --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>prepaid</masterLabel>
+            <translation><!-- prepaid --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>until 30th of month after invo</masterLabel>
+            <translation><!-- until 30th of month after invo --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>wh.180 d a. inv-dat. end month</masterLabel>
+            <translation><!-- wh.180 d a. inv-dat. end month --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>within 10 days 3%</masterLabel>
+            <translation><!-- within 10 days 3% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>within 10 days 5%</masterLabel>
+            <translation><!-- within 10 days 5% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>within 10d net from month end</masterLabel>
+            <translation><!-- within 10d net from month end --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>within 120 days 20%</masterLabel>
+            <translation><!-- within 120 days 20% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>within 120 days 25%</masterLabel>
+            <translation><!-- within 120 days 25% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>within 15 days 10%</masterLabel>
+            <translation><!-- within 15 days 10% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>within 25d net from month end</masterLabel>
+            <translation><!-- within 25d net from month end --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>within 30 days</masterLabel>
+            <translation><!-- within 30 days --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>within 30 days 10%</masterLabel>
+            <translation><!-- within 30 days 10% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>within 30 days 12%</masterLabel>
+            <translation><!-- within 30 days 12% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>within 30 days 12,5%</masterLabel>
+            <translation><!-- within 30 days 12,5% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>within 30 days 15%</masterLabel>
+            <translation><!-- within 30 days 15% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>within 30 days 20%</masterLabel>
+            <translation><!-- within 30 days 20% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>within 30 days 25%</masterLabel>
+            <translation><!-- within 30 days 25% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>within 30 days 30%</masterLabel>
+            <translation><!-- within 30 days 30% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>within 30 days 4%</masterLabel>
+            <translation><!-- within 30 days 4% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>within 30 days 5%</masterLabel>
+            <translation><!-- within 30 days 5% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>within 45 days 15%</masterLabel>
+            <translation><!-- within 45 days 15% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>within 45 days 20%</masterLabel>
+            <translation><!-- within 45 days 20% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>within 45 days 5%</masterLabel>
+            <translation><!-- within 45 days 5% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>within 60 days 10%</masterLabel>
+            <translation><!-- within 60 days 10% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>within 60 days 12%</masterLabel>
+            <translation><!-- within 60 days 12% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>within 60 days 15%</masterLabel>
+            <translation><!-- within 60 days 15% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>within 60 days 2%</masterLabel>
+            <translation><!-- within 60 days 2% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>within 60 days 20%</masterLabel>
+            <translation><!-- within 60 days 20% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>within 60 days 25%</masterLabel>
+            <translation><!-- within 60 days 25% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>within 60 days 30%</masterLabel>
+            <translation><!-- within 60 days 30% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>within 60 days 5%</masterLabel>
+            <translation><!-- within 60 days 5% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>within 60 days 6%</masterLabel>
+            <translation><!-- within 60 days 6% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>within 60 days 7,5%</masterLabel>
+            <translation><!-- within 60 days 7,5% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>within 60 days month end 10%</masterLabel>
+            <translation><!-- within 60 days month end 10% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>within 60d/10% - 90d/9.999%</masterLabel>
+            <translation><!-- within 60d/10% - 90d/9.999% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>within 7 days 22%</masterLabel>
+            <translation><!-- within 7 days 22% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>within 70 days 10%</masterLabel>
+            <translation><!-- within 70 days 10% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>within 70 days 20%</masterLabel>
+            <translation><!-- within 70 days 20% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>within 70 days 25%</masterLabel>
+            <translation><!-- within 70 days 25% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>within 70 days 28%</masterLabel>
+            <translation><!-- within 70 days 28% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>within 75 days 10%</masterLabel>
+            <translation><!-- within 75 days 10% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>within 75 days 20%</masterLabel>
+            <translation><!-- within 75 days 20% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>within 90 days 10%</masterLabel>
+            <translation><!-- within 90 days 10% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>within 90 days 12%</masterLabel>
+            <translation><!-- within 90 days 12% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>within 90 days 15%</masterLabel>
+            <translation><!-- within 90 days 15% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>within 90 days 20%</masterLabel>
+            <translation><!-- within 90 days 20% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>within 90 days 25%</masterLabel>
+            <translation><!-- within 90 days 25% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>within 90 days 27%</masterLabel>
+            <translation><!-- within 90 days 27% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>within 90 days 28% discount</masterLabel>
+            <translation><!-- within 90 days 28% discount --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>within 90 days 30%</masterLabel>
+            <translation><!-- within 90 days 30% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>within 90 days 34% discount</masterLabel>
+            <translation><!-- within 90 days 34% discount --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>within 90 days 5%</masterLabel>
+            <translation><!-- within 90 days 5% --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Shipping terms --></label>
+        <name>shipping_terms__c</name>
+        <picklistValues>
+            <masterLabel>ARAMEX</masterLabel>
+            <translation><!-- ARAMEX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bill only</masterLabel>
+            <translation><!-- Bill only --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bülach EDC Shipment</masterLabel>
+            <translation><!-- Bülach EDC Shipment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Central entry pre 9</masterLabel>
+            <translation><!-- Central entry pre 9 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DA / Ms. Brown</masterLabel>
+            <translation><!-- DA / Ms. Brown --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DHL Glob. Forwarding</masterLabel>
+            <translation><!-- DHL Glob. Forwarding --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DHL Worldwi. Express</masterLabel>
+            <translation><!-- DHL Worldwi. Express --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DPD</masterLabel>
+            <translation><!-- DPD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dot.Com.Couriers</masterLabel>
+            <translation><!-- Dot.Com.Couriers --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EDC redemption</masterLabel>
+            <translation><!-- EDC redemption --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EU_ECO</masterLabel>
+            <translation><!-- EU_ECO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EU_EXP24</masterLabel>
+            <translation><!-- EU_EXP24 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EU_EXP48</masterLabel>
+            <translation><!-- EU_EXP48 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EU_EXP72</masterLabel>
+            <translation><!-- EU_EXP72 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EU_EXPWK</masterLabel>
+            <translation><!-- EU_EXPWK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EU_PRE10</masterLabel>
+            <translation><!-- EU_PRE10 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EU_PRE12</masterLabel>
+            <translation><!-- EU_PRE12 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EU_PRE14</masterLabel>
+            <translation><!-- EU_PRE14 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EU_PRE8</masterLabel>
+            <translation><!-- EU_PRE8 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EU_PRE9</masterLabel>
+            <translation><!-- EU_PRE9 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Expeditors Int.</masterLabel>
+            <translation><!-- Expeditors Int. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Express</masterLabel>
+            <translation><!-- Express --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Express delivery</masterLabel>
+            <translation><!-- Express delivery --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FedEx</masterLabel>
+            <translation><!-- FedEx --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FedEx (EC cleared)</masterLabel>
+            <translation><!-- FedEx (EC cleared) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FedEx 1st Overnight</masterLabel>
+            <translation><!-- FedEx 1st Overnight --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FedEx 2Day</masterLabel>
+            <translation><!-- FedEx 2Day --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FedEx 3Day</masterLabel>
+            <translation><!-- FedEx 3Day --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FedEx Economy</masterLabel>
+            <translation><!-- FedEx Economy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FedEx Ground</masterLabel>
+            <translation><!-- FedEx Ground --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FedEx ON Saturday</masterLabel>
+            <translation><!-- FedEx ON Saturday --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FedEx Prio. ON Sat</masterLabel>
+            <translation><!-- FedEx Prio. ON Sat --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FedEx Prio.Overnight</masterLabel>
+            <translation><!-- FedEx Prio.Overnight --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FedEx Stan.Overnight</masterLabel>
+            <translation><!-- FedEx Stan.Overnight --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Flying Wheels</masterLabel>
+            <translation><!-- Flying Wheels --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>G.Parc./fr.15:30 NET</masterLabel>
+            <translation><!-- G.Parc./fr.15:30 NET --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GO (Saturday)</masterLabel>
+            <translation><!-- GO (Saturday) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GO (Sunday)</masterLabel>
+            <translation><!-- GO (Sunday) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GO (date feed)</masterLabel>
+            <translation><!-- GO (date feed) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GO (date feed) Fix</masterLabel>
+            <translation><!-- GO (date feed) Fix --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GO (day)</masterLabel>
+            <translation><!-- GO (day) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GO Express</masterLabel>
+            <translation><!-- GO Express --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GO Shuttle</masterLabel>
+            <translation><!-- GO Shuttle --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>German Parcel</masterLabel>
+            <translation><!-- German Parcel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ICE-courier</masterLabel>
+            <translation><!-- ICE-courier --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Innight</masterLabel>
+            <translation><!-- Innight --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kühne &amp; Nagel</masterLabel>
+            <translation><!-- Kühne &amp; Nagel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Metzger &amp; Richner</masterLabel>
+            <translation><!-- Metzger &amp; Richner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NET (Saturday)</masterLabel>
+            <translation><!-- NET (Saturday) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NET express (day)</masterLabel>
+            <translation><!-- NET express (day) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NET express (night)</masterLabel>
+            <translation><!-- NET express (night) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nittsu</masterLabel>
+            <translation><!-- Nittsu --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P.C. Airline Service</masterLabel>
+            <translation><!-- P.C. Airline Service --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Panalpina</masterLabel>
+            <translation><!-- Panalpina --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Post</masterLabel>
+            <translation><!-- Post --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ROW_AIR</masterLabel>
+            <translation><!-- ROW_AIR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ROW_EXP</masterLabel>
+            <translation><!-- ROW_EXP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Returns</masterLabel>
+            <translation><!-- Returns --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sales representative</masterLabel>
+            <translation><!-- Sales representative --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Schenker</masterLabel>
+            <translation><!-- Schenker --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Spedition Birkart</masterLabel>
+            <translation><!-- Spedition Birkart --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Star Track</masterLabel>
+            <translation><!-- Star Track --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Startrack</masterLabel>
+            <translation><!-- Startrack --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TNT Economy</masterLabel>
+            <translation><!-- TNT Economy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TNT Express</masterLabel>
+            <translation><!-- TNT Express --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TNT Express 10:00am.</masterLabel>
+            <translation><!-- TNT Express 10:00am. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TNT Express 12:00am.</masterLabel>
+            <translation><!-- TNT Express 12:00am. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TNT Express 9:00 am.</masterLabel>
+            <translation><!-- TNT Express 9:00 am. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TNT International</masterLabel>
+            <translation><!-- TNT International --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TNT Saturday</masterLabel>
+            <translation><!-- TNT Saturday --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TNT by 10:30</masterLabel>
+            <translation><!-- TNT by 10:30 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transmed</masterLabel>
+            <translation><!-- Transmed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UNDEFINED</masterLabel>
+            <translation><!-- UNDEFINED --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UPS</masterLabel>
+            <translation><!-- UPS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UPS 1st ON</masterLabel>
+            <translation><!-- UPS 1st ON --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UPS 2nd Day Air</masterLabel>
+            <translation><!-- UPS 2nd Day Air --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UPS Express</masterLabel>
+            <translation><!-- UPS Express --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UPS Express Saver</masterLabel>
+            <translation><!-- UPS Express Saver --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UPS Ground</masterLabel>
+            <translation><!-- UPS Ground --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UPS NDA Saturday</masterLabel>
+            <translation><!-- UPS NDA Saturday --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UPS NDA Saver Sat</masterLabel>
+            <translation><!-- UPS NDA Saver Sat --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UPS Next Day Air</masterLabel>
+            <translation><!-- UPS Next Day Air --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UPS Next Day Air Sav</masterLabel>
+            <translation><!-- UPS Next Day Air Sav --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>USPS Standard Mail</masterLabel>
+            <translation><!-- USPS Standard Mail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>USPS/UPS Mail Innov.</masterLabel>
+            <translation><!-- USPS/UPS Mail Innov. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Will Call</masterLabel>
+            <translation><!-- Will Call --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yamato</masterLabel>
+            <translation><!-- Yamato --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>airfreight</masterLabel>
+            <translation><!-- airfreight --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>airmail</masterLabel>
+            <translation><!-- airmail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>as agreed</masterLabel>
+            <translation><!-- as agreed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>at sales dept Berlin</masterLabel>
+            <translation><!-- at sales dept Berlin --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>by truck</masterLabel>
+            <translation><!-- by truck --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>collection</masterLabel>
+            <translation><!-- collection --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>courier</masterLabel>
+            <translation><!-- courier --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>courier/airfreight</masterLabel>
+            <translation><!-- courier/airfreight --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>courier/by truck</masterLabel>
+            <translation><!-- courier/by truck --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>free</masterLabel>
+            <translation><!-- free --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>free/cheapest</masterLabel>
+            <translation><!-- free/cheapest --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>handcarried</masterLabel>
+            <translation><!-- handcarried --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>mail</masterLabel>
+            <translation><!-- mail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>other 24H</masterLabel>
+            <translation><!-- other 24H --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>other 48H</masterLabel>
+            <translation><!-- other 48H --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>other PRE 12:00</masterLabel>
+            <translation><!-- other PRE 12:00 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>sea freight</masterLabel>
+            <translation><!-- sea freight --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>storage 5 G</masterLabel>
+            <translation><!-- storage 5 G --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>storage 50</masterLabel>
+            <translation><!-- storage 50 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>storage IK</masterLabel>
+            <translation><!-- storage IK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>transfer personally</masterLabel>
+            <translation><!-- transfer personally --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- User --></label>
+        <name>user__c</name>
+        <relationshipLabel><!-- Rep Allocations --></relationshipLabel>
+    </fields>
+    <recordTypes>
+        <label><!-- Rep Allocation --></label>
+        <name>rep_allocation</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,1906 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- Emergency Account Fields --></label>
+        <name>Emergency_Account_Fields</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Gantt Lightbox --></label>
+        <name>Gantt_Lightbox</name>
+    </fieldSets>
+    <fields>
+        <label><!-- OneKeyId --></label>
+        <name>QIDC__OneKeyId_IMS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Parent OneKey ID --></label>
+        <name>QIDC__ParentOneKeyID_IMS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Academic Institution --></label>
+        <name>academic_institution__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account CRM Region --></label>
+        <name>account_crm_region__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account VI Region --></label>
+        <name>account_vi_region__c</name>
+    </fields>
+    <fields>
+        <label><!-- Beds --></label>
+        <name>beds__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bill-to Account No --></label>
+        <name>bill_to_account_no__c</name>
+    </fields>
+    <fields>
+        <label><!-- COD --></label>
+        <name>cod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Collaborative --></label>
+        <name>collaborative__c</name>
+        <relationshipLabel><!-- Collaborative Members --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Credit Limit --></label>
+        <name>credit_limit__c</name>
+    </fields>
+    <fields>
+        <label><!-- CRM Pricebook --></label>
+        <name>crm_pricebook__c</name>
+        <relationshipLabel><!-- CRM_Accounts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- CRM Ranking --></label>
+        <name>crm_ranking__c</name>
+        <picklistValues>
+            <masterLabel>Target 1</masterLabel>
+            <translation><!-- Target 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Target 2</masterLabel>
+            <translation><!-- Target 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Target 3</masterLabel>
+            <translation><!-- Target 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Target 4</masterLabel>
+            <translation><!-- Target 4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unscored</masterLabel>
+            <translation><!-- Unscored --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- CVI Pricebook --></label>
+        <name>cvi_pricebook__c</name>
+        <relationshipLabel><!-- Accounts (CVI Pricebook) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Dummy Pricebook Update --></label>
+        <name>dummy_pb_update__c</name>
+    </fields>
+    <fields>
+        <label><!-- E-Mail --></label>
+        <name>email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Enhanced Label --></label>
+        <name>enhanced_label__c</name>
+    </fields>
+    <fields>
+        <label><!-- Global Location Number --></label>
+        <name>global_location_number__c</name>
+    </fields>
+    <fields>
+        <label><!-- GPO --></label>
+        <name>gpo__c</name>
+        <relationshipLabel><!-- GPO Members --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Health Industry Number --></label>
+        <name>health_industry_number__c</name>
+    </fields>
+    <fields>
+        <label><!-- ICD implant certification --></label>
+        <name>icd_implant_certification__c</name>
+    </fields>
+    <fields>
+        <label><!-- Invoice Unpaid --></label>
+        <name>invoice_unpaid__c</name>
+    </fields>
+    <fields>
+        <label><!-- Medicare ID --></label>
+        <name>medicare_id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Metrpolitan Statistical Area --></label>
+        <name>metrpolitan_statistical_area__c</name>
+        <picklistValues>
+            <masterLabel>ABILENE, TX MSA</masterLabel>
+            <translation><!-- ABILENE, TX MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AKRON, OH MSA</masterLabel>
+            <translation><!-- AKRON, OH MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AL NONMETROPOLITAN AREA</masterLabel>
+            <translation><!-- AL NONMETROPOLITAN AREA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ALBANY, GA MSA</masterLabel>
+            <translation><!-- ALBANY, GA MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ALBANY-SCHENECTADY-TROY, NY MSA</masterLabel>
+            <translation><!-- ALBANY-SCHENECTADY-TROY, NY MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ALBUQUERQUE, NM MSA</masterLabel>
+            <translation><!-- ALBUQUERQUE, NM MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ALEXANDRIA, LA MSA</masterLabel>
+            <translation><!-- ALEXANDRIA, LA MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ALLENTOWN-BETHLEHEM-EASTON, PA-NJ MSA</masterLabel>
+            <translation><!-- ALLENTOWN-BETHLEHEM-EASTON, PA-NJ MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ALTOONA, PA MSA</masterLabel>
+            <translation><!-- ALTOONA, PA MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AMARILLO, TX MSA</masterLabel>
+            <translation><!-- AMARILLO, TX MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AMES, IA MSA</masterLabel>
+            <translation><!-- AMES, IA MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ANCHORAGE, AK MSA</masterLabel>
+            <translation><!-- ANCHORAGE, AK MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ANDERSON, IN MSA</masterLabel>
+            <translation><!-- ANDERSON, IN MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ANDERSON, SC MSA</masterLabel>
+            <translation><!-- ANDERSON, SC MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ANN ARBOR, MI MSA</masterLabel>
+            <translation><!-- ANN ARBOR, MI MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ANNISTON-OXFORD, AL MSA</masterLabel>
+            <translation><!-- ANNISTON-OXFORD, AL MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>APPLETON, WI MSA</masterLabel>
+            <translation><!-- APPLETON, WI MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AR NONMETROPOLITAN AREA</masterLabel>
+            <translation><!-- AR NONMETROPOLITAN AREA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ASHEVILLE, NC MSA</masterLabel>
+            <translation><!-- ASHEVILLE, NC MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ATHENS-CLARK COUNTY, GA MSA</masterLabel>
+            <translation><!-- ATHENS-CLARK COUNTY, GA MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ATLANTA-SANDY SPRINGS-MARIETTA, GA MSA</masterLabel>
+            <translation><!-- ATLANTA-SANDY SPRINGS-MARIETTA, GA MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ATLANTIC CITY, NJ MSA</masterLabel>
+            <translation><!-- ATLANTIC CITY, NJ MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AUBURN-OPELIKA, AL MSA</masterLabel>
+            <translation><!-- AUBURN-OPELIKA, AL MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AUGUSTA-RICHMOND COUNTY, GA-SC MSA</masterLabel>
+            <translation><!-- AUGUSTA-RICHMOND COUNTY, GA-SC MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AUSTIN-ROUND ROCK, TX MSA</masterLabel>
+            <translation><!-- AUSTIN-ROUND ROCK, TX MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AZ NONMETROPOLITAN AREA</masterLabel>
+            <translation><!-- AZ NONMETROPOLITAN AREA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BAKERSFIELD, CA MSA</masterLabel>
+            <translation><!-- BAKERSFIELD, CA MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BALTIMORE-TOWSON, MD MSA</masterLabel>
+            <translation><!-- BALTIMORE-TOWSON, MD MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BANGOR, ME MSA</masterLabel>
+            <translation><!-- BANGOR, ME MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BARNSTABLE TOWN, MA MSA</masterLabel>
+            <translation><!-- BARNSTABLE TOWN, MA MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BATON ROUGE, LA MSA</masterLabel>
+            <translation><!-- BATON ROUGE, LA MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BATTLE CREEK, MI MSA</masterLabel>
+            <translation><!-- BATTLE CREEK, MI MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BAY CITY, MI MSA</masterLabel>
+            <translation><!-- BAY CITY, MI MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BEAUMONT-PORT ARTHUR, TX MSA</masterLabel>
+            <translation><!-- BEAUMONT-PORT ARTHUR, TX MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BELLINGHAM, WA MSA</masterLabel>
+            <translation><!-- BELLINGHAM, WA MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BEND, OR MSA</masterLabel>
+            <translation><!-- BEND, OR MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BILLINGS, MT MSA</masterLabel>
+            <translation><!-- BILLINGS, MT MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BINGHAMTON, NY MSA</masterLabel>
+            <translation><!-- BINGHAMTON, NY MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BIRMINGHAM-HOOVER, AL MSA</masterLabel>
+            <translation><!-- BIRMINGHAM-HOOVER, AL MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BISMARCK, ND MSA</masterLabel>
+            <translation><!-- BISMARCK, ND MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BLACKSBURG-CHRISTIANSBURG-RADFORD, VA MSA</masterLabel>
+            <translation><!-- BLACKSBURG-CHRISTIANSBURG-RADFORD, VA MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BLOOMINGTON, IN MSA</masterLabel>
+            <translation><!-- BLOOMINGTON, IN MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BLOOMINGTON-NORMAL, IL MSA</masterLabel>
+            <translation><!-- BLOOMINGTON-NORMAL, IL MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BOISE CITY-NAMPA, ID MSA</masterLabel>
+            <translation><!-- BOISE CITY-NAMPA, ID MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BOSTON-CAMBRIDGE-QUINCY, MA-NH MSA</masterLabel>
+            <translation><!-- BOSTON-CAMBRIDGE-QUINCY, MA-NH MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BOULDER, CO MSA</masterLabel>
+            <translation><!-- BOULDER, CO MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BOWLING GREEN, KY MSA</masterLabel>
+            <translation><!-- BOWLING GREEN, KY MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BREMERTON-SILVERDALE, WA MSA</masterLabel>
+            <translation><!-- BREMERTON-SILVERDALE, WA MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BRIDGEPORT-STAMFORD-NORWALK, CT MSA</masterLabel>
+            <translation><!-- BRIDGEPORT-STAMFORD-NORWALK, CT MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BROWNSVILLE-HARLINGEN, TX MSA</masterLabel>
+            <translation><!-- BROWNSVILLE-HARLINGEN, TX MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BRUNSWICK, GA MSA</masterLabel>
+            <translation><!-- BRUNSWICK, GA MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BUFFALO-NIAGARA FALLS, NY MSA</masterLabel>
+            <translation><!-- BUFFALO-NIAGARA FALLS, NY MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BURLINGTON, NC MSA</masterLabel>
+            <translation><!-- BURLINGTON, NC MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BURLINGTON-SOUTH BURLINGTON, VT MSA</masterLabel>
+            <translation><!-- BURLINGTON-SOUTH BURLINGTON, VT MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CA NONMETROPOLITAN AREA</masterLabel>
+            <translation><!-- CA NONMETROPOLITAN AREA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CANTON-MASSILLON, OH MSA</masterLabel>
+            <translation><!-- CANTON-MASSILLON, OH MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CAPE CORAL-FORT MYERS, FL MSA</masterLabel>
+            <translation><!-- CAPE CORAL-FORT MYERS, FL MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CAPE GIRARDEAU-JACKSON, MO-IL MSA</masterLabel>
+            <translation><!-- CAPE GIRARDEAU-JACKSON, MO-IL MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CARSON CITY, NV MSA</masterLabel>
+            <translation><!-- CARSON CITY, NV MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CASPER, WY MSA</masterLabel>
+            <translation><!-- CASPER, WY MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CEDAR RAPIDS, IA MSA</masterLabel>
+            <translation><!-- CEDAR RAPIDS, IA MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CHAMPAIGN-URBANA, IL MSA</masterLabel>
+            <translation><!-- CHAMPAIGN-URBANA, IL MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CHARLESTON, WV MSA</masterLabel>
+            <translation><!-- CHARLESTON, WV MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CHARLESTON-NORTH CHARLESTON, SC MSA</masterLabel>
+            <translation><!-- CHARLESTON-NORTH CHARLESTON, SC MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CHARLOTTE-GASTONIA-CONCORD, NC-SC MSA</masterLabel>
+            <translation><!-- CHARLOTTE-GASTONIA-CONCORD, NC-SC MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CHARLOTTESVILLE, VA MSA</masterLabel>
+            <translation><!-- CHARLOTTESVILLE, VA MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CHATTANOOGA, TN-GA MSA</masterLabel>
+            <translation><!-- CHATTANOOGA, TN-GA MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CHEYENNE, WY MSA</masterLabel>
+            <translation><!-- CHEYENNE, WY MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CHICAGO-NAPERVILLE-JOLIET, IL-IN-WI MSA</masterLabel>
+            <translation><!-- CHICAGO-NAPERVILLE-JOLIET, IL-IN-WI MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CHICO, CA MSA</masterLabel>
+            <translation><!-- CHICO, CA MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CINCINNATI-MIDDLETOWN, OH-KY-IN MSA</masterLabel>
+            <translation><!-- CINCINNATI-MIDDLETOWN, OH-KY-IN MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CLARKSVILLE, TN-KY MSA</masterLabel>
+            <translation><!-- CLARKSVILLE, TN-KY MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CLEVELAND-ELYRIA-MENTOR, OH MSA</masterLabel>
+            <translation><!-- CLEVELAND-ELYRIA-MENTOR, OH MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CO NONMETROPOLITAN AREA</masterLabel>
+            <translation><!-- CO NONMETROPOLITAN AREA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>COEUR D&apos;ALENE, ID MSA</masterLabel>
+            <translation><!-- COEUR D&apos;ALENE, ID MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>COLLEGE STATION-BRYAN, TX MSA</masterLabel>
+            <translation><!-- COLLEGE STATION-BRYAN, TX MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>COLORADO SPRINGS, CO MSA</masterLabel>
+            <translation><!-- COLORADO SPRINGS, CO MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>COLUMBIA, MO MSA</masterLabel>
+            <translation><!-- COLUMBIA, MO MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>COLUMBIA, SC MSA</masterLabel>
+            <translation><!-- COLUMBIA, SC MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>COLUMBUS, GA-AL MSA</masterLabel>
+            <translation><!-- COLUMBUS, GA-AL MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>COLUMBUS, IN MSA</masterLabel>
+            <translation><!-- COLUMBUS, IN MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>COLUMBUS, OH MSA</masterLabel>
+            <translation><!-- COLUMBUS, OH MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CORPUS CHRISTI, TX MSA</masterLabel>
+            <translation><!-- CORPUS CHRISTI, TX MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CORVALIS, OR MSA</masterLabel>
+            <translation><!-- CORVALIS, OR MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CT NONMETROPOLITAN AREA</masterLabel>
+            <translation><!-- CT NONMETROPOLITAN AREA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CUMBERLAND, MD-WV MSA</masterLabel>
+            <translation><!-- CUMBERLAND, MD-WV MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DALLAS-FORT WORTH-ARLINGTON, TX MSA</masterLabel>
+            <translation><!-- DALLAS-FORT WORTH-ARLINGTON, TX MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DALTON, GA MSA</masterLabel>
+            <translation><!-- DALTON, GA MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DANVILLE, IL MSA</masterLabel>
+            <translation><!-- DANVILLE, IL MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DANVILLE, VA MSA</masterLabel>
+            <translation><!-- DANVILLE, VA MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DAVENPORT-MOLINE-ROCK ISLAND, IA-IL MSA</masterLabel>
+            <translation><!-- DAVENPORT-MOLINE-ROCK ISLAND, IA-IL MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DAYTON, OH MSA</masterLabel>
+            <translation><!-- DAYTON, OH MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DE NONMETROPOLITAN AREA</masterLabel>
+            <translation><!-- DE NONMETROPOLITAN AREA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DECATUR, AL MSA</masterLabel>
+            <translation><!-- DECATUR, AL MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DECATUR, IL MSA</masterLabel>
+            <translation><!-- DECATUR, IL MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DELTONA-DAYTONA BEACH-ORMOND BEACH, FL MSA</masterLabel>
+            <translation><!-- DELTONA-DAYTONA BEACH-ORMOND BEACH, FL MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DENVER-AURORA, CO MSA</masterLabel>
+            <translation><!-- DENVER-AURORA, CO MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DES MOINES-WEST DES MOINES, IA MSA</masterLabel>
+            <translation><!-- DES MOINES-WEST DES MOINES, IA MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DETROIT-WARREN-LIVONIA, MI MSA</masterLabel>
+            <translation><!-- DETROIT-WARREN-LIVONIA, MI MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DOTHAN, AL MSA</masterLabel>
+            <translation><!-- DOTHAN, AL MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DOVER, DE MSA</masterLabel>
+            <translation><!-- DOVER, DE MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DUBUQUE, IA MSA</masterLabel>
+            <translation><!-- DUBUQUE, IA MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DULUTH, MN-WI MSA</masterLabel>
+            <translation><!-- DULUTH, MN-WI MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DURHAM, NC MSA</masterLabel>
+            <translation><!-- DURHAM, NC MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EAU CLAIRE, WI MSA</masterLabel>
+            <translation><!-- EAU CLAIRE, WI MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EL CENTRO, CA MSA</masterLabel>
+            <translation><!-- EL CENTRO, CA MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EL PASO, TX MSA</masterLabel>
+            <translation><!-- EL PASO, TX MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ELIZABETHTOWN, KY MSA</masterLabel>
+            <translation><!-- ELIZABETHTOWN, KY MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ELKHART-GOSHEN, IN MSA</masterLabel>
+            <translation><!-- ELKHART-GOSHEN, IN MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ELMIRA, NY MSA</masterLabel>
+            <translation><!-- ELMIRA, NY MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ERIE, PA MSA</masterLabel>
+            <translation><!-- ERIE, PA MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EUGENE-SPRINGFIELD, OR MSA</masterLabel>
+            <translation><!-- EUGENE-SPRINGFIELD, OR MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EVANSVILLE, IN-KY MSA</masterLabel>
+            <translation><!-- EVANSVILLE, IN-KY MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FAIRBANKS, AK MSA</masterLabel>
+            <translation><!-- FAIRBANKS, AK MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FARGO, ND-MN MSA</masterLabel>
+            <translation><!-- FARGO, ND-MN MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FARMINGTON, NM MSA</masterLabel>
+            <translation><!-- FARMINGTON, NM MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FAYETTEVILLE, NC MSA</masterLabel>
+            <translation><!-- FAYETTEVILLE, NC MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FAYETTEVILLE-SPRINGDALE-ROGERS, AR-MO MSA</masterLabel>
+            <translation><!-- FAYETTEVILLE-SPRINGDALE-ROGERS, AR-MO MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FL NONMETROPOLITAN AREA</masterLabel>
+            <translation><!-- FL NONMETROPOLITAN AREA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FLAGSTAFF, AZ MSA</masterLabel>
+            <translation><!-- FLAGSTAFF, AZ MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FLINT, MI MSA</masterLabel>
+            <translation><!-- FLINT, MI MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FLORENCE, SC MSA</masterLabel>
+            <translation><!-- FLORENCE, SC MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FLORENCE-MUSCLE SHOALS, AL MSA</masterLabel>
+            <translation><!-- FLORENCE-MUSCLE SHOALS, AL MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FOND DU LAC, WI MSA</masterLabel>
+            <translation><!-- FOND DU LAC, WI MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FORT COLLINS-LOVELAND, CO MSA</masterLabel>
+            <translation><!-- FORT COLLINS-LOVELAND, CO MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FORT SMITH, AR-OK MSA</masterLabel>
+            <translation><!-- FORT SMITH, AR-OK MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FORT WALTON BEACH-CRESTVIEW-DESTIN, FL MSA</masterLabel>
+            <translation><!-- FORT WALTON BEACH-CRESTVIEW-DESTIN, FL MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FORT WAYNE, IN MSA</masterLabel>
+            <translation><!-- FORT WAYNE, IN MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FRESNO, CA MSA</masterLabel>
+            <translation><!-- FRESNO, CA MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GA NONMETROPOLITAN AREA</masterLabel>
+            <translation><!-- GA NONMETROPOLITAN AREA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GADSDEN, AL MSA</masterLabel>
+            <translation><!-- GADSDEN, AL MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GAINESVILLE, FL MSA</masterLabel>
+            <translation><!-- GAINESVILLE, FL MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GAINESVILLE, GA MSA</masterLabel>
+            <translation><!-- GAINESVILLE, GA MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GLENS FALLS, NY MSA</masterLabel>
+            <translation><!-- GLENS FALLS, NY MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GOLDSBORO, NC MSA</masterLabel>
+            <translation><!-- GOLDSBORO, NC MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GRAND FORKS, ND-MN MSA</masterLabel>
+            <translation><!-- GRAND FORKS, ND-MN MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GRAND JUNCTION, CO MSA</masterLabel>
+            <translation><!-- GRAND JUNCTION, CO MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GRAND RAPIDS-WYOMING, MI MSA</masterLabel>
+            <translation><!-- GRAND RAPIDS-WYOMING, MI MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GREAT FALLS, MT MSA</masterLabel>
+            <translation><!-- GREAT FALLS, MT MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GREELEY, CO MSA</masterLabel>
+            <translation><!-- GREELEY, CO MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GREEN BAY, WI MSA</masterLabel>
+            <translation><!-- GREEN BAY, WI MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GREENSBORO-HIGH POINT, NC MSA</masterLabel>
+            <translation><!-- GREENSBORO-HIGH POINT, NC MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GREENVILLE, NC MSA</masterLabel>
+            <translation><!-- GREENVILLE, NC MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GREENVILLE-MAULDIN-EASLEY, SC MSA</masterLabel>
+            <translation><!-- GREENVILLE-MAULDIN-EASLEY, SC MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GU NONMETROPOLITAN AREA</masterLabel>
+            <translation><!-- GU NONMETROPOLITAN AREA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GULFPORT-BILOXI, MS MSA</masterLabel>
+            <translation><!-- GULFPORT-BILOXI, MS MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HAGERSTOWN-MARTINSBURG, MD-WV MSA</masterLabel>
+            <translation><!-- HAGERSTOWN-MARTINSBURG, MD-WV MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HANFORD-CORCORAN, CA MSA</masterLabel>
+            <translation><!-- HANFORD-CORCORAN, CA MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HARRISBURG-CARLISLE, PA MSA</masterLabel>
+            <translation><!-- HARRISBURG-CARLISLE, PA MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HARRISONBURG, VA MSA</masterLabel>
+            <translation><!-- HARRISONBURG, VA MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HARTFORD-WEST HARTFORD-EAST HARTFORD, CT MSA</masterLabel>
+            <translation><!-- HARTFORD-WEST HARTFORD-EAST HARTFORD, CT MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HATTIESBURG, MS MSA</masterLabel>
+            <translation><!-- HATTIESBURG, MS MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HI NONMETROPOLITAN AREA</masterLabel>
+            <translation><!-- HI NONMETROPOLITAN AREA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HICKORY-LENOIR-MORGANTON, NC MSA</masterLabel>
+            <translation><!-- HICKORY-LENOIR-MORGANTON, NC MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HOLLAND-GRAND HAVEN, MI MSA</masterLabel>
+            <translation><!-- HOLLAND-GRAND HAVEN, MI MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HONOLULU, HI MSA</masterLabel>
+            <translation><!-- HONOLULU, HI MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HOT SPRINGS, AR MSA</masterLabel>
+            <translation><!-- HOT SPRINGS, AR MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HOUMA-BAYOU CANE-THIBODAUX, LA MSA</masterLabel>
+            <translation><!-- HOUMA-BAYOU CANE-THIBODAUX, LA MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HOUSTON-SUGAR LAND-BAYTOWN, TX MSA</masterLabel>
+            <translation><!-- HOUSTON-SUGAR LAND-BAYTOWN, TX MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HUNTINGTON-ASHLAND, WV-KY-OH MSA</masterLabel>
+            <translation><!-- HUNTINGTON-ASHLAND, WV-KY-OH MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HUNTSVILLE, AL MSA</masterLabel>
+            <translation><!-- HUNTSVILLE, AL MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IA NONMETROPOLITAN AREA</masterLabel>
+            <translation><!-- IA NONMETROPOLITAN AREA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ID NONMETROPOLITAN AREA</masterLabel>
+            <translation><!-- ID NONMETROPOLITAN AREA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IDAHO FALLS, ID MSA</masterLabel>
+            <translation><!-- IDAHO FALLS, ID MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IL NONMETROPOLITAN AREA</masterLabel>
+            <translation><!-- IL NONMETROPOLITAN AREA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IN NONMETROPOLITAN AREA</masterLabel>
+            <translation><!-- IN NONMETROPOLITAN AREA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>INDIANAPOLIS-CARMEL, IN MSA</masterLabel>
+            <translation><!-- INDIANAPOLIS-CARMEL, IN MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IOWA CITY, IA MSA</masterLabel>
+            <translation><!-- IOWA CITY, IA MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ITHACA, NY MSA</masterLabel>
+            <translation><!-- ITHACA, NY MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>JACKSON, MI MSA</masterLabel>
+            <translation><!-- JACKSON, MI MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>JACKSON, MS MSA</masterLabel>
+            <translation><!-- JACKSON, MS MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>JACKSON, TN MSA</masterLabel>
+            <translation><!-- JACKSON, TN MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>JACKSONVILLE, FL MSA</masterLabel>
+            <translation><!-- JACKSONVILLE, FL MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>JACKSONVILLE, NC MSA</masterLabel>
+            <translation><!-- JACKSONVILLE, NC MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>JANESVILLE, WI MSA</masterLabel>
+            <translation><!-- JANESVILLE, WI MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>JEFFERSON CITY, MO MSA</masterLabel>
+            <translation><!-- JEFFERSON CITY, MO MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>JOHNSON CITY, TN MSA</masterLabel>
+            <translation><!-- JOHNSON CITY, TN MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>JOHNSTOWN, PA MSA</masterLabel>
+            <translation><!-- JOHNSTOWN, PA MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>JONESBORO, AR MSA</masterLabel>
+            <translation><!-- JONESBORO, AR MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>JOPLIN, MO MSA</masterLabel>
+            <translation><!-- JOPLIN, MO MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KALAMAZOO-PORTAGE, MI MSA</masterLabel>
+            <translation><!-- KALAMAZOO-PORTAGE, MI MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KANKAKEE-BRADLEY, IL MSA</masterLabel>
+            <translation><!-- KANKAKEE-BRADLEY, IL MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KANSAS CITY, MO-KS MSA</masterLabel>
+            <translation><!-- KANSAS CITY, MO-KS MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KENNEWICK-RICHLAND-PASCO, WA MSA</masterLabel>
+            <translation><!-- KENNEWICK-RICHLAND-PASCO, WA MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KILLEEN-TEMPLE-FORT HOOD, TX MSA</masterLabel>
+            <translation><!-- KILLEEN-TEMPLE-FORT HOOD, TX MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KINGSPORT-BRISTOL-BRISTOL, TN-VA MSA</masterLabel>
+            <translation><!-- KINGSPORT-BRISTOL-BRISTOL, TN-VA MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KINGSTON, NY MSA</masterLabel>
+            <translation><!-- KINGSTON, NY MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KNOXVILLE, TN MSA</masterLabel>
+            <translation><!-- KNOXVILLE, TN MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KOKOMO, IN MSA</masterLabel>
+            <translation><!-- KOKOMO, IN MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KS NONMETROPOLITAN AREA</masterLabel>
+            <translation><!-- KS NONMETROPOLITAN AREA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KY NONMETROPOLITAN AREA</masterLabel>
+            <translation><!-- KY NONMETROPOLITAN AREA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LA CROSSE, WI-MN MSA</masterLabel>
+            <translation><!-- LA CROSSE, WI-MN MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LA NONMETROPOLITAN AREA</masterLabel>
+            <translation><!-- LA NONMETROPOLITAN AREA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LAFAYETTE, IN MSA</masterLabel>
+            <translation><!-- LAFAYETTE, IN MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LAFAYETTE, LA MSA</masterLabel>
+            <translation><!-- LAFAYETTE, LA MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LAKE CHARLES, LA MSA</masterLabel>
+            <translation><!-- LAKE CHARLES, LA MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LAKE HAVASU CITY-KINGMAN, AZ MSA</masterLabel>
+            <translation><!-- LAKE HAVASU CITY-KINGMAN, AZ MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LAKELAND, FL MSA</masterLabel>
+            <translation><!-- LAKELAND, FL MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LANCASTER, PA MSA</masterLabel>
+            <translation><!-- LANCASTER, PA MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LANSING-EAST LANSING, MI MSA</masterLabel>
+            <translation><!-- LANSING-EAST LANSING, MI MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LAREDO, TX MSA</masterLabel>
+            <translation><!-- LAREDO, TX MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LAS CRUCES, NM MSA</masterLabel>
+            <translation><!-- LAS CRUCES, NM MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LAS VEGAS-PARADISE, NV MSA</masterLabel>
+            <translation><!-- LAS VEGAS-PARADISE, NV MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LAWRENCE, KS MSA</masterLabel>
+            <translation><!-- LAWRENCE, KS MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LAWTON, OK MSA</masterLabel>
+            <translation><!-- LAWTON, OK MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LEBANON, PA MSA</masterLabel>
+            <translation><!-- LEBANON, PA MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LEWISTON, ID-WA MSA</masterLabel>
+            <translation><!-- LEWISTON, ID-WA MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LEWISTON-AUBURN, ME MSA</masterLabel>
+            <translation><!-- LEWISTON-AUBURN, ME MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LEXINGTON-FAYETTE, KY MSA</masterLabel>
+            <translation><!-- LEXINGTON-FAYETTE, KY MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LIMA, OH MSA</masterLabel>
+            <translation><!-- LIMA, OH MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LINCOLN, NE MSA</masterLabel>
+            <translation><!-- LINCOLN, NE MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LITTLE ROCK-NORTH LITTLE ROCK-CONWAY, AR MSA</masterLabel>
+            <translation><!-- LITTLE ROCK-NORTH LITTLE ROCK-CONWAY, AR MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LOGAN, UT-ID MSA</masterLabel>
+            <translation><!-- LOGAN, UT-ID MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LONGVIEW, TX MSA</masterLabel>
+            <translation><!-- LONGVIEW, TX MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LONGVIEW, WA MSA</masterLabel>
+            <translation><!-- LONGVIEW, WA MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LOS ANGELES-LONG BEACH-SANTA ANA, CA MSA</masterLabel>
+            <translation><!-- LOS ANGELES-LONG BEACH-SANTA ANA, CA MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LOUISVILLE/JEFFERSON COUNTY, KY-IN MSA</masterLabel>
+            <translation><!-- LOUISVILLE/JEFFERSON COUNTY, KY-IN MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LUBBOCK, TX MSA</masterLabel>
+            <translation><!-- LUBBOCK, TX MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LYNCHBURG, VA MSA</masterLabel>
+            <translation><!-- LYNCHBURG, VA MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MACON, GA MSA</masterLabel>
+            <translation><!-- MACON, GA MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MADERA, CA MSA</masterLabel>
+            <translation><!-- MADERA, CA MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MADISON, WI MSA</masterLabel>
+            <translation><!-- MADISON, WI MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MANCHESTER-NASHUA, NH MSA</masterLabel>
+            <translation><!-- MANCHESTER-NASHUA, NH MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MANHATTAN, KS MSA</masterLabel>
+            <translation><!-- MANHATTAN, KS MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MANKATO-NORTH MANKATO, MN MSA</masterLabel>
+            <translation><!-- MANKATO-NORTH MANKATO, MN MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MANSFIELD, OH MSA</masterLabel>
+            <translation><!-- MANSFIELD, OH MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MAYAGUEZ, PR MSA</masterLabel>
+            <translation><!-- MAYAGUEZ, PR MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MCALLEN-EDINBURG-MISSION, TX MSA</masterLabel>
+            <translation><!-- MCALLEN-EDINBURG-MISSION, TX MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MD NONMETROPOLITAN AREA</masterLabel>
+            <translation><!-- MD NONMETROPOLITAN AREA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ME NONMETROPOLITAN AREA</masterLabel>
+            <translation><!-- ME NONMETROPOLITAN AREA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MEDFORD, OR MSA</masterLabel>
+            <translation><!-- MEDFORD, OR MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MEMPHIS, TN-AR-MS MSA</masterLabel>
+            <translation><!-- MEMPHIS, TN-AR-MS MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MERCED, CA MSA</masterLabel>
+            <translation><!-- MERCED, CA MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MI NONMETROPOLITAN AREA</masterLabel>
+            <translation><!-- MI NONMETROPOLITAN AREA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MIAMI-FORT LAUDERDALE-POMPANO BEACH, FL MSA</masterLabel>
+            <translation><!-- MIAMI-FORT LAUDERDALE-POMPANO BEACH, FL MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MICHIGAN CITY-LA PORTE, IN MSA</masterLabel>
+            <translation><!-- MICHIGAN CITY-LA PORTE, IN MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MIDLAND, TX MSA</masterLabel>
+            <translation><!-- MIDLAND, TX MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MILWAUKEE-WAUKESHA-WEST ALLIS, WI MSA</masterLabel>
+            <translation><!-- MILWAUKEE-WAUKESHA-WEST ALLIS, WI MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MINNEAPOLIS-ST. PAUL-BLOOMINGTON, MN-WI MSA</masterLabel>
+            <translation><!-- MINNEAPOLIS-ST. PAUL-BLOOMINGTON, MN-WI MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MISSOULA, MT MSA</masterLabel>
+            <translation><!-- MISSOULA, MT MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MN NONMETROPOLITAN AREA</masterLabel>
+            <translation><!-- MN NONMETROPOLITAN AREA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MO NONMETROPOLITAN AREA</masterLabel>
+            <translation><!-- MO NONMETROPOLITAN AREA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MOBILE, AL MSA</masterLabel>
+            <translation><!-- MOBILE, AL MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MODESTO, CA MSA</masterLabel>
+            <translation><!-- MODESTO, CA MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MONROE, LA MSA</masterLabel>
+            <translation><!-- MONROE, LA MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MONROE, MI MSA</masterLabel>
+            <translation><!-- MONROE, MI MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MONTGOMERY, AL MSA</masterLabel>
+            <translation><!-- MONTGOMERY, AL MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MORGANTOWN, WV MSA</masterLabel>
+            <translation><!-- MORGANTOWN, WV MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MORRISTOWN, TN MSA</masterLabel>
+            <translation><!-- MORRISTOWN, TN MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MOUNT VERNON-ANACORTES, WA MSA</masterLabel>
+            <translation><!-- MOUNT VERNON-ANACORTES, WA MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MS NONMETROPOLITAN AREA</masterLabel>
+            <translation><!-- MS NONMETROPOLITAN AREA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MT NONMETROPOLITAN AREA</masterLabel>
+            <translation><!-- MT NONMETROPOLITAN AREA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MUNCIE, IN MSA</masterLabel>
+            <translation><!-- MUNCIE, IN MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MUSKEGON-NORTON SHORES, MI MSA</masterLabel>
+            <translation><!-- MUSKEGON-NORTON SHORES, MI MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MYRTLE BEACH-CONWAY-NORTH MYRTLE BEACH, SC MSA</masterLabel>
+            <translation><!-- MYRTLE BEACH-CONWAY-NORTH MYRTLE BEACH, SC MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NAPA, CA MSA</masterLabel>
+            <translation><!-- NAPA, CA MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NAPLES-MARCO ISLAND, FL MSA</masterLabel>
+            <translation><!-- NAPLES-MARCO ISLAND, FL MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NASHVILLE-DAVIDSON-MURFREESBORO-FRANKLIN, TN MSA</masterLabel>
+            <translation><!-- NASHVILLE-DAVIDSON-MURFREESBORO-FRANKLIN, TN MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NC NONMETROPOLITAN AREA</masterLabel>
+            <translation><!-- NC NONMETROPOLITAN AREA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ND NONMETROPOLITAN AREA</masterLabel>
+            <translation><!-- ND NONMETROPOLITAN AREA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NE NONMETROPOLITAN AREA</masterLabel>
+            <translation><!-- NE NONMETROPOLITAN AREA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEW HAVEN-MILFORD, CT MSA</masterLabel>
+            <translation><!-- NEW HAVEN-MILFORD, CT MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEW ORLEANS-METAIRIE-KENNER, LA MSA</masterLabel>
+            <translation><!-- NEW ORLEANS-METAIRIE-KENNER, LA MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEW YORK-NORTHERN NEW JERSEY-LONG ISLAND, NY-NJ-PA MSA</masterLabel>
+            <translation><!-- NEW YORK-NORTHERN NEW JERSEY-LONG ISLAND, NY-NJ-PA MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NH NONMETROPOLITAN AREA</masterLabel>
+            <translation><!-- NH NONMETROPOLITAN AREA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NILES-BENTON HARBOR, MI MSA</masterLabel>
+            <translation><!-- NILES-BENTON HARBOR, MI MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NM NONMETROPOLITAN AREA</masterLabel>
+            <translation><!-- NM NONMETROPOLITAN AREA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NORWICH-NEW LONDON, CT MSA</masterLabel>
+            <translation><!-- NORWICH-NEW LONDON, CT MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NY NONMETROPOLITAN AREA</masterLabel>
+            <translation><!-- NY NONMETROPOLITAN AREA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OCALA, FL MSA</masterLabel>
+            <translation><!-- OCALA, FL MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OCEAN CITY, NJ MSA</masterLabel>
+            <translation><!-- OCEAN CITY, NJ MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ODESSA, TX MSA</masterLabel>
+            <translation><!-- ODESSA, TX MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OGDEN-CLEARFIELD, UT MSA</masterLabel>
+            <translation><!-- OGDEN-CLEARFIELD, UT MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OH NONMETROPOLITAN AREA</masterLabel>
+            <translation><!-- OH NONMETROPOLITAN AREA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OK NONMETROPOLITAN AREA</masterLabel>
+            <translation><!-- OK NONMETROPOLITAN AREA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OKLAHOMA CITY, OK MSA</masterLabel>
+            <translation><!-- OKLAHOMA CITY, OK MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OLYMPIA, WA MSA</masterLabel>
+            <translation><!-- OLYMPIA, WA MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OMAHA-COUNCIL BLUFFS, NE-IA MSA</masterLabel>
+            <translation><!-- OMAHA-COUNCIL BLUFFS, NE-IA MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OR NONMETROPOLITAN AREA</masterLabel>
+            <translation><!-- OR NONMETROPOLITAN AREA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ORLANDO-KISSIMMEE, FL MSA</masterLabel>
+            <translation><!-- ORLANDO-KISSIMMEE, FL MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OSHKOSH-NEENAH, WI MSA</masterLabel>
+            <translation><!-- OSHKOSH-NEENAH, WI MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OWENSBORO, KY MSA</masterLabel>
+            <translation><!-- OWENSBORO, KY MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OXNARD-THOUSAND OAKS-VENTURA, CA MSA</masterLabel>
+            <translation><!-- OXNARD-THOUSAND OAKS-VENTURA, CA MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PA NONMETROPOLITAN AREA</masterLabel>
+            <translation><!-- PA NONMETROPOLITAN AREA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PALM BAY-MELBOURNE-TITUSVILLE, FL MSA</masterLabel>
+            <translation><!-- PALM BAY-MELBOURNE-TITUSVILLE, FL MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PALM COAST, FL MSA</masterLabel>
+            <translation><!-- PALM COAST, FL MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PANAMA CITY-LYNN HAVEN, FL MSA</masterLabel>
+            <translation><!-- PANAMA CITY-LYNN HAVEN, FL MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PARKERSBURG-MARIETTA-VIENNA, WV-OH MSA</masterLabel>
+            <translation><!-- PARKERSBURG-MARIETTA-VIENNA, WV-OH MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PASCAGOULA, MS MSA</masterLabel>
+            <translation><!-- PASCAGOULA, MS MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PENSACOLA-FERRY PASS-BRENT, FL MSA</masterLabel>
+            <translation><!-- PENSACOLA-FERRY PASS-BRENT, FL MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PEORIA, IL MSA</masterLabel>
+            <translation><!-- PEORIA, IL MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PHILADELPHIA-CAMDEN-WILMINGTON, PA-NJ-DE-MD MSA</masterLabel>
+            <translation><!-- PHILADELPHIA-CAMDEN-WILMINGTON, PA-NJ-DE-MD MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PHOENIX-MESA-SCOTTSDALE, AZ MSA</masterLabel>
+            <translation><!-- PHOENIX-MESA-SCOTTSDALE, AZ MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PINE BLUFF, AR MSA</masterLabel>
+            <translation><!-- PINE BLUFF, AR MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PITTSBURGH, PA MSA</masterLabel>
+            <translation><!-- PITTSBURGH, PA MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PITTSFIELD, MA MSA</masterLabel>
+            <translation><!-- PITTSFIELD, MA MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>POCATELLO, ID MSA</masterLabel>
+            <translation><!-- POCATELLO, ID MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PONCE, PR MSA</masterLabel>
+            <translation><!-- PONCE, PR MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PORT ST. LUCIE, FL MSA</masterLabel>
+            <translation><!-- PORT ST. LUCIE, FL MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PORTLAND-SOUTH PORTLAND-BIDDEFORD, ME MSA</masterLabel>
+            <translation><!-- PORTLAND-SOUTH PORTLAND-BIDDEFORD, ME MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PORTLAND-VANCOUVER-BEAVERTON, OR-WA MSA</masterLabel>
+            <translation><!-- PORTLAND-VANCOUVER-BEAVERTON, OR-WA MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>POUGHKEEPSIE-NEWBURGH-MIDDLETOWN, NY MSA</masterLabel>
+            <translation><!-- POUGHKEEPSIE-NEWBURGH-MIDDLETOWN, NY MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PRESCOTT, AZ MSA</masterLabel>
+            <translation><!-- PRESCOTT, AZ MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PROVIDENCE-NEW BEDFORD-FALL RIVER, RI-MA MSA</masterLabel>
+            <translation><!-- PROVIDENCE-NEW BEDFORD-FALL RIVER, RI-MA MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PROVO-OREM, UT MSA</masterLabel>
+            <translation><!-- PROVO-OREM, UT MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PUEBLO, CO MSA</masterLabel>
+            <translation><!-- PUEBLO, CO MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PUNTA GORDA, FL MSA</masterLabel>
+            <translation><!-- PUNTA GORDA, FL MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RACINE, WI MSA</masterLabel>
+            <translation><!-- RACINE, WI MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RALEIGH-CARY, NC MSA</masterLabel>
+            <translation><!-- RALEIGH-CARY, NC MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RAPID CITY, SD MSA</masterLabel>
+            <translation><!-- RAPID CITY, SD MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>READING, PA MSA</masterLabel>
+            <translation><!-- READING, PA MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>REDDING, CA MSA</masterLabel>
+            <translation><!-- REDDING, CA MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RENO-SPARKS, NV MSA</masterLabel>
+            <translation><!-- RENO-SPARKS, NV MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RICHMOND, VA MSA</masterLabel>
+            <translation><!-- RICHMOND, VA MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RIVERSIDE-SAN BERNARDINO-ONTARIO, CA MSA</masterLabel>
+            <translation><!-- RIVERSIDE-SAN BERNARDINO-ONTARIO, CA MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ROANOKE, VA MSA</masterLabel>
+            <translation><!-- ROANOKE, VA MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ROCHESTER, MN MSA</masterLabel>
+            <translation><!-- ROCHESTER, MN MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ROCHESTER, NY MSA</masterLabel>
+            <translation><!-- ROCHESTER, NY MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ROCKFORD, IL MSA</masterLabel>
+            <translation><!-- ROCKFORD, IL MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ROCKY MOUNT, NC MSA</masterLabel>
+            <translation><!-- ROCKY MOUNT, NC MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ROME, GA MSA</masterLabel>
+            <translation><!-- ROME, GA MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SACRAMENTO-ARDEN-ARCADE-ROSEVILLE, CA MSA</masterLabel>
+            <translation><!-- SACRAMENTO-ARDEN-ARCADE-ROSEVILLE, CA MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SAGINAW-SAGINAW TOWNSHIP NORTH, MI MSA</masterLabel>
+            <translation><!-- SAGINAW-SAGINAW TOWNSHIP NORTH, MI MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SALEM, OR MSA</masterLabel>
+            <translation><!-- SALEM, OR MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SALINAS, CA MSA</masterLabel>
+            <translation><!-- SALINAS, CA MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SALISBURY, MD MSA</masterLabel>
+            <translation><!-- SALISBURY, MD MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SALT LAKE CITY, UT MSA</masterLabel>
+            <translation><!-- SALT LAKE CITY, UT MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SAN ANGELO, TX MSA</masterLabel>
+            <translation><!-- SAN ANGELO, TX MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SAN ANTONIO, TX MSA</masterLabel>
+            <translation><!-- SAN ANTONIO, TX MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SAN DIEGO-CARLSBAD-SAN MARCOS, CA MSA</masterLabel>
+            <translation><!-- SAN DIEGO-CARLSBAD-SAN MARCOS, CA MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SAN FRANCISCO-OAKLAND-FREMONT, CA MSA</masterLabel>
+            <translation><!-- SAN FRANCISCO-OAKLAND-FREMONT, CA MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SAN JOSE-SUNNYVALE-SANTA CLARA, CA MSA</masterLabel>
+            <translation><!-- SAN JOSE-SUNNYVALE-SANTA CLARA, CA MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SAN JUAN-CAGUAS-GUAYNABO, PR MSA</masterLabel>
+            <translation><!-- SAN JUAN-CAGUAS-GUAYNABO, PR MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SAN LUIS OBISPO-PASO ROBLES, CA MSA</masterLabel>
+            <translation><!-- SAN LUIS OBISPO-PASO ROBLES, CA MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SANDUSKY, OH MSA</masterLabel>
+            <translation><!-- SANDUSKY, OH MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SANTA BARBARA-SANTA MARIA-GOLETA, CA MSA</masterLabel>
+            <translation><!-- SANTA BARBARA-SANTA MARIA-GOLETA, CA MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SANTA CRUZ-WATSONVILLE, CA MSA</masterLabel>
+            <translation><!-- SANTA CRUZ-WATSONVILLE, CA MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SANTA FE, NM MSA</masterLabel>
+            <translation><!-- SANTA FE, NM MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SANTA ROSA-PETALUMA, CA MSA</masterLabel>
+            <translation><!-- SANTA ROSA-PETALUMA, CA MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SARASOTA-BRADENTON-VENICE, FL MSA</masterLabel>
+            <translation><!-- SARASOTA-BRADENTON-VENICE, FL MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SAVANNAH, GA MSA</masterLabel>
+            <translation><!-- SAVANNAH, GA MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SC NONMETROPOLITAN AREA</masterLabel>
+            <translation><!-- SC NONMETROPOLITAN AREA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SCRANTON--WILKES-BARRE, PA MSA</masterLabel>
+            <translation><!-- SCRANTON- - WILKES-BARRE, PA MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SD NONMETROPOLITAN AREA</masterLabel>
+            <translation><!-- SD NONMETROPOLITAN AREA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SEATTLE-TACOMA-BELLEVUE, WA MSA</masterLabel>
+            <translation><!-- SEATTLE-TACOMA-BELLEVUE, WA MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SEBASTIAN-VERO BEACH, FL MSA</masterLabel>
+            <translation><!-- SEBASTIAN-VERO BEACH, FL MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SHEBOYGAN, WI MSA</masterLabel>
+            <translation><!-- SHEBOYGAN, WI MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SHERMAN-DENISON, TX MSA</masterLabel>
+            <translation><!-- SHERMAN-DENISON, TX MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SHREVEPORT-BOSSIER CITY, LA MSA</masterLabel>
+            <translation><!-- SHREVEPORT-BOSSIER CITY, LA MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SIOUX CITY, IA-NE-SD MSA</masterLabel>
+            <translation><!-- SIOUX CITY, IA-NE-SD MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SIOUX FALLS, SD MSA</masterLabel>
+            <translation><!-- SIOUX FALLS, SD MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SOUTH BEND-MISHAWAKA, IN-MI MSA</masterLabel>
+            <translation><!-- SOUTH BEND-MISHAWAKA, IN-MI MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SPARTANBURG, SC MSA</masterLabel>
+            <translation><!-- SPARTANBURG, SC MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SPOKANE, WA MSA</masterLabel>
+            <translation><!-- SPOKANE, WA MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SPRINGFIELD, IL MSA</masterLabel>
+            <translation><!-- SPRINGFIELD, IL MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SPRINGFIELD, MA MSA</masterLabel>
+            <translation><!-- SPRINGFIELD, MA MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SPRINGFIELD, MO MSA</masterLabel>
+            <translation><!-- SPRINGFIELD, MO MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SPRINGFIELD, OH MSA</masterLabel>
+            <translation><!-- SPRINGFIELD, OH MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ST. CLOUD, MN MSA</masterLabel>
+            <translation><!-- ST. CLOUD, MN MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ST. GEORGE, UT MSA</masterLabel>
+            <translation><!-- ST. GEORGE, UT MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ST. JOSEPH, MO-KS MSA</masterLabel>
+            <translation><!-- ST. JOSEPH, MO-KS MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ST. LOUIS, MO-IL MSA</masterLabel>
+            <translation><!-- ST. LOUIS, MO-IL MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>STATE COLLEGE, PA MSA</masterLabel>
+            <translation><!-- STATE COLLEGE, PA MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>STOCKTON, CA MSA</masterLabel>
+            <translation><!-- STOCKTON, CA MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SUMTER, SC MSA</masterLabel>
+            <translation><!-- SUMTER, SC MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SYRACUSE, NY MSA</masterLabel>
+            <translation><!-- SYRACUSE, NY MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TALLAHASSEE, FL MSA</masterLabel>
+            <translation><!-- TALLAHASSEE, FL MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TAMPA-ST. PETERSBURG-CLEARWATER, FL</masterLabel>
+            <translation><!-- TAMPA-ST. PETERSBURG-CLEARWATER, FL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TERRE HAUTE, IN MSA</masterLabel>
+            <translation><!-- TERRE HAUTE, IN MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TEXARKANA, TX-TEXARKANA, AR MSA</masterLabel>
+            <translation><!-- TEXARKANA, TX-TEXARKANA, AR MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TN NONMETROPOLITAN AREA</masterLabel>
+            <translation><!-- TN NONMETROPOLITAN AREA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TOLEDO, OH MSA</masterLabel>
+            <translation><!-- TOLEDO, OH MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TOPEKA, KS MSA</masterLabel>
+            <translation><!-- TOPEKA, KS MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TRENTON-EWING, NJ MSA</masterLabel>
+            <translation><!-- TRENTON-EWING, NJ MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TUCSON, AZ MSA</masterLabel>
+            <translation><!-- TUCSON, AZ MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TULSA, OK MSA</masterLabel>
+            <translation><!-- TULSA, OK MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TUSCALOOSA, AL MSA</masterLabel>
+            <translation><!-- TUSCALOOSA, AL MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TX NONMETROPOLITAN AREA</masterLabel>
+            <translation><!-- TX NONMETROPOLITAN AREA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TYLER, TX MSA</masterLabel>
+            <translation><!-- TYLER, TX MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UTICA-ROME, NY MSA</masterLabel>
+            <translation><!-- UTICA-ROME, NY MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VA NONMETROPOLITAN AREA</masterLabel>
+            <translation><!-- VA NONMETROPOLITAN AREA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VALDOSTA, GA MSA</masterLabel>
+            <translation><!-- VALDOSTA, GA MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VALLEJO-FAIRFIELD, CA MSA</masterLabel>
+            <translation><!-- VALLEJO-FAIRFIELD, CA MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VI NONMETROPOLITAN AREA</masterLabel>
+            <translation><!-- VI NONMETROPOLITAN AREA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VICTORIA, TX MSA</masterLabel>
+            <translation><!-- VICTORIA, TX MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VINELAND-MILLVILLE-BRIDGETON, NJ MSA</masterLabel>
+            <translation><!-- VINELAND-MILLVILLE-BRIDGETON, NJ MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VIRGINIA BEACH-NORFOLK-NEWPORT NEWS, VA-NC MSA</masterLabel>
+            <translation><!-- VIRGINIA BEACH-NORFOLK-NEWPORT NEWS, VA-NC MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VISALIA-PORTERVILLE, CA MSA</masterLabel>
+            <translation><!-- VISALIA-PORTERVILLE, CA MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VT NONMETROPOLITAN AREA</masterLabel>
+            <translation><!-- VT NONMETROPOLITAN AREA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WA NONMETROPOLITAN AREA</masterLabel>
+            <translation><!-- WA NONMETROPOLITAN AREA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WACO, TX MSA</masterLabel>
+            <translation><!-- WACO, TX MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WARNER ROBINS, GA MSA</masterLabel>
+            <translation><!-- WARNER ROBINS, GA MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WASHINGTON-ARLINGTON-ALEXANDRIA, DC-VA-MD-WV MSA</masterLabel>
+            <translation><!-- WASHINGTON-ARLINGTON-ALEXANDRIA, DC-VA-MD-WV MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WATERLOO-CEDAR FALLS, IA MSA</masterLabel>
+            <translation><!-- WATERLOO-CEDAR FALLS, IA MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WAUSAU, WI MSA</masterLabel>
+            <translation><!-- WAUSAU, WI MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WEIRTON-STEUBENVILLE, WV-OH MSA</masterLabel>
+            <translation><!-- WEIRTON-STEUBENVILLE, WV-OH MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WENATCHEE, WA MSA</masterLabel>
+            <translation><!-- WENATCHEE, WA MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WHEELING, WV-OH MSA</masterLabel>
+            <translation><!-- WHEELING, WV-OH MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WI NONMETROPOLITAN AREA</masterLabel>
+            <translation><!-- WI NONMETROPOLITAN AREA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WICHITA FALLS, TX MSA</masterLabel>
+            <translation><!-- WICHITA FALLS, TX MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WICHITA, KS MSA</masterLabel>
+            <translation><!-- WICHITA, KS MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WILLIAMSPORT, PA MSA</masterLabel>
+            <translation><!-- WILLIAMSPORT, PA MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WILMINGTON, NC MSA</masterLabel>
+            <translation><!-- WILMINGTON, NC MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WINCHESTER, VA-WV MSA</masterLabel>
+            <translation><!-- WINCHESTER, VA-WV MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WINSTON-SALEM, NC MSA</masterLabel>
+            <translation><!-- WINSTON-SALEM, NC MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WORCESTER, MA MSA</masterLabel>
+            <translation><!-- WORCESTER, MA MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WV NONMETROPOLITAN AREA</masterLabel>
+            <translation><!-- WV NONMETROPOLITAN AREA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WY NONMETROPOLITAN AREA</masterLabel>
+            <translation><!-- WY NONMETROPOLITAN AREA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>YAKIMA, WA MSA</masterLabel>
+            <translation><!-- YAKIMA, WA MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>YORK-HANOVER, PA MSA</masterLabel>
+            <translation><!-- YORK-HANOVER, PA MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>YOUNGSTOWN-WARREN-BOARDMAN, OH-PA MSA</masterLabel>
+            <translation><!-- YOUNGSTOWN-WARREN-BOARDMAN, OH-PA MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>YUBA CITY, CA MSA</masterLabel>
+            <translation><!-- YUBA CITY, CA MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>YUMA, AZ MSA</masterLabel>
+            <translation><!-- YUMA, AZ MSA --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Mobile --></label>
+        <name>mobile__c</name>
+    </fields>
+    <fields>
+        <label><!-- MRI scan certification --></label>
+        <name>mri_scan_certification__c</name>
+    </fields>
+    <fields>
+        <label><!-- Over Credit Limit --></label>
+        <name>over_credit_limit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pricing Alignment --></label>
+        <name>pricing_alignment__c</name>
+        <picklistValues>
+            <masterLabel>Collaborative</masterLabel>
+            <translation><!-- Collaborative --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GPO</masterLabel>
+            <translation><!-- GPO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IDN</masterLabel>
+            <translation><!-- IDN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Local</masterLabel>
+            <translation><!-- Local --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Pricing Institution --></label>
+        <name>pricing_institution2__c</name>
+    </fields>
+    <fields>
+        <label><!-- PVI Pricebook --></label>
+        <name>pvi_pricebook__c</name>
+        <relationshipLabel><!-- Accounts (PVI Pricebook) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Company Code --></label>
+        <name>sap_company_code__c</name>
+    </fields>
+    <fields>
+        <label><!-- SAP No --></label>
+        <name>sap_no__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>status__c</name>
+        <picklistValues>
+            <masterLabel>Active</masterLabel>
+            <translation><!-- Active --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Inactive</masterLabel>
+            <translation><!-- Inactive --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- TAX ID --></label>
+        <name>tax_id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Unique Count --></label>
+        <name>unique_count__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vendor ID --></label>
+        <name>vendor_id__c</name>
+    </fields>
+    <recordTypes>
+        <label><!-- Manufacturer Account --></label>
+        <name>Manufacturer_Account</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Accounts that are not in SAP: clinics, leads, complaint reporters, funeral homes, etc --></description>
+        <label><!-- Other Account --></label>
+        <name>Other_Account</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Physician Account --></label>
+        <name>Physician_Account</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Grants visibility to the patient. --></description>
+        <label><!-- Patient Account --></label>
+        <name>patient_account</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- US Account --></label>
+        <name>x5500_us_account</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- Please use capitalize letter for Account Name --></errorMessage>
+        <name>Account_Name</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please contact your system administrator to change the name, owner or record type of an SAP-mastered Account. --></errorMessage>
+        <name>Nonadmins_cant_change_standard_fields</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- AltavistaNews --></label>
+        <name>AltavistaNews</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleMaps --></label>
+        <name>GoogleMaps</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleNews --></label>
+        <name>GoogleNews</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleSearch --></label>
+        <name>GoogleSearch</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- HooversProfile --></label>
+        <name>HooversProfile</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- YahooMaps --></label>
+        <name>YahooMaps</name>
+    </webLinks>
+</CustomObjectTranslation>

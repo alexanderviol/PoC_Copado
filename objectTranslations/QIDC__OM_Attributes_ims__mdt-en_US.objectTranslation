@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- This field is used to store OrgManager attribute of download result response. This field will act as an expression field and would allow to prefix or postfix value before saving the value in SF. --></help>
+        <label><!-- Attribute Expression --></label>
+        <name>QIDC__Attribute_Expression_ims__c</name>
+    </fields>
+    <fields>
+        <help><!-- Indicates Org Manager field API name. --></help>
+        <label><!-- Attribute Name --></label>
+        <name>QIDC__Attribute_ims__c</name>
+    </fields>
+    <fields>
+        <help><!-- Code Role label of the attribute. --></help>
+        <label><!-- Code Role Label --></label>
+        <name>QIDC__CodeRole_Label_ims__c</name>
+    </fields>
+    <fields>
+        <help><!-- Code group of the attribute. --></help>
+        <label><!-- Code Role --></label>
+        <name>QIDC__Code_Role_ims__c</name>
+    </fields>
+    <fields>
+        <help><!-- This represents the Field data type for the Field. --></help>
+        <label><!-- Data Type --></label>
+        <name>QIDC__Data_Type_ims__c</name>
+        <picklistValues>
+            <masterLabel>Boolean</masterLabel>
+            <translation><!-- Boolean --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Date</masterLabel>
+            <translation><!-- Date --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DateTime</masterLabel>
+            <translation><!-- DateTime --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Email</masterLabel>
+            <translation><!-- Email --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Number</masterLabel>
+            <translation><!-- Number --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OrgManagerId</masterLabel>
+            <translation><!-- OrgManagerId --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Picklist</masterLabel>
+            <translation><!-- Picklist --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>String</masterLabel>
+            <translation><!-- String --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- This represents the field description. --></help>
+        <label><!-- Description --></label>
+        <name>QIDC__Description_ims__c</name>
+    </fields>
+    <fields>
+        <help><!-- This represents entity API name in Org Manager. --></help>
+        <label><!-- Entity --></label>
+        <name>QIDC__Entity_ims__c</name>
+        <picklistValues>
+            <masterLabel>Employee_API</masterLabel>
+            <translation><!-- Employee_API --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Employee_Address_API</masterLabel>
+            <translation><!-- Employee_Address_API --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Employee_Communication_API</masterLabel>
+            <translation><!-- Employee_Communication_API --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Employee_Sales_Area_API</masterLabel>
+            <translation><!-- Employee_Sales_Area_API --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Individual_API</masterLabel>
+            <translation><!-- Individual_API --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Individual_Sales_Area_API</masterLabel>
+            <translation><!-- Individual_Sales_Area_API --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Organization_API</masterLabel>
+            <translation><!-- Organization_API --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Organization_Sales_Area_API</masterLabel>
+            <translation><!-- Organization_Sales_Area_API --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product_API</masterLabel>
+            <translation><!-- Product_API --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product_Exclusion_API</masterLabel>
+            <translation><!-- Product_Exclusion_API --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product_Inclusion_API</masterLabel>
+            <translation><!-- Product_Inclusion_API --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product_Lot_API</masterLabel>
+            <translation><!-- Product_Lot_API --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product_Relation_API</masterLabel>
+            <translation><!-- Product_Relation_API --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product_Sales_Area_Exception_API</masterLabel>
+            <translation><!-- Product_Sales_Area_Exception_API --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product_Sales_Force_API</masterLabel>
+            <translation><!-- Product_Sales_Force_API --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sales_Area_API</masterLabel>
+            <translation><!-- Sales_Area_API --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sales_Area_Relation_API</masterLabel>
+            <translation><!-- Sales_Area_Relation_API --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Foreign Key Entity --></label>
+        <name>QIDC__Foreign_Key_Entity_ims__c</name>
+        <picklistValues>
+            <masterLabel>Employee_API</masterLabel>
+            <translation><!-- Employee_API --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Employee_Address_API</masterLabel>
+            <translation><!-- Employee_Address_API --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Organization_Sales_Area_API</masterLabel>
+            <translation><!-- Organization_Sales_Area_API --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product_API</masterLabel>
+            <translation><!-- Product_API --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sales_Area_API</masterLabel>
+            <translation><!-- Sales_Area_API --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Defines if the field mapping is editable through mappings screen. --></help>
+        <label><!-- IsEditable --></label>
+        <name>QIDC__IsEditable_ims__c</name>
+    </fields>
+    <fields>
+        <help><!-- Defines if the field is visible on mappings screen. --></help>
+        <label><!-- IsVisible --></label>
+        <name>QIDC__IsVisible_ims__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Primary Key --></label>
+        <name>QIDC__Is_Primary_Key_ims__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field is used to indicate whether the OM attribute is required or not in mappings. --></help>
+        <label><!-- Is Required? --></label>
+        <name>QIDC__Is_Required_ims__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sort Order --></label>
+        <name>QIDC__Sort_Order_ims__c</name>
+    </fields>
+</CustomObjectTranslation>

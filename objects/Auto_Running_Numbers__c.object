@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>List</customSettingsType>
+    <description>Custom setting to store the latest running RP, CI and MDR number</description>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>CI_Number__c</fullName>
+        <description>Stores recent number that is to be assigned to CI Number</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Store recent number that is to be assigned to CI number</inlineHelpText>
+        <label>CI Number</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>MDR_Number__c</fullName>
+        <description>Stores recent number that is to be assigned to MDR number</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Store recent number that is to be assigned to RP number</inlineHelpText>
+        <label>MDR Number</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>RP_Number__c</fullName>
+        <description>Stores recent number that is to be assigned to RP number</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Store recent number that is to be assigned to RP number</inlineHelpText>
+        <label>RP Number</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Running_Number_Year__c</fullName>
+        <description>Store the year to which the current running numbers in the custom settings belong</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Store the year to which the current running numbers in the custom settings belong</inlineHelpText>
+        <label>Running Number Year</label>
+        <precision>4</precision>
+        <required>true</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <label>Auto Running Numbers</label>
+    <visibility>Protected</visibility>
+</CustomObject>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <description>Defines criteria info  that multiple entites mapped to same object</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableChangeDataCapture>false</enableChangeDataCapture>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>false</enableReports>
+    <enableSearch>false</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ControlledByParent</externalSharingModel>
+    <fields>
+        <fullName>QIDC__Criteria_Field_ims__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Criteria field that is set to the entity.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Criteria field that is set to the entity.</inlineHelpText>
+        <label>Criteria Field</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>QIDC__Criteria_Value_ims__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Criteria value that is set to the entity.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Criteria value that is set to the entity.</inlineHelpText>
+        <label>Criteria Value</label>
+        <length>32768</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>QIDC__Object_Mapping_ims__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The MDM entity that the fields being mapped belong to.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The MDM entity that the fields being mapped belong to.</inlineHelpText>
+        <label>Object Mapping</label>
+        <referenceTo>QIDC__MDM_Object_Mapping_ims__c</referenceTo>
+        <relationshipLabel>MDM Entity Type Filter</relationshipLabel>
+        <relationshipName>MDM_Entity_Type_Filter</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <label>MDM Entity Type Filter</label>
+    <nameField>
+        <label>MDM EntityTypeFilter Name</label>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>MDM Entity Type Filter</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

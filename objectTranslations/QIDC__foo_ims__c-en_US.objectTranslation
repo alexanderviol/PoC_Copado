@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- CheckboxOne_ims --></label>
+        <name>QIDC__CheckboxOne_ims__c</name>
+    </fields>
+    <fields>
+        <label><!-- CheckboxTwo --></label>
+        <name>QIDC__CheckboxTwo_ims__c</name>
+    </fields>
+    <fields>
+        <label><!-- DateOne --></label>
+        <name>QIDC__DateOne_ims__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field is used to store DateTime value. --></help>
+        <label><!-- DateTimeOne --></label>
+        <name>QIDC__DateTimeOne_ims__c</name>
+    </fields>
+    <fields>
+        <label><!-- ExternalIDOne --></label>
+        <name>QIDC__ExternalIDOne_ims__c</name>
+    </fields>
+    <fields>
+        <label><!-- ExternalIDTwo --></label>
+        <name>QIDC__ExternalIDTwo_ims__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field is used to store blob value only. --></help>
+        <label><!-- LongTextOne --></label>
+        <name>QIDC__LongTextOne_ims__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account --></label>
+        <name>QIDC__LookupChild_ims__c</name>
+        <relationshipLabel><!-- foo (Account) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- LookupOne --></label>
+        <name>QIDC__LookupOne_ims__c</name>
+        <relationshipLabel><!-- LookupOne --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Account --></label>
+        <name>QIDC__LookupParent_ims__c</name>
+        <relationshipLabel><!-- foo --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- LookupTwo --></label>
+        <name>QIDC__LookupTwo_ims__c</name>
+        <relationshipLabel><!-- LookupTwo --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- This field is used to store integer values only. --></help>
+        <label><!-- NumberOne --></label>
+        <name>QIDC__NumberOne_ims__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field is used to store float and double type. --></help>
+        <label><!-- NumberTwo --></label>
+        <name>QIDC__NumberTwo_ims__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact --></label>
+        <name>QIDC__Parent_Contact_ims__c</name>
+        <relationshipLabel><!-- foo --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- TextFive --></label>
+        <name>QIDC__TextFive_ims__c</name>
+    </fields>
+    <fields>
+        <label><!-- TextFour --></label>
+        <name>QIDC__TextFour_ims__c</name>
+    </fields>
+    <fields>
+        <label><!-- TextOne --></label>
+        <name>QIDC__TextOne_ims__c</name>
+    </fields>
+    <fields>
+        <label><!-- TextSix --></label>
+        <name>QIDC__TextSix_ims__c</name>
+    </fields>
+    <fields>
+        <label><!-- TextThree --></label>
+        <name>QIDC__TextThree_ims__c</name>
+    </fields>
+    <fields>
+        <label><!-- TextTwo --></label>
+        <name>QIDC__TextTwo_ims__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field is used to store URL values only. --></help>
+        <label><!-- URLOne --></label>
+        <name>QIDC__URLOne_ims__c</name>
+    </fields>
+    <fields>
+        <label><!-- picklistOne --></label>
+        <name>QIDC__picklistOne_ims__c</name>
+        <picklistValues>
+            <masterLabel>picklistValueOne</masterLabel>
+            <translation><!-- picklistValueOne --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>picklistValueThree</masterLabel>
+            <translation><!-- picklistValueThree --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>picklistValueTwo</masterLabel>
+            <translation><!-- picklistValueTwo --></translation>
+        </picklistValues>
+    </fields>
+    <recordTypes>
+        <label><!-- recordType_One --></label>
+        <name>foo_recordTypeOne_ims</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- recordType_Two --></label>
+        <name>foo_recordType_Two</name>
+    </recordTypes>
+</CustomObjectTranslation>

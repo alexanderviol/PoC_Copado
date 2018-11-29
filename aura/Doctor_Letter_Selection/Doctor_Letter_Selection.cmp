@@ -1,0 +1,20 @@
+<aura:component controller ="DoctorLetterControllerExt" implements="force:lightningQuickActionWithoutHeader,force:hasRecordId,flexipage:availableForAllPageTypes" access="global">
+    <aura:attribute name="recordId" type="Id" />
+     <center>
+            <h2 class="slds-text-heading_medium slds-hyphenate"><b>SELECT DOCTOR LETTER TO PRINT</b></h2>
+    </center>
+    <br/><br/><br/>
+	<div class="slds-grid slds-gutters">
+        	<div class="slds-col slds-size_1-of-2">
+        		<span> <ui:inputCheckbox class="myCheckbox" aura:id="docL" label="Doctor's Letter"/></span>
+       		</div>
+            <div class="slds-col slds-size_1-of-2">
+        		<span><ui:inputCheckbox class="myCheckbox" aura:id="docLw" label="Doctor's Letter with warranty"/></span>
+       		</div>
+    </div><br/>
+        <br/><br/>
+    	<center>
+            <button class="slds-button slds-button_brand" onclick="{!c.redirect}">Print</button>&nbsp;&nbsp;
+            <button class="slds-button slds-button_neutral" onclick="{!c.closePopup}">Cancel</button>            
+        </center>
+</aura:component>

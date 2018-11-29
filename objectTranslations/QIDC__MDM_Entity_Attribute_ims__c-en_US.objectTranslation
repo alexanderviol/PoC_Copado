@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- This field is used to define JSON structure for attribute value. It should have dataSource, list of criteria and result field. --></help>
+        <label><!-- Attribute Expression --></label>
+        <name>QIDC__Attribute_Expression_ims__c</name>
+    </fields>
+    <fields>
+        <help><!-- Description for the attribute type. --></help>
+        <label><!-- Description --></label>
+        <name>QIDC__Description_ims__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field is used to store either start / end object uri for relations. --></help>
+        <label><!-- Foreign Key Entity Type URI --></label>
+        <name>QIDC__ForeignKeyEntityTypeURI_ims__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field is used to indicate whether the MDM attribute is denormalized or not. --></help>
+        <label><!-- Is Denormalized? --></label>
+        <name>QIDC__Is_Denormalized_ims__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field is used to indicate whether the MDM attribute is required or not in mappings. --></help>
+        <label><!-- Is Required? --></label>
+        <name>QIDC__Is_Required_ims__c</name>
+    </fields>
+    <fields>
+        <help><!-- Readable name of the attribute. --></help>
+        <label><!-- Label --></label>
+        <name>QIDC__Label_ims__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field is used to store the lookup type code of an attribute. --></help>
+        <label><!-- Lookup Code --></label>
+        <name>QIDC__Lookup_Code_ims__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field is used to store the reference of MDM Entity or Relation --></help>
+        <label><!-- MDM Entity --></label>
+        <name>QIDC__MDM_Entity_ims__c</name>
+        <relationshipLabel><!-- MDM Entity Attributes --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- This attribute is used to store the parent reference for 1- level down of nested attributes. (DEPRECATED) --></help>
+        <label><!-- Parent Attribute (DEPRECATED) --></label>
+        <name>QIDC__Parent_Attribute_ims__c</name>
+        <relationshipLabel><!-- MDM Entity Attributes --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- URI of entity type or role that is referenced from an entity though &apos;ReferencedEntityTypeURI&apos;. This field is applicable only for &apos;Reference&apos; Type attributes. --></help>
+        <label><!-- Referenced Entity Type URI --></label>
+        <name>QIDC__ReferencedEntityTypeURI_ims__c</name>
+    </fields>
+    <fields>
+        <help><!-- URI of a relationship type used in the reference attribute. --></help>
+        <label><!-- Relationship Type URI --></label>
+        <name>QIDC__RelationshipTypeURI_ims__c</name>
+    </fields>
+    <fields>
+        <help><!-- Data type of attribute. (Simple, Nested or Reference) --></help>
+        <label><!-- Type --></label>
+        <name>QIDC__Type_ims__c</name>
+        <picklistValues>
+            <masterLabel>Blob</masterLabel>
+            <translation><!-- Blob --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Blog URL</masterLabel>
+            <translation><!-- Blog URL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Boolean</masterLabel>
+            <translation><!-- Boolean --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CIK id</masterLabel>
+            <translation><!-- CIK id --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Date</masterLabel>
+            <translation><!-- Date --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Email domains</masterLabel>
+            <translation><!-- Email domains --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Float</masterLabel>
+            <translation><!-- Float --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GeoLocation</masterLabel>
+            <translation><!-- GeoLocation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Id card (Passport)</masterLabel>
+            <translation><!-- Id card (Passport) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Image URL</masterLabel>
+            <translation><!-- Image URL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Int</masterLabel>
+            <translation><!-- Int --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Long</masterLabel>
+            <translation><!-- Long --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MDM ID</masterLabel>
+            <translation><!-- MDM ID --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NAICS-code</masterLabel>
+            <translation><!-- NAICS-code --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nested</masterLabel>
+            <translation><!-- Nested --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Number</masterLabel>
+            <translation><!-- Number --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Picklist</masterLabel>
+            <translation><!-- Picklist --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reference</masterLabel>
+            <translation><!-- Reference --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SIC-code</masterLabel>
+            <translation><!-- SIC-code --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SSN</masterLabel>
+            <translation><!-- SSN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Stock exchange</masterLabel>
+            <translation><!-- Stock exchange --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>String</masterLabel>
+            <translation><!-- String --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>StringNotTokenized</masterLabel>
+            <translation><!-- StringNotTokenized --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ticker symbol</masterLabel>
+            <translation><!-- Ticker symbol --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Time</masterLabel>
+            <translation><!-- Time --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Timestamp</masterLabel>
+            <translation><!-- Timestamp --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>URL</masterLabel>
+            <translation><!-- URL --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Path that is used to reach the attribute configuration.
+Format: configuration/{objectType}/attributes/{AttributeName} --></help>
+        <label><!-- URI --></label>
+        <name>QIDC__URI_ims__c</name>
+    </fields>
+</CustomObjectTranslation>

@@ -1,0 +1,171 @@
+<apex:page showHeader="true" sidebar="false" standardStylesheets="true" tabStyle="OneKey_Search_ims__tab" controller="QIDC.OK_SearchController_IMS" extensions="QIDC.OK_CountryController_IMS" applyBodyTag="false">
+
+	
+	<html xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">    
+
+		<head>
+			<apex:includeScript value="{!URLFOR($Resource.QIDC__Connectors_ims, 'lib/angular.min.js')}"/>
+
+			<apex:includeScript value="{!URLFOR($Resource.QIDC__Connectors_ims, 'lib/angular-route.min.js')}" />
+
+			<apex:includeScript value="{!URLFOR($Resource.QIDC__Connectors_ims, 'lib/angular-sanitize.min.js')}" />
+			
+			<apex:includeScript value="{!URLFOR($Resource.QIDC__Connectors_ims, 'lib/angular-translate.min.js')}"/>
+			
+			<apex:stylesheet value="{!URLFOR($Resource.QIDC__SLDS, 'assets/styles/salesforce-lightning-design-system-vf.min.css')}"/>
+
+			<apex:stylesheet value="{!URLFOR($Resource.QIDC__Connectors_ims, 'lib/fht-defaultTheme.css')}"/>
+			
+			<apex:includeScript value="{!URLFOR($Resource.QIDC__Connectors_ims, 'lib/jquery.min.js')}"/>
+
+			<apex:includeScript value="{!URLFOR($Resource.QIDC__Connectors_ims, 'lib/jquery.floatThead.js')}"/>
+
+			<apex:includeScript value="{!URLFOR($Resource.QIDC__Connectors_ims, 'lib/jquery.fixedheadertable.min.js')}"/>
+
+			<apex:includeScript value="{!URLFOR($Resource.QIDC__Connectors_ims, 'lib/svg4everybody.js')}"/>
+
+			<apex:includeScript value="{!URLFOR($Resource.QIDC__Connectors_ims, 'ok/js/ok.sdk.js')}"/>
+
+			<apex:includeScript value="{!URLFOR($Resource.QIDC__Connectors_ims, 'ok/js/search/app.js')}"/>
+
+			<apex:includeScript value="{!URLFOR($Resource.QIDC__Connectors_ims, 'ok/js/search/advancedSearch.js')}"/>
+
+			<apex:includeScript value="{!URLFOR($Resource.QIDC__Connectors_ims, 'ok/js/search/controllers.js')}"/>
+
+			<apex:includeScript value="{!URLFOR($Resource.QIDC__Connectors_ims, 'ok/js/common/controllers.js')}"/>			
+
+			<apex:includeScript value="{!URLFOR($Resource.QIDC__Connectors_ims, 'ok/js/common/directives.js')}"/>
+			
+			<apex:includeScript value="{!URLFOR($Resource.QIDC__Connectors_ims, 'ok/js/search/factories.js')}"/>
+
+			<apex:includeScript value="{!URLFOR($Resource.QIDC__Connectors_ims, 'ok/js/common/services.js')}"/>
+            
+            <apex:stylesheet value="{!URLFOR($Resource.QIDC__Connectors_ims, 'styles/search.css')}"/>
+
+
+			<script type="text/javascript">
+				// inline js
+				// used in 'ok/js/search/app.js for $routeProvider.
+				var sitePrefix = '{!$Site.Prefix}';
+				var nameSpacePrefix ='{!nameSpacePrefix}';  
+				// used in 'ok/js/search/factories.js for OkSearchFactory
+				var SEARCH_REMOTE_LOCALIZE = '{!$RemoteAction.OK_SearchController_IMS.localize}';
+				var GET_ONEKEY_USER_SETTING = '{!$RemoteAction.OK_SearchController_IMS.getOneKeyUserSetting}'; 				
+				var OK_ORGANIZATION_SETTINGS_GET_RECORD  = '{!$RemoteAction.OK_CountryController_IMS.getOrganizationSettingsData}';			
+				var SEARCH_REMOTE_API = '{!$RemoteAction.OK_SearchController_IMS.search}';
+				var DOWNLOAD_REMOTE_API = '{!$RemoteAction.OK_SearchController_IMS.download}';
+				var SEARCH_CONFIG_FIELDS_REMOTE_API = '{!$RemoteAction.OK_SearchController_IMS.searchColumns}';		
+				var SEARCH_RESULT_CONFIG_FIELDS_REMOTE_API = '{!$RemoteAction.OK_SearchController_IMS.searchResultColumns}';
+				var GET_AVAILABLE_COUNTRIES = '{!$RemoteAction.OK_CountryController_IMS.availableCountries}';
+                var USERACCESSCHECK_REMOTE_API = '{!$RemoteAction.OK_SearchController_IMS.userAccessCheck}';
+               	var GET_DOWNLOAD_USER_SETTING = '{!$RemoteAction.OK_SearchController_IMS.getDownloadOutOfContractSettings}';
+                
+				var vfConfig = {
+					staticresources: {
+						connectorURL: '{!URLFOR($Resource.Connectors_ims)}',
+						sldsURL: '{!URLFOR($Resource.SLDS)}'
+					}
+				};
+				var IS_SEARCH_PREFILL = {!isSearchPrefill};
+				var SEARCH_PREFILL_PARAMETERS;
+				if(IS_SEARCH_PREFILL){
+					SEARCH_PREFILL_PARAMETERS = JSON.parse('{!JSINHTMLENCODE(strsearchParametersToPrefill)}');	
+				} 
+			</script>
+
+			<!-- The category(ies) specified should match the category of the labels -->
+			<c:JsLabelLoader_ims categories="OneKey Search,OneKey Advanced Search,Common"/>
+
+		</head>    
+
+		<body ng-app="AdvancedSearch">
+		    <div class="slds slds-p-left--small">
+		    	<div class="slds-page-header" style="background: none;border:0px" role="banner">
+				  <div class="slds-grid">
+		                <div class="slds-col slds-has-flexi-truncate">
+		                    <div class="slds-media">
+		                        <div class="slds-media__figure">
+		                            <svg aria-hidden="true" class="slds-icon slds-icon--large slds-icon-custom-9">
+		                                <use xlink:href="{!URLFOR($Resource.SLDS, 'assets/icons/utility-sprite/svg/symbols.svg#people')}"></use>
+		                            </svg>
+		                        </div>
+		                        <div class="slds-media__body">
+		                            <p class="slds-text-heading--label" translate="OK_ADVANCED_SEARCH_TITLE"></p>
+		                            <div class="slds-grid">
+		                                <h1 class="slds-page-header__title slds-m-right--small slds-truncate slds-align-middle" title="One Key" translate="OK_ADVANCED_SEARCH_SUB_TITLE"></h1>
+		                            </div>
+		                        </div>
+		                    </div>
+		                </div>
+
+		                <div class="slds-col slds-no-flex slds-grid slds-align-bottom">
+		            		<abbr class="slds-required" title="required" ng-show="true">*</abbr> 
+		            	    <select-picklist options="countries" place-holder="{{'OK_ADVANCED_SEARCH_COUNTRY_PLACEHOLDER_LABEL' | translate }}" required="true" multi-select="false" model-value="empty" is-order-by ="true"></select-picklist>  
+
+		            	</div>
+		            </div>
+
+		            <div class="slds-tabs--scoped slds-m-top--medium">
+		            	<notifications messages="getMessages()" type="message"></notifications>
+		            	<notifications messages="getMessages('download')" type="toast"></notifications>
+					    <!-- <div class="slds-box slds-theme--error">
+						  <div class="slds-notify__content slds-grid">
+						      <svg aria-hidden="true" class="slds-icon slds-icon--small slds-m-right--small slds-col slds-no-flex">
+						        <use xlink:href="{!URLFOR($Resource.SLDS, 'assets/icons/utility-sprite/svg/symbols.svg#warning')}"></use>
+						      </svg>
+						      <div class="slds-col slds-align-middle">
+						        <p>
+						        Please select country
+						        </p>
+						      </div>
+						    </div>
+						</div>
+						<div class="slds-box slds-theme--error">
+						  <div class="slds-notify__content slds-grid">
+						      <svg aria-hidden="true" class="slds-icon slds-icon--small slds-m-right--small slds-col slds-no-flex">
+						        <use xlink:href="{!URLFOR($Resource.SLDS, 'assets/icons/utility-sprite/svg/symbols.svg#warning')}"></use>
+						      </svg>
+						      <div class="slds-col slds-align-middle">
+						        <p>
+						        Please enter last name
+						        </p>
+						      </div>
+						    </div>
+						</div> -->
+					    <ul id="headerTabs" class="slds-tabs--scoped__nav" role="tablist">
+							<li class="{{activityTabActive}}" title="Item One" role="presentation" id="activity__cell">
+								<a class="slds-tabs--scoped__link" onclick="selectTab('headerTabs', 'activity')" href="#/advsrch_activity" role="tab" tabindex="0" aria-selected="true" aria-controls="activity" id="activity__item" translate="OK_ADVANCED_SEARCH_INDIVIDUAL_LABEL">
+								</a>
+							</li>
+							<li class="{{workplaceTabActive}}" title="Item Two" role="presentation" id="workplace__cell">
+								<a class="slds-tabs--scoped__link" onclick="selectTab('headerTabs', 'workplace')" href="#/advsrch_workplace" role="tab" tabindex="1" aria-selected="false" aria-controls="workplace" id="workplace__item" translate="OK_ADVANCED_SEARCH_WORKPLACE_LABEL">
+								</a>
+							</li>
+					    </ul>
+					    <div id="activity" class="slds-tabs--scoped__content slds-show" role="tabpanel" aria-labelledby="activity__item">
+					    	<div class="bs container">
+						        <div class="ng-view"></div>
+						    </div>
+					    </div>
+					    <div id="workplace" class="slds-tabs--scoped__content slds-hide" role="tabpanel" aria-labelledby="workplace__item">
+					    	<div class="bs container">
+						        <div class="ng-view"></div>
+						    </div>
+					    </div>
+					</div>
+				</div>
+			    
+				
+			</div>
+			<script type="text/ng-template" id="OK_ActivityAdvancedSearch_IMS.template"><c:OK_AdvancedSearch_IMS type="Activity" /></script>
+			<script type="text/ng-template" id="OK_WorkplaceAdvancedSearch_IMS.template"><c:OK_AdvancedSearch_IMS type="Workplace" /></script>
+			<script type="text/ng-template" id="OK_SearchResults_IMS.template"><c:OK_SearchResults_IMS /></script>
+			<script type="text/ng-template" id="MultiSelect_IMS.template"><c:MultiSelect_IMS /></script>
+		</body>
+		<!--To support svg usage in IE-->
+		<script type="text/javascript">svg4everybody();</script>
+
+
+
+	</html>
+</apex:page>

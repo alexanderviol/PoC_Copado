@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>This object is used to define custom attributes for MDM entities and Relations</description>
+    <fields>
+        <fullName>QIDC__Attribute_Expression_ims__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field is used to define JSON structure for attribute value. It should have dataSource, list of criteria and result field.</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>This field is used to define JSON structure for attribute value. It should have dataSource, list of criteria and result field.</inlineHelpText>
+        <label>Attribute Expression</label>
+        <length>32768</length>
+        <type>LongTextArea</type>
+        <visibleLines>10</visibleLines>
+    </fields>
+    <fields>
+        <fullName>QIDC__Description_ims__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Description for the attribute type.</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>Description for the attribute type.</inlineHelpText>
+        <label>Description</label>
+        <length>32768</length>
+        <type>LongTextArea</type>
+        <visibleLines>10</visibleLines>
+    </fields>
+    <fields>
+        <fullName>QIDC__Entity_Type_URI_ims__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Path that is used to reach the entity type.
+Format: configuration/entityTypes/{EntityTypeName}
+
+Example:
+configuration/entityTypes/Individual</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>Path that is used to reach the entity type.
+Format: configuration/entityTypes/{EntityTypeName}
+
+Example:
+configuration/entityTypes/Individual</inlineHelpText>
+        <label>Entity Type URI</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>QIDC__Is_Active_ims__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>This field is used to indicate whether the attribute is active or not.</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>This field is used to indicate whether the attribute is active or not.</inlineHelpText>
+        <label>Is Active?</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>QIDC__Is_Required_ims__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>This field is used to indicate whether the MDM attribute is required or not in mappings.</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>This field is used to indicate whether the MDM attribute is required or not in mappings.</inlineHelpText>
+        <label>Is Required?</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>QIDC__Lookup_Code_ims__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field is used to store the lookup type code of an attribute.</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>This field is used to store the lookup type code of an attribute.</inlineHelpText>
+        <label>Lookup Code</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>QIDC__Type_ims__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Data type of attribute.</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>Data type of attribute.</inlineHelpText>
+        <label>Type</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>String</fullName>
+                    <default>true</default>
+                    <label>String</label>
+                </value>
+                <value>
+                    <fullName>Number</fullName>
+                    <default>false</default>
+                    <label>Number</label>
+                </value>
+                <value>
+                    <fullName>Boolean</fullName>
+                    <default>false</default>
+                    <label>Boolean</label>
+                </value>
+                <value>
+                    <fullName>Date</fullName>
+                    <default>false</default>
+                    <label>Date</label>
+                </value>
+                <value>
+                    <fullName>TimeStamp</fullName>
+                    <default>false</default>
+                    <label>TimeStamp</label>
+                </value>
+                <value>
+                    <fullName>Blob</fullName>
+                    <default>false</default>
+                    <label>Blob</label>
+                </value>
+                <value>
+                    <fullName>URL</fullName>
+                    <default>false</default>
+                    <label>URL</label>
+                </value>
+                <value>
+                    <fullName>Picklist</fullName>
+                    <default>false</default>
+                    <label>Picklist</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <label>MDM Attribute</label>
+    <pluralLabel>MDM Attributes</pluralLabel>
+    <validationRules>
+        <fullName>QIDC__Attribute_Expression_Cannot_Be_Blank_ims</fullName>
+        <active>true</active>
+        <description>This is used to validate attribute expression.</description>
+        <errorConditionFormula>ISBLANK(QIDC__Attribute_Expression_ims__c)</errorConditionFormula>
+        <errorDisplayField>QIDC__Attribute_Expression_ims__c</errorDisplayField>
+        <errorMessage>Attribute Expression can&apos;t be blank</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>QIDC__Entity_Type_URI_Cannot_Be_Blank_ims</fullName>
+        <active>true</active>
+        <description>This is used to validate Entity Type</description>
+        <errorConditionFormula>ISBLANK( QIDC__Entity_Type_URI_ims__c )</errorConditionFormula>
+        <errorDisplayField>QIDC__Entity_Type_URI_ims__c</errorDisplayField>
+        <errorMessage>Entity Type URI can&apos;t be blank.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>QIDC__Lookup_Code_Cannot_Be_Blank_ims</fullName>
+        <active>true</active>
+        <description>Lookup code is required when type of attribute is a &apos;Picklist&apos;.</description>
+        <errorConditionFormula>AND(ISPICKVAL( QIDC__Type_ims__c , &apos;Picklist&apos;),  ISBLANK( QIDC__Lookup_Code_ims__c ))</errorConditionFormula>
+        <errorDisplayField>QIDC__Lookup_Code_ims__c</errorDisplayField>
+        <errorMessage>Lookup Code can&apos;t be blank</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>QIDC__Type_Cannot_Be_Blank_ims</fullName>
+        <active>true</active>
+        <description>This is used to validate attribute type.</description>
+        <errorConditionFormula>ISBLANK(TEXT(QIDC__Type_ims__c))</errorConditionFormula>
+        <errorDisplayField>QIDC__Type_ims__c</errorDisplayField>
+        <errorMessage>Type can&apos;t be be blank or  &apos;--None--&apos;</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+</CustomObject>

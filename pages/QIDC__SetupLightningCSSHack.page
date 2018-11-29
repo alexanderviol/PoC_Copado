@@ -1,0 +1,52 @@
+<apex:page showHeader="false" sidebar="false" applyHtmlTag="false" standardStylesheets="false" applyBodyTag="false" >
+	<apex:outputPanel rendered="{! $User.UIThemeDisplayed == 'Theme4d' }" layout="none">
+        <style type="text/css">
+            html body.sfdcBody
+            {
+                padding: 0 !important;
+            }
+            html, body, .slds-scope, .slds-form, .omSetup, .slds-grid, .onekeySetup
+            {
+                height: 100%;
+                display: block;
+                margin: 0px;
+            }
+            body.modal-open {
+                  overflow: hidden;
+            }
+        </style>
+    </apex:outputPanel>
+
+	<style type="text/css">
+	    /*to remove extra padding on classic salesforce theme*/
+	    .noSidebarCell {
+	        padding: 0px !important;
+	    }
+        .outerNoSidebar {
+            padding: 0px !important;
+        }
+	</style>
+    <style type="text/css">
+     /* UIDatePicker Css */
+        .uiDatePickerGrid--default .calGrid th {
+            font-size: 10px;
+            font-family: "Salesforce Sans", Arial, sans-serif;
+            padding: 5px;
+            text-align: center;
+        }
+        a.uiDayInMonthCell--default {
+            font-family: "Salesforce Sans", Arial, sans-serif;
+            font-size: 12px;
+            height: 25px;
+            width: 35px;
+            line-height: 25px;
+        }
+        .uiDatePicker--default .dateBar .monthYear {
+            font-family: "Salesforce Sans", Arial, sans-serif;
+        }
+        .uiDatePicker--default .dateBar select {
+            font-family: "Salesforce Sans", Arial, sans-serif;
+        }
+    </style>
+
+</apex:page>

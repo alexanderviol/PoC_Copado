@@ -1,0 +1,32 @@
+<apex:page standardStylesheets="false" Controller="QIDC.OK_SearchLayoutConfig_IMS" sidebar="false" showHeader="false" tabStyle="Data_Connector_Setup_ims__tab" >
+<apex:stylesheet value="{!URLFOR($Resource.QIDC__SLDS, 'assets/styles/salesforce-lightning-design-system-vf.min.css')}" />
+<apex:includeScript value="/lightning/lightning.out.js" />
+    <apex:includeLightning />
+ <apex:include pageName="QIDC__SetupLightningCSSHack"/>
+    
+<div id = "lightning">
+
+   
+
+    <script> 
+     var nameSpacePrefix ='{!nameSpacePrefixForComponent}'; 
+       var lightningAppBundle = nameSpacePrefix+":DataConnector_ims";
+       var lightningComponent = nameSpacePrefix+":OK_SearchLayoutConfig_IMS";
+
+        
+        $Lightning.use(lightningAppBundle, function() {
+            $Lightning.createComponent(lightningComponent,{ "entityType":'Individual'},
+					"lightning",
+					function(cmp) {
+					
+            });
+        });
+     </script> 
+     <style type="text/css">
+    /*to remove extra padding on classic salesforce theme*/
+    .noSidebarCell {
+        padding: 0px !important;
+    }
+</style>  
+   </div>
+</apex:page>

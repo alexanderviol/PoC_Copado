@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- If checked, this mapping will determine record type mappings. --></help>
+        <label><!-- Defines Record Mapping? --></label>
+        <name>QIDC__Has_Record_Mapping_ims__c</name>
+    </fields>
+    <fields>
+        <help><!-- The Primary Key for the object mapping. Only one field can be Primary Key for a given mapping. --></help>
+        <label><!-- Is Primary Key? --></label>
+        <name>QIDC__Is_Primary_Key_ims__c</name>
+    </fields>
+    <fields>
+        <help><!-- The MDM entity that the fields being mapped belong to. --></help>
+        <label><!-- Object Mapping --></label>
+        <name>QIDC__Object_Mapping_ims__c</name>
+        <relationshipLabel><!-- MDM Field Mappings --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Target Salesforce field that is mapped to the attribute. --></help>
+        <label><!-- SObject Field --></label>
+        <name>QIDC__SObject_Field_ims__c</name>
+    </fields>
+    <fields>
+        <help><!-- Path that is used to reach the attribute configuration.
+Format: configuration/{objectType}/attributes/{AttributeName} --></help>
+        <label><!-- URI --></label>
+        <name>QIDC__URI_ims__c</name>
+    </fields>
+</CustomObjectTranslation>

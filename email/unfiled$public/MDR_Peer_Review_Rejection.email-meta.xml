@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Sent to the Complaint owner when the Peer Review is rejected.</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>General_Letterhead</letterhead>
+    <name>MDR Peer Review Rejection</name>
+    <style>freeForm</style>
+    <subject>Initial Review of Complaint {!complaint__c.Name} has been Rejected</subject>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

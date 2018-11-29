@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QuickAction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>This custom action will be used to add &apos;Reps for Sales&apos; &amp; &apos;Reps for Credit&apos; once the MDRF record is created.</description>
+    <height>250</height>
+    <label>Add Representatives</label>
+    <lightningComponent>AddReps</lightningComponent>
+    <optionsCreateFeedItem>false</optionsCreateFeedItem>
+    <type>LightningComponent</type>
+    <width>-100</width>
+</QuickAction>

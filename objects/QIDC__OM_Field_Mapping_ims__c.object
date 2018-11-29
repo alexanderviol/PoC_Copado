@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <description>Defines mappings between Org Manger attributes and SObject fields.</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>false</enableBulkApi>
+    <enableChangeDataCapture>false</enableChangeDataCapture>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>false</enableReports>
+    <enableSearch>false</enableSearch>
+    <enableSharing>false</enableSharing>
+    <enableStreamingApi>false</enableStreamingApi>
+    <externalSharingModel>ControlledByParent</externalSharingModel>
+    <fields>
+        <fullName>QIDC__Has_Record_Mapping_ims__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>If checked, this mapping will determine record type mappings.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>If checked, this mapping will determine record type mappings.</inlineHelpText>
+        <label>Defines Record Mapping?</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>QIDC__Is_Primary_Key_ims__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>The Primary Key for the object mapping. Only one field can be Primary Key for a given mapping.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The Primary Key for the object mapping. Only one field can be Primary Key for a given mapping.</inlineHelpText>
+        <label>Is Primary Key?</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>QIDC__OM_Attribute_ims__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Developer name of attribute that links to the target Salesforce field.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Developer name of attribute that links to the target Salesforce field.</inlineHelpText>
+        <label>Org Manager Attribute</label>
+        <length>80</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>QIDC__OM_Object_Mapping_ims__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The Org Manager entity that the fields being mapped belong to.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The Org Manager entity that the fields being mapped belong to.</inlineHelpText>
+        <label>Org Manager Object Mapping</label>
+        <referenceTo>QIDC__OM_Object_Mapping_ims__c</referenceTo>
+        <relationshipLabel>Org Manager Field Mappings</relationshipLabel>
+        <relationshipName>Org_Manager_Field_Mappings</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>QIDC__SObject_Field_ims__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Target Salesforce field that is mapped to the attribute.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Target Salesforce field that is mapped to the attribute.</inlineHelpText>
+        <label>SObject Field</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Org Manager Field Mapping</label>
+    <nameField>
+        <label>Org Manager Field Mapping Name</label>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Org Manager Field Mappings</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

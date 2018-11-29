@@ -1,0 +1,11 @@
+<aura:component controller ="FDA3500FormExtension" 
+                implements="force:lightningQuickActionWithoutHeader,force:hasRecordId,flexipage:availableForAllPageTypes" 
+                access="global" >
+	<aura:attribute name="recordId" type="Id" />
+    <center>
+        <h2 class="slds-text-heading_medium slds-hyphenate"><b>FDA 3500A</b></h2> <br/>
+        <button class="slds-button slds-button_brand" onclick="{!c.saveDoc}">Open and Save</button>&nbsp;&nbsp;
+        <button class="slds-button slds-button_brand" onclick="{!c.open}">Open</button>&nbsp;&nbsp;
+        <button class="slds-button slds-button_neutral" onclick="{!c.closePopup}">Cancel</button>
+    </center>
+</aura:component>

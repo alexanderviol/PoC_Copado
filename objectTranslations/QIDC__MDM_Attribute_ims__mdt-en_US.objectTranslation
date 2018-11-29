@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- This field is used to define JSON structure for attribute value. It should have dataSource, list of criteria and result field. --></help>
+        <label><!-- Attribute Expression --></label>
+        <name>QIDC__Attribute_Expression_ims__c</name>
+    </fields>
+    <fields>
+        <help><!-- Description for the attribute type. --></help>
+        <label><!-- Description --></label>
+        <name>QIDC__Description_ims__c</name>
+    </fields>
+    <fields>
+        <help><!-- Path that is used to reach the entity type.
+Format: configuration/entityTypes/{EntityTypeName}
+
+Example:
+configuration/entityTypes/Individual --></help>
+        <label><!-- Entity Type URI --></label>
+        <name>QIDC__Entity_Type_URI_ims__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field is used to indicate whether the attribute is active or not. --></help>
+        <label><!-- Is Active? --></label>
+        <name>QIDC__Is_Active_ims__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field is used to indicate whether the MDM attribute is required or not in mappings. --></help>
+        <label><!-- Is Required? --></label>
+        <name>QIDC__Is_Required_ims__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field is used to store the lookup type code of an attribute. --></help>
+        <label><!-- Lookup Code --></label>
+        <name>QIDC__Lookup_Code_ims__c</name>
+    </fields>
+    <fields>
+        <help><!-- Data type of attribute. --></help>
+        <label><!-- Type --></label>
+        <name>QIDC__Type_ims__c</name>
+        <picklistValues>
+            <masterLabel>Blob</masterLabel>
+            <translation><!-- Blob --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Boolean</masterLabel>
+            <translation><!-- Boolean --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Date</masterLabel>
+            <translation><!-- Date --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Number</masterLabel>
+            <translation><!-- Number --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Picklist</masterLabel>
+            <translation><!-- Picklist --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>String</masterLabel>
+            <translation><!-- String --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TimeStamp</masterLabel>
+            <translation><!-- TimeStamp --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>URL</masterLabel>
+            <translation><!-- URL --></translation>
+        </picklistValues>
+    </fields>
+    <validationRules>
+        <errorMessage><!-- Attribute Expression can&apos;t be blank --></errorMessage>
+        <name>QIDC__Attribute_Expression_Cannot_Be_Blank_ims</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Entity Type URI can&apos;t be blank. --></errorMessage>
+        <name>QIDC__Entity_Type_URI_Cannot_Be_Blank_ims</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Lookup Code can&apos;t be blank --></errorMessage>
+        <name>QIDC__Lookup_Code_Cannot_Be_Blank_ims</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Type can&apos;t be be blank or  &apos;- - None- - &apos; --></errorMessage>
+        <name>QIDC__Type_Cannot_Be_Blank_ims</name>
+    </validationRules>
+</CustomObjectTranslation>

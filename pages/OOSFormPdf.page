@@ -1,0 +1,356 @@
+<apex:page renderAs="PDF" standardStylesheets="false" standardController="Asset" extensions="BINCAssetDataControllerExt">
+    <apex:stylesheet value="{!$Resource.BINCPdf}" />
+    <!-- top right Logo + text -->
+    <div class="toprightcorner">
+        <apex:image width="200px" height="40px" value="{!$Resource.Biotronik_logo}"/>
+        <br/>6024 Jean Road, Lake Oswego, OR 97035<br/>
+        Phone: 1-800-547-0394 | Fax: 1-888-503-5370
+    </div>
+    
+    <!-- div class="toprightcorner">
+<apex:image value="{!$Resource.Biotronik_logo}"/><br />
+<div style="text-align: center; font-weight: bold; font-size: 14pt;">
+For assistance, call<br/>
+1-800-547-0394
+</div>
+</div -->
+    
+    <div class="bincHeader"><h1>
+        Out of Service Report Form
+        </h1>
+        Please clean / gas sterilize product before returning
+    </div>
+    
+    <div style="margin-top: -20px;">
+        Use this form to report or return a device for evaluation and / or OOS. 
+    This information is used for warranty consideration, medical device 
+    reporting and performance assessment.<br />
+    </div>
+    <b>Attention:</b> User facilities may be required to complete 3500A MedWatch if event meets MDR reporting requirements.
+    
+    <h2 class="oosTitle">
+        <span>Patient Information</span>
+    </h2>
+    <table class="oosTable">
+        <colgroup>
+            <col width="20%" />
+            <col width="20%" />
+            <col width="15%" />
+            <col width="15%" />
+            <col width="30%" />
+            
+        </colgroup>
+        <tr>
+            <th>
+                Patient's Name
+            </th>
+            <th>(First)</th>
+            <th colspan="2">(Middle)</th>
+            <th class="borderRight">(Last)</th>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td>{!currentAsset.patient__r.FirstName}</td>
+            <td colspan="2">{!currentAsset.patient__r.MiddleName}</td>
+            <td class="borderRight">{!currentAsset.patient__r.LastName}</td>
+        </tr>
+        <tr>
+            <th colspan="3" class="borderRight">Social Security Number (Optional)</th>
+            <th colspan="2" class="borderRight">Date of Birth</th>
+        </tr>
+        <tr>
+            <td colspan="3" class="borderRight">{!currentAsset.patient__r.ssn__c}</td>
+            <td colspan="2" class="borderRight">
+                <apex:outputText value="{0, date, MM/dd/yyyy}">
+                        <apex:param value="{!currentAsset.patient__r.BirthDate}" /> 
+                        </apex:outputText>
+            </td>
+        </tr>
+    </table>
+    
+    <h2 class="oosTitle">
+        <span>Physician Information</span>
+    </h2>
+    
+    <table class="oosTable">
+        <colgroup>
+            <col width="16%" />
+            <col width="14%" />
+            <col width="14%" />
+            <col width="14%" />
+            <col width="14%" />
+            <col width="14%" />
+            <col width="14%" />
+        </colgroup>
+        <tr>
+            <th>Event Physician Name</th>
+            <th>(First)</th>
+            <th >(Middle)</th>
+            <th colspan="2" class="borderRight">(Last)</th>
+            <th colspan="2" class="borderRight">Phone</th>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td>{!currentAsset.explanting_physician__r.FirstName}</td>
+            <td>{!currentAsset.explanting_physician__r.MiddleName}</td>
+            <td colspan="2" class="borderRight">{!currentAsset.explanting_physician__r.LastName}</td>    
+            <td colspan="2" class="borderRight">{!currentAsset.explanting_physician__r.Phone}</td>    
+        </tr>
+        <tr>
+            <th colspan="3" class="borderRight">Address</th>
+            <th colspan="2" class="borderRight">City</th>
+            <th class="borderRight">State</th>
+            <th class="borderRight">Zip</th>
+        </tr>
+        <td colspan="3" class="borderRight">{!currentAsset.explanting_physician__r.MailingStreet}</td>
+        <td colspan="2" class="borderRight">{!currentAsset.explanting_physician__r.Mailingcity}</td>
+        <td class="borderRight">{!currentAsset.explanting_physician__r.MailingStateCode}</td>
+        <td class="borderRight">{!currentAsset.explanting_physician__r.MailingPostalCode}</td>
+    </table>
+    
+    <h2 class="oosTitle">
+        <span>Hospital Information</span>
+    </h2>
+    <table class="oosTable">
+        <colgroup>
+            <col width="58%" />
+            <col width="14%" />
+            <col width="14%" />
+            <col width="14%" />
+        </colgroup>
+        <tr>
+            <th colspan="2" class="borderRight">Event Facility Name</th>
+            <th colspan="2" class="borderRight">Phone</th>
+        </tr>
+        <tr>
+            <td colspan="2" class="borderRight">{!currentAsset.explanting_facility__r.Name}</td>
+            <td colspan="2" class="borderRight">{!currentAsset.explanting_facility__r.Phone}</td>
+        </tr>
+        <tr>
+            <th class="borderRight">Addresse</th>
+            <th class="borderRight">City</th>
+            <th class="borderRight">State</th>
+            <th class="borderRight">Zip</th>
+        </tr>                
+        <tr>
+            <td class="borderRight">{!currentAsset.explanting_facility__r.ShippingStreet}</td>
+            <td class="borderRight">{!currentAsset.explanting_facility__r.ShippingCity}</td>
+            <td class="borderRight">{!currentAsset.explanting_facility__r.ShippingStateCode}</td>
+            <td class="borderRight">{!currentAsset.explanting_facility__r.ShippingPostalCode}</td>
+        </tr>
+    </table>
+    
+    <div style="width: 100%; margin: 12px 0px 6px 0px;">
+        <div style="margin-left: 200px; margin-right: 200px; text-align: center;  border: solid black 1px; height: 100px; padding: 6px 4px 6px 4px;">
+            OOS Reason (Check ALL that apply)<br />
+            
+            <div style="width:49%; float: left; text-align: left;">
+            
+            <apex:image rendered="{!Contains (OOSReason, 'Dislodgment')}" url="/img/checkbox_checked.gif" height="13" width="13"/>
+                <apex:image rendered="{!NOT (Contains (OOSReason, 'Dislodgment'))}" url="/img/checkbox_unchecked.gif" height="13" width="13" />
+            Dislodgment<br />
+            
+            <apex:image rendered="{!Contains (OOSReason, 'ERI')}" url="/img/checkbox_checked.gif" height="13" width="13"/>
+                <apex:image rendered="{!NOT (Contains (OOSReason, 'ERI'))}" url="/img/checkbox_unchecked.gif" height="13" width="13" />
+            ERI<br />
+            
+            <apex:image rendered="{!Contains (OOSReason, 'High Impedance')}" url="/img/checkbox_checked.gif" height="13" width="13"/>
+                <apex:image rendered="{!NOT (Contains (OOSReason, 'High Impedance'))}" url="/img/checkbox_unchecked.gif" height="13" width="13" />
+            High Impedance<br />
+            
+            <apex:image rendered="{!Contains (OOSReason, 'High Thresholds')}" url="/img/checkbox_checked.gif" height="13" width="13"/>
+                <apex:image rendered="{!NOT (Contains (OOSReason, 'High Thresholds'))}" url="/img/checkbox_unchecked.gif" height="13" width="13" />
+            High Thresholds<br />
+            
+            <apex:image rendered="{!Contains (OOSReason, 'Other')}" url="/img/checkbox_checked.gif" height="13" width="13"/>
+                <apex:image rendered="{!NOT (Contains (OOSReason, 'Other'))}" url="/img/checkbox_unchecked.gif" height="13" width="13" />
+            Other<br />
+            </div>
+            
+            <div style="width:49%; float: left; padding-top: 12px; text-align: left;">
+            <apex:image rendered="{!Contains (OOSReason, 'Infection')}" url="/img/checkbox_checked.gif" height="13" width="13"/>
+                <apex:image rendered="{!NOT (Contains (OOSReason, 'Infection'))}" url="/img/checkbox_unchecked.gif" height="13" width="13" />
+            Infection<br />
+            
+            <apex:image rendered="{!Contains (OOSReason, 'Loss of Capture')}" url="/img/checkbox_checked.gif" height="13" width="13"/>
+                <apex:image rendered="{!NOT (Contains (OOSReason, 'Loss of Capture'))}" url="/img/checkbox_unchecked.gif" height="13" width="13" />
+            Loss of Capture<br />
+            
+            <apex:image rendered="{!Contains (OOSReason, 'Upgrade')}" url="/img/checkbox_checked.gif" height="13" width="13"/>
+                <apex:image rendered="{!NOT (Contains (OOSReason, 'Upgrade'))}" url="/img/checkbox_unchecked.gif" height="13" width="13" />
+            Upgrade<br />
+            </div>
+            
+            
+        </div>
+    </div>
+    
+    <br/><div style="clear: left;">
+    &nbsp;
+    </div>
+    
+    <h2 class="oosTitle" style="display: inline;">
+        <span>Out of Service Device Information</span>
+    </h2>
+    <span style="font-size: 7pt;">Do not Re-Program settings after explant &nbsp;&nbsp; If modified after explant, explain in 'Comments'</span>
+	<div style="height: 8px,">
+        &nbsp; <!-- spacer -->
+    </div>    
+    <table class="oosTable">
+        <colgroup>
+            <col width="13%" />
+            <col width="12%" />
+            <col width="13%" />
+            <col width="12%" />
+            <col width="13%" />
+            <col width="12%" />
+            <col width="13%" />
+            <col width="12%" />
+        </colgroup>
+        <tr>
+            <th colspan="2" class="borderRight">Model</th>
+            <th colspan="2" class="borderRight">Serial Number</th>
+            <th colspan="2" class="borderRight">Implant Date (mm/dd/yyyy)</th>
+            <th colspan="2" class="borderRight">OOS Date (mm/dd/yyyy)</th>
+        </tr>
+        <tr>
+            <td colspan="2" class="borderRight">{!currentAsset.Name}</td>
+            <td colspan="2" class="borderRight">{!currentAsset.SerialNumber}</td>
+            <td colspan="2" class="borderRight">
+                <apex:outputtext value="{0,date,MM'/'dd'/'yyyy}">
+                    <apex:param value="{!currentAsset.InstallDate}"></apex:param>
+                </apex:outputtext>    
+            </td>
+            <td colspan="2" class="borderRight">
+                <apex:outputtext value="{0,date,MM'/'dd'/'yyyy}">
+                    <apex:param value="{!currentAsset.oos_date__c}"></apex:param>
+                </apex:outputtext>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="4" class="borderRight">
+                Was this device&nbsp;
+                <apex:image rendered="{!currentAsset.Status = 'Explanted'}" url="/img/checkbox_checked.gif" height="13" width="13"/>
+                <apex:image rendered="{!NOT (currentAsset.Status = 'Explanted')}" url="/img/checkbox_unchecked.gif" height="13" width="13" />
+                Explanted
+                <apex:image rendered="{!currentAsset.Status = 'Capped'}" url="/img/checkbox_checked.gif" height="13" width="13"/>
+                <apex:image rendered="{!NOT (currentAsset.Status = 'Capped')}" url="/img/checkbox_unchecked.gif" height="13" width="13" />
+                Capped
+            </td>
+            <td colspan="4" class="borderRight">
+                Doctors Letter Required?&nbsp;
+                <apex:image rendered="{!newestComplaint.doctors_letter_required__c}" url="/img/checkbox_checked.gif" height="13" width="13"/>
+                <apex:image rendered="{!NOT (newestComplaint.doctors_letter_required__c)}" url="/img/checkbox_unchecked.gif" height="13" width="13"/>
+                &nbsp;Yes
+                <apex:image rendered="{!NOT (newestComplaint.doctors_letter_required__c)}" url="/img/checkbox_checked.gif" height="13" width="13"/>
+                <apex:image rendered="{!newestComplaint.doctors_letter_required__c}" url="/img/checkbox_unchecked.gif" height="13" width="13"/>
+                &nbsp;No
+            </td>
+        </tr>
+        <tr>
+            <th colspan="2">Letter Recipient Name</th>
+            <th colspan="2">(First)</th>
+            <th >(Middle)</th>
+            <th colspan="3" class="borderRight">(Last)</th>
+        </tr>
+        <tr>
+            <td colspan="2" />
+            <td colspan="2">{!DLRecipient.contact__r.FirstName}</td>
+            <td >{!DLRecipient.contact__r.MiddleName}</td>
+            <td colspan="3" class="borderRight">{!DLRecipient.contact__r.LastName}</td>
+        </tr>
+        <tr>
+            <th colspan="5" class="borderRight">Address</th>
+            <th colspan="2" class="borderRight">City</th>
+            <th class="borderRight">State</th>
+        </tr>
+        <tr>
+            <td colspan="5" class="borderRight">{!DLRecipient.contact__r.MailingStreet}</td>
+            <td colspan="2" class="borderRight">{!DLRecipient.contact__r.MailingCity}</td>
+            <td class="borderRight">{!DLRecipient.contact__r.MailingStateCode}</td>
+        </tr>
+    </table>
+    
+    <div style="height: 8px;">
+        &nbsp; <!-- Spacer -->
+    </div>
+    
+    <table class="oosTable">
+        <colgroup>
+            <col width="33%" />
+            <col width="33%" />
+            <col width="33%" />
+        </colgroup>
+        <tr>
+        	<td class="borderRight borderTop" rowspan="2">
+                <apex:image rendered="{!currentAsset.patient__r.Status__c = 'Deceased'}" url="/img/checkbox_checked.gif" height="13" width="13"/> 
+                <apex:image rendered="{!NOT (currentAsset.patient__r.Status__c = 'Deceased')}" url="/img/checkbox_unchecked.gif" height="13" width="13"/>
+                &nbsp;Patient Expired</td>
+            <th class="borderRight">Date of Death</th>
+            <th class="borderRight">Device Related to Death</th> <!-- death_device_related__c -->
+        </tr>
+        <tr>
+            <td class="borderRight">
+                <apex:outputtext value="{0,date,MM'/'dd'/'yyyy}">
+                    <apex:param value="{!currentAsset.patient__r.date_of_death__c}"></apex:param>
+                </apex:outputtext>
+
+            </td>
+            <td class="borderRight">
+                <apex:image rendered="{!newestComplaint.death_device_related__c = 'Device related'}" url="/img/checkbox_checked.gif" height="13" width="13"/>
+                <apex:image rendered="{!NOT (newestComplaint.death_device_related__c = 'Device related')}" url="/img/checkbox_unchecked.gif" height="13" width="13"/>
+                &nbsp;Yes
+                <apex:image rendered="{!newestComplaint.death_device_related__c = 'Non-Device related'}" url="/img/checkbox_checked.gif" height="13" width="13"/>
+                <apex:image rendered="{!NOT (newestComplaint.death_device_related__c = 'Non-Device related')}" url="/img/checkbox_unchecked.gif" height="13" width="13"/>
+                &nbsp;No
+            </td>
+        </tr>
+        <tr>
+        	<td colspan="3" class="borderRight" style="line-height: 16px;">Cause of death</td>
+        </tr>
+        <tr>
+        	<td colspan="3" class="borderRight" style="line-height: 16px;">Other Comments</td>
+        </tr>
+    </table>
+    <br/>
+    Contact for Additional Information
+    <table class="oosTable">
+        <colgroup>
+            <col width="66%" />
+            <col width="33%" />
+        </colgroup>
+        <tr>
+        	<th class="borderRight">Name</th>
+            <th class="borderRight">Phone</th>
+        </tr>
+        <tr>
+        	<td class="borderRight">{!newestCase.Contact.Name}</td>
+            <td class="borderRight">{!newestCase.Contact.Phone}</td>
+        </tr>
+    </table>
+    
+    <table class="oosTable">
+        <colgroup>
+            <col width="40%" />
+            <col width="40%" />
+            <col width="20%" />
+        </colgroup>
+        <tr>
+        	<th class="borderRight">Form completed by (printed name)</th>
+            <th class="borderRight">Signature</th>
+            <th class="borderRight">Date</th>
+        </tr>
+        <tr>
+        	<td class="borderRight">{!currUserName}</td>
+            <td class="borderRight"></td>
+            <td class="borderRight">
+                <apex:outputtext value="{0,date,MM'/'dd'/'yyyy}">
+                    <apex:param value="{!NOW()}"></apex:param>
+                </apex:outputtext>
+
+            </td>
+        </tr>
+    </table>
+    
+    
+</apex:page>

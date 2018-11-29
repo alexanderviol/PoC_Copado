@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingOwnerRules>
+        <fullName>Share_US_Individuals_within_US</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>Opens up the access to the Individuals records for all the users within the country of the owner of the Individual.</description>
+        <label>Share US Individuals within US</label>
+        <sharedTo>
+            <roleAndSubordinates>US_National_Manager</roleAndSubordinates>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinates>US_National_Manager</roleAndSubordinates>
+        </sharedFrom>
+    </sharingOwnerRules>
+</SharingRules>

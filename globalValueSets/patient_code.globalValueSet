@@ -1,0 +1,1490 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>1412</fullName>
+        <default>false</default>
+        <label>1412: Muscle Stimulation</label>
+    </customValue>
+    <customValue>
+        <fullName>1884</fullName>
+        <default>false</default>
+        <label>1884: Hematoma</label>
+    </customValue>
+    <customValue>
+        <fullName>1930</fullName>
+        <default>false</default>
+        <label>1930: Infection</label>
+    </customValue>
+    <customValue>
+        <fullName>2013</fullName>
+        <default>false</default>
+        <label>2013: Pocket Erosion</label>
+    </customValue>
+    <customValue>
+        <fullName>2114</fullName>
+        <default>false</default>
+        <label>2114: Twiddlers Syndrome</label>
+    </customValue>
+    <customValue>
+        <fullName>2692</fullName>
+        <default>false</default>
+        <label>2692: No known impact or consequence to patient</label>
+    </customValue>
+    <customValue>
+        <fullName>3162</fullName>
+        <default>false</default>
+        <label>3162: Lead(s), shock from</label>
+    </customValue>
+    <customValue>
+        <fullName>1154</fullName>
+        <default>false</default>
+        <label>1154: DO NOT USE</label>
+    </customValue>
+    <customValue>
+        <fullName>1204</fullName>
+        <default>false</default>
+        <label>1204: Vessel Or Plaque, Device Embedded In</label>
+    </customValue>
+    <customValue>
+        <fullName>1297</fullName>
+        <default>false</default>
+        <label>1297: Host-Tissue Reaction</label>
+    </customValue>
+    <customValue>
+        <fullName>1333</fullName>
+        <default>false</default>
+        <label>1333: Intimal Dissection</label>
+    </customValue>
+    <customValue>
+        <fullName>1498</fullName>
+        <default>false</default>
+        <label>1498: Pulmonary Embolism</label>
+    </customValue>
+    <customValue>
+        <fullName>1574</fullName>
+        <default>false</default>
+        <label>1574: DO NOT USE</label>
+    </customValue>
+    <customValue>
+        <fullName>1610</fullName>
+        <default>false</default>
+        <label>1610: Syncope</label>
+    </customValue>
+    <customValue>
+        <fullName>1689</fullName>
+        <default>false</default>
+        <label>1689: Abrasion</label>
+    </customValue>
+    <customValue>
+        <fullName>1690</fullName>
+        <default>false</default>
+        <label>1690: Abscess</label>
+    </customValue>
+    <customValue>
+        <fullName>1695</fullName>
+        <default>false</default>
+        <label>1695: Adhesion(s)</label>
+    </customValue>
+    <customValue>
+        <fullName>1696</fullName>
+        <default>false</default>
+        <label>1696: Adult Respiratory Distress Syndrome</label>
+    </customValue>
+    <customValue>
+        <fullName>1697</fullName>
+        <default>false</default>
+        <label>1697: Air Embolism</label>
+    </customValue>
+    <customValue>
+        <fullName>1708</fullName>
+        <default>false</default>
+        <label>1708: Aneurysm</label>
+    </customValue>
+    <customValue>
+        <fullName>1710</fullName>
+        <default>false</default>
+        <label>1710: Angina</label>
+    </customValue>
+    <customValue>
+        <fullName>1711</fullName>
+        <default>false</default>
+        <label>1711: Anoxia</label>
+    </customValue>
+    <customValue>
+        <fullName>1713</fullName>
+        <default>false</default>
+        <label>1713: Antibiotics, reaction to</label>
+    </customValue>
+    <customValue>
+        <fullName>1715</fullName>
+        <default>false</default>
+        <label>1715: Aortic insufficiency</label>
+    </customValue>
+    <customValue>
+        <fullName>1716</fullName>
+        <default>false</default>
+        <label>1716: Aortic Regurgitation</label>
+    </customValue>
+    <customValue>
+        <fullName>1717</fullName>
+        <default>false</default>
+        <label>1717: Aortic Stenosis</label>
+    </customValue>
+    <customValue>
+        <fullName>1720</fullName>
+        <default>false</default>
+        <label>1720: Apnea</label>
+    </customValue>
+    <customValue>
+        <fullName>1721</fullName>
+        <default>false</default>
+        <label>1721: Arrhythmia</label>
+    </customValue>
+    <customValue>
+        <fullName>1722</fullName>
+        <default>false</default>
+        <label>1722: Arteriosclerosis</label>
+    </customValue>
+    <customValue>
+        <fullName>1726</fullName>
+        <default>false</default>
+        <label>1726: DO NOT USE</label>
+    </customValue>
+    <customValue>
+        <fullName>1728</fullName>
+        <default>false</default>
+        <label>1728: Atherosclerosis</label>
+    </customValue>
+    <customValue>
+        <fullName>1729</fullName>
+        <default>false</default>
+        <label>1729: Atrial Fibrillation</label>
+    </customValue>
+    <customValue>
+        <fullName>1730</fullName>
+        <default>false</default>
+        <label>1730: Atrial Flutter</label>
+    </customValue>
+    <customValue>
+        <fullName>1731</fullName>
+        <default>false</default>
+        <label>1731: Atrial Tachycardia</label>
+    </customValue>
+    <customValue>
+        <fullName>1732</fullName>
+        <default>false</default>
+        <label>1732: DO NOT USE</label>
+    </customValue>
+    <customValue>
+        <fullName>1733</fullName>
+        <default>false</default>
+        <label>1733: DO NOT USE</label>
+    </customValue>
+    <customValue>
+        <fullName>1735</fullName>
+        <default>false</default>
+        <label>1735: Infection, Bacterial</label>
+    </customValue>
+    <customValue>
+        <fullName>1745</fullName>
+        <default>false</default>
+        <label>1745: Cross-patient exposure to body fluids</label>
+    </customValue>
+    <customValue>
+        <fullName>1750</fullName>
+        <default>false</default>
+        <label>1750: Erosion</label>
+    </customValue>
+    <customValue>
+        <fullName>1751</fullName>
+        <default>false</default>
+        <label>1751: Bradycardia</label>
+    </customValue>
+    <customValue>
+        <fullName>1754</fullName>
+        <default>false</default>
+        <label>1754: Bruise</label>
+    </customValue>
+    <customValue>
+        <fullName>1758</fullName>
+        <default>false</default>
+        <label>1758: Calcification</label>
+    </customValue>
+    <customValue>
+        <fullName>1762</fullName>
+        <default>false</default>
+        <label>1762: Cardiac Arrest</label>
+    </customValue>
+    <customValue>
+        <fullName>1763</fullName>
+        <default>false</default>
+        <label>1763: Myocardial Contusion</label>
+    </customValue>
+    <customValue>
+        <fullName>1764</fullName>
+        <default>false</default>
+        <label>1764: Cardiomyopathy</label>
+    </customValue>
+    <customValue>
+        <fullName>1765</fullName>
+        <default>false</default>
+        <label>1765: Cardiopulmonary Arrest</label>
+    </customValue>
+    <customValue>
+        <fullName>1768</fullName>
+        <default>false</default>
+        <label>1768: Cellulitis</label>
+    </customValue>
+    <customValue>
+        <fullName>1776</fullName>
+        <default>false</default>
+        <label>1776: Chest Pain</label>
+    </customValue>
+    <customValue>
+        <fullName>1779</fullName>
+        <default>false</default>
+        <label>1779: Coagulopathy</label>
+    </customValue>
+    <customValue>
+        <fullName>1782</fullName>
+        <default>false</default>
+        <label>1782: Congenital Defect/Deformity</label>
+    </customValue>
+    <customValue>
+        <fullName>1783</fullName>
+        <default>false</default>
+        <label>1783: Congestive Heart Failure</label>
+    </customValue>
+    <customValue>
+        <fullName>1792</fullName>
+        <default>false</default>
+        <label>1792: DO NOT USE</label>
+    </customValue>
+    <customValue>
+        <fullName>1797</fullName>
+        <default>false</default>
+        <label>1797: Crushing Injury</label>
+    </customValue>
+    <customValue>
+        <fullName>1800</fullName>
+        <default>false</default>
+        <label>1800: Cyst(s), Formation Of</label>
+    </customValue>
+    <customValue>
+        <fullName>1802</fullName>
+        <default>false</default>
+        <label>1802: Death</label>
+    </customValue>
+    <customValue>
+        <fullName>1807</fullName>
+        <default>false</default>
+        <label>1807: Dehydrated</label>
+    </customValue>
+    <customValue>
+        <fullName>1808</fullName>
+        <default>false</default>
+        <label>1808: Dementia</label>
+    </customValue>
+    <customValue>
+        <fullName>1816</fullName>
+        <default>false</default>
+        <label>1816: Dyspnea</label>
+    </customValue>
+    <customValue>
+        <fullName>1817</fullName>
+        <default>false</default>
+        <label>1817: EKG/ECG Changes</label>
+    </customValue>
+    <customValue>
+        <fullName>1818</fullName>
+        <default>false</default>
+        <label>1818: DO NOT USE</label>
+    </customValue>
+    <customValue>
+        <fullName>1820</fullName>
+        <default>false</default>
+        <label>1820: Edema</label>
+    </customValue>
+    <customValue>
+        <fullName>1829</fullName>
+        <default>false</default>
+        <label>1829: Embolism</label>
+    </customValue>
+    <customValue>
+        <fullName>1830</fullName>
+        <default>false</default>
+        <label>1830: Embolus</label>
+    </customValue>
+    <customValue>
+        <fullName>1834</fullName>
+        <default>false</default>
+        <label>1834: Endocarditis</label>
+    </customValue>
+    <customValue>
+        <fullName>1840</fullName>
+        <default>false</default>
+        <label>1840: DO NOT USE</label>
+    </customValue>
+    <customValue>
+        <fullName>1843</fullName>
+        <default>false</default>
+        <label>1843: Extreme Exhaustion</label>
+    </customValue>
+    <customValue>
+        <fullName>1847</fullName>
+        <default>false</default>
+        <label>1847: Fainting</label>
+    </customValue>
+    <customValue>
+        <fullName>1848</fullName>
+        <default>false</default>
+        <label>1848: Fall</label>
+    </customValue>
+    <customValue>
+        <fullName>1849</fullName>
+        <default>false</default>
+        <label>1849: Fatigue</label>
+    </customValue>
+    <customValue>
+        <fullName>1858</fullName>
+        <default>false</default>
+        <label>1858: Fever</label>
+    </customValue>
+    <customValue>
+        <fullName>1868</fullName>
+        <default>false</default>
+        <label>1868: DO NOT USE</label>
+    </customValue>
+    <customValue>
+        <fullName>1870</fullName>
+        <default>false</default>
+        <label>1870: Fracture(s)</label>
+    </customValue>
+    <customValue>
+        <fullName>1872</fullName>
+        <default>false</default>
+        <label>1872: Fungus</label>
+    </customValue>
+    <customValue>
+        <fullName>1873</fullName>
+        <default>false</default>
+        <label>1873: Gangrene</label>
+    </customValue>
+    <customValue>
+        <fullName>1876</fullName>
+        <default>false</default>
+        <label>1876: Granuloma</label>
+    </customValue>
+    <customValue>
+        <fullName>1879</fullName>
+        <default>false</default>
+        <label>1879: DO NOT USE</label>
+    </customValue>
+    <customValue>
+        <fullName>1880</fullName>
+        <default>false</default>
+        <label>1880: Headache</label>
+    </customValue>
+    <customValue>
+        <fullName>1883</fullName>
+        <default>false</default>
+        <label>1883: Heartburn</label>
+    </customValue>
+    <customValue>
+        <fullName>1887</fullName>
+        <default>false</default>
+        <label>1887: Hemoptysis</label>
+    </customValue>
+    <customValue>
+        <fullName>1888</fullName>
+        <default>false</default>
+        <label>1888: Hemorrhage</label>
+    </customValue>
+    <customValue>
+        <fullName>1895</fullName>
+        <default>false</default>
+        <label>1895: Hemostasis</label>
+    </customValue>
+    <customValue>
+        <fullName>1896</fullName>
+        <default>false</default>
+        <label>1896: DO NOT USE</label>
+    </customValue>
+    <customValue>
+        <fullName>1897</fullName>
+        <default>false</default>
+        <label>1897: Hepatitis</label>
+    </customValue>
+    <customValue>
+        <fullName>1899</fullName>
+        <default>false</default>
+        <label>1899: Hiccups</label>
+    </customValue>
+    <customValue>
+        <fullName>1904</fullName>
+        <default>false</default>
+        <label>1904: Hyperemia</label>
+    </customValue>
+    <customValue>
+        <fullName>1907</fullName>
+        <default>false</default>
+        <label>1907: Hypersensitivity</label>
+    </customValue>
+    <customValue>
+        <fullName>1908</fullName>
+        <default>false</default>
+        <label>1908: Hypertension</label>
+    </customValue>
+    <customValue>
+        <fullName>1910</fullName>
+        <default>false</default>
+        <label>1910: Hyperventilation</label>
+    </customValue>
+    <customValue>
+        <fullName>1914</fullName>
+        <default>false</default>
+        <label>1914: DO NOT USE</label>
+    </customValue>
+    <customValue>
+        <fullName>1917</fullName>
+        <default>false</default>
+        <label>1917: Shock, Hypovolemic</label>
+    </customValue>
+    <customValue>
+        <fullName>1923</fullName>
+        <default>false</default>
+        <label>1923: Idioventricular Rhythm</label>
+    </customValue>
+    <customValue>
+        <fullName>1924</fullName>
+        <default>false</default>
+        <label>1924: Implant, Failure Of</label>
+    </customValue>
+    <customValue>
+        <fullName>1926</fullName>
+        <default>false</default>
+        <label>1926: Insufficiency, Valvular</label>
+    </customValue>
+    <customValue>
+        <fullName>1932</fullName>
+        <default>false</default>
+        <label>1932: Inflammation</label>
+    </customValue>
+    <customValue>
+        <fullName>1933</fullName>
+        <default>false</default>
+        <label>1933: Infection, Intraocular</label>
+    </customValue>
+    <customValue>
+        <fullName>1941</fullName>
+        <default>false</default>
+        <label>1941: DO NOT USE</label>
+    </customValue>
+    <customValue>
+        <fullName>1942</fullName>
+        <default>false</default>
+        <label>1942: Ischemia</label>
+    </customValue>
+    <customValue>
+        <fullName>1946</fullName>
+        <default>false</default>
+        <label>1946: Laceration(s)</label>
+    </customValue>
+    <customValue>
+        <fullName>1947</fullName>
+        <default>false</default>
+        <label>1947: Left Ventricular Dysfunction</label>
+    </customValue>
+    <customValue>
+        <fullName>1948</fullName>
+        <default>false</default>
+        <label>1948: Left Ventricular Failure</label>
+    </customValue>
+    <customValue>
+        <fullName>1949</fullName>
+        <default>false</default>
+        <label>1949: Left Ventricular Hypertrophy</label>
+    </customValue>
+    <customValue>
+        <fullName>1963</fullName>
+        <default>false</default>
+        <label>1963: Mitral Insufficiency</label>
+    </customValue>
+    <customValue>
+        <fullName>1964</fullName>
+        <default>false</default>
+        <label>1964: Mitral Regurgitation</label>
+    </customValue>
+    <customValue>
+        <fullName>1965</fullName>
+        <default>false</default>
+        <label>1965: Mitral Stenosis</label>
+    </customValue>
+    <customValue>
+        <fullName>1967</fullName>
+        <default>false</default>
+        <label>1967: DO NOT USE</label>
+    </customValue>
+    <customValue>
+        <fullName>1969</fullName>
+        <default>false</default>
+        <label>1969: Myocardial Infarction</label>
+    </customValue>
+    <customValue>
+        <fullName>1970</fullName>
+        <default>false</default>
+        <label>1970: Nausea</label>
+    </customValue>
+    <customValue>
+        <fullName>1971</fullName>
+        <default>false</default>
+        <label>1971: Necrosis</label>
+    </customValue>
+    <customValue>
+        <fullName>1978</fullName>
+        <default>false</default>
+        <label>1978: Neovascularization</label>
+    </customValue>
+    <customValue>
+        <fullName>1979</fullName>
+        <default>false</default>
+        <label>1979: Nerve Damage</label>
+    </customValue>
+    <customValue>
+        <fullName>1980</fullName>
+        <default>false</default>
+        <label>1980: Nerve Stimulation, Undesired</label>
+    </customValue>
+    <customValue>
+        <fullName>1984</fullName>
+        <default>false</default>
+        <label>1984: Occlusion</label>
+    </customValue>
+    <customValue>
+        <fullName>1985</fullName>
+        <default>false</default>
+        <label>1985: Reocclusion</label>
+    </customValue>
+    <customValue>
+        <fullName>1987</fullName>
+        <default>false</default>
+        <label>1987: Organ(s), Perforation Of</label>
+    </customValue>
+    <customValue>
+        <fullName>1991</fullName>
+        <default>false</default>
+        <label>1991: Overstimulation</label>
+    </customValue>
+    <customValue>
+        <fullName>1994</fullName>
+        <default>false</default>
+        <label>1994: Pain</label>
+    </customValue>
+    <customValue>
+        <fullName>1997</fullName>
+        <default>false</default>
+        <label>1997: Paralysis</label>
+    </customValue>
+    <customValue>
+        <fullName>2001</fullName>
+        <default>false</default>
+        <label>2001: Perforation</label>
+    </customValue>
+    <customValue>
+        <fullName>2002</fullName>
+        <default>false</default>
+        <label>2002: Peripheral Vascular Disease</label>
+    </customValue>
+    <customValue>
+        <fullName>2004</fullName>
+        <default>false</default>
+        <label>2004: Phlebitis</label>
+    </customValue>
+    <customValue>
+        <fullName>2010</fullName>
+        <default>false</default>
+        <label>2010: DO NOT USE</label>
+    </customValue>
+    <customValue>
+        <fullName>2011</fullName>
+        <default>false</default>
+        <label>2011: DO NOT USE</label>
+    </customValue>
+    <customValue>
+        <fullName>2012</fullName>
+        <default>false</default>
+        <label>2012: Pneumothorax</label>
+    </customValue>
+    <customValue>
+        <fullName>2019</fullName>
+        <default>false</default>
+        <label>2019: Pulmonary Dysfunction</label>
+    </customValue>
+    <customValue>
+        <fullName>2020</fullName>
+        <default>false</default>
+        <label>2020: Pulmonary Edema</label>
+    </customValue>
+    <customValue>
+        <fullName>2021</fullName>
+        <default>false</default>
+        <label>2021: Pulmonary Infarction</label>
+    </customValue>
+    <customValue>
+        <fullName>2022</fullName>
+        <default>false</default>
+        <label>2022: Pulmonary Insufficiency</label>
+    </customValue>
+    <customValue>
+        <fullName>2023</fullName>
+        <default>false</default>
+        <label>2023: Pulmonary Regurgitation</label>
+    </customValue>
+    <customValue>
+        <fullName>2024</fullName>
+        <default>false</default>
+        <label>2024: Pulmonary Stenosis</label>
+    </customValue>
+    <customValue>
+        <fullName>2032</fullName>
+        <default>false</default>
+        <label>2032: Range Of Motion, Loss Of</label>
+    </customValue>
+    <customValue>
+        <fullName>2033</fullName>
+        <default>false</default>
+        <label>2033: Rash</label>
+    </customValue>
+    <customValue>
+        <fullName>2035</fullName>
+        <default>false</default>
+        <label>2035: DO NOT USE</label>
+    </customValue>
+    <customValue>
+        <fullName>2039</fullName>
+        <default>false</default>
+        <label>2039: Renal Disease, End Stage</label>
+    </customValue>
+    <customValue>
+        <fullName>2041</fullName>
+        <default>false</default>
+        <label>2041: DO NOT USE</label>
+    </customValue>
+    <customValue>
+        <fullName>2045</fullName>
+        <default>false</default>
+        <label>2045: DO NOT USE</label>
+    </customValue>
+    <customValue>
+        <fullName>2053</fullName>
+        <default>false</default>
+        <label>2053: Rheumatic Heart Disease</label>
+    </customValue>
+    <customValue>
+        <fullName>2054</fullName>
+        <default>false</default>
+        <label>2054: Right Ventricular Dysfunction</label>
+    </customValue>
+    <customValue>
+        <fullName>2055</fullName>
+        <default>false</default>
+        <label>2055: Right Ventricular Failure</label>
+    </customValue>
+    <customValue>
+        <fullName>2056</fullName>
+        <default>false</default>
+        <label>2056: Right Ventricular Hypertrophy</label>
+    </customValue>
+    <customValue>
+        <fullName>2058</fullName>
+        <default>false</default>
+        <label>2058: Staphylococcus Aureus</label>
+    </customValue>
+    <customValue>
+        <fullName>2059</fullName>
+        <default>false</default>
+        <label>2059: ST Segment Elevation</label>
+    </customValue>
+    <customValue>
+        <fullName>2060</fullName>
+        <default>false</default>
+        <label>2060: Scar Tissue</label>
+    </customValue>
+    <customValue>
+        <fullName>2061</fullName>
+        <default>false</default>
+        <label>2061: Scarring</label>
+    </customValue>
+    <customValue>
+        <fullName>2063</fullName>
+        <default>false</default>
+        <label>2063: Seizures</label>
+    </customValue>
+    <customValue>
+        <fullName>2065</fullName>
+        <default>false</default>
+        <label>2065: Increased Sensitivity</label>
+    </customValue>
+    <customValue>
+        <fullName>2067</fullName>
+        <default>false</default>
+        <label>2067: Sepsis</label>
+    </customValue>
+    <customValue>
+        <fullName>2068</fullName>
+        <default>false</default>
+        <label>2068: Shock, septic</label>
+    </customValue>
+    <customValue>
+        <fullName>2069</fullName>
+        <default>false</default>
+        <label>2069: Seroma</label>
+    </customValue>
+    <customValue>
+        <fullName>2072</fullName>
+        <default>false</default>
+        <label>2072: Shock</label>
+    </customValue>
+    <customValue>
+        <fullName>2078</fullName>
+        <default>false</default>
+        <label>2078: Ventricle, Abnormality Of</label>
+    </customValue>
+    <customValue>
+        <fullName>2088</fullName>
+        <default>false</default>
+        <label>2088: DO NOT USE</label>
+    </customValue>
+    <customValue>
+        <fullName>2091</fullName>
+        <default>false</default>
+        <label>2091: Swelling</label>
+    </customValue>
+    <customValue>
+        <fullName>2093</fullName>
+        <default>false</default>
+        <label>2093: DO NOT USE</label>
+    </customValue>
+    <customValue>
+        <fullName>2095</fullName>
+        <default>false</default>
+        <label>2095: Tachycardia</label>
+    </customValue>
+    <customValue>
+        <fullName>2099</fullName>
+        <default>false</default>
+        <label>2099: Therapeutic Effects, Unexpected</label>
+    </customValue>
+    <customValue>
+        <fullName>2100</fullName>
+        <default>false</default>
+        <label>2100: Thrombosis</label>
+    </customValue>
+    <customValue>
+        <fullName>2101</fullName>
+        <default>false</default>
+        <label>2101: Thrombus</label>
+    </customValue>
+    <customValue>
+        <fullName>2104</fullName>
+        <default>false</default>
+        <label>2104: Tissue Damage</label>
+    </customValue>
+    <customValue>
+        <fullName>2107</fullName>
+        <default>false</default>
+        <label>2107: Torsades-De-Pointes</label>
+    </customValue>
+    <customValue>
+        <fullName>2109</fullName>
+        <default>false</default>
+        <label>2109: Transient Ischemic Attack</label>
+    </customValue>
+    <customValue>
+        <fullName>2111</fullName>
+        <default>false</default>
+        <label>2111: Tricuspid Insufficiency</label>
+    </customValue>
+    <customValue>
+        <fullName>2112</fullName>
+        <default>false</default>
+        <label>2112: Tricuspid Regurgitation</label>
+    </customValue>
+    <customValue>
+        <fullName>2113</fullName>
+        <default>false</default>
+        <label>2113: Tricuspid Stenosis</label>
+    </customValue>
+    <customValue>
+        <fullName>2116</fullName>
+        <default>false</default>
+        <label>2116: DO NOT USE</label>
+    </customValue>
+    <customValue>
+        <fullName>2120</fullName>
+        <default>false</default>
+        <label>2120: DO NOT USE</label>
+    </customValue>
+    <customValue>
+        <fullName>2123</fullName>
+        <default>false</default>
+        <label>2123: DO NOT USE</label>
+    </customValue>
+    <customValue>
+        <fullName>2126</fullName>
+        <default>false</default>
+        <label>2126: Vasoconstriction</label>
+    </customValue>
+    <customValue>
+        <fullName>2127</fullName>
+        <default>false</default>
+        <label>2127: Vasodilatation</label>
+    </customValue>
+    <customValue>
+        <fullName>2129</fullName>
+        <default>false</default>
+        <label>2129: Venipuncture</label>
+    </customValue>
+    <customValue>
+        <fullName>2130</fullName>
+        <default>false</default>
+        <label>2130: Ventricular Fibrillation</label>
+    </customValue>
+    <customValue>
+        <fullName>2131</fullName>
+        <default>false</default>
+        <label>2131: Ventricular Flutter</label>
+    </customValue>
+    <customValue>
+        <fullName>2132</fullName>
+        <default>false</default>
+        <label>2132: Ventricular Tachycardia</label>
+    </customValue>
+    <customValue>
+        <fullName>2134</fullName>
+        <default>false</default>
+        <label>2134: Vertigo</label>
+    </customValue>
+    <customValue>
+        <fullName>2135</fullName>
+        <default>false</default>
+        <label>2135: Vessels, Perforation Of</label>
+    </customValue>
+    <customValue>
+        <fullName>2136</fullName>
+        <default>false</default>
+        <label>2136: Virus</label>
+    </customValue>
+    <customValue>
+        <fullName>2138</fullName>
+        <default>false</default>
+        <label>2138: Vision, Impaired</label>
+    </customValue>
+    <customValue>
+        <fullName>2144</fullName>
+        <default>false</default>
+        <label>2144: Vomiting</label>
+    </customValue>
+    <customValue>
+        <fullName>2145</fullName>
+        <default>false</default>
+        <label>2145: Weakness</label>
+    </customValue>
+    <customValue>
+        <fullName>2146</fullName>
+        <default>false</default>
+        <label>2146: DO NOT USE</label>
+    </customValue>
+    <customValue>
+        <fullName>2152</fullName>
+        <default>false</default>
+        <label>2152: Great Vessel Perforation</label>
+    </customValue>
+    <customValue>
+        <fullName>2159</fullName>
+        <default>false</default>
+        <label>2159: Misdiagnosis</label>
+    </customValue>
+    <customValue>
+        <fullName>2162</fullName>
+        <default>false</default>
+        <label>2162: Nipple Sensation, Changes In/Loss Of</label>
+    </customValue>
+    <customValue>
+        <fullName>2171</fullName>
+        <default>false</default>
+        <label>2171: Tingling</label>
+    </customValue>
+    <customValue>
+        <fullName>2172</fullName>
+        <default>false</default>
+        <label>2172: Twitching</label>
+    </customValue>
+    <customValue>
+        <fullName>2181</fullName>
+        <default>false</default>
+        <label>2181: Vitritis</label>
+    </customValue>
+    <customValue>
+        <fullName>2191</fullName>
+        <default>false</default>
+        <label>2191: Chills</label>
+    </customValue>
+    <customValue>
+        <fullName>2193</fullName>
+        <default>false</default>
+        <label>2193: Cramp(s)</label>
+    </customValue>
+    <customValue>
+        <fullName>2194</fullName>
+        <default>false</default>
+        <label>2194: Dizziness</label>
+    </customValue>
+    <customValue>
+        <fullName>2198</fullName>
+        <default>false</default>
+        <label>2198: Mediastinal Shift</label>
+    </customValue>
+    <customValue>
+        <fullName>2199</fullName>
+        <default>false</default>
+        <label>2199: No Consequences Or Impact To Patient</label>
+    </customValue>
+    <customValue>
+        <fullName>2206</fullName>
+        <default>false</default>
+        <label>2206: Heart Failure</label>
+    </customValue>
+    <customValue>
+        <fullName>2208</fullName>
+        <default>false</default>
+        <label>2208: Rupture</label>
+    </customValue>
+    <customValue>
+        <fullName>2223</fullName>
+        <default>false</default>
+        <label>2223: Convulsion, Tonic</label>
+    </customValue>
+    <customValue>
+        <fullName>2225</fullName>
+        <default>false</default>
+        <label>2225: DO NOT USE</label>
+    </customValue>
+    <customValue>
+        <fullName>2226</fullName>
+        <default>false</default>
+        <label>2226: Cardiac Tamponade</label>
+    </customValue>
+    <customValue>
+        <fullName>2237</fullName>
+        <default>false</default>
+        <label>2237: Chronic obstructive pulmonary disease, (COPD)</label>
+    </customValue>
+    <customValue>
+        <fullName>2243</fullName>
+        <default>false</default>
+        <label>2243: Hypovolemia</label>
+    </customValue>
+    <customValue>
+        <fullName>2244</fullName>
+        <default>false</default>
+        <label>2244: Infection, Direct</label>
+    </customValue>
+    <customValue>
+        <fullName>2245</fullName>
+        <default>false</default>
+        <label>2245: Infection, Indirect</label>
+    </customValue>
+    <customValue>
+        <fullName>2246</fullName>
+        <default>false</default>
+        <label>2246: Infection, Pyrogenic</label>
+    </customValue>
+    <customValue>
+        <fullName>2247</fullName>
+        <default>false</default>
+        <label>2247: Infection, Subclinical</label>
+    </customValue>
+    <customValue>
+        <fullName>2248</fullName>
+        <default>false</default>
+        <label>2248: Infection, Viral</label>
+    </customValue>
+    <customValue>
+        <fullName>2262</fullName>
+        <default>false</default>
+        <label>2262: Shock, Cardiogenic</label>
+    </customValue>
+    <customValue>
+        <fullName>2263</fullName>
+        <default>false</default>
+        <label>2263: DO NOT USE</label>
+    </customValue>
+    <customValue>
+        <fullName>2266</fullName>
+        <default>false</default>
+        <label>2266: Shock, Postoperative</label>
+    </customValue>
+    <customValue>
+        <fullName>2267</fullName>
+        <default>false</default>
+        <label>2267: Shock, Surgical</label>
+    </customValue>
+    <customValue>
+        <fullName>2274</fullName>
+        <default>false</default>
+        <label>2274: Ulcer</label>
+    </customValue>
+    <customValue>
+        <fullName>2326</fullName>
+        <default>false</default>
+        <label>2326: DO NOT USE</label>
+    </customValue>
+    <customValue>
+        <fullName>2328</fullName>
+        <default>false</default>
+        <label>2328: DO NOT USE</label>
+    </customValue>
+    <customValue>
+        <fullName>2329</fullName>
+        <default>false</default>
+        <label>2329: Distress</label>
+    </customValue>
+    <customValue>
+        <fullName>2330</fullName>
+        <default>false</default>
+        <label>2330: Discomfort</label>
+    </customValue>
+    <customValue>
+        <fullName>2331</fullName>
+        <default>false</default>
+        <label>2331: Complaint, Ill-Defined</label>
+    </customValue>
+    <customValue>
+        <fullName>2333</fullName>
+        <default>false</default>
+        <label>2333: Toxicity</label>
+    </customValue>
+    <customValue>
+        <fullName>2335</fullName>
+        <default>false</default>
+        <label>2335: Regurgitation, Valvular</label>
+    </customValue>
+    <customValue>
+        <fullName>2348</fullName>
+        <default>false</default>
+        <label>2348: Injury</label>
+    </customValue>
+    <customValue>
+        <fullName>2352</fullName>
+        <default>false</default>
+        <label>2352: Hypoesthesia</label>
+    </customValue>
+    <customValue>
+        <fullName>2358</fullName>
+        <default>false</default>
+        <label>2358: Scar Excision</label>
+    </customValue>
+    <customValue>
+        <fullName>2359</fullName>
+        <default>false</default>
+        <label>2359: Malaise</label>
+    </customValue>
+    <customValue>
+        <fullName>2362</fullName>
+        <default>false</default>
+        <label>2362: DO NOT USE</label>
+    </customValue>
+    <customValue>
+        <fullName>2371</fullName>
+        <default>false</default>
+        <label>2371: Disability</label>
+    </customValue>
+    <customValue>
+        <fullName>2378</fullName>
+        <default>false</default>
+        <label>2378: Healing, Impaired</label>
+    </customValue>
+    <customValue>
+        <fullName>2388</fullName>
+        <default>false</default>
+        <label>2388: Pain Relief, Inadequate</label>
+    </customValue>
+    <customValue>
+        <fullName>2403</fullName>
+        <default>false</default>
+        <label>2403: Reinfusion</label>
+    </customValue>
+    <customValue>
+        <fullName>2414</fullName>
+        <default>false</default>
+        <label>2414: Reaction</label>
+    </customValue>
+    <customValue>
+        <fullName>2415</fullName>
+        <default>false</default>
+        <label>2415: Numbness</label>
+    </customValue>
+    <customValue>
+        <fullName>2416</fullName>
+        <default>false</default>
+        <label>2416: Collapse</label>
+    </customValue>
+    <customValue>
+        <fullName>2417</fullName>
+        <default>false</default>
+        <label>2417: Coma</label>
+    </customValue>
+    <customValue>
+        <fullName>2418</fullName>
+        <default>false</default>
+        <label>2418: Loss of consciousness</label>
+    </customValue>
+    <customValue>
+        <fullName>2419</fullName>
+        <default>false</default>
+        <label>2419: Infection, Fungal</label>
+    </customValue>
+    <customValue>
+        <fullName>2420</fullName>
+        <default>false</default>
+        <label>2420: Infection, Upper Respiratory Tract</label>
+    </customValue>
+    <customValue>
+        <fullName>2422</fullName>
+        <default>false</default>
+        <label>2422: Obstruction</label>
+    </customValue>
+    <customValue>
+        <fullName>2441</fullName>
+        <default>false</default>
+        <label>2441: Nipple Ulceration</label>
+    </customValue>
+    <customValue>
+        <fullName>2444</fullName>
+        <default>false</default>
+        <label>2444: DO NOT USE</label>
+    </customValue>
+    <customValue>
+        <fullName>2452</fullName>
+        <default>false</default>
+        <label>2452: DO NOT USE</label>
+    </customValue>
+    <customValue>
+        <fullName>2463</fullName>
+        <default>false</default>
+        <label>2463: Chest Tightness/Pressure</label>
+    </customValue>
+    <customValue>
+        <fullName>2467</fullName>
+        <default>false</default>
+        <label>2467: Palpitations</label>
+    </customValue>
+    <customValue>
+        <fullName>2468</fullName>
+        <default>false</default>
+        <label>2468: Pallor</label>
+    </customValue>
+    <customValue>
+        <fullName>2469</fullName>
+        <default>false</default>
+        <label>2469: Pulse, Irregular</label>
+    </customValue>
+    <customValue>
+        <fullName>2470</fullName>
+        <default>false</default>
+        <label>2470: Myocarditis</label>
+    </customValue>
+    <customValue>
+        <fullName>2471</fullName>
+        <default>false</default>
+        <label>2471: Mitral Valve Prolapse</label>
+    </customValue>
+    <customValue>
+        <fullName>2479</fullName>
+        <default>false</default>
+        <label>2479: Pulmonary Arterial Wedge Pressure, Low</label>
+    </customValue>
+    <customValue>
+        <fullName>2480</fullName>
+        <default>false</default>
+        <label>2480: Pulmonary Arterial Wedge Pressure, High</label>
+    </customValue>
+    <customValue>
+        <fullName>2481</fullName>
+        <default>false</default>
+        <label>2481: Pulmonary Arterial Wedge Pressure, Normal</label>
+    </customValue>
+    <customValue>
+        <fullName>2484</fullName>
+        <default>false</default>
+        <label>2484: DO NOT USE</label>
+    </customValue>
+    <customValue>
+        <fullName>2487</fullName>
+        <default>false</default>
+        <label>2487: ST Segment Depression</label>
+    </customValue>
+    <customValue>
+        <fullName>2491</fullName>
+        <default>false</default>
+        <label>2491: Aortic Dissection</label>
+    </customValue>
+    <customValue>
+        <fullName>2493</fullName>
+        <default>false</default>
+        <label>2493: Ischemic Heart Disease</label>
+    </customValue>
+    <customValue>
+        <fullName>2497</fullName>
+        <default>false</default>
+        <label>2497: Suture Abrasion</label>
+    </customValue>
+    <customValue>
+        <fullName>2498</fullName>
+        <default>false</default>
+        <label>2498: Iatrogenic Source</label>
+    </customValue>
+    <customValue>
+        <fullName>2501</fullName>
+        <default>false</default>
+        <label>2501: Low Cardiac Output</label>
+    </customValue>
+    <customValue>
+        <fullName>2510</fullName>
+        <default>false</default>
+        <label>2510: Sudden Cardiac Death</label>
+    </customValue>
+    <customValue>
+        <fullName>2511</fullName>
+        <default>false</default>
+        <label>2511: Atrial Perforation</label>
+    </customValue>
+    <customValue>
+        <fullName>2512</fullName>
+        <default>false</default>
+        <label>2512: Mitral Perforation</label>
+    </customValue>
+    <customValue>
+        <fullName>2513</fullName>
+        <default>false</default>
+        <label>2513: Cardiac Perforation</label>
+    </customValue>
+    <customValue>
+        <fullName>2515</fullName>
+        <default>false</default>
+        <label>2515: DO NOT USE</label>
+    </customValue>
+    <customValue>
+        <fullName>2516</fullName>
+        <default>false</default>
+        <label>2516: DO NOT USE</label>
+    </customValue>
+    <customValue>
+        <fullName>2543</fullName>
+        <default>false</default>
+        <label>2543: Abdominal Cramps</label>
+    </customValue>
+    <customValue>
+        <fullName>2553</fullName>
+        <default>false</default>
+        <label>2553: Confusion/Disorientation</label>
+    </customValue>
+    <customValue>
+        <fullName>2554</fullName>
+        <default>false</default>
+        <label>2554: Electric Shock</label>
+    </customValue>
+    <customValue>
+        <fullName>1826</fullName>
+        <default>false</default>
+        <label>2554: Electro-Mechanical Dissociation1826</label>
+    </customValue>
+    <customValue>
+        <fullName>2560</fullName>
+        <default>false</default>
+        <label>2560: Lethargic</label>
+    </customValue>
+    <customValue>
+        <fullName>2562</fullName>
+        <default>false</default>
+        <label>2562: Loss of pulse</label>
+    </customValue>
+    <customValue>
+        <fullName>2572</fullName>
+        <default>false</default>
+        <label>2572: Vascular System, Impaired</label>
+    </customValue>
+    <customValue>
+        <fullName>2597</fullName>
+        <default>false</default>
+        <label>2597: Blood loss</label>
+    </customValue>
+    <customValue>
+        <fullName>2601</fullName>
+        <default>false</default>
+        <label>2601: Distention</label>
+    </customValue>
+    <customValue>
+        <fullName>2605</fullName>
+        <default>false</default>
+        <label>2605: Pseudoaneurysm</label>
+    </customValue>
+    <customValue>
+        <fullName>2606</fullName>
+        <default>false</default>
+        <label>2606: Pulse Pressure, Diminished</label>
+    </customValue>
+    <customValue>
+        <fullName>2607</fullName>
+        <default>false</default>
+        <label>2607: Weight Fluctuations</label>
+    </customValue>
+    <customValue>
+        <fullName>2627</fullName>
+        <default>false</default>
+        <label>2627: Complete Heart Block</label>
+    </customValue>
+    <customValue>
+        <fullName>2628</fullName>
+        <default>false</default>
+        <label>2628: Exit Block</label>
+    </customValue>
+    <customValue>
+        <fullName>2645</fullName>
+        <default>false</default>
+        <label>2645: No Patient Involvement</label>
+    </customValue>
+    <customValue>
+        <fullName>2646</fullName>
+        <default>false</default>
+        <label>2646: Inadequate Osteointegration</label>
+    </customValue>
+    <customValue>
+        <fullName>2647</fullName>
+        <default>false</default>
+        <label>2647: Nerve Proximity NOS (Not Otherwise Specified)</label>
+    </customValue>
+    <customValue>
+        <fullName>2654</fullName>
+        <default>false</default>
+        <label>2654: Thromboembolism</label>
+    </customValue>
+    <customValue>
+        <fullName>2662</fullName>
+        <default>false</default>
+        <label>2662: Intraoperative Pain</label>
+    </customValue>
+    <customValue>
+        <fullName>2668</fullName>
+        <default>false</default>
+        <label>2668: DO NOT USE</label>
+    </customValue>
+    <customValue>
+        <fullName>2681</fullName>
+        <default>false</default>
+        <label>2681: Tissue Breakdown</label>
+    </customValue>
+    <customValue>
+        <fullName>2683</fullName>
+        <default>false</default>
+        <label>2683: Decreased Sensitivity</label>
+    </customValue>
+    <customValue>
+        <fullName>2686</fullName>
+        <default>false</default>
+        <label>2686: Fluid Discharge</label>
+    </customValue>
+    <customValue>
+        <fullName>2687</fullName>
+        <default>false</default>
+        <label>2687: Foreign Body In Patient</label>
+    </customValue>
+    <customValue>
+        <fullName>2688</fullName>
+        <default>false</default>
+        <label>2688: Patient Problem/Medical Problem</label>
+    </customValue>
+    <customValue>
+        <fullName>2695</fullName>
+        <default>false</default>
+        <label>2695: Test Result</label>
+    </customValue>
+    <customValue>
+        <fullName>2696</fullName>
+        <default>false</default>
+        <label>2696: DO NOT USE</label>
+    </customValue>
+    <customValue>
+        <fullName>2697</fullName>
+        <default>false</default>
+        <label>2697: Valvular Stenosis</label>
+    </customValue>
+    <customValue>
+        <fullName>2923</fullName>
+        <default>false</default>
+        <label>2923: DO NOT USE</label>
+    </customValue>
+    <customValue>
+        <fullName>3160</fullName>
+        <default>false</default>
+        <label>3160: DO NOT USE</label>
+    </customValue>
+    <customValue>
+        <fullName>3161</fullName>
+        <default>false</default>
+        <label>3161: Lead(s), burn(s) from</label>
+    </customValue>
+    <customValue>
+        <fullName>3163</fullName>
+        <default>false</default>
+        <label>3163: R on T phenomenon</label>
+    </customValue>
+    <customValue>
+        <fullName>3165</fullName>
+        <default>false</default>
+        <label>3165: Device fragments in patient</label>
+    </customValue>
+    <customValue>
+        <fullName>3167</fullName>
+        <default>false</default>
+        <label>3167: DO NOT USE</label>
+    </customValue>
+    <customValue>
+        <fullName>3189</fullName>
+        <default>false</default>
+        <label>3189: Not Applicable</label>
+    </customValue>
+    <customValue>
+        <fullName>3190</fullName>
+        <default>false</default>
+        <label>3190: No Information</label>
+    </customValue>
+    <customValue>
+        <fullName>3191</fullName>
+        <default>false</default>
+        <label>3191: No Code Available</label>
+    </customValue>
+    <customValue>
+        <fullName>3192</fullName>
+        <default>false</default>
+        <label>3192: DO NOT USE</label>
+    </customValue>
+    <customValue>
+        <fullName>3261</fullName>
+        <default>false</default>
+        <label>3261: Multiple Organ Failure</label>
+    </customValue>
+    <customValue>
+        <fullName>3262</fullName>
+        <default>false</default>
+        <label>3262: Cancer</label>
+    </customValue>
+    <customValue>
+        <fullName>3271</fullName>
+        <default>false</default>
+        <label>3271: Pericardial effusion</label>
+    </customValue>
+    <masterLabel>Patient Code</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

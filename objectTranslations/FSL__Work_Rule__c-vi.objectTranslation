@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Quy Tắc Công Việc</value>
+    </caseValues>
+    <fields>
+        <label><!-- Active --></label>
+        <name>FSL__Active__c</name>
+    </fields>
+    <fields>
+        <help>So sánh thuộc tính dịch vụ ở dạng số với thuộc tính tài nguyên ở dạng số</help>
+        <label><!-- Boolean Operator --></label>
+        <name>FSL__Boolean_Operator__c</name>
+        <picklistValues>
+            <masterLabel>&lt;</masterLabel>
+            <translation>&lt;</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>&lt;=</masterLabel>
+            <translation>&lt;=</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>=</masterLabel>
+            <translation>=</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>&gt;</masterLabel>
+            <translation>&gt;</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>&gt;=</masterLabel>
+            <translation>&gt;=</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Xác định khoảng thời gian nghỉ đã tạo. 
+Để trống trường này nếu bạn không muốn tạo khoảng nghỉ.</help>
+        <label><!-- Break Duration (minutes) --></label>
+        <name>FSL__Break_Duration__c</name>
+    </fields>
+    <fields>
+        <help>Xác định thời gian bắt đầu nghỉ tối thiểu (theo định dạng: {HH:MM}) để tạo giờ nghỉ. 
+Để trống trường này nếu bạn không muốn tạo giờ nghỉ.</help>
+        <label><!-- Break Start --></label>
+        <name>FSL__Break_Start__c</name>
+    </fields>
+    <fields>
+        <help>Khi được đánh dấu, so sánh trường Quy Mô Nhóm Tối Thiểu trong Yêu Cầu Công Việc hoặc Chi Tiết Yêu Cầu Công Việc với Thành Viên Nhóm Dịch Vụ có sẵn trong thực tế. 
+Nếu không, hãy so sánh Quy Mô Nhóm Tối Thiểu với trường Quy Mô Nhóm trên Nhóm Dịch Vụ.</help>
+        <label><!-- Consider Service Crew Membership --></label>
+        <name>FSL__Crew_Resources_Availability__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>FSL__Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Enable Overtime --></label>
+        <name>FSL__Enable_Overtime__c</name>
+    </fields>
+    <fields>
+        <label><!-- Evaluation Order --></label>
+        <name>FSL__Evaluation_Order__c</name>
+    </fields>
+    <fields>
+        <help>Nếu chọn, khoảng cách giữa các dịch vụ sẽ được xác định dựa trên trường khoảng cách tối thiểu, mà không cần tính toán thời gian di chuyển.</help>
+        <label><!-- Fixed Gap --></label>
+        <name>FSL__Is_Fixed_Gap__c</name>
+    </fields>
+    <fields>
+        <label><!-- Value is True --></label>
+        <name>FSL__Match_Constant_Boolean_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Match Skill Level --></label>
+        <name>FSL__Match_Skill_Level__c</name>
+    </fields>
+    <fields>
+        <label><!-- Maximum Travel From Home Type --></label>
+        <name>FSL__Maximum_Travel_From_Home_Type__c</name>
+        <picklistValues>
+            <masterLabel>Distance</masterLabel>
+            <translation>Khoảng cách</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Travel Time</masterLabel>
+            <translation>Thời Gian Di Chuyển</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Xác định khoảng cách hoặc số phút tài nguyên có thể di chuyển từ nhà để tiếp nhận dịch vụ.</help>
+        <label><!-- Maximum Travel From Home --></label>
+        <name>FSL__Maximum_Travel_From_Home__c</name>
+    </fields>
+    <fields>
+        <help>Xác định khoảng thời gian tối thiểu giữa các dịch vụ. Nếu bật khoảng cố định, hãy xác định khoảng thời gian giữa các dịch vụ.</help>
+        <label><!-- Minimum Gap (minutes) --></label>
+        <name>FSL__Minimum_Gap__c</name>
+    </fields>
+    <fields>
+        <label><!-- Object Group Field --></label>
+        <name>FSL__Object_Group_Field__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pass Empty Values --></label>
+        <name>FSL__Pass_Empty_Values__c</name>
+    </fields>
+    <fields>
+        <label><!-- Resource Group Field --></label>
+        <name>FSL__Resource_Group_Field__c</name>
+    </fields>
+    <fields>
+        <label><!-- Resource Property --></label>
+        <name>FSL__Resource_Property__c</name>
+        <picklistValues>
+            <masterLabel>IsActive</masterLabel>
+            <translation>IsActive</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IsCapacityBased</masterLabel>
+            <translation>IsCapacityBased</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Service Property --></label>
+        <name>FSL__Service_Property__c</name>
+        <picklistValues>
+            <masterLabel>ArrivalWindowEndTime</masterLabel>
+            <translation>ArrivalWindowEndTime</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ArrivalWindowStartTime</masterLabel>
+            <translation>ArrivalWindowStartTime</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SchedEndTime</masterLabel>
+            <translation>Thời gian kết thúc đã lên lịch</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SchedStartTime</masterLabel>
+            <translation>Thời gian bắt đầu đã lên lịch</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ServiceTerritory</masterLabel>
+            <translation>ServiceTerritory</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Service Schedule Time Property --></label>
+        <name>FSL__Service_Schedule_Time_Property__c</name>
+        <picklistValues>
+            <masterLabel>SchedEndTime</masterLabel>
+            <translation>Thời gian kết thúc đã lên lịch</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SchedEndTime__c</masterLabel>
+            <translation>SchedEndTime__c</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SchedStartTime</masterLabel>
+            <translation>Thời gian bắt đầu đã lên lịch</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SchedStartTime__c</masterLabel>
+            <translation>SchedStartTime__c</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Service Time Operator --></label>
+        <name>FSL__Service_Time_Operator__c</name>
+        <picklistValues>
+            <masterLabel>Before</masterLabel>
+            <translation>Trước</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Before or Equal to</masterLabel>
+            <translation>Trước hoặc Cùng</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Equal to</masterLabel>
+            <translation>Bằng</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Later than or Equal to</masterLabel>
+            <translation>Sau hoặc Cùng</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Service Time Property --></label>
+        <name>FSL__Service_Time_Property__c</name>
+        <picklistValues>
+            <masterLabel>ArrivalWindowEndTime</masterLabel>
+            <translation>ArrivalWindowEndTime</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ArrivalWindowEndTime__c</masterLabel>
+            <translation>ArrivalWindowEndTime__c</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ArrivalWindowStartTime</masterLabel>
+            <translation>ArrivalWindowStartTime</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ArrivalWindowStartTime__c</masterLabel>
+            <translation>ArrivalWindowStartTime__c</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DueDate</masterLabel>
+            <translation>DueDate</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DueDate__c</masterLabel>
+            <translation>DueDate__c</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EarliestStartTime</masterLabel>
+            <translation>EarliestStartTime</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EarliestStartTime__c</masterLabel>
+            <translation>EarliestStartTime__c</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Start of Day --></label>
+        <name>FSL__Start_of_Day__c</name>
+    </fields>
+    <fields>
+        <help>Xác định số phút trước khi bắt đầu ngày trên lịch tài nguyên sẽ được dành cho di chuyển (trên chi phí tài nguyên).
+Nếu mục này trống, mọi khoảng di chuyển trước khi bắt đầu ngày làm việc đều hợp lệ.</help>
+        <label><!-- Travel From Home (minutes) --></label>
+        <name>FSL__Travel_From_Home__c</name>
+    </fields>
+    <fields>
+        <help>Xác định số phút sau khi kết thúc ngày trên lịch tài nguyên sẽ được dành cho di chuyển (trên chi phí tài nguyên).
+Nếu mục này trống, mọi khoảng di chuyển sau khi kết thúc ngày làm việc đều hợp lệ.</help>
+        <label><!-- Travel To Home (minutes) --></label>
+        <name>FSL__Travel_To_Home__c</name>
+    </fields>
+    <fields>
+        <label><!-- Working Location Enable Primary --></label>
+        <name>FSL__Working_Location_Enable_Primary__c</name>
+    </fields>
+    <nameFieldLabel>Tên Điều Lệ Lao Động</nameFieldLabel>
+    <recordTypes>
+        <description><!-- Ensures that the assigned resource for the service appointment is not one of the excluded resources --></description>
+        <label><!-- Field Service - Excluded Resources --></label>
+        <name>Excluded_Resources_Service</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Match service resource working territories --></description>
+        <label><!-- Field Service - Working Territories --></label>
+        <name>Field_Working_Locations</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Ensures that the service resource is available for a service appointment --></description>
+        <label><!-- Field Service - Service Resource Availability --></label>
+        <name>Gap_Rule_Service</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Validates boolean property is set to true or false --></description>
+        <label><!-- Field Service - Match Boolean --></label>
+        <name>Match_Boolean_Service</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Match crew size to  service parent minimum crew size --></description>
+        <label><!-- Field Service - Service Crew Resources Availability --></label>
+        <name>Match_Crew_Size_Service</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Matches a property between a service appointment object and a service resource object --></description>
+        <label><!-- Field Service - Match Fields --></label>
+        <name>Match_Fields_Service</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Matches the territory between a service appointment object and a service resource object with Relocation support --></description>
+        <label><!-- Field Service - Match Territory --></label>
+        <name>Match_Location_Service</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Matches the required skills for a service appointment with the service resource&apos;s skills --></description>
+        <label><!-- Field Service - Match Skills --></label>
+        <name>Match_Skills_Service</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Limits service resources travel distance\time from home --></description>
+        <label><!-- Field Service - Maximum Travel From Home --></label>
+        <name>Max_Travel_From_Home_To_Service</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Ensures that the assigned resource for the service appointment is one of the required resources --></description>
+        <label><!-- Field Service - Required Resources --></label>
+        <name>Required_Resources_Service</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Ensures that the service appointment is scheduled within the customer defined visiting hours. --></description>
+        <label><!-- Field Service - Service Appointment Visiting Hours --></label>
+        <name>Service_Visiting_Hours</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Ensures that the service appointment is permitted to be scheduled on the time slots it is spread upon. --></description>
+        <label><!-- Field Service - TimeSlot Designated Work --></label>
+        <name>TimeSlot_Designated_Work</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Limits the scheduling time window according to service appointment datetime properties --></description>
+        <label><!-- Field Service - Match Time Rule --></label>
+        <name>Time_Rule_Service</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- Time Operator should be &apos;Before or Equal To&apos; when Service Schedule Time Property is &apos;SchedEndTime&apos; --></errorMessage>
+        <name>FSL__Check_time_rule</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Duration must be positive --></errorMessage>
+        <name>FSL__Greater_than_zero</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Maximum Travel from Home must be positive. --></errorMessage>
+        <name>FSL__Maximum_Travel_Must_Be_Positive</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Minimum gap should not be negative --></errorMessage>
+        <name>FSL__Minimum_Gap_Positive</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Time must be in the following format: HH:MM --></errorMessage>
+        <name>FSL__Start_Of_Day_Time_Format</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Time must be in the following format: HH:MM --></errorMessage>
+        <name>FSL__Time_Format</name>
+    </validationRules>
+</CustomObjectTranslation>

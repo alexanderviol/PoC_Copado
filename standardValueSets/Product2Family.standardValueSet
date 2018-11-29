@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Pacemaker</fullName>
+        <default>false</default>
+        <label>Pacemaker</label>
+    </standardValue>
+    <standardValue>
+        <fullName>ICD</fullName>
+        <default>false</default>
+        <label>ICD</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Lead</fullName>
+        <default>false</default>
+        <label>Lead</label>
+    </standardValue>
+    <standardValue>
+        <fullName>ILR</fullName>
+        <default>false</default>
+        <label>ILR</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </standardValue>
+</StandardValueSet>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- This field is used to store Loser SFDC ID --></help>
+        <label><!-- Loser SFID --></label>
+        <name>QIDC__Loser_SFID_ims__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field is used to store the loser Uri --></help>
+        <label><!-- Loser URI --></label>
+        <name>QIDC__Loser_URI_ims__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field is used to Store the Status of the merge record --></help>
+        <label><!-- Status --></label>
+        <name>QIDC__Status_ims__c</name>
+        <picklistValues>
+            <masterLabel>Closed</masterLabel>
+            <translation><!-- Closed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Open</masterLabel>
+            <translation><!-- Open --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- This field is use to store Winner SFDC ID --></help>
+        <label><!-- Winner SFID --></label>
+        <name>QIDC__Winner_SFID_ims__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field is used to store winner Uri --></help>
+        <label><!-- Winner URI --></label>
+        <name>QIDC__Winner_URI_ims__c</name>
+    </fields>
+</CustomObjectTranslation>

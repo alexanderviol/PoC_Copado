@@ -1,0 +1,2525 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>1069</fullName>
+        <default>false</default>
+        <label>1069: Break</label>
+    </customValue>
+    <customValue>
+        <fullName>1081</fullName>
+        <default>false</default>
+        <label>1081: Failure to capture</label>
+    </customValue>
+    <customValue>
+        <fullName>1260</fullName>
+        <default>false</default>
+        <label>1260: Fracture</label>
+    </customValue>
+    <customValue>
+        <fullName>1291</fullName>
+        <default>false</default>
+        <label>1291: High impedance</label>
+    </customValue>
+    <customValue>
+        <fullName>1438</fullName>
+        <default>false</default>
+        <label>1438: Oversensing</label>
+    </customValue>
+    <customValue>
+        <fullName>1574</fullName>
+        <default>false</default>
+        <label>1574: Inappropriate shock</label>
+    </customValue>
+    <customValue>
+        <fullName>1661</fullName>
+        <default>false</default>
+        <label>1661: Undersensing</label>
+    </customValue>
+    <customValue>
+        <fullName>2877</fullName>
+        <default>false</default>
+        <label>2877: Ambient noise issue</label>
+    </customValue>
+    <customValue>
+        <fullName>2885</fullName>
+        <default>false</default>
+        <label>2885: Battery issue</label>
+    </customValue>
+    <customValue>
+        <fullName>2917</fullName>
+        <default>false</default>
+        <label>2917: Device sensing issue</label>
+    </customValue>
+    <customValue>
+        <fullName>2923</fullName>
+        <default>false</default>
+        <label>2923: Dislodged or dislocated</label>
+    </customValue>
+    <customValue>
+        <fullName>2993</fullName>
+        <default>false</default>
+        <label>2993: No Known Device Problem</label>
+    </customValue>
+    <customValue>
+        <fullName>3266</fullName>
+        <default>false</default>
+        <label>3266: High capture threshold</label>
+    </customValue>
+    <customValue>
+        <fullName>92</fullName>
+        <default>false</default>
+        <label>92: DO NOT USE</label>
+    </customValue>
+    <customValue>
+        <fullName>1001</fullName>
+        <default>false</default>
+        <label>1001: Failure to run on AC/DC</label>
+    </customValue>
+    <customValue>
+        <fullName>1004</fullName>
+        <default>false</default>
+        <label>1004: Accessory incompatible</label>
+    </customValue>
+    <customValue>
+        <fullName>1008</fullName>
+        <default>false</default>
+        <label>1008: Air leak</label>
+    </customValue>
+    <customValue>
+        <fullName>1011</fullName>
+        <default>false</default>
+        <label>1011: Delayed alarm</label>
+    </customValue>
+    <customValue>
+        <fullName>1012</fullName>
+        <default>false</default>
+        <label>1012: Device alarm system issue</label>
+    </customValue>
+    <customValue>
+        <fullName>1013</fullName>
+        <default>false</default>
+        <label>1013: False alarm</label>
+    </customValue>
+    <customValue>
+        <fullName>1014</fullName>
+        <default>false</default>
+        <label>1014: Defective alarm</label>
+    </customValue>
+    <customValue>
+        <fullName>1016</fullName>
+        <default>false</default>
+        <label>1016: Low audible alarm</label>
+    </customValue>
+    <customValue>
+        <fullName>1018</fullName>
+        <default>false</default>
+        <label>1018: DO NOT USE</label>
+    </customValue>
+    <customValue>
+        <fullName>1019</fullName>
+        <default>false</default>
+        <label>1019: Not audible alarm</label>
+    </customValue>
+    <customValue>
+        <fullName>1022</fullName>
+        <default>false</default>
+        <label>1022: Alarm not visible</label>
+    </customValue>
+    <customValue>
+        <fullName>1027</fullName>
+        <default>false</default>
+        <label>1027: Changes in Ambient Temperature in Device Environment</label>
+    </customValue>
+    <customValue>
+        <fullName>1031</fullName>
+        <default>false</default>
+        <label>1031: Failure to adhere or bond</label>
+    </customValue>
+    <customValue>
+        <fullName>1032</fullName>
+        <default>false</default>
+        <label>1032: Arcing at paddles</label>
+    </customValue>
+    <customValue>
+        <fullName>1033</fullName>
+        <default>false</default>
+        <label>1033: Unintended arm motion</label>
+    </customValue>
+    <customValue>
+        <fullName>1036</fullName>
+        <default>false</default>
+        <label>1036: Artifact</label>
+    </customValue>
+    <customValue>
+        <fullName>1044</fullName>
+        <default>false</default>
+        <label>1044: Inability to autofill</label>
+    </customValue>
+    <customValue>
+        <fullName>1047</fullName>
+        <default>false</default>
+        <label>1047: Failure to back-up</label>
+    </customValue>
+    <customValue>
+        <fullName>1048</fullName>
+        <default>false</default>
+        <label>1048: Failure to convert to back-up</label>
+    </customValue>
+    <customValue>
+        <fullName>1057</fullName>
+        <default>false</default>
+        <label>1057: Premature Discharge of Battery</label>
+    </customValue>
+    <customValue>
+        <fullName>1059</fullName>
+        <default>false</default>
+        <label>1059: Bent</label>
+    </customValue>
+    <customValue>
+        <fullName>1062</fullName>
+        <default>false</default>
+        <label>1062: Biofilm coating in device</label>
+    </customValue>
+    <customValue>
+        <fullName>1064</fullName>
+        <default>false</default>
+        <label>1064: Bleed back</label>
+    </customValue>
+    <customValue>
+        <fullName>1065</fullName>
+        <default>false</default>
+        <label>1065: Blockage within device or device component</label>
+    </customValue>
+    <customValue>
+        <fullName>1068</fullName>
+        <default>false</default>
+        <label>1068: Loss of or failure to bond</label>
+    </customValue>
+    <customValue>
+        <fullName>1071</fullName>
+        <default>false</default>
+        <label>1071: Burn of device or device component</label>
+    </customValue>
+    <customValue>
+        <fullName>1074</fullName>
+        <default>false</default>
+        <label>1074: Burst</label>
+    </customValue>
+    <customValue>
+        <fullName>1077</fullName>
+        <default>false</default>
+        <label>1077: Calcified</label>
+    </customValue>
+    <customValue>
+        <fullName>1078</fullName>
+        <default>false</default>
+        <label>1078: Calibration error</label>
+    </customValue>
+    <customValue>
+        <fullName>1079</fullName>
+        <default>false</default>
+        <label>1079: Capacitive coupling</label>
+    </customValue>
+    <customValue>
+        <fullName>1080</fullName>
+        <default>false</default>
+        <label>1080: Intermittent capture</label>
+    </customValue>
+    <customValue>
+        <fullName>1083</fullName>
+        <default>false</default>
+        <label>1083: DO NOT USE</label>
+    </customValue>
+    <customValue>
+        <fullName>1085</fullName>
+        <default>false</default>
+        <label>1085: Failure to charge</label>
+    </customValue>
+    <customValue>
+        <fullName>1086</fullName>
+        <default>false</default>
+        <label>1086: Charred</label>
+    </customValue>
+    <customValue>
+        <fullName>1089</fullName>
+        <default>false</default>
+        <label>1089: Circuit Failure</label>
+    </customValue>
+    <customValue>
+        <fullName>1091</fullName>
+        <default>false</default>
+        <label>1091: Device Cleaning Issue</label>
+    </customValue>
+    <customValue>
+        <fullName>1094</fullName>
+        <default>false</default>
+        <label>1094: Device clogged</label>
+    </customValue>
+    <customValue>
+        <fullName>1095</fullName>
+        <default>false</default>
+        <label>1095: Clumping in Device or Device Ingredient</label>
+    </customValue>
+    <customValue>
+        <fullName>1096</fullName>
+        <default>false</default>
+        <label>1096: Coagulation in device or device ingredient</label>
+    </customValue>
+    <customValue>
+        <fullName>1098</fullName>
+        <default>false</default>
+        <label>1098: Coiled</label>
+    </customValue>
+    <customValue>
+        <fullName>1099</fullName>
+        <default>false</default>
+        <label>1099: Collapse</label>
+    </customValue>
+    <customValue>
+        <fullName>1104</fullName>
+        <default>false</default>
+        <label>1104: Detachment of device component</label>
+    </customValue>
+    <customValue>
+        <fullName>1105</fullName>
+        <default>false</default>
+        <label>1105: Component falling</label>
+    </customValue>
+    <customValue>
+        <fullName>1108</fullName>
+        <default>false</default>
+        <label>1108: Component incompatible</label>
+    </customValue>
+    <customValue>
+        <fullName>1112</fullName>
+        <default>false</default>
+        <label>1112: Computer software issue</label>
+    </customValue>
+    <customValue>
+        <fullName>1114</fullName>
+        <default>false</default>
+        <label>1114: Failure to conduct</label>
+    </customValue>
+    <customValue>
+        <fullName>1120</fullName>
+        <default>false</default>
+        <label>1120: Contamination during use</label>
+    </customValue>
+    <customValue>
+        <fullName>1121</fullName>
+        <default>false</default>
+        <label>1121: Intermittent continuity</label>
+    </customValue>
+    <customValue>
+        <fullName>1123</fullName>
+        <default>false</default>
+        <label>1123: Continuous firing</label>
+    </customValue>
+    <customValue>
+        <fullName>1126</fullName>
+        <default>false</default>
+        <label>1126: Use of Incorrect control settings</label>
+    </customValue>
+    <customValue>
+        <fullName>1130</fullName>
+        <default>false</default>
+        <label>1130: Insufficient cooling</label>
+    </customValue>
+    <customValue>
+        <fullName>1131</fullName>
+        <default>false</default>
+        <label>1131: Corrosion</label>
+    </customValue>
+    <customValue>
+        <fullName>1133</fullName>
+        <default>false</default>
+        <label>1133: Failure to deliver countershock</label>
+    </customValue>
+    <customValue>
+        <fullName>1135</fullName>
+        <default>false</default>
+        <label>1135: Crack</label>
+    </customValue>
+    <customValue>
+        <fullName>1137</fullName>
+        <default>false</default>
+        <label>1137: Cross reactivity</label>
+    </customValue>
+    <customValue>
+        <fullName>1138</fullName>
+        <default>false</default>
+        <label>1138: Application interface becomes non-functional or program exits abnormally</label>
+    </customValue>
+    <customValue>
+        <fullName>1142</fullName>
+        <default>false</default>
+        <label>1142: Failure to cycle</label>
+    </customValue>
+    <customValue>
+        <fullName>1145</fullName>
+        <default>false</default>
+        <label>1145: Decoupling</label>
+    </customValue>
+    <customValue>
+        <fullName>1146</fullName>
+        <default>false</default>
+        <label>1146: Decrease in suction</label>
+    </customValue>
+    <customValue>
+        <fullName>1149</fullName>
+        <default>false</default>
+        <label>1149: Deflation issue</label>
+    </customValue>
+    <customValue>
+        <fullName>1153</fullName>
+        <default>false</default>
+        <label>1153: Degraded</label>
+    </customValue>
+    <customValue>
+        <fullName>1157</fullName>
+        <default>false</default>
+        <label>1157: Difficult to Deploy</label>
+    </customValue>
+    <customValue>
+        <fullName>1158</fullName>
+        <default>false</default>
+        <label>1158: Failure to deploy</label>
+    </customValue>
+    <customValue>
+        <fullName>1162</fullName>
+        <default>false</default>
+        <label>1162: Unintended Energization</label>
+    </customValue>
+    <customValue>
+        <fullName>1168</fullName>
+        <default>false</default>
+        <label>1168: Disassembly</label>
+    </customValue>
+    <customValue>
+        <fullName>1169</fullName>
+        <default>false</default>
+        <label>1169: Failure to discharge</label>
+    </customValue>
+    <customValue>
+        <fullName>1170</fullName>
+        <default>false</default>
+        <label>1170: Material discolored</label>
+    </customValue>
+    <customValue>
+        <fullName>1171</fullName>
+        <default>false</default>
+        <label>1171: Disconnection</label>
+    </customValue>
+    <customValue>
+        <fullName>1175</fullName>
+        <default>false</default>
+        <label>1175: Failure to disinfect</label>
+    </customValue>
+    <customValue>
+        <fullName>1177</fullName>
+        <default>false</default>
+        <label>1177: Material disintegration</label>
+    </customValue>
+    <customValue>
+        <fullName>1181</fullName>
+        <default>false</default>
+        <label>1181: Display misread</label>
+    </customValue>
+    <customValue>
+        <fullName>1182</fullName>
+        <default>false</default>
+        <label>1182: Erratic display</label>
+    </customValue>
+    <customValue>
+        <fullName>1183</fullName>
+        <default>false</default>
+        <label>1183: No display or display failure</label>
+    </customValue>
+    <customValue>
+        <fullName>1184</fullName>
+        <default>false</default>
+        <label>1184: Incorrect display</label>
+    </customValue>
+    <customValue>
+        <fullName>1189</fullName>
+        <default>false</default>
+        <label>1189: Dose calculation error due to software problem</label>
+    </customValue>
+    <customValue>
+        <fullName>1194</fullName>
+        <default>false</default>
+        <label>1194: Electro-magnetic interference (EMI)</label>
+    </customValue>
+    <customValue>
+        <fullName>1198</fullName>
+        <default>false</default>
+        <label>1198: Electrical issue</label>
+    </customValue>
+    <customValue>
+        <fullName>1205</fullName>
+        <default>false</default>
+        <label>1205: Emergency power failure</label>
+    </customValue>
+    <customValue>
+        <fullName>1209</fullName>
+        <default>false</default>
+        <label>1209: Energy output to patient tissue incorrect</label>
+    </customValue>
+    <customValue>
+        <fullName>1210</fullName>
+        <default>false</default>
+        <label>1210: Energy spectrum incorrect</label>
+    </customValue>
+    <customValue>
+        <fullName>1211</fullName>
+        <default>false</default>
+        <label>1211: Failure to deliver energy</label>
+    </customValue>
+    <customValue>
+        <fullName>1212</fullName>
+        <default>false</default>
+        <label>1212: Entrapment of device or device component</label>
+    </customValue>
+    <customValue>
+        <fullName>1213</fullName>
+        <default>false</default>
+        <label>1213: Failure to remove enzymatic cleaner</label>
+    </customValue>
+    <customValue>
+        <fullName>1214</fullName>
+        <default>false</default>
+        <label>1214: Material erosion</label>
+    </customValue>
+    <customValue>
+        <fullName>1216</fullName>
+        <default>false</default>
+        <label>1216: Device expiration issue</label>
+    </customValue>
+    <customValue>
+        <fullName>1222</fullName>
+        <default>false</default>
+        <label>1222: Fail-safe design failure</label>
+    </customValue>
+    <customValue>
+        <fullName>1225</fullName>
+        <default>false</default>
+        <label>1225: False negative result</label>
+    </customValue>
+    <customValue>
+        <fullName>1226</fullName>
+        <default>false</default>
+        <label>1226: False device output</label>
+    </customValue>
+    <customValue>
+        <fullName>1227</fullName>
+        <default>false</default>
+        <label>1227: False positive result</label>
+    </customValue>
+    <customValue>
+        <fullName>1228</fullName>
+        <default>false</default>
+        <label>1228: False reading from device non-compliance</label>
+    </customValue>
+    <customValue>
+        <fullName>1233</fullName>
+        <default>false</default>
+        <label>1233: Filling problem</label>
+    </customValue>
+    <customValue>
+        <fullName>1234</fullName>
+        <default>false</default>
+        <label>1234: Unintended Ejection</label>
+    </customValue>
+    <customValue>
+        <fullName>1245</fullName>
+        <default>false</default>
+        <label>1245: Fire</label>
+    </customValue>
+    <customValue>
+        <fullName>1246</fullName>
+        <default>false</default>
+        <label>1246: Flaked</label>
+    </customValue>
+    <customValue>
+        <fullName>1248</fullName>
+        <default>false</default>
+        <label>1248: Restricted flowrate</label>
+    </customValue>
+    <customValue>
+        <fullName>1249</fullName>
+        <default>false</default>
+        <label>1249: Inaccurate flowrate</label>
+    </customValue>
+    <customValue>
+        <fullName>1250</fullName>
+        <default>false</default>
+        <label>1250: Fluid leak</label>
+    </customValue>
+    <customValue>
+        <fullName>1251</fullName>
+        <default>false</default>
+        <label>1251: Difficult to flush</label>
+    </customValue>
+    <customValue>
+        <fullName>1252</fullName>
+        <default>false</default>
+        <label>1252: Failure to flush</label>
+    </customValue>
+    <customValue>
+        <fullName>1253</fullName>
+        <default>false</default>
+        <label>1253: Fogging</label>
+    </customValue>
+    <customValue>
+        <fullName>1254</fullName>
+        <default>false</default>
+        <label>1254: Difficult to fold or unfold</label>
+    </customValue>
+    <customValue>
+        <fullName>1255</fullName>
+        <default>false</default>
+        <label>1255: Failure to fold</label>
+    </customValue>
+    <customValue>
+        <fullName>1261</fullName>
+        <default>false</default>
+        <label>1261: Material fragmentation</label>
+    </customValue>
+    <customValue>
+        <fullName>1262</fullName>
+        <default>false</default>
+        <label>1262: Material frayed</label>
+    </customValue>
+    <customValue>
+        <fullName>1266</fullName>
+        <default>false</default>
+        <label>1266: Improper gas output</label>
+    </customValue>
+    <customValue>
+        <fullName>1267</fullName>
+        <default>false</default>
+        <label>1267: Gel leak</label>
+    </customValue>
+    <customValue>
+        <fullName>1270</fullName>
+        <default>false</default>
+        <label>1270: Gradient increase</label>
+    </customValue>
+    <customValue>
+        <fullName>1271</fullName>
+        <default>false</default>
+        <label>1271: Grounding malfunction</label>
+    </customValue>
+    <customValue>
+        <fullName>1284</fullName>
+        <default>false</default>
+        <label>1284: Unintended head motion</label>
+    </customValue>
+    <customValue>
+        <fullName>1287</fullName>
+        <default>false</default>
+        <label>1287: Insufficient heating</label>
+    </customValue>
+    <customValue>
+        <fullName>1293</fullName>
+        <default>false</default>
+        <label>1293: Hole in material</label>
+    </customValue>
+    <customValue>
+        <fullName>1298</fullName>
+        <default>false</default>
+        <label>1298: Hot oil leak</label>
+    </customValue>
+    <customValue>
+        <fullName>1304</fullName>
+        <default>false</default>
+        <label>1304: Image display error</label>
+    </customValue>
+    <customValue>
+        <fullName>1305</fullName>
+        <default>false</default>
+        <label>1305: Image orientation incorrect</label>
+    </customValue>
+    <customValue>
+        <fullName>1306</fullName>
+        <default>false</default>
+        <label>1306: Image resolution poor</label>
+    </customValue>
+    <customValue>
+        <fullName>1307</fullName>
+        <default>false</default>
+        <label>1307: Imprecision</label>
+    </customValue>
+    <customValue>
+        <fullName>1310</fullName>
+        <default>false</default>
+        <label>1310: Inflation issue</label>
+    </customValue>
+    <customValue>
+        <fullName>1311</fullName>
+        <default>false</default>
+        <label>1311: Excess flow or overinfusion</label>
+    </customValue>
+    <customValue>
+        <fullName>1316</fullName>
+        <default>false</default>
+        <label>1316: Difficult to insert</label>
+    </customValue>
+    <customValue>
+        <fullName>1318</fullName>
+        <default>false</default>
+        <label>1318: Instruction for use issue</label>
+    </customValue>
+    <customValue>
+        <fullName>1319</fullName>
+        <default>false</default>
+        <label>1319: Inadequate instructions for healthcare professional</label>
+    </customValue>
+    <customValue>
+        <fullName>1331</fullName>
+        <default>false</default>
+        <label>1331: Difficult to interrogate</label>
+    </customValue>
+    <customValue>
+        <fullName>1332</fullName>
+        <default>false</default>
+        <label>1332: Failure to interrogate</label>
+    </customValue>
+    <customValue>
+        <fullName>1336</fullName>
+        <default>false</default>
+        <label>1336: Material invagination</label>
+    </customValue>
+    <customValue>
+        <fullName>1337</fullName>
+        <default>false</default>
+        <label>1337: Inability to irrigate</label>
+    </customValue>
+    <customValue>
+        <fullName>1339</fullName>
+        <default>false</default>
+        <label>1339: Kinked</label>
+    </customValue>
+    <customValue>
+        <fullName>1340</fullName>
+        <default>false</default>
+        <label>1340: Knotted</label>
+    </customValue>
+    <customValue>
+        <fullName>1354</fullName>
+        <default>false</default>
+        <label>1354: Leak</label>
+    </customValue>
+    <customValue>
+        <fullName>1358</fullName>
+        <default>false</default>
+        <label>1358: Image reversal</label>
+    </customValue>
+    <customValue>
+        <fullName>1370</fullName>
+        <default>false</default>
+        <label>1370: Looping</label>
+    </customValue>
+    <customValue>
+        <fullName>1371</fullName>
+        <default>false</default>
+        <label>1371: Loose or intermittent connection</label>
+    </customValue>
+    <customValue>
+        <fullName>1377</fullName>
+        <default>false</default>
+        <label>1377: Unintended magnet quench</label>
+    </customValue>
+    <customValue>
+        <fullName>1379</fullName>
+        <default>false</default>
+        <label>1379: Device maintenance issue</label>
+    </customValue>
+    <customValue>
+        <fullName>1383</fullName>
+        <default>false</default>
+        <label>1383: Incorrect measurement</label>
+    </customValue>
+    <customValue>
+        <fullName>1384</fullName>
+        <default>false</default>
+        <label>1384: Mechanical issue</label>
+    </customValue>
+    <customValue>
+        <fullName>1385</fullName>
+        <default>false</default>
+        <label>1385: Melted</label>
+    </customValue>
+    <customValue>
+        <fullName>1387</fullName>
+        <default>false</default>
+        <label>1387: Device abrasion from instrument or another object</label>
+    </customValue>
+    <customValue>
+        <fullName>1390</fullName>
+        <default>false</default>
+        <label>1390: DO NOT USE</label>
+    </customValue>
+    <customValue>
+        <fullName>1395</fullName>
+        <default>false</default>
+        <label>1395: Migration of device or device component</label>
+    </customValue>
+    <customValue>
+        <fullName>1398</fullName>
+        <default>false</default>
+        <label>1398: Misassembled</label>
+    </customValue>
+    <customValue>
+        <fullName>1399</fullName>
+        <default>false</default>
+        <label>1399: Misconnection</label>
+    </customValue>
+    <customValue>
+        <fullName>1401</fullName>
+        <default>false</default>
+        <label>1401: Misfocusing</label>
+    </customValue>
+    <customValue>
+        <fullName>1405</fullName>
+        <default>false</default>
+        <label>1405: Moisture damage</label>
+    </customValue>
+    <customValue>
+        <fullName>1408</fullName>
+        <default>false</default>
+        <label>1408: Poor quality image</label>
+    </customValue>
+    <customValue>
+        <fullName>1420</fullName>
+        <default>false</default>
+        <label>1420: Nonstandard device or device component</label>
+    </customValue>
+    <customValue>
+        <fullName>1421</fullName>
+        <default>false</default>
+        <label>1421: Delivered as unsterile product</label>
+    </customValue>
+    <customValue>
+        <fullName>1423</fullName>
+        <default>false</default>
+        <label>1423: Occlusion within device</label>
+    </customValue>
+    <customValue>
+        <fullName>1425</fullName>
+        <default>false</default>
+        <label>1425: Device emits odor</label>
+    </customValue>
+    <customValue>
+        <fullName>1426</fullName>
+        <default>false</default>
+        <label>1426: Material opacification</label>
+    </customValue>
+    <customValue>
+        <fullName>1429</fullName>
+        <default>false</default>
+        <label>1429: Unintended collision</label>
+    </customValue>
+    <customValue>
+        <fullName>1430</fullName>
+        <default>false</default>
+        <label>1430: Unintended system motion</label>
+    </customValue>
+    <customValue>
+        <fullName>1431</fullName>
+        <default>false</default>
+        <label>1431: Output energy incorrect</label>
+    </customValue>
+    <customValue>
+        <fullName>1432</fullName>
+        <default>false</default>
+        <label>1432: Output above specifications</label>
+    </customValue>
+    <customValue>
+        <fullName>1435</fullName>
+        <default>false</default>
+        <label>1435: No device output</label>
+    </customValue>
+    <customValue>
+        <fullName>1437</fullName>
+        <default>false</default>
+        <label>1437: Overheating of device or device component</label>
+    </customValue>
+    <customValue>
+        <fullName>1439</fullName>
+        <default>false</default>
+        <label>1439: Failure to pace or properly pace</label>
+    </customValue>
+    <customValue>
+        <fullName>1440</fullName>
+        <default>false</default>
+        <label>1440: Pacer found in back-up mode</label>
+    </customValue>
+    <customValue>
+        <fullName>1441</fullName>
+        <default>false</default>
+        <label>1441: Pacing asynchronously</label>
+    </customValue>
+    <customValue>
+        <fullName>1442</fullName>
+        <default>false</default>
+        <label>1442: Pacing inadequately</label>
+    </customValue>
+    <customValue>
+        <fullName>1443</fullName>
+        <default>false</default>
+        <label>1443: Pacing intermittently</label>
+    </customValue>
+    <customValue>
+        <fullName>1444</fullName>
+        <default>false</default>
+        <label>1444: Unsealed device packaging</label>
+    </customValue>
+    <customValue>
+        <fullName>1449</fullName>
+        <default>false</default>
+        <label>1449: Parameter calculation error due to software problem</label>
+    </customValue>
+    <customValue>
+        <fullName>1451</fullName>
+        <default>false</default>
+        <label>1451: Particulates</label>
+    </customValue>
+    <customValue>
+        <fullName>1454</fullName>
+        <default>false</default>
+        <label>1454: Peeled</label>
+    </customValue>
+    <customValue>
+        <fullName>1457</fullName>
+        <default>false</default>
+        <label>1457: Perivalvular leak</label>
+    </customValue>
+    <customValue>
+        <fullName>1460</fullName>
+        <default>false</default>
+        <label>1460: Pitted</label>
+    </customValue>
+    <customValue>
+        <fullName>1462</fullName>
+        <default>false</default>
+        <label>1462: Plunge</label>
+    </customValue>
+    <customValue>
+        <fullName>1463</fullName>
+        <default>false</default>
+        <label>1463: Pocket stimulation</label>
+    </customValue>
+    <customValue>
+        <fullName>1466</fullName>
+        <default>false</default>
+        <label>1466: Failure to run on portable mode</label>
+    </customValue>
+    <customValue>
+        <fullName>1467</fullName>
+        <default>false</default>
+        <label>1467: Difficult to position</label>
+    </customValue>
+    <customValue>
+        <fullName>1473</fullName>
+        <default>false</default>
+        <label>1473: Power calculation error due to software problem</label>
+    </customValue>
+    <customValue>
+        <fullName>1474</fullName>
+        <default>false</default>
+        <label>1474: Power Conditioning Issue</label>
+    </customValue>
+    <customValue>
+        <fullName>1475</fullName>
+        <default>false</default>
+        <label>1475: Loss of power</label>
+    </customValue>
+    <customValue>
+        <fullName>1476</fullName>
+        <default>false</default>
+        <label>1476: Failure to power-up</label>
+    </customValue>
+    <customValue>
+        <fullName>1477</fullName>
+        <default>false</default>
+        <label>1477: Pre or post-pumping problem</label>
+    </customValue>
+    <customValue>
+        <fullName>1478</fullName>
+        <default>false</default>
+        <label>1478: Precipitate in device or device ingredient</label>
+    </customValue>
+    <customValue>
+        <fullName>1480</fullName>
+        <default>false</default>
+        <label>1480: Premature end-of-life indicator</label>
+    </customValue>
+    <customValue>
+        <fullName>1483</fullName>
+        <default>false</default>
+        <label>1483: Premature elective replacement indicator</label>
+    </customValue>
+    <customValue>
+        <fullName>1484</fullName>
+        <default>false</default>
+        <label>1484: Premature deployment</label>
+    </customValue>
+    <customValue>
+        <fullName>1487</fullName>
+        <default>false</default>
+        <label>1487: Device difficult to setup or prepare</label>
+    </customValue>
+    <customValue>
+        <fullName>1490</fullName>
+        <default>false</default>
+        <label>1490: Decrease in pressure</label>
+    </customValue>
+    <customValue>
+        <fullName>1491</fullName>
+        <default>false</default>
+        <label>1491: Increase in pressure</label>
+    </customValue>
+    <customValue>
+        <fullName>1492</fullName>
+        <default>false</default>
+        <label>1492: Failure to prime</label>
+    </customValue>
+    <customValue>
+        <fullName>1494</fullName>
+        <default>false</default>
+        <label>1494: User Used Incorrect product for intended use</label>
+    </customValue>
+    <customValue>
+        <fullName>1495</fullName>
+        <default>false</default>
+        <label>1495: Incorrect software programming calculations</label>
+    </customValue>
+    <customValue>
+        <fullName>1496</fullName>
+        <default>false</default>
+        <label>1496: Difficult to program or calibrate</label>
+    </customValue>
+    <customValue>
+        <fullName>1500</fullName>
+        <default>false</default>
+        <label>1500: Decreased pump speed</label>
+    </customValue>
+    <customValue>
+        <fullName>1501</fullName>
+        <default>false</default>
+        <label>1501: Increased pump speed</label>
+    </customValue>
+    <customValue>
+        <fullName>1502</fullName>
+        <default>false</default>
+        <label>1502: Failure to pump</label>
+    </customValue>
+    <customValue>
+        <fullName>1503</fullName>
+        <default>false</default>
+        <label>1503: Pumping stopped</label>
+    </customValue>
+    <customValue>
+        <fullName>1504</fullName>
+        <default>false</default>
+        <label>1504: Material puncture</label>
+    </customValue>
+    <customValue>
+        <fullName>1506</fullName>
+        <default>false</default>
+        <label>1506: Product quality issue</label>
+    </customValue>
+    <customValue>
+        <fullName>1508</fullName>
+        <default>false</default>
+        <label>1508: Therapy delivered to incorrect body area</label>
+    </customValue>
+    <customValue>
+        <fullName>1511</fullName>
+        <default>false</default>
+        <label>1511: Radio signal problem</label>
+    </customValue>
+    <customValue>
+        <fullName>1516</fullName>
+        <default>false</default>
+        <label>1516: Unable to obtain readings</label>
+    </customValue>
+    <customValue>
+        <fullName>1517</fullName>
+        <default>false</default>
+        <label>1517: Failure to recalibrate</label>
+    </customValue>
+    <customValue>
+        <fullName>1521</fullName>
+        <default>false</default>
+        <label>1521: Failure to transmit record</label>
+    </customValue>
+    <customValue>
+        <fullName>1522</fullName>
+        <default>false</default>
+        <label>1522: Reflux within device</label>
+    </customValue>
+    <customValue>
+        <fullName>1524</fullName>
+        <default>false</default>
+        <label>1524: Rejection</label>
+    </customValue>
+    <customValue>
+        <fullName>1525</fullName>
+        <default>false</default>
+        <label>1525: Device remains activated</label>
+    </customValue>
+    <customValue>
+        <fullName>1528</fullName>
+        <default>false</default>
+        <label>1528: Difficult to remove</label>
+    </customValue>
+    <customValue>
+        <fullName>1532</fullName>
+        <default>false</default>
+        <label>1532: Failure to reset</label>
+    </customValue>
+    <customValue>
+        <fullName>1535</fullName>
+        <default>false</default>
+        <label>1535: Incorrect or inadequate result</label>
+    </customValue>
+    <customValue>
+        <fullName>1536</fullName>
+        <default>false</default>
+        <label>1536: Retraction problem</label>
+    </customValue>
+    <customValue>
+        <fullName>1539</fullName>
+        <default>false</default>
+        <label>1539: Failure to analyze rhythm</label>
+    </customValue>
+    <customValue>
+        <fullName>1540</fullName>
+        <default>false</default>
+        <label>1540: Failure to convert rhythm</label>
+    </customValue>
+    <customValue>
+        <fullName>1542</fullName>
+        <default>false</default>
+        <label>1542: Failure to override rhythm</label>
+    </customValue>
+    <customValue>
+        <fullName>1543</fullName>
+        <default>false</default>
+        <label>1543: Incorrect interpretation of rhythm</label>
+    </customValue>
+    <customValue>
+        <fullName>1544</fullName>
+        <default>false</default>
+        <label>1544: Material rigid or stiff</label>
+    </customValue>
+    <customValue>
+        <fullName>1546</fullName>
+        <default>false</default>
+        <label>1546: Material rupture</label>
+    </customValue>
+    <customValue>
+        <fullName>1557</fullName>
+        <default>false</default>
+        <label>1557: Self-activation or keying</label>
+    </customValue>
+    <customValue>
+        <fullName>1558</fullName>
+        <default>false</default>
+        <label>1558: Sensing intermittently</label>
+    </customValue>
+    <customValue>
+        <fullName>1559</fullName>
+        <default>false</default>
+        <label>1559: Failure to sense</label>
+    </customValue>
+    <customValue>
+        <fullName>1562</fullName>
+        <default>false</default>
+        <label>1562: Material separation</label>
+    </customValue>
+    <customValue>
+        <fullName>1563</fullName>
+        <default>false</default>
+        <label>1563: Failure to service</label>
+    </customValue>
+    <customValue>
+        <fullName>1564</fullName>
+        <default>false</default>
+        <label>1564: Inadequate service</label>
+    </customValue>
+    <customValue>
+        <fullName>1567</fullName>
+        <default>false</default>
+        <label>1567: Shelf life exceeded</label>
+    </customValue>
+    <customValue>
+        <fullName>1568</fullName>
+        <default>false</default>
+        <label>1568: Shielding failure</label>
+    </customValue>
+    <customValue>
+        <fullName>1570</fullName>
+        <default>false</default>
+        <label>1570: Shipping damage or problem</label>
+    </customValue>
+    <customValue>
+        <fullName>1573</fullName>
+        <default>false</default>
+        <label>1573: Failure to shock or properly shock</label>
+    </customValue>
+    <customValue>
+        <fullName>1575</fullName>
+        <default>false</default>
+        <label>1575: Short fill</label>
+    </customValue>
+    <customValue>
+        <fullName>1581</fullName>
+        <default>false</default>
+        <label>1581: Failure to read input signal</label>
+    </customValue>
+    <customValue>
+        <fullName>1582</fullName>
+        <default>false</default>
+        <label>1582: Failure to select signal</label>
+    </customValue>
+    <customValue>
+        <fullName>1583</fullName>
+        <default>false</default>
+        <label>1583: Size incorrect for patient</label>
+    </customValue>
+    <customValue>
+        <fullName>1584</fullName>
+        <default>false</default>
+        <label>1584: Slippage of device or device component</label>
+    </customValue>
+    <customValue>
+        <fullName>1585</fullName>
+        <default>false</default>
+        <label>1585: Smoking</label>
+    </customValue>
+    <customValue>
+        <fullName>1596</fullName>
+        <default>false</default>
+        <label>1596: Failure to sterilize</label>
+    </customValue>
+    <customValue>
+        <fullName>1597</fullName>
+        <default>false</default>
+        <label>1597: Sticking</label>
+    </customValue>
+    <customValue>
+        <fullName>1599</fullName>
+        <default>false</default>
+        <label>1599: Device stops intermittently</label>
+    </customValue>
+    <customValue>
+        <fullName>1600</fullName>
+        <default>false</default>
+        <label>1600: Inadequate storage</label>
+    </customValue>
+    <customValue>
+        <fullName>1601</fullName>
+        <default>false</default>
+        <label>1601: Streched</label>
+    </customValue>
+    <customValue>
+        <fullName>1604</fullName>
+        <default>false</default>
+        <label>1604: Increase in suction</label>
+    </customValue>
+    <customValue>
+        <fullName>1609</fullName>
+        <default>false</default>
+        <label>1609: Inaccurate synchronization</label>
+    </customValue>
+    <customValue>
+        <fullName>1629</fullName>
+        <default>false</default>
+        <label>1629: Telemetry discrepancy</label>
+    </customValue>
+    <customValue>
+        <fullName>1631</fullName>
+        <default>false</default>
+        <label>1631: Unexpected therapeutic results</label>
+    </customValue>
+    <customValue>
+        <fullName>1633</fullName>
+        <default>false</default>
+        <label>1633: Loss of threshold</label>
+    </customValue>
+    <customValue>
+        <fullName>1634</fullName>
+        <default>false</default>
+        <label>1634: Tidal volume fluctuations</label>
+    </customValue>
+    <customValue>
+        <fullName>1643</fullName>
+        <default>false</default>
+        <label>1643: Inadequate Training</label>
+    </customValue>
+    <customValue>
+        <fullName>1656</fullName>
+        <default>false</default>
+        <label>1656: Ultrafiltration</label>
+    </customValue>
+    <customValue>
+        <fullName>1659</fullName>
+        <default>false</default>
+        <label>1659: Uncoiled</label>
+    </customValue>
+    <customValue>
+        <fullName>1663</fullName>
+        <default>false</default>
+        <label>1663: Device inoperable</label>
+    </customValue>
+    <customValue>
+        <fullName>1664</fullName>
+        <default>false</default>
+        <label>1664: Unraveled material</label>
+    </customValue>
+    <customValue>
+        <fullName>1667</fullName>
+        <default>false</default>
+        <label>1667: Unstable</label>
+    </customValue>
+    <customValue>
+        <fullName>1669</fullName>
+        <default>false</default>
+        <label>1669: Failure to unfold or unwrap</label>
+    </customValue>
+    <customValue>
+        <fullName>1670</fullName>
+        <default>false</default>
+        <label>1670: Use of Device Issue</label>
+    </customValue>
+    <customValue>
+        <fullName>1674</fullName>
+        <default>false</default>
+        <label>1674: Vibration</label>
+    </customValue>
+    <customValue>
+        <fullName>1675</fullName>
+        <default>false</default>
+        <label>1675: Volume accuracy issue</label>
+    </customValue>
+    <customValue>
+        <fullName>1683</fullName>
+        <default>false</default>
+        <label>1683: Failure to zero</label>
+    </customValue>
+    <customValue>
+        <fullName>1804</fullName>
+        <default>false</default>
+        <label>1804: Metal shredding debris</label>
+    </customValue>
+    <customValue>
+        <fullName>1858</fullName>
+        <default>false</default>
+        <label>1858: Fever</label>
+    </customValue>
+    <customValue>
+        <fullName>1863</fullName>
+        <default>false</default>
+        <label>1863: Failure to osseointegrate</label>
+    </customValue>
+    <customValue>
+        <fullName>1930</fullName>
+        <default>false</default>
+        <label>1930: DO NOT USE</label>
+    </customValue>
+    <customValue>
+        <fullName>2017</fullName>
+        <default>false</default>
+        <label>2017: Improper or incorrect procedure or method</label>
+    </customValue>
+    <customValue>
+        <fullName>2065</fullName>
+        <default>false</default>
+        <label>2065: Increased Sensitivity</label>
+    </customValue>
+    <customValue>
+        <fullName>2149</fullName>
+        <default>false</default>
+        <label>2149: Electro-static discharge</label>
+    </customValue>
+    <customValue>
+        <fullName>2170</fullName>
+        <default>false</default>
+        <label>2170: Suction issue</label>
+    </customValue>
+    <customValue>
+        <fullName>2182</fullName>
+        <default>false</default>
+        <label>2182: Insufficient flow or underinfusion</label>
+    </customValue>
+    <customValue>
+        <fullName>2183</fullName>
+        <default>false</default>
+        <label>2183: Fitting problem</label>
+    </customValue>
+    <customValue>
+        <fullName>2205</fullName>
+        <default>false</default>
+        <label>2205: Material perforation</label>
+    </customValue>
+    <customValue>
+        <fullName>2250</fullName>
+        <default>false</default>
+        <label>2250: Nonpyrogenic</label>
+    </customValue>
+    <customValue>
+        <fullName>2280</fullName>
+        <default>false</default>
+        <label>2280: Inappropriate prompts</label>
+    </customValue>
+    <customValue>
+        <fullName>2281</fullName>
+        <default>false</default>
+        <label>2281: Prompts will not clear</label>
+    </customValue>
+    <customValue>
+        <fullName>2282</fullName>
+        <default>false</default>
+        <label>2282: No voice prompts</label>
+    </customValue>
+    <customValue>
+        <fullName>2283</fullName>
+        <default>false</default>
+        <label>2283: Inaudible voice prompts</label>
+    </customValue>
+    <customValue>
+        <fullName>2284</fullName>
+        <default>false</default>
+        <label>2284: Device damaged prior to use</label>
+    </customValue>
+    <customValue>
+        <fullName>2285</fullName>
+        <default>false</default>
+        <label>2285: Low impedance</label>
+    </customValue>
+    <customValue>
+        <fullName>2287</fullName>
+        <default>false</default>
+        <label>2287: Intermittent shock</label>
+    </customValue>
+    <customValue>
+        <fullName>2288</fullName>
+        <default>false</default>
+        <label>2288: Aborted charge</label>
+    </customValue>
+    <customValue>
+        <fullName>2289</fullName>
+        <default>false</default>
+        <label>2289: Arcing at electrodes</label>
+    </customValue>
+    <customValue>
+        <fullName>2292</fullName>
+        <default>false</default>
+        <label>2292: Defective component</label>
+    </customValue>
+    <customValue>
+        <fullName>2293</fullName>
+        <default>false</default>
+        <label>2293: Invalid sensing</label>
+    </customValue>
+    <customValue>
+        <fullName>2303</fullName>
+        <default>false</default>
+        <label>2303: Bacterial contamination of device</label>
+    </customValue>
+    <customValue>
+        <fullName>2306</fullName>
+        <default>false</default>
+        <label>2306: Component missing</label>
+    </customValue>
+    <customValue>
+        <fullName>2308</fullName>
+        <default>false</default>
+        <label>2308: Inadequate filtration process</label>
+    </customValue>
+    <customValue>
+        <fullName>2309</fullName>
+        <default>false</default>
+        <label>2309: Device Rinsing Issue</label>
+    </customValue>
+    <customValue>
+        <fullName>2311</fullName>
+        <default>false</default>
+        <label>2311: Out-of-box failure</label>
+    </customValue>
+    <customValue>
+        <fullName>2312</fullName>
+        <default>false</default>
+        <label>2312: Incomplete or missing packaging</label>
+    </customValue>
+    <customValue>
+        <fullName>2314</fullName>
+        <default>false</default>
+        <label>2314: Radiofrequency interference (RFI)</label>
+    </customValue>
+    <customValue>
+        <fullName>2316</fullName>
+        <default>false</default>
+        <label>2316: Fungus in device environment</label>
+    </customValue>
+    <customValue>
+        <fullName>2317</fullName>
+        <default>false</default>
+        <label>2317: Device contamination with blood or blood product</label>
+    </customValue>
+    <customValue>
+        <fullName>2324</fullName>
+        <default>false</default>
+        <label>2324: Solder joint failure</label>
+    </customValue>
+    <customValue>
+        <fullName>2325</fullName>
+        <default>false</default>
+        <label>2325: Residue after decontamination</label>
+    </customValue>
+    <customValue>
+        <fullName>2338</fullName>
+        <default>false</default>
+        <label>2338: Failure to deliver</label>
+    </customValue>
+    <customValue>
+        <fullName>2339</fullName>
+        <default>false</default>
+        <label>2339: Inaccurate delivery</label>
+    </customValue>
+    <customValue>
+        <fullName>2340</fullName>
+        <default>false</default>
+        <label>2340: Failure to infuse</label>
+    </customValue>
+    <customValue>
+        <fullName>2341</fullName>
+        <default>false</default>
+        <label>2341: Intermittent infusion</label>
+    </customValue>
+    <customValue>
+        <fullName>2379</fullName>
+        <default>false</default>
+        <label>2379: Device Issue</label>
+    </customValue>
+    <customValue>
+        <fullName>2385</fullName>
+        <default>false</default>
+        <label>2385: Tear, rip or hole in device packaging</label>
+    </customValue>
+    <customValue>
+        <fullName>2404</fullName>
+        <default>false</default>
+        <label>2404: Overfill</label>
+    </customValue>
+    <customValue>
+        <fullName>2407</fullName>
+        <default>false</default>
+        <label>2407: Dull</label>
+    </customValue>
+    <customValue>
+        <fullName>2408</fullName>
+        <default>false</default>
+        <label>2408: Loss of osseointegration</label>
+    </customValue>
+    <customValue>
+        <fullName>2414</fullName>
+        <default>false</default>
+        <label>2414: Reaction</label>
+    </customValue>
+    <customValue>
+        <fullName>2423</fullName>
+        <default>false</default>
+        <label>2423: Obstruction within device</label>
+    </customValue>
+    <customValue>
+        <fullName>2426</fullName>
+        <default>false</default>
+        <label>2426: High pH</label>
+    </customValue>
+    <customValue>
+        <fullName>2440</fullName>
+        <default>false</default>
+        <label>2440: Failure to calibrate</label>
+    </customValue>
+    <customValue>
+        <fullName>2454</fullName>
+        <default>false</default>
+        <label>2454: Cut in material</label>
+    </customValue>
+    <customValue>
+        <fullName>2456</fullName>
+        <default>false</default>
+        <label>2456: Incorrect or inadequate test results</label>
+    </customValue>
+    <customValue>
+        <fullName>2457</fullName>
+        <default>false</default>
+        <label>2457: High test results</label>
+    </customValue>
+    <customValue>
+        <fullName>2458</fullName>
+        <default>false</default>
+        <label>2458: Low test results</label>
+    </customValue>
+    <customValue>
+        <fullName>2459</fullName>
+        <default>false</default>
+        <label>2459: High Readings</label>
+    </customValue>
+    <customValue>
+        <fullName>2460</fullName>
+        <default>false</default>
+        <label>2460: Low readings</label>
+    </customValue>
+    <customValue>
+        <fullName>2506</fullName>
+        <default>false</default>
+        <label>2506: Structural problem</label>
+    </customValue>
+    <customValue>
+        <fullName>2507</fullName>
+        <default>false</default>
+        <label>2507: Incomplete coaptation</label>
+    </customValue>
+    <customValue>
+        <fullName>2522</fullName>
+        <default>false</default>
+        <label>2522: Failure to align</label>
+    </customValue>
+    <customValue>
+        <fullName>2524</fullName>
+        <default>false</default>
+        <label>2524: Failure to Advance</label>
+    </customValue>
+    <customValue>
+        <fullName>2526</fullName>
+        <default>false</default>
+        <label>2526: Dent in material</label>
+    </customValue>
+    <customValue>
+        <fullName>2528</fullName>
+        <default>false</default>
+        <label>2528: Expiration date error</label>
+    </customValue>
+    <customValue>
+        <fullName>2529</fullName>
+        <default>false</default>
+        <label>2529: Fumes or vapors</label>
+    </customValue>
+    <customValue>
+        <fullName>2532</fullName>
+        <default>false</default>
+        <label>2532: Misfire</label>
+    </customValue>
+    <customValue>
+        <fullName>2533</fullName>
+        <default>false</default>
+        <label>2533: Failure to obtain samples</label>
+    </customValue>
+    <customValue>
+        <fullName>2534</fullName>
+        <default>false</default>
+        <label>2534: Decreased sensitivity</label>
+    </customValue>
+    <customValue>
+        <fullName>2535</fullName>
+        <default>false</default>
+        <label>2535: Increased sensitivity</label>
+    </customValue>
+    <customValue>
+        <fullName>2536</fullName>
+        <default>false</default>
+        <label>2536: Failure to spike</label>
+    </customValue>
+    <customValue>
+        <fullName>2537</fullName>
+        <default>false</default>
+        <label>2537: Split</label>
+    </customValue>
+    <customValue>
+        <fullName>2538</fullName>
+        <default>false</default>
+        <label>2538: Strikethrough</label>
+    </customValue>
+    <customValue>
+        <fullName>2541</fullName>
+        <default>false</default>
+        <label>2541: Failure to disconnect</label>
+    </customValue>
+    <customValue>
+        <fullName>2547</fullName>
+        <default>false</default>
+        <label>2547: Failure to separate</label>
+    </customValue>
+    <customValue>
+        <fullName>2554</fullName>
+        <default>false</default>
+        <label>2554: Electric Shock</label>
+    </customValue>
+    <customValue>
+        <fullName>2574</fullName>
+        <default>false</default>
+        <label>2574: High sensing threshold</label>
+    </customValue>
+    <customValue>
+        <fullName>2575</fullName>
+        <default>false</default>
+        <label>2575: Low sensing threshold</label>
+    </customValue>
+    <customValue>
+        <fullName>2577</fullName>
+        <default>false</default>
+        <label>2577: Difficult or Delayed Activation</label>
+    </customValue>
+    <customValue>
+        <fullName>2578</fullName>
+        <default>false</default>
+        <label>2578: Physical resistance</label>
+    </customValue>
+    <customValue>
+        <fullName>2579</fullName>
+        <default>false</default>
+        <label>2579: Failure to form staple</label>
+    </customValue>
+    <customValue>
+        <fullName>2582</fullName>
+        <default>false</default>
+        <label>2582: Date-related software issue</label>
+    </customValue>
+    <customValue>
+        <fullName>2583</fullName>
+        <default>false</default>
+        <label>2583: Arcing</label>
+    </customValue>
+    <customValue>
+        <fullName>2584</fullName>
+        <default>false</default>
+        <label>2584: Low battery</label>
+    </customValue>
+    <customValue>
+        <fullName>2586</fullName>
+        <default>false</default>
+        <label>2586: Delayed charge time</label>
+    </customValue>
+    <customValue>
+        <fullName>2587</fullName>
+        <default>false</default>
+        <label>2587: Failure to cut</label>
+    </customValue>
+    <customValue>
+        <fullName>2588</fullName>
+        <default>false</default>
+        <label>2588: Defective item</label>
+    </customValue>
+    <customValue>
+        <fullName>2589</fullName>
+        <default>false</default>
+        <label>2589: Tipover</label>
+    </customValue>
+    <customValue>
+        <fullName>2590</fullName>
+        <default>false</default>
+        <label>2590: Device or device fragments location unknown</label>
+    </customValue>
+    <customValue>
+        <fullName>2591</fullName>
+        <default>false</default>
+        <label>2591: Device displays error message</label>
+    </customValue>
+    <customValue>
+        <fullName>2595</fullName>
+        <default>false</default>
+        <label>2595: Spark</label>
+    </customValue>
+    <customValue>
+        <fullName>2610</fullName>
+        <default>false</default>
+        <label>2610: Failure to fire</label>
+    </customValue>
+    <customValue>
+        <fullName>2616</fullName>
+        <default>false</default>
+        <label>2616: Malposition of device</label>
+    </customValue>
+    <customValue>
+        <fullName>2623</fullName>
+        <default>false</default>
+        <label>2623: DO NOT USE</label>
+    </customValue>
+    <customValue>
+        <fullName>2627</fullName>
+        <default>false</default>
+        <label>2627: Complete Heart Block</label>
+    </customValue>
+    <customValue>
+        <fullName>2630</fullName>
+        <default>false</default>
+        <label>2630: Folded</label>
+    </customValue>
+    <customValue>
+        <fullName>2650</fullName>
+        <default>false</default>
+        <label>2650: DO NOT USE</label>
+    </customValue>
+    <customValue>
+        <fullName>2682</fullName>
+        <default>false</default>
+        <label>2682: Patient-Device Incompatibility</label>
+    </customValue>
+    <customValue>
+        <fullName>2692</fullName>
+        <default>false</default>
+        <label>2692: DO NOT USE</label>
+    </customValue>
+    <customValue>
+        <fullName>2878</fullName>
+        <default>false</default>
+        <label>2878: Ambient temperature issue</label>
+    </customValue>
+    <customValue>
+        <fullName>2879</fullName>
+        <default>false</default>
+        <label>2879: Application network issue</label>
+    </customValue>
+    <customValue>
+        <fullName>2880</fullName>
+        <default>false</default>
+        <label>2880: Application program issue</label>
+    </customValue>
+    <customValue>
+        <fullName>2881</fullName>
+        <default>false</default>
+        <label>2881: Application program version or upgrade problem</label>
+    </customValue>
+    <customValue>
+        <fullName>2882</fullName>
+        <default>false</default>
+        <label>2882: Application security issue</label>
+    </customValue>
+    <customValue>
+        <fullName>2883</fullName>
+        <default>false</default>
+        <label>2883: Aspiration issue</label>
+    </customValue>
+    <customValue>
+        <fullName>2884</fullName>
+        <default>false</default>
+        <label>2884: Battery impedance issue</label>
+    </customValue>
+    <customValue>
+        <fullName>2886</fullName>
+        <default>false</default>
+        <label>2886: Biocompatibility issue</label>
+    </customValue>
+    <customValue>
+        <fullName>2887</fullName>
+        <default>false</default>
+        <label>2887: Biological environmental factor</label>
+    </customValue>
+    <customValue>
+        <fullName>2888</fullName>
+        <default>false</default>
+        <label>2888: DO NOT USE</label>
+    </customValue>
+    <customValue>
+        <fullName>2889</fullName>
+        <default>false</default>
+        <label>2889: Buckled material</label>
+    </customValue>
+    <customValue>
+        <fullName>2890</fullName>
+        <default>false</default>
+        <label>2890: Calibration issue</label>
+    </customValue>
+    <customValue>
+        <fullName>2891</fullName>
+        <default>false</default>
+        <label>2891: Capturing issue</label>
+    </customValue>
+    <customValue>
+        <fullName>2892</fullName>
+        <default>false</default>
+        <label>2892: Charging issue</label>
+    </customValue>
+    <customValue>
+        <fullName>2895</fullName>
+        <default>false</default>
+        <label>2895: Disinfection or Sterilization Issue at User Location</label>
+    </customValue>
+    <customValue>
+        <fullName>2896</fullName>
+        <default>false</default>
+        <label>2896: Communication or transmission issue</label>
+    </customValue>
+    <customValue>
+        <fullName>2897</fullName>
+        <default>false</default>
+        <label>2897: Component or accessory incompatibility</label>
+    </customValue>
+    <customValue>
+        <fullName>2898</fullName>
+        <default>false</default>
+        <label>2898: Computer operating system issue</label>
+    </customValue>
+    <customValue>
+        <fullName>2899</fullName>
+        <default>false</default>
+        <label>2899: Computer system security issue</label>
+    </customValue>
+    <customValue>
+        <fullName>2900</fullName>
+        <default>false</default>
+        <label>2900: DO NOT USE</label>
+    </customValue>
+    <customValue>
+        <fullName>2901</fullName>
+        <default>false</default>
+        <label>2901: Contamination of device ingredient or reagent</label>
+    </customValue>
+    <customValue>
+        <fullName>2902</fullName>
+        <default>false</default>
+        <label>2902: Data back-up problem</label>
+    </customValue>
+    <customValue>
+        <fullName>2903</fullName>
+        <default>false</default>
+        <label>2903: Loss of Data</label>
+    </customValue>
+    <customValue>
+        <fullName>2904</fullName>
+        <default>false</default>
+        <label>2904: Delamination</label>
+    </customValue>
+    <customValue>
+        <fullName>2905</fullName>
+        <default>false</default>
+        <label>2905: Delivery system failure</label>
+    </customValue>
+    <customValue>
+        <fullName>2906</fullName>
+        <default>false</default>
+        <label>2906: Deployment issue</label>
+    </customValue>
+    <customValue>
+        <fullName>2907</fullName>
+        <default>false</default>
+        <label>2907: Detachment of device or device component</label>
+    </customValue>
+    <customValue>
+        <fullName>2908</fullName>
+        <default>false</default>
+        <label>2908: Device Contamination with biological material</label>
+    </customValue>
+    <customValue>
+        <fullName>2909</fullName>
+        <default>false</default>
+        <label>2909: Device disinfection or sterilization issue</label>
+    </customValue>
+    <customValue>
+        <fullName>2910</fullName>
+        <default>false</default>
+        <label>2910: Device ingredient or reagent issue</label>
+    </customValue>
+    <customValue>
+        <fullName>2911</fullName>
+        <default>false</default>
+        <label>2911: Device markings issue</label>
+    </customValue>
+    <customValue>
+        <fullName>2912</fullName>
+        <default>false</default>
+        <label>2912: Device misassembled during manufacturing or shipping</label>
+    </customValue>
+    <customValue>
+        <fullName>2913</fullName>
+        <default>false</default>
+        <label>2913: Device operates differently than expected</label>
+    </customValue>
+    <customValue>
+        <fullName>2914</fullName>
+        <default>false</default>
+        <label>2914: Device operational issue</label>
+    </customValue>
+    <customValue>
+        <fullName>2915</fullName>
+        <default>false</default>
+        <label>2915: DO NOT USE</label>
+    </customValue>
+    <customValue>
+        <fullName>2916</fullName>
+        <default>false</default>
+        <label>2916: Device packaging compromised</label>
+    </customValue>
+    <customValue>
+        <fullName>2918</fullName>
+        <default>false</default>
+        <label>2918: Device unsafe to use in environment</label>
+    </customValue>
+    <customValue>
+        <fullName>2919</fullName>
+        <default>false</default>
+        <label>2919: Device-device incompatibility</label>
+    </customValue>
+    <customValue>
+        <fullName>2920</fullName>
+        <default>false</default>
+        <label>2920: Difficult to advance</label>
+    </customValue>
+    <customValue>
+        <fullName>2921</fullName>
+        <default>false</default>
+        <label>2921: Difficult to open or close</label>
+    </customValue>
+    <customValue>
+        <fullName>2922</fullName>
+        <default>false</default>
+        <label>2922: Difficult to open or remove packaging material</label>
+    </customValue>
+    <customValue>
+        <fullName>2924</fullName>
+        <default>false</default>
+        <label>2924: Electrical overstress</label>
+    </customValue>
+    <customValue>
+        <fullName>2925</fullName>
+        <default>false</default>
+        <label>2925: Electrical power problem</label>
+    </customValue>
+    <customValue>
+        <fullName>2926</fullName>
+        <default>false</default>
+        <label>2926: Electrical shorting</label>
+    </customValue>
+    <customValue>
+        <fullName>2927</fullName>
+        <default>false</default>
+        <label>2927: Electromagnetic compatibility issue</label>
+    </customValue>
+    <customValue>
+        <fullName>2928</fullName>
+        <default>false</default>
+        <label>2928: Electronic property issue</label>
+    </customValue>
+    <customValue>
+        <fullName>2929</fullName>
+        <default>false</default>
+        <label>2929: Environmental control or utility issue</label>
+    </customValue>
+    <customValue>
+        <fullName>2930</fullName>
+        <default>false</default>
+        <label>2930: Environmental Particulates</label>
+    </customValue>
+    <customValue>
+        <fullName>2931</fullName>
+        <default>false</default>
+        <label>2931: Escape</label>
+    </customValue>
+    <customValue>
+        <fullName>2932</fullName>
+        <default>false</default>
+        <label>2932: Excessive cooling</label>
+    </customValue>
+    <customValue>
+        <fullName>2933</fullName>
+        <default>false</default>
+        <label>2933: DO NOT USE</label>
+    </customValue>
+    <customValue>
+        <fullName>2934</fullName>
+        <default>false</default>
+        <label>2934: Extrusion</label>
+    </customValue>
+    <customValue>
+        <fullName>2935</fullName>
+        <default>false</default>
+        <label>2935: Facilities issue</label>
+    </customValue>
+    <customValue>
+        <fullName>2936</fullName>
+        <default>false</default>
+        <label>2936: Fail-safe mechanism issue</label>
+    </customValue>
+    <customValue>
+        <fullName>2937</fullName>
+        <default>false</default>
+        <label>2937: Failure of device to self-test</label>
+    </customValue>
+    <customValue>
+        <fullName>2938</fullName>
+        <default>false</default>
+        <label>2938: Failure to auto stop</label>
+    </customValue>
+    <customValue>
+        <fullName>2939</fullName>
+        <default>false</default>
+        <label>2939: Failure to shut off</label>
+    </customValue>
+    <customValue>
+        <fullName>2940</fullName>
+        <default>false</default>
+        <label>2940: Failure to unwrap</label>
+    </customValue>
+    <customValue>
+        <fullName>2941</fullName>
+        <default>false</default>
+        <label>2941: Filtration issue</label>
+    </customValue>
+    <customValue>
+        <fullName>2942</fullName>
+        <default>false</default>
+        <label>2942: Flare or flash</label>
+    </customValue>
+    <customValue>
+        <fullName>2943</fullName>
+        <default>false</default>
+        <label>2943: Flashpoint threshold met</label>
+    </customValue>
+    <customValue>
+        <fullName>2944</fullName>
+        <default>false</default>
+        <label>2944: Foreign material present in device</label>
+    </customValue>
+    <customValue>
+        <fullName>2945</fullName>
+        <default>false</default>
+        <label>2945: Free or unrestricted flow</label>
+    </customValue>
+    <customValue>
+        <fullName>2946</fullName>
+        <default>false</default>
+        <label>2946: Gas leak</label>
+    </customValue>
+    <customValue>
+        <fullName>2947</fullName>
+        <default>false</default>
+        <label>2947: High battery impedance</label>
+    </customValue>
+    <customValue>
+        <fullName>2948</fullName>
+        <default>false</default>
+        <label>2948: Human factors issue</label>
+    </customValue>
+    <customValue>
+        <fullName>2949</fullName>
+        <default>false</default>
+        <label>2949: Human-Device Interface Issue</label>
+    </customValue>
+    <customValue>
+        <fullName>2950</fullName>
+        <default>false</default>
+        <label>2950: Impedence Issue</label>
+    </customValue>
+    <customValue>
+        <fullName>2951</fullName>
+        <default>false</default>
+        <label>2951: Improper alarm</label>
+    </customValue>
+    <customValue>
+        <fullName>2952</fullName>
+        <default>false</default>
+        <label>2952: Improper chemical reaction</label>
+    </customValue>
+    <customValue>
+        <fullName>2953</fullName>
+        <default>false</default>
+        <label>2953: Improper device output</label>
+    </customValue>
+    <customValue>
+        <fullName>2954</fullName>
+        <default>false</default>
+        <label>2954: Improper flow or infusion</label>
+    </customValue>
+    <customValue>
+        <fullName>2955</fullName>
+        <default>false</default>
+        <label>2955: Inaccurate dispensing</label>
+    </customValue>
+    <customValue>
+        <fullName>2956</fullName>
+        <default>false</default>
+        <label>2956: Inadequate instructions for non-healthcare professional</label>
+    </customValue>
+    <customValue>
+        <fullName>2957</fullName>
+        <default>false</default>
+        <label>2957: Inadequate lighting</label>
+    </customValue>
+    <customValue>
+        <fullName>2958</fullName>
+        <default>false</default>
+        <label>2958: Inadequate user interface</label>
+    </customValue>
+    <customValue>
+        <fullName>2959</fullName>
+        <default>false</default>
+        <label>2959: Inappropriate or unexpected reset</label>
+    </customValue>
+    <customValue>
+        <fullName>2960</fullName>
+        <default>false</default>
+        <label>2960: Incompatibility problem</label>
+    </customValue>
+    <customValue>
+        <fullName>2962</fullName>
+        <default>false</default>
+        <label>2962: Incorrect device or component shipped</label>
+    </customValue>
+    <customValue>
+        <fullName>2963</fullName>
+        <default>false</default>
+        <label>2963: Incorrect error code</label>
+    </customValue>
+    <customValue>
+        <fullName>2964</fullName>
+        <default>false</default>
+        <label>2964: Infusion or flow issue</label>
+    </customValue>
+    <customValue>
+        <fullName>2965</fullName>
+        <default>false</default>
+        <label>2965: Installation-related problem</label>
+    </customValue>
+    <customValue>
+        <fullName>2967</fullName>
+        <default>false</default>
+        <label>2967: Issue with displayed error message</label>
+    </customValue>
+    <customValue>
+        <fullName>2969</fullName>
+        <default>false</default>
+        <label>2969: Item contaminated during manufacturing or shipping</label>
+    </customValue>
+    <customValue>
+        <fullName>2971</fullName>
+        <default>false</default>
+        <label>2971: Lack of maintenance documentation or guidelines</label>
+    </customValue>
+    <customValue>
+        <fullName>2972</fullName>
+        <default>false</default>
+        <label>2972: Light interference</label>
+    </customValue>
+    <customValue>
+        <fullName>2973</fullName>
+        <default>false</default>
+        <label>2973: Low battery impedance</label>
+    </customValue>
+    <customValue>
+        <fullName>2974</fullName>
+        <default>false</default>
+        <label>2974: Maintenance does not comply to manufacturers recommendations</label>
+    </customValue>
+    <customValue>
+        <fullName>2975</fullName>
+        <default>false</default>
+        <label>2975: Manufacturing or shipping issue associated with device</label>
+    </customValue>
+    <customValue>
+        <fullName>2976</fullName>
+        <default>false</default>
+        <label>2976: DO NOT USE</label>
+    </customValue>
+    <customValue>
+        <fullName>2977</fullName>
+        <default>false</default>
+        <label>2977: Material Distortion</label>
+    </customValue>
+    <customValue>
+        <fullName>2978</fullName>
+        <default>false</default>
+        <label>2978: Material integrity issue</label>
+    </customValue>
+    <customValue>
+        <fullName>2979</fullName>
+        <default>false</default>
+        <label>2979: Material Protrusion</label>
+    </customValue>
+    <customValue>
+        <fullName>2980</fullName>
+        <default>false</default>
+        <label>2980: Material torqued</label>
+    </customValue>
+    <customValue>
+        <fullName>2981</fullName>
+        <default>false</default>
+        <label>2981: Material twisted</label>
+    </customValue>
+    <customValue>
+        <fullName>2982</fullName>
+        <default>false</default>
+        <label>2982: Measurement system incompatibility</label>
+    </customValue>
+    <customValue>
+        <fullName>2984</fullName>
+        <default>false</default>
+        <label>2984: Mechanics altered</label>
+    </customValue>
+    <customValue>
+        <fullName>2985</fullName>
+        <default>false</default>
+        <label>2985: Medical Gas Supply problem</label>
+    </customValue>
+    <customValue>
+        <fullName>2986</fullName>
+        <default>false</default>
+        <label>2986: Moisture or humidity problem</label>
+    </customValue>
+    <customValue>
+        <fullName>2988</fullName>
+        <default>false</default>
+        <label>2988: DO NOT USE</label>
+    </customValue>
+    <customValue>
+        <fullName>2990</fullName>
+        <default>false</default>
+        <label>2990: No fail-safe mechanism</label>
+    </customValue>
+    <customValue>
+        <fullName>2991</fullName>
+        <default>false</default>
+        <label>2991: No flow</label>
+    </customValue>
+    <customValue>
+        <fullName>2994</fullName>
+        <default>false</default>
+        <label>2994: No Pressure</label>
+    </customValue>
+    <customValue>
+        <fullName>2996</fullName>
+        <default>false</default>
+        <label>2996: Operating system becomes non-functional</label>
+    </customValue>
+    <customValue>
+        <fullName>2997</fullName>
+        <default>false</default>
+        <label>2997: Operating system version or upgrade problem</label>
+    </customValue>
+    <customValue>
+        <fullName>3004</fullName>
+        <default>false</default>
+        <label>3004: Output below specifications</label>
+    </customValue>
+    <customValue>
+        <fullName>3005</fullName>
+        <default>false</default>
+        <label>3005: Output issue</label>
+    </customValue>
+    <customValue>
+        <fullName>3006</fullName>
+        <default>false</default>
+        <label>3006: Overcorrection</label>
+    </customValue>
+    <customValue>
+        <fullName>3007</fullName>
+        <default>false</default>
+        <label>3007: Packaging issue</label>
+    </customValue>
+    <customValue>
+        <fullName>3008</fullName>
+        <default>false</default>
+        <label>3008: Physical property issue</label>
+    </customValue>
+    <customValue>
+        <fullName>3009</fullName>
+        <default>false</default>
+        <label>3009: DO NOT USE</label>
+    </customValue>
+    <customValue>
+        <fullName>3010</fullName>
+        <default>false</default>
+        <label>3010: Power source issue</label>
+    </customValue>
+    <customValue>
+        <fullName>3011</fullName>
+        <default>false</default>
+        <label>3011: Premature indicator activation</label>
+    </customValue>
+    <customValue>
+        <fullName>3012</fullName>
+        <default>false</default>
+        <label>3012: Pressure issue</label>
+    </customValue>
+    <customValue>
+        <fullName>3013</fullName>
+        <default>false</default>
+        <label>3013: Problem with software installation</label>
+    </customValue>
+    <customValue>
+        <fullName>3014</fullName>
+        <default>false</default>
+        <label>3014: Programming issue</label>
+    </customValue>
+    <customValue>
+        <fullName>3015</fullName>
+        <default>false</default>
+        <label>3015: Protective measure issue</label>
+    </customValue>
+    <customValue>
+        <fullName>3016</fullName>
+        <default>false</default>
+        <label>3016: Pumping issue</label>
+    </customValue>
+    <customValue>
+        <fullName>3019</fullName>
+        <default>false</default>
+        <label>3019: Reset issue</label>
+    </customValue>
+    <customValue>
+        <fullName>3020</fullName>
+        <default>false</default>
+        <label>3020: Scratched material</label>
+    </customValue>
+    <customValue>
+        <fullName>3022</fullName>
+        <default>false</default>
+        <label>3022: Temperature issue</label>
+    </customValue>
+    <customValue>
+        <fullName>3023</fullName>
+        <default>false</default>
+        <label>3023: Therapeutic or diagnostic output failure</label>
+    </customValue>
+    <customValue>
+        <fullName>3024</fullName>
+        <default>false</default>
+        <label>3024: Torn material</label>
+    </customValue>
+    <customValue>
+        <fullName>3025</fullName>
+        <default>false</default>
+        <label>3025: Unauthorized access to computer system</label>
+    </customValue>
+    <customValue>
+        <fullName>3026</fullName>
+        <default>false</default>
+        <label>3026: Unintended movement</label>
+    </customValue>
+    <customValue>
+        <fullName>3027</fullName>
+        <default>false</default>
+        <label>3027: Ventilation issue in device environment</label>
+    </customValue>
+    <customValue>
+        <fullName>3079</fullName>
+        <default>false</default>
+        <label>3079: DO NOT USE</label>
+    </customValue>
+    <customValue>
+        <fullName>3133</fullName>
+        <default>false</default>
+        <label>3133: Misassembled by Users</label>
+    </customValue>
+    <customValue>
+        <fullName>3134</fullName>
+        <default>false</default>
+        <label>3134: Device Difficult to maintain</label>
+    </customValue>
+    <customValue>
+        <fullName>3160</fullName>
+        <default>false</default>
+        <label>3160: Dissection</label>
+    </customValue>
+    <customValue>
+        <fullName>3161</fullName>
+        <default>false</default>
+        <label>3161: Lead(s), burn(s) from</label>
+    </customValue>
+    <customValue>
+        <fullName>3162</fullName>
+        <default>false</default>
+        <label>3162: Lead(s), shock from</label>
+    </customValue>
+    <customValue>
+        <fullName>3163</fullName>
+        <default>false</default>
+        <label>3163: R on T phenomenon</label>
+    </customValue>
+    <customValue>
+        <fullName>3165</fullName>
+        <default>false</default>
+        <label>3165: Device fragments in patient</label>
+    </customValue>
+    <customValue>
+        <fullName>3166</fullName>
+        <default>false</default>
+        <label>3166: Patch Test, Abnormal Results of</label>
+    </customValue>
+    <customValue>
+        <fullName>3167</fullName>
+        <default>false</default>
+        <label>3167: Fibrosis</label>
+    </customValue>
+    <customValue>
+        <fullName>3189</fullName>
+        <default>false</default>
+        <label>3189: Not applicable</label>
+    </customValue>
+    <customValue>
+        <fullName>3190</fullName>
+        <default>false</default>
+        <label>3190: No Information</label>
+    </customValue>
+    <customValue>
+        <fullName>3191</fullName>
+        <default>false</default>
+        <label>3191: No code available</label>
+    </customValue>
+    <customValue>
+        <fullName>3192</fullName>
+        <default>false</default>
+        <label>3192: Missing Value Reason</label>
+    </customValue>
+    <customValue>
+        <fullName>3196</fullName>
+        <default>false</default>
+        <label>3196: Data Issue</label>
+    </customValue>
+    <customValue>
+        <fullName>3197</fullName>
+        <default>false</default>
+        <label>3197: Patient Data Issue</label>
+    </customValue>
+    <customValue>
+        <fullName>3198</fullName>
+        <default>false</default>
+        <label>3198: Medication Error</label>
+    </customValue>
+    <customValue>
+        <fullName>3265</fullName>
+        <default>false</default>
+        <label>3265: Device handling issue</label>
+    </customValue>
+    <customValue>
+        <fullName>3267</fullName>
+        <default>false</default>
+        <label>3267: Missing test results</label>
+    </customValue>
+    <customValue>
+        <fullName>3268</fullName>
+        <default>false</default>
+        <label>3268: No pacing</label>
+    </customValue>
+    <customValue>
+        <fullName>3269</fullName>
+        <default>false</default>
+        <label>3269: Unstable capture threshold</label>
+    </customValue>
+    <customValue>
+        <fullName>3270</fullName>
+        <default>false</default>
+        <label>3270: Failure to expand</label>
+    </customValue>
+    <customValue>
+        <fullName>3273</fullName>
+        <default>false</default>
+        <label>3273: Noise, Audible</label>
+    </customValue>
+    <masterLabel>Device Code</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

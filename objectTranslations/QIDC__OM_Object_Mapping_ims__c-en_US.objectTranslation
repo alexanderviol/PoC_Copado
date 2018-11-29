@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Org Manager Entity --></label>
+        <name>QIDC__OM_Entity_ims__c</name>
+        <picklistValues>
+            <masterLabel>Employee_API</masterLabel>
+            <translation><!-- Employee_API --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Employee_Address_API</masterLabel>
+            <translation><!-- Employee_Address_API --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Employee_Communication_API</masterLabel>
+            <translation><!-- Employee_Communication_API --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product_API</masterLabel>
+            <translation><!-- Product_API --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product_Exclusion_API</masterLabel>
+            <translation><!-- Product_Exclusion_API --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product_Inclusion_API</masterLabel>
+            <translation><!-- Product_Inclusion_API --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product_Lot_API</masterLabel>
+            <translation><!-- Product_Lot_API --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product_Relation_API</masterLabel>
+            <translation><!-- Product_Relation_API --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product_Sales_Force_API</masterLabel>
+            <translation><!-- Product_Sales_Force_API --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sales_Area_API</masterLabel>
+            <translation><!-- Sales_Area_API --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sales_Area_Relation_API</masterLabel>
+            <translation><!-- Sales_Area_Relation_API --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Stores relationships to other entities. --></help>
+        <label><!-- Parent Entity --></label>
+        <name>QIDC__Parent_Entity_ims__c</name>
+    </fields>
+    <fields>
+        <help><!-- The API Name of the SObject type. --></help>
+        <label><!-- Salesforce Object --></label>
+        <name>QIDC__SObjectType_ims__c</name>
+    </fields>
+</CustomObjectTranslation>

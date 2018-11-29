@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- Description for the entity type. --></help>
+        <label><!-- Description --></label>
+        <name>QIDC__Description_ims__c</name>
+    </fields>
+    <fields>
+        <help><!-- Defines properties of start object like it&apos;s type --></help>
+        <label><!-- End Object Type URI --></label>
+        <name>QIDC__EndObjectTypeURI_ims__c</name>
+    </fields>
+    <fields>
+        <help><!-- URI of entity type or a role that is extended by this entity type.
+ 
+Example:
+configuration/roles/Party --></help>
+        <label><!-- Extends Type URI --></label>
+        <name>QIDC__ExtendsTypeURI_ims__c</name>
+    </fields>
+    <fields>
+        <help><!-- Readable name of the entity type.
+ 
+Example:
+Individual --></help>
+        <label><!-- Label --></label>
+        <name>QIDC__Label_ims__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field is used to store URI of Parent Entity. --></help>
+        <label><!-- Parent Entity Type URI --></label>
+        <name>QIDC__ParentEntityTypeURI_ims__c</name>
+    </fields>
+    <fields>
+        <help><!-- URI of entity type or role that is referenced from an entity though &apos;ReferencedEntityTypeURI&apos;. This field is applicable only for &apos;Reference&apos; Type entities. --></help>
+        <label><!-- Referenced Entity Type URI --></label>
+        <name>QIDC__ReferencedEntityTypeURI_ims__c</name>
+    </fields>
+    <fields>
+        <help><!-- URI of relation type that is referenced from an entity though &apos;RelationshipTypeURI&apos;. This field is applicable only for &apos;Reference&apos; Type entities --></help>
+        <label><!-- Referenced Relation Type URI --></label>
+        <name>QIDC__ReferencedRelationTypeURI_ims__c</name>
+    </fields>
+    <fields>
+        <help><!-- Defines properties of start object like it&apos;s type. --></help>
+        <label><!-- Start Object Type URI --></label>
+        <name>QIDC__StartObjectTypeURI_ims__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field is used to determine the type of entity (i.e Relation, Nested, Reference) --></help>
+        <label><!-- Type --></label>
+        <name>QIDC__Type_ims__c</name>
+        <picklistValues>
+            <masterLabel>Nested</masterLabel>
+            <translation><!-- Nested --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reference</masterLabel>
+            <translation><!-- Reference --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Relation</masterLabel>
+            <translation><!-- Relation --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Path that is used to reach the entity type.
+Format: configuration/entityTypes/{EntityTypeName}
+ 
+Example:
+configuration/entityTypes/Individual --></help>
+        <label><!-- URI --></label>
+        <name>QIDC__URI_ims__c</name>
+    </fields>
+</CustomObjectTranslation>

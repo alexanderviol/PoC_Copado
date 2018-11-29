@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Accessory</fullName>
+        <default>false</default>
+        <label>Accessory</label>
+    </customValue>
+    <customValue>
+        <fullName>Adapter</fullName>
+        <default>false</default>
+        <label>Adapter</label>
+    </customValue>
+    <customValue>
+        <fullName>Cardio Messenger</fullName>
+        <default>false</default>
+        <label>Cardio Messenger</label>
+    </customValue>
+    <customValue>
+        <fullName>CRT-D</fullName>
+        <default>false</default>
+        <label>CRT-D</label>
+    </customValue>
+    <customValue>
+        <fullName>CRT-P</fullName>
+        <default>false</default>
+        <label>CRT-P</label>
+    </customValue>
+    <customValue>
+        <fullName>Home Monitoring Service</fullName>
+        <default>false</default>
+        <label>Home Monitoring Service</label>
+    </customValue>
+    <customValue>
+        <fullName>ICD</fullName>
+        <default>false</default>
+        <label>ICD</label>
+    </customValue>
+    <customValue>
+        <fullName>Lead</fullName>
+        <default>false</default>
+        <label>Lead</label>
+    </customValue>
+    <customValue>
+        <fullName>Loop Recorder</fullName>
+        <default>false</default>
+        <label>Loop Recorder</label>
+    </customValue>
+    <customValue>
+        <fullName>Pacemaker</fullName>
+        <default>false</default>
+        <label>Pacemaker</label>
+    </customValue>
+    <customValue>
+        <fullName>Programmer</fullName>
+        <default>false</default>
+        <label>Programmer</label>
+    </customValue>
+    <customValue>
+        <fullName>Service</fullName>
+        <default>false</default>
+        <label>Service</label>
+    </customValue>
+    <customValue>
+        <fullName>System</fullName>
+        <default>false</default>
+        <label>System</label>
+    </customValue>
+    <customValue>
+        <fullName>Raw Material</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Raw Material</label>
+    </customValue>
+    <customValue>
+        <fullName>Guide Wire</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Guide Wire</label>
+    </customValue>
+    <customValue>
+        <fullName>Device</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Device</label>
+    </customValue>
+    <customValue>
+        <fullName>Demo/Documents</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Demo/Documents</label>
+    </customValue>
+    <customValue>
+        <fullName>Competitor Product</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Competitor Product</label>
+    </customValue>
+    <customValue>
+        <fullName>Catheter</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Catheter</label>
+    </customValue>
+    <masterLabel>Product Type</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

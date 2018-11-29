@@ -1,0 +1,1128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>ADD_DATE_OF_DEATH_OF_THE_PATIENT</fullName>
+        <categories>Error Message</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>ADD DATE OF DEATH OF THE PATIENT</shortDescription>
+        <value>Please add the date of death of the patient.</value>
+    </labels>
+    <labels>
+        <fullName>ADD_EXPLANTING_PHYSICIAN_ADDRESS</fullName>
+        <categories>Error Message</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>ADD EXPLANTING PHYSICIAN ADDRESS</shortDescription>
+        <value>Please add a Mailing address to the Explanting physician.</value>
+    </labels>
+    <labels>
+        <fullName>ADD_EXPLANTING_PHYSICIAN_NAME</fullName>
+        <categories>Error Message</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>ADD EXPLANTING PHYSICIAN NAME</shortDescription>
+        <value>Please add the name of the Explanting physician.</value>
+    </labels>
+    <labels>
+        <fullName>ADD_EXPLANTING_PHYSICIAN_PHONE</fullName>
+        <categories>Error Message</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>ADD EXPLANTING PHYSICIAN PHONE</shortDescription>
+        <value>Please add the phone number of the explanting physician.</value>
+    </labels>
+    <labels>
+        <fullName>ADD_FOLLOWING_PHYSICIAN_ADDRESS</fullName>
+        <categories>Error Message</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>ADD FOLLOWING PHYSICIAN ADDRESS</shortDescription>
+        <value>Please add Mailing Address to the following physician of the patient.</value>
+    </labels>
+    <labels>
+        <fullName>ADD_FOLLOWING_PHYSICIAN_NAME</fullName>
+        <categories>Error Message</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>ADD FOLLOWING PHYSICIAN NAME</shortDescription>
+        <value>Please add the name to the following physician of the patient.</value>
+    </labels>
+    <labels>
+        <fullName>ADD_FOLLOWING_PHYSICIAN_PHONE</fullName>
+        <categories>Error Message</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>ADD FOLLOWING PHYSICIAN PHONE</shortDescription>
+        <value>Please add a phone number to the following physician of the patient.</value>
+    </labels>
+    <labels>
+        <fullName>ADD_IMPLANTING_PHYSICIAN_ADDRESS</fullName>
+        <categories>Error Message</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>ADD IMPLANTING PHYSICIAN ADDRESS</shortDescription>
+        <value>Please add the Mailing address to the Implanting physician of the patient.</value>
+    </labels>
+    <labels>
+        <fullName>ADD_IMPLANTING_PHYSICIAN_NAME</fullName>
+        <categories>Error Message</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>ADD IMPLANTING PHYSICIAN NAME</shortDescription>
+        <value>Please add the name of the Implanting physician of the patient.</value>
+    </labels>
+    <labels>
+        <fullName>ADD_IMPLANTING_PHYSICIAN_PHONE_NUMBER</fullName>
+        <categories>Error Message</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>ADD IMPLANTING PHYSICIAN PHONE NUMBER</shortDescription>
+        <value>Please add a phone number to the implanting physician of the patient.</value>
+    </labels>
+    <labels>
+        <fullName>ADD_PRODUCT_REQUIRED_VALUES</fullName>
+        <categories>Error Message</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>ADD PRODUCT REQUIRED VALUES</shortDescription>
+        <value>Please add UDI and (Serial Number OR Batch Number) to the order product,</value>
+    </labels>
+    <labels>
+        <fullName>APM_ProductConsumed_not_creatable</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>AddProdManually - Product Consumed not creatable</shortDescription>
+        <value>Currently you cannot create a ProductConsumed (ProductConsumed is not createable by the current user).</value>
+    </labels>
+    <labels>
+        <fullName>APM_generic_error</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>AddProdManually - generic error</shortDescription>
+        <value>I&apos;m sorry, an error has occured</value>
+    </labels>
+    <labels>
+        <fullName>APM_quantity_not_number</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>AddProdManually - quantity is not a number</shortDescription>
+        <value>The selected quantity &quot;{0}&quot; is not a number.</value>
+    </labels>
+    <labels>
+        <fullName>ASSET_INSUFFICIENT_ACCESS</fullName>
+        <categories>Insufficient access</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>ASSET_INSUFFICIENT_ACCESS</shortDescription>
+        <value>Insufficient access to DELETE asset .</value>
+    </labels>
+    <labels>
+        <fullName>Area_Sales_Director</fullName>
+        <categories>Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Area Sales Director</shortDescription>
+        <value>Area Sales Director</value>
+    </labels>
+    <labels>
+        <fullName>Area_Sales_Vice_President</fullName>
+        <categories>Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Area Sales Vice President</shortDescription>
+        <value>Area Sales Vice President</value>
+    </labels>
+    <labels>
+        <fullName>BUTTON_BACK_PATIENT</fullName>
+        <categories>Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>BUTTON_BACK_PATIENT</shortDescription>
+        <value>Back to the patient</value>
+    </labels>
+    <labels>
+        <fullName>BUTTON_BACK_TO_COMPLAINT</fullName>
+        <categories>Button</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>BUTTON_BACK_TO_COMPLAINT</shortDescription>
+        <value>Back to the complaint</value>
+    </labels>
+    <labels>
+        <fullName>BUTTON_CMORDER_CANCEL</fullName>
+        <categories>Button</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>BUTTON_CMORDER_CANCEL</shortDescription>
+        <value>Cancel</value>
+    </labels>
+    <labels>
+        <fullName>BUTTON_CMORDER_NEXT</fullName>
+        <categories>Button</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>BUTTON_CMORDER_NEXT</shortDescription>
+        <value>Next</value>
+    </labels>
+    <labels>
+        <fullName>BUTTON_CMORDER_SEARCH</fullName>
+        <categories>Button</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>BUTTON_CMORDER_SEARCH</shortDescription>
+        <value>Search</value>
+    </labels>
+    <labels>
+        <fullName>BUTTON_CMORDER_SUBMIT</fullName>
+        <categories>Button</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>BUTTON_CMORDER_SUBMIT</shortDescription>
+        <value>Submit</value>
+    </labels>
+    <labels>
+        <fullName>BUTTON_NEW_SHIPPING_ADRESS</fullName>
+        <categories>Button</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>BUTTON_NEW_SHIPPING_ADRESS</shortDescription>
+        <value>Enter new Shipping Address</value>
+    </labels>
+    <labels>
+        <fullName>BUTTON_NEW_SHIPPING_ADRESS_PO</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>BUTTON_NEW_SHIPPING_ADRESS_PO</shortDescription>
+        <value>&apos;Enter new Shipping Address (No shipments to a P.O. Box allowed)</value>
+    </labels>
+    <labels>
+        <fullName>CAN_SUBMISSION_ERROR_AUTH_FAILED</fullName>
+        <categories>TEXT</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Used by SubmitComplaintToCan Page</shortDescription>
+        <value>Authentication failed. Please try again.</value>
+    </labels>
+    <labels>
+        <fullName>CAN_SUBMISSION_SELECTED_ERROR_ISLOCKED</fullName>
+        <categories>TEXT</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Used by SubmitComplaintToCANcontrollerExt</shortDescription>
+        <value>Complaint is Locked by another submission process!</value>
+    </labels>
+    <labels>
+        <fullName>CAN_SUBMISSION_SELECTED_ERROR_MISSING_CINUMBER</fullName>
+        <categories>TEXT</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Used by SubmitComplaintToCANcontrollerExt</shortDescription>
+        <value>Missing CI Number!</value>
+    </labels>
+    <labels>
+        <fullName>CAN_SUBMISSION_SELECTED_ERROR_NOTHINGSELECTED</fullName>
+        <categories>TEXT</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Used by SubmitComplaintToCan Page</shortDescription>
+        <value>No Complaints selected. Please try again.</value>
+    </labels>
+    <labels>
+        <fullName>CAN_SUBMISSION_SELECTED_ERROR_SUBMITTOCAN</fullName>
+        <categories>TEXT</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Used by SubmitComplaintToCANcontrollerExt</shortDescription>
+        <value>Not ready for Submission!</value>
+    </labels>
+    <labels>
+        <fullName>CAN_SUBMISSION_SELECTED_FOR_SUBMISSION</fullName>
+        <categories>TEXT</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Used by SubmitComplaintToCan Page</shortDescription>
+        <value>You are about to submit following Complaints to CAN:</value>
+    </labels>
+    <labels>
+        <fullName>CAN_SUBMISSION_SELECTED_FOR_SUBMISSION_INVALID</fullName>
+        <categories>TEXT</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Used by SubmitComplaintToCan Page</shortDescription>
+        <value>Following complaints were selected but will NOT be submitted to CAN:</value>
+    </labels>
+    <labels>
+        <fullName>CI_NO_PREFIX</fullName>
+        <categories>GenerateAutoNumbersController</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>CI_NO_PREFIX</shortDescription>
+        <value>CI-</value>
+    </labels>
+    <labels>
+        <fullName>CONFIRM_SELECTED_RECORDS</fullName>
+        <categories>Error Message</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>CONFIRM_SELECTED_RECORDS</shortDescription>
+        <value>records. Please confirm to generate permanent ID card</value>
+    </labels>
+    <labels>
+        <fullName>CONTACTS_NOT_CANCELED</fullName>
+        <categories>Error Message</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>CONTACTS NOT CANCELED</shortDescription>
+        <value>Contacts have not been canceled from Implant Procedure.</value>
+    </labels>
+    <labels>
+        <fullName>CONTACT_INSUFFICIENT_ACCESS</fullName>
+        <categories>Insufficient access</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>CONTACT_INSUFFICIENT_ACCESS</shortDescription>
+        <value>Insufficient access to cancel contacts.</value>
+    </labels>
+    <labels>
+        <fullName>CREATION_OF_GROUP_HAS_FAILED</fullName>
+        <categories>Error Message</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>CREATION_OF_GROUP_HAS_FAILED</shortDescription>
+        <value>Creation of the public group has failed During the creation of the territory.</value>
+    </labels>
+    <labels>
+        <fullName>Cannot_add_more_products_WorkOrder_is_already_transmitted</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Cannot add more products, the WorkOrder is already transmitted</shortDescription>
+        <value>You cannot add more products to this Implant Procedure. The record has already been transmitted.
+
+If you need to change the used products, please proceed to the associated Order.</value>
+    </labels>
+    <labels>
+        <fullName>DELETION_OF_GROUP_HAS_FAILED</fullName>
+        <categories>Error Message</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>DELETION_OF_GROUP_HAS_FAILED</shortDescription>
+        <value>Deletion of the public group related  has failed during the deletion of the territory.</value>
+    </labels>
+    <labels>
+        <fullName>DOCTOR_LETTER_CONTENT</fullName>
+        <categories>TEXT</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>DOCTOR LETTER CONTENT</shortDescription>
+        <value>BIOTRONIK would like to thank you again for your patience and continued support of our products and services.  If you have any further questions regarding this device, please contact our Advanced Product Support team at (800) 547-0394.</value>
+    </labels>
+    <labels>
+        <fullName>DOCTOR_LETTER_CREATED</fullName>
+        <categories>SUCCESS MSG</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>DOCTOR LETTER CREATED</shortDescription>
+        <value>Doctor&apos;s letter successfully generated!</value>
+    </labels>
+    <labels>
+        <fullName>DOCTOR_LETTER_CREATION_PROCCES</fullName>
+        <categories>Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>DOCTOR_LETTER_CREATION_PROCCES</shortDescription>
+        <value>DOCTOR&apos;S LETTER CREATION ...</value>
+    </labels>
+    <labels>
+        <fullName>DOCTOR_LETTER_WARRANTY_CONTENT</fullName>
+        <categories>TEXT</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>DOCTOR LETTER WARRANTY CONTENT</shortDescription>
+        <value>This analysis indicates that this device is eligible for warranty credit.  A credit will be issued to the hospital.  The patient also qualifies for unreimbursed medical expenses. If the patient incurred any out of pocket expenses as a result of this device being replaced, please have the patient send us documentation that shows how much insurance did not cover and we will reimburse the patient up to $2500.</value>
+    </labels>
+    <labels>
+        <fullName>DOCTOR_LETTER_WARRANTY_CONTENT_2</fullName>
+        <categories>TEXT</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>DOCTOR LETTER WARRANTY CONTENT_2</shortDescription>
+        <value>BIOTRONIK would like to thank you again for your patience and continued support of our products and services.  If you have any further questions regarding this device, please contact our Advanced Product Support team at (800) 547-0394.</value>
+    </labels>
+    <labels>
+        <fullName>Device_Description</fullName>
+        <categories>Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Device Description</shortDescription>
+        <value>Device Description</value>
+    </labels>
+    <labels>
+        <fullName>EMAIL_BODY_PRICEBOOK_ENTRY_BATCH</fullName>
+        <categories>Email</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>ERROR_CREATE_CM_ORDER_NO_PRICEBOOK_ENTRY</shortDescription>
+        <value>&lt;h1&gt;Infromations about the Batch:&lt;/h1&gt;
+{0}
+&lt;/p&gt;
+please have a look.</value>
+    </labels>
+    <labels>
+        <fullName>ERROR_CREATE_CM_ORDER_NO_PRICEBOOK_ENTRY</fullName>
+        <categories>Error</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>ERROR_CREATE_CM_ORDER_NO_PRICEBOOK_ENTRY</shortDescription>
+        <value>Cannot find the pricebook entry again. Something must be wrong in the logic</value>
+    </labels>
+    <labels>
+        <fullName>ERROR_TO_CANCEL_ORDER</fullName>
+        <categories>Error Message</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>ERROR_TO_CANCEL_ORDER</shortDescription>
+        <value>Cancellation of this order is not allowed, depending on the current order status</value>
+    </labels>
+    <labels>
+        <fullName>ERR_CREATE_CM_ORDER_ACCOUNT_MISSING</fullName>
+        <categories>Error</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>ERR_CREATE_CM_ORDER_ACCOUNT_MISSING</shortDescription>
+        <value>We cannot find the Account for the cardio messenger distribution center. This is either a missing / wrong custom setting or the Account is missing.</value>
+    </labels>
+    <labels>
+        <fullName>ERR_CREATE_CM_ORDER_EXCEPTION_MESSAGE</fullName>
+        <categories>Error</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>ERR_CREATE_CM_ORDER_EXCEPTION_MESSAGE</shortDescription>
+        <value>This patient does not seem to have a device implanted.</value>
+    </labels>
+    <labels>
+        <fullName>ERR_CREATE_CM_ORDER_SETTINGS_MISSING</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>CM Order - Settings missing</shortDescription>
+        <value>We cannot find the custom settings defining the Cardio Messenger Distribution Center for your company code.</value>
+    </labels>
+    <labels>
+        <fullName>ERR_FIELD_CHANGE_NOT_PERMITTED</fullName>
+        <categories>Error</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>ERR_FIELD_CHANGE_NOT_PERMITTED</shortDescription>
+        <value>This field change ({0}) is not permitted in status {1}</value>
+    </labels>
+    <labels>
+        <fullName>ERR_NO_EXISTS</fullName>
+        <categories>GenerateAutoNumbersController</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>ERR_NO_EXISTS</shortDescription>
+        <value>Number is already assigned to the Complaint</value>
+    </labels>
+    <labels>
+        <fullName>ERR_OOS_VALIDATION</fullName>
+        <categories>Error Message</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>ERR OOS VALIDATION</shortDescription>
+        <value>Submitting not possible, since OOS information is missing. Please click on the OOS Validation button to see the Assets with missing information</value>
+    </labels>
+    <labels>
+        <fullName>ERR_ORDER_HAS_NO_ORDER_ITEMS</fullName>
+        <categories>Error</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>ERR_ORDER_HAS_NO_ORDER_ITEMS</shortDescription>
+        <value>This order has no related Order Items and can not be submitted</value>
+    </labels>
+    <labels>
+        <fullName>ERR_ORDER_ITEM_STATUS_NOT_DEFINED</fullName>
+        <categories>Error Message</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>One order item is missing a required status value</shortDescription>
+        <value>The status of an orderItem is not defined</value>
+    </labels>
+    <labels>
+        <fullName>ERR_ORDER_STATUS_CHANGE_NOT_ALLOWED</fullName>
+        <categories>Error</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>ERR_ORDER_STATUS_CHANGE_NOT_ALLOWED</shortDescription>
+        <value>You are not allowed to change the status</value>
+    </labels>
+    <labels>
+        <fullName>ERR_RECORTYPE_US_ACCOUNT_MISSING</fullName>
+        <categories>Error</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>ERR_RECORTYPE_US_ACCOUNT_MISSING</shortDescription>
+        <value>Correct recordtype for us_account not found.</value>
+    </labels>
+    <labels>
+        <fullName>ERR_REMOVE_SHARING</fullName>
+        <categories>Error</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>ERR_REMOVE_SHARING</shortDescription>
+        <value>Error on removing Sharing:</value>
+    </labels>
+    <labels>
+        <fullName>ERR_SET_SHARING</fullName>
+        <categories>Error</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>ERR_SET_SHARING</shortDescription>
+        <value>Error on setting Sharing:</value>
+    </labels>
+    <labels>
+        <fullName>Explant_Date</fullName>
+        <categories>Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Explant Date</shortDescription>
+        <value>Explant Date</value>
+    </labels>
+    <labels>
+        <fullName>GENERAL_EXCEPTION_MESSAGE</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>GENERAL_EXCEPTION_MESSAGE</shortDescription>
+        <value>Exception occurred! Could not perform required operation.</value>
+    </labels>
+    <labels>
+        <fullName>HTML_BODY_PRICEBOOK_ENTRY_DUMMIES_MAIL</fullName>
+        <categories>Email</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>HTML_BODY_PRICEBOOK_ENTRY_DUMMIES_MAIL</shortDescription>
+        <value>AsyncApexJob with id {0} did not exist.</value>
+    </labels>
+    <labels>
+        <fullName>HTTP_STATUS_CODE_400_ERROR</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>HTTP_STATUS_CODE_400_ERROR</shortDescription>
+        <value>Bad Request. The request contains an error or incorrect data</value>
+    </labels>
+    <labels>
+        <fullName>HTTP_STATUS_CODE_401_ERROR</fullName>
+        <categories>Error Message</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>HTTP_STATUS_CODE_401_ERROR</shortDescription>
+        <value>Invalid credentials.</value>
+    </labels>
+    <labels>
+        <fullName>HTTP_STATUS_CODE_403_ERROR</fullName>
+        <categories>Error Message</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>HTTP_STATUS_CODE_403_ERROR</shortDescription>
+        <value>Forbidden. The user is not allowed to access to this web service</value>
+    </labels>
+    <labels>
+        <fullName>HTTP_STATUS_CODE_404_ERROR</fullName>
+        <categories>Error Message</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>HTTP_STATUS_CODE_404_ERROR</shortDescription>
+        <value>Not Found. The requested resource has not been found</value>
+    </labels>
+    <labels>
+        <fullName>HTTP_STATUS_CODE_405_ERROR</fullName>
+        <categories>Error Message</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>HTTP_STATUS_CODE_405_ERROR</shortDescription>
+        <value>Method Not Allowed. Content type has not been defined in the request header</value>
+    </labels>
+    <labels>
+        <fullName>HTTP_STATUS_CODE_429_ERROR</fullName>
+        <categories>Error Message</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>HTTP_STATUS_CODE_429_ERROR</shortDescription>
+        <value>Too Many Requests.</value>
+    </labels>
+    <labels>
+        <fullName>HTTP_STATUS_CODE_431_ERROR</fullName>
+        <categories>Error Message</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>HTTP_STATUS_CODE_431_ERROR</shortDescription>
+        <value>Header Fields too long</value>
+    </labels>
+    <labels>
+        <fullName>HTTP_STATUS_CODE_500_ERROR</fullName>
+        <categories>Error Message</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>HTTP_STATUS_CODE_500_ERROR</shortDescription>
+        <value>Internal server error.</value>
+    </labels>
+    <labels>
+        <fullName>HTTP_STATUS_CODE_503_ERROR</fullName>
+        <categories>Error Message</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>HTTP_STATUS_CODE_503_ERROR</shortDescription>
+        <value>System could not establish a connection</value>
+    </labels>
+    <labels>
+        <fullName>HTTP_STATUS_CODE_505_ERROR</fullName>
+        <categories>Error Message</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>HTTP_STATUS_CODE_505_ERROR</shortDescription>
+        <value>HTTP version used in the request is not supported</value>
+    </labels>
+    <labels>
+        <fullName>HTTP_UNKNOWN_ERROR</fullName>
+        <categories>Error Message</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>HTTP_UNKNOWN_ERROR</shortDescription>
+        <value>Unknown Error</value>
+    </labels>
+    <labels>
+        <fullName>IMPLANT_DATE</fullName>
+        <categories>Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>IMPLANT_DATE</shortDescription>
+        <value>Implant Date</value>
+    </labels>
+    <labels>
+        <fullName>INFO_NO_MISSING_OOS</fullName>
+        <categories>Info message on button for no missing OOS Validation</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>INFO_NO_MISSING_OOS</shortDescription>
+        <value>There is no missing OOS Information</value>
+    </labels>
+    <labels>
+        <fullName>LBL_ADRESS_INPUT_TITEL</fullName>
+        <categories>Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>LBL_ADRESS_INPUT_TITEL</shortDescription>
+        <value>Choose patient address where product has to be shipped (No PO Boxes).</value>
+    </labels>
+    <labels>
+        <fullName>LBL_AVAILABLE_PRODUCTS</fullName>
+        <categories>Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>LBL_AVAILABLE_PRODUCTS</shortDescription>
+        <value>Searched/Available Products</value>
+    </labels>
+    <labels>
+        <fullName>LBL_AVAILABLE_PRODUCTS_SELECT</fullName>
+        <categories>Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>LBL_AVAILABLE_PRODUCTS_SELECT</shortDescription>
+        <value>Choose Available/Searched Products</value>
+    </labels>
+    <labels>
+        <fullName>LBL_CHOOSE_PATIENT_ADDRESS</fullName>
+        <categories>Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>LBL_CHOOSE_PATIENT_ADDRESS</shortDescription>
+        <value>Choose Patient Address</value>
+    </labels>
+    <labels>
+        <fullName>LBL_CM_BUTTON_CLOSE</fullName>
+        <categories>Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>LBL_CM_BUTTON_CLOSE</shortDescription>
+        <value>Close</value>
+    </labels>
+    <labels>
+        <fullName>LBL_CM_BUTTON_PREVIOUS</fullName>
+        <categories>Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>LBL_CM_BUTTON_PREVIOUS</shortDescription>
+        <value>Previous</value>
+    </labels>
+    <labels>
+        <fullName>LBL_CM_ORDER_DIRECT_HANDOUT</fullName>
+        <categories>Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>LBL_CM_ORDER_DIRECT_HANDOUT</shortDescription>
+        <value>This is a direct hand out of</value>
+    </labels>
+    <labels>
+        <fullName>LBL_CM_ORDER_DIRECT_HANDOUT_ORDER_TYPE</fullName>
+        <categories>Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>LBL_CM_ORDER_DIRECT_HANDOUT_ORDER_TYPE</shortDescription>
+        <value>This is a {0} of</value>
+    </labels>
+    <labels>
+        <fullName>LBL_CM_ORDER_DIRECT_HANDOUT_SHIPPED_TO</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>LBL_CM_ORDER_DIRECT_HANDOUT_SHIPPED_TO</shortDescription>
+        <value>To be shipped to</value>
+    </labels>
+    <labels>
+        <fullName>LBL_CM_ORDER_HEADLINE1_COMPLAINT</fullName>
+        <categories>Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>LBL_CM_ORDER_HEADLINE1_COMPLAINT</shortDescription>
+        <value>Cardio Messenger Order</value>
+    </labels>
+    <labels>
+        <fullName>LBL_CM_ORDER_HEADLINE1_PATIENT</fullName>
+        <categories>Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>LBL_CM_ORDER_HEADLINE1_PATIENT</shortDescription>
+        <value>New Cardio Messenger Order</value>
+    </labels>
+    <labels>
+        <fullName>LBL_CM_ORDER_HEADLINE2</fullName>
+        <categories>Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>LBL_CM_ORDER_HEADLINE2</shortDescription>
+        <value>Patient:</value>
+    </labels>
+    <labels>
+        <fullName>LBL_CM_ORDER_PATIENT_ADRESS_UPDATE</fullName>
+        <categories>Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>LBL_CM_ORDER_PATIENT_ADRESS_UPDATE</shortDescription>
+        <value>Patient Address To Update</value>
+    </labels>
+    <labels>
+        <fullName>LBL_CM_ORDER_PATIENT_DEAD</fullName>
+        <categories>Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>LBL_CM_ORDER_PATIENT_DEAD</shortDescription>
+        <value>This Patient is deceased</value>
+    </labels>
+    <labels>
+        <fullName>LBL_CM_ORDER_SUMMARY</fullName>
+        <categories>Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>LBL_CM_ORDER_SUMMARY</shortDescription>
+        <value>Summary:</value>
+    </labels>
+    <labels>
+        <fullName>LBL_CM_ORDER_TYPE_OF_SHIPMENT</fullName>
+        <categories>Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>LBL_CM_ORDER_TYPE_OF_SHIPMENT</shortDescription>
+        <value>Type of Shipment</value>
+    </labels>
+    <labels>
+        <fullName>LBL_CM_ORDER_TYPE_OF_SHIPMENT_LIST</fullName>
+        <categories>Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>LBL_CM_ORDER_TYPE_OF_SHIPMENT_LIST</shortDescription>
+        <value>Shipment Type</value>
+    </labels>
+    <labels>
+        <fullName>LBL_NO_PRODUCT_SELECTED</fullName>
+        <categories>Error Message</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>LBL_NO_PRODUCT_SELECTED</shortDescription>
+        <value>No Product has been selected</value>
+    </labels>
+    <labels>
+        <fullName>LBL_NO_REP_SELECTED</fullName>
+        <categories>Error Message</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>LBL_NO_REP_SELECTED</shortDescription>
+        <value>No Rep for Credit has been selected.</value>
+    </labels>
+    <labels>
+        <fullName>LBL_OF</fullName>
+        <categories>TEXT</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>LBL_OF</shortDescription>
+        <value>of</value>
+    </labels>
+    <labels>
+        <fullName>LBL_PRODUCT_SEARCH_TITLE</fullName>
+        <categories>Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>LBL_PRODUCT_SEARCH_TITLE</shortDescription>
+        <value>Search Products</value>
+    </labels>
+    <labels>
+        <fullName>LBL_RESPONSIBILITIES</fullName>
+        <categories>Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>LBL_RESPONSIBILITIES</shortDescription>
+        <value>Responsibilities</value>
+    </labels>
+    <labels>
+        <fullName>LBL_RESULT_ORDER_CREATED</fullName>
+        <categories>Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>LBL_RESULT_ORDER_CREATED</shortDescription>
+        <value>The order has been created.</value>
+    </labels>
+    <labels>
+        <fullName>LBL_SEARCH_BY_NAME_INVENTORY</fullName>
+        <categories>Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>LBL_SEARCH_BY_NAME_INVENTORY</shortDescription>
+        <value>Search by Name (Inventory)</value>
+    </labels>
+    <labels>
+        <fullName>LBL_SEARCH_BY_SERIAL_NUMBER</fullName>
+        <categories>Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>LBL_SEARCH_BY_SERIAL_NUMBER</shortDescription>
+        <value>Search by Serial number</value>
+    </labels>
+    <labels>
+        <fullName>LBL_SELECT_TABEL_HEADER</fullName>
+        <categories>Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>LBL_SELECT_TABEL_HEADER</shortDescription>
+        <value>Select</value>
+    </labels>
+    <labels>
+        <fullName>LBL_SELECT_THE_PRODUCT</fullName>
+        <categories>Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>LBL_SELECT_THE_PRODUCT</shortDescription>
+        <value>Select the product:</value>
+    </labels>
+    <labels>
+        <fullName>LBL_SELEC_REP_FOR_CREDIT</fullName>
+        <categories>Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>LBL_SELEC_REP_FOR_CREDIT</shortDescription>
+        <value>Select Rep for Credit</value>
+    </labels>
+    <labels>
+        <fullName>LBL_THIS_IS</fullName>
+        <categories>TEXT</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>LBL_THIS_IS</shortDescription>
+        <value>This is a</value>
+    </labels>
+    <labels>
+        <fullName>MDR_NO_PREFIX</fullName>
+        <categories>GenerateAutoNumbersController</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MDR_NO_PREFIX</shortDescription>
+        <value>MDR-1028232-</value>
+    </labels>
+    <labels>
+        <fullName>MR_CONDITIONAL_SUCCSSFUL</fullName>
+        <categories>INFO</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MR Conditional - Successful</shortDescription>
+        <value>MR Conditional - Successful</value>
+    </labels>
+    <labels>
+        <fullName>NO_CREATABLE_PERMISSION</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>NO_CREATABLE_PERMISSION</shortDescription>
+        <value>You don&apos;t have creatable permission for &apos;versionData&apos; OR &apos;title&apos; OR &apos;pathOnClient&apos; field on &apos;ContentVersion&apos; object. You must have these permissions to successfully generate the PDF documents.</value>
+    </labels>
+    <labels>
+        <fullName>NO_DOCTOR_RECIPIENT_IS_FOUND</fullName>
+        <categories>Error Message</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>NO DOCTOR RECIPIENT IS FOUND</shortDescription>
+        <value>No Doctor Recipient is found ! please add a complaint relationship as Dr Letter Recipient.</value>
+    </labels>
+    <labels>
+        <fullName>NO_PERMISSION_TO_DELETE</fullName>
+        <categories>Error Message</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>NO_PERMISSION_TO_DELETE</shortDescription>
+        <value>You don&apos;t have permission to delete Content Documents. You must have this permission to generate PDF successfully.</value>
+    </labels>
+    <labels>
+        <fullName>NO_PERMISSION_TO_UPDATE</fullName>
+        <categories>Error Message</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>NO_PERMISSION_TO_UPDATE</shortDescription>
+        <value>You don&apos;t have permission to update &apos;patient_id_card_created__c&apos; field on &apos;Contact&apos;</value>
+    </labels>
+    <labels>
+        <fullName>ORDER_NOT_SUCCESSFULLY_CANCELED</fullName>
+        <categories>Error Message</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>ORDER NOT SUCCESSFULLY CANCELED</shortDescription>
+        <value>The cancellation of order fails.</value>
+    </labels>
+    <labels>
+        <fullName>PERMISSION_DENIED</fullName>
+        <categories>Error Message</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>PERMISSION DENIED</shortDescription>
+        <value>Permission denied</value>
+    </labels>
+    <labels>
+        <fullName>PRODUCT_CONSUMED_INSUFFICIENT_ACCESS</fullName>
+        <categories>Insufficient access</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>PRODUCT CONSUMED INSUFFICIENT ACCESS</shortDescription>
+        <value>Insufficient access to delete Product Consumed.</value>
+    </labels>
+    <labels>
+        <fullName>PRODUCT_CONSUMED_NOT_CONCELED</fullName>
+        <categories>Error Message</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>PRODUCT CONSUMED NOT CONCELED</shortDescription>
+        <value>Product Consumed has not been canceled from Implant Procedure.</value>
+    </labels>
+    <labels>
+        <fullName>PROMRI_CHECK_STARTED</fullName>
+        <categories>INFO</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>ProMRI Check started.</shortDescription>
+        <value>ProMRI Check started.</value>
+    </labels>
+    <labels>
+        <fullName>Patient_Name</fullName>
+        <categories>Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Patient Name</shortDescription>
+        <value>Patient Name</value>
+    </labels>
+    <labels>
+        <fullName>RECORDTYPE_NOT_FOUND</fullName>
+        <categories>Error Message</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>RECORDTYPE_NOT_FOUND</shortDescription>
+        <value>Couldn&apos;t found the record type</value>
+    </labels>
+    <labels>
+        <fullName>RP_NO_PREFIX</fullName>
+        <categories>GenerateAutoNumbersController</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>RP_NO_PREFIX</shortDescription>
+        <value>RP-</value>
+    </labels>
+    <labels>
+        <fullName>Reason_for_Analysis</fullName>
+        <categories>Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Reason for Analysis</shortDescription>
+        <value>Reason for Analysis</value>
+    </labels>
+    <labels>
+        <fullName>SELECTED_RECORDS</fullName>
+        <categories>Error Message</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>SELECTED_RECORDS</shortDescription>
+        <value>You have selected</value>
+    </labels>
+    <labels>
+        <fullName>SELECT_ALL_PATIENTS</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>SELECT_ALL_PATIENTS</shortDescription>
+        <value>Please select all records of type patient</value>
+    </labels>
+    <labels>
+        <fullName>SELECT_ATLEAST_ONE_PATIENT</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>SELECT_ATLEAST_ONE_PATIENT</shortDescription>
+        <value>Select at least one patient record to continue..</value>
+    </labels>
+    <labels>
+        <fullName>SENDER_DISPLAY_NAME_PRICEBOOK_ENTRY_DUMMIES_MAIL</fullName>
+        <categories>Email</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>SENDER_DISPLAY_NAME_PRICEBOOK_ENTRY_DUMMIES_MAIL</shortDescription>
+        <value>Pricebook Entry Dummies Creation</value>
+    </labels>
+    <labels>
+        <fullName>SERIAL_NUMBER</fullName>
+        <categories>Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>SERIAL_NUMBER</shortDescription>
+        <value>Serial Number</value>
+    </labels>
+    <labels>
+        <fullName>SUBJECT_PRICEBOOK_ENTRY_DUMMIES_MAIL</fullName>
+        <categories>Email</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>SUBJECT_PRICEBOOK_ENTRY_DUMMIES_MAIL</shortDescription>
+        <value>Pricebook entry dummies creation fail</value>
+    </labels>
+    <labels>
+        <fullName>Sales_Representative</fullName>
+        <categories>Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Sales Representative</shortDescription>
+        <value>Sales Representative</value>
+    </labels>
+    <labels>
+        <fullName>VALIDATE_ADDRESS_ENTRIES</fullName>
+        <categories>Error Message</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>VALIDATE_ADDRESS_ENTRIES</shortDescription>
+        <value>Please select a valid address or Enter a new Shipping Address.</value>
+    </labels>
+    <labels>
+        <fullName>WORKORDER_INSUFFICIENT_ACCESS</fullName>
+        <categories>Insufficient access</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>WORKORDER INSUFFICIENT ACCESS</shortDescription>
+        <value>Insufficient access to cancel implant procedure line item.</value>
+    </labels>
+    <labels>
+        <fullName>WORKORDER_LINE_ITEM_NOT_CANCELED</fullName>
+        <categories>Error Message</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>WORKORDER LINE ITEM NOT CANCELED</shortDescription>
+        <value>Implant procedure line Item has not been canceled from Implant Procedure.</value>
+    </labels>
+    <labels>
+        <fullName>WORKORDER_TRASMITTED_AND_CANNOT_BE_CANCELED</fullName>
+        <categories>Error Message</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>WORKORDER TRASMITTED AND CANNOT BE CANCELED</shortDescription>
+        <value>The WorkOrder has already been transmitted and cannot be canceled.</value>
+    </labels>
+    <labels>
+        <fullName>YOU_ARE_NOT_ALLOWED_TO_ADD_A_PRODUCT_MANUALLY</fullName>
+        <categories>Error Message</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>YOU ARE NOT ALLOWED TO ADD A PRODUCT MANUALLY</shortDescription>
+        <value>You are not allowed to add Product Items manually.</value>
+    </labels>
+    <labels>
+        <fullName>access_rights_missing</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Access rights are missing for the function</shortDescription>
+        <value>Some access rights are missing for creation of the necessary objects.</value>
+    </labels>
+    <labels>
+        <fullName>cannot_find_recordtype</fullName>
+        <categories>Exception</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>cannot find necessary record type</shortDescription>
+        <value>Cannot find the record type &quot;{0}&quot;. Please contact your System Administrator.</value>
+    </labels>
+    <labels>
+        <fullName>cannot_find_workorder</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Cannot find WorkOrder</shortDescription>
+        <value>Cannot find the referenced WorkOrder ({0}).</value>
+    </labels>
+    <labels>
+        <fullName>ccmo_No_Service_Resource_for_current_User</fullName>
+        <categories>Error</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Create CM Order - No Service Resource for current User</shortDescription>
+        <value>The current user is not set up fully as a Service Resource. Please contact your administrator.</value>
+    </labels>
+    <labels>
+        <fullName>content</fullName>
+        <categories>TEXT</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>content</shortDescription>
+        <value>are described below</value>
+    </labels>
+    <labels>
+        <fullName>dear_contact</fullName>
+        <categories>Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>dear contact</shortDescription>
+        <value>Dear</value>
+    </labels>
+    <labels>
+        <fullName>intoduction_to_device_description</fullName>
+        <categories>TEXT</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>intoduction to device description</shortDescription>
+        <value>The results of the detailed analysis for the above referenced</value>
+    </labels>
+    <labels>
+        <fullName>product_not_in_pricebook</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>The product is not in the accounts pricebook</shortDescription>
+        <value>The selected Product ({0}, {1}, Currency: {2}) is not in the accounts pricebook.</value>
+    </labels>
+    <labels>
+        <fullName>sincerely</fullName>
+        <categories>TEXT</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>sincerely</shortDescription>
+        <value>Sincerely</value>
+    </labels>
+    <labels>
+        <fullName>workorder_already_converted</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>WorkOrder is already converted to an Order</shortDescription>
+        <value>This WorkOrder ({0}) has already been converted to an order ({1}).</value>
+    </labels>
+</CustomLabels>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- The field ID which this code is mapped to. --></help>
+        <label><!-- Field Mapping --></label>
+        <name>QIDC__Field_Mapping_ims__c</name>
+        <relationshipLabel><!-- MDM Code Mappings --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- The LookupType ID which this code is mapped to. --></help>
+        <label><!-- Lookup Type --></label>
+        <name>QIDC__LookupType_ims__c</name>
+        <relationshipLabel><!-- MDM Code Mappings --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- The Salesforce picklist value that is mapped to the MDM code. --></help>
+        <label><!-- Picklist Value --></label>
+        <name>QIDC__Picklist_Value_ims__c</name>
+    </fields>
+    <fields>
+        <help><!-- Developer name of the record type to map with the MDM code. --></help>
+        <label><!-- Record Type --></label>
+        <name>QIDC__Record_Type_Name_ims__c</name>
+    </fields>
+</CustomObjectTranslation>

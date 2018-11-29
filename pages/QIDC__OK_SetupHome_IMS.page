@@ -1,0 +1,345 @@
+<apex:page showHeader="true" sidebar="false" standardStylesheets="false" controller="QIDC.OK_SetupHomeController_IMS" extensions="QIDC.OK_SearchResultLayoutConfig_IMS,QIDC.OK_TranslationsController_IMS,QIDC.OK_SearchCodeListController_IMS,QIDC.OK_ValidationRequest_Monitoring_IMS,QIDC.OK_SF_MappingUIController_IMS,QIDC.OK_ErrorLog_Monitoring_IMS,QIDC.OK_Delta_Download_Monitoring_IMS,QIDC.OK_VR_SETTINGS_UI_IMS,QIDC.Scheduler_IMS,QIDC.OK_OneKey_Credentials_IMS,QIDC.OK_CountrySetupController_IMS,QIDC.OK_CountryController_IMS,QIDC.OK_Delta_Download_Scheduler_IMS,QIDC.OK_ExportCodesMappingController_IMS,QIDC.OK_ImportCodesMappingController_IMS,QIDC.OK_UserSettingsController_IMS,QIDC.OK_Organization_Settings_IMS" docType="html-5.0" tabStyle="Data_Connector_Setup_ims__tab">
+<html xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<head>
+    
+        <apex:includeScript value="{!URLFOR($Resource.QIDC__Connectors_ims, 'lib/jquery.min.js')}" />
+        <apex:includeScript value="{!URLFOR($Resource.QIDC__Connectors_ims, 'lib/jquery-ui.min.js')}"/>
+        <apex:includeScript value="{!URLFOR($Resource.QIDC__Connectors_ims, 'lib/angular.min.js')}" />
+        <apex:includeScript value="{!URLFOR($Resource.QIDC__Connectors_ims, 'lib/angular-route.min.js')}" />
+        <apex:includeScript value="{!URLFOR($Resource.QIDC__Connectors_ims, 'lib/angular-sanitize.min.js')}" />        
+        <apex:includeScript value="{!URLFOR($Resource.QIDC__Connectors_ims, 'lib/angular-translate.min.js')}"/>
+        <apex:includeScript value="{!URLFOR($Resource.QIDC__Connectors_ims, 'lib/angular-animate.min.js')}" />        
+        <apex:includeScript value="{!URLFOR($Resource.QIDC__Connectors_ims, 'lib/v-accordion.js')}"/>
+        <apex:includeScript value="{!URLFOR($Resource.QIDC__Connectors_ims, 'lib/svg4everybody.js')}"/>
+        <apex:includeScript value="{!URLFOR($Resource.QIDC__Connectors_ims, 'lib/jquery.floatThead.js')}"/>
+        <apex:includeScript value="{!URLFOR($Resource.QIDC__Connectors_ims, 'lib/jquery.fixedheadertable.min.js')}"/>
+        <apex:includeScript value="{!URLFOR($Resource.QIDC__Connectors_ims, 'lib/bootstrap.min.js')}"/>
+        <apex:includeScript value="{!URLFOR($Resource.QIDC__Connectors_ims, 'lib/ui-select.js')}"/>
+        <!-- <apex:includeScript value="{!URLFOR($Resource.Connectors_ims, 'lib/angular-ui.min.js')}"/> -->
+        <apex:includeScript value="{!URLFOR($Resource.QIDC__Connectors_ims, 'lib/sortable.js')}"/>
+        <apex:includeScript value="{!URLFOR($Resource.QIDC__Connectors_ims, 'lib/upload.js')}"/>
+        <apex:includeScript value="{!URLFOR($Resource.QIDC__Connectors_ims, 'lib/ui-bootstrap-custom-tpls-2.3.0.js')}"/>
+        
+        <apex:includeScript value="{!URLFOR($Resource.QIDC__Connectors_ims, 'lib/angular-momentjs.js')}"/>
+        <apex:includeScript value="{!URLFOR($Resource.QIDC__Connectors_ims, 'lib/moment.js')}"/>
+        <apex:includeScript value="{!URLFOR($Resource.QIDC__Connectors_ims, 'lib/jquery.aljs-init.min.js')}"/>
+        <apex:includeScript value="{!URLFOR($Resource.QIDC__Connectors_ims, 'lib/jquery.aljs-datepicker.min.js')}"/>
+        <apex:includeScript value="{!URLFOR($Resource.QIDC__Connectors_ims, 'lib/jquery.aljs-lookup.min.js')}"/>
+
+        <apex:includeScript value="{!URLFOR($Resource.QIDC__Connectors_ims, 'lib/jsforce.min.js')}"/>
+    
+        <apex:includeScript value="{!URLFOR($Resource.QIDC__Connectors_ims, 'ok/js/common/directives.js')}" />
+        <apex:includeScript value="{!URLFOR($Resource.QIDC__Connectors_ims, 'ok/js/admin/factories.js')}" />
+        <apex:includeScript value="{!URLFOR($Resource.QIDC__Connectors_ims, 'ok/js/common/services.js')}"/>
+        <apex:includeScript value="{!URLFOR($Resource.QIDC__Connectors_ims, 'ok/js/admin/directives.js')}" />
+        <apex:includeScript value="{!URLFOR($Resource.QIDC__Connectors_ims, 'ok/js/admin/controllers.js')}" />
+        <apex:includeScript value="{!URLFOR($Resource.QIDC__Connectors_ims, 'ok/js/admin/mappingUI.js')}" />
+        <apex:includeScript value="{!URLFOR($Resource.QIDC__Connectors_ims, 'ok/js/common/controllers.js')}" />
+        <apex:includeScript value="{!URLFOR($Resource.QIDC__Connectors_ims, 'ok/js/admin/app.js')}" />
+        <apex:includeScript value="{!URLFOR($Resource.QIDC__Connectors_ims, 'lib/rangeslider.min.js')}"/>
+
+        <apex:stylesheet value="{!URLFOR($Resource.QIDC__SLDS, 'assets/styles/salesforce-lightning-design-system-vf.min.css')}" />
+        <apex:stylesheet value="{!URLFOR($Resource.QIDC__Connectors_ims, 'ok/styles/onekeySetup.css')}" />
+        <apex:stylesheet value="{!URLFOR($Resource.QIDC__Connectors_ims, 'styles/setup.css')}"/>
+        <apex:stylesheet value="{!URLFOR($Resource.QIDC__Connectors_ims, 'styles/v-accordion.css')}" />
+        <apex:stylesheet value="{!URLFOR($Resource.QIDC__Connectors_ims, 'styles/ui-select.css')}" />
+        <apex:stylesheet value="{!URLFOR($Resource.QIDC__Connectors_ims, 'styles/selectize.default.css')}" />
+        <apex:stylesheet value="{!URLFOR($Resource.QIDC__Connectors_ims, 'ok/styles/mappingUI.css')}" />
+        <apex:stylesheet value="{!URLFOR($Resource.QIDC__Connectors_ims, 'lib/rangeslider.css')}" /> 
+
+        <script type="text/javascript">
+            // inline js
+            // used in 'ok/js/admin/app.js for $routeProvider.
+            
+            var nameSpacePrefix ='{!nameSpacePrefix}'; 
+            var sitePrefix = '{!$Site.Prefix}';
+            var timeZoneOffSet ='{!offSet}';
+            var userDateTimeFormat ='{!userDateTimeFormat}';
+            var userDateFormat ='{!userDateFormat}';
+            
+			//Search Result Layout Configuration
+            var OK_SEARCH_RESULT_LAYOUT_CONFIG_COLUMNS = '{!$RemoteAction.OK_SearchResultLayoutConfig_IMS.getAvailableLayoutConfigFields}';
+            var OK_SEARCH_RESULT_LAYOUT_CONFIG_COLUMNS_UPSERT = '{!$RemoteAction.OK_SearchResultLayoutConfig_IMS.upsertLayoutConfiguredFields}';
+			
+            //OBJECT MAPPINGS
+            var OK_MAPPING_FULL_DATA = '{!$RemoteAction.OK_SF_MappingUIController_IMS.getFullMappingData}';
+            var OK_MAPPING_SF_METADATA = '{!$RemoteAction.OK_SF_MappingUIController_IMS.getObjectMetadata}';
+            var OK_SAVE_MAPPING_RECORDS = '{!$RemoteAction.OK_SF_MappingUIController_IMS.saveMappingRecords}';
+    		var OK_SAVE_FIELDMAPPING = '{!$RemoteAction.OK_SF_MappingUIController_IMS.saveFieldMappings}';
+    		var OK_SAVE_CODEMAPPING = '{!$RemoteAction.OK_SF_MappingUIController_IMS.saveCodeMappings}';
+            var OK_MAPPING_AVAILABLE_COUNTRIES = '{!$RemoteAction.OK_SF_MappingUIController_IMS.getAvailableCountries}';
+            var OK_MAPPING_CODES_BY_LIS = '{!$RemoteAction.OK_SF_MappingUIController_IMS.getOneKeyCodesByLIS}';
+            var OK_MAPPING_ATTRIBUTES_BY_ENTITY = '{!$RemoteAction.OK_SF_MappingUIController_IMS.getAttributesByEntity}';
+    		var OK_GLOBAL_MAPPING_COMPLETE_DATA = '{!$RemoteAction.OK_SF_MappingUIController_IMS.getGlobalMappings}';
+    		var OK_Mapping_GETORGCOUNTRIES  = '{!$RemoteAction.OK_SF_MappingUIController_IMS.getOrgCountries}';
+            var OK_MAPPING_CODES_BY_LIS_BY_COUNTRY = '{!$RemoteAction.OK_SF_MappingUIController_IMS.getOneKeyCodesByLISByCountry}';
+            var OK_MAPPING_ADD_ATTRIBUTES_BY_ENTITY = '{!$RemoteAction.OK_SF_MappingUIController_IMS.getAddAttributeDataByEntity}';
+            var OK_MAPPING_GET_MAPPED_RECTYPE_COUNTRIES= '{!$RemoteAction.OK_SF_MappingUIController_IMS.getRecTypeMappedCountries}';
+    
+            
+            //Oneky VR Settings
+            var OK_VR_SETTINGS_METADATA = '{!$RemoteAction.OK_VR_SETTINGS_UI_IMS.getVRSettings}';
+            var OK_SAVE_VR_SETTINGS_DATA = '{!$RemoteAction.OK_VR_SETTINGS_UI_IMS.saveVRSettings}';
+            
+            //IMS LABELS
+            var OK_IMS_LABEL_COMPLETE_DATA = '{!$RemoteAction.OK_TranslationsController_IMS.getIMSLabelCompleteData}';
+            var GET_LABEL_AND_FIELD_DETAILS = '{!$RemoteAction.OK_TranslationsController_IMS.getLabelAndFieldDetails}'; 
+            var OK_IMS_LABEL_DELETE_DATA = '{!$RemoteAction.OK_TranslationsController_IMS.deleteIMSLabelData}';
+            var OK_IMS_LABEL_TRANSLATION_DATA = '{!$RemoteAction.OK_TranslationsController_IMS.getIMSLabelTranslationData}';
+			var OK_IMS_TRANSLATION_LIST_UPSERT  = '{!$RemoteAction.OK_TranslationsController_IMS.upsertImsLabelTranslationRecords}';
+			var GET_SEARCH_DATA  = '{!$RemoteAction.OK_TranslationsController_IMS.getSearchData}';
+
+            // Delta Download 
+            var OK_DELTA_DOWNLOAD_MONITORING_GET_FIELDS = '{!$RemoteAction.OK_Delta_Download_Monitoring_IMS.getFields}'; 
+            var OK_DELTA_DOWNLOAD_MONITORING_GET_RECORDS = '{!$RemoteAction.OK_Delta_Download_Monitoring_IMS.getRecords}'; 
+                        
+            // VR MONITORING
+            var OK_VR_MONITORING_LABEL_AND_FIELD_DETAILS = '{!$RemoteAction.OK_ValidationRequest_Monitoring_IMS.getVRLabelAndFieldDetails}';
+            var OK_VR_MONITORING_DATA = '{!$RemoteAction.OK_ValidationRequest_Monitoring_IMS.getVRData}';
+            var OK_VR_MONITORING_RESEND_RECORD = '{!$RemoteAction.OK_ValidationRequest_Monitoring_IMS.resendValidationRequest}';
+            var OK_VR_MONITORING_REFRESH_RECORD = '{!$RemoteAction.OK_ValidationRequest_Monitoring_IMS.refreshValidationRequest}';
+            var OK_VR_MONITORING_UPDATE_ADDR_AFF_RECORD = '{!$RemoteAction.OK_ValidationRequest_Monitoring_IMS.updateVRAddrAffiliation}';
+			var OK_VR_MONITORING_USERACCESSCHECK_RECORD = '{!$RemoteAction.OK_ValidationRequest_Monitoring_IMS.userAccessCheck}';
+			var OK_VR_MONITORING_DOWNLOAD_RECORD = '{!$RemoteAction.OK_ValidationRequest_Monitoring_IMS.download}';
+            
+            // ERROR LOG MONITORING
+            var OK_ERRORLOG_MONITORING_LABEL_AND_FIELD_DETAILS = '{!$RemoteAction.OK_ErrorLog_Monitoring_IMS.getErrorLogLabelAndFieldDetails}';
+            var OK_ERRORLOG_MONITORING_DATA = '{!$RemoteAction.OK_ErrorLog_Monitoring_IMS.getErrorLogData}';
+            var OK_ERRORLOG_MONITORING_SAVE_RECORD = '{!$RemoteAction.OK_ErrorLog_Monitoring_IMS.updateErrorLogRecord}';
+			var OK_ERRORLOG_MONITORING_RECORD_HAS_ATTACHEMENT = '{!$RemoteAction.OK_ErrorLog_Monitoring_IMS.errorLogHasAttachment}';
+			
+            // Scheduler Jobs
+            var OK_SCHEDULER_JOB_CRON_EXPR= '{!$RemoteAction.Scheduler_IMS.getCronExpr}';    
+            var OK_SCHEDULER_JOB_INVOKE= '{!$RemoteAction.Scheduler_IMS.invokeSchedulerJobWithJobName}';    
+            var OK_SCHEDULER_JOB_ABORT= '{!$RemoteAction.Scheduler_IMS.abortSchedulerJob}'; 
+            var OK_SCHEDULER_JOB_GET_REFRESH_MY_ONEKEY_SETTINGS_LIST='{!$RemoteAction.OK_Delta_Download_Scheduler_IMS.getRefreshMyOneKeyStatsList}';    
+            var OK_SCHEDULER_JOB_GET_REFRESH_MY_ONEKEY_SETTINGS='{!$RemoteAction.OK_Delta_Download_Scheduler_IMS.getRefreshMyOneKeyCurrentStats}';    
+            var OK_SCHEDULER_JOB_SET_REFRESH_MY_ONEKEY_SETTINGS='{!$RemoteAction.OK_Delta_Download_Scheduler_IMS.setRefreshMyOneKeyRow}';  
+            var OK_SCHEDULER_JOB_RESET_REFRESH_MY_ONEKEY_SETTINGS='{!$RemoteAction.OK_Delta_Download_Scheduler_IMS.resetRefreshMyneKeyRow}'; 
+            var OK_SCHEDULER_JOB_DELTA_DOWNLOAD_ABORT='{!$RemoteAction.OK_Delta_Download_Scheduler_IMS.abortSchedulerJob}';  
+            var OK_SCHEDULER_JOB_RESUME_LAST_FAILED_JOB='{!$RemoteAction.OK_Delta_Download_Scheduler_IMS.resumeLastFailedJob}';  
+            
+            // ONEKEY CREDENTIALS
+            var OK_ONEKEY_CREDENTIALS_GET_CONNECTORID  = '{!$RemoteAction.OK_OneKey_Credentials_IMS.getOneKeySettingsData}';
+            var OK_ONEKEY_CREDENTIALS_SAVE_CONNECTORID = '{!$RemoteAction.OK_OneKey_Credentials_IMS.saveOneKeySettings}';
+            
+            // COUNRTY SETUP
+            var OK_COUNTRY_SETUP_GETCOUNTRIES  = '{!$RemoteAction.OK_CountrySetupController_IMS.getCountries}';
+            var OK_COUNTRY_SETUP_COUNTRY_DELETION_WITH_JOB  = '{!$RemoteAction.OK_CountrySetupController_IMS.validateCountryDeletionWhenJobExists}'; 
+            var OK_COUNTRY_SETUP_DELETE_AVAILABLE_JOBS  = '{!$RemoteAction.OK_CountrySetupController_IMS.deleteAvailableJobs}';
+    		var GET_AVAILABLE_COUNTRIES = '{!$RemoteAction.OK_CountryController_IMS.availableCountries}';
+
+			
+            //Pull Codes
+            var OK_DOWNLOAD_COUNTRIES ='{!$RemoteAction.OK_SearchCodeListController_IMS.getOrgCountriesWithCodes}';  
+            var OK_DOWNLOAD_CODE_FOR_COUNTRY='{!$RemoteAction.OK_SearchCodeListController_IMS.downloadCodeForCountry}';  
+            var OK_PICKLIST_ATTRIBUTES_LIST = '{!$RemoteAction.OK_SearchCodeListController_IMS.getOnekeyPicklistAttributes}';            
+            
+            //Export Codes and Mapping
+            var OK_EXPORT_CODES_TO_FILE = '{!$RemoteAction.OK_ExportCodesMappingController_IMS.exportCodesToFile}';
+            var OK_EXPORT_MAPPING_TO_FILE = '{!$RemoteAction.OK_ExportCodesMappingController_IMS.exportMappingToFile}';
+            var OK_EXPORT_FOLDER_ID = '{!$RemoteAction.OK_ExportCodesMappingController_IMS.getExportsFolderId}';
+
+            //Import Codes and Mapping
+            var OK_IMPORT_CODES_MAPPING_TO_FILE = '{!$RemoteAction.OK_ImportCodesMappingController_IMS.importCodesMappingFromFile}';
+            
+            //OneKey User Settings Custom Setting
+            var OK_USER_SETTINGS_GET_SETUPOWNER_OPTIONS = '{!$RemoteAction.OK_UserSettingsController_IMS.getSetupOwnerOptions}';            
+            var OK_USER_SETTINGS_GET_ORG_ID_NAME = '{!$RemoteAction.OK_UserSettingsController_IMS.getOrgIdAndName}';
+            var OK_USER_SETTINGS_GET_RECORDS = '{!$RemoteAction.OK_UserSettingsController_IMS.getUserSettingsRecords}';
+            var OK_USER_SETTINGS_EDIT_RECORD = '{!$RemoteAction.OK_UserSettingsController_IMS.editUserSettingRecord}';
+            var OK_USER_SETTINGS_SAVE_RECORD = '{!$RemoteAction.OK_UserSettingsController_IMS.saveUserSetting}';
+            var OK_USER_SETTINGS_DELETE_RECORD = '{!$RemoteAction.OK_UserSettingsController_IMS.deleteUserSettings}';
+    		var SEARCH_CONFIG_FIELDS_REMOTE_API = '{!$RemoteAction.OK_UserSettingsController_IMS.searchColumns}'; 
+    		var OK_USER_SETTINGS_GETORGCOUNTRIES  = '{!$RemoteAction.OK_UserSettingsController_IMS.getOrgCountries}';
+            var OK_DOWNLOAD_OUT_OF_CONTRACT_USER_SETTINGS_GET_RECORDS = '{!$RemoteAction.OK_UserSettingsController_IMS.DownloadOutOfContractListValues}';                 
+
+
+      
+            // ORGANIZATION SETTINGS
+            var OK_ORGANIZATION_SETTINGS_GET_RECORD  = '{!$RemoteAction.OK_Organization_Settings_IMS.getOrganizationSettingsData}';
+            var OK_ORGANIZATION_SETTINGS_SAVE_RECORD = '{!$RemoteAction.OK_Organization_Settings_IMS.saveOrganizationSettings}';                
+                        
+            var vfConfig = {
+                    staticresources: {
+                        connectorURL: '{!URLFOR($Resource.Connectors_ims)}',
+                        sldsURL: '{!URLFOR($Resource.SLDS)}'
+                    }
+            }; 
+            Visualforce.remoting.timeout = 120000; 
+            
+            $.aljsInit({
+        		assetsLocation: vfConfig.staticresources.sldsURL,
+        		scoped: true
+    		});
+        </script>
+        <apex:include pageName="QIDC__SetupLightningCSSHack"/>
+        
+        <style type="text/css">
+            /*to remove extra padding on classic salesforce theme*/
+            .noSidebarCell {
+                padding: 0px !important;
+            }
+        </style>
+
+        <style>
+            .pane-title {font-size: 1.2em;}
+            .u-wideWrapper {
+              display: block;
+              max-width: 85em;
+              margin: 0 auto;
+            }
+            .u-paddingHm {
+              padding-left: 20px;
+              padding-right: 20px;
+            }
+            .u-paddingTl {
+              padding-top: 40px;
+            }
+
+            .pane-buttons-box {
+              text-align: right; 
+              width: 100%;
+            }
+
+
+            .clear-button:hover { 
+            color: #e60000;
+            }
+
+            body.modal-open {
+              overflow: hidden;
+            }  
+            
+            .selectize-control > .selectize-dropdown {
+                top: 36px;
+            }
+
+            .dialog-spinner {
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            z-index: calc(9000 + 2);
+            background-color: rgba(255, 255, 255, 0.75);
+            visibility: visible;
+            opacity: 1;
+            transition: opacity 0.2s ease, visibility 0s;
+            transition-delay: 0s, 0.3s;
+            }
+            .rownum {
+            color:#BBBBBB;
+            }
+
+            @media (min-width: 48em) {
+            .slds .slds-modal--medium .slds-modal__container {
+              width: 65%;
+              max-width: none;
+              min-width: 40rem; } }
+
+
+        </style>
+        
+
+        <!-- The category(ies) specified should match the category of the labels -->
+        <c:JsLabelLoader_ims categories="Data Connector Setup,Common,Scheduled Jobs Setup,Validation Request,Onekey Translations"/>
+</head>
+<body ng-app="okSetupHome">
+    <div class="slds-form">
+        <div class="slds scrollable onekeySetup" ng-controller="OkSetupHomeCtrl">
+            <div class="slds-grid">
+                <div class="slds-wrap">
+                    <div class="slds-tree_container onekeySetupTree onekeySetupTreeSearch" role="application">
+                        <div class="tree-filter-container">
+                            <div class="tree-filter onekeysetupTreeFilter slds-input-has-icon slds-input-has-icon--left">
+                                <svg aria-hidden="true" class="searchIcon slds-icon-text-default slds-icon--x-small ">
+                                    <use xlink:href="{!URLFOR($Resource.SLDS, '/assets/icons/utility-sprite/svg/symbols.svg#search')}"></use>
+                                </svg>
+                                <input class="searchBox uiInputSearch" type="search" ng-model="search.title" placeholder="{{'OK_SETUP_LEFT_SEARCH_PLACEHOLDER' | translate}}"/>
+                            </div>
+                        </div>
+
+                        <ul class="setup-tree" role="tree" ng-init="init()">
+                           <!-- Added temporarily (search.title != null && search.title != '') expression to data-expanded to expand parent nodes
+                           because expansion based on filter is not being developed. Need to remove this expression after it is handled in quick find filter -->
+                           <li ng-repeat="node in setupNodes | filter:filterNodes" class="setup-tree-node onekeySetupTreeNode" ng-class="{'parent':node.nodes, 'leaf': !node.nodes}" data-active="{{node.active}}" data-expanded="{{node.expanded || (search.title != null && search.title != '')}}">
+                               <a ng-href="{{node.a_href}}" ng-target="{{node.a_target}}" tabindex="-1" ng-click="selectNode(node)" role="presentation" class="slds-truncate" translate="{{node.title}}"></a>
+                               <ul role="tree" class="sub-tree" ng-show="node.nodes" >
+                                   <li ng-repeat="subnode in node.nodes |filter:filterNodes"  class="setup-tree-node leaf onekeySetupTreeNode" data-active="{{subnode.active}}">
+                                       <a href="{{subnode.a_href}}" target="{{subnode.a_target}}" tabindex="-1" role="presentation" class="slds-truncate" translate="{{subnode.title}}"></a>
+                                   </li>
+                               </ul>
+                           </li>
+                       </ul>
+                    </div>
+                </div>
+                <div class="slds-nowrap" style="border-left: 1px solid rgb(216, 221, 230); background: #f7f9fb;">
+                    <div class="slds-page-header" role="banner" style="border:none;">
+                        <div class="slds-grid">
+                            <div class="slds-col slds-has-flexi-truncate">
+                                <div class="slds-media slds-media--center slds-no-space slds-grow">
+                                    <div class="slds-media__figure">
+                                        <svg aria-hidden="true" class="slds-icon slds-icon-custom-9">
+                                            <use xlink:href="{!URLFOR($Resource.SLDS, 'assets/icons/utility-sprite/svg/symbols.svg#setup')}"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="slds-media__body">
+                                        <p class="slds-text-heading--label">{{'DC_SETUP_TITLE' | translate}}</p>
+                                        <p class="slds-text-heading--medium" title="{{selectedNode.title | translate}}" translate= "{{selectedNode.title}}" style="color:rgb(22, 50, 92) !important"></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="setupHomeOutputPanel" class="slds-m-top--medium">
+                            <div class="bs container">
+                                <div class="ng-view"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/ng-template" id="OK_OneKey_Credentials_IMS.template"><c:OK_OneKey_Credentials_IMS /></script>
+	<script type="text/ng-template" id="OK_SearchResultLayoutConfig_IMS.template"><c:OK_SearchResultLayoutConfig_IMS /></script>
+    <script type="text/ng-template" id="OK_SF_MappingUI_IMS.template"><c:OK_SF_MappingUI_IMS /></script>
+    <script type="text/ng-template" id="OK_VR_SETTINGS_UI_IMS.template"><c:OK_VR_SETTINGS_UI_IMS /></script>
+    <script type="text/ng-template" id="OK_CountrySetup_IMS.template"><c:OK_CountrySetup_IMS /></script>
+    <script type="text/ng-template" id="OK_Translations_List_IMS.template"><c:OK_Translations_List_IMS /></script>
+    <script type="text/ng-template" id="OK_Create_ImsLabel_IMS.template"><c:OK_Create_ImsLabel_IMS /></script> 
+    <script type="text/ng-template" id="OK_SearchCodeList_IMS.template"><c:OK_SearchCodeList_IMS /></script>
+    <script type="text/ng-template" id="OK_VR_Monitoring_IMS.template"><c:OK_VR_Monitoring_IMS /></script>
+    <script type="text/ng-template" id="OK_Errorlog_Monitoring_List_IMS.template"> <apex:iframe src="{!$Page.QIDC__Ok_ErrorLog_IMS}"/></script>
+    <script type="text/ng-template" id="OK_Delta_Download_Scheduler_List_IMS.template"><c:OK_Delta_Download_Scheduler_List_IMS /></script>    
+    <script type="text/ng-template" id="Scheduler_IMS.template"><c:Scheduler_IMS /></script> 
+	<script type="text/ng-template" id=" OK_JobStatistics_Monitoring_List_IMS.template">
+      <apex:iframe src="{!$Page.QIDC__Ok_JobStatistics_IMS}" />
+    </script>
+	<script type="text/ng-template" id="OK_IndividualSearchLayoutConfig_IMS.template">
+      <apex:iframe src="{!$Page.QIDC__OK_IndividualSearchConfig_IMS}" />
+	</script>
+	<script type="text/ng-template" id="OK_WorkplaceSearchLayoutConfig_IMS.template">
+      <apex:iframe src="{!$Page.QIDC__OK_WorkplaceSearchConfig_IMS}" />
+	</script>
+    <script type="text/ng-template" id="OK_OneKey_Credentials_IMS.template"><c:OK_OneKey_Credentials_IMS /></script>
+    <script type="text/ng-template" id="MultiSelect_IMS.template"><c:MultiSelect_IMS /></script>
+    <script type="text/ng-template" id="OK_Export_Codes_Mapping_IMS.template"><c:OK_Export_Codes_Mapping_IMS /></script>
+    <script type="text/ng-template" id="OK_Export_Codes_Mapping_IMS.template"><c:OK_Export_Codes_Mapping_IMS /></script>
+    <script type="text/ng-template" id="OK_Import_Codes_Mapping_IMS.template"><c:OK_Import_Codes_Mapping_IMS /></script>
+    <script type="text/ng-template" id="OK_User_Settings_IMS.template"><c:OK_User_Settings_IMS /></script>
+    <script type="text/ng-template" id="OK_Organization_Settings_IMS.template"><c:OK_Organization_Settings_IMS /></script>
+    <script type="text/ng-template" id="OK_VR_Required_Fields_ims.template"> <apex:iframe src="{!$Page.QIDC__OK_VR_Required_Fields_IMS}"/></script>
+ 
+</body>
+<!--To support svg usage in IE-->
+<script type="text/javascript">
+    svg4everybody();
+    var conn = new jsforce.Connection({ accessToken: '{!$API.Session_Id}' });
+    // conn.query('SELECT Id, Name FROM Account', function(err, res) {
+    //   if (err) { return handleError(err); }
+    //   handleResult(res);
+    // });
+</script>
+</html>
+</apex:page>

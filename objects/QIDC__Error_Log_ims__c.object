@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <description>The Error Log object is used to track any errors that occur in the system.</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableChangeDataCapture>false</enableChangeDataCapture>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>Private</externalSharingModel>
+    <fields>
+        <fullName>QIDC__Cause_ims__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The cause of the Error. This is used to understand why the error occurred.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The cause of the Error. This is used to understand why the error occurred.</inlineHelpText>
+        <label>Cause</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>QIDC__Created_By_ims__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>CreatedBy.FirstName+&apos; &apos;+ CreatedBy.LastName</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Created By</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>QIDC__Error_Code_ims__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The Error Code for the Error.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The Error Code for the Error.</inlineHelpText>
+        <label>Error Code</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>QIDC__IntegrationID_ims__c</fullName>
+        <deprecated>false</deprecated>
+        <description>External ID which is used for data loading only.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>External ID which is used for data loading only.</inlineHelpText>
+        <label>Integration ID</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>QIDC__Job_Id_ims__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Job Id of the OneKey Delta download job</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Job Id of the OneKey Delta download job</inlineHelpText>
+        <label>Job Id</label>
+        <length>20</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>QIDC__Message_ims__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The message thrown from the Error.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The message thrown from the Error.</inlineHelpText>
+        <label>Message</label>
+        <length>32768</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>10</visibleLines>
+    </fields>
+    <fields>
+        <fullName>QIDC__Origin_ims__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Where the Error originated in the system.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Where the Error originated in the system.</inlineHelpText>
+        <label>Origin</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>QIDC__Status_ims__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The current status of the Error (Open, Closed).</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The current status of the Error (Open, Closed).</inlineHelpText>
+        <label>Status</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Open</fullName>
+                    <default>false</default>
+                    <label>Open</label>
+                </value>
+                <value>
+                    <fullName>Closed</fullName>
+                    <default>false</default>
+                    <label>Closed</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>QIDC__Type_ims__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The type of Error that occurred.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The type of Error that occurred.</inlineHelpText>
+        <label>Type</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>QIDC__User_Name_ims__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>QIDC__User_ims__r.FirstName +&apos; &apos;+ QIDC__User_ims__r.LastName</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>User</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>QIDC__User_ims__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>The User for which the Error occurred.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The User for which the Error occurred.</inlineHelpText>
+        <label>User</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Error_Logs_ims</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <label>Error Log</label>
+    <nameField>
+        <displayFormat>ERR-{000000}</displayFormat>
+        <label>Error Log</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Error Logs</pluralLabel>
+    <searchLayouts>
+        <customTabListAdditionalFields>QIDC__Cause_ims__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>QIDC__Error_Code_ims__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>QIDC__IntegrationID_ims__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>QIDC__Message_ims__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>QIDC__Origin_ims__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>QIDC__Status_ims__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>QIDC__Type_ims__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>QIDC__User_ims__c</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>QIDC__Cause_ims__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>QIDC__Error_Code_ims__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>QIDC__IntegrationID_ims__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>QIDC__Message_ims__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>QIDC__Origin_ims__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>QIDC__Status_ims__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>QIDC__Type_ims__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>QIDC__User_ims__c</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>QIDC__Cause_ims__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>QIDC__Error_Code_ims__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>QIDC__IntegrationID_ims__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>QIDC__Message_ims__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>QIDC__Origin_ims__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>QIDC__Status_ims__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>QIDC__Type_ims__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>QIDC__User_ims__c</lookupPhoneDialogsAdditionalFields>
+        <searchFilterFields>OBJECT_ID</searchFilterFields>
+        <searchFilterFields>NAME</searchFilterFields>
+        <searchFilterFields>QIDC__Cause_ims__c</searchFilterFields>
+        <searchFilterFields>QIDC__Error_Code_ims__c</searchFilterFields>
+        <searchFilterFields>QIDC__IntegrationID_ims__c</searchFilterFields>
+        <searchFilterFields>QIDC__Origin_ims__c</searchFilterFields>
+        <searchFilterFields>QIDC__Status_ims__c</searchFilterFields>
+        <searchFilterFields>QIDC__Type_ims__c</searchFilterFields>
+        <searchFilterFields>QIDC__User_ims__c</searchFilterFields>
+        <searchResultsAdditionalFields>OBJECT_ID</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>QIDC__Cause_ims__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>QIDC__Error_Code_ims__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>QIDC__IntegrationID_ims__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>QIDC__Message_ims__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>QIDC__Origin_ims__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>QIDC__Status_ims__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>QIDC__Type_ims__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>QIDC__User_ims__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>Private</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

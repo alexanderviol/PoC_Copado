@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- Code group of the attribute. --></help>
+        <label><!-- Code Role --></label>
+        <name>QIDC__Code_Role_ims__c</name>
+    </fields>
+    <fields>
+        <label><!-- Code Unique Id --></label>
+        <name>QIDC__Code_Unique_Id_ims__c</name>
+    </fields>
+    <fields>
+        <help><!-- Default label for OrgManager code. --></help>
+        <label><!-- Label --></label>
+        <name>QIDC__Label_ims__c</name>
+    </fields>
+    <fields>
+        <label><!-- OM Last Modified Date --></label>
+        <name>QIDC__OM_Last_Modified_Date_ims__c</name>
+    </fields>
+</CustomObjectTranslation>

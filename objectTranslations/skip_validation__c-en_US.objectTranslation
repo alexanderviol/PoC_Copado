@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Skip Validation</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Skip Validation</value>
+    </caseValues>
+    <fields>
+        <label><!-- To Skip Validation --></label>
+        <name>to_skip_validation__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

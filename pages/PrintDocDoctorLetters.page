@@ -1,0 +1,15 @@
+<!--
+This page combine all the docs template pages. This page will be shown when user selects and clicks on the 'Print Doctor letter' button . 
+-->
+<apex:page showHeader="false" applyBodyTag="false" controller="PrintDoctorLetterController">
+
+    <!-- Add your page here
+         <style>
+        .page-break {
+        	display : block;
+        	page-break-before : always;
+        }
+    </style>-->
+    <apex:include pageName="DoctorLetter" rendered="{!renderDocL}"/>    
+	<apex:include pageName="DoctorLetterWarranty" rendered="{!renderDocLw}" />
+</apex:page>

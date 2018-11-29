@@ -1,0 +1,4 @@
+<aura:event type="APPLICATION" description="Event template">
+    <aura:attribute name="data" type="String"/>
+    <aura:attribute name="stage" type="String" />
+</aura:event>

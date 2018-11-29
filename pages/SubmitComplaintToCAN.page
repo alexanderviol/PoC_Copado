@@ -1,0 +1,241 @@
+<!--
+-- Visualforce page to generate popup when selecting and submitting complaint to CAN
+-- Created by EMMA
+-- Created Date 31.05.2018
+-->
+<apex:page id="page" standardController="complaint__c" recordSetVar="complaintList"
+           extensions="SubmitComplaintToCANcontrollerExt" showHeader="false" sidebar="false"
+           lightningStylesheets="true">
+    <apex:pageMessages />
+    <style>
+        .deviceFont {
+        	font-size:11px;
+        }
+        body {
+        	font-family: Sans-serif;
+        }
+        table{
+           border: 1px;
+           border-collapse: collapse;
+        }
+        td{
+            padding: 2px;
+        }
+
+    </style>
+    <apex:includeLightning />
+    <div id="lightning"/>
+
+    <!--
+    <script>
+    window.onload = function(){
+        var ComplaintList = '{!complaintList}';
+        var usrnm , pwd;
+        var canSession = '{!canSession}';
+        var selectedRecords = '{!selectedRecords}';
+        if (selectedRecords == 'No Records Selected'){
+            alert("Please select at least one record to submit");
+            redirect();
+        }
+        else{
+            if(!canSession){
+                $Lightning.use("c:SampleLightningApp", function() {
+
+                    $Lightning.createComponent("c:CanSubmit",
+
+                                               "",
+
+                                               "lightning",
+
+                                               function(cmp) {
+alert(cmp);
+                                               });
+
+                });
+            }
+            else{
+                // in case no authenticathion needed // do here the call of the submit to CAN
+                // in case a can session required please see The lightning component CANSubmit -> CanSubmitController->redirect : function
+            }
+        }
+    }
+    function redirect() {
+        this.parent.location.href = '/one/one.app#/sObject/complaint__c/list?filterName=Recent';
+    }
+
+    </script>
+
+    -->
+    <!--
+    <div class="myapp">
+        <div id="account-list" class="slds-p-vertical_medium"></div>
+    </div>
+
+
+    <apex:form id="auth" rendered="{!isAuthRequired}" styleClass="slds-form--stacked">
+
+        <div class="slds-form-element">
+            <label class="slds-form-element__label" for="text-input-01">CAN Username</label>
+            <div class="slds-form-element__control">
+                <apex:inputText styleClass="slds-input" value="{!can_username}" />
+            </div>
+        </div>
+
+        <div class="slds-form-element">
+            <label class="slds-form-element__label" for="text-input-01">CAN Password</label>
+            <div class="slds-form-element__control">
+                <apex:inputSecret styleClass="slds-input" value="{!can_password}" />
+            </div>
+        </div>
+
+        <apex:commandButton value="" styleClass="slds-button slds-button--brand slds-m-top--medium">Login</apex:commandButton>
+
+    </apex:form>
+
+    <apex:form id="submissionStatus" rendered="{!NOT(isAuthRequired)}">
+        authenticated.
+    </apex:form>
+    -->
+
+    <!--
+    <apex:form >
+    <div role="dialog" tabindex="-1" aria-labelledby="header99" class="slds-modal slds-fade-in-open ">
+        <div class="slds-modal__container">
+            <!-- ###### MODAL BOX HEADER Part Start From Here ######- ->
+            <div class="slds-modal__header">
+                <button class="slds-button slds-modal__close slds-button--icon-inverse" title="Close" onclick="">
+                    X
+                    <span class="slds-assistive-text">Close</span>
+                </button>
+                <h2 id="header99" class="slds-text-heading--medium">Authentication</h2>
+            </div>
+            <!--###### MODAL BOX BODY Part Start From Here ######- ->
+
+            <div class="slds-modal__content slds-p-around_xx-large slds-p-left_xx-large">
+
+                <div class="row">
+                    <apex:inputText styleClass="slds-input" value="{!can_username}" />
+                    <apex:inputSecret styleClass="slds-input" value="{!can_password}" />
+                </div>
+                <br/>
+
+            </div>
+            <!--###### MODAL BOX FOOTER Part Start From Here ######- ->
+
+            <div class="slds-modal__footer slds-modal__footer_directional" >
+                <button class="slds-button slds-button--neutral" onclick="" >Cancel</button>
+                <button class="slds-button slds-button--brand" onclick="" type="submit">authenticate</button>
+            </div>
+
+        </div>
+    </div>
+    <div class="slds-backdrop slds-backdrop--open"></div>
+    </apex:form>
+-->
+
+
+    <apex:outputPanel id="mainWrapper">
+
+
+        <apex:form id="auth" rendered="{!isAuthRequired}" styleClass="slds-form--stacked" style="text-align:center;">
+
+            <div class="slds-form-element">
+                <label class="slds-form-element__label" for="text-input-01">CAN Username</label>
+                <div class="slds-form-element__control">
+                    <apex:inputText styleClass="slds-input" value="{!can_username}" required="true"/>
+                </div>
+            </div>
+
+            <div class="slds-form-element">
+                <label class="slds-form-element__label" for="text-input-01">CAN Password</label>
+                <div class="slds-form-element__control">
+                    <apex:inputSecret styleClass="slds-input" value="{!can_password}" required="true"/>
+                </div>
+            </div>
+            <br/>
+
+            <apex:pageMessages ></apex:pageMessages>
+
+            <apex:actionStatus id="loginStatus">
+                <apex:facet name="stop">
+                    <apex:commandButton action="{!authenticate}" reRender="mainWrapper" status="loginStatus"
+                                        value="Login" id="loginButton"
+                                        styleClass="slds-button slds-button--brand slds-m-top--medium"/>
+                </apex:facet>
+                <apex:facet name="start">
+                    <apex:commandButton value="Login..." disabled="true" status="loginStatus"/>
+                </apex:facet>
+            </apex:actionStatus>
+
+            <apex:commandButton action="{!cancel}" value="Cancel" id="cancelButton"
+                                styleClass="slds-button slds-button--brand slds-m-top--medium"/>
+
+        </apex:form>
+
+
+        <apex:form id="submissionConfirmation" rendered="{!NOT(isAuthRequired) && NOT(success)}">
+
+            <apex:outputPanel rendered="{!complaints.size!=0}">
+
+                <apex:pageMessage severity="confirm">{!$Label.CAN_SUBMISSION_SELECTED_FOR_SUBMISSION}</apex:pageMessage>
+                <br/>
+                <apex:dataTable value="{!complaints}" var="complaint"
+                                styleClass="slds-table slds-table--bordered slds-table--striped">
+                    <apex:column value="{!complaint.Name}"/>
+                    <apex:column value="{!complaint.asset_model_name__c}"/>
+                    <apex:column value="{!complaint.patient_identifier__c}"/>
+                </apex:dataTable>
+                <br/>
+
+
+                <apex:actionStatus id="submitStatus" rendered="{!complaints.size!=0}">
+                    <apex:facet name="stop">
+                        <apex:commandButton action="{!submit}" reRender="mainWrapper" status="submitStatus"
+                                            value="Submit"
+                                            id="submitButton"
+                                            styleClass="slds-button slds-button--brand slds-m-top--medium"/>
+                    </apex:facet>
+                    <apex:facet name="start">
+                        <apex:commandButton value="Submitting..." disabled="true" status="submitStatus"/>
+                    </apex:facet>
+                </apex:actionStatus>
+
+                <apex:commandButton action="{!cancel}" value="Cancel" id="cancelButton"
+                                    styleClass="slds-button slds-button--brand slds-m-top--medium"/>
+
+                <br/>
+            </apex:outputPanel>
+
+            <br/>
+            <apex:outputPanel rendered="{!invalidComplaints.size!=0}">
+                <br/>
+                <br/>
+                <apex:pageMessage severity="warning">{!$Label.CAN_SUBMISSION_SELECTED_FOR_SUBMISSION_INVALID}</apex:pageMessage>
+                <br/>
+                <apex:dataTable value="{!invalidComplaints}" var="invalidComplaint"
+                                styleClass="slds-table slds-table--bordered slds-table--striped">
+                    <apex:column value="{!invalidComplaint.complaint.Name}"/>
+                    <apex:column value="{!invalidComplaint.complaint.asset_model_name__c}"/>
+                    <apex:column value="{!invalidComplaint.complaint.patient_identifier__c}"/>
+                    <apex:column value="{!invalidComplaint.message}"/>
+                </apex:dataTable>
+
+
+                <apex:commandButton action="{!cancel}" value="Cancel" id="cancelButtonError"
+                                    styleClass="slds-button slds-button--brand slds-m-top--medium"/>
+            </apex:outputPanel>
+
+        </apex:form>
+
+
+        <apex:form id="successWrapper" rendered="{!success}">
+            Submission has started. Please check back in 2 Minutes.
+            <apex:commandButton action="{!cancel}" value="Back" id="backButton"
+                                styleClass="slds-button slds-button--brand slds-m-top--medium"/>
+        </apex:form>
+
+
+    </apex:outputPanel>
+
+
+</apex:page>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>record type id</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>OOS complaint record type</value>
+    </caseValues>
+    <fields>
+        <label><!-- CardioMessenger Complaint Record Type ID --></label>
+        <name>cardiomessenger_complaint_record_type_id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Employee Contact Record Type ID --></label>
+        <name>employee_contact_record_type_id__c</name>
+    </fields>
+    <fields>
+        <label><!-- General Complaint Record Type ID --></label>
+        <name>general_complaint_record_type_id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Medical Device Reporting Case ID --></label>
+        <name>medical_device_reporting_case_id__c</name>
+    </fields>
+    <fields>
+        <label><!-- OOS Complaint Record Type ID --></label>
+        <name>oos_complaint_record_type_id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other Account Record Type ID --></label>
+        <name>other_account_record_type_id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other Contact Record Type ID --></label>
+        <name>other_contact_record_type_id__c</name>
+    </fields>
+    <fields>
+        <label><!-- OUS/OEM Complaint Record Type ID --></label>
+        <name>ous_oem_complaint_record_type_id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Patient Account Record Type ID --></label>
+        <name>patient_account_record_type_id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Physician Account Record Type ID --></label>
+        <name>physician_account_record_type_id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Physician Contact Record Type ID --></label>
+        <name>physician_contact_record_type_id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Programmer Complaint Record Type ID --></label>
+        <name>programmer_complaint_record_type_id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Revision Complaint Record Type ID --></label>
+        <name>revision_complaint_record_type_id__c</name>
+    </fields>
+    <fields>
+        <label><!-- RP Complaint Record Type ID --></label>
+        <name>rp_complaint_record_type_id__c</name>
+    </fields>
+    <fields>
+        <label><!-- US Account Record Type ID --></label>
+        <name>us_account_record_type_id__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

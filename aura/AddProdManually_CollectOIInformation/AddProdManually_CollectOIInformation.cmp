@@ -1,0 +1,12 @@
+<aura:component controller="AddProdManually">
+        <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+        <aura:attribute name="quantity" type="String" default="1"/>
+
+
+    <aura:attribute name="maxAmount" type="String" />
+    Please enter the quantity you would like to add (max {!v.maxAmount}):
+    <lightning:input type="Text" label="Quantity" aura:id="quantity" name="quantity" pattern="[1-9][0-9]*" value="{!v.quantity}" onchange="{!c.handleKey}"/>
+    <lightning:button variant="brand" label="Next" onclick="{!c.confirmQuantity}" />
+
+	
+</aura:component>

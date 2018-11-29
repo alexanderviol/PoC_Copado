@@ -1,0 +1,169 @@
+<apex:page standardController="complaint__c" renderAs="PDF" standardStylesheets="false" extensions="FDA3500FormExtension"> 
+   	<apex:form id="FdaForm">
+
+    <head>
+        <style> div { font-family: Arial Unicode MS; font-size:10px;} </style>
+    </head>
+   
+        <div id="col1" style = "font-size:15px">
+            <h4>
+                A. PATIENT INFORMATION
+            </h4>
+             <div style = "margin-left:15px;">
+                <b> 1. Patient Identifier : </b> <apex:outputField value="{!complaint.patient_identifier__c}"/>  <br/> 
+                <b> 2. Date of Birth : </b><apex:outputField value="{!complaint.case__r.patient__r.Birthdate}" /> <br/> 
+                <b> 3. Sex : </b><apex:outputField value="{!complaint.case__r.patient__r.gender__c}" /> <br/> 
+            	<b> 4. Weight : </b><apex:outputText value="NA" /> <br/> 
+            	<b> 5.a. Ethnicity : </b><apex:outputText value="NA" /> <br/> 
+            	<b> 5.b. Race : </b><apex:outputText value="NA" /> <br/> 
+            </div>
+            <h4>
+                B. ADVERSE EVENT OR PRODUCT PROBLEM
+            </h4> 
+            <div style = "margin-left:15px;">
+                <b>1. Adverse Event : </b><apex:outputField value="{!complaint.adverse_event__c}"/>
+                <b>	&nbsp;&nbsp;&nbsp;  and/or Product Problem : </b> <apex:outputField value="{!complaint.product_problem__c}"/> <br/> 
+				<b>2. Outcome Attributed to Adverse Event : </b> <apex:outputField value="{!complaint.outcome_attributed_to_adverse_event__c}" /><br/> 
+                <b> &nbsp;&nbsp;&nbsp; Additional Adverse Event Information : </b> <apex:outputField value="{!complaint.additional_adverse_event_information__c}" /><br/>
+                <b>3. Date of Event : </b> <apex:outputField value="{!complaint.date_of_event__c}" /><br/>
+                <b>4. Date of This Report : </b> <apex:outputField value="{!complaint.report_date__c}" /> <br/>
+                <b>5. Describe Event or Problem : </b> <apex:outputField value="{!complaint.mdr_event_description__c}" /><br/> 
+                <b>6. Relevant Tests/Laboratory Data, Including Dates : </b> <apex:outputText value="NA" /><br/> 
+                <b>7. Other Releveant History, Including Preexisting Medical Conditions : </b> <apex:outputText value="NA" /><br/>
+            </div>
+            <h4>
+                C. SUSPECT PRODUCT(S)
+            </h4>
+            <div style = "margin-left:15px;">
+                <b>Suspect Products : </b> <apex:outputText value="Section C is not applicable to devices"/> <br/>        
+            </div>
+            <h4>
+                D. SUSPECT MEDICAL DEVICE
+            </h4>
+            <div style = "margin-left:15px;">
+                <b>1. Brand Name : </b> <apex:outputField value="{!complaint.asset__r.name}" /><br/>
+                <b>2. Common Device Name :</b> <apex:outputField value="{!complaint.asset__r.product_type__c}" /><br/>
+                <b>2.b. ProCode : </b> <apex:outputField value="{!complaint.procode__c}" /><br/>
+                <b>3. Manufacture Name, City, and State : </b> 
+                <apex:outputField value="{!complaint.asset__r.product2.manufacturer_account__r.Name}"/>,&nbsp;
+                <apex:outputField value="{!complaint.asset__r.product2.manufacturer_account__r.shippingstreet}"/>,&nbsp;
+                <apex:outputField value="{!complaint.asset__r.product2.manufacturer_account__r.shippingcity}"/>,&nbsp;
+                <apex:outputField value="{!complaint.asset__r.product2.manufacturer_account__r.shippingstate}"/>,&nbsp;          
+                <apex:outputField value="{!complaint.asset__r.product2.manufacturer_account__r.shippingcountry}"/>,&nbsp;
+                <apex:outputField value="{!complaint.asset__r.product2.manufacturer_account__r.shippingpostalCode}"/>
+                <br/>
+                <b>4. Model # : </b> <apex:outputField value="{!complaint.asset__r.model_no__c}" /><br/>
+                <b>&nbsp;&nbsp;&nbsp;Catalog # : </b> <apex:outputText value="See Model No." /><br/>
+                <b>&nbsp;&nbsp;&nbsp;Serial # : </b> <apex:outputField value="{!complaint.asset__r.serialNumber}" /><br/>
+                <b>&nbsp;&nbsp;&nbsp;Lot # : </b> <apex:outputField value="{!complaint.asset_lot_number__c}" /> <br/>
+                <b>&nbsp;&nbsp;&nbsp;Expiration Date : </b> <apex:outputField value="{!complaint.asset__r.expiration_date_ubd__c}" /><br/>
+                <b>&nbsp;&nbsp;&nbsp;Unique Identifier (UDI) # : </b> <apex:outputField value="{!complaint.asset__r.UDI__c}" /><br/>
+                <b>5. Operator of Device : </b> <apex:outputText value="Health Professional" /><br/>
+                <b>6. If Implanted, Give Date  : </b> <apex:outputField value="{!complaint.asset__r.installdate}" /><br/>
+                <b>7. If Explanted, Give Date  : </b> <apex:outputField value="{!complaint.asset__r.Explant_Date__c}" /><br/>
+                <b>8. Is this a single-use device that was reprocessed and reused on a patient? : </b> <apex:outputText value="No" /> <br/>
+                <b>9. If Yes to Item No. 8, Enter Name and Address of Reprocessor : </b> <apex:outputText value="NA" /><br/>
+                <b>10. Device Available for Evaluation? (Do Not Send to FDA) : </b> <apex:outputField value="{!complaint.device_available_for_evaluation__c}" /><br/>
+                <b>11. Concomitant Medical Products and Therapy Dates (Exclude treatment of event) : </b> <apex:outputText value="NA" /> <br/>                
+                
+            </div>
+            <h4>
+                E. INITIAL REPORTER
+             </h4>
+            <div style = "margin-left:15px;">
+             
+                <b>1. Initial Reporter Last Name : </b><apex:outputField value="{!complaint.initial_reporter_user__r.LastName}" /><br/>
+                <b>&nbsp;&nbsp;&nbsp;Initial Reporter First Name : </b> <apex:outputField value="{!complaint.initial_reporter_user__r.firstName}" /><br/>
+                <b>&nbsp;&nbsp;&nbsp;Initial Reporter Address : </b> <apex:outputField value="{!complaint.initial_reporter_user__r.street}" /><br/>
+                <b>&nbsp;&nbsp;&nbsp;Initial Reporter City : </b> <apex:outputField value="{!complaint.initial_reporter_user__r.city}" /><br/>
+                <b>&nbsp;&nbsp;&nbsp;Initial Reporter State/Province/Region : </b> <apex:outputField value="{!complaint.initial_reporter_user__r.state}" /><br/>
+                <b>&nbsp;&nbsp;&nbsp;Initial Reporter Country : </b> <apex:outputField value="{!complaint.initial_reporter_user__r.country}" /><br/>
+                <b>&nbsp;&nbsp;&nbsp;Initial Reporter Zip/Postal Code : </b> <apex:outputField value="{!complaint.initial_reporter_user__r.postalcode}" /><br/>
+                <b>&nbsp;&nbsp;&nbsp;Initial Reporter Phone # : </b> <apex:outputField value="{!complaint.initial_reporter_user__r.phone}" /><br/>
+                <b>&nbsp;&nbsp;&nbsp;Initial Reporter Email : </b> <apex:outputField value="{!complaint.initial_reporter_user__r.email}" /><br/>
+                <b>2. Health Professional? : </b> <apex:outputText value="No" /><br/>
+                <b>3. Occupation : </b> <apex:outputText value="Other healthcare Professional" /><br/>
+                <b>4. Initial Reporter Also Sent Report to FDA : </b> <apex:outputField value="{!complaint.initial_reporter_also_sent_report_to_fda__c}" /><br/>       
+            </div>
+            <h4>
+                F. FOR USE BY USER FACILITY/IMPORTER (Devices Only)
+            </h4>
+            <div style = "margin-left:15px;">                
+                <b>1. Check One: User Facility Importer : </b> <apex:outputText value="NA" /> <br/>
+                <b>2. UF/Importer Report Number : </b> <apex:outputText value="NA" />  <br/>
+                <b>3. User Facility or Importer Name/Address : </b>  <apex:outputText value="NA" /> <br/>
+                <b>4. Contact Person : </b>  <apex:outputText value="NA" /> <br/>
+                <b>5. Phone Number : </b> <apex:outputText value="NA" /> <br/>
+                <b>6. Date User Facility or Importer Became Aware of Event : </b>  <apex:outputText value="NA" /> <br/>
+                <b>7. Type of Report : </b> <apex:outputField value="{!complaint.type_of_report__c}" /><br/>
+                <b>8. Date of This Report : </b> <apex:outputField value="{!analysisResult.date_sent_to_fda__c}" />
+                <br/>            
+                <b>9. Approximate Age of Device : </b> <apex:outputText value="{!ageOfDevice} Days" /><br/>
+                <b>10. Event Problem Codes</b><br/>
+                <b>&nbsp;&nbsp;&nbsp;&nbsp;Patient Code : </b><apex:outputField value="{!complaint.patient_code_global__c}" /><br/>
+                <b>&nbsp;&nbsp;&nbsp;&nbsp;Device Code : </b><apex:outputField value="{!complaint.device_code_global__c}" /><br/>
+                <b>11. Report Sent to FDA? If Yes enter date : </b> 
+                <apex:outputText value="{!If(analysisResult.date_sent_to_fda__c == null, 'No', '')}" />
+                <apex:outputField value="{!analysisResult.date_sent_to_fda__c}" /> <br/>
+                <b>12. Location Where Event Occurred : </b> 
+                <apex:outputField value="{!complaint.location_where_event_occurred__c}" /><br/>
+                <b>&nbsp;&nbsp;&nbsp;&nbsp; Other Location :</b> <apex:outputField value="{!complaint.other_location__c}" /><br/>
+                <b>13. Report Sent to Manufacturer? If yes enter date  :</b> <apex:outputText value="NA" /><br/>
+                <b>14. Manufacturer Name/Address : </b> 
+                <apex:outputField value="{!complaint.asset__r.product2.manufacturer_account__r.Name}"/>,&nbsp;
+                <apex:outputField value="{!complaint.asset__r.product2.manufacturer_account__r.shippingstreet}"/>,&nbsp;
+                <apex:outputField value="{!complaint.asset__r.product2.manufacturer_account__r.shippingcity}"/>,&nbsp;
+                <apex:outputField value="{!complaint.asset__r.product2.manufacturer_account__r.shippingstate}"/>,&nbsp;           
+                <apex:outputField value="{!complaint.asset__r.product2.manufacturer_account__r.shippingcountry}"/>,&nbsp;
+                <apex:outputField value="{!complaint.asset__r.product2.manufacturer_account__r.shippingpostalCode}"/>
+                <br/>
+            </div>
+            <h4>
+                G. ALL MANUFACTURERS
+            </h4>
+            <div style = "margin-left:15px;">
+                <b>1. Contact office-Name/Address/Email Address : </b> 
+                <apex:outputField value="{!complaint.asset__r.product2.manufacturer_account__r.Name}"/>,&nbsp;
+                <apex:outputField value="{!complaint.asset__r.product2.manufacturer_account__r.shippingstreet}"/>,&nbsp;
+                <apex:outputField value="{!complaint.asset__r.product2.manufacturer_account__r.shippingcity}"/>,&nbsp;
+                <apex:outputField value="{!complaint.asset__r.product2.manufacturer_account__r.shippingstate}"/>,&nbsp;          
+                <apex:outputField value="{!complaint.asset__r.product2.manufacturer_account__r.shippingcountry}"/>,&nbsp;
+                <apex:outputField value="{!complaint.asset__r.product2.manufacturer_account__r.shippingpostalCode}"/><br/>
+                <b>&nbsp;&nbsp;&nbsp;Compounding Oustcourcing Facility 503B? : </b> <apex:outputText value="NA" /><br/>
+                <b>2. Phone : </b><apex:outputField value="{!complaint.asset__r.product2.manufacturer_account__r.Phone}" /><br/>
+                <b>3. Report Source : </b> <apex:outputField value="{!complaint.report_source__c}" /><br/>                
+                <b>&nbsp;&nbsp;&nbsp;Report Source Comment : </b> <apex:outputField value="{!complaint.Other_Report_Source_Comment__c}" />
+                <br/>&nbsp;&nbsp;&nbsp;<b>Type of Report : </b> <apex:outputField value="{!complaint.asset__r.name}" /><br/>
+                <b>4. Date Received by Manufacturer : </b> 
+                    <apex:outputField value="{!complaint.date_info_received_by_manufacturer__c}" /><br/>
+                <b>5. PMA/510(K) : </b> <apex:outputField value="{!complaint.pma_510k__c}" /><br/>
+                <b>&nbsp;&nbsp;&nbsp;Combination Product : </b> <apex:outputField value="{!complaint.combination_product__c}" /><br/>
+                <b>6. If IND Give Protocol # : </b> <apex:outputText value="NA" /><br/>
+                <b>7. Type of Report : </b> <apex:outputField value="{!complaint.mdr_decision__c}" /><br/>
+                <b>8. Adverse Event Terms : </b> <apex:outputText value="NA" /><br/>
+                <b>9. Manufacturer Report Number :</b> <apex:outputField value="{!complaint.mdr_number__c}" /><br/> 
+            </div>
+            <h4>
+                H. DEVICE MANUFACTURERS ONLY
+            </h4>
+            <div style = "margin-left:15px;">
+                <b>1. Type of Reportable Event : </b> <apex:outputField value="{!complaint.type_of_reportable_event__c}" /> <br/>
+                <b>&nbsp;&nbsp;&nbsp; Type of Reportable Event, Other : </b><apex:outputField value="{!complaint.type_of_reportable_event_other__c}" /><br/>
+                <b>2. If Follow up what type? : </b> <apex:outputField value="{!complaint.if_follow_up_what_type__c}" /><br/>
+                <b>3. Device Evaluated by Manufacturer : </b> <apex:outputField value="{!analysisResult.device_evaluated_by_manufacturer__c}" /><br/>
+                <b>4. Device Manufacture Date : </b> 
+                	<apex:outputField value="{!complaint.date_of_manufacture__c}" /> <br/>
+                <b>5. Labeled for single use? : </b> <apex:outputField value="{!complaint.labeled_for_single_use__c}"  /><br/>
+                <b>6. Event Problem and Evaluation Codes </b> <br/>
+                   <b>&nbsp;&nbsp;&nbsp;Method Codes : </b> <apex:outputField value="{!analysisResult.method_code__c}" /><br/>
+                    <b>&nbsp;&nbsp;&nbsp;Result Code : </b> <apex:outputField value="{!analysisResult.result_code__c}" /><br/>
+                    <b>&nbsp;&nbsp;&nbsp;Conclusion Code : </b> <apex:outputField value="{!analysisResult.conclusion_code__c}" /><br/>
+                 <b>7. If Remedial Action initiated, check type : </b> <apex:outputField value="{!complaint.remedial_action_type__c}" /><br/>
+                 <b>8. Usage of Device : </b> <apex:outputField value="{!complaint.usage_of_device__c}" /><br/>
+                 <b>9. If action reported to FDA unser 21 USC 360(f), list correction/removal reporting number : </b><apex:outputText value="NA" /><br/>
+                <b>10. Additional Manufacture Narrative : </b> <apex:outputField value="{!complaint.additional_manufacturer_narrative__c}" /><br/>
+                <b>11. Corrected Data : </b> <apex:outputText value="NA" /><br/> 
+            </div>
+       </div>
+    </apex:form>
+</apex:page>

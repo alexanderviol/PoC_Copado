@@ -1,0 +1,21 @@
+<!--
+/* 
+ *  Description  - Component to send Email. This component is added to MDRF/Order detail page. 
+ *  Created Date - 4/2/2018
+ *  Created by   - susi
+ */
+-->
+<aura:component controller="SendEmailController" implements="force:lightningQuickAction,force:hasRecordId">
+    <aura:handler name="init" value="{!this}" action="{!c.populateLookupValues}"/>
+    <aura:attribute name="rec" type="object[]"/>
+    <aura:attribute name="order" type="order"/>
+    <aura:attribute name="statusOptions" type="List" default="[]"/>
+    <lightning:combobox aura:id="selectItem" 
+                        name="status" 
+                        label="Send email to" 
+                        placeholder="Choose.." 
+                        value="new" 
+                        options="{!v.statusOptions}" 
+                        onchange="{!c.handleOnChange}" />
+    <!--<center><lightning:button variant="brand" label="Open Email Client" onclick="{!c.handleClick}"/></center> -->
+</aura:component>

@@ -1,0 +1,14 @@
+<apex:page standardController="QIDC__Validation_Request_ims__c" extensions="QIDC.OK_ValidationRequestUI_IMS">
+    <apex:includeLightning />
+    <div id="lightning"/>
+    <apex:include pageName="QIDC__SetupLightningCSSHack"/>
+    <script>
+        var namespacePrefix = '{!nameSpacePrefixForComponent}';
+        var lightningAppBundle = namespacePrefix+':OK_ValidationRequestLtngAppBundle_ims';
+        var lightningComponent = namespacePrefix+':OK_ViewValidationRequest_ims';
+        
+        $Lightning.use(lightningAppBundle, function() {
+            $Lightning.createComponent( lightningComponent,{'recordId': '{!QIDC__Validation_Request_ims__c.Id}'},"lightning",function(cmp) {});
+        });
+    </script>
+</apex:page>

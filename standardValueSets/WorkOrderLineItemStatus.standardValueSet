@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <groupingStringEnum>WorkStatusCategoryEnum</groupingStringEnum>
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Not Submitted</fullName>
+        <default>true</default>
+        <label>Not Submitted</label>
+        <groupingString>New</groupingString>
+    </standardValue>
+    <standardValue>
+        <fullName>Transmitted</fullName>
+        <default>false</default>
+        <label>Transmitted</label>
+        <groupingString>Completed</groupingString>
+    </standardValue>
+    <standardValue>
+        <fullName>Canceled</fullName>
+        <default>false</default>
+        <label>Canceled</label>
+        <groupingString>Canceled</groupingString>
+    </standardValue>
+</StandardValueSet>

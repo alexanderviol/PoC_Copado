@@ -1,0 +1,47 @@
+<aura:component implements="force:lightningQuickAction,force:hasRecordId" controller="AddProdManually">
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    <aura:attribute name="recordId" type="String" />
+    <aura:attribute name="maxAxmount" type="String" />
+    <aura:attribute name="selectedAmount" type="String" />
+    <aura:attribute name="productItem" type="String" />
+    <aura:attribute name="preubddata" type="String" />
+    <aura:attribute name="showError" type="Boolean" default="false"/>
+    <aura:attribute name="implantStatus" type="String" default="Not Implantable Product" />
+    
+    <aura:handler event="c:AddProdManually_Next" action="{!c.handleNextEvent}"/>
+    <aura:dependency resource="markup://force:navigateToSObject" type="EVENT"/>
+    <aura:dependency resource="markup://force:editRecord" type="EVENT"/>
+    
+    <aura:if isTrue="{!v.showError}">
+        <div class="slds-notify slds-notify_alert slds-theme_alert-texture slds-theme_error" role="alert">
+            <h2>{!$Label.c.YOU_ARE_NOT_ALLOWED_TO_ADD_A_PRODUCT_MANUALLY}</h2>
+        </div>
+    </aura:if>
+    
+    <div style="height: 200px; display: none;" id="ubdmodal">
+        <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true" aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open">
+            <div class="slds-modal__container">
+                <header class="slds-modal__header">
+                    <button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse" title="Close">
+                        X
+                        <span class="slds-assistive-text">Close</span>
+                    </button>
+                    <h2 id="modal-heading-01" class="slds-text-heading_medium slds-hyphenate">UBD Expired</h2>
+                </header>
+                <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1">
+                    You are about to add a product where the use before date is in the past.<br/>
+                    By continuing to use this product, you acknowledge that it is an expired product you are using.
+                </div>
+                <footer class="slds-modal__footer">
+                    <button class="slds-button slds-button_neutral" onclick="{!c.cancelUBD}">Cancel</button>
+                    <button class="slds-button slds-button_brand" onclick="{!c.acknowlegdeUBD}">Continue</button>
+                </footer>
+            </div>
+        </section>
+        <div class="slds-backdrop slds-backdrop_open"></div>
+    </div>
+    
+
+    {!v.body}
+	
+</aura:component>

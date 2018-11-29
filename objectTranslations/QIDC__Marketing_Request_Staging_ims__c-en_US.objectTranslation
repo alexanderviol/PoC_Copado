@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Entity Name --></label>
+        <name>QIDC__Entity_Name_ims__c</name>
+    </fields>
+    <fields>
+        <label><!-- ExternalID --></label>
+        <name>QIDC__ExternalID_ims__c</name>
+    </fields>
+    <fields>
+        <help><!-- Name of Marketing Instance to which data push request has been made. --></help>
+        <label><!-- Instance Name --></label>
+        <name>QIDC__Instance_Name_ims__c</name>
+    </fields>
+    <fields>
+        <label><!-- JobID --></label>
+        <name>QIDC__JobID_ims__c</name>
+    </fields>
+    <fields>
+        <label><!-- Request Data --></label>
+        <name>QIDC__Request_Data_ims__c</name>
+    </fields>
+    <fields>
+        <label><!-- Request SequenceID --></label>
+        <name>QIDC__Request_SequenceID_ims__c</name>
+    </fields>
+</CustomObjectTranslation>

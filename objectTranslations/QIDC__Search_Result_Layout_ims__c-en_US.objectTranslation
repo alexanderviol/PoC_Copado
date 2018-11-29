@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- The type of Search Result Layout (Simple, Individual, or Workplace). --></help>
+        <label><!-- Layout Type --></label>
+        <name>QIDC__Layout_Type_ims__c</name>
+        <picklistValues>
+            <masterLabel>HCO Search</masterLabel>
+            <translation><!-- HCO Search --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HCO Search Result</masterLabel>
+            <translation><!-- HCO Search Result --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HCP Search</masterLabel>
+            <translation><!-- HCP Search --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HCP Search Result</masterLabel>
+            <translation><!-- HCP Search Result --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Individual Search</masterLabel>
+            <translation><!-- Individual Search --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Simple Search</masterLabel>
+            <translation><!-- Simple Search --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Workplace Search</masterLabel>
+            <translation><!-- Workplace Search --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- The names of the columns that will appear in the search results. --></help>
+        <label><!-- Search Result Columns --></label>
+        <name>QIDC__Search_Result_Columns_ims__c</name>
+    </fields>
+</CustomObjectTranslation>

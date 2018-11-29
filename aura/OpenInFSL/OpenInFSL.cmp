@@ -1,0 +1,24 @@
+<aura:component implements="lightning:availableForFlowScreens">
+    <aura:dependency resource="markup://force:navigateToSObject" type="EVENT"/>
+    <aura:attribute name="Id" type="String" default=""/>	
+    <aura:attribute name="WO_Id" type="String" default=""/>
+    <div class="demo-only" style="padding: 0.5rem; background: rgb(0, 112, 210);">
+		<div class="slds-text-color_inverse">
+	        <a style="color: white; align: center" href="{!'com.salesforce.fieldservice://'+v.Id}">Open record in Field Service Mobile App</a>
+        </div>
+	</div>
+    <br/><br/>
+    <div class="demo-only" style="padding: 0.5rem; background: rgb(0, 112, 210);">
+		<div class="slds-text-color_inverse" onclick="{!c.openWorkOrder}" style="color: white; align: center">
+	         Go to record.
+        </div>
+	</div>
+
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+</aura:component>

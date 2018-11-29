@@ -1,0 +1,53 @@
+<apex:page standardController="QIDC__MDM_DCR_ims__c" extensions="QIDC.MDM_DCR_IMS" sidebar="false">
+    <apex:stylesheet value="{!URLFOR($Resource.QIDC__SLDS, 'assets/styles/salesforce-lightning-design-system-vf.min.css')}" />
+    <apex:includeScript value="/lightning/lightning.out.js" />
+    <apex:includeLightning />
+    <apex:include pageName="QIDC__SetupLightningCSSHack"/>
+    <div id = "lightning" >
+        <script> 
+        var nameSpacePrefix ='{!nameSpacePrefixForComponent}'; 
+        var lightningAppBundle = nameSpacePrefix+":DataConnector_ims";
+        var lightningComponent = nameSpacePrefix+":MDM_DCR_SelectEntityModal_IMS";
+        var lightningComponentDCR = nameSpacePrefix+":MDM_DCR_IMS";
+        var entityType= '{!JSINHTMLENCODE($CurrentPage.parameters.entityType)}';
+        var parentRecordId = '{!JSINHTMLENCODE($CurrentPage.parameters.parentRecordId)}';
+        var newHCP = '{!JSINHTMLENCODE($CurrentPage.parameters.isNewHCP)}';
+        if(entityType==''){
+            entityType=null;
+        }
+        if(parentRecordId==''){
+            parentRecordId=null;  
+        }
+        if(newHCP && newHCP == 'true'){
+            entityType = 'HCP';
+        }else{
+            newHCP = false;
+        }
+        if(parentRecordId){
+			var selectedEntity = entityType == 'HCO' ? 'configuration/entityTypes/HCO' : 'configuration/entityTypes/HCP';
+            
+            $Lightning.use(lightningAppBundle, function() { 
+                $Lightning.createComponent(lightningComponentDCR,{'selectedEntity': selectedEntity,'parentSFId': parentRecordId, 'isNewHCP' : newHCP, 'selectedEntityOption': entityType, 'pEntityType': entityType},
+                                           "lightning",
+                                           function(cmp) {
+                                              
+                                           });
+            });
+        }else{
+	        $Lightning.use(lightningAppBundle, function() { 
+	        	$Lightning.createComponent(lightningComponent,{'parentEntityType': entityType,'parentRecordId': parentRecordId, 'isNewHCP' : newHCP},
+	                                       "lightning",
+	                                       function(cmp) {
+	                                       });
+	        });
+        }
+        </script> 
+        <style type="text/css">
+            /*to remove extra padding on classic salesforce theme*/
+            .noSidebarCell {
+            padding: 0px !important;
+            }
+ 
+        </style>  
+      </div>
+</apex:page>

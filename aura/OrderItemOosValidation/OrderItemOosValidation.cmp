@@ -1,0 +1,25 @@
+<aura:component implements="flexipage:availableForRecordHome,force:hasRecordId,force:lightningQuickAction" controller="OrderItemOosValidationCtrl" access="global">
+	
+    <aura:attribute name="missingComplaints" type="Asset[]" default="false"/>
+    <aura:attribute name="data" type="Object"/>
+    <aura:attribute name="columns" type="List"/>
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>    
+    
+    <aura:if isTrue="{!not(empty(v.missingComplaints))}">    	
+        <lightning:card variant="Narrow" title="List of Assets with missing OOS Information" iconName="standard:account" >
+        <p class="slds-p-horizontal_small">
+            <div style="">
+            	<lightning:datatable
+                                     keyField="Id"
+                                     data="{! v.missingComplaints }"
+                                     columns="{! v.columns }"
+                                     hideCheckboxColumn="true"
+                                     onrowaction="{!c.handleRowAction}"/>
+        	</div>
+        </p>
+    	</lightning:card>		 
+	</aura:if> 
+    <aura:if isTrue="{!(empty(v.missingComplaints))}"> 
+        {!$Label.c.INFO_NO_MISSING_OOS}
+    </aura:if>
+</aura:component>

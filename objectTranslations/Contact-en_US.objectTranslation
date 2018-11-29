@@ -1,0 +1,663 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Date of Birth</value>
+        </caseValues>
+        <name>birthdate_contact</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Phone Opt Out</value>
+        </caseValues>
+        <name>do_not_call_contact</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Shipping Address</value>
+        </caseValues>
+        <name>other_address_contact</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Shipping City</value>
+        </caseValues>
+        <name>other_city_contact</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Shipping Country Code</value>
+        </caseValues>
+        <name>other_country_code_contact</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Shipping Country</value>
+        </caseValues>
+        <name>other_country_contact</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Shipping State/Province Code</value>
+        </caseValues>
+        <name>other_state_code_contact</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Shipping State/Province</value>
+        </caseValues>
+        <name>other_state_contact</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Shipping Street</value>
+        </caseValues>
+        <name>other_street_contact</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Shipping Zip/Postal Code</value>
+        </caseValues>
+        <name>other_zip_contact</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Telephone</value>
+        </caseValues>
+        <name>phone_contact</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <label><!-- Mailing Address Checked --></label>
+        <name>MailingAddress_Checked__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mailing City --></label>
+        <name>MailingCity_Suggested__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mailing Country --></label>
+        <name>MailingCountry_Suggested__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mailing ZIP/Postal Code --></label>
+        <name>MailingPostalCode_Suggested__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mailing State/Province --></label>
+        <name>MailingState_Suggested__c</name>
+    </fields>
+    <fields>
+        <help><!-- This is the address to which any product notices or advisories will be sent. --></help>
+        <label><!-- Mailing Street --></label>
+        <name>MailingStreet_Suggested__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Active</masterLabel>
+            <translation><!-- Active --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Deceased</masterLabel>
+            <translation><!-- Deceased --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Inactive</masterLabel>
+            <translation><!-- Inactive --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Contact ID --></label>
+        <name>contact_id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Summary for Flow --></label>
+        <name>contact_summary_for_flow__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Verified --></label>
+        <name>contact_verified__c</name>
+    </fields>
+    <fields>
+        <label><!-- Created By Flow --></label>
+        <name>created_by_flow__c</name>
+    </fields>
+    <fields>
+        <label><!-- Credentials --></label>
+        <name>credentials__c</name>
+    </fields>
+    <fields>
+        <label><!-- CRM RANKING --></label>
+        <name>crm_ranking__c</name>
+        <picklistValues>
+            <masterLabel>Target 1</masterLabel>
+            <translation><!-- Target 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Target 2</masterLabel>
+            <translation><!-- Target 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Target 3</masterLabel>
+            <translation><!-- Target 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Target 4</masterLabel>
+            <translation><!-- Target 4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unscored</masterLabel>
+            <translation><!-- Unscored --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Date Address Verified --></label>
+        <name>date_mailing_address_verified__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date of birth search --></label>
+        <name>date_of_birth_search__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date of Death --></label>
+        <name>date_of_death__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date of Death unknown --></label>
+        <name>date_of_death_unknown__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date of last implant --></label>
+        <name>date_of_last_implant__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date of last implant after death --></label>
+        <name>date_of_last_implant_after_death__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Address Verified --></label>
+        <name>date_shipping_address_verified__c</name>
+    </fields>
+    <fields>
+        <label><!-- Decision Maker --></label>
+        <name>decision_maker__c</name>
+    </fields>
+    <fields>
+        <label><!-- Patient Declined to Provide Address --></label>
+        <name>declined_to_provide_address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Patient Declined to Provide DOB --></label>
+        <name>declined_to_provide_dob__c</name>
+    </fields>
+    <fields>
+        <label><!-- Patient Declined to Provide Phone --></label>
+        <name>declined_to_provide_phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Patient Declined to Provide SSN --></label>
+        <name>declined_to_provide_ssn__c</name>
+    </fields>
+    <fields>
+        <label><!-- Email Matches User&apos;s Email --></label>
+        <name>email_matches_user_s_email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Enhanced Label --></label>
+        <name>enhanced_label__c</name>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>external_id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Following physican changed --></label>
+        <name>following_physican_changed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Following Physician --></label>
+        <name>following_physician__c</name>
+        <relationshipLabel><!-- Patients Following --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Following physician phone changed --></label>
+        <name>following_physician_phone_changed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Gender --></label>
+        <name>gender__c</name>
+        <picklistValues>
+            <masterLabel>Female</masterLabel>
+            <translation><!-- Female --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Male</masterLabel>
+            <translation><!-- Male --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Graduation Year --></label>
+        <name>graduation_year__c</name>
+    </fields>
+    <fields>
+        <label><!-- Has Orders pending Cust Solutions review --></label>
+        <name>has_orders_pending_cust_solutions_review__c</name>
+    </fields>
+    <fields>
+        <label><!-- HM Agreement (Consent) --></label>
+        <name>hm_agreement_consent__c</name>
+    </fields>
+    <fields>
+        <label><!-- HM Agreement Date --></label>
+        <name>hm_agreement_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- HMSC Registration --></label>
+        <name>hmsc_registration__c</name>
+    </fields>
+    <fields>
+        <label><!-- HMSC_Registration_StringVal --></label>
+        <name>hmsc_registration_stringval__c</name>
+    </fields>
+    <fields>
+        <label><!-- Implanted product changed --></label>
+        <name>implanted_product_changed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Implanted product for new patient --></label>
+        <name>implanted_product_new_patient__c</name>
+    </fields>
+    <fields>
+        <label><!-- Implanted Product qualified ProMRI --></label>
+        <name>implanted_product_qualified_promri__c</name>
+    </fields>
+    <fields>
+        <label><!-- License # --></label>
+        <name>license__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mail Opt-out --></label>
+        <name>mail_block__c</name>
+    </fields>
+    <fields>
+        <help><!-- Verification Status of the Patient Mailing Address --></help>
+        <label><!-- Mailing Address Verified --></label>
+        <name>mailing_address_verified__c</name>
+    </fields>
+    <fields>
+        <label><!-- Medicare ID --></label>
+        <name>medicare_id__c</name>
+    </fields>
+    <fields>
+        <label><!-- MMIS # --></label>
+        <name>mmis__c</name>
+    </fields>
+    <fields>
+        <label><!-- MR Conditional Status --></label>
+        <name>mr_conditional_status__c</name>
+    </fields>
+    <fields>
+        <label><!-- MRI Status --></label>
+        <name>mri_status_image__c</name>
+    </fields>
+    <fields>
+        <label><!-- NPI # --></label>
+        <name>npi__c</name>
+    </fields>
+    <fields>
+        <help><!-- Verification Status of the Patient Other Address --></help>
+        <label><!-- Other Address Verified --></label>
+        <name>other_address_verified__c</name>
+    </fields>
+    <fields>
+        <label><!-- OUS Patient --></label>
+        <name>ous_patient__c</name>
+    </fields>
+    <fields>
+        <label><!-- Override by APS --></label>
+        <name>override_by_aps__c</name>
+    </fields>
+    <fields>
+        <label><!-- Patient ID Card created --></label>
+        <name>patient_id_card_created__c</name>
+    </fields>
+    <fields>
+        <label><!-- Patient name changed --></label>
+        <name>patient_name_changed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Weight --></label>
+        <name>patient_weight__c</name>
+    </fields>
+    <fields>
+        <help><!-- The person&apos;s preferred full name. --></help>
+        <label><!-- Preferred Name --></label>
+        <name>preferred_first_name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Primary Specialty --></label>
+        <name>primary_specialty__c</name>
+    </fields>
+    <fields>
+        <label><!-- proMRI Check Date --></label>
+        <name>promri_check_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- proMRI Check Status --></label>
+        <name>promri_check_status__c</name>
+        <picklistValues>
+            <masterLabel>Data Error – please proceed another check for details</masterLabel>
+            <translation><!-- Data Error – please proceed another check for details --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MR Conditional - Successful</masterLabel>
+            <translation><!-- MR Conditional - Successful --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Manual override by APS</masterLabel>
+            <translation><!-- Manual override by APS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>not MR Conditional - Capped Lead/Device</masterLabel>
+            <translation><!-- not MR Conditional - Capped Lead/Device --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>not MR Conditional - Competitor Product implanted</masterLabel>
+            <translation><!-- not MR Conditional - Competitor Product implanted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>not MR Conditional - No Country Code set</masterLabel>
+            <translation><!-- not MR Conditional - No Country Code set --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>not MR Conditional - No Device implanted</masterLabel>
+            <translation><!-- not MR Conditional - No Device implanted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>not MR Conditional - Product Combination not valid</masterLabel>
+            <translation><!-- not MR Conditional - Product Combination not valid --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>proMRI call failed - Webservice not available</masterLabel>
+            <translation><!-- proMRI call failed - Webservice not available --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Reason for APS Override --></label>
+        <name>reason_for_aps_override__c</name>
+    </fields>
+    <fields>
+        <label><!-- Related User --></label>
+        <name>related_user__c</name>
+        <relationshipLabel><!-- Contacts (Related User) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Company Code --></label>
+        <name>sap_company_code__c</name>
+    </fields>
+    <fields>
+        <label><!-- School Name --></label>
+        <name>school_name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ship Date of ID-Card --></label>
+        <name>ship_date_of_id_card__c</name>
+    </fields>
+    <fields>
+        <help><!-- Will overwrite the current shipping address with the current mailing address. --></help>
+        <label><!-- Shipping Address as Mailing Address --></label>
+        <name>shipping_address_equals_mailing__c</name>
+    </fields>
+    <fields>
+        <help><!-- Verification Status of the Patient Shipping Address --></help>
+        <label><!-- Shipping Address Verified --></label>
+        <name>shipping_address_verified__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other City --></label>
+        <name>shipping_city__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other Country --></label>
+        <name>shipping_country__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other State/Province --></label>
+        <name>shipping_state_province__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other Street --></label>
+        <name>shipping_street__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other ZIP/Postal Code --></label>
+        <name>shipping_zip_postal_code__c</name>
+    </fields>
+    <fields>
+        <label><!-- SSN --></label>
+        <name>ssn__c</name>
+    </fields>
+    <fields>
+        <label><!-- SSN last 4 digits --></label>
+        <name>ssn_last_four_digits__c</name>
+    </fields>
+    <fields>
+        <label><!-- Trig_DOB --></label>
+        <name>trig_dob__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>type__c</name>
+        <picklistValues>
+            <masterLabel>Business Associate</masterLabel>
+            <translation><!-- Business Associate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Healthcare Administrator</masterLabel>
+            <translation><!-- Healthcare Administrator --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Non-physician Healthcare Professional</masterLabel>
+            <translation><!-- Non-physician Healthcare Professional --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- User --></label>
+        <name>user__c</name>
+        <relationshipLabel><!-- Contacts (User) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Vendor ID --></label>
+        <name>vendor_id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Verification --></label>
+        <name>verification__c</name>
+        <picklistValues>
+            <masterLabel>Not Verified</masterLabel>
+            <translation><!-- Not Verified --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unknown</masterLabel>
+            <translation><!-- Unknown --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Verified</masterLabel>
+            <translation><!-- Verified --></translation>
+        </picklistValues>
+    </fields>
+    <recordTypes>
+        <description><!-- Healthcare administrator, non-physician healthcare  professional, business associate, etc. --></description>
+        <label><!-- Other Contact --></label>
+        <name>Other_Contact</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- 5500_Employee Contact --></label>
+        <name>X5500_Employee_Contact</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Patient --></label>
+        <name>us_patient</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Physician --></label>
+        <name>us_physician</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- Please use capitalize letter for First Name --></errorMessage>
+        <name>Capitalize_letter_for_first_name</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please use capitalize letter for Last Name --></errorMessage>
+        <name>Contact_Name</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please enter a date of death that is not in the future. --></errorMessage>
+        <name>Date_of_Death_Not_In_Future</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please enter either value for &quot;Date of Death&quot; or select &quot;Date of Death unknown&quot;. --></errorMessage>
+        <name>Date_of_Death_required_if_deceased</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please insert a birthdate in the past. --></errorMessage>
+        <name>Date_of_birth_not_in_future</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please either fill in &quot;Birthdate&quot; or check &quot;Declined to Provide&quot;, if the patient does not want to provide this information. --></errorMessage>
+        <name>Date_of_birth_required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Complete this field --></errorMessage>
+        <name>First_name_required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please enter a valid year that starts with 19 or 20, ie 1981 or 2014. --></errorMessage>
+        <name>Graduation_Year_must_be_19xx_or_20xx</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please either fill in the field &quot;Mailing city&quot; or check &quot;Declined to Provide&quot;, if the patient does not want to provide this information. --></errorMessage>
+        <name>Mailing_city_required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please either fill in the field &quot;Mailing country code&quot; or check &quot;Declined to Provide&quot;, if the patient does not want to provide this information. --></errorMessage>
+        <name>Mailing_country_required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please either fill in the field &quot;Mailing state code&quot; or check &quot;Declined to Provide&quot;, if the patient does not want to provide this information. --></errorMessage>
+        <name>Mailing_state_required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please either fill in the field &quot;Mailing Street&quot; or check &quot;Declined to Provide&quot;, if the patient does not want to provide this information. --></errorMessage>
+        <name>Mailing_street_required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please either fill in the field &quot;Mailing Zip/Postal code&quot; or check &quot;Declined to Provide&quot;, if the patient does not want to provide this information. --></errorMessage>
+        <name>Mailing_zip_postal_code_required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please either fill in &quot;Phone&quot; or check &quot;Declined to Provide&quot;, if the patient does not want to provide this information. --></errorMessage>
+        <name>Phone_required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please either fill in the field &quot;Mailing city&quot; --></errorMessage>
+        <name>Phyician_Mailing_City_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please fill in &quot;Mailing Country&quot; --></errorMessage>
+        <name>Physician_Mailing_Country_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please fill in &quot;Mailing state code&quot; --></errorMessage>
+        <name>Physician_Mailing_State_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please fill in &quot;Mailing Street&quot; --></errorMessage>
+        <name>Physician_Mailing_Street_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please fill in &quot;Mailing Zip/Postal code&quot; --></errorMessage>
+        <name>Physician_Mailing_Zip_Postalcode_Reqd</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please enter the right SSN with 9 digits or XXXXX + 4 digits --></errorMessage>
+        <name>SSN_Format</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- SSN cannot start with 000, 666, or any number between 900-999.
+The fourth through fifth digits cannot be 00.
+The sixth through ninth digits cannot be 0000. --></errorMessage>
+        <name>SSN_Format_02</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please either fill in &quot;SSN&quot; or check &quot;Declined to Provide&quot;, if the patient does not want to provide this information. --></errorMessage>
+        <name>SSN_required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Error: Date of Birth must be before Date of Death. --></errorMessage>
+        <name>date_of_death</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The Date of Death cannot be before the date of the last implant. --></errorMessage>
+        <name>last_implant_date_before_date_of_death</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- GoogleMaps --></label>
+        <name>GoogleMaps</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleSearch --></label>
+        <name>GoogleSearch</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Print_Permanent_Id_Card --></label>
+        <name>Print_Permanent_Id_Card</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- ProMRI_Check --></label>
+        <name>ProMRI_Check</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- SendGmail --></label>
+        <name>SendGmail</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- YahooMaps --></label>
+        <name>YahooMaps</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- YahooWeather --></label>
+        <name>YahooWeather</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- cardio_messenger_order --></label>
+        <name>cardio_messenger_order</name>
+    </webLinks>
+</CustomObjectTranslation>

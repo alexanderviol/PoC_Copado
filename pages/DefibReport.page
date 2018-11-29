@@ -1,0 +1,581 @@
+<apex:page renderAs="PDF" standardStylesheets="false" standardController="Order" extensions="BINCPatientDataControllerExt">
+    <apex:stylesheet value="{!$Resource.BINCPdf}"/>
+    <!-- top right Logo + text -->
+    <div class="toprightcorner">
+        <apex:image width="200px" height="40px" value="{!$Resource.Biotronik_logo}"/>
+        <br/>6024 Jean Road, Lake Oswego, OR 97035<br/>
+        Phone: 1-800-547-0394 | Fax: 1-888-503-5370
+    </div>
+    <div class="bincHeader">
+        <h1>
+            IMPLANT RECORD
+        </h1>
+        Confidential
+    </div>    
+    
+    
+    <div>
+        <table>
+            <colgroup>
+                <col width="10%" />
+                <col width="10%" />
+                <col width="10%" />
+                <col width="20%" />
+                <col width="10%" />
+                <col width="48%" />
+            </colgroup>
+            <tr>
+                <td colspan="4">
+                    <h2>PATIENT</h2>
+                </td>
+                <td colspan="2">
+                    <h2>IMPLANTING FACILITY</h2>
+                </td>
+            </tr>
+            <tr>
+                <td>Name: </td>
+                <td colspan="3"> <apex:outputField value="{!currentOrder.patient__r.Name}"/></td>
+                <td>Name: </td>
+                <td><apex:outputField value="{!currentOrder.account.Name}"/></td>
+            </tr>
+            <tr>
+                <td>Address: </td>
+                <td colspan="3">
+                    <apex:outputPanel rendered="{!NOT(currentOrder.patient__r.declined_to_provide_address__c)}">
+                        <apex:outputField value="{!currentOrder.patient__r.MailingStreet}"/> <br/>
+                        <apex:outputField value="{!currentOrder.patient__r.MailingCity}"/> 
+                        <apex:outputText value=", "/> 
+                        {!currentOrder.patient__r.MailingStateCode}
+                        <apex:outputText value=" "/> 
+                        <apex:outputField value="{!currentOrder.patient__r.MailingPostalCode}"/><br/>
+                    </apex:outputPanel> 
+                </td>
+                <td>Address: </td>
+                <td>
+                    <apex:outputField value="{!currentOrder.account.ShippingStreet}"/> <br/>
+                    <apex:outputField value="{!currentOrder.account.ShippingCity}"/> 
+                    <apex:outputText rendered="{!OR(currentOrder.account.ShippingStateCode != null, currentOrder.account.ShippingPostalCode != null)}" value=", "/> 
+                    {!currentOrder.account.ShippingStateCode}
+                    <apex:outputText value=" "/> 
+                    <apex:outputField value="{!currentOrder.account.ShippingPostalCode}"/><br/>
+                </td>
+                
+            </tr>
+            <tr>
+                <td>Phone: </td>
+                <td colspan="3">
+                    <apex:outputField value="{!currentOrder.patient__r.Phone}"/>
+                    <apex:outputText rendered="{!AND(currentOrder.patient__r.MobilePhone != null && currentOrder.patient__r.MobilePhone != null)}" value="   OR   "/> 
+                    <apex:outputField value="{!currentOrder.patient__r.MobilePhone}"/>
+                </td>
+                <td>Phone: </td>
+                <td>
+                    <apex:outputField value="{!currentOrder.account.Phone}"/>
+                    <apex:outputText rendered="{!AND(currentOrder.account.Phone != null && currentOrder.account.mobile__c != null)}" value="   OR   "/> 
+                    <apex:outputField value="{!currentOrder.account.mobile__c  }"/>
+                </td>
+                
+            </tr>
+            <tr>
+                <td>DOB: </td>
+                <td><apex:outputField value="{!currentOrder.patient__r.BirthDate}"/>
+                </td>
+                <td>Gender:</td>
+                <td>{!currentOrder.patient__r.gender__c}</td>
+                <td>MRN:</td>
+                <td>{!currentOrder.medical_record_no__c}</td>
+            </tr>
+            <tr>
+                <td>SSN: </td>
+                <td colspan="3"><apex:outputText value="{!RIGHT(currentOrder.patient__r.ssn__c,4)}"/></td>
+                <td colspan="2"></td>
+            </tr>
+        </table>
+        <p><b>Indications:</b> {!indications}</p>
+        <hr/>
+        <table>
+            <colgroup>
+                <col width="10%" />
+                <col width="40%" />
+                <col width="10%" />
+                <col width="40%" />
+            </colgroup>
+            
+            <tr>
+                <td colspan="2">
+                    <h2>FOLLOWING PHYSICIAN</h2>
+                </td>
+                <td colspan="2">
+                    <h2>IMPLANTING PHYSICIAN</h2>
+                </td>
+            </tr>
+            <tr>
+                <td>Name: </td>
+                <td><apex:outputField value="{!currentOrder.following_physican__r.Name}"/></td>
+                <td>Name: </td>
+                <td><apex:outputField value="{!currentOrder.implanting_physician__r.Name}"/></td>
+                
+            </tr>
+            <tr>
+                <td>Address: </td>
+                <td>
+                    <apex:outputField value="{!currentOrder.following_physican__r.MailingStreet}"/> <br/>
+                    <apex:outputField value="{!currentOrder.following_physican__r.MailingCity}"/> 
+                    <apex:outputText value=", "/> 
+                    {!currentOrder.following_physican__r.MailingStateCode}
+                    <apex:outputText value=" "/> 
+                    <apex:outputField value="{!currentOrder.following_physican__r.MailingPostalCode}"/><br/>
+                </td>
+                <td>Address: </td>
+                <td>
+                    <apex:outputField value="{!currentOrder.implanting_physician__r.MailingStreet}"/> <br/>
+                    <apex:outputField value="{!currentOrder.implanting_physician__r.MailingCity}"/> 
+                    <apex:outputText value=", "/> 
+                    {!currentOrder.implanting_physician__r.MailingStateCode} 
+                    <apex:outputText value=" "/> 
+                    <apex:outputField value="{!currentOrder.implanting_physician__r.MailingPostalCode}"/><br/>
+                </td>
+                
+            </tr>
+            <tr>
+                <td>Phone: </td>
+                <td><apex:outputField value="{!currentOrder.following_physican__r.Phone}"/>
+                    <apex:outputText rendered="{!AND(currentOrder.following_physican__r.MobilePhone != null && currentOrder.following_physican__r.MobilePhone != null)}" value="   OR   "/> 
+                    <apex:outputField value="{!currentOrder.following_physican__r.MobilePhone}"/></td>
+                <td>Phone: </td>
+                <td>
+                    <apex:outputField value="{!currentOrder.implanting_physician__r.Phone}"/>
+                    <apex:outputText rendered="{!AND(currentOrder.implanting_physician__r.MobilePhone != null && currentOrder.implanting_physician__r.MobilePhone != null)}" value="   OR   "/> 
+                    <apex:outputField value="{!currentOrder.implanting_physician__r.MobilePhone}"/>
+                </td>
+            </tr>
+        </table>
+        
+        <hr />
+    </div>
+    <!-- IMPLANTED DEVICE -->
+    
+    <div>
+        <h4>IMPLANTED DEVICE</h4>
+        <table class="pacemakerReportList">
+            <tr>
+                <th>
+                    Implant Date
+                </th>
+                <th>
+                    Model No.
+                </th>
+                <th>
+                    Description
+                </th>
+                <th>
+                    Serial No.
+                </th>
+                <th>
+                    Manufacturer
+                </th>
+            </tr>
+            <apex:repeat value="{!patientImplantedDeviceList}" var="impDevice">
+                <tr>
+                    <td>
+                        <apex:outputField value="{!impDevice.installdate}"/>
+                    </td>
+                    <td>
+                        <apex:outputField value="{!impDevice.model_no__c}"/>
+                    </td>
+                    <td>
+                        <apex:outputField value="{!impDevice.product2.name}"/>
+                    </td>
+                    <td>
+                        <apex:outputField value="{!impDevice.serialnumber}"/>
+                    </td>
+                    <td>
+                        <apex:outputField value="{!impDevice.manufacturer__c}"/>
+                    </td>
+                </tr>
+            </apex:repeat>
+        </table>
+        
+        <!-- table for technical overview -->
+        <table class="pacemakerReportList">
+            <tr>
+                <th>
+                    Mode
+                </th>
+                <th>
+                    Lower Rate
+                </th>
+                <th>
+                    Upper Rate
+                </th>
+            </tr>
+            <apex:repeat value="{!patientImplantedDeviceList}" var="impDevice">
+                <tr>
+                    <td>
+                        <apex:outputField value="{!impDevice.mode__c}"/>    
+                    </td>
+                    <td>
+                        <apex:outputField value="{!impDevice.lower_rate__c}"/>
+                    </td>
+                    <td>
+                        <apex:outputField value="{!impDevice.upper_rate__c}"/>
+                    </td>
+                </tr>
+            </apex:repeat>
+        </table>
+        
+        <!-- detail table -->
+        <table class="pacemakerReportList">
+            <tr>
+                <th>
+                    Chamber
+                </th>
+                <th>
+                    Pulse Amp<br/>(V)
+                </th>
+                <th>
+                    Pulse Width<br/>(ms)
+                </th>
+                <th>
+                    Sensitivity<br/>(mV)
+                </th>                
+                <th>
+                    Sensing Polarity
+                </th>
+                <th>
+                    Pacing Polarity
+                </th>
+            </tr>
+            <apex:repeat value="{!patientImplantedDeviceList}" var="impDevice">
+                <tr>
+                    <td>
+                        Right Atrium
+                    </td>
+                    <td>
+                        <apex:outputField value="{!impDevice.pulse_amplitude_v_atrium__c}"/> 
+                    </td>
+                    <td>
+                        <apex:outputField value="{!impDevice.pulse_width_ms_atrium__c}"/>    
+                    </td>
+                    <td>
+                        <apex:outputField value="{!impDevice.sensitivity_mv_atrium__c}"/>       
+                    </td>
+                    <td>
+                        <apex:outputField value="{!impDevice.polarity_sensing_atrium__c}"/> 
+                    </td>                
+                    <td>
+                        <apex:outputField value="{!impDevice.polarity_pacing_atrium__c}"/>     
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Right Ventricle
+                    </td>
+                    <td>
+                        <apex:outputField value="{!impDevice.pulse_amplitude_v_rv__c}"/>
+                    </td>
+                    <td>
+                        <apex:outputField value="{!impDevice.Pulse_width_ms_rv__c}"/>
+                    </td>
+                    <td>
+                        <apex:outputField value="{!impDevice.sensitivity_mv_rv__c}"/>
+                    </td>
+                    <td>
+                        <apex:outputField value="{!impDevice.polarity_sensing_rv__c}"/>
+                    </td>
+                    <td>
+                        <apex:outputField value="{!impDevice.polarity_pacing_rv__c}"/> 	   
+                    </td>
+                    
+                </tr>
+                <tr>
+                    <td>
+                        Left Ventricle
+                    </td>
+                    <td>
+                        <apex:outputField value="{!impDevice.pulse_amplitude_v_lv__c}"/>
+                    </td>
+                    <td>
+                        <apex:outputField value="{!impDevice.pulse_width_ms_lv__c}"/>
+                    </td>
+                    <td>
+                        <apex:outputField value="{!impDevice.sensitivity_mv_lv__c}"/>
+                    </td>
+                    <td>
+                        <apex:outputField value="{!impDevice.polarity_sensing_lv__c}"/>
+                    </td>
+                    <td>
+                        <apex:outputField value="{!impDevice.polarity_pacing_lv__c}"/>    
+                    </td>                
+                </tr>
+            </apex:repeat>
+        </table>
+        <p>Comments: </p>
+    </div>
+    <hr />
+    
+    <!-- IMPLATED LEADS/ADAPTERS -->
+    <div>
+        <h2>IMPLANTED LEADS/ADAPTERS</h2>
+        <table class="pacemakerReportList">
+            <tr>
+                <th>
+                    Imp. Date
+                </th>
+                <th>
+                    Model No.
+                </th>
+                <th>
+                    Description
+                </th>
+                <th>
+                    Serial No.
+                </th>
+                <th>
+                    Manufacturer
+                </th>
+                <th>
+                    Pos
+                </th>
+                <th>
+                    Pwave
+                </th>
+                <th>
+                    Rwave
+                </th>
+                <th>
+                    Volts
+                </th>
+                <th>
+                    ms
+                </th>
+                <th>
+                    ohms
+                </th>
+            </tr>
+            <apex:repeat value="{!patientImplantedLeadsAndAdapters}" var="impLead">
+                <tr>
+                    <td>
+                        <apex:outputField value="{!impLead.installdate}"/>    
+                    </td>
+                    <td>
+                        <apex:outputField value="{!impLead.model_no__c}"/>
+                    </td>
+                    <td>
+                        <apex:outputField value="{!impLead.product2.name}"/>
+                    </td>
+                    <td>
+                        <apex:outputField value="{!impLead.serialnumber}"/>
+                    </td>
+                    <td>
+                        <apex:outputField value="{!impLead.manufacturer__c}"/>
+                    </td>
+                    <td>
+                        <apex:outputField value="{!impLead.Lead_Tip_Location__c}"/>
+                    </td>
+                    <td>
+                        <apex:outputField value="{!impLead.p_amp__c}"/>
+                    </td>
+                    <td>
+                        <apex:outputField value="{!impLead.r_amp__c}"/>
+                    </td>
+                    <td>
+                        <apex:outputField value="{!impLead.Threshold__c}"/>
+                    </td>
+                    <td>
+                        <apex:outputField value="{!impLead.pulse_width__c}"/>
+                    </td>
+                    <td>
+                        <apex:outputField value="{!impLead.impedance__c}"/>
+                    </td>
+                </tr>
+            </apex:repeat>
+        </table>
+    </div>
+    
+    
+    <hr />
+    
+    <!-- table for DFT 
+Only for Defib ?!
+-->
+    
+    <h2>DFT TESTING / SETTINGS</h2>
+    <table class="pacemakerReportList">
+        <tr>
+            <th>
+                Method
+            </th>
+            <th>
+                Therapy
+            </th>
+            <th>
+                Results
+            </th>
+            <th>
+                Charge Time
+            </th>
+        </tr>
+        <apex:repeat value="{!patientImplantedDeviceList}" var="impDevice">
+            <tr>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+                <td>&nbsp;</td>
+                <td>
+                    <apex:outputField value="{!impDevice.charge_time__c}"/>
+                </td>
+            </tr>
+        </apex:repeat>
+    </table>
+    <table>
+        <colgroup>
+            <col width="50%" />
+            <col width="50%" />
+        </colgroup>
+        <tr>
+            <td>
+                VF Detection Rate: <br/>
+                VT Detection Rate: 
+            </td>
+            <td>
+                VF Therapies: <br/>
+                VT Therapies: 
+            </td>
+        </tr>
+        
+    </table>
+    
+    <hr />
+    
+    <!-- EXPLANTED DEVICE -->
+    <div>
+        <h2 style="margin-right: 12px; display: inline">EXPLANTED DEVICE</h2> 
+        
+        Reason:&nbsp;&nbsp;&nbsp;
+        
+        <apex:image rendered="{!AND (patientExplantedDeviceList != null, 
+                                    patientExplantedDeviceList.size > 0, 
+                                    CONTAINS (patientExplantedDeviceList[0].event_reason__c, 'ERI'))}" url="/img/checkbox_checked.gif"/>
+        <apex:image rendered="{!OR (patientExplantedDeviceList == null, 
+                                    patientExplantedDeviceList.size == 0, 
+                              		patientExplantedDeviceList[0].event_reason__c == null,
+                                    NOT (CONTAINS (patientExplantedDeviceList[0].event_reason__c, 'ERI')))}" url="/img/checkbox_unchecked.gif"/>
+        ERI    
+
+        <apex:image rendered="{!AND (patientExplantedDeviceList != null, 
+                                    patientExplantedDeviceList.size > 0, 
+                                    CONTAINS (patientExplantedDeviceList[0].event_reason__c, 'Infection'))}" url="/img/checkbox_checked.gif"/>
+        <apex:image rendered="{!OR (patientExplantedDeviceList == null, 
+                                    patientExplantedDeviceList.size == 0, 
+                              		patientExplantedDeviceList[0].event_reason__c == null,
+                                    NOT (CONTAINS (patientExplantedDeviceList[0].event_reason__c, 'Infection')))}" url="/img/checkbox_unchecked.gif"/>
+        Infection
+        
+        <apex:image rendered="{!AND (patientExplantedDeviceList != null, 
+                                    patientExplantedDeviceList.size > 0, 
+                                    CONTAINS (patientExplantedDeviceList[0].event_reason__c, 'Other'))}" url="/img/checkbox_checked.gif"/>
+        <apex:image rendered="{!OR (patientExplantedDeviceList == null, 
+                                    patientExplantedDeviceList.size == 0, 
+                              		patientExplantedDeviceList[0].event_reason__c == null,
+                                    NOT (CONTAINS (patientExplantedDeviceList[0].event_reason__c, 'Other')))}" url="/img/checkbox_unchecked.gif"/>
+
+        
+        Other: 
+        <apex:outputField value="{!patientExplantedDeviceList[0].event_reason__c}"
+                          rendered="{!AND (patientExplantedDeviceList != null, 
+                                    	patientExplantedDeviceList.size > 0,
+                                    	NOT (OR (
+                                    		CONTAINS (patientExplantedDeviceList[0].event_reason__c, 'Infection'),
+                                    		CONTAINS (patientExplantedDeviceList[0].event_reason__c, 'ERI')
+                                    	))
+                                    )}"/>
+        
+        <table class="pacemakerReportList">
+            <tr>
+                <th>
+                    Implant Date
+                </th>
+                <th>
+                    Model
+                </th>
+                <th>
+                    Serial No.
+                </th>
+                <th>
+                    OOS Date
+                </th>
+                <th>
+                    Manufacturer
+                </th>
+            </tr>
+            <apex:repeat value="{!patientExplantedDeviceList}" var="expDevice">
+                <tr>
+                    <td>
+                        <apex:outputField value="{!expDevice.installdate}"/>
+                    </td>
+                    <td>
+                        <apex:outputField value="{!expDevice.Name}"/>
+                    </td>
+                    <td>
+                        <apex:outputField value="{!expDevice.serialnumber}"/>
+                    </td>
+                    <td>
+                        <apex:outputField value="{!expDevice.oos_date__c}"/>
+                    </td>
+                    <td>
+                        <apex:outputField value="{!expDevice.manufacturer__c}"/>
+                    </td>
+                </tr>
+            </apex:repeat>
+        </table>
+        
+        <!-- OUT OF SERVICE LEADS/ADAPTERS -->
+        <h2>OUT OF SERVICE LEADS/ADAPTERS</h2>
+        <table class="pacemakerReportList">
+            <tr>
+                <th>
+                    Model
+                </th>
+                <th>
+                    Serial No.
+                </th>
+                <th>
+                    OOS Date
+                </th>
+                <th>
+                    Manufacturer
+                </th>
+                <th>
+                    Status
+                </th>
+            </tr>
+            <apex:repeat value="{!patientExplantedLeadsAndAdaptersList}" var="expLead">
+                <tr>
+                    <td>
+                        <apex:outputField value="{!expLead.Name}"/>
+                    </td>
+                    <td>
+                        <apex:outputField value="{!expLead.serialnumber}"/>
+                    </td>
+                    <td>
+                        <apex:outputField value="{!expLead.oos_date__c}"/>
+                    </td>
+                    <td>
+                        <apex:outputField value="{!expLead.manufacturer__c}"/>
+                    </td>
+                    <td>
+                        <apex:outputField value="{!expLead.status}"/>
+                    </td>
+                </tr>
+            </apex:repeat>    
+        </table>
+    </div>
+    <hr />
+    
+    Notes: <div class = "pacerNoteboxs" ></div>
+    <div style="display:block;page-break-after:always;"></div>
+</apex:page>

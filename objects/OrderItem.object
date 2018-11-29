@@ -1,0 +1,608 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>AddProduct</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <content>OrderItemRemove</content>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Visualforce</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>EditAllProduct</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <enableFeeds>true</enableFeeds>
+    <fields>
+        <fullName>AvailableQuantity</fullName>
+    </fields>
+    <fields>
+        <fullName>Description</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>EndDate</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>ListPrice</fullName>
+    </fields>
+    <fields>
+        <fullName>OrderId</fullName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>OriginalOrderItemId</fullName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ParentId__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>ParentId</label>
+        <referenceTo>OrderItem</referenceTo>
+        <relationshipLabel>System Items</relationshipLabel>
+        <relationshipName>in_system</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Product2Id</fullName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ProductCode</fullName>
+    </fields>
+    <fields>
+        <fullName>Quantity</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+    </fields>
+    <fields>
+        <fullName>ServiceDate</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>TotalPrice</fullName>
+    </fields>
+    <fields>
+        <fullName>UnitPrice</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+    </fields>
+    <fields>
+        <fullName>asset__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Asset</label>
+        <referenceTo>Asset</referenceTo>
+        <relationshipLabel>Order Products</relationshipLabel>
+        <relationshipName>Order_Products</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>authorized_for_shipping__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Used for filtering the asset listview in the CM Order.</description>
+        <externalId>false</externalId>
+        <label>Authorized for Shipping</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>barcode__c</fullName>
+        <externalId>false</externalId>
+        <label>Barcode</label>
+        <length>100</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>batch_no__c</fullName>
+        <description>Unique alphanumeric identifier of a lot of products</description>
+        <externalId>false</externalId>
+        <label>Batch No.</label>
+        <length>80</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>comments_on_discrepancy__c</fullName>
+        <description>Text field used to explain the price discrepancy reason in case Price Discrepancy Reason value equals &quot;Other&quot;</description>
+        <externalId>false</externalId>
+        <label>Comments on Discrepancy</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>date_of_manufacture__c</fullName>
+        <description>Date the product was manufactured</description>
+        <externalId>false</externalId>
+        <label>Date of Manufacture</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>expiration_date_ubd__c</fullName>
+        <description>Date after which product expires and must not be used</description>
+        <externalId>false</externalId>
+        <label>Expiration date (UBD)</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>expired_ubd_acknowledged__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>The user has to acknowledge that he knows, that the UBD is in the past the moment he edits/created the record</description>
+        <externalId>false</externalId>
+        <label>Expired UBD acknowledged</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>external_id__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <externalId>true</externalId>
+        <label>External ID</label>
+        <length>30</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>implant_date__c</fullName>
+        <externalId>false</externalId>
+        <label>Implant date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>include_return_label__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Trigger to SAP to include a return label</description>
+        <externalId>false</externalId>
+        <label>Include Return Label</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>location__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Location</label>
+        <referenceTo>Location</referenceTo>
+        <relationshipLabel>Order Products</relationshipLabel>
+        <relationshipName>Order_Products</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>main_group__c</fullName>
+        <externalId>false</externalId>
+        <label>Main Group</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>main_group</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>model_no__c</fullName>
+        <externalId>false</externalId>
+        <label>Model No.</label>
+        <length>100</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>part_of_donation__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>When MDRF is marked as donation the related Assets are flagged as a part of donation</description>
+        <externalId>false</externalId>
+        <label>Part of Donation</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>part_of_system_price__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Asset was part of an reduced system pricing.</description>
+        <externalId>false</externalId>
+        <label>Part of System Price</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>price_discrepancy_reason__c</fullName>
+        <description>When the Order Product price is manually adjusted, the reason is required</description>
+        <externalId>false</externalId>
+        <label>Price Discrepancy Reason</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>One-time exception</fullName>
+                    <default>false</default>
+                    <label>One-time exception</label>
+                </value>
+                <value>
+                    <fullName>No price loaded for product</fullName>
+                    <default>false</default>
+                    <label>No price loaded for product</label>
+                </value>
+                <value>
+                    <fullName>Loaded price is incorrect</fullName>
+                    <default>false</default>
+                    <label>Loaded price is incorrect</label>
+                </value>
+                <value>
+                    <fullName>Proposed price</fullName>
+                    <default>false</default>
+                    <label>Proposed price</label>
+                </value>
+                <value>
+                    <fullName>Bulk swap</fullName>
+                    <default>false</default>
+                    <label>Bulk swap</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>product_code__c</fullName>
+        <externalId>false</externalId>
+        <label>Product Code</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>product_consumed__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Product Consumed</label>
+        <referenceTo>ProductConsumed</referenceTo>
+        <relationshipLabel>Order Products</relationshipLabel>
+        <relationshipName>Order_Products</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>product_type__c</fullName>
+        <description>When the user adds a competitor product to a patient they must select the Product type from this picklist.</description>
+        <externalId>false</externalId>
+        <label>Product Type</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>product_type</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>quantity_unit_of_measure__c</fullName>
+        <externalId>false</externalId>
+        <label>Quantity Unit Of Measure</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Quantity_unit_of_measure</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>related_asset__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Related Asset</label>
+        <referenceTo>Asset</referenceTo>
+        <relationshipLabel>Order Products (Related Asset)</relationshipLabel>
+        <relationshipName>Order_Products1</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>replace_existing_cm__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>The user can specify that the request is to replace an existing CM.</description>
+        <externalId>false</externalId>
+        <label>Replace Existing CM</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>replenish__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>User can define which Assets they would like not replenished. </description>
+        <externalId>false</externalId>
+        <label>Replenish</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>sap_account_no__c</fullName>
+        <externalId>false</externalId>
+        <label>SAP Account No</label>
+        <length>20</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>sap_stock_location__c</fullName>
+        <externalId>false</externalId>
+        <label>SAP Stock Location</label>
+        <length>20</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>serial_number__c</fullName>
+        <description>Unique numeric identifier of the specific device</description>
+        <externalId>false</externalId>
+        <label>Serial Number</label>
+        <length>30</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>status__c</fullName>
+        <externalId>false</externalId>
+        <label>Status</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Implanted</fullName>
+                    <default>false</default>
+                    <label>Implanted</label>
+                </value>
+                <value>
+                    <fullName>Explanted</fullName>
+                    <default>false</default>
+                    <label>Explanted</label>
+                </value>
+                <value>
+                    <fullName>Discarded</fullName>
+                    <default>false</default>
+                    <label>Discarded</label>
+                </value>
+                <value>
+                    <fullName>Capped</fullName>
+                    <default>false</default>
+                    <label>Capped</label>
+                </value>
+                <value>
+                    <fullName>Partially Capped</fullName>
+                    <default>false</default>
+                    <label>Partially Capped</label>
+                </value>
+                <value>
+                    <fullName>Patient Deceased</fullName>
+                    <default>false</default>
+                    <label>Patient Deceased</label>
+                </value>
+                <value>
+                    <fullName>Not Implantable Product</fullName>
+                    <default>false</default>
+                    <label>Not Implantable Product</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>stock_type__c</fullName>
+        <description>Stock Location of the asset.</description>
+        <externalId>false</externalId>
+        <label>Stock Type</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>B</fullName>
+                    <default>false</default>
+                    <label>Bulk</label>
+                </value>
+                <value>
+                    <fullName>C</fullName>
+                    <default>false</default>
+                    <label>Consignment Stock</label>
+                </value>
+                <value>
+                    <fullName>L</fullName>
+                    <default>false</default>
+                    <label>Loaned Stock</label>
+                </value>
+                <value>
+                    <fullName>T</fullName>
+                    <default>false</default>
+                    <label>Trunk Stock</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>ubd_expired__c</fullName>
+        <description>Shows that the asset is expired. It is not recommended to use the product if this field shows &quot;true&quot;.</description>
+        <externalId>false</externalId>
+        <formula>expiration_date_ubd__c &lt; TODAY()</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>UBD expired</label>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>udi__c</fullName>
+        <description>Unique Device Identification made up of serial/batch number, UBD, and EAN. Required by FDA</description>
+        <externalId>false</externalId>
+        <label>UDI</label>
+        <length>100</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <validationRules>
+        <fullName>BULK_PRODUCT_PRICE_CHANGE_WITHOUT_REASON</fullName>
+        <active>true</active>
+        <description>Change to Bulk Product Unit Price trigger price discrepancy.</description>
+        <errorConditionFormula>AND(
+ISCHANGED(UnitPrice),
+PRIORVALUE(UnitPrice)= 0.00,
+UnitPrice  &gt; 0.00, 
+ISPICKVAL( stock_type__c, &apos;B&apos;),
+ISBLANK(  TEXT(price_discrepancy_reason__c)  )  
+)</errorConditionFormula>
+        <errorMessage>If you are changing the bulk product price from 0 to a positive value, please state a price discrepancy reason for doing so.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Donation_price_needs_to_be_zero</fullName>
+        <active>true</active>
+        <description>SAFBIO-1383 // The price of a donation needs to be zero</description>
+        <errorConditionFormula>UnitPrice != 0 &amp;&amp;  part_of_donation__c</errorConditionFormula>
+        <errorMessage>The price of a donation needs to be zero</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Enter_comment_for_Price_Discrepancy</fullName>
+        <active>true</active>
+        <description>Enter comment for Price Discrepancy when reason is other</description>
+        <errorConditionFormula>AND ( ISPICKVAL(price_discrepancy_reason__c, &quot;Other&quot;),
+ISBLANK(comments_on_discrepancy__c),
+!part_of_donation__c )</errorConditionFormula>
+        <errorDisplayField>comments_on_discrepancy__c</errorDisplayField>
+        <errorMessage>Please enter comment for Price Discrepancy</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Price_changed_without_reason</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND (
+  ISCHANGED(UnitPrice), 
+  NOT( OR (part_of_donation__c,  part_of_system_price__c,  ISPICKVAL( stock_type__c, &apos;B&apos;) )),
+  UnitPrice != ListPrice, 
+  (CASE(price_discrepancy_reason__c,&apos;&apos;,0,1)=0)
+)</errorConditionFormula>
+        <errorMessage>If you are changing the price from the list price, please state a reason for doing so.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Require_serial_number_or_batch_number</fullName>
+        <active>false</active>
+        <description>Either sbatch no. or  serial number is required</description>
+        <errorConditionFormula>NOT(ISPICKVAL(product_type__c , &apos;System&apos;))
+&amp;&amp; (
+(ISBLANK(batch_no__c) &amp;&amp; ISBLANK(serial_number__c))
+||
+(NOT(ISBLANK(batch_no__c)) &amp;&amp; NOT(ISBLANK(serial_number__c))))</errorConditionFormula>
+        <errorMessage>Please fill in either a batch no. or a serial number.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>quantity_can_not_be_changed</fullName>
+        <active>true</active>
+        <description>enables users to change the quantity</description>
+        <errorConditionFormula>AND(
+NOT(ISNEW()), 
+ISCHANGED(Quantity), 
+Not($Permission.Validationrule_Exception)
+        )</errorConditionFormula>
+        <errorDisplayField>Quantity</errorDisplayField>
+        <errorMessage>Please contact the system administrator in order to edit the quantity.</errorMessage>
+    </validationRules>
+</CustomObject>

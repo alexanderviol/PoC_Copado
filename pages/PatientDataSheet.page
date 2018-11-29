@@ -1,0 +1,374 @@
+<apex:page standardController="Order" extensions="BINCPatientDataControllerExt" renderAs="PDF" standardStylesheets="false">
+    <apex:stylesheet value="{!$Resource.BINCPdf}" />
+    <div style="page-break">
+        <!-- top right Logo + text -->
+        <div class="toprightcorner">
+            <apex:image width="200px" height="40px" value="{!$Resource.Biotronik_logo}"/>
+            <br/>6024 Jean Road, Lake Oswego, OR 97035<br/>
+            Phone: 1-800-547-0394 | Fax: 1-888-503-5370
+        </div>
+
+        <div class="bincHeader"><h1>
+            BIOTRONIK PATIENT DATA SHEET
+            </h1>
+            Confidential
+        </div>
+        
+        <div>
+            
+            <table>
+                <colgroup>
+                    <col width="10%" />
+                    <col width="10%" />
+                    <col width="10%" />
+                    <col width="20%" />
+                    <col width="10%" />
+                    <col width="48%" />
+                </colgroup>
+                <tr>
+                    <td colspan="4">
+                        <h2>PATIENT</h2>
+                    </td>
+                    <td colspan="2">
+                        <h2>IMPLANTING FACILITY</h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Name: </td>
+                    <td colspan="3"> <apex:outputField value="{!currentOrder.patient__r.name}"/></td>
+                    <td>Name: </td>
+                    <td><apex:outputField value="{!currentOrder.account.name}"/></td>
+                </tr>
+                <tr>
+                    <td>Address: </td>
+                    <td colspan="3">
+                        <apex:outputPanel rendered="{!NOT(currentOrder.patient__r.declined_to_provide_address__c)}">
+                            <apex:outputField value="{!currentOrder.patient__r.mailingstreet}"/> <br/>
+                            <apex:outputField value="{!currentOrder.patient__r.mailingcity}"/> 
+                            <apex:outputText value=", "/> 
+                            {!currentOrder.patient__r.MailingStateCode}
+                            <apex:outputText value=" "/> 
+                            <apex:outputField value="{!currentOrder.patient__r.mailingpostalcode}"/><br/>
+                        </apex:outputPanel> 
+                    </td>
+                    <td>Address: </td>
+                    <td>
+                        <apex:outputField value="{!currentOrder.account.shippingstreet}"/> <br/>
+                        <apex:outputField value="{!currentOrder.account.shippingcity}"/> 
+                        <apex:outputText rendered="{!OR(currentOrder.account.ShippingStateCode != null, currentOrder.account.shippingpostalcode != null)}" value=", "/> 
+                        {!currentOrder.account.ShippingStateCode}
+                        <apex:outputText value=" "/> 
+                        <apex:outputField value="{!currentOrder.account.shippingpostalcode}"/><br/>
+                    </td>
+                    
+                </tr>
+                <tr>
+                    <td>Phone: </td>
+                    <td colspan="3">
+                        <apex:outputField value="{!currentOrder.patient__r.phone}"/>
+                        <apex:outputText rendered="{!AND(currentOrder.patient__r.mobilephone != null && currentOrder.patient__r.mobilephone != null)}" value="   OR   "/> 
+                        <apex:outputField value="{!currentOrder.patient__r.mobilephone}"/>
+                    </td>
+                    <td>Phone: </td>
+                    <td>
+                        <apex:outputField value="{!currentOrder.account.phone}"/>
+                        <apex:outputText rendered="{!AND(currentOrder.account.phone != null && currentOrder.account.mobile__c != null)}" value="   OR   "/> 
+                        <apex:outputField value="{!currentOrder.account.mobile__c  }"/>
+                    </td>
+                    
+                </tr>
+                <tr>
+                    <td>DOB: </td>
+                    <td><apex:outputText value="{0, date, MM/dd/yyyy}">
+                        <apex:param value="{!currentOrder.patient__r.BirthDate}" /> 
+                        </apex:outputText>
+                    </td>
+                    <td>Gender:</td>
+                    <td>{!currentOrder.patient__r.gender__c}</td>
+                    <td>MRN:</td>
+                    <td>{!currentOrder.medical_record_no__c}</td>
+                </tr>
+                <tr>
+                    <td>SSN: </td>
+                    <td colspan="3"><apex:outputText value="{!RIGHT(currentOrder.patient__r.ssn__c,4)}"/></td>
+                    <td colspan="2"></td>
+                </tr>
+            </table>
+            <p><b>Indications:</b> {!indications}</p>
+            <hr/>
+            
+            <table>
+                <colgroup>
+                    <col width="10%" />
+                    <col width="40%" />
+                    <col width="10%" />
+                    <col width="40%" />
+                </colgroup>
+                
+                <tr>
+                    <td colspan="2">
+                        <h2>FOLLOWING PHYSICIAN</h2>
+                    </td>
+                    <td colspan="2">
+                        <h2>IMPLANTING PHYSICIAN</h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Name: </td>
+                    <td><apex:outputField value="{!currentOrder.following_physican__r.Name}"/></td>
+                    <td>Name: </td>
+                    <td><apex:outputField value="{!currentOrder.implanting_physician__r.Name}"/></td>
+                    
+                </tr>
+                <tr>
+                    <td>Address: </td>
+                    <td>
+                        <apex:outputField value="{!currentOrder.following_physican__r.mailingstreet}"/> <br/>
+                        <apex:outputField value="{!currentOrder.following_physican__r.mailingcity}"/> 
+                        <apex:outputText value=", "/> 
+                        {!currentOrder.following_physican__r.MailingStateCode}"
+                        <apex:outputText value=" "/> 
+                        <apex:outputField value="{!currentOrder.following_physican__r.mailingpostalcode}"/><br/>
+                    </td>
+                    <td>Address: </td>
+                    <td>
+                        <apex:outputField value="{!currentOrder.implanting_physician__r.mailingstreet}"/> <br/>
+                        <apex:outputField value="{!currentOrder.implanting_physician__r.mailingcity}"/> 
+                        <apex:outputText value=", "/> 
+                        {!currentOrder.implanting_physician__r.MailingStateCode}
+                        <apex:outputText value=" "/> 
+                        <apex:outputField value="{!currentOrder.implanting_physician__r.mailingpostalcode}"/><br/>
+                    </td>
+                    
+                </tr>
+                <tr>
+                    <td>Phone: </td>
+                    <td><apex:outputField value="{!currentOrder.following_physican__r.phone}"/>
+                        <apex:outputText rendered="{!AND(currentOrder.following_physican__r.mobilephone != null && currentOrder.following_physican__r.mobilephone != null)}" value="   OR   "/> 
+                        <apex:outputField value="{!currentOrder.following_physican__r.mobilephone}"/></td>
+                    <td>Phone: </td>
+                    <td>
+                        <apex:outputField value="{!currentOrder.implanting_physician__r.phone}"/>
+                        <apex:outputText rendered="{!AND(currentOrder.implanting_physician__r.mobilephone != null && currentOrder.implanting_physician__r.mobilephone != null)}" value="   OR   "/> 
+                        <apex:outputField value="{!currentOrder.implanting_physician__r.mobilephone}"/>
+                    </td>
+                </tr>
+            </table>
+            
+            <hr />
+        </div>
+        
+        <h2>DEVICE</h2>
+        <table>
+            <tr>
+                <th>
+                    Implant Date
+                </th>
+                <th>
+                    Model No.
+                </th>
+                <th>
+                    Description
+                </th>
+                <th>
+                    Serial No.
+                </th>
+                <th>
+                    Manufacturer
+                </th>
+                <th>
+                    HM PID
+                </th>
+            </tr>
+            <apex:repeat value="{!patientImplantedDeviceList}" var="impDevice">
+                <tr>
+                    <td>
+                        <apex:outputField value="{!impDevice.installdate}"/>
+                    </td>
+                    <td>
+                        <apex:outputField value="{!impDevice.model_no__c}"/>
+                    </td>
+                    <td>
+                        <apex:outputField value="{!impDevice.product2.name}"/>
+                    </td>
+                    <td>
+                        <apex:outputField value="{!impDevice.serialnumber}"/>
+                    </td>
+                    <td>
+                        <apex:outputField value="{!impDevice.manufacturer__c}"/>
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+            </apex:repeat>
+            <tr style="height: 4px;"><td colspan="6">&nbsp;</td></tr>
+            <tr>
+                <th>
+                    Mode
+                </th>
+                <th>
+                    Lower Rate
+                </th>
+                <th>
+                    Upper Rate
+                </th>
+            </tr>
+            <apex:repeat value="{!patientImplantedDeviceList}" var="impDevice">
+                <tr>
+                    <td>
+                        <apex:outputField value="{!impDevice.mode__c}"/>    
+                    </td>
+                    <td>
+                        <apex:outputField value="{!impDevice.lower_rate__c}"/>
+                    </td>
+                    <td>
+                        <apex:outputField value="{!impDevice.upper_rate__c}"/>
+                    </td>
+                </tr>
+            </apex:repeat>
+        </table>
+        
+        Comments: 
+        
+        <hr />
+        
+        <h2>ACTIVE LEADS / ADAPTERS</h2>
+        <table class="patientDataSheetList">
+            <tr>
+                <th>
+                    Imp. Date
+                </th>
+                <th>
+                    Model No.
+                </th>
+                <th>
+                    Description
+                </th>
+                <th>
+                    Serial No.
+                </th>
+                <th>
+                    Manufacturer
+                </th>
+                <th>
+                    Placement
+                </th>
+                <th>
+                    Pwave
+                </th>
+                <th>
+                    Rwave
+                </th>
+                <th>
+                    Volts
+                </th>
+                <th>
+                    ms
+                </th>
+                <th>
+                    ohms
+                </th>
+            </tr>
+            <apex:repeat value="{!patientImplantedLeadsAndAdapters}" var="impLead">
+                <tr>
+                    <td>
+                        <apex:outputField value="{!impLead.installdate}"/>    
+                    </td>
+                    <td>
+                        <apex:outputField value="{!impLead.model_no__c}"/>
+                    </td>
+                    <td>
+                        <apex:outputField value="{!impLead.product2.name}"/>
+                    </td>
+                    <td>
+                        <apex:outputField value="{!impLead.serialnumber}"/>
+                    </td>
+                    <td>
+                        <apex:outputField value="{!impLead.manufacturer__c}"/>
+                    </td>
+                    <td>
+                        <apex:outputField value="{!impLead.Lead_Tip_Location__c}"/>
+                    </td>
+                    <td>
+                        <apex:outputField value="{!impLead.p_amp__c}"/>
+                    </td>
+                    <td>
+                        <apex:outputField value="{!impLead.r_amp__c}"/>
+                    </td>
+                    <td>
+                        <apex:outputField value="{!impLead.Threshold__c}"/>
+                    </td>
+                    <td>
+                        <apex:outputField value="{!impLead.pulse_width__c}"/>
+                    </td>
+                    <td>
+                        <apex:outputField value="{!impLead.impedance__c}"/>
+                    </td>
+                </tr>
+            </apex:repeat>
+        </table>
+        
+        <div style="margin-top: 10px;">
+            &nbsp; <!-- spacer -->
+        </div>
+        
+        <h2>HISTORICAL PRODUCTS</h2>
+        <table class="patientDataSheetList">
+            <tr>
+                <th>
+                    Out of Service Date
+                </th>
+                <th>
+                    Status
+                </th>
+                <th>
+                    Type
+                </th>
+                <th>
+                    Model No.
+                </th>
+                <th>
+                    Serial No.
+                </th>
+                <th>
+                    Manufacturer
+                </th>
+                <th>
+                    Implant Date
+                </th>
+            </tr>
+            <apex:repeat value="{!patientExplantedItems}" var="oos">
+                <tr>
+                    <td>
+                        <apex:outputField value="{!oos.oos_date__c}"/>    
+                    </td>
+                    <td>
+                        <apex:outputField value="{!oos.Status}"/>
+                    </td>
+                    <td>
+                        <apex:outputField value="{!oos.product_type__c}"/>
+                    </td>
+                    <td>
+                        <apex:outputField value="{!oos.model_no__c}"/>
+                    </td>
+                    <td>
+                        <apex:outputField value="{!oos.SerialNumber}"/>
+                    </td>
+                    <td>
+                        <apex:outputField value="{!oos.manufacturer__c}"/>
+                    </td>
+                    <td>
+                        <apex:outputField value="{!oos.InstallDate}"/>
+                    </td>
+                </tr>
+            </apex:repeat>
+        </table>
+        
+        <div style="width: 100%; text-align: right; border-bottom: 1px solid black;"><p class="pds_p" style="margin-bottom: 0px;"><b>Print Date: <apex:outputtext value="{0,date,MM'/'dd'/'yyyy}">
+            <apex:param value="{!TODAY()}"></apex:param>
+            </apex:outputtext></b></p></div>
+    </div>
+    
+    <div style="display:block;page-break-after:always;"></div>
+</apex:page>

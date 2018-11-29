@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <description>Defines mappings between MDM attributes and SObject fields.</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableChangeDataCapture>false</enableChangeDataCapture>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>false</enableReports>
+    <enableSearch>false</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ControlledByParent</externalSharingModel>
+    <fields>
+        <fullName>QIDC__Has_Record_Mapping_ims__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>If checked, this mapping will determine record type mappings.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>If checked, this mapping will determine record type mappings.</inlineHelpText>
+        <label>Defines Record Mapping?</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>QIDC__Is_Primary_Key_ims__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>The Primary Key for the object mapping. Only one field can be Primary Key for a given mapping.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The Primary Key for the object mapping. Only one field can be Primary Key for a given mapping.</inlineHelpText>
+        <label>Is Primary Key?</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>QIDC__Object_Mapping_ims__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The MDM entity that the fields being mapped belong to.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The MDM entity that the fields being mapped belong to.</inlineHelpText>
+        <label>Object Mapping</label>
+        <referenceTo>QIDC__MDM_Object_Mapping_ims__c</referenceTo>
+        <relationshipLabel>MDM Field Mappings</relationshipLabel>
+        <relationshipName>Field_Mappings</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>QIDC__SObject_Field_ims__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Target Salesforce field that is mapped to the attribute.</description>
+        <externalId>true</externalId>
+        <inlineHelpText>Target Salesforce field that is mapped to the attribute.</inlineHelpText>
+        <label>SObject Field</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>QIDC__URI_ims__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Path that is used to reach the attribute configuration.
+Format: configuration/{objectType}/attributes/{AttributeName}</description>
+        <externalId>true</externalId>
+        <inlineHelpText>Path that is used to reach the attribute configuration.
+Format: configuration/{objectType}/attributes/{AttributeName}</inlineHelpText>
+        <label>URI</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>MDM Field Mapping</label>
+    <nameField>
+        <label>Attribute Name</label>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>MDM Field Mappings</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

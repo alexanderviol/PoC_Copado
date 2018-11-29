@@ -1,0 +1,2743 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Activate</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Approve</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Deactivate</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>NewReduction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ReduceOrder</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>MDRF_Order_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <enableFeeds>true</enableFeeds>
+    <fields>
+        <fullName>AccountId</fullName>
+        <lookupFilter>
+            <active>true</active>
+            <booleanFilter>1 AND 2</booleanFilter>
+            <filterItems>
+                <field>Account.status__c</field>
+                <operation>equals</operation>
+                <value>active</value>
+            </filterItems>
+            <filterItems>
+                <field>Account.RecordTypeId</field>
+                <operation>notEqual</operation>
+                <value>Patient Account</value>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>AccountNumber</fullName>
+    </fields>
+    <fields>
+        <fullName>ActivatedById</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ActivatedDate</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>BillToContactId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>BillingAddress</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+    </fields>
+    <fields>
+        <fullName>CompanyAuthorizedById</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>CompanyAuthorizedDate</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+    </fields>
+    <fields>
+        <fullName>ContractEndDate</fullName>
+    </fields>
+    <fields>
+        <fullName>ContractId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ContractName</fullName>
+    </fields>
+    <fields>
+        <fullName>CurrencyIsoCode</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+    </fields>
+    <fields>
+        <fullName>CustomerAuthorizedById</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>CustomerAuthorizedDate</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Description</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+    </fields>
+    <fields>
+        <fullName>EffectiveDate</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+    </fields>
+    <fields>
+        <fullName>EndDate</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>IsReductionOrder</fullName>
+    </fields>
+    <fields>
+        <fullName>Name</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+    </fields>
+    <fields>
+        <fullName>OpportunityId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>OrderReferenceNumber</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+    </fields>
+    <fields>
+        <fullName>OriginalOrderId</fullName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>OwnerId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>PoDate</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+    </fields>
+    <fields>
+        <fullName>PoNumber</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+    </fields>
+    <fields>
+        <fullName>ShipToContactId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ShippingAddress</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+    </fields>
+    <fields>
+        <fullName>TotalAmount</fullName>
+    </fields>
+    <fields>
+        <fullName>Type</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>account_crm_region__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT(Account.account_crm_region__c)</formula>
+        <label>Account CRM Region</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>account_vi_region__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT(Account.account_vi_region__c)</formula>
+        <label>Account VI Region</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>address_verified__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Verification status of the address selected for CM Order, based on the selected Patient record</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Verification status of the selected Patient address</inlineHelpText>
+        <label>Address Verified</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>afib__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>AFIB</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>atrial_tachycadria__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Atrial Tachycadria</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>biosmart_id__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <externalId>true</externalId>
+        <label>BIOSMART ID</label>
+        <length>30</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>brady_gross_sales__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Shows the total unit price of Brady items on the Order.</inlineHelpText>
+        <label>Brady Gross Sales</label>
+        <summarizedField>OrderItem.UnitPrice</summarizedField>
+        <summaryFilterItems>
+            <field>OrderItem.main_group__c</field>
+            <operation>equals</operation>
+            <value>Bradycardia</value>
+        </summaryFilterItems>
+        <summaryForeignKey>OrderItem.OrderId</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>brady_leads__c</fullName>
+        <description>Shows the number of Brady Leads used on the Order.</description>
+        <externalId>false</externalId>
+        <label>Brady Leads</label>
+        <summaryFilterItems>
+            <field>OrderItem.product_type__c</field>
+            <operation>equals</operation>
+            <value>Lead</value>
+        </summaryFilterItems>
+        <summaryFilterItems>
+            <field>OrderItem.main_group__c</field>
+            <operation>equals</operation>
+            <value>Bradycardia</value>
+        </summaryFilterItems>
+        <summaryForeignKey>OrderItem.OrderId</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>brady_projected_net_sales__c</fullName>
+        <externalId>false</externalId>
+        <formula>brady_gross_sales__c * 0.9725</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Shows the Brady Gross Sales minus 2.75%.</inlineHelpText>
+        <label>Brady Projected Net Sales</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>brady_tachy_syndrome__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Brady/Tachy Syndrome</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>brady_units__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Shows the number of Brady units used in the Order.</inlineHelpText>
+        <label>Brady Units</label>
+        <summaryFilterItems>
+            <field>OrderItem.product_type__c</field>
+            <operation>equals</operation>
+            <value>CRT-D, CRT-P, ICD, Pacemaker</value>
+        </summaryFilterItems>
+        <summaryFilterItems>
+            <field>OrderItem.main_group__c</field>
+            <operation>equals</operation>
+            <value>Bradycardia</value>
+        </summaryFilterItems>
+        <summaryForeignKey>OrderItem.OrderId</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>cardiomessenger_units__c</fullName>
+        <description>Used in reporting.</description>
+        <externalId>false</externalId>
+        <label>CardioMessenger Units</label>
+        <summaryFilterItems>
+            <field>OrderItem.product_type__c</field>
+            <operation>equals</operation>
+            <value>Cardio Messenger</value>
+        </summaryFilterItems>
+        <summaryForeignKey>OrderItem.OrderId</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>cas_validation_completed__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>CAS validation completed</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>cash_on_delivery__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(  Account.cod__c  , IMAGE(&quot;/img/icon/cash32.png&quot;, &quot;&quot;), &apos;&apos;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Cash on Delivery</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>chf__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>CHF</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>comments_ship_to__c</fullName>
+        <externalId>false</externalId>
+        <label>Comments (Ship to)</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>date_address_verified__c</fullName>
+        <description>Date of the verification of the selected Patient address, automatically updated</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Verification date of the selected Patient Address</inlineHelpText>
+        <label>Date Address Verified</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>date_cm_approved__c</fullName>
+        <externalId>false</externalId>
+        <label>Date CM Approved</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>date_cm_shipped__c</fullName>
+        <description>Used for setting time stamp when the CM was shipped.</description>
+        <externalId>false</externalId>
+        <label>Date CM Shipped</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>date_cm_submitted__c</fullName>
+        <description>Used for setting time stamp when the CM was submitted.</description>
+        <externalId>false</externalId>
+        <label>Date CM Submitted</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>date_po_entered__c</fullName>
+        <externalId>false</externalId>
+        <label>Date PO Entered</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>days_since_procedure__c</fullName>
+        <externalId>false</externalId>
+        <formula>TODAY() - implant_date__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Days Since Procedure</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>diagnostic_gross_sales__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Shows the total unit price of Diagnostic items on the Order.</inlineHelpText>
+        <label>Diagnostic Gross Sales</label>
+        <summarizedField>OrderItem.UnitPrice</summarizedField>
+        <summaryFilterItems>
+            <field>OrderItem.main_group__c</field>
+            <operation>equals</operation>
+            <value>Diagnostic</value>
+        </summaryFilterItems>
+        <summaryForeignKey>OrderItem.OrderId</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>diagnostic_projected_net_sales__c</fullName>
+        <externalId>false</externalId>
+        <formula>diagnostic_gross_sales__c * 0.9725</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Shows the Diagnostic Gross Sales minus 2.75%.</inlineHelpText>
+        <label>Diagnostic Projected Net Sales</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>diagnostic_units__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>The number of Diagnostic units on the Order.</inlineHelpText>
+        <label>Diagnostic Units</label>
+        <summaryFilterItems>
+            <field>OrderItem.product_type__c</field>
+            <operation>equals</operation>
+            <value>CRT-D, CRT-P, ICD, Loop Recorder, Pacemaker</value>
+        </summaryFilterItems>
+        <summaryFilterItems>
+            <field>OrderItem.main_group__c</field>
+            <operation>equals</operation>
+            <value>Diagnostic</value>
+        </summaryFilterItems>
+        <summaryForeignKey>OrderItem.OrderId</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>division_mdrf__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(
+AND(
+brady_units__c &gt; diagnostic_units__c, 
+brady_units__c &gt; tachy_units__c),
+&quot;Bradycardia&quot;,
+
+IF(
+AND(
+tachy_units__c &gt; brady_units__c,
+tachy_units__c &gt; diagnostic_units__c),
+&quot;Tachycardia&quot;,
+
+IF(
+cardiomessenger_units__c &gt; 0,
+&quot;Bradycardia&quot;,
+
+IF(
+AND(
+diagnostic_units__c &gt; brady_units__c, 
+diagnostic_units__c &gt; tachy_units__c),
+&quot;Diagnostic&quot;,
+
+IF(
+AND(
+tachy_leads__c = 0,
+brady_leads__c = 0),
+&quot;Bradycardia&quot;,
+
+IF(
+tachy_leads__c &gt; 0,
+&quot;Tachycardia&quot;,
+
+IF(
+brady_leads__c &gt; 0,
+&quot;Bradycardia&quot;,
+
+&quot;Diagnostic&quot;)))))))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Division (MDRF)</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>division_number_mdrf__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(
+AND(
+brady_units__c &gt; diagnostic_units__c, 
+brady_units__c &gt; tachy_units__c),
+&quot;10&quot;,
+
+IF(
+AND(
+tachy_units__c &gt; brady_units__c,
+tachy_units__c &gt; diagnostic_units__c),
+&quot;20&quot;,
+
+IF(
+cardiomessenger_units__c &gt; 0,
+&quot;10&quot;,
+
+IF(
+AND(
+diagnostic_units__c &gt; brady_units__c, 
+diagnostic_units__c &gt; tachy_units__c),
+&quot;05&quot;,
+
+IF( 
+AND( 
+tachy_leads__c = 0, 
+brady_leads__c = 0), 
+&quot;10&quot;,
+
+IF( 
+tachy_leads__c &gt; 0, 
+&quot;20&quot;, 
+
+IF( 
+brady_leads__c &gt; 0, 
+&quot;10&quot;, 
+
+&quot;05&quot;)))))))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Division Number (MDRF)</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>donation__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Donation</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>donation_reviewed__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Donation reviewed</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>external_id__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <externalId>true</externalId>
+        <label>External ID</label>
+        <length>30</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>following_physican__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Following Physician</label>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>Contact.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Physician</value>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Orders (Following Physican)</relationshipLabel>
+        <relationshipName>Orders1</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>implant_date__c</fullName>
+        <description>Defines the date of the implant procedure.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Date of the Implant Procedure</inlineHelpText>
+        <label>Implant date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>implanting_physician__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Implanting Physician</label>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>Contact.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Physician</value>
+            </filterItems>
+            <filterItems>
+                <field>Contact.Account.status__c</field>
+                <operation>equals</operation>
+                <value>Active</value>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Orders (Implanting Physician)</relationshipLabel>
+        <relationshipName>Orders3</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>inventory_review_completed__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Checkbox to track whether CS-Team has reviewed for device-tracking purposes</description>
+        <externalId>false</externalId>
+        <label>Customer Solutions Review Completed</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>invoice_unpaid_over_credit_limit__c</fullName>
+        <description>Displays a soft warning if the implanting facility is past due on unpaid invoices or over their credit limit.</description>
+        <externalId>false</externalId>
+        <formula>Account.invoice_unpaid__c || Account.over_credit_limit__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Invoice Unpaid/Over Credit Limit</label>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>is_locked__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Indicates whether an order is locked by order submission job</description>
+        <externalId>false</externalId>
+        <label>IsLocked</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>mdrf_is_mine__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(
+OR(
+rep_at_implant__r.Id = $User.Id,
+rep_for_credit__r.Id = $User.Id),
+1,
+0)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>MDRF Is Mine</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>mdrf_reimport_timestamp__c</fullName>
+        <description>This field will be used to re import the MDRF.</description>
+        <externalId>false</externalId>
+        <label>MDRF Reimport Timestamp</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>medical_record_no__c</fullName>
+        <description>Unique identifier issued to the patient by the hospital</description>
+        <externalId>false</externalId>
+        <label>Medical Record No.</label>
+        <length>30</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>mi__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>MI</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>no_rep_present_at_implant__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>The system must allow the user entering the MDRF to indicate that BIOTRONIK representative was not present at the implant.</description>
+        <externalId>false</externalId>
+        <label>No Rep present at implant</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>num_cm_products__c</fullName>
+        <externalId>false</externalId>
+        <label>Number of Cardio Messenger Products</label>
+        <summaryFilterItems>
+            <field>OrderItem.product_type__c</field>
+            <operation>equals</operation>
+            <value>Cardio Messenger</value>
+        </summaryFilterItems>
+        <summaryForeignKey>OrderItem.OrderId</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>num_hm_products__c</fullName>
+        <externalId>false</externalId>
+        <label>Number of Home Monitoring Products</label>
+        <summaryFilterItems>
+            <field>OrderItem.model_no__c</field>
+            <operation>equals</operation>
+            <value>358364</value>
+        </summaryFilterItems>
+        <summaryForeignKey>OrderItem.OrderId</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>one_hb__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>1° HB</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>order_owner_queue_value__c</fullName>
+        <description>This Formula text return the owner queue Name that we will used for filtring orders that are pushed to the queue.</description>
+        <externalId>false</externalId>
+        <formula>Owner:Queue.QueueName</formula>
+        <label>Order Owner Queue Value</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ous_patient__c</fullName>
+        <description>Auto-displayed on the MDRF when the related Patient marked OUS</description>
+        <externalId>false</externalId>
+        <formula>patient__r.ous_patient__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>OUS Patient</label>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>patient__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Patient</label>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>Contact.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Patient</value>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Orders (Patient)</relationshipLabel>
+        <relationshipName>Orders2</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>patient_verified__c</fullName>
+        <description>Value of the comparable field in the related Patient record auto-displayed in this CM Order Formula based checkbox.</description>
+        <externalId>false</externalId>
+        <formula>patient__r.contact_verified__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Patient Verified</label>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>pricebook__c</fullName>
+        <externalId>false</externalId>
+        <label>Pricebook</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>CRM</fullName>
+                    <default>false</default>
+                    <label>CRM</label>
+                </value>
+                <value>
+                    <fullName>CVI</fullName>
+                    <default>false</default>
+                    <label>CVI</label>
+                </value>
+                <value>
+                    <fullName>PVI</fullName>
+                    <default>false</default>
+                    <label>PVI</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>reached_cancelled_status__c</fullName>
+        <externalId>false</externalId>
+        <label>Reached Cancelled Status</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>reached_invoiced_status__c</fullName>
+        <externalId>false</externalId>
+        <label>Reached Invoiced Status</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>reached_processing_status__c</fullName>
+        <externalId>false</externalId>
+        <label>Reached Processing Status</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>reached_submitted_status__c</fullName>
+        <externalId>false</externalId>
+        <label>Reached Submitted Status</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>referring_physician__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Physician who referred the patient</description>
+        <externalId>false</externalId>
+        <label>Referring Physician</label>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>Contact.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Physician</value>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Orders (Referring Physician)</relationshipLabel>
+        <relationshipName>Orders</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>rep_at_implant__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>BIOTRONIK representative (Sales Rep, FCS) CONTACT record in attendance at the implant</description>
+        <externalId>false</externalId>
+        <label>Rep at implant</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Orders1</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>rep_for_credit__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Rep for Credit</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Orders</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>sap_billing_block__c</fullName>
+        <description>Billing block number returned from SAP</description>
+        <externalId>false</externalId>
+        <label>SAP Billing Block</label>
+        <length>30</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>sap_company_code__c</fullName>
+        <externalId>false</externalId>
+        <label>Company Code</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Company_Code</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>sap_error_message__c</fullName>
+        <description>Text of error message returned from SAP</description>
+        <externalId>false</externalId>
+        <label>SAP Error Message</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>sap_inquiry_no__c</fullName>
+        <description>Inquiry number returned from SAP</description>
+        <externalId>false</externalId>
+        <label>SAP Inquiry No</label>
+        <length>30</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>sap_invoice_no__c</fullName>
+        <description>Invoice number returned from SAP</description>
+        <externalId>false</externalId>
+        <label>SAP Invoice No</label>
+        <length>80</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>sap_order_no__c</fullName>
+        <description>Order number returned from SAP</description>
+        <externalId>false</externalId>
+        <label>SAP Order No</label>
+        <length>30</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>scd__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>SCD</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>ship_to__c</fullName>
+        <description>Used to define the shipment address for the CM in case no direct hand-out. Picklist values: Mailing Address, Shipping Address, Direct Hand-out</description>
+        <externalId>false</externalId>
+        <label>Ship to</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Direct Hand-out</fullName>
+                    <default>false</default>
+                    <label>Direct Hand-out</label>
+                </value>
+                <value>
+                    <fullName>Direct Ship</fullName>
+                    <default>false</default>
+                    <label>Direct Ship</label>
+                </value>
+                <value>
+                    <fullName>Direct Ship Replacement</fullName>
+                    <default>false</default>
+                    <label>Direct Ship Replacement</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>sick_sinus_syndrome__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Sick Sinus Syndrome</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>sinus_arrest__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Sinus Arrest</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>sinus_bradycardia__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Sinus Bradycardia</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>submission_attempts__c</fullName>
+        <defaultValue>0</defaultValue>
+        <description>Technical Field. Number of attempts to submit the order to SAP.</description>
+        <externalId>false</externalId>
+        <label>Submission Attempts</label>
+        <precision>2</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>submit_to_sap__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>checkbox which triggers the status change to &apos;Submitted&apos; and Submission process to SAP</description>
+        <externalId>false</externalId>
+        <label>Submit to SAP</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>submitted_date__c</fullName>
+        <description>Timestamp of when the user submitted the order</description>
+        <externalId>false</externalId>
+        <label>Submitted Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>tachy_gross_sales__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Shows the total unit price of Tachy items on the Order.</inlineHelpText>
+        <label>Tachy Gross Sales</label>
+        <summarizedField>OrderItem.UnitPrice</summarizedField>
+        <summaryFilterItems>
+            <field>OrderItem.main_group__c</field>
+            <operation>equals</operation>
+            <value>Tachycardia</value>
+        </summaryFilterItems>
+        <summaryForeignKey>OrderItem.OrderId</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>tachy_leads__c</fullName>
+        <description>Shows the number of Tachy Leads used in the Order.</description>
+        <externalId>false</externalId>
+        <label>Tachy Leads</label>
+        <summaryFilterItems>
+            <field>OrderItem.product_type__c</field>
+            <operation>equals</operation>
+            <value>Lead</value>
+        </summaryFilterItems>
+        <summaryFilterItems>
+            <field>OrderItem.main_group__c</field>
+            <operation>equals</operation>
+            <value>Tachycardia</value>
+        </summaryFilterItems>
+        <summaryForeignKey>OrderItem.OrderId</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>tachy_projected_net_sales__c</fullName>
+        <externalId>false</externalId>
+        <formula>tachy_gross_sales__c * 0.9725</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Shows the Tachy Gross Sales minus 2.75%.</inlineHelpText>
+        <label>Tachy Projected Net Sales</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>tachy_units__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Shows the number of Tachy devices on the Order.</inlineHelpText>
+        <label>Tachy Units</label>
+        <summaryFilterItems>
+            <field>OrderItem.product_type__c</field>
+            <operation>equals</operation>
+            <value>CRT-D, CRT-P, ICD, Pacemaker</value>
+        </summaryFilterItems>
+        <summaryFilterItems>
+            <field>OrderItem.main_group__c</field>
+            <operation>equals</operation>
+            <value>Tachycardia</value>
+        </summaryFilterItems>
+        <summaryForeignKey>OrderItem.OrderId</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>three_hc_chb__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>3° HB/CHB</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>time_to_po__c</fullName>
+        <externalId>false</externalId>
+        <formula>date_po_entered__c -implant_date__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>The number of days between the date the PO was entered and the implant date.</inlineHelpText>
+        <label>Time to PO</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>time_to_submit__c</fullName>
+        <externalId>false</externalId>
+        <formula>DATEVALUE(submitted_date__c) - implant_date__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Time to Submit</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tracking_no__c</fullName>
+        <description>Tracking number for CMDS shipments.</description>
+        <externalId>false</externalId>
+        <label>Tracking No.</label>
+        <length>30</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>two_hb__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>2° HB</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>validation_reason__c</fullName>
+        <description>Auto-filled comment field to create task description lines for CAS</description>
+        <externalId>false</externalId>
+        <label>Validation Reason</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>None</fullName>
+                    <default>true</default>
+                    <label>None</label>
+                </value>
+                <value>
+                    <fullName>Price Discrepancy Reason = Bulk swap</fullName>
+                    <default>false</default>
+                    <label>Price Discrepancy Reason = Bulk swap</label>
+                </value>
+                <value>
+                    <fullName>Implanting facility in Puerto Rico**</fullName>
+                    <default>false</default>
+                    <label>Implanting facility in Puerto Rico**</label>
+                </value>
+                <value>
+                    <fullName>Alphanumeric PO Number**</fullName>
+                    <default>false</default>
+                    <label>Alphanumeric PO Number**</label>
+                </value>
+                <value>
+                    <fullName>Donation**</fullName>
+                    <default>false</default>
+                    <label>Donation**</label>
+                </value>
+                <value>
+                    <fullName>Bulk Product with Price &gt; $0</fullName>
+                    <default>false</default>
+                    <label>Bulk Product with Price &gt; $0</label>
+                </value>
+                <value>
+                    <fullName>Part of System &amp; Price &gt; $0</fullName>
+                    <default>false</default>
+                    <label>Part of System &amp; Price &gt; $0</label>
+                </value>
+                <value>
+                    <fullName>$0 Product outside System</fullName>
+                    <default>false</default>
+                    <label>$0 Product outside System</label>
+                </value>
+                <value>
+                    <fullName>Unverified physician</fullName>
+                    <default>false</default>
+                    <label>Unverified physician</label>
+                </value>
+                <value>
+                    <fullName>Device with no leads</fullName>
+                    <default>false</default>
+                    <label>Device with no leads</label>
+                </value>
+                <value>
+                    <fullName>Patient Shipping Address is P.O. Box</fullName>
+                    <default>false</default>
+                    <label>Patient Shipping Address is P.O. Box</label>
+                </value>
+                <value>
+                    <fullName>Unverified Patient Shipping Address</fullName>
+                    <default>false</default>
+                    <label>Unverified Patient Shipping Address</label>
+                </value>
+                <value>
+                    <fullName>Lead with no Device</fullName>
+                    <default>false</default>
+                    <label>Lead with no Device</label>
+                </value>
+                <value>
+                    <fullName>Device with only one Lead</fullName>
+                    <default>false</default>
+                    <label>Device with only one Lead</label>
+                </value>
+                <value>
+                    <fullName>More than 1 Device on MDRF</fullName>
+                    <default>false</default>
+                    <label>More than 1 Device on MDRF</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>6</visibleLines>
+    </fields>
+    <fields>
+        <fullName>vf__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>VF</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>vt__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>VT</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <listViews>
+        <fullName>AllOrders</fullName>
+        <columns>ORDERS.ORDER_NUMBER</columns>
+        <columns>implant_date__c</columns>
+        <columns>patient__c</columns>
+        <columns>SALES.ACCOUNT.NAME</columns>
+        <columns>ORDERS.STATUS</columns>
+        <filterScope>Everything</filterScope>
+        <label>All Orders</label>
+        <sharedTo>
+            <roleAndSubordinates>US_National_Manager</roleAndSubordinates>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Customer_Solution_Review_Brady</fullName>
+        <columns>ORDERS.ORDER_NUMBER</columns>
+        <columns>validation_reason__c</columns>
+        <columns>implant_date__c</columns>
+        <columns>SALES.ACCOUNT.NAME</columns>
+        <columns>rep_at_implant__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>inventory_review_completed__c</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>division_mdrf__c</field>
+            <operation>equals</operation>
+            <value>Bradycardia</value>
+        </filters>
+        <label>Customer Solutions Review - Brady</label>
+        <sharedTo>
+            <role>BINC_Customer_Solutions</role>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Customer_Solution_Review_Diagnostic</fullName>
+        <columns>ORDERS.ORDER_NUMBER</columns>
+        <columns>validation_reason__c</columns>
+        <columns>implant_date__c</columns>
+        <columns>SALES.ACCOUNT.NAME</columns>
+        <columns>rep_at_implant__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>inventory_review_completed__c</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>division_mdrf__c</field>
+            <operation>equals</operation>
+            <value>Diagnostic</value>
+        </filters>
+        <label>Customer Solutions Review - Diagnostic</label>
+        <sharedTo>
+            <role>BINC_Customer_Solutions</role>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Customer_Solution_Review_Other_Div</fullName>
+        <columns>ORDERS.ORDER_NUMBER</columns>
+        <columns>validation_reason__c</columns>
+        <columns>implant_date__c</columns>
+        <columns>SALES.ACCOUNT.NAME</columns>
+        <columns>rep_at_implant__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>inventory_review_completed__c</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>division_mdrf__c</field>
+            <operation>notEqual</operation>
+            <value>Bradycardia,Diagnostic,Tachycardia</value>
+        </filters>
+        <label>Customer Solutions Review - Other Div</label>
+        <sharedTo>
+            <role>BINC_Customer_Solutions</role>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Customer_Solution_Review_Tachy</fullName>
+        <columns>ORDERS.ORDER_NUMBER</columns>
+        <columns>validation_reason__c</columns>
+        <columns>implant_date__c</columns>
+        <columns>SALES.ACCOUNT.NAME</columns>
+        <columns>rep_at_implant__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>inventory_review_completed__c</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>division_mdrf__c</field>
+            <operation>equals</operation>
+            <value>Tachycardia</value>
+        </filters>
+        <label>Customer Solutions Review - Tachy</label>
+        <sharedTo>
+            <role>BINC_Customer_Solutions</role>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Customer_Solution_Review_Worklist</fullName>
+        <booleanFilter>(1 OR 2 OR 3 OR 4) AND 5</booleanFilter>
+        <columns>ORDERS.ORDER_NUMBER</columns>
+        <columns>validation_reason__c</columns>
+        <columns>implant_date__c</columns>
+        <columns>SALES.ACCOUNT.NAME</columns>
+        <columns>patient__c</columns>
+        <columns>rep_at_implant__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>validation_reason__c</field>
+            <operation>includes</operation>
+            <value>Device with no leads</value>
+        </filters>
+        <filters>
+            <field>validation_reason__c</field>
+            <operation>includes</operation>
+            <value>Lead with no Device</value>
+        </filters>
+        <filters>
+            <field>validation_reason__c</field>
+            <operation>includes</operation>
+            <value>Unverified physician</value>
+        </filters>
+        <filters>
+            <field>validation_reason__c</field>
+            <operation>includes</operation>
+            <value>Device with only one Lead</value>
+        </filters>
+        <filters>
+            <field>inventory_review_completed__c</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <label>Customer Solutions Review - All</label>
+        <sharedTo>
+            <role>BINC_Customer_Solutions</role>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>MDRF_Orders_without_PO</fullName>
+        <columns>ORDERS.ORDER_NUMBER</columns>
+        <columns>SALES.ACCOUNT.NAME</columns>
+        <columns>ORDERS.STATUS</columns>
+        <columns>implant_date__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>ORDER.PO_NUMBER</field>
+            <operation>equals</operation>
+        </filters>
+        <filters>
+            <field>ORDERS.STATUS</field>
+            <operation>notEqual</operation>
+            <value>Not Submitted,Canceled</value>
+        </filters>
+        <label>Orders without PO</label>
+        <sharedTo>
+            <role>BINC_Sales</role>
+            <role>BINC_Sales_Operations</role>
+            <roleAndSubordinates>AVP_Central</roleAndSubordinates>
+            <roleAndSubordinates>AVP_East</roleAndSubordinates>
+            <roleAndSubordinates>AVP_West</roleAndSubordinates>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>My_Orders</fullName>
+        <columns>ORDERS.ORDER_NUMBER</columns>
+        <columns>implant_date__c</columns>
+        <columns>patient__c</columns>
+        <columns>SALES.ACCOUNT.NAME</columns>
+        <columns>ORDERS.STATUS</columns>
+        <filterScope>Mine</filterScope>
+        <label>My Orders</label>
+        <sharedTo>
+            <role>BINC_Sales</role>
+            <roleAndSubordinates>AVP_Central</roleAndSubordinates>
+            <roleAndSubordinates>AVP_East</roleAndSubordinates>
+            <roleAndSubordinates>AVP_West</roleAndSubordinates>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>SAP_Error_Review_Central</fullName>
+        <columns>ORDERS.ORDER_NUMBER</columns>
+        <columns>sap_error_message__c</columns>
+        <columns>SALES.ACCOUNT.NAME</columns>
+        <columns>patient__c</columns>
+        <columns>implant_date__c</columns>
+        <columns>rep_for_credit__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>ORDERS.STATUS</field>
+            <operation>equals</operation>
+            <value>SAP Error Review</value>
+        </filters>
+        <filters>
+            <field>ORDER.RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Order.mdrf_order</value>
+        </filters>
+        <filters>
+            <field>account_crm_region__c</field>
+            <operation>equals</operation>
+            <value>55W3,55C2,55C1,55CE,55C3,55C5,55WP</value>
+        </filters>
+        <label>SAP Error Review - Central</label>
+        <sharedTo>
+            <role>BINC_Sales_Operations</role>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>SAP_Error_Review_East</fullName>
+        <columns>ORDERS.ORDER_NUMBER</columns>
+        <columns>sap_error_message__c</columns>
+        <columns>SALES.ACCOUNT.NAME</columns>
+        <columns>patient__c</columns>
+        <columns>implant_date__c</columns>
+        <columns>rep_for_credit__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>ORDERS.STATUS</field>
+            <operation>equals</operation>
+            <value>SAP Error Review</value>
+        </filters>
+        <filters>
+            <field>ORDER.RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Order.mdrf_order</value>
+        </filters>
+        <filters>
+            <field>account_crm_region__c</field>
+            <operation>equals</operation>
+            <value>55EB,55EC,55PR,55E7,55EA,55E2,55E8,55E4,55EF,55WP</value>
+        </filters>
+        <label>SAP Error Review - East</label>
+        <sharedTo>
+            <role>BINC_Sales_Operations</role>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>SAP_Error_Review_West</fullName>
+        <columns>ORDERS.ORDER_NUMBER</columns>
+        <columns>sap_error_message__c</columns>
+        <columns>SALES.ACCOUNT.NAME</columns>
+        <columns>patient__c</columns>
+        <columns>implant_date__c</columns>
+        <columns>rep_for_credit__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>ORDERS.STATUS</field>
+            <operation>equals</operation>
+            <value>SAP Error Review</value>
+        </filters>
+        <filters>
+            <field>ORDER.RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Order.mdrf_order</value>
+        </filters>
+        <filters>
+            <field>account_crm_region__c</field>
+            <operation>equals</operation>
+            <value>55W9,55W8,55WA,55WC,55WB</value>
+        </filters>
+        <label>SAP Error Review - West</label>
+        <sharedTo>
+            <role>BINC_Sales_Operations</role>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>SAP_Error_Review_Worklist</fullName>
+        <columns>ORDERS.ORDER_NUMBER</columns>
+        <columns>sap_error_message__c</columns>
+        <columns>SALES.ACCOUNT.NAME</columns>
+        <columns>patient__c</columns>
+        <columns>implant_date__c</columns>
+        <columns>rep_for_credit__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>ORDERS.STATUS</field>
+            <operation>equals</operation>
+            <value>SAP Error Review</value>
+        </filters>
+        <filters>
+            <field>ORDER.RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Order.mdrf_order</value>
+        </filters>
+        <label>SAP Error Review - All</label>
+        <sharedTo>
+            <role>BINC_Sales_Operations</role>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Sales_Ops_Review_Central</fullName>
+        <booleanFilter>(1 OR 2 OR 3 OR 4 OR 5 OR 6) AND 7</booleanFilter>
+        <columns>ORDERS.ORDER_NUMBER</columns>
+        <columns>validation_reason__c</columns>
+        <columns>SALES.ACCOUNT.NAME</columns>
+        <columns>patient__c</columns>
+        <columns>ORDERS.STATUS</columns>
+        <columns>implant_date__c</columns>
+        <columns>rep_for_credit__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>validation_reason__c</field>
+            <operation>includes</operation>
+            <value>Implanting facility in Puerto Rico**</value>
+        </filters>
+        <filters>
+            <field>validation_reason__c</field>
+            <operation>includes</operation>
+            <value>Part of System &amp; Price &gt; $0</value>
+        </filters>
+        <filters>
+            <field>validation_reason__c</field>
+            <operation>includes</operation>
+            <value>Bulk Product with Price &gt; $0</value>
+        </filters>
+        <filters>
+            <field>validation_reason__c</field>
+            <operation>includes</operation>
+            <value>$0 Product outside System</value>
+        </filters>
+        <filters>
+            <field>validation_reason__c</field>
+            <operation>includes</operation>
+            <value>Alphanumeric PO Number**</value>
+        </filters>
+        <filters>
+            <field>validation_reason__c</field>
+            <operation>includes</operation>
+            <value>Price Discrepancy Reason = Bulk swap</value>
+        </filters>
+        <filters>
+            <field>account_crm_region__c</field>
+            <operation>equals</operation>
+            <value>55W3,55C2,55C1,55CE,55C3,55C5,55WP</value>
+        </filters>
+        <label>Sales Ops Review - Central</label>
+        <sharedTo>
+            <role>BINC_Sales_Operations</role>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Sales_Ops_Review_East</fullName>
+        <booleanFilter>(1 OR 2 OR 3 OR 4 OR 5 OR 6) AND 7</booleanFilter>
+        <columns>ORDERS.ORDER_NUMBER</columns>
+        <columns>validation_reason__c</columns>
+        <columns>SALES.ACCOUNT.NAME</columns>
+        <columns>patient__c</columns>
+        <columns>ORDERS.STATUS</columns>
+        <columns>implant_date__c</columns>
+        <columns>rep_for_credit__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>validation_reason__c</field>
+            <operation>includes</operation>
+            <value>Implanting facility in Puerto Rico**</value>
+        </filters>
+        <filters>
+            <field>validation_reason__c</field>
+            <operation>includes</operation>
+            <value>Part of System &amp; Price &gt; $0</value>
+        </filters>
+        <filters>
+            <field>validation_reason__c</field>
+            <operation>includes</operation>
+            <value>Bulk Product with Price &gt; $0</value>
+        </filters>
+        <filters>
+            <field>validation_reason__c</field>
+            <operation>includes</operation>
+            <value>$0 Product outside System</value>
+        </filters>
+        <filters>
+            <field>validation_reason__c</field>
+            <operation>includes</operation>
+            <value>Alphanumeric PO Number**</value>
+        </filters>
+        <filters>
+            <field>validation_reason__c</field>
+            <operation>includes</operation>
+            <value>Price Discrepancy Reason = Bulk swap</value>
+        </filters>
+        <filters>
+            <field>account_crm_region__c</field>
+            <operation>equals</operation>
+            <value>55EB,55EC,55PR,55E7,55EA,55E2,55E8,55E4,55EF,55WP</value>
+        </filters>
+        <label>Sales Ops Review - East</label>
+        <sharedTo>
+            <role>BINC_Sales_Operations</role>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Sales_Ops_Review_West</fullName>
+        <booleanFilter>(1 OR 2 OR 3 OR 4 OR 5 OR 6) AND 7</booleanFilter>
+        <columns>ORDERS.ORDER_NUMBER</columns>
+        <columns>validation_reason__c</columns>
+        <columns>SALES.ACCOUNT.NAME</columns>
+        <columns>patient__c</columns>
+        <columns>ORDERS.STATUS</columns>
+        <columns>implant_date__c</columns>
+        <columns>rep_for_credit__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>validation_reason__c</field>
+            <operation>includes</operation>
+            <value>Implanting facility in Puerto Rico**</value>
+        </filters>
+        <filters>
+            <field>validation_reason__c</field>
+            <operation>includes</operation>
+            <value>Part of System &amp; Price &gt; $0</value>
+        </filters>
+        <filters>
+            <field>validation_reason__c</field>
+            <operation>includes</operation>
+            <value>Bulk Product with Price &gt; $0</value>
+        </filters>
+        <filters>
+            <field>validation_reason__c</field>
+            <operation>includes</operation>
+            <value>$0 Product outside System</value>
+        </filters>
+        <filters>
+            <field>validation_reason__c</field>
+            <operation>includes</operation>
+            <value>Alphanumeric PO Number**</value>
+        </filters>
+        <filters>
+            <field>validation_reason__c</field>
+            <operation>includes</operation>
+            <value>Price Discrepancy Reason = Bulk swap</value>
+        </filters>
+        <filters>
+            <field>account_crm_region__c</field>
+            <operation>equals</operation>
+            <value>55W9,55W8,55WA,55WB,55WC</value>
+        </filters>
+        <label>Sales Ops Review - West</label>
+        <sharedTo>
+            <role>BINC_Sales_Operations</role>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Sales_Ops_Review_Worklist</fullName>
+        <booleanFilter>1 OR 2 OR 3 OR 4 OR 5 OR 6</booleanFilter>
+        <columns>ORDERS.ORDER_NUMBER</columns>
+        <columns>validation_reason__c</columns>
+        <columns>SALES.ACCOUNT.NAME</columns>
+        <columns>patient__c</columns>
+        <columns>ORDERS.STATUS</columns>
+        <columns>implant_date__c</columns>
+        <columns>rep_for_credit__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>validation_reason__c</field>
+            <operation>includes</operation>
+            <value>Implanting facility in Puerto Rico**</value>
+        </filters>
+        <filters>
+            <field>validation_reason__c</field>
+            <operation>includes</operation>
+            <value>Part of System &amp; Price &gt; $0</value>
+        </filters>
+        <filters>
+            <field>validation_reason__c</field>
+            <operation>includes</operation>
+            <value>Bulk Product with Price &gt; $0</value>
+        </filters>
+        <filters>
+            <field>validation_reason__c</field>
+            <operation>includes</operation>
+            <value>$0 Product outside System</value>
+        </filters>
+        <filters>
+            <field>validation_reason__c</field>
+            <operation>includes</operation>
+            <value>Alphanumeric PO Number**</value>
+        </filters>
+        <filters>
+            <field>validation_reason__c</field>
+            <operation>includes</operation>
+            <value>Price Discrepancy Reason = Bulk swap</value>
+        </filters>
+        <label>Sales Ops Review - All</label>
+        <sharedTo>
+            <role>BINC_Sales_Operations</role>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Submit_MDRF_Orders_to_SAP_Worklist</fullName>
+        <columns>submit_to_sap__c</columns>
+        <columns>ORDERS.ORDER_NUMBER</columns>
+        <columns>SALES.ACCOUNT.NAME</columns>
+        <columns>implant_date__c</columns>
+        <columns>rep_for_credit__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>ORDER.RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Order.cardio_messenger_order,Order.mdrf_order</value>
+        </filters>
+        <filters>
+            <field>ORDERS.STATUS</field>
+            <operation>equals</operation>
+            <value>Pending SAP Submission</value>
+        </filters>
+        <label>Submit Orders to SAP</label>
+        <sharedTo>
+            <role>BINC_Sales_Operations</role>
+        </sharedTo>
+    </listViews>
+    <recordTypeTrackFeedHistory>false</recordTypeTrackFeedHistory>
+    <recordTypeTrackHistory>true</recordTypeTrackHistory>
+    <recordTypes>
+        <fullName>cardio_messenger_order</fullName>
+        <active>true</active>
+        <description>Records with shipping relevant information about cardio messengers</description>
+        <label>Cardio Messenger Order</label>
+        <picklistValues>
+            <picklist>Status</picklist>
+            <values>
+                <fullName>Canceled</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invoiced</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Submitted</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pending HMSC Registration</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pending Review</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pending SAP Submission</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Processed to SAP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SAP Error Review</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SAP Submission Blocked</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Shipped</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Submitted for Processing</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>pricebook__c</picklist>
+            <values>
+                <fullName>CRM</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CVI</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PVI</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>sap_company_code__c</picklist>
+            <values>
+                <fullName>0100</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0110</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0500</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0800</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1000</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1210</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1270</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1290</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1300</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1400</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1420</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1800</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2000</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3110</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3140</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>5110</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>5120</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>5130</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>5140</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>5150</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>5160</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>5170</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>5180</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>5190</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>5200</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>5300</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>5370</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>5500</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>5515</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>5520</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>5560</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>5600</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>5630</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>5640</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>ship_to__c</picklist>
+            <values>
+                <fullName>Direct Hand-out</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Direct Ship</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Direct Ship Replacement</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>validation_reason__c</picklist>
+            <values>
+                <fullName>%240 Product outside System</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Alphanumeric PO Number**</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Bulk Product with Price %3E %240</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Device with no leads</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Device with only one Lead</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Donation**</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Implanting facility in Puerto Rico**</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lead with no Device</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>None</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Part of System %26 Price %3E %240</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Patient Shipping Address is P%2EO%2E Box</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Price Discrepancy Reason %3D Bulk swap</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unverified Patient Shipping Address</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unverified physician</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>mdrf_order</fullName>
+        <active>true</active>
+        <description>Records with sales related information about an implant</description>
+        <label>Implant Order</label>
+        <picklistValues>
+            <picklist>Status</picklist>
+            <values>
+                <fullName>Canceled</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invoiced</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Submitted</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pending HMSC Registration</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pending Review</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pending SAP Submission</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Processed to SAP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SAP Error Review</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SAP Submission Blocked</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Shipped</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Submitted for Processing</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>pricebook__c</picklist>
+            <values>
+                <fullName>CRM</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CVI</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PVI</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>sap_company_code__c</picklist>
+            <values>
+                <fullName>0100</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0110</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0500</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0800</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1000</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1210</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1270</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1290</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1300</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1400</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1420</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1800</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2000</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3110</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3140</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>5110</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>5120</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>5130</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>5140</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>5150</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>5160</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>5170</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>5180</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>5190</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>5200</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>5300</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>5370</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>5500</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>5515</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>5520</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>5560</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>5600</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>5630</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>5640</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>ship_to__c</picklist>
+            <values>
+                <fullName>Direct Hand-out</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Direct Ship</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Direct Ship Replacement</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>validation_reason__c</picklist>
+            <values>
+                <fullName>%240 Product outside System</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Alphanumeric PO Number**</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Bulk Product with Price %3E %240</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Device with no leads</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Device with only one Lead</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Donation**</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Implanting facility in Puerto Rico**</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lead with no Device</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>None</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Part of System %26 Price %3E %240</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Patient Shipping Address is P%2EO%2E Box</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Price Discrepancy Reason %3D Bulk swap</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unverified Patient Shipping Address</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unverified physician</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts>
+        <customTabListAdditionalFields>ORDERS.ORDER_NUMBER</customTabListAdditionalFields>
+        <customTabListAdditionalFields>SALES.ACCOUNT.NAME</customTabListAdditionalFields>
+        <customTabListAdditionalFields>ORDER.PO_NUMBER</customTabListAdditionalFields>
+        <customTabListAdditionalFields>ORDERS.EFFECTIVE_DATE</customTabListAdditionalFields>
+        <customTabListAdditionalFields>ORDERS.STATUS</customTabListAdditionalFields>
+        <listViewButtons>Submit_to_SAP</listViewButtons>
+        <lookupDialogsAdditionalFields>ORDERS.ORDER_NUMBER</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>SALES.ACCOUNT.NAME</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>ORDER.PO_NUMBER</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>ORDERS.EFFECTIVE_DATE</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>ORDERS.STATUS</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ORDERS.ORDER_NUMBER</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>SALES.ACCOUNT.NAME</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ORDER.PO_NUMBER</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ORDERS.EFFECTIVE_DATE</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ORDERS.STATUS</lookupPhoneDialogsAdditionalFields>
+        <searchFilterFields>ORDERS.ORDER_NUMBER</searchFilterFields>
+        <searchFilterFields>SALES.ACCOUNT.NAME</searchFilterFields>
+        <searchFilterFields>ORDER.PO_NUMBER</searchFilterFields>
+        <searchFilterFields>ORDERS.EFFECTIVE_DATE</searchFilterFields>
+        <searchFilterFields>ORDERS.STATUS</searchFilterFields>
+        <searchResultsAdditionalFields>ORDERS.ORDER_NUMBER</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>SALES.ACCOUNT.NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ORDER.PO_NUMBER</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ORDERS.EFFECTIVE_DATE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ORDERS.STATUS</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>Private</sharingModel>
+    <validationRules>
+        <fullName>CHECK_ROLE_FOR_CANCEL_MDRF_ORDER</fullName>
+        <active>true</active>
+        <description>User with OPs or CS role are allowed to Cancel an order but in additional CS CAN&apos;T CANCEL IMPLANT ORDER.</description>
+        <errorConditionFormula>AND(
+Not($Permission.Validationrule_Exception),
+$UserRole.DeveloperName = &quot;BINC_Customer_Solutions&quot;,
+
+ISCHANGED(Status), 
+ISPICKVAL(Status, &quot;Canceled&quot;), 
+PRIORVALUE(Status) != &quot;Canceled&quot;,
+ 
+RecordType.DeveloperName = &quot;mdrf_order&quot; 
+)</errorConditionFormula>
+        <errorMessage>You are not allowed to cancel an implant order.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>CM_field_updates_not_allowed</fullName>
+        <active>true</active>
+        <description>SAFBIO-644  // Only CS/CAS is allowed to change the PO Number or Shipping Adress in the status after &quot;Not submitted&quot;</description>
+        <errorConditionFormula>AND(
+
+  Not($Permission.Validationrule_Exception),
+  CASE($UserRole.DeveloperName,
+     &quot;BINC_Customer_Solutions&quot;,1,
+     &quot;BINC_Sales_Operations&quot;,1, 0 )
+    = 0,
+  RecordType.DeveloperName == &apos;cardio_messenger_order&apos;,
+  AND(
+   NOT(ISCHANGED(Status)),
+   NOT(ISCHANGED(PoNumber)),
+   NOT(ISCHANGED(ShippingCity)),
+   NOT(ISCHANGED(ShippingStreet)),
+   NOT(ISCHANGED(ShippingCountry)),
+   NOT(ISCHANGED(ShippingPostalCode)),
+   NOT(ISCHANGED(ShippingState)),
+   NOT(ISCHANGED(date_cm_approved__c)), 
+   NOT(ISCHANGED(submitted_date__c )), 
+   NOT(ISCHANGED(pricebook__c)), 
+   NOT(ISCHANGED(Pricebook2Id)) 
+   ),
+  OR(
+    ISPICKVAL(Status , &quot;Processed to SAP&quot;),
+    ISPICKVAL(Status , &quot;Invoiced&quot;),
+    ISPICKVAL(Status , &quot;Shipped&quot;)
+  )
+)</errorConditionFormula>
+        <errorMessage>Your role does not allow these field changes</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Check_role_for_status_change</fullName>
+        <active>true</active>
+        <description>SAFBIO-915 // Prevent users to change to certain status values</description>
+        <errorConditionFormula>OR(
+
+AND(
+  !ISNEW(),
+
+  Not($Permission.Validationrule_Exception),
+  CASE($UserRole.DeveloperName,
+    &quot;BINC_Customer_Solutions&quot;,1,
+    &quot;BINC_Sales_Operations&quot;,1, 0 )
+  = 0,
+  PRIORVALUE(Status)=&quot;Not Submitted&quot;,
+  OR(ISPICKVAL(Status,&quot;Invoiced&quot;),
+    ISPICKVAL(Status,&quot;Pending Review&quot;),
+    ISPICKVAL(Status,&quot;Pending SAP Submission&quot;),
+    ISPICKVAL(Status,&quot;SAP Error Review&quot;),
+    ISPICKVAL(Status,&quot;Processed to SAP&quot;),
+    ISPICKVAL(Status,&quot;SAP Submission Blocked&quot;)
+  ), 
+  ISCHANGED(Status)
+),
+
+AND(
+  !ISNEW(),
+
+  Not($Permission.Validationrule_Exception),
+  CASE($UserRole.DeveloperName,
+    &quot;BINC_Customer_Solutions&quot;,1,
+    &quot;BINC_Sales_Operations&quot;,1, 0 )
+  = 0,
+  OR(PRIORVALUE(Status)=&quot;Invoiced&quot;,
+    PRIORVALUE(Status)=&quot;Pending Review&quot;,
+    PRIORVALUE(Status)=&quot;Pending SAP Submission&quot;,
+    PRIORVALUE(Status)=&quot;SAP Error Review&quot;,
+    PRIORVALUE(Status)=&quot;Processed to SAP&quot;,
+    PRIORVALUE(Status)=&quot;SAP Submission Blocked&quot;
+  ),
+  ISCHANGED(Status)
+),
+
+AND(
+  !ISNEW(),
+  $Profile.Name = &apos;HMSC&apos;,
+  PRIORVALUE(Status)!=&quot;Pending HMSC Registration&quot;,
+  ISCHANGED(Status)
+)
+)</errorConditionFormula>
+        <errorMessage>You are not allowed to change the status to this value.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>MDRF_field_updates_not_allowed</fullName>
+        <active>false</active>
+        <description>Only CAS and CS are allowd to make certain field updates during status changes // SAFBIO-914</description>
+        <errorConditionFormula>AND(
+ RecordType.DeveloperName = &apos;mdrf_order&apos;,
+
+ Not($Permission.Validationrule_Exception),
+ CASE($UserRole.DeveloperName,
+   &quot;BINC_Customer_Solutions&quot;,1,
+   &quot;BINC_Sales_Operations&quot;,1, 0 )
+   = 0,
+ AND(
+   NOT(ISCHANGED(Status)),
+   NOT(ISCHANGED(date_cm_approved__c)),
+   NOT(ISCHANGED(PoNumber)),
+   NOT(ISCHANGED(submitted_date__c )),
+   NOT(ISCHANGED(pricebook__c)),
+   NOT(ISCHANGED(Pricebook2Id))
+ )
+)</errorConditionFormula>
+        <errorMessage>Your role does not allow these changes in this status</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>ONLY_OWNER_CANCEL_ORDER</fullName>
+        <active>true</active>
+        <description>Only the owner of a record can cancel an order.</description>
+        <errorConditionFormula>AND(
+Not($Permission.Validationrule_Exception),
+$Profile.Name = &quot;Sales&quot;, 
+
+ISCHANGED(Status), 
+ISPICKVAL(Status, &quot;Canceled&quot;), 
+PRIORVALUE(Status) != &quot;Canceled&quot;, 
+CASE($User.Id, OwnerId ,1 ,CreatedBy.Id, 1,0) = 0 
+)</errorConditionFormula>
+        <errorMessage>You are not allowed to cancel this order because you are not the owner or the creator.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Order_Created_Date_is_read_Only</fullName>
+        <active>true</active>
+        <description>Created date should not be an editable field.</description>
+        <errorConditionFormula>AND(
+ISCHANGED(EffectiveDate), 
+NOT(ISNEW()),
+Not($Permission.Validationrule_Exception))</errorConditionFormula>
+        <errorMessage>You are not allowed to change the Created date!</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>PATIENT_REQUIRED_EXCEPT_FOR_CANCELLATION</fullName>
+        <active>true</active>
+        <description>Patient should not be required on MDRF Page Layout but Validation has to be created for MDRF Orders, that Patient Value is required for specific Order Status (all Status except Canceled).</description>
+        <errorConditionFormula>AND(
+ISBLANK(patient__c),
+NOT(ISPICKVAL(Status ,&quot;Canceled&quot;))
+)</errorConditionFormula>
+        <errorDisplayField>patient__c</errorDisplayField>
+        <errorMessage>Please enter a patient.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Rep_at_implant_empty_when_no_rep_present</fullName>
+        <active>true</active>
+        <description>If &quot;No Rep present at implant&quot; is checked, the &apos;Rep at Implant&apos; must be empty and vice versa.</description>
+        <errorConditionFormula>($RecordType.DeveloperName = &quot;mdrf_order&quot;)
+&amp;&amp;
+((ISBLANK(rep_at_implant__c) &amp;&amp; (no_rep_present_at_implant__c = FALSE)) ||
+(NOT(ISBLANK(rep_at_implant__c)) &amp;&amp; (no_rep_present_at_implant__c = TRUE)))</errorConditionFormula>
+        <errorDisplayField>rep_at_implant__c</errorDisplayField>
+        <errorMessage>Select either &quot;Rep at Implant&quot; or &quot;No Rep present at implant&quot;</errorMessage>
+    </validationRules>
+    <webLinks>
+        <fullName>Print_Defib_Report</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>page</linkType>
+        <masterLabel>Print Defib Report</masterLabel>
+        <openType>newWindow</openType>
+        <page>DefibReport</page>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+    </webLinks>
+    <webLinks>
+        <fullName>Submit_to_SAP</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <height>600</height>
+        <linkType>page</linkType>
+        <masterLabel>Submit to SAP</masterLabel>
+        <openType>sidebar</openType>
+        <page>OrderSapSubmissionList</page>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+    </webLinks>
+    <webLinks>
+        <fullName>System_Pricing</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>page</linkType>
+        <masterLabel>System Pricing</masterLabel>
+        <openType>newWindow</openType>
+        <page>SystemPricingPre</page>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+    </webLinks>
+</CustomObject>

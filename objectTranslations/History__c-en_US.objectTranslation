@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>History</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Histories</value>
+    </caseValues>
+    <fields>
+        <label><!-- Analysis Result --></label>
+        <name>analysis_result__c</name>
+        <relationshipLabel><!-- Histories --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Case --></label>
+        <name>case__c</name>
+        <relationshipLabel><!-- Histories --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Comments --></label>
+        <name>comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Complaint --></label>
+        <name>complaint__c</name>
+        <relationshipLabel><!-- Histories --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Field Name --></label>
+        <name>field_name__c</name>
+    </fields>
+    <fields>
+        <label><!-- New Value --></label>
+        <name>new_value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Old Value --></label>
+        <name>old_value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Order --></label>
+        <name>order__c</name>
+        <relationshipLabel><!-- Histories --></relationshipLabel>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,616 @@
+<apex:page applyBodyTag="false" standardStylesheets="false" showHeader="false" renderAs="pdf" standardController="Order" extensions="BINCPatientDataControllerExt" >
+    <apex:Stylesheet value="{!$Resource.BINCPdf}" /> 
+    <body class="mdrf">
+        
+        <div style="min-height: 60px;">
+            
+            <div class="mdrfHeader">
+                <h1>
+                    Medical Device Registration Form (MDRF)
+                </h1>
+                Please fill out form completely &nbsp;&nbsp;&nbsp;&nbsp;
+                Phone (800) 547-0394 Fax (888) 503-5370
+                <br /><br />
+                <span class="important">Important</span>:
+                This patient’s device must be tracked per FDA regulations. 
+                Failure to comply could result in violations of US law.
+                
+            </div>    
+            <div class="mdrfLogo">
+                <apex:image id="theImage" value="{!$Resource.Biotronik_logo}" height="40" width="200" alt="Biotronik"/><br />
+                6024 Jean Road, Lake Oswego, OR 97035
+                
+            </div>
+        </div>
+        <table>
+            <colgroup>
+                <col width="30px" />
+                <col />
+            </colgroup>
+            <tr>
+                <td style="vertical-align: middle; text-align: center;">
+                    <apex:image url="{!URLFOR($Resource.MDRF,'/PatientInfo.PNG')}" width="22px"/>    
+                </td>
+                <td class="mdrfBlock">
+                    <div class="mdrfBlock">
+                        Last Name 
+                    </div>
+                    <div class="mdrfBlock underline" style="width: 210px;">
+                        {!currentOrder.patient__r.LastName}
+                    </div>
+                    <div class="mdrfBlock">
+                        First
+                    </div>
+                    <div class="mdrfBlock underline" style="width: 140px;">
+                        {!currentOrder.patient__r.FirstName}
+                    </div>
+                    <div class="mdrfBlock">
+                        MI
+                    </div>
+                    <div class="mdrfBlock underline" style="width: 40px;">
+                        {!currentOrder.patient__r.MiddleName}
+                    </div>
+                    <div class="mdrfBlock">
+                        <apex:outputText rendered="{!IF(currentOrder.patient__r.gender__c = 'Male', true, false)}" value="[X]" />
+                        <apex:outputText rendered="{!IF(currentOrder.patient__r.gender__c != 'Male', true, false)}" value="[ ]"/>
+                        <apex:outputText value=" Male"/>
+                        
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                        <apex:outputText rendered="{!IF(currentOrder.patient__r.gender__c = 'Female', true, false)}" value="[X]"/>
+                        <apex:outputText rendered="{!IF(currentOrder.patient__r.gender__c != 'Female', true, false)}" value="[ ]"/>
+                        <apex:outputText value=" Female"/> 
+                    </div>
+                    <div class="mdrfBlock" style="clear: left;">
+                        Street
+                    </div>
+                    <div class="mdrfBlock underline" style="width: 600px;">
+                        {!currentOrder.patient__r.MailingStreet}
+                    </div>
+                    <div class="mdrfBlock" style="clear: left;">
+                        City
+                    </div>
+                    <div class="mdrfBlock underline" style="width: 260px;">
+                        {!currentOrder.patient__r.MailingCity}
+                    </div>
+                    <div class="mdrfBlock">
+                        State
+                    </div>
+                    <div class="mdrfBlock underline" style="width: 30px;">
+                        {!currentOrder.patient__r.MailingStateCode}
+                    </div>
+                    <div class="mdrfBlock">
+                        Zip
+                    </div>
+                    <div class="mdrfBlock underline" style="width: 80px;">
+                        {!currentOrder.patient__r.MailingPostalCode}
+                    </div>
+                    <div class="mdrfBlock">
+                        Phone
+                    </div>
+                    <div class="mdrfBlock underline" style="width: 98px;">
+                        {!currentOrder.patient__r.Phone}
+                    </div>
+                    
+                    <div class="mdrfBlock" style="clear: left;">
+                        Date of Birth
+                    </div>
+                    <div class="mdrfBlock underline" style="width: 160px;">
+                        <apex:outputtext value="{0,date,MM'/'dd'/'yyyy}">
+                            <apex:param value="{!currentOrder.patient__r.Birthdate}"></apex:param>
+                        </apex:outputtext>         
+                    </div>
+                    <div class="mdrfBlock">
+                        SSN 
+                    </div>
+                    <div class="mdrfBlock underline" style="width: 146px;">
+                        <apex:outputText value="{!RIGHT(currentOrder.patient__r.ssn__c, 4)}"></apex:outputText>
+                    </div>
+                    <div class="mdrfBlock">
+                        Medical Record No.
+                    </div>
+                    <div class="mdrfBlock underline" style="width: 100px;">
+                        {!currentOrder.medical_record_no__c}
+                    </div>
+                </td>
+            </tr>
+        </table>
+        
+        
+        <table>
+            <colgroup>
+                <col width="30px" />
+                <col />
+            </colgroup>
+            <tr>
+                <td style="vertical-align: middle; text-align: center;">
+                    <apex:image url="{!URLFOR($Resource.MDRF,'/ImplantingFacility.PNG')}" width="22px"/>    
+                </td>
+                <td class="mdrfBlock">
+                    <div class="mdrfBlock">
+                        Name
+                    </div>
+                    <div class="mdrfBlock underline" style="width: 336px;">
+                        {!currentOrder.Account.Name}
+                    </div>
+                    
+                    <div class="mdrfBlock">
+                        Phone
+                    </div>
+                    <div class="mdrfBlock underline" style="width: 210px;">
+                        {!currentOrder.Account.Phone}
+                    </div>
+                    
+                    <div class="mdrfBlock" style="clear: left;">
+                        Street
+                    </div>
+                    <div class="mdrfBlock underline" style="width: 210px;">
+                        {!currentOrder.Account.ShippingStreet}
+                    </div>
+                    
+                    <div class="mdrfBlock">
+                        City
+                    </div>
+                    <div class="mdrfBlock underline" style="width: 150px;">
+                        {!currentOrder.Account.ShippingCity}
+                    </div>
+                    
+                    <div class="mdrfBlock">
+                        State
+                    </div>
+                    <div class="mdrfBlock underline" style="width: 30px;">
+                        {!currentOrder.Account.ShippingStateCode}
+                    </div>
+                    
+                    <div class="mdrfBlock">
+                        Zip
+                    </div>
+                    <div class="mdrfBlock underline" style="width: 80px;">
+                        {!currentOrder.Account.ShippingPostalCode}
+                    </div>
+                    
+                </td>
+            </tr>
+        </table>
+        
+        
+        <table>
+            <colgroup>
+                <col width="30px" />
+                <col />
+            </colgroup>
+            <tr>
+                <td style="vertical-align: middle; text-align: center;">
+                    <apex:image url="{!URLFOR($Resource.MDRF,'/ImplantedDevice.PNG')}" width="30px"/>    
+                </td>
+                <td class="mdrfBlock">
+                    <div class="mdrfBlock">
+                        Model/No.
+                    </div>
+                    <div class="mdrfBlock underline" style="width: 398px;">
+                        {!currentOrderImplatedDevice.Product2.Name}
+                        &nbsp;&nbsp;&nbsp;
+                        {!currentOrderImplatedDevice.model_no__c}
+                    </div>
+                    
+                    <div class="mdrfBlock">
+                        Implant Date
+                    </div>
+                    <div class="mdrfBlock underline" style="width: 100px;">
+                        <apex:outputtext value="{0,date,MM'/'dd'/'yyyy}">
+                            <apex:param value="{!currentOrderImplatedDevice.installdate}"></apex:param>
+                        </apex:outputtext>
+                    </div>
+                    
+                    <div class="mdrfBlock" style="clear: left;">
+                        Serial Number
+                    </div>
+                    <div class="mdrfBlock underline" style="width: 170px;">
+                        <apex:outputText value="{!currentOrderImplatedDevice.serialnumber}"/>
+                    </div>
+                    
+                    <div class="mdrfBlock lighter" style="width: 280px">
+                        <apex:outputText value="{!currentOrderImplatedDevice.UDI__c}"/>
+                    </div>
+                    <div class="mdrfBlock lighter">
+                        MM/DD/YYYY
+                    </div>
+                    
+                    <div class="mdrfBlock" style="clear: left;">
+                        Mode
+                    </div>
+                    <div class="mdrfBlock underline" style="width: 80px;">
+                        {!currentOrderImplatedDevice.mode__c}
+                    </div>
+                    
+                    <div class="mdrfBlock">
+                        Lower Rate
+                    </div>
+                    <div class="mdrfBlock underline" style="width: 60px;">
+                        {!currentOrderImplatedDevice.lower_rate__c}
+                    </div>
+                    
+                    <div class="mdrfBlock">
+                        Upper Rate
+                    </div>
+                    <div class="mdrfBlock underline" style="width: 60px;">
+                        {!currentOrderImplatedDevice.upper_rate__c}
+                    </div>
+                    
+                    <div class="mdrfBlock">
+                        Indication
+                    </div>
+                    <div style="width: 180px" class="mdrfBlock">
+                    <div class="mdrfBlock underline" style="min-width: 178px;">
+                        {!indications}
+                    </div>
+                    </div>
+                    
+                </td>
+            </tr>
+        </table>
+        <table class="mdrfleads">
+            <colgroup>
+                <col width="30px"/>
+                <col width="250px"/>
+                <col />
+                <col />
+                <col width="70px"/>
+                <col width="30px"/>
+                <col width="30px"/>
+                <col width="30px" />
+                <col width="60px"/>
+            </colgroup>
+            <tr>
+                <td rowspan="6" style="vertical-align: middle; border: 0; text-align: center;">
+                    <apex:image url="{!URLFOR($Resource.MDRF,'/CurrentLead.PNG')}" width="12px"/>
+                </td>
+                <th>
+                    Manufacturer, Model, Serial Number<br />(Type, print or afffix product labels)
+                </th>
+                <th>
+                    Implant Date
+                </th>
+                <th>
+                    Placement
+                </th>
+                <th>
+                    DFT/<br/>Threshold
+                </th>
+                <th>
+                    P AMP
+                </th>
+                <th>
+                    R AMP
+                </th>
+                <th>
+                    Impe-<br/>dance
+                </th>
+                <th>
+                    Usage
+                </th>
+            </tr>
+            <apex:repeat value="{!patientImplantedLeadsAndAdapters}" var="lead">
+                
+                <tr>
+                    <td style="text-align: left;">
+                        <div class="mdrfproductlabel">
+                            <div class="left">
+                                {!lead.manufacturer__c}</div>
+                            <div class="right">{!lead.model_no__c}</div>
+                            <div class="left">
+                                {!lead.product2.name}
+                            </div>
+                            <div class="left">
+                                {!lead.serialnumber}
+                            </div>
+                            <div class="right">
+                                {!lead.UDI__c}
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="data" style="min-width:40px;">
+                        <apex:outputtext value="{0,date,MM'/'dd'/'yyyy}">
+                            <apex:param value="{!lead.installdate}"></apex:param>
+                        </apex:outputtext>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="data" style="min-width:30px;"><apex:outputField value="{!lead.Lead_Tip_Location__c}" /></div>
+                    </td>
+                    <td>
+                        <div class="data" style="min-width: 40px;">{!lead.dft__c}</div> J<br />
+                        <div class="data" style="min-width: 40px;">{!lead.threshold__c}</div> V<br />
+                        @<div class="data" style="min-width:30px;">{!lead.pulse_width__c}</div> ms
+                    </td>
+                    <td>
+                        {!lead.p_amp__c} mV
+                    </td>
+                    <td>
+                        {!lead.r_amp__c} mV
+                    </td>
+                    <td>
+                        {!lead.impedance__c} Ohms
+                    </td>
+                    <td style="text-align: center">
+                        {!IF (lead.pace_sense__c, 'Pace/Sense','')}{!IF (AND (lead.pace_sense__c, lead.defib__c), ', ','')}{!IF (lead.defib__c, 'Defib','')}
+                    </td>
+                </tr>
+            </apex:repeat>
+            <apex:repeat value="{!dummyLeadAndAdapterList}" var="dummyLeadAdpter">
+                <tr>
+                    <td>
+                        <div class="mdrfproductlabel">
+                            &nbsp;
+                        </div>
+                    </td>
+                    <td>
+                        <div class="data" style="min-width:50px;" />
+                    </td>
+                    <td>
+                        <div class="data" style="min-width:30px;" />
+                    </td>
+                    <td>
+                        <div class="data" style="min-width:40px;"/> J<br />
+                        <div class="data" style="min-width:40px;"/> V<br />
+                        @<div class="data" style="min-width:30px;" /> ms
+                    </td>
+                    <td>
+                        mV
+                    </td>
+                    <td>
+                        mV
+                    </td>
+                    <td>
+                        Ohms
+                    </td>
+                    <td>
+                    </td>
+                </tr>
+                
+            </apex:repeat>
+            
+        </table>
+        
+        <table class="mdrfphysicians">
+            <colgroup>
+                <col width="120px"/>
+                <col />
+                <col width="25px"/>
+                <col width="25px"/>
+                <col width="15px"/>
+                <col width="40px"/>
+                <col width="30px"/>
+                <col width="120px"/>
+                <col />
+                <col width="25px"/>
+                <col width="25px"/>
+                <col width="15px"/>
+                <col width="40px"/>
+            </colgroup>
+            <tr>
+                <th colspan="6">
+                    Implanting Physician
+                </th>
+                <th></th>
+                <th colspan="6">
+                    Following Physician
+                </th>
+            </tr>
+            <tr>
+                <td>Name</td>
+                <td colspan="5">
+                    <div class="data" style="width: 300px;">
+                        {!currentOrder.implanting_physician__r.Name}
+                    </div>
+                </td>
+                <td></td>
+                <td>Name</td>
+                <td colspan="5">
+                    <div class="data" style="width: 300px;">
+                        {!currentOrder.following_physican__r.Name}
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>Address</td>
+                <td colspan="5">
+                    <div class="data" style="width: 300px;">
+                        {!currentOrder.implanting_physician__r.MailingStreet}
+                    </div>
+                </td>
+                <td></td>
+                <td>Address</td>
+                <td colspan="5">
+                    <div class="data" style="width: 300px;">
+                        {!currentOrder.following_physican__r.MailingStreet}
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>City</td>
+                <td><div class="data" style="width: 198px;">{!currentOrder.implanting_physician__r.MailingCity}</div></td>
+                <td>State</td>
+                <td><div class="data" style="width: 20px;">{!currentOrder.implanting_physician__r.MailingStateCode}</div></td>
+                <td>Zip</td>
+                <td><div class="data" style="width: 30px;">{!currentOrder.implanting_physician__r.MailingPostalCode}</div></td>
+                <td>&nbsp;</td>
+                <td>City</td>
+                <td><div class="data" style="width: 198px;">{!currentOrder.following_physican__r.MailingCity}</div></td>
+                <td>State</td>
+                <td><div class="data" style="width: 20px;">{!currentOrder.following_physican__r.MailingStateCode}</div></td>
+                <td>Zip</td>
+                <td><div class="data" style="width: 30px;">{!currentOrder.following_physican__r.MailingPostalCode}</div></td>
+            </tr>
+            <tr>
+                <td>Phone</td>
+                <td colspan="5"><div class="data" style="width: 300px;">{!currentOrder.implanting_physician__r.Phone}</div></td>
+                <td></td>
+                <td>Phone</td>
+                <td colspan="5"><div class="data" style="width: 300px;">{!currentOrder.following_physican__r.Phone}</div></td>
+            </tr>
+        </table>
+        <div class="mdrfoos">
+        <table class="mdrfoos">
+            <colgroup>
+                <col width="20px"/>
+                <col width="40px"/>
+                <col width="40px"/>
+                <col width="80px"/>
+                <col width="50px"/>
+                <col />
+                <col width="60px"/>
+                <col width="80px"/>
+                <col width="30px"/>
+                <col width="60px"/>
+                <col width="110px"/>
+            </colgroup>
+            <tr>
+                <td colspan="11" style="font-weight: bold; padding-bottom: 4px;">
+                    <apex:outputText value="[X]" rendered="{!IF(currentOrderExplantedDev.manufacturer__c = 'Biotronik', true, false)}"/> 
+                    <apex:outputText value="[ ]" rendered="{!IF(currentOrderExplantedDev.manufacturer__c != 'Biotronik', true, false)}"/> 
+                    Explanted Device (If BIOTRONIK product, attach an Out of Service (OOS) for each)
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td colspan="2">Original Implant</td>
+                <td>
+                    <div class="data" style="width: 90%">
+                        <apex:outputtext value="{0,date,MM'/'dd'/'yyyy}">
+                            <apex:param value="{!currentOrderExplantedDev.installdate}"></apex:param>
+                        </apex:outputtext>
+                    </div>
+
+                </td>
+                <td colspan="5">
+                    <apex:outputText value="[X] ERI " rendered="{!AND (currentOrderExplantedDev.event_reason__c != null, CONTAINS (currentOrderExplantedDev.event_reason__c, 'ERI'))}"/>
+                    <apex:outputText value="[ ] ERI " rendered="{!OR (currentOrderExplantedDev.event_reason__c == null, NOT (CONTAINS (currentOrderExplantedDev.event_reason__c, 'ERI')))}"/>
+                    &nbsp;&nbsp;
+                    <apex:outputText value="[X] Infection " rendered="{!AND (currentOrderExplantedDev.event_reason__c != null, CONTAINS (currentOrderExplantedDev.event_reason__c, 'Infection'))}"/>
+                    <apex:outputText value="[ ] Infection " rendered="{!OR (currentOrderExplantedDev.event_reason__c == null, NOT (CONTAINS (currentOrderExplantedDev.event_reason__c, 'Infection')))}"/>
+                    &nbsp;&nbsp;
+                    <apex:outputText value="[X] Other " rendered="{!AND (currentOrderExplantedDev.event_reason__c != null, CONTAINS (currentOrderExplantedDev.event_reason__c, 'Other'))}"/>
+                    <apex:outputText value="[ ] Other " rendered="{!OR (currentOrderExplantedDev.event_reason__c == null, NOT (CONTAINS (currentOrderExplantedDev.event_reason__c, 'Other')))}"/>
+
+                    <div class="data" style="width: 180px">
+                    <apex:outputText value="{!currentOrderExplantedDev.oos_additional_information__c}" rendered="{!AND (currentOrderExplantedDev.event_reason__c != null, CONTAINS (currentOrderExplantedDev.event_reason__c, 'Other'))}"/>
+                    </div>
+                </td>
+                <td>OOS Date</td>
+                <td>
+                    <div class="data" style="width: 90%">
+                    <apex:outputtext value="{0,date,MM'/'dd'/'yyyy}">
+                        <apex:param value="{!currentOrderExplantedDev.oos_date__c}"></apex:param>
+                    </apex:outputtext>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">&nbsp;</td>
+                <td class="lighter">MM/DD/YYY</td>
+                <td colspan="6">&nbsp;</td>
+                <td class="lighter">MM/DD/YYY</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td colspan="2">Manufacturer</td>
+                <td><div class="data" style="width: 90%">{!currentOrderExplantedDev.manufacturer__c}</div></td>
+                <td>Model</td>
+                <td colspan="3"><div class="data" style="width: 90%">{!currentOrderExplantedDev.Name}</div></td>
+                <td colspan="2">Serial Number</td>
+                <td colspan="2"><div class="data" style="width: 90%">{!currentOrderExplantedDev.serialnumber}</div></td>
+            </tr>
+            <tr>
+                <td colspan="11" style="font-weight: bold; padding-top: 4px; padding-bottom: 4px;">[{!IF(currentOrderExplantedLeads.size > 0,'X',' ')}] Out of Service Leads/Adapters</td>
+            </tr>
+            <apex:repeat value="{!currentOrderExplantedLeads}" var="oosLead" >
+                <tr>
+                    <td></td>
+                    <td>
+                        Model
+                    </td>
+                    <td colspan="2">
+                        <div class="data" style="width: 90%">{!oosLead.Name}</div>
+                    </td>
+                    <td colspan="2">
+                        Serial #
+                    </td>
+                    <td>
+                        <div class="data" style="width: 90%">{!oosLead.serialnumber}</div>
+                    </td>
+                    <td>
+                        OOS Date
+                    </td>
+                    <td>
+                        <div class="data" style="width: 90%">
+                        <apex:outputtext value="{0,date,MM'/'dd'/'yyyy}">
+                            <apex:param value="{!oosLead.oos_date__c}"></apex:param>
+                        </apex:outputtext>
+                        </div>
+                    </td>
+                    <td colspan="3">
+                        <apex:outputText value="[X] Capped " rendered="{!CONTAINS (oosLead.Status, 'Capped')}"/>
+                        <apex:outputText value="[ ] Capped " rendered="{!OR (oosLead.Status = null, NOT (CONTAINS (oosLead.Status, 'Capped')))}"/>
+                        &nbsp;&nbsp;
+                        <apex:outputText value="[X] Explanted " rendered="{!CONTAINS (oosLead.Status, 'Explanted')}"/>
+                        <apex:outputText value="[ ] Explanted " rendered="{!OR (oosLead.Status = null, NOT (CONTAINS (oosLead.Status, 'Explanted')))}"/>
+                        &nbsp;&nbsp;
+                        <apex:outputText value="[X] Discarded " rendered="{!CONTAINS (oosLead.Status, 'Discarded')}"/>
+                        <apex:outputText value="[ ] Discarded " rendered="{!OR (oosLead.Status = null, NOT (CONTAINS (oosLead.Status, 'Discarded')))}"/>
+                    </td>
+                </tr> 
+            </apex:repeat>
+            <apex:repeat value="{!dummyOosList}" var="dummyOos">
+                <tr>
+                    <td></td>
+                    <td>
+                        Model
+                    </td>
+                    <td colspan="2">
+                        <div class="data" style="width: 90%">&nbsp;</div>
+                    </td>
+                    <td>
+                        Serial #
+                    </td>
+                    <td>
+                        <div class="data" style="width: 90%">&nbsp;</div>
+                    </td>
+                    <td>
+                        OOS Date
+                    </td>
+                    <td>
+                        <div class="data" style="width: 90%">&nbsp;</div>
+                    </td>
+                    <td colspan="3">
+                        
+                        [ ] Capped 
+                        
+                        [ ] Explanted 
+                        
+                        [ ] Discarded
+                    </td>
+                </tr> 
+            </apex:repeat>
+        </table>
+
+                        
+        </div>
+
+            
+        <span style="font-weight: bold; margin-right: 4px;">Completed By</span>
+        <div class="data" style="width: 200px">{!Order.Createdby.FirstName} {!Order.Createdby.LastName}</div>
+        <span style="font-weight: bold; margin-right: 4px; margin-left: 12px;">Rep at Implant</span>
+        <div class="data" style="width: 200px">{!currentOrder.rep_at_implant__r.FirstName} {!currentOrder.rep_at_implant__r.LastName}</div>
+        <span style="font-weight: bold; margin-right: 4px; margin-left: 12px;">Date</span>
+        <div class="data" style="width: 60px;">
+            <apex:outputtext value="{0,date,MM'/'dd'/'yyyy}">
+                <apex:param value="{!Today()}"></apex:param>
+            </apex:outputtext> 
+        </div>
+        
+        
+        
+    </body>
+    
+</apex:page>

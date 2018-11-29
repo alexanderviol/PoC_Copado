@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Entity Type --></label>
+        <name>QIDC__Entity_Type_ims__c</name>
+    </fields>
+    <fields>
+        <label><!-- ISO Country Code --></label>
+        <name>QIDC__ISO_Country_Code_ims__c</name>
+    </fields>
+    <fields>
+        <label><!-- No of Activity Relations --></label>
+        <name>QIDC__No_of_Activity_Relations_ims__c</name>
+    </fields>
+    <fields>
+        <label><!-- No of Individual Relations --></label>
+        <name>QIDC__No_of_Individual_Relations_ims__c</name>
+    </fields>
+    <fields>
+        <label><!-- No of Workplace Relations --></label>
+        <name>QIDC__No_of_Workplace_Relations_ims__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total No of Relations --></label>
+        <name>QIDC__Total_No_of_Relations_ims__c</name>
+    </fields>
+</CustomObjectTranslation>

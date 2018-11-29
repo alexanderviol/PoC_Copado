@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Activity Required Fields --></label>
+        <name>QIDC__Activity_Required_Fields_ims__c</name>
+    </fields>
+    <fields>
+        <label><!-- Country ISO Code --></label>
+        <name>QIDC__Country_ISO_Code_ims__c</name>
+    </fields>
+    <fields>
+        <label><!-- Workplace Required Fields --></label>
+        <name>QIDC__Workplace_Required_Fields_ims__c</name>
+    </fields>
+</CustomObjectTranslation>

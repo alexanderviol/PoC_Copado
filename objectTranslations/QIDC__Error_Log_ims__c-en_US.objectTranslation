@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- The cause of the Error. This is used to understand why the error occurred. --></help>
+        <label><!-- Cause --></label>
+        <name>QIDC__Cause_ims__c</name>
+    </fields>
+    <fields>
+        <label><!-- Created By --></label>
+        <name>QIDC__Created_By_ims__c</name>
+    </fields>
+    <fields>
+        <help><!-- The Error Code for the Error. --></help>
+        <label><!-- Error Code --></label>
+        <name>QIDC__Error_Code_ims__c</name>
+    </fields>
+    <fields>
+        <help><!-- External ID which is used for data loading only. --></help>
+        <label><!-- Integration ID --></label>
+        <name>QIDC__IntegrationID_ims__c</name>
+    </fields>
+    <fields>
+        <help><!-- Job Id of the OneKey Delta download job --></help>
+        <label><!-- Job Id --></label>
+        <name>QIDC__Job_Id_ims__c</name>
+    </fields>
+    <fields>
+        <help><!-- The message thrown from the Error. --></help>
+        <label><!-- Message --></label>
+        <name>QIDC__Message_ims__c</name>
+    </fields>
+    <fields>
+        <help><!-- Where the Error originated in the system. --></help>
+        <label><!-- Origin --></label>
+        <name>QIDC__Origin_ims__c</name>
+    </fields>
+    <fields>
+        <help><!-- The current status of the Error (Open, Closed). --></help>
+        <label><!-- Status --></label>
+        <name>QIDC__Status_ims__c</name>
+        <picklistValues>
+            <masterLabel>Closed</masterLabel>
+            <translation><!-- Closed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Open</masterLabel>
+            <translation><!-- Open --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- The type of Error that occurred. --></help>
+        <label><!-- Type --></label>
+        <name>QIDC__Type_ims__c</name>
+    </fields>
+    <fields>
+        <label><!-- User --></label>
+        <name>QIDC__User_Name_ims__c</name>
+    </fields>
+    <fields>
+        <help><!-- The User for which the Error occurred. --></help>
+        <label><!-- User --></label>
+        <name>QIDC__User_ims__c</name>
+        <relationshipLabel><!-- Error Logs --></relationshipLabel>
+    </fields>
+</CustomObjectTranslation>

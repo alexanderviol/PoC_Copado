@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- Represents CodeBase of OneKey Code. --></help>
+        <label><!-- Code Base --></label>
+        <name>QIDC__CodeBase_ims__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field is used to store concatenation of country code and unique identifier of a code. --></help>
+        <label><!-- Country UID Code --></label>
+        <name>QIDC__Country_UID_Code_ims__c</name>
+    </fields>
+    <fields>
+        <help><!-- Country ISO code. --></help>
+        <label><!-- Country --></label>
+        <name>QIDC__Country_ims__c</name>
+    </fields>
+    <fields>
+        <help><!-- Indicates whether the code is active or not. --></help>
+        <label><!-- Is Active? --></label>
+        <name>QIDC__Is_Active_ims__c</name>
+    </fields>
+    <fields>
+        <help><!-- Code group of the attribute. --></help>
+        <label><!-- LIS Code --></label>
+        <name>QIDC__LIS_Code_ims__c</name>
+    </fields>
+    <fields>
+        <help><!-- Default label for OneKey code. --></help>
+        <label><!-- Label --></label>
+        <name>QIDC__Label_ims__c</name>
+    </fields>
+    <fields>
+        <help><!-- Last modified date of OneKey code at OneKey API. --></help>
+        <label><!-- OK Last Modified Date --></label>
+        <name>QIDC__OK_Last_Modified_Date_ims__c</name>
+    </fields>
+    <fields>
+        <help><!-- Unique identifier of a code. --></help>
+        <label><!-- UID Code --></label>
+        <name>QIDC__UID_Code_ims__c</name>
+    </fields>
+</CustomObjectTranslation>

@@ -1,0 +1,48 @@
+<aura:component implements="force:lightningQuickActionWithoutHeader,force:hasRecordId" controller="PrintDocumentController" >
+ 	<aura:handler name="init" value="{!this}" action="{!c.onLoadFun}"/>
+    <aura:attribute name="showDetail" type="Boolean" />
+    <aura:if isTrue="{!v.showDetail}">
+        <lightning:spinner variant="brand" size="large" aura:id="mySpinner"  />
+    </aura:if>
+    <center>
+            <h2 class="slds-text-heading_medium slds-hyphenate"><b>SELECT DOCUMENTS TO PRINT</b></h2>
+    </center>
+    <br/>
+	<div class="slds-grid slds-gutters">
+        	<div class="slds-col slds-size_1-of-2">
+        		<span> <ui:inputCheckbox class="myCheckbox" aura:id="mdrf" label="MDRF"/></span>
+       		</div>
+            <div class="slds-col slds-size_1-of-2">
+        		<span><ui:inputCheckbox class="myCheckbox" aura:id="sv" label="Sales Voucher"/></span>
+       		</div>
+    </div><br/>
+    	<div class="slds-grid slds-gutters">
+        	<!-- div class="slds-col slds-size_1-of-2">
+        		<span>  <ui:inputCheckbox class="myCheckbox" aura:id="pr" label="Pacer Report"/></span>
+       		</div -->
+            <div class="slds-col slds-size_1-of-2">
+        		<span> <ui:inputCheckbox class="myCheckbox" aura:id="dr" label="Implant Record"/></span>
+       		</div>
+        </div><br/>
+    	<div class="slds-grid slds-gutters">
+        	<div class="slds-col slds-size_1-of-2">
+        		<span>  <ui:inputCheckbox class="myCheckbox" aura:id="pds" label="Patient Data Sheet"/></span>
+       		</div>
+            <!-- div class="slds-col slds-size_1-of-2">
+        		<span> <ui:inputCheckbox class="myCheckbox" aura:id="oos" label="OOS Form"/></span>
+       		</div -->
+        </div><br/>
+    	<div class="slds-grid slds-gutters">
+        	<div class="slds-col slds-size_1-of-2">
+        		<span>  <ui:inputCheckbox class="myCheckbox" aura:id="tpid" label="Temporary Patient ID Card"/></span>
+       		</div>
+            <div class="slds-col slds-size_1-of-2">
+        		<span>  <ui:inputCheckbox class="myCheckbox" aura:id="dc" label="Delivery Confirmation"/></span>
+       		</div>
+        </div><br/><br/>
+
+    	<center>
+            <button class="slds-button slds-button_brand" onclick="{!c.redirect}">Print Documents</button>&nbsp;&nbsp;
+            <button class="slds-button slds-button_neutral" onclick="{!c.closePopup}">Cancel</button>            
+        </center>
+</aura:component>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>Hierarchy</customSettingsType>
+    <description>Object used to store system parameters of the users.</description>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>QIDC__Autocompletion_Search_ims__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>This setting is used to set default status of Autocompletion search in simple search screen.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This setting is used to set default status of Autocompletion search in simple search screen.</inlineHelpText>
+        <label>Autocompletion Search</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>QIDC__Download_Out_of_Contract_ims__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>If enabled, Rep can able to download out of contract records. Else, can only download in contract records from search page.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>If enabled, Rep can able to download out of contract records. Else, can only download in contract records from search page.</inlineHelpText>
+        <label>Download Out of Contract?</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>QIDC__In_my_Contract_ims__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>In my Contract</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>QIDC__Individual_Workplace_Access_ims__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Individual/Workplace access User setting.</description>
+        <externalId>false</externalId>
+        <label>Individual/Workplace Access</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <label>OneKey User Settings</label>
+    <visibility>Public</visibility>
+</CustomObject>

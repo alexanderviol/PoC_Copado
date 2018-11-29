@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Ціль послуги</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Цілі послуги</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value><!-- Ціль послуги --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value><!-- Цілі послуги --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value><!-- Ціль послуги --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value><!-- Цілі послуги --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value><!-- Ціль послуги --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value><!-- Цілі послуги --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Instrumental</caseType>
+        <plural>false</plural>
+        <value><!-- Ціль послуги --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Instrumental</caseType>
+        <plural>true</plural>
+        <value><!-- Цілі послуги --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Locative</caseType>
+        <plural>false</plural>
+        <value><!-- Ціль послуги --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Locative</caseType>
+        <plural>true</plural>
+        <value><!-- Цілі послуги --></value>
+    </caseValues>
+    <fields>
+        <help>Встановлює планування для додавання чи виключення з мінімізації факторів подорожі першого та останнього дня подорожі з і до головної бази сервісного ресурсу</help>
+        <label><!-- Exclude Home Base Travel --></label>
+        <name>FSL__Ignore_Home_Base_Coordinates__c</name>
+    </fields>
+    <fields>
+        <label><!-- Object_Group_Field --></label>
+        <name>FSL__Object_Group_Field__c</name>
+    </fields>
+    <fields>
+        <label><!-- Prioritize Resource --></label>
+        <name>FSL__Prioritize_Resource__c</name>
+        <picklistValues>
+            <masterLabel>Least Qualified</masterLabel>
+            <translation>Найменш кваліфікований</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Most Qualified</masterLabel>
+            <translation>Найбільш кваліфікований</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Resource_Group_Field --></label>
+        <name>FSL__Resource_Group_Field__c</name>
+    </fields>
+    <fields>
+        <label><!-- Resource Priority Field --></label>
+        <name>FSL__Resource_Priority_Field__c</name>
+    </fields>
+    <gender>Feminine</gender>
+    <nameFieldLabel>ім&apos;я цілі обслуговування</nameFieldLabel>
+    <recordTypes>
+        <description><!-- Schedule as soon as possible --></description>
+        <label><!-- ASAP --></label>
+        <name>Objective_Asap</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Minimize the use of overtime --></description>
+        <label><!-- Minimize Overtime --></label>
+        <name>Objective_Minimize_Overtime</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Minimize travel time --></description>
+        <label><!-- Minimize Travel --></label>
+        <name>Objective_Minimize_Travel</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Prioritize scheduling according to preferred resource --></description>
+        <label><!-- Preferred Resource --></label>
+        <name>Objective_PreferredEngineer</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Prefer a resource based on a field value on the resource --></description>
+        <label><!-- Resource Priority --></label>
+        <name>Objective_Resource_Priority</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Prefer the least/most qualified candidate --></description>
+        <label><!-- Skill Level --></label>
+        <name>Objective_Skill_Level</name>
+    </recordTypes>
+</CustomObjectTranslation>

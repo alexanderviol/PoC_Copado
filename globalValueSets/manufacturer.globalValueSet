@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>BIOTRONIK</fullName>
+        <default>false</default>
+        <label>BIOTRONIK</label>
+    </customValue>
+    <customValue>
+        <fullName>APC</fullName>
+        <default>false</default>
+        <label>American Pacemaker Corp.</label>
+    </customValue>
+    <customValue>
+        <fullName>ACO</fullName>
+        <default>false</default>
+        <label>Angeion Corp.</label>
+    </customValue>
+    <customValue>
+        <fullName>BME</fullName>
+        <default>false</default>
+        <label>Biomec</label>
+    </customValue>
+    <customValue>
+        <fullName>BSX</fullName>
+        <default>false</default>
+        <label>Boston Scientific</label>
+    </customValue>
+    <customValue>
+        <fullName>CAC</fullName>
+        <default>false</default>
+        <label>Cardiac Control</label>
+    </customValue>
+    <customValue>
+        <fullName>CAI</fullName>
+        <default>false</default>
+        <label>Cardiac Impulse</label>
+    </customValue>
+    <customValue>
+        <fullName>CAP</fullName>
+        <default>false</default>
+        <label>Cardiac Pacemaker</label>
+    </customValue>
+    <customValue>
+        <fullName>CPR</fullName>
+        <default>false</default>
+        <label>Cardiac Products</label>
+    </customValue>
+    <customValue>
+        <fullName>CPM</fullName>
+        <default>false</default>
+        <label>Cardio-pace Medical</label>
+    </customValue>
+    <customValue>
+        <fullName>CHR</fullName>
+        <default>false</default>
+        <label>Chronic</label>
+    </customValue>
+    <customValue>
+        <fullName>COK</fullName>
+        <default>false</default>
+        <label>Cook</label>
+    </customValue>
+    <customValue>
+        <fullName>COI</fullName>
+        <default>false</default>
+        <label>Coratomic Inc.</label>
+    </customValue>
+    <customValue>
+        <fullName>COR</fullName>
+        <default>false</default>
+        <label>Cordis</label>
+    </customValue>
+    <customValue>
+        <fullName>DAI</fullName>
+        <default>false</default>
+        <label>Daig Corp.</label>
+    </customValue>
+    <customValue>
+        <fullName>EA</fullName>
+        <default>false</default>
+        <label>EA</label>
+    </customValue>
+    <customValue>
+        <fullName>ELM</fullName>
+        <default>false</default>
+        <label>Ela Medical</label>
+    </customValue>
+    <customValue>
+        <fullName>ELS</fullName>
+        <default>false</default>
+        <label>Els</label>
+    </customValue>
+    <customValue>
+        <fullName>ENP</fullName>
+        <default>false</default>
+        <label>Enpath Medical Inc.</label>
+    </customValue>
+    <customValue>
+        <fullName>GRE</fullName>
+        <default>false</default>
+        <label>Greatbatch</label>
+    </customValue>
+    <customValue>
+        <fullName>GDT</fullName>
+        <default>false</default>
+        <label>Guidant</label>
+    </customValue>
+    <customValue>
+        <fullName>IMP</fullName>
+        <default>false</default>
+        <label>Implantronik</label>
+    </customValue>
+    <customValue>
+        <fullName>INA</fullName>
+        <default>false</default>
+        <label>Inho A</label>
+    </customValue>
+    <customValue>
+        <fullName>INH</fullName>
+        <default>false</default>
+        <label>Inhouee</label>
+    </customValue>
+    <customValue>
+        <fullName>INN</fullName>
+        <default>false</default>
+        <label>Inhousen</label>
+    </customValue>
+    <customValue>
+        <fullName>INO</fullName>
+        <default>false</default>
+        <label>Innomedica Ltd.</label>
+    </customValue>
+    <customValue>
+        <fullName>INT</fullName>
+        <default>false</default>
+        <label>Intermedics Inc.</label>
+    </customValue>
+    <customValue>
+        <fullName>MDO</fullName>
+        <default>false</default>
+        <label>Medico</label>
+    </customValue>
+    <customValue>
+        <fullName>MDT</fullName>
+        <default>false</default>
+        <label>Medtronic, Inc</label>
+    </customValue>
+    <customValue>
+        <fullName>MYO</fullName>
+        <default>false</default>
+        <label>Myopore</label>
+    </customValue>
+    <customValue>
+        <fullName>OSC</fullName>
+        <default>false</default>
+        <label>Oscor Medical Corporation</label>
+    </customValue>
+    <customValue>
+        <fullName>OSY</fullName>
+        <default>false</default>
+        <label>Osypka</label>
+    </customValue>
+    <customValue>
+        <fullName>OTH</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </customValue>
+    <customValue>
+        <fullName>SMS</fullName>
+        <default>false</default>
+        <label>Siemens</label>
+    </customValue>
+    <customValue>
+        <fullName>SMP</fullName>
+        <default>false</default>
+        <label>Siemens/pacesetter</label>
+    </customValue>
+    <customValue>
+        <fullName>SOM</fullName>
+        <default>false</default>
+        <label>Somedics</label>
+    </customValue>
+    <customValue>
+        <fullName>SRN</fullName>
+        <default>false</default>
+        <label>Sorin</label>
+    </customValue>
+    <customValue>
+        <fullName>SJM</fullName>
+        <default>false</default>
+        <label>St Jude Medical</label>
+    </customValue>
+    <customValue>
+        <fullName>STO</fullName>
+        <default>false</default>
+        <label>Stoeckert</label>
+    </customValue>
+    <customValue>
+        <fullName>TEL</fullName>
+        <default>false</default>
+        <label>Teletronics</label>
+    </customValue>
+    <customValue>
+        <fullName>VAS</fullName>
+        <default>false</default>
+        <label>Vascor Medical Corporation</label>
+    </customValue>
+    <customValue>
+        <fullName>VTX</fullName>
+        <default>false</default>
+        <label>Ventritex</label>
+    </customValue>
+    <customValue>
+        <fullName>Competitor Product</fullName>
+        <default>false</default>
+        <label>Competitor Product</label>
+    </customValue>
+    <customValue>
+        <fullName>Braun</fullName>
+        <default>false</default>
+        <label>Braun</label>
+    </customValue>
+    <customValue>
+        <fullName>Japan Paramedic</fullName>
+        <default>false</default>
+        <label>Japan Paramedic</label>
+    </customValue>
+    <customValue>
+        <fullName>JMS</fullName>
+        <default>false</default>
+        <label>JMS</label>
+    </customValue>
+    <customValue>
+        <fullName>Medtronic Japan</fullName>
+        <default>false</default>
+        <label>Medtronic Japan</label>
+    </customValue>
+    <customValue>
+        <fullName>Nihon Kohden</fullName>
+        <default>false</default>
+        <label>Nihon Kohden</label>
+    </customValue>
+    <customValue>
+        <fullName>Taisho Biomed</fullName>
+        <default>false</default>
+        <label>Taisho Biomed</label>
+    </customValue>
+    <masterLabel>Manufacturer</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingCriteriaRules>
+        <fullName>Order_sharing_APS</fullName>
+        <accessLevel>Read</accessLevel>
+        <description>Shares BINC Orders with APS</description>
+        <label>Order sharing APS</label>
+        <sharedTo>
+            <role>BINC_Advanced_Product_Support</role>
+        </sharedTo>
+        <criteriaItems>
+            <field>sap_company_code__c</field>
+            <operation>equals</operation>
+            <value>&quot;5500_BIO Inc., USA.&quot;</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>order_sharing_customer_soultions</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>Rules shares Orders with all Customer Solutions users</description>
+        <label>Order sharing Customer Solutions</label>
+        <sharedTo>
+            <role>BINC_Customer_Solutions</role>
+        </sharedTo>
+        <criteriaItems>
+            <field>sap_company_code__c</field>
+            <operation>equals</operation>
+            <value>&quot;5500_BIO Inc., USA.&quot;</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>order_sharing_finance</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Order sharing finance</label>
+        <sharedTo>
+            <role>BINC_Finance</role>
+        </sharedTo>
+        <criteriaItems>
+            <field>sap_company_code__c</field>
+            <operation>equals</operation>
+            <value>&quot;5500_BIO Inc., USA.&quot;</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>order_sharing_sales_ops</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>Rules shares Orders with all Sales Operations users</description>
+        <label>Order sharing Sales Ops</label>
+        <sharedTo>
+            <role>BINC_Sales_Operations</role>
+        </sharedTo>
+        <criteriaItems>
+            <field>sap_company_code__c</field>
+            <operation>equals</operation>
+            <value>&quot;5500_BIO Inc., USA.&quot;</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+</SharingRules>

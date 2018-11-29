@@ -1,0 +1,37 @@
+<aura:component controller="AddProdManually">
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    <aura:attribute name="searchText" type="String" default=""/>
+    <aura:attribute name="products" type="ProductItem[]"/>
+    <aura:attribute name="orderId" type="String" />
+    
+    <aura:registerEvent name="nextEvent" type="c:AddProdManually_Next"/>
+    <!-- lightning:input value="{!v.orderId}" class="slds-input" label="OrderId" placeholder="OrderId" / -->
+    
+    
+    <lightning:input value="{!v.searchText}" label="Search for available products" placeholder="Search" />
+    <lightning:button label="Search" onclick="{!c.handleKey}"/>
+    <div>
+        <span id="spinner" style="display:none">
+            <ui:spinner />
+        </span>
+        
+        <table id="prodtable" style="display:none">
+            <tr>
+                <th>Name</th>
+                <th>Serial no.</th>
+                <th>Batch no.</th>
+                <th>Location</th>
+            </tr>
+            <aura:iteration var="prods" items="{!v.products}" >
+                <tr>
+                    <td><span style="cursor: pointer;" onclick="{! c.selectProduct }" id="{!prods.Id+'_'+prods.QuantityOnHand+'_'+prods.ubd_expired__c+'_implantable'}">{!prods.Product2.Name}</span></td>
+                    <td><span style="cursor: pointer;" onclick="{! c.selectProduct }" id="{!prods.Id+'_'+prods.QuantityOnHand+'_'+prods.ubd_expired__c+'_implantable'}">{!prods.SerialNumber}</span></td>
+                    <td><span style="cursor: pointer;" onclick="{! c.selectProduct }" id="{!prods.Id+'_'+prods.QuantityOnHand+'_'+prods.ubd_expired__c+'_implantable'}">{!prods.batch_no__c}</span></td>
+                    <td><span style="cursor: pointer;" onclick="{! c.selectProduct }" id="{!prods.Id+'_'+prods.QuantityOnHand+'_'+prods.ubd_expired__c+'_implantable'}">{!prods.Location.Name}</span></td>
+                </tr>
+                <p></p>
+            </aura:iteration>
+        </table>
+    </div> 
+    
+</aura:component>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Additional Statistics --></label>
+        <name>QIDC__Additional_Statistics_ims__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field is used to store CodeBase value of a job. --></help>
+        <label><!-- Code Base --></label>
+        <name>QIDC__CodeBase_ims__c</name>
+    </fields>
+    <fields>
+        <help><!-- Country code --></help>
+        <label><!-- Country --></label>
+        <name>QIDC__Country_ims__c</name>
+    </fields>
+    <fields>
+        <help><!-- Start date of latest refresh my Onekey download job. --></help>
+        <label><!-- From Date --></label>
+        <name>QIDC__From_Date_ims__c</name>
+    </fields>
+    <fields>
+        <help><!-- Job Id of the refresh my onekey job --></help>
+        <label><!-- Job Id --></label>
+        <name>QIDC__Job_Id_ims__c</name>
+    </fields>
+    <fields>
+        <help><!-- Job start date time of the refresh my onekey job --></help>
+        <label><!-- Job Start Date --></label>
+        <name>QIDC__Job_Start_Date_ims__c</name>
+    </fields>
+    <fields>
+        <label><!-- # Failed Records --></label>
+        <name>QIDC__Number_Of_Records_Errored_ims__c</name>
+    </fields>
+    <fields>
+        <help><!-- Number of records processed in this transaction --></help>
+        <label><!-- Records Processed --></label>
+        <name>QIDC__Number_Of_Records_Processed_ims__c</name>
+    </fields>
+    <fields>
+        <label><!-- Relation Statistics Status --></label>
+        <name>QIDC__Relation_Statistics_Status_ims__c</name>
+    </fields>
+    <fields>
+        <help><!-- Status of Refresh my onekey job. --></help>
+        <label><!-- Status --></label>
+        <name>QIDC__Status_ims__c</name>
+        <picklistValues>
+            <masterLabel>Aborted</masterLabel>
+            <translation><!-- Aborted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Completed</masterLabel>
+            <translation><!-- Completed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Failed</masterLabel>
+            <translation><!-- Failed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Progress</masterLabel>
+            <translation><!-- In Progress --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- &quot;To&quot; datetime of current job. This will be null if no jobs are running. --></help>
+        <label><!-- To Date --></label>
+        <name>QIDC__To_Date_ims__c</name>
+    </fields>
+</CustomObjectTranslation>

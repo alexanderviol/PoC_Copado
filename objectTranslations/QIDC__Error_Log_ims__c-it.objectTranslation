@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- Log Errori --></value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value><!-- Log Errori --></value>
+    </caseValues>
+    <fields>
+        <help>La causa dell&apos;errore. Viene utilizzato per capire il motivo per il quale l&apos;errore si è verificato</help>
+        <label><!-- Cause --></label>
+        <name>QIDC__Cause_ims__c</name>
+    </fields>
+    <fields>
+        <label><!-- Created By --></label>
+        <name>QIDC__Created_By_ims__c</name>
+    </fields>
+    <fields>
+        <help>Codice dell&apos;Errore</help>
+        <label><!-- Error Code --></label>
+        <name>QIDC__Error_Code_ims__c</name>
+    </fields>
+    <fields>
+        <help>External ID utilizzato per il caricamento dei dati</help>
+        <label><!-- Integration ID --></label>
+        <name>QIDC__IntegrationID_ims__c</name>
+    </fields>
+    <fields>
+        <help><!-- Job Id of the OneKey Delta download job --></help>
+        <label><!-- Job Id --></label>
+        <name>QIDC__Job_Id_ims__c</name>
+    </fields>
+    <fields>
+        <help><!-- The message thrown from the Error. --></help>
+        <label><!-- Message --></label>
+        <name>QIDC__Message_ims__c</name>
+    </fields>
+    <fields>
+        <help><!-- Where the Error originated in the system. --></help>
+        <label><!-- Origin --></label>
+        <name>QIDC__Origin_ims__c</name>
+    </fields>
+    <fields>
+        <help>&quot;Stato dell&apos; errore ( Aperto, Chiuso ).&quot;</help>
+        <label><!-- Status --></label>
+        <name>QIDC__Status_ims__c</name>
+        <picklistValues>
+            <masterLabel>Closed</masterLabel>
+            <translation><!-- Closed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Open</masterLabel>
+            <translation><!-- Open --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Tipo di errore che si è verificato</help>
+        <label><!-- Type --></label>
+        <name>QIDC__Type_ims__c</name>
+    </fields>
+    <fields>
+        <label><!-- User --></label>
+        <name>QIDC__User_Name_ims__c</name>
+    </fields>
+    <fields>
+        <help>Utente per il quale si è verificato l&apos;errore</help>
+        <label><!-- User --></label>
+        <name>QIDC__User_ims__c</name>
+        <relationshipLabel><!-- Error Logs --></relationshipLabel>
+    </fields>
+    <gender><!-- Masculine --></gender>
+    <nameFieldLabel><!-- Error Log --></nameFieldLabel>
+    <startsWith><!-- Consonant --></startsWith>
+</CustomObjectTranslation>

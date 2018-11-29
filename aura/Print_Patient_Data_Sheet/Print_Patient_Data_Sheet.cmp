@@ -1,0 +1,14 @@
+<!--
+/* 
+ *  Description  - Component to generate Patient Data Sheet from contact record. 
+ *  Created Date - October 2, 2018
+ *  Created by   - Sumit
+ */
+-->
+<aura:component implements="force:lightningQuickActionWithoutHeader,force:hasRecordId" controller="PrintDocumentController" >
+	<aura:handler name="init" value="{!this}" action="{!c.generatePatientDataSheet}"/>
+    <aura:attribute name="showDetail" type="Boolean" />
+    <aura:if isTrue="{!v.showDetail}">
+        <lightning:spinner variant="brand" size="large" aura:id="mySpinner"/>
+    </aura:if>
+</aura:component>

@@ -1,0 +1,119 @@
+<apex:page standardStylesheets="false" docType="html-5.0" renderAs="pdf" standardController="Order" extensions="BINCPatientDataControllerExt">
+    <apex:Stylesheet value="{!$Resource.BINCPdf}" />
+    
+    <table>
+        <colgroup>
+            <col width="47%"/>
+            <col width="6%" />
+            <col width="47%"/>
+        </colgroup>
+        <tr>
+            <td>
+                <!-- left side -->
+                <h3>TEMPORARY PATIENT IDENTIFICATION CARD</h3>
+                <apex:outputText rendered="{!isLoopRecorder}">Insertable Cardiac Monitor</apex:outputText>
+                
+                <apex:outputPanel rendered="{!NOT(isLoopRecorder)}">
+                    <apex:image rendered="{!isICD}" url="/img/checkbox_checked.gif"/>
+                    <apex:image rendered="{!NOT(isICD)}" url="/img/checkbox_unchecked.gif"/>
+                    IMPLANTABLE DEFIBRILLATOR
+                </apex:outputPanel>
+                <br/>
+                <apex:outputPanel rendered="{!NOT(isLoopRecorder)}">
+                    <apex:image rendered="{!NOT(isICD)}" url="/img/checkbox_checked.gif"/>
+                    <apex:image rendered="{!isICD}" url="/img/checkbox_unchecked.gif"/> 
+                    IMPLANTABLE PACEMAKER
+                </apex:outputPanel>
+                
+                <table class="tpid">
+                    <colgroup>
+                        <col width="41%"/>
+                        <col width="30%"/>
+                        <col width="28%"/>
+                    </colgroup>
+                    
+                    <tr>
+                        <td>{!patientImplantedDevice.Name}</td>
+                        <td>{!patientImplantedDevice.SerialNumber}</td>
+                        <td>
+                            <apex:outputText value="{0, date, MM'/'dd'/'yyyy}">
+                                <apex:param value="{!patientImplantedDevice.InstallDate}" />
+                            </apex:outputText></td>
+                    </tr>
+                    <tr>
+                        <th>Device Model</th>
+                        <th>Serial Number</th>
+                        <th>Implant Date</th>
+                    </tr>
+                    
+                    <apex:repeat value="{!patientImplantedLeads}" var="lead">
+                        <tr>
+                            <td colspan="2">{!lead.Name}</td>
+                            <td>{!lead.SerialNumber}</td>
+                        </tr>
+                        <tr>
+                            <th colspan="2">Lead Model</th>
+                            <th>Serial Number</th>
+                        </tr>
+                    </apex:repeat>
+                    
+                    <tr>
+                        <td colspan="3">{!currentOrder.patient__r.LastName}, {!currentOrder.patient__r.FirstName}</td>
+                    </tr>
+                    <tr>
+                        <th colspan="3">PATIENT NAME</th>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="3">{!currentOrder.implanting_physician__r.LastName}, {!currentOrder.implanting_physician__r.FirstName}</td>
+                    </tr>
+                    <tr>
+                        <th colspan="3">IMPLANTING PHYSICIAN</th>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="3">{!currentOrder.implanting_physician__r.phone}</td>
+                    </tr>
+                    <tr>
+                        <th colspan="3">IMPLANTING PHYSICIAN'S PHONE NUMBER</th>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="3">{!currentOrder.following_physican__r.LastName}, {!currentOrder.following_physican__r.FirstName}</td>
+                    </tr>
+                    <tr>
+                        <th colspan="3">FOLLOWING PHYSICIAN</th>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="3">{!currentOrder.following_physican__r.phone}</td>
+                    </tr>
+                    <tr>
+                        <th colspan="3">FOLLOWING PHYSICIAN'S PHONE NUMBER</th>
+                    </tr>
+                </table>
+                
+            </td>
+            <td></td>
+            
+            <td>
+                <apex:image width="325" height="150" value="{!$Resource.PatientIDCardUpSideDownText}" rendered="{!NOT(isLoopRecorder)}"/>
+                <apex:image width="325" height="150" value="{!$Resource.Temp_Patient_Loop_Recorder}" rendered="{!isLoopRecorder}"/>
+                <div class="tpidtitle">
+                    TEMPORARY PATIENT<br/>
+                    IDENTIFICATION CARD
+                </div>
+                
+                <div class="tpidlogo">
+                    <apex:image width="150" height="30" value="{!$Resource.BiotronikLogo}" /><br />
+                    6024 Jean Road<br/>
+                    Lake Oswego, OR 970335<br/>
+                    24-Hour (800) 547-0394
+                    
+                </div>
+            </td>
+        </tr>
+    </table>
+    
+    <apex:outputPanel rendered="{!IF($CurrentPage.parameters.last != 'tpid', true, false)}"><div style="display:block;page-break-before:always;"></div></apex:outputPanel>
+</apex:page>

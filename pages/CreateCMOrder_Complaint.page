@@ -1,0 +1,102 @@
+<apex:page standardController="complaint__c" extensions="CreateCMOrder" lightningStylesheets="true" >
+    <body class="slds-scope">
+        
+        <h1>
+            {!$Label.LBL_CM_ORDER_HEADLINE1_COMPLAINT}
+        </h1>
+        <br/>
+        <apex:messages />
+
+        <h2>
+            {!$Label.LBL_CM_ORDER_HEADLINE2} {!patientAdd.LastName}, {!patientAdd.FirstName}
+        </h2>
+        
+        <apex:form rendered="{!stillInInput}">
+            <apex:pageBlock >
+                <apex:pageBlockSection >
+                <apex:selectList value="{!orderType}" size="1" multiselect="false">
+                    <apex:selectOptions value="{!orderTypeItems}"/>
+                    <apex:actionSupport event="onchange" rerender="ProductSelection,ProductList,AddressSelection,Addresses">
+                    </apex:actionSupport>
+                </apex:selectList>
+                    </apex:pageBlockSection>
+
+                <apex:pageBlockSection columns="1" id="ProductSelection">
+                    <apex:pageBlockSection rendered="{!IF(orderType == 'Direct Hand-out', true, false)}">
+                         <apex:inputtext value="{!barcode}" label="{!$Label.LBL_SEARCH_BY_SERIAL_NUMBER}"></apex:inputtext><br/>
+                         <apex:inputtext value="{!inventoryName}" label="{!$Label.LBL_SEARCH_BY_NAME_INVENTORY}"></apex:inputtext><br/>
+                        <apex:commandButton value="Search" action="{!searchProductItems}" rerender="ProductList" status="status"/>
+                    </apex:pageBlockSection>
+                </apex:pageBlockSection>
+                <apex:pageBlockSection columns="1" id="ProductList">
+                    <apex:pageBlockSectionItem >
+                        <apex:selectList value="{!selectedCMProduct}" size="1" multiselect="false" label="{!$Label.LBL_SELECT_THE_PRODUCT}">
+                            <apex:selectOptions value="{!availableCMProducts}"/>
+                        </apex:selectList>
+                    </apex:pageBlockSectionItem>
+                </apex:pageBlockSection>
+            </apex:pageBlock>
+            <apex:pageBlock id="Addresses">
+                <apex:pageBlock id="AddressSelection" rendered="{!IF(orderType == 'Direct Hand-out', false, true)}">
+                    <apex:pageBlockTable value="{!patientAddresses}" var="address" rendered="{!showAddressInput == false}">
+                        <apex:column headerValue="{!$Label.LBL_SELECT_TABEL_HEADER}" width="30px">
+                            <input type="radio" name="selAddress" value="{!address.Name}" style="width: 50px;"/>
+                        </apex:column>
+                        <apex:column >
+                            <apex:outputText value="{!address.Name}"></apex:outputText><br/>
+                            {!address.Street} <br/>
+                            {!address.City} &nbsp;&nbsp; {!address.PostalCode}<br/>
+                            {!address.StateProvince} &nbsp;&nbsp; {!address.Country}
+                        </apex:column>
+                        
+                    </apex:pageBlockTable>
+                    <apex:commandButton rendered="{!showAddressInput == false}" value="{!$Label.BUTTON_NEW_SHIPPING_ADRESS}" action="{!newAddress}" rerender="AddressSelection,AddressInput" />
+                </apex:pageBlock>
+                <apex:pageBlock id="AddressInput">
+                    <apex:pageBlockSection rendered="{!showAddressInput}">
+                        <apex:inputField value="{!tempContact.MailingStreet}" label="{!$ObjectType.Contact.fields.MailingStreet.label}" />
+                        <apex:inputField value="{!tempContact.MailingCity}" label="{!$ObjectType.Contact.fields.MailingCity.label}" />
+                        <apex:inputField value="{!tempContact.MailingPostalCode}" label="{!$ObjectType.Contact.fields.MailingPostalCode.label}" />
+                        <apex:inputField value="{!tempContact.MailingStateCode}" label="{!$ObjectType.Contact.fields.MailingState.label}" />
+                        <apex:inputField value="{!tempContact.MailingCountryCode}" label="{!$ObjectType.Contact.fields.MailingCountry.label}"/>
+                    </apex:pageBlockSection>
+                    {!$Label.LBL_CHOOSE_PATIENT_ADDRESS} : <apex:selectList value="{!selectedAddressToUpdate}" size="1" multiselect="false" label="{!$Label.LBL_CHOOSE_PATIENT_ADDRESS} " >
+                        <apex:selectOptions value="{!AddressPicklist}"/>
+                    </apex:selectList>
+                </apex:pageBlock>
+
+            </apex:pageBlock>
+
+            <apex:commandButton value="{!$Label.BUTTON_CMORDER_NEXT}" action="{!prepareOrder}" /> &nbsp; <apex:commandButton value="{!$Label.BUTTON_CMORDER_CANCEL}" action="{!goBack}" />
+        </apex:form>
+        
+        <apex:form rendered="{!showSummary}">
+            {!$Label.LBL_CM_ORDER_SUMMARY} <br/>
+            <apex:pageBlock rendered="{!orderType == 'Direct Hand-out'}">
+                {!$Label.LBL_CM_ORDER_DIRECT_HANDOUT}<br/>
+                {!ourProductItem.Product2.Name}, {!$ObjectType.ProductItem.fields.SerialNumber.label}: {!ourProductItem.SerialNumber}
+            </apex:pageBlock>
+            <apex:pageBlock rendered="{!orderType != 'Direct Hand-out'}">
+
+                <apex:outputText escape="false" value="{!$Label.LBL_CM_ORDER_DIRECT_HANDOUT_ORDER_TYPE}">
+                    <apex:param value="{!orderType}"/>
+                </apex:outputText>
+
+                {!ourProduct.Name}<br/><br/>
+                {!$Label.LBL_CM_ORDER_DIRECT_HANDOUT_SHIPPED_TO}<br/>
+                            {!tempContact.MailingStreet} <br/>
+                            {!tempContact.MailingCity} &nbsp;&nbsp; {!tempContact.MailingPostalCode}<br/>
+                            {!tempContact.MailingStateCode} &nbsp;&nbsp; {!tempContact.MailingCountry}
+            </apex:pageBlock>
+            
+            <apex:commandButton value="{!$Label.BUTTON_CMORDER_SUBMIT}" action="{!createOrder}"/>  &nbsp; <apex:commandButton value="{!$Label.BUTTON_CMORDER_CANCEL}" action="{!goBack}" />
+        </apex:form>
+        
+        <apex:form rendered="{!showResult}">
+            {!$Label.LBL_RESULT_ORDER_CREATED}<br/>
+            <apex:commandButton value="{!$Label.BUTTON_BACK_TO_COMPLAINT}" action="{!goBack}" />
+        </apex:form>
+    </body>
+    
+    
+</apex:page>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- To store Language ISO Code --></help>
+        <label><!-- ISO Language Code --></label>
+        <name>QIDC__ISO_Language_Code_ims__c</name>
+    </fields>
+    <fields>
+        <help><!-- Translated Value for Lookup type --></help>
+        <label><!-- Label --></label>
+        <name>QIDC__Label_ims__c</name>
+    </fields>
+    <fields>
+        <help><!-- Parent Lookup Type Record Name --></help>
+        <label><!-- MDM LookupType --></label>
+        <name>QIDC__MDM_LookupType__c</name>
+        <relationshipLabel><!-- MDM LookupType Translations --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Unique ID as external key --></help>
+        <label><!-- Translation External Key --></label>
+        <name>QIDC__Translation_External_Key_ims__c</name>
+    </fields>
+</CustomObjectTranslation>

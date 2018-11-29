@@ -1,0 +1,1707 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Analysis Result</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Analysis Results</value>
+    </caseValues>
+    <fieldSets>
+        <label><!-- analysis_report_duplicate_check --></label>
+        <name>analysis_report_duplicate_check</name>
+    </fieldSets>
+    <fields>
+        <label><!-- EMDR Status --></label>
+        <name>EMDR_Status__c</name>
+        <picklistValues>
+            <masterLabel>EMDR Approved</masterLabel>
+            <translation><!-- EMDR Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EMDR Deleted</masterLabel>
+            <translation><!-- EMDR Deleted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EMDR Rejected</masterLabel>
+            <translation><!-- EMDR Rejected --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EMDR Reviewed</masterLabel>
+            <translation><!-- EMDR Reviewed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EMDR Rolledback</masterLabel>
+            <translation><!-- EMDR Rolledback --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EMDR Submitted</masterLabel>
+            <translation><!-- EMDR Submitted --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Additional Manufacturer Narrative --></label>
+        <name>additional_manufacturer_narrative__c</name>
+    </fields>
+    <fields>
+        <label><!-- Analysis Results --></label>
+        <name>analysis_results__c</name>
+    </fields>
+    <fields>
+        <label><!-- Complaint --></label>
+        <name>complaint__c</name>
+        <relationshipLabel><!-- Analysis Reports --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Conclusion Code --></label>
+        <name>conclusion_code__c</name>
+        <picklistValues>
+            <masterLabel>10: Conclusion not yet available-evaluation in progress</masterLabel>
+            <translation><!-- 10: Conclusion not yet available-evaluation in progress --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>11: Conclusion Not Yet Available</masterLabel>
+            <translation><!-- 11: Conclusion Not Yet Available --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>12: Cause Traced to Device Design</masterLabel>
+            <translation><!-- 12: Cause Traced to Device Design --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>133: End of Life Problem Identified</masterLabel>
+            <translation><!-- 133: End of Life Problem Identified --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>13: Device difficult to operate</masterLabel>
+            <translation><!-- 13: Device difficult to operate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>143: Quality Control Deficiency</masterLabel>
+            <translation><!-- 143: Quality Control Deficiency --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>144: DO NOT USE</masterLabel>
+            <translation><!-- 144: DO NOT USE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>14: Device incorrectly prepared for use or modified</masterLabel>
+            <translation><!-- 14: Device incorrectly prepared for use or modified --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>15: Device not manufactured by reporting firm</masterLabel>
+            <translation><!-- 15: Device not manufactured by reporting firm --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>16: Device received unused in original package</masterLabel>
+            <translation><!-- 16: Device received unused in original package --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>180: DO NOT USE</masterLabel>
+            <translation><!-- 180: DO NOT USE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>18: Failure To Follow Instructions</masterLabel>
+            <translation><!-- 18: Failure To Follow Instructions --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>192: Shelf Life/Expiration Date Exceeded</masterLabel>
+            <translation><!-- 192: Shelf Life/Expiration Date Exceeded --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>19: Cause Traced to User</masterLabel>
+            <translation><!-- 19: Cause Traced to User --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>20: Inconclusive-investigation in progress</masterLabel>
+            <translation><!-- 20: Inconclusive-investigation in progress --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>21: Cause Traced to Infrastructure</masterLabel>
+            <translation><!-- 21: Cause Traced to Infrastructure --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>22: Known Inherent Risk of Device</masterLabel>
+            <translation><!-- 22: Known Inherent Risk of Device --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>23: Manufacturing Deficiency</masterLabel>
+            <translation><!-- 23: Manufacturing Deficiency --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>24: Cause Traced to Intentional Off-Label, Unapproved, or Contraindicated Use</masterLabel>
+            <translation><!-- 24: Cause Traced to Intentional Off-Label, Unapproved, or Contraindicated Use --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>25: Cause Traced to Manufacturing</masterLabel>
+            <translation><!-- 25: Cause Traced to Manufacturing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>26: Reuse of Single Use Device</masterLabel>
+            <translation><!-- 26: Reuse of Single Use Device --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>27: Cause Traced to Training</masterLabel>
+            <translation><!-- 27: Cause Traced to Training --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>31: DO NOT USE</masterLabel>
+            <translation><!-- 31: DO NOT USE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4301: Design Inadequate for Purpose</masterLabel>
+            <translation><!-- 4301: Design Inadequate for Purpose --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4302: Human Factors Engineering - Device Difficult to Operate</masterLabel>
+            <translation><!-- 4302: Human Factors Engineering - Device Difficult to Operate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4303: Human Factors Engineering - Device Difficult to Assemble</masterLabel>
+            <translation><!-- 4303: Human Factors Engineering - Device Difficult to Assemble --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4304: Human Factors Engineering - Device Difficult to Reprocess</masterLabel>
+            <translation><!-- 4304: Human Factors Engineering - Device Difficult to Reprocess --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4305: Missing or Inadequate Safety Measures</masterLabel>
+            <translation><!-- 4305: Missing or Inadequate Safety Measures --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4306: Design Change Validation Inadequate</masterLabel>
+            <translation><!-- 4306: Design Change Validation Inadequate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4307: Cause Traced to Component Failure</masterLabel>
+            <translation><!-- 4307: Cause Traced to Component Failure --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4308: Cause Traced to Transport/Storage</masterLabel>
+            <translation><!-- 4308: Cause Traced to Transport/Storage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4309: Cause Traced to Environment</masterLabel>
+            <translation><!-- 4309: Cause Traced to Environment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4310: Cause cannot be Traced to Device</masterLabel>
+            <translation><!-- 4310: Cause cannot be Traced to Device --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4311: Adverse Event Related to Procedure</masterLabel>
+            <translation><!-- 4311: Adverse Event Related to Procedure --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4312: Adverse Event Related to Commutability</masterLabel>
+            <translation><!-- 4312: Adverse Event Related to Commutability --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4313: Sabotage or Intentional Misuse</masterLabel>
+            <translation><!-- 4313: Sabotage or Intentional Misuse --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4314: Falsified Device</masterLabel>
+            <translation><!-- 4314: Falsified Device --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4315: Cause Not Established</masterLabel>
+            <translation><!-- 4315: Cause Not Established --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4316: Appropriate Term/Code Not Available</masterLabel>
+            <translation><!-- 4316: Appropriate Term/Code Not Available --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>44: DO NOT USE</masterLabel>
+            <translation><!-- 44: DO NOT USE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>50: Adverse Event Related to Patient Condition</masterLabel>
+            <translation><!-- 50: Adverse Event Related to Patient Condition --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>51: Cause Traced to Maintenance</masterLabel>
+            <translation><!-- 51: Cause Traced to Maintenance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>54: DO NOT USE</masterLabel>
+            <translation><!-- 54: DO NOT USE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>57: Cause Traced to Labeling</masterLabel>
+            <translation><!-- 57: Cause Traced to Labeling --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>61: Unintended Use Error Caused or Contributed to Event</masterLabel>
+            <translation><!-- 61: Unintended Use Error Caused or Contributed to Event --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>63: Device repaired and returned</masterLabel>
+            <translation><!-- 63: Device repaired and returned --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>64: DO NOT USE</masterLabel>
+            <translation><!-- 64: DO NOT USE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>65: DO NOT USE</masterLabel>
+            <translation><!-- 65: DO NOT USE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>67: No Problem Detected</masterLabel>
+            <translation><!-- 67: No Problem Detected --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>68: DO NOT USE</masterLabel>
+            <translation><!-- 68: DO NOT USE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>70: Device discarded - unable to follow-up</masterLabel>
+            <translation><!-- 70: Device discarded - unable to follow-up --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>71: Device evaluated and alleged failure could not be duplicated</masterLabel>
+            <translation><!-- 71: Device evaluated and alleged failure could not be duplicated --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>74: DO NOT USE</masterLabel>
+            <translation><!-- 74: DO NOT USE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>75: No failure detected but product out of specification</masterLabel>
+            <translation><!-- 75: No failure detected but product out of specification --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>77: Operational context contributed to event</masterLabel>
+            <translation><!-- 77: Operational context contributed to event --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>78: DO NOT USE</masterLabel>
+            <translation><!-- 78: DO NOT USE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>79: DO NOT USE</masterLabel>
+            <translation><!-- 79: DO NOT USE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>92: Device not returned - no evaluation will be performed</masterLabel>
+            <translation><!-- 92: Device not returned - no evaluation will be performed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>94: Device received in a condition that made analysis impossible</masterLabel>
+            <translation><!-- 94: Device received in a condition that made analysis impossible --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>95: Device not returned - reserve samples evaluated</masterLabel>
+            <translation><!-- 95: Device not returned - reserve samples evaluated --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Date MDR prepared --></label>
+        <name>date_mdr_prepared__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date sent to FDA --></label>
+        <name>date_sent_to_fda__c</name>
+    </fields>
+    <fields>
+        <label><!-- Device Evaluated by Manufacturer --></label>
+        <name>device_evaluated_by_manufacturer__c</name>
+        <picklistValues>
+            <masterLabel>Evaluation Summary Attached</masterLabel>
+            <translation><!-- Evaluation Summary Attached --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Returned to Manufacturer</masterLabel>
+            <translation><!-- Not Returned to Manufacturer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- No Explanation --></label>
+        <name>evaluated_by_manufacturer_explanation__c</name>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>external_id__c</name>
+    </fields>
+    <fields>
+        <label><!-- FDA Response --></label>
+        <name>fda_response__c</name>
+        <picklistValues>
+            <masterLabel>Accepted</masterLabel>
+            <translation><!-- Accepted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected</masterLabel>
+            <translation><!-- Rejected --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- FDA Response Date --></label>
+        <name>fda_response_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- If Follow-up what Type --></label>
+        <name>if_follow_up_what_type__c</name>
+        <picklistValues>
+            <masterLabel>Additional Information</masterLabel>
+            <translation><!-- Additional Information --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Correction</masterLabel>
+            <translation><!-- Correction --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Device Evaluation</masterLabel>
+            <translation><!-- Device Evaluation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Response to FDA Request</masterLabel>
+            <translation><!-- Response to FDA Request --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Manufacturer event description --></label>
+        <name>manufacturer_event_description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Method Code --></label>
+        <name>method_code__c</name>
+        <picklistValues>
+            <masterLabel>0: DO NOT USE</masterLabel>
+            <translation><!-- 0: DO NOT USE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>10: Actual device involved in incident was evaluated</masterLabel>
+            <translation><!-- 10: Actual device involved in incident was evaluated --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>11: A device from same lot of the actual device involved in incident was evaluated</masterLabel>
+            <translation><!-- 11: A device from same lot of the actual device involved in incident was evaluated --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>12: Device from reserve sample evaluated</masterLabel>
+            <translation><!-- 12: Device from reserve sample evaluated --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>133: DO NOT USE</masterLabel>
+            <translation><!-- 133: DO NOT USE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>13: Device from controlled/non-released inventory evaluated</masterLabel>
+            <translation><!-- 13: Device from controlled/non-released inventory evaluated --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>20: Device evaluated with respect to operational environment</masterLabel>
+            <translation><!-- 20: Device evaluated with respect to operational environment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>22: Computer software performance tests conducted</masterLabel>
+            <translation><!-- 22: Computer software performance tests conducted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>23: Electrical tests performed</masterLabel>
+            <translation><!-- 23: Electrical tests performed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>26: Mechanical tests performed</masterLabel>
+            <translation><!-- 26: Mechanical tests performed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>27: Mechanical tests, dynamic - fatigue test</masterLabel>
+            <translation><!-- 27: Mechanical tests, dynamic - fatigue test --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>28: Mechanical tests, static - tension or compression failure</masterLabel>
+            <translation><!-- 28: Mechanical tests, static - tension or compression failure --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3261: Acoustic energy testing</masterLabel>
+            <translation><!-- 3261: Acoustic energy testing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3262: Acoustic noise testing</masterLabel>
+            <translation><!-- 3262: Acoustic noise testing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3263: Actual device not evaluated</masterLabel>
+            <translation><!-- 3263: Actual device not evaluated --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3264: Agent contamination testing</masterLabel>
+            <translation><!-- 3264: Agent contamination testing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3265: Agglutination testing</masterLabel>
+            <translation><!-- 3265: Agglutination testing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3266: Assembly and packaging review</masterLabel>
+            <translation><!-- 3266: Assembly and packaging review --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3267: Bioassay evaluation</masterLabel>
+            <translation><!-- 3267: Bioassay evaluation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3268: Biocompatibility testing</masterLabel>
+            <translation><!-- 3268: Biocompatibility testing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3269: Biologic evaluation</masterLabel>
+            <translation><!-- 3269: Biologic evaluation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3270: Carcinogenic testing</masterLabel>
+            <translation><!-- 3270: Carcinogenic testing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3271: Cell evaluation</masterLabel>
+            <translation><!-- 3271: Cell evaluation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3272: Code validation</masterLabel>
+            <translation><!-- 3272: Code validation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3273: Code review</masterLabel>
+            <translation><!-- 3273: Code review --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3274: Complement activation testing</masterLabel>
+            <translation><!-- 3274: Complement activation testing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3275: Composition testing</masterLabel>
+            <translation><!-- 3275: Composition testing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3276: Conducted emissions testing</masterLabel>
+            <translation><!-- 3276: Conducted emissions testing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3277: Contamination testing</masterLabel>
+            <translation><!-- 3277: Contamination testing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3278: Creep (strength) testing</masterLabel>
+            <translation><!-- 3278: Creep (strength) testing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3279: Current leakage testing</masterLabel>
+            <translation><!-- 3279: Current leakage testing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3280: Data validation</masterLabel>
+            <translation><!-- 3280: Data validation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3281: Degradation/corrosion/erosion testing</masterLabel>
+            <translation><!-- 3281: Degradation/corrosion/erosion testing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3282: Design validation</masterLabel>
+            <translation><!-- 3282: Design validation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3283: Elasticity testing</masterLabel>
+            <translation><!-- 3283: Elasticity testing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3284: Electrical fast burst testing</masterLabel>
+            <translation><!-- 3284: Electrical fast burst testing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3285: Electrical slow fluctuation testing</masterLabel>
+            <translation><!-- 3285: Electrical slow fluctuation testing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3286: Electromagnetic compatibility (emc) evaluation</masterLabel>
+            <translation><!-- 3286: Electromagnetic compatibility (emc) evaluation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3287: Electron microscopy</masterLabel>
+            <translation><!-- 3287: Electron microscopy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3288: Electrostatic discharge testing</masterLabel>
+            <translation><!-- 3288: Electrostatic discharge testing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3289: Emissions testing</masterLabel>
+            <translation><!-- 3289: Emissions testing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3290: Environment evaluation</masterLabel>
+            <translation><!-- 3290: Environment evaluation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3291: Evaluation method</masterLabel>
+            <translation><!-- 3291: Evaluation method --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3292: Fluid pressure testing</masterLabel>
+            <translation><!-- 3292: Fluid pressure testing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3293: Fracture toughness testing</masterLabel>
+            <translation><!-- 3293: Fracture toughness testing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3294: Genotoxic testing</masterLabel>
+            <translation><!-- 3294: Genotoxic testing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3295: Gradient-induced field effect testing</masterLabel>
+            <translation><!-- 3295: Gradient-induced field effect testing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3296: Growth factor evaluation</masterLabel>
+            <translation><!-- 3296: Growth factor evaluation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3297: Hardness testing</masterLabel>
+            <translation><!-- 3297: Hardness testing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3298: Hematologic testing</masterLabel>
+            <translation><!-- 3298: Hematologic testing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3299: Image artifact testing</masterLabel>
+            <translation><!-- 3299: Image artifact testing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3300: Image inspection</masterLabel>
+            <translation><!-- 3300: Image inspection --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3301: Immunity testing</masterLabel>
+            <translation><!-- 3301: Immunity testing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3302: Impact testing</masterLabel>
+            <translation><!-- 3302: Impact testing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3303: Impedance testing</masterLabel>
+            <translation><!-- 3303: Impedance testing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3304: In situ observation</masterLabel>
+            <translation><!-- 3304: In situ observation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3305: Infrasound testing</masterLabel>
+            <translation><!-- 3305: Infrasound testing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3306: Ingress protection testing</masterLabel>
+            <translation><!-- 3306: Ingress protection testing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3307: Installation review</masterLabel>
+            <translation><!-- 3307: Installation review --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3308: Insulation testing</masterLabel>
+            <translation><!-- 3308: Insulation testing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3309: Interference substance testing</masterLabel>
+            <translation><!-- 3309: Interference substance testing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3310: Ionizing radiation testing</masterLabel>
+            <translation><!-- 3310: Ionizing radiation testing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3311: Light source performance evaluation</masterLabel>
+            <translation><!-- 3311: Light source performance evaluation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3312: Light testing</masterLabel>
+            <translation><!-- 3312: Light testing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3313: Line voltage testing</masterLabel>
+            <translation><!-- 3313: Line voltage testing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3314: Magnetically-induced displacement force testing</masterLabel>
+            <translation><!-- 3314: Magnetically-induced displacement force testing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3315: Magnetically-induced torque testing</masterLabel>
+            <translation><!-- 3315: Magnetically-induced torque testing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3316: Maintenance review</masterLabel>
+            <translation><!-- 3316: Maintenance review --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3317: Manufacturing review</masterLabel>
+            <translation><!-- 3317: Manufacturing review --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3318: Materials and chemistry evaluation</masterLabel>
+            <translation><!-- 3318: Materials and chemistry evaluation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3319: Material or material leachate pyrogenic testing</masterLabel>
+            <translation><!-- 3319: Material or material leachate pyrogenic testing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3320: Microbial contamination testing</masterLabel>
+            <translation><!-- 3320: Microbial contamination testing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3321: Microscopic inspection</masterLabel>
+            <translation><!-- 3321: Microscopic inspection --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3322: Mutagenic testing</masterLabel>
+            <translation><!-- 3322: Mutagenic testing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3323: No testing methods performed</masterLabel>
+            <translation><!-- 3323: No testing methods performed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3324: Overcurrent protection testing</masterLabel>
+            <translation><!-- 3324: Overcurrent protection testing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3325: Packaging verification</masterLabel>
+            <translation><!-- 3325: Packaging verification --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3326: Physical structure testing</masterLabel>
+            <translation><!-- 3326: Physical structure testing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3327: Platelet activation testing</masterLabel>
+            <translation><!-- 3327: Platelet activation testing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3328: Power frequency magnetic field testing</masterLabel>
+            <translation><!-- 3328: Power frequency magnetic field testing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3329: Power source testing</masterLabel>
+            <translation><!-- 3329: Power source testing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3330: Pressure testing</masterLabel>
+            <translation><!-- 3330: Pressure testing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3331: Process evaluation</masterLabel>
+            <translation><!-- 3331: Process evaluation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3332: Quality control review</masterLabel>
+            <translation><!-- 3332: Quality control review --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3333: Radiated emissions testing</masterLabel>
+            <translation><!-- 3333: Radiated emissions testing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3335: Radiofrequency interference testing</masterLabel>
+            <translation><!-- 3335: Radiofrequency interference testing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3336: Radiographic inspection</masterLabel>
+            <translation><!-- 3336: Radiographic inspection --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3337: Radiologic evaluation</masterLabel>
+            <translation><!-- 3337: Radiologic evaluation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3338: Reactivity testing</masterLabel>
+            <translation><!-- 3338: Reactivity testing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3339: Reproductive toxicity evaluation</masterLabel>
+            <translation><!-- 3339: Reproductive toxicity evaluation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3340: Reserve sample tested from same lot, no failure detected</masterLabel>
+            <translation><!-- 3340: Reserve sample tested from same lot, no failure detected --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3341: Radiofrequency induced heat testing</masterLabel>
+            <translation><!-- 3341: Radiofrequency induced heat testing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3342: Scaffold evaluation</masterLabel>
+            <translation><!-- 3342: Scaffold evaluation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3343: Scanning probe microscopy</masterLabel>
+            <translation><!-- 3343: Scanning probe microscopy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3344: Shock testing</masterLabel>
+            <translation><!-- 3344: Shock testing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3345: Simulated use testing</masterLabel>
+            <translation><!-- 3345: Simulated use testing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3346: Software stress testing</masterLabel>
+            <translation><!-- 3346: Software stress testing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3347: Software validation</masterLabel>
+            <translation><!-- 3347: Software validation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3348: Software verification</masterLabel>
+            <translation><!-- 3348: Software verification --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3349: Spectroscopy</masterLabel>
+            <translation><!-- 3349: Spectroscopy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3350: Static analysis</masterLabel>
+            <translation><!-- 3350: Static analysis --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3351: Sterility method verification</masterLabel>
+            <translation><!-- 3351: Sterility method verification --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3352: Sterilization process review</masterLabel>
+            <translation><!-- 3352: Sterilization process review --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3353: Storage and shipment review</masterLabel>
+            <translation><!-- 3353: Storage and shipment review --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3354: Strength testing</masterLabel>
+            <translation><!-- 3354: Strength testing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3355: Stress testing</masterLabel>
+            <translation><!-- 3355: Stress testing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3356: Surge protection testing</masterLabel>
+            <translation><!-- 3356: Surge protection testing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3357: Surge response testing</masterLabel>
+            <translation><!-- 3357: Surge response testing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3358: System testing</masterLabel>
+            <translation><!-- 3358: System testing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3359: Temperature testing</masterLabel>
+            <translation><!-- 3359: Temperature testing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3360: Test for high temperature conditions</masterLabel>
+            <translation><!-- 3360: Test for high temperature conditions --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3361: Test for low temperature conditions</masterLabel>
+            <translation><!-- 3361: Test for low temperature conditions --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3362: Thermal energy evaluation</masterLabel>
+            <translation><!-- 3362: Thermal energy evaluation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3363: Thrombotic testing</masterLabel>
+            <translation><!-- 3363: Thrombotic testing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3364: Tissue engineering evaluation</masterLabel>
+            <translation><!-- 3364: Tissue engineering evaluation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3365: Ultrasonic sound testing</masterLabel>
+            <translation><!-- 3365: Ultrasonic sound testing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3366: Unit testing</masterLabel>
+            <translation><!-- 3366: Unit testing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3367: Use testing</masterLabel>
+            <translation><!-- 3367: Use testing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3368: User survey</masterLabel>
+            <translation><!-- 3368: User survey --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3369: Vibration testing</masterLabel>
+            <translation><!-- 3369: Vibration testing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3370: Voltage fluctuation testing</masterLabel>
+            <translation><!-- 3370: Voltage fluctuation testing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3371: Wear testing</masterLabel>
+            <translation><!-- 3371: Wear testing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>34: Performed test to determine if incident was the result of interaction with another device(s)</masterLabel>
+            <translation><!-- 34: Performed test to determine if incident was the result of interaction with another device(s) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>35: User-device interface test performed</masterLabel>
+            <translation><!-- 35: User-device interface test performed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>36: Analysis of labeling performed</masterLabel>
+            <translation><!-- 36: Analysis of labeling performed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>37: Photographic images made during evaluation</masterLabel>
+            <translation><!-- 37: Photographic images made during evaluation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>38: Visual examination</masterLabel>
+            <translation><!-- 38: Visual examination --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>39: Chemical tests e.G. Corrosion, reaction</masterLabel>
+            <translation><!-- 39: Chemical tests e.G. Corrosion, reaction --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4112: DO NOT USE</masterLabel>
+            <translation><!-- 4112: DO NOT USE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4116: DO NOT USE</masterLabel>
+            <translation><!-- 4116: DO NOT USE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4117: DO NOT USE</masterLabel>
+            <translation><!-- 4117: DO NOT USE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>51: DO NOT USE</masterLabel>
+            <translation><!-- 51: DO NOT USE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>74: DO NOT USE</masterLabel>
+            <translation><!-- 74: DO NOT USE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>77: DO NOT USE</masterLabel>
+            <translation><!-- 77: DO NOT USE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>82: Environmental tests, temperature, humidity and vibration</masterLabel>
+            <translation><!-- 82: Environmental tests, temperature, humidity and vibration --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>83: Pathological evaluation of returned device (i.E. Vascular grafts, heart valves, etc.)</masterLabel>
+            <translation><!-- 83: Pathological evaluation of returned device (i.E. Vascular grafts, heart valves, etc.) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>84: Optical tests of all specifications performed</masterLabel>
+            <translation><!-- 84: Optical tests of all specifications performed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>89: Filter testing</masterLabel>
+            <translation><!-- 89: Filter testing --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Result Code --></label>
+        <name>result_code__c</name>
+        <picklistValues>
+            <masterLabel>0: DO NOT USE</masterLabel>
+            <translation><!-- 0: DO NOT USE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>100: DO NOT USE</masterLabel>
+            <translation><!-- 100: DO NOT USE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>102: Incompatible Component/ Accessory</masterLabel>
+            <translation><!-- 102: Incompatible Component/ Accessory --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>104: Software Problem Identified</masterLabel>
+            <translation><!-- 104: Software Problem Identified --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>10: DO NOT USE</masterLabel>
+            <translation><!-- 10: DO NOT USE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>110: Design Error</masterLabel>
+            <translation><!-- 110: Design Error --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>111: Packaging Problem Identified</masterLabel>
+            <translation><!-- 111: Packaging Problem Identified --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>113: Interface Design Error</masterLabel>
+            <translation><!-- 113: Interface Design Error --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>114: Operational Problem Identified</masterLabel>
+            <translation><!-- 114: Operational Problem Identified --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>115: Maintenance Problem Identified</masterLabel>
+            <translation><!-- 115: Maintenance Problem Identified --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>120: Electrical Problem Identified</masterLabel>
+            <translation><!-- 120: Electrical Problem Identified --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>121: Short Circuit</masterLabel>
+            <translation><!-- 121: Short Circuit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>122: Open Circuit</masterLabel>
+            <translation><!-- 122: Open Circuit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>131: Energy Storage System Problem</masterLabel>
+            <translation><!-- 131: Energy Storage System Problem --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>133: End of life - expected</masterLabel>
+            <translation><!-- 133: End of life - expected --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>134: DO NOT USE</masterLabel>
+            <translation><!-- 134: DO NOT USE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>135: Degradation Problem Identified</masterLabel>
+            <translation><!-- 135: Degradation Problem Identified --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>140: Wear Problem</masterLabel>
+            <translation><!-- 140: Wear Problem --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>142: Biological Contamination</masterLabel>
+            <translation><!-- 142: Biological Contamination --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>143: Inadequate quality assurance/control</masterLabel>
+            <translation><!-- 143: Inadequate quality assurance/control --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>144: Insulation Problem Identified</masterLabel>
+            <translation><!-- 144: Insulation Problem Identified --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>145: Lubrication Problem Identified</masterLabel>
+            <translation><!-- 145: Lubrication Problem Identified --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>150: Labeling and Instructions for Use/Maintenance</masterLabel>
+            <translation><!-- 150: Labeling and Instructions for Use/Maintenance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>154: Inadequate Labelling and/or Instructions for Use</masterLabel>
+            <translation><!-- 154: Inadequate Labelling and/or Instructions for Use --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>156: Incorrect Labeling and/or Instructions for Use</masterLabel>
+            <translation><!-- 156: Incorrect Labeling and/or Instructions for Use --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>160: Package insert information inadequate/incorrect</masterLabel>
+            <translation><!-- 160: Package insert information inadequate/incorrect --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>170: Manufacturing Process Problem Identified</masterLabel>
+            <translation><!-- 170: Manufacturing Process Problem Identified --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>171: Packaging Compromised</masterLabel>
+            <translation><!-- 171: Packaging Compromised --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>174: Material and/or Chemical Problem Identified</masterLabel>
+            <translation><!-- 174: Material and/or Chemical Problem Identified --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>176: Tolerance Stack-Up</masterLabel>
+            <translation><!-- 176: Tolerance Stack-Up --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>180: Mechanical Problem Identified</masterLabel>
+            <translation><!-- 180: Mechanical Problem Identified --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>190: DO NOT USE</masterLabel>
+            <translation><!-- 190: DO NOT USE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>192: Shelf life exceeded</masterLabel>
+            <translation><!-- 192: Shelf life exceeded --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>193: Storage Problem Identified</masterLabel>
+            <translation><!-- 193: Storage Problem Identified --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>195: Sterilization</masterLabel>
+            <translation><!-- 195: Sterilization --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>196: Optical Transmission Problem Identified</masterLabel>
+            <translation><!-- 196: Optical Transmission Problem Identified --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>197: Electromagnetic Compatibility Problem Identified</masterLabel>
+            <translation><!-- 197: Electromagnetic Compatibility Problem Identified --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>201: Cleaning error</masterLabel>
+            <translation><!-- 201: Cleaning error --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>202: Inappropriate Material</masterLabel>
+            <translation><!-- 202: Inappropriate Material --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>203: Incompatible Material</masterLabel>
+            <translation><!-- 203: Incompatible Material --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>211: Hardware Timing Problem Identified</masterLabel>
+            <translation><!-- 211: Hardware Timing Problem Identified --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>213: No Device Problem Found</masterLabel>
+            <translation><!-- 213: No Device Problem Found --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>231: DO NOT USE</masterLabel>
+            <translation><!-- 231: DO NOT USE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3029: Damage due to chemical agent</masterLabel>
+            <translation><!-- 3029: Damage due to chemical agent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3113: DO NOT USE</masterLabel>
+            <translation><!-- 3113: DO NOT USE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3123: DO NOT USE</masterLabel>
+            <translation><!-- 3123: DO NOT USE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3199: Incomplete device returned</masterLabel>
+            <translation><!-- 3199: Incomplete device returned --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3200: Incorrect Data Definition</masterLabel>
+            <translation><!-- 3200: Incorrect Data Definition --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3201: Installation Problem Identified</masterLabel>
+            <translation><!-- 3201: Installation Problem Identified --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3202: Agglutination Problem</masterLabel>
+            <translation><!-- 3202: Agglutination Problem --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3203: Biocompatibility Problem Identified</masterLabel>
+            <translation><!-- 3203: Biocompatibility Problem Identified --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3204: Biological Problem Identified</masterLabel>
+            <translation><!-- 3204: Biological Problem Identified --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3205: Carcinogenic Problem</masterLabel>
+            <translation><!-- 3205: Carcinogenic Problem --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3206: Complement Activation Problem</masterLabel>
+            <translation><!-- 3206: Complement Activation Problem --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3207: Device Migration</masterLabel>
+            <translation><!-- 3207: Device Migration --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3208: Configuration Issue</masterLabel>
+            <translation><!-- 3208: Configuration Issue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3209: DO NOT USE</masterLabel>
+            <translation><!-- 3209: DO NOT USE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3210: Deadlock</masterLabel>
+            <translation><!-- 3210: Deadlock --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3211: Deformation Problem</masterLabel>
+            <translation><!-- 3211: Deformation Problem --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3212: Endotoxin Contamination</masterLabel>
+            <translation><!-- 3212: Endotoxin Contamination --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3213: Interoperability Problem Identified</masterLabel>
+            <translation><!-- 3213: Interoperability Problem Identified --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3214: Livelock</masterLabel>
+            <translation><!-- 3214: Livelock --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3215: Magnetically-Induced Movement</masterLabel>
+            <translation><!-- 3215: Magnetically-Induced Movement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3216: Material or Material Leachate Pyrogenic Problem</masterLabel>
+            <translation><!-- 3216: Material or Material Leachate Pyrogenic Problem --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3217: Mechanical Shock Problem</masterLabel>
+            <translation><!-- 3217: Mechanical Shock Problem --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3218: Microbial Contamination</masterLabel>
+            <translation><!-- 3218: Microbial Contamination --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3219: Molecular Structure Problem</masterLabel>
+            <translation><!-- 3219: Molecular Structure Problem --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3220: Mutagenic Problem</masterLabel>
+            <translation><!-- 3220: Mutagenic Problem --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3221: No Findings Available</masterLabel>
+            <translation><!-- 3221: No Findings Available --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3222: Non-Functional Defect</masterLabel>
+            <translation><!-- 3222: Non-Functional Defect --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3223: Non-terminating code</masterLabel>
+            <translation><!-- 3223: Non-terminating code --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3224: Optical Problem Identified</masterLabel>
+            <translation><!-- 3224: Optical Problem Identified --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3225: Out-of-bounds error</masterLabel>
+            <translation><!-- 3225: Out-of-bounds error --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3226: Platelet Activation Problem</masterLabel>
+            <translation><!-- 3226: Platelet Activation Problem --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3227: Power Source Problem Identified</masterLabel>
+            <translation><!-- 3227: Power Source Problem Identified --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3228: Protective System Problem Identified</masterLabel>
+            <translation><!-- 3228: Protective System Problem Identified --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3229: Radiofrequency Induced Overheating</masterLabel>
+            <translation><!-- 3229: Radiofrequency Induced Overheating --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3230: Clinical Imaging Problem Identified</masterLabel>
+            <translation><!-- 3230: Clinical Imaging Problem Identified --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3231: Reactivity Problem Identified</masterLabel>
+            <translation><!-- 3231: Reactivity Problem Identified --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3232: Reproductive Toxicity Problem Identified</masterLabel>
+            <translation><!-- 3232: Reproductive Toxicity Problem Identified --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3233: Results Pending Completion of Investigation</masterLabel>
+            <translation><!-- 3233: Results Pending Completion of Investigation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3234: Reused device not cleaned</masterLabel>
+            <translation><!-- 3234: Reused device not cleaned --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3235: Runtime memory access error</masterLabel>
+            <translation><!-- 3235: Runtime memory access error --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3236: Transport Problem Identified</masterLabel>
+            <translation><!-- 3236: Transport Problem Identified --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3237: Signal Loss</masterLabel>
+            <translation><!-- 3237: Signal Loss --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3238: Software Installation Problem Identified</masterLabel>
+            <translation><!-- 3238: Software Installation Problem Identified --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3239: Software Requirement Error</masterLabel>
+            <translation><!-- 3239: Software Requirement Error --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>323: Gradient Induced Field Problem</masterLabel>
+            <translation><!-- 323: Gradient Induced Field Problem --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3240: Software Runtime Error</masterLabel>
+            <translation><!-- 3240: Software Runtime Error --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3241: Software Security Vulnerability</masterLabel>
+            <translation><!-- 3241: Software Security Vulnerability --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3242: Stiffness Problem Identified</masterLabel>
+            <translation><!-- 3242: Stiffness Problem Identified --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3243: Stress Problem Identified</masterLabel>
+            <translation><!-- 3243: Stress Problem Identified --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3244: Problem due to Thrombosis Activation</masterLabel>
+            <translation><!-- 3244: Problem due to Thrombosis Activation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3245: Type mismatch</masterLabel>
+            <translation><!-- 3245: Type mismatch --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3246: Unreachable code</masterLabel>
+            <translation><!-- 3246: Unreachable code --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3247: Unused device returned in sterile packaging</masterLabel>
+            <translation><!-- 3247: Unused device returned in sterile packaging --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3248: Wireless Communication Problem</masterLabel>
+            <translation><!-- 3248: Wireless Communication Problem --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3250: Failure to Calibrate</masterLabel>
+            <translation><!-- 3250: Failure to Calibrate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3251: Fatigue Problem</masterLabel>
+            <translation><!-- 3251: Fatigue Problem --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3252: Fracture Problem</masterLabel>
+            <translation><!-- 3252: Fracture Problem --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3253: Friction Problem Identified</masterLabel>
+            <translation><!-- 3253: Friction Problem Identified --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3254: Genotoxicity Problem Identified</masterLabel>
+            <translation><!-- 3254: Genotoxicity Problem Identified --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3255: Hematological Problem Identified</masterLabel>
+            <translation><!-- 3255: Hematological Problem Identified --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3256: Image Artifact</masterLabel>
+            <translation><!-- 3256: Image Artifact --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3257: Impedance Problem Identified</masterLabel>
+            <translation><!-- 3257: Impedance Problem Identified --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3258: Improper Composition/ Concentration</masterLabel>
+            <translation><!-- 3258: Improper Composition/ Concentration --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3259: Improper Physical Structure</masterLabel>
+            <translation><!-- 3259: Improper Physical Structure --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3260: Inadequate Immunity</masterLabel>
+            <translation><!-- 3260: Inadequate Immunity --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>326: DO NOT USE</masterLabel>
+            <translation><!-- 326: DO NOT USE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>331: Environment Problem Identified</masterLabel>
+            <translation><!-- 331: Environment Problem Identified --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>332: Environmental Humidity Problem Identified</masterLabel>
+            <translation><!-- 332: Environmental Humidity Problem Identified --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4201: Cytotoxicity Problem Identified</masterLabel>
+            <translation><!-- 4201: Cytotoxicity Problem Identified --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4202: Unintended Presence of Allergens</masterLabel>
+            <translation><!-- 4202: Unintended Presence of Allergens --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4203: Electrical/Electronic Component Problem Identified</masterLabel>
+            <translation><!-- 4203: Electrical/Electronic Component Problem Identified --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4204: Unintended Emission</masterLabel>
+            <translation><!-- 4204: Unintended Emission --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4205: Network Communication Problem</masterLabel>
+            <translation><!-- 4205: Network Communication Problem --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4206: Device Not Compatible With Another Device</masterLabel>
+            <translation><!-- 4206: Device Not Compatible With Another Device --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4207: Unintended Compatibility</masterLabel>
+            <translation><!-- 4207: Unintended Compatibility --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4208: Inadequate or Incorrect Instructions for Maintenance</masterLabel>
+            <translation><!-- 4208: Inadequate or Incorrect Instructions for Maintenance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4209: Inadequate Physicochemical Properties</masterLabel>
+            <translation><!-- 4209: Inadequate Physicochemical Properties --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>420: DO NOT USE</masterLabel>
+            <translation><!-- 420: DO NOT USE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4210: Leakage/Seal</masterLabel>
+            <translation><!-- 4210: Leakage/Seal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4211: Incorrect Dimension</masterLabel>
+            <translation><!-- 4211: Incorrect Dimension --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4212: Light Source Problem Identified</masterLabel>
+            <translation><!-- 4212: Light Source Problem Identified --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4213: Software Maintenance Problem Identified</masterLabel>
+            <translation><!-- 4213: Software Maintenance Problem Identified --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4214: Erroneous Data Transfer</masterLabel>
+            <translation><!-- 4214: Erroneous Data Transfer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4215: Data Storage or Loss of Data</masterLabel>
+            <translation><!-- 4215: Data Storage or Loss of Data --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4216: Overheating Problem Identified</masterLabel>
+            <translation><!-- 4216: Overheating Problem Identified --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4217: Excessive Heating Identified</masterLabel>
+            <translation><!-- 4217: Excessive Heating Identified --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4218: Excessive Cooling Identified</masterLabel>
+            <translation><!-- 4218: Excessive Cooling Identified --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4219: Inadequate Cooling Identified</masterLabel>
+            <translation><!-- 4219: Inadequate Cooling Identified --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4220: Fail-safe Problem Identified</masterLabel>
+            <translation><!-- 4220: Fail-safe Problem Identified --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4221: Alarm System Problem Identified</masterLabel>
+            <translation><!-- 4221: Alarm System Problem Identified --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4222: Problem of Device to Self-Test</masterLabel>
+            <translation><!-- 4222: Problem of Device to Self-Test --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4223: Problem to Auto Stop</masterLabel>
+            <translation><!-- 4223: Problem to Auto Stop --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4224: Premature Indicator Activation</masterLabel>
+            <translation><!-- 4224: Premature Indicator Activation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4225: Reset Problem</masterLabel>
+            <translation><!-- 4225: Reset Problem --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4226: Shielding Problem</masterLabel>
+            <translation><!-- 4226: Shielding Problem --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4227: Missing or Inadequate Safety Measures</masterLabel>
+            <translation><!-- 4227: Missing or Inadequate Safety Measures --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4228: Device Incorrectly Reprocessed</masterLabel>
+            <translation><!-- 4228: Device Incorrectly Reprocessed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4229: Device Incorrectly Cleaned During Reprocessing</masterLabel>
+            <translation><!-- 4229: Device Incorrectly Cleaned During Reprocessing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4230: Device Incorrectly Disinfected/Sterilised During Reprocessing</masterLabel>
+            <translation><!-- 4230: Device Incorrectly Disinfected/Sterilised During Reprocessing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4231: Device Incorrectly Assembled During Reprocessing</masterLabel>
+            <translation><!-- 4231: Device Incorrectly Assembled During Reprocessing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4232: Incorrect Interpretation of Results/Data</masterLabel>
+            <translation><!-- 4232: Incorrect Interpretation of Results/Data --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4233: Patient Sample Problem</masterLabel>
+            <translation><!-- 4233: Patient Sample Problem --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4234: New or Unknown Interferent</masterLabel>
+            <translation><!-- 4234: New or Unknown Interferent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4235: Known Interferent</masterLabel>
+            <translation><!-- 4235: Known Interferent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4236: Change in Target Marker/Variant/ Mutant</masterLabel>
+            <translation><!-- 4236: Change in Target Marker/Variant/ Mutant --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4237: Pre-analytical Handling Problem</masterLabel>
+            <translation><!-- 4237: Pre-analytical Handling Problem --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4238: Contamination of Environment by Device</masterLabel>
+            <translation><!-- 4238: Contamination of Environment by Device --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4239: Environmental Pressure Problem Identified</masterLabel>
+            <translation><!-- 4239: Environmental Pressure Problem Identified --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4240: Ambient Light Problem Identified</masterLabel>
+            <translation><!-- 4240: Ambient Light Problem Identified --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4241: Sterilization Problem Identified</masterLabel>
+            <translation><!-- 4241: Sterilization Problem Identified --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4242: Maintenance of Manufacturing Machinery</masterLabel>
+            <translation><!-- 4242: Maintenance of Manufacturing Machinery --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4243: Packaging Materials Problem</masterLabel>
+            <translation><!-- 4243: Packaging Materials Problem --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4244: Packaging Contains Unintended Material</masterLabel>
+            <translation><!-- 4244: Packaging Contains Unintended Material --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4245: Packaging Contains Incorrect Device</masterLabel>
+            <translation><!-- 4245: Packaging Contains Incorrect Device --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4246: Transport/Storage Problem Identified</masterLabel>
+            <translation><!-- 4246: Transport/Storage Problem Identified --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4247: Appropriate Term/Code Not Available</masterLabel>
+            <translation><!-- 4247: Appropriate Term/Code Not Available --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>472: DO NOT USE</masterLabel>
+            <translation><!-- 472: DO NOT USE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>608: Wired Communication Problem</masterLabel>
+            <translation><!-- 608: Wired Communication Problem --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>610: Loss of Power</masterLabel>
+            <translation><!-- 610: Loss of Power --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>611: Radiofrequency Interference (RFI)</masterLabel>
+            <translation><!-- 611: Radiofrequency Interference (RFI) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>618: Incorrect Algorithm</masterLabel>
+            <translation><!-- 618: Incorrect Algorithm --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>626: DO NOT USE</masterLabel>
+            <translation><!-- 626: DO NOT USE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>628: Communications Problem Identified</masterLabel>
+            <translation><!-- 628: Communications Problem Identified --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>634: Software Timing Problem</masterLabel>
+            <translation><!-- 634: Software Timing Problem --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>635: Calculation error (pentium)</masterLabel>
+            <translation><!-- 635: Calculation error (pentium) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>637: Interrupt errors</masterLabel>
+            <translation><!-- 637: Interrupt errors --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>642: Thermal Problem</masterLabel>
+            <translation><!-- 642: Thermal Problem --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>646: Dust or Dirt Problem Identified</masterLabel>
+            <translation><!-- 646: Dust or Dirt Problem Identified --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>648: Electrostatic Discharge</masterLabel>
+            <translation><!-- 648: Electrostatic Discharge --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>649: Vibration Problem</masterLabel>
+            <translation><!-- 649: Vibration Problem --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>650: Current Leakage Problem</masterLabel>
+            <translation><!-- 650: Current Leakage Problem --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>651: Environmental Temperature Problem Identified</masterLabel>
+            <translation><!-- 651: Environmental Temperature Problem Identified --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>658: Conducted Interference</masterLabel>
+            <translation><!-- 658: Conducted Interference --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>659: Power Fluctuation</masterLabel>
+            <translation><!-- 659: Power Fluctuation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>663: Data Compression Error</masterLabel>
+            <translation><!-- 663: Data Compression Error --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>706: Assembly Problem Identified</masterLabel>
+            <translation><!-- 706: Assembly Problem Identified --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>708: DO NOT USE</masterLabel>
+            <translation><!-- 708: DO NOT USE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>709: DO NOT USE</masterLabel>
+            <translation><!-- 709: DO NOT USE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>71: DO NOT USE</masterLabel>
+            <translation><!-- 71: DO NOT USE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>751: DO NOT USE</masterLabel>
+            <translation><!-- 751: DO NOT USE --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Type of Report --></label>
+        <name>type_of_report__c</name>
+        <picklistValues>
+            <masterLabel>Combined initial and follow up</masterLabel>
+            <translation><!-- Combined initial and follow up --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Follow up report</masterLabel>
+            <translation><!-- Follow up report --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Initial</masterLabel>
+            <translation><!-- Initial --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Periodic</masterLabel>
+            <translation><!-- Periodic --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>final report</masterLabel>
+            <translation><!-- final report --></translation>
+        </picklistValues>
+    </fields>
+    <recordTypes>
+        <description><!-- Feedback from CAN --></description>
+        <label><!-- CAN Analysis Report --></label>
+        <name>CAN_Analysis_Report</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Response to EMDR submission --></description>
+        <label><!-- FDA EMDR Response --></label>
+        <name>FDA_EMDR_Response</name>
+    </recordTypes>
+    <startsWith>Vowel</startsWith>
+    <validationRules>
+        <errorMessage><!-- Please enter an Explanation --></errorMessage>
+        <name>Explanation_required</name>
+    </validationRules>
+</CustomObjectTranslation>

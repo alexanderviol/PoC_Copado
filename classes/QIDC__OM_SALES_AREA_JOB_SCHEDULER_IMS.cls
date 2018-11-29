@@ -1,0 +1,12 @@
+/*
+This file is generated and isn't the actual source code for this
+managed global class.
+This read-only file shows the class's global constructors,
+methods, variables, and properties.
+To enable code to compile, all methods return null.
+*/
+global class OM_SALES_AREA_JOB_SCHEDULER_IMS implements System.Schedulable {
+    global OM_SALES_AREA_JOB_SCHEDULER_IMS() {
+
+    }
+}

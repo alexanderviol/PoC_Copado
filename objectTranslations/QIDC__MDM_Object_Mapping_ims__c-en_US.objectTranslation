@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- This field is used to store URI of Parent Entity. --></help>
+        <label><!-- Parent Entity Type URI --></label>
+        <name>QIDC__ParentEntityTypeURI_ims__c</name>
+    </fields>
+    <fields>
+        <help><!-- Stores relationships to other entities. --></help>
+        <label><!-- Parent Entity --></label>
+        <name>QIDC__Parent_Entity_ims__c</name>
+    </fields>
+    <fields>
+        <label><!-- Parent Relation Type --></label>
+        <name>QIDC__Parent_Relation_Type_ims__c</name>
+        <picklistValues>
+            <masterLabel>Many to Many</masterLabel>
+            <translation><!-- Many to Many --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>One to Many</masterLabel>
+            <translation><!-- One to Many --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ParentId</masterLabel>
+            <translation><!-- ParentId --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- The API Name of the SObject type. --></help>
+        <label><!-- Salesforce Objet --></label>
+        <name>QIDC__SObjectType_ims__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field is used to determine the type of entity (i.e Relation, Nested, Reference) --></help>
+        <label><!-- Type --></label>
+        <name>QIDC__Type_ims__c</name>
+        <picklistValues>
+            <masterLabel>Nested</masterLabel>
+            <translation><!-- Nested --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reference</masterLabel>
+            <translation><!-- Reference --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Relation</masterLabel>
+            <translation><!-- Relation --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Path that is used to reach the entity type.
+Format: configuration/entityTypes/{EntityTypeName}
+
+Example:
+configuration/entityTypes/Individual --></help>
+        <label><!-- URI --></label>
+        <name>QIDC__URI_ims__c</name>
+    </fields>
+</CustomObjectTranslation>

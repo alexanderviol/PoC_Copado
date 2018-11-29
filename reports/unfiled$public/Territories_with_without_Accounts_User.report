@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <block>
+        <blockInfo>
+            <blockId>B1</blockId>
+            <joinTable>Territory2Model</joinTable>
+        </blockInfo>
+        <columns>
+            <field>Territory2Model.Territory2s.ObjectTerritory2Associations$Object</field>
+        </columns>
+        <filter>
+            <criteriaItems>
+                <column>Territory2Model.Territory2s$Name</column>
+                <isUnlocked>true</isUnlocked>
+                <operator>contains</operator>
+                <value>5500</value>
+            </criteriaItems>
+        </filter>
+        <format>Summary</format>
+        <name>Accounts Assigned to Territories</name>
+        <params>
+            <name>co</name>
+            <value>1</value>
+        </params>
+        <reportType>Territories_with_without_Accounts__c</reportType>
+        <scope>organization</scope>
+        <showGrandTotal>true</showGrandTotal>
+        <showSubTotals>true</showSubTotals>
+        <timeFrameFilter>
+            <dateColumn>Territory2Model$ActivatedDate</dateColumn>
+            <interval>INTERVAL_CUSTOM</interval>
+        </timeFrameFilter>
+    </block>
+    <block>
+        <blockInfo>
+            <blockId>B0</blockId>
+            <joinTable>Territory2Model</joinTable>
+        </blockInfo>
+        <columns>
+            <field>Territory2Model.Territory2s.UserTerritory2Associations$Name</field>
+        </columns>
+        <filter>
+            <criteriaItems>
+                <column>Territory2Model.Territory2s$Name</column>
+                <isUnlocked>true</isUnlocked>
+                <operator>contains</operator>
+                <value>5500</value>
+            </criteriaItems>
+        </filter>
+        <format>Summary</format>
+        <name>Users Assigned to Territories</name>
+        <params>
+            <name>co</name>
+            <value>1</value>
+        </params>
+        <reportType>Territories_with_without_Users__c</reportType>
+        <scope>organization</scope>
+        <showGrandTotal>true</showGrandTotal>
+        <showSubTotals>true</showSubTotals>
+        <timeFrameFilter>
+            <dateColumn>Territory2Model$ActivatedDate</dateColumn>
+            <interval>INTERVAL_CUSTOM</interval>
+        </timeFrameFilter>
+    </block>
+    <blockInfo>
+        <blockId xsi:nil="true"/>
+        <joinTable>Territory2Model</joinTable>
+    </blockInfo>
+    <format>MultiBlock</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Territory2Model.Territory2s$Name</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Territories with/without Accounts &amp; User</name>
+    <reportType>Territories_with_without_Accounts__c</reportType>
+    <showDetails>true</showDetails>
+</Report>

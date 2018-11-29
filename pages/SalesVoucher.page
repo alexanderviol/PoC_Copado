@@ -1,0 +1,357 @@
+<!--
+/*
+*  VF to show Sales vou
+cher PDF. 
+*  Created Date - April 2, 2018
+*  Created by   - susi
+*  
+* Revision History - 
+* Date             | Developer Name                | Version               | Changes/Ticket Number 
+* ================================================================================================        
+*/ 
+-->
+<apex:page applyBodyTag="false" showHeader="false" renderAs="pdf" standardStylesheets="false" standardController="Order" extensions="BINCPatientDataControllerExt" >
+    <apex:stylesheet value="{!$Resource.BINCPdf}" />
+    <body class="sales">
+        <div style="page-break-after:always">
+            
+            <div  class="toprightcorner">
+                Sales Voucher #<br/>
+                {!Order.OrderNumber}
+            </div>
+
+            <div class="salesHeader">
+                <h1>
+                    Sales Voucher
+                </h1>
+            </div>
+            
+            <table class="salesHeader">
+                <colgroup>
+                    <col width="20%" />
+                    <col width="30%" />
+                    <col width="20%" />
+                    <col width="30%" />
+                </colgroup>
+                <tr>
+                    <td><b>Account Name</b></td>
+                    <td><span style="text-transform:uppercase;"><b>{!order.Account.Name}</b></span></td>
+                    <td colspan="2" class="leftBorder"><b>Received by (Signature):</b></td>
+                </tr>
+                <tr>
+                    <td>SAP Account Number:</td>
+                    <td><b>{!order.Account.sap_no__c}</b></td>
+                    <td colspan="2" class="leftBorder">&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>City:</td>
+                    <td><b>{!order.Account.ShippingCity}</b></td>
+                    <td  class="leftBorder" colspan="2" style="border-bottom: solid black 1px;">&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>State:</td>
+                    <td><b>{!order.Account.ShippingStateCode}</b></td>
+                    <td  class="leftBorder">Implanting Doctor:</td>
+                    <td><span style="text-transform:uppercase;"><b>{!order.implanting_physician__r.LastName} 
+                        <apex:outputText value=", " rendered="{!(order.implanting_physician__r.FirstName != '')}"></apex:outputText>
+                        <apex:outputText value="{!order.implanting_physician__r.FirstName}" ></apex:outputText>
+                        </b></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Account Phone Number:</td>
+                    <td><b>{!order.Account.phone}</b></td>
+                    <td class="leftBorder">Implant Date:</td>
+                    <td><apex:outputtext value="{0,date,MM'/'dd'/'yyyy}">
+                        <apex:param value="{!Order.implant_date__c}"></apex:param>
+                        </apex:outputtext>
+                    </td>
+                </tr>
+                <tr>
+                    <td><b>Purchase Order Number:</b></td>
+                    <td><b>{!order.PoNumber}</b></td>
+                    <td class="leftBorder">Patient Name:</td>
+                    <td><span style="text-transform:uppercase;"><b>{!order.patient__r.LastName}
+                        <apex:outputText value=", " rendered="{!(order.patient__r.FirstName != '')}"></apex:outputText>
+                        {!order.patient__r.FirstName}
+                        </b></span>
+                    </td>
+                </tr>
+            </table>
+            
+            <table class="salesList"> 
+                <colgroup>
+                    <col width="16%" />
+                    <col width="16%" />
+                    <col width="34%" />
+                    <col width="15%" />
+                    <col width="15%" />
+                </colgroup>
+                <tr>
+                    <th colspan="5">Devices and Leads</th> 
+                </tr>
+                <tr>
+                    <th>Serial Number</th>
+                    <th>Model Number</th>
+                    <th>Description </th>
+                    <th>Quantity </th>
+                    <th>Price each (or System Price)</th>
+                </tr>
+                
+                <apex:repeat value="{!currentOrderDevicesAndLeads}" var="devAndLead">
+                    <tr>
+                        <td>{!devAndLead.serial_number__c}</td>
+                        <td>{!devAndLead.Product2.sap_model_no__c}</td>
+                        <td style="overflow: hidden">{!devAndLead.Product2.name}</td>
+                        <td class="numberColumn"><b>
+                            <apex:outputText value="{0, number, integer}">
+                                <apex:param value="{!devAndLead.Quantity}" />
+                            </apex:outputText>
+                            </b></td>
+                        <td class="numberColumn">
+                            <b><apex:outputText value="$" rendered="{!(devAndLead.unitPrice != null)}"></apex:outputText>{!devAndLead.unitPrice}</b>
+                        </td>
+                    </tr>
+                </apex:repeat>
+                
+                <!-- Generating remaining rows -->
+                <apex:repeat value="{!remainingDeviceRows}" var="cc">
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </apex:repeat>
+                
+                <tr>
+                    <th colspan="5">Accessories, Cardio Messenger and Home Monitoring</th>
+                </tr>
+                
+                <tr>
+                    <th>Serial Number</th>
+                    <th>Model Number</th>
+                    <th>Description</th>
+                    <th>Quantity</th>
+                    <th>Price each</th>
+                </tr>
+                
+                <apex:repeat value="{!currentOrderAccessories}" var="accessory">
+                    <tr>
+                        <td>{!accessory.serial_number__c}</td>
+                        <td>{!accessory.Product2.sap_model_no__c}</td>
+                        <td>{!accessory.Product2.Name}</td>
+                        <td class="numberColumn"><b>
+                            <apex:outputText value="{0, number, integer}">
+                                <apex:param value="{!accessory.Quantity}" />
+                            </apex:outputText>
+                            </b></td>
+                        <td class="numberColumn"><b><apex:outputText value="$" rendered="{!(accessory.unitPrice != null)}"></apex:outputText>{!accessory.unitPrice}</b></td>
+                    </tr>
+                </apex:repeat>
+                
+                <!-- Generating remaining rows -->
+                <apex:repeat value="{!remainingAccessoryRows}" var="cc">
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>   
+                    </tr>
+                </apex:repeat>
+                <tr style="height: 60px;">
+                    <td colspan="3" >
+                        Remarks: {!order.Description}
+                    </td>
+                    <td style="vertical-align: bottom; text-align: center;">Total:<br/><div style="font-size:8pt;">(Taxes Excluded)</div></td>
+                    <td style="text-align:right; vertical-align: bottom;">
+                        <b>
+                            <apex:outputText value="$" rendered="{!(order.TotalAmount != null && order.TotalAmount != 0)}">
+                            </apex:outputText>
+                            {!order.TotalAmount}
+                        </b>
+                    </td>
+                </tr>
+            </table>
+            
+            <table class="salesFooter">
+                <colgroup>
+                    <col width="65%" />
+                    <col width="35%" />
+                </colgroup>
+                
+                <td>
+                    <span style="font-size:14px"><b>BIOTRONIK, Inc</b></span><br/>
+                    6024 Jean Road<br/>
+                    Lake Oswego, OR 97035<br/>
+                    www.biotronik.com 
+                </td>
+                <td>
+                    <i>Send all orders and/or Purchase Orders to:</i><br/>
+                    Email:<u style="color:blue">order.entry@biotronik.com</u><br/>
+                    Fax: 888/345-0380<br/>
+                    Telephone: 800/547-9001 (Pacific Time Zone)<br/>
+                    SEE TERMS AND CONDITIONS (attached)<br/>
+                </td>
+            </table>
+            
+            <div style="bottom:0px;position:relative;clear: both;">
+                <div class="sales_footerdiv_left">Confidential</div> 
+                <div class="sales_footerdiv_middle">Page 1 of 2</div> 
+                <div class="sales_footerdiv_right"><img src="{!$Resource.Biotronik_logo}" height="20" width="200" /></div> 
+            </div>
+            
+        </div>
+            
+        <div>
+            <div class="termConDiv">
+                <div class="salesHeader">
+                    <h1>Sales Voucher</h1>
+                </div>
+                <div style="width:100%;">
+                    <div class="termConDiv_leftdiv">
+                        <div style="padding-top:30px;font-size:17px;color:black">TERMS AND CONDITIONS OF SALE
+                        </div><div style="padding-top:8px">
+                        There is no warranty of merchantability, fitness for a
+                        particular purpose, or other warranty on the products
+                        described herein 
+                        </div><div >
+                        Implantable pulse generators, leads, and adapters, upon
+                        implant become part of the interdependent pacemaker
+                        system, which includes the physiological environment in
+                        which these devices must function. Because of differences in
+                        the physical condition of a patient, no representation or
+                        warranty is made that the body will not react adversely to the
+                        implantation, or that the implantable pulse generator is
+                        suitable for treatment of the patient.
+                        </div><div>
+                        Except as expressly provided, neither BIOTRONIK, Inc.,
+                        (hereinafter referred to as “BIOTRONIK”), nor its
+                        representative is responsible for any loss, damage, or injury
+                        of any nature, whether direct, incidental or consequential, in
+                        connection with or resulting from, the use of the implantable
+                        pulse generator or lead or BIOTRONIK Home Monitoring®,
+                        whether the claim is based on warranty, contract, tort, or
+                        otherwise. Some states do not allow the exclusion or
+                        limitation of incidental or consequential damages; therefore,
+                        the above limitation or exclusion may not apply to you.
+                        </div><div>
+                        In no event will BIOTRONIK be liable for any indirect, special,
+                        punitive, or consequential damages of any kind or nature
+                        whatsoever, suffered by the other party or any third party,
+                        including, without limitation, lost profits, business
+                        interruptions or other economic loss arising out of any use or
+                        failure to be able to use BIOTRONIK Home Monitoring®.
+                        BIOTRONIK and its representatives will not be liable for any
+                        damages arising out of or related to: (a) the accuracy or
+                        completeness of patient information based on Home Monitoring®
+                        ; (b) services provided through the use of this
+                        information; or (c) any losses, liabilities or claims incurred or
+                        arising in connection with the use of incorrect or misleading
+                        information based on Home Monitoring®.
+                        </div><div>
+                        Since an implantable pulse generator may require
+                        replacement in the event of a malfunction due to a
+                        manufacturing defect, BIOTRONIK offers a PULSE
+                        GENERATOR LIMITED WARRANTY for all implantable pulse
+                        generators sold in the United States. It is provided when the
+                        pulse generator is implanted and the WARRANTY
+                        REGISTRATION FORM has been completed and returned to
+                        BIOTRONIK. BIOTRONIK’s responsibility does not go beyond
+                        the terms of the PULSE GENERATOR LIMITED WARRANTY.
+                        </div><div>
+                        BIOTRONIK may, at its sole option, accept the return of
+                        purchased goods for replacement credit only. Purchased
+                        goods will be accepted for replacement credit only with the
+                        prior written authorization of BIOTRONIK. If BIOTRONIK
+                        chooses to accept the return of such goods, there will be a
+                        25-percent restocking charge on each item.
+                        </div><div>
+                        All orders are subject to acceptance by BIOTRONIK, Inc., at
+                        Lake Oswego, Oregon 97035. Minimum order is $25.00, net
+                        30 days from date of implant; F.O.B., Lake Oswego.
+                        Payments not made within the terms on the invoice are
+                        subject to late payment charges, and overdue payments will
+                        be charged at 1.5% interest per month from the due date.
+                        Prices are subject to change without notice. 
+                        </div> 
+                    </div> 
+                    <div class="termConDiv_rightdiv">
+                        <div style="padding-top:30px;">
+                            If BIOTRONIK Home Monitoring® is included with the
+                            purchase of an implantable Home Monitoring® device
+                            (pacemaker, ICD or CRT-D); BIOTRONIK provides internet
+                            access to the BIOTRONIK Home Monitoring® web site and the
+                            equipment needed for the transmission of diagnostic data
+                            (hereinafter referred to as “CardioMessenger”) for up to the
+                            warranted lifetime of the implanted device. Included is the
+                            use of one CardioMessenger per implantable Home
+                            Monitoring® device sold. The CardioMessenger shall remain
+                            the property of BIOTRONIK. Upon termination of Home
+                            Monitoring®, BIOTRONIK is entitled to reclaim the
+                            CardioMessenger from the patient and to discontinue Home
+                            Monitoring for this CardioMessenger. The physician may
+                            elect not to use or to terminate Home Monitoring® at any time. 
+                        </div><div>
+                        BIOTRONIK’s Home Monitoring® is dependent on existing
+                        mobile phone networks, internet, and standard phone lines
+                        to transmit data from the CardioMessenger to the service
+                        center. Because BIOTRONIK is not responsible for and
+                        cannot rely upon these third-party telecommunication
+                        systems, error-free operation of data transmission cannot be
+                        guaranteed by BIOTRONIK. 
+                        </div><div>
+                        BIOTRONIK reserves the right to terminate Home Monitoring®
+                        for a specific implantable device 1) upon written
+                        request of the physician or the patient or, 2) when the
+                        implantable device goes out of service or, 3) when there have
+                        been no data transmissions from this device to the Home
+                        Monitoring® Service Center for more than 90 consecutive
+                        days. BIOTRONIK is entitled to terminate Home Monitoring®
+                        for a specific device immediately upon use of the
+                        CardioMessenger outside its intended purpose (abuse).
+                        Furthermore, BIOTRONIK is entitled to discontinue the
+                        mobile phone service for a specific CardioMessenger
+                        whenever this device has not transmitted over the mobile
+                        phone network for more than 365 consecutive days. 
+                        </div><div>
+                        Home Monitoring® is not an emergency information system.
+                        It does not release the patient from his or her obligation to
+                        consult and/or contact a physician in the case of an
+                        emergency. 
+                        </div><div>
+                        Any and all disputes arising out of or in connection with this
+                        agreement, including any question regarding its existence,
+                        validity, interpretation, performance or termination, shall be
+                        referred to and finally resolved by arbitration or mediation
+                        under the rules of the United States Arbitration &amp; Mediation
+                        Service (“USA&amp;M”), which rules are deemed to be
+                        incorporated herein by reference. The law governing this
+                        agreement shall be the substantive law of the State of
+                        Oregon. The place of arbitration shall be Portland, Oregon. If
+                        legal action is instituted to collect past-due amounts,
+                        additional sums as the court or arbitrator may adjudge
+                        reasonable as attorney fees and statutory costs and
+                        disbursements, along with interest at the maximum legal
+                        rate, will be the legal debt of the defendant in any such legal
+                        action
+                        </div><div>
+                        The purchaser agrees to be bound by these Terms and
+                        Conditions of Sale when purchasing products from
+                        BIOTRONIK. 
+                        </div>
+                    </div>
+                </div>
+                <div style="margin-top:2.3cm;vertical-align:bottom;">
+                    <div class="sales_footerdiv_left">Confidential</div> 
+                    <div class="sales_footerdiv_middle">Page 2 of 2</div> 
+                    <div class="sales_footerdiv_right"><apex:image value="{!$Resource.Biotronik_logo}" style="width:170px;height:40px;"></apex:image></div> 
+                </div>                 
+            </div>
+        </div>
+        <div style="display:block;page-break-after:always;"></div>
+    </body>
+    
+</apex:page>

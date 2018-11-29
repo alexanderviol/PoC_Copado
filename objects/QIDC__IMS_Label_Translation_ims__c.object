@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <description>The IMS Label Translation object is where the language is determined that the label will be translated in. This assists in translating the app for international implementation.</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableChangeDataCapture>false</enableChangeDataCapture>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>false</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ControlledByParent</externalSharingModel>
+    <fields>
+        <fullName>QIDC__ID_ims__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <deprecated>false</deprecated>
+        <description>Unique number assigned to the IMS Label Translation which denotes the entry was made by IMS and therefore clients cannot change.</description>
+        <externalId>true</externalId>
+        <inlineHelpText>Unique number assigned to the IMS Label Translation which denotes the entry was made by IMS and therefore clients cannot change.</inlineHelpText>
+        <label>ID</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>QIDC__IMS_Label_ims__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The IMS Label for which the IMS Label Translation is for.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The IMS Label for which the IMS Label Translation is for.</inlineHelpText>
+        <label>IMS Label</label>
+        <referenceTo>QIDC__IMS_Label_ims__c</referenceTo>
+        <relationshipLabel>IMS Label Translations</relationshipLabel>
+        <relationshipName>IMS_Label_Translations_ims</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>QIDC__ISO_Language_Code_ims__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The language code of the language for which the text will be translated to.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The language code of the language for which the text will be translated to.</inlineHelpText>
+        <label>ISO Language Code</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>en_US</fullName>
+                    <default>true</default>
+                    <label>en_US</label>
+                </value>
+                <value>
+                    <fullName>fr_CA</fullName>
+                    <default>false</default>
+                    <label>fr_CA</label>
+                </value>
+                <value>
+                    <fullName>de</fullName>
+                    <default>false</default>
+                    <label>de</label>
+                </value>
+                <value>
+                    <fullName>ja</fullName>
+                    <default>false</default>
+                    <label>ja</label>
+                </value>
+                <value>
+                    <fullName>zh_CN</fullName>
+                    <default>false</default>
+                    <label>zh_CN</label>
+                </value>
+                <value>
+                    <fullName>zh_TW</fullName>
+                    <default>false</default>
+                    <label>zh_TW</label>
+                </value>
+                <value>
+                    <fullName>es</fullName>
+                    <default>false</default>
+                    <label>es</label>
+                </value>
+                <value>
+                    <fullName>it</fullName>
+                    <default>false</default>
+                    <label>it</label>
+                </value>
+                <value>
+                    <fullName>ru</fullName>
+                    <default>false</default>
+                    <label>ru</label>
+                </value>
+                <value>
+                    <fullName>fr</fullName>
+                    <default>false</default>
+                    <label>fr</label>
+                </value>
+                <value>
+                    <fullName>nl_NL</fullName>
+                    <default>false</default>
+                    <label>nl_NL</label>
+                </value>
+                <value>
+                    <fullName>el</fullName>
+                    <default>false</default>
+                    <label>el</label>
+                </value>
+                <value>
+                    <fullName>hu</fullName>
+                    <default>false</default>
+                    <label>hu</label>
+                </value>
+                <value>
+                    <fullName>pl</fullName>
+                    <default>false</default>
+                    <label>pl</label>
+                </value>
+                <value>
+                    <fullName>ro</fullName>
+                    <default>false</default>
+                    <label>ro</label>
+                </value>
+                <value>
+                    <fullName>uk</fullName>
+                    <default>false</default>
+                    <label>uk</label>
+                </value>
+                <value>
+                    <fullName>pt_PT</fullName>
+                    <default>false</default>
+                    <label>pt_PT</label>
+                </value>
+                <value>
+                    <fullName>tr</fullName>
+                    <default>false</default>
+                    <label>tr</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>QIDC__Integration_ID_ims__c</fullName>
+        <deprecated>false</deprecated>
+        <description>External ID which is used for data loading only.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>External ID which is used for data loading only.</inlineHelpText>
+        <label>Integration ID</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>QIDC__Is_Active_ims__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Indicates if the IMS Label Translation is active.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Indicates if the IMS Label Translation is active.</inlineHelpText>
+        <label>Active</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>QIDC__Parent_ID_ims__c</fullName>
+        <deprecated>false</deprecated>
+        <description>IMS Unique ID of the parent record. This field will contain value only if there is a parent record associated with a master detail or look up relationship. For eg, Chart detail is child of Chart.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>IMS Unique ID of the parent record. This field will contain value only if there is a parent record associated with a master detail or look up relationship. For eg, Chart detail is child of Chart.</inlineHelpText>
+        <label>Parent ID</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>QIDC__Product_Version_ims__c</fullName>
+        <deprecated>false</deprecated>
+        <description>IMS Product version in which this config data was created.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>IMS Product version in which this config data was created.</inlineHelpText>
+        <label>Product Version</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>QIDC__Value_ims__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Translated value of the text from the parent IMS Label record.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Translated value of the text from the parent IMS Label record.</inlineHelpText>
+        <label>Value</label>
+        <length>5000</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <label>IMS Label Translation</label>
+    <listViews>
+        <fullName>QIDC__All</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <listViews>
+        <fullName>QIDC__All_IMS_Label_Translations</fullName>
+        <columns>NAME</columns>
+        <columns>QIDC__Is_Active_ims__c</columns>
+        <columns>QIDC__IMS_Label_ims__c</columns>
+        <columns>QIDC__ID_ims__c</columns>
+        <columns>QIDC__ISO_Language_Code_ims__c</columns>
+        <columns>QIDC__Value_ims__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All IMS Label Translations</label>
+    </listViews>
+    <nameField>
+        <displayFormat>CLT-{0000}</displayFormat>
+        <label>Custom Label Translation Name</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>IMS Label Translations</pluralLabel>
+    <searchLayouts>
+        <lookupDialogsAdditionalFields>QIDC__IMS_Label_ims__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>QIDC__ISO_Language_Code_ims__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>QIDC__Value_ims__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>QIDC__Is_Active_ims__c</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>QIDC__IMS_Label_ims__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>QIDC__ISO_Language_Code_ims__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>QIDC__Value_ims__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>QIDC__Is_Active_ims__c</lookupPhoneDialogsAdditionalFields>
+        <searchFilterFields>NAME</searchFilterFields>
+        <searchFilterFields>QIDC__Is_Active_ims__c</searchFilterFields>
+        <searchFilterFields>QIDC__IMS_Label_ims__c</searchFilterFields>
+        <searchFilterFields>QIDC__ISO_Language_Code_ims__c</searchFilterFields>
+    </searchLayouts>
+    <sharingModel>ControlledByParent</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

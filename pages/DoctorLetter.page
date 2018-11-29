@@ -1,0 +1,89 @@
+<!-- 
+/*
+*  Visualforce page that displays the Doctor's Letter.
+*  Created Date - April 23, 2018
+*  Created by   - emma
+*/
+-->
+
+<apex:page standardController="complaint__c" showHeader="false" extensions="DoctorLetterControllerExt" contentType="application/msword#DoctorLetter.doc" >
+    <apex:pageMessages />
+    <script>
+    setTimeout(function(){}, 2000);
+    </script> 
+    <style>
+        .deviceFont {
+        font-size:11px;     
+        } 
+        body {
+        font-family: Sans-serif;
+        }
+    </style>  
+    <apex:form >
+        <apex:variable value="{!0}" var="rowNum"/>
+        <apex:repeat var="contact" value="{!physicianDetails}">
+            <div><apex:outputText value="{0, date, MMMM d','  yyyy}">
+                <apex:param value="{!currentDate}" /> 
+                </apex:outputText> 
+            </div>
+            <br/><br/>
+            <div> {!contact.Salutation}&nbsp;{!contact.Name}</div>
+            <br/>
+            <div> {!contact.MailingStreet}</div>  
+            <div> {!contact.MailingCity},&nbsp;{!contact.MailingPostalCode}</div>
+            <div> {!contact.MailingState}</div>
+            <div> {!contact.MailingCountry}</div>
+            
+            <br/><br/><br/>
+            
+            <div> RE: &emsp;&ensp;{!patientName}: {!complaint__c.case__r.patient__r.Name}</div>
+            <div>&emsp;&emsp;&ensp;&nbsp;&nbsp; {!implantDate}: <apex:outputText value="{0, date, MMMM d','  yyyy}">
+                <apex:param value="{!complaint__c.asset__r.InstallDate }" /> 
+                </apex:outputText> 
+            </div>
+            <div>&emsp;&emsp;&ensp;&nbsp;&nbsp; {!explantDate}: <apex:outputText value="{0, date, MMMM d','  yyyy}">
+                <apex:param value="{!complaint__c.asset__r.Explant_Date__c}" /> 
+                </apex:outputText> 
+            </div> 
+            
+            <div>&nbsp;&emsp;&emsp;&ensp;&nbsp;&nbsp;{!deviceDescription}: {!complaint__c.asset__r.Product2.Name}&nbsp;|&nbsp;{!complaint__c.asset__r.SerialNumber}&nbsp;|&nbsp;{!complaint__c.asset__r.product_type__c}</div>
+            <div>&nbsp;&emsp;&emsp;&ensp;&nbsp;&nbsp;{!reasonForAnalysis}: {!complaint__c.event_reason_global__c}</div>
+            <br/><br/><br/>
+            <div> {!dear} {!contact.Salutation}&nbsp;{!contact.Name} </div>
+            <br/>
+            <div>
+                <p>{!introduction} <b>{!complaint__c.asset__r.Product2.Name}&nbsp;|&nbsp;
+                                      {!complaint__c.asset__r.SerialNumber}&nbsp;|&nbsp;
+                                      {!complaint__c.asset__r.product_type__c}</b> {!content}:</p>
+            </div>
+            <br/>
+                <apex:repeat value="{!analysis}" var="string" id="theRepeat">
+                    <apex:outputText value="{!string}"/><br/>
+                </apex:repeat>   
+            
+            <div>
+                <p>{!doctorLetterContent}</p>
+            </div>
+            
+            <br/>
+            <div>{!sincerely},</div>
+            
+            
+            <br/><br/><br/>
+            <!--<div>{!$User.firstname} {!$User.lastname}</div>-->
+            <div>Nitin Joshi</div>
+            <div>Manager, Advanced Product Support</div>
+            
+            
+            <br/><br/>   
+            
+            <div>cc:&nbsp;{!complaint__c.asset__r.order__r.rep_at_implant__r.Name}, {!salesRepresentative}</div>
+            <div>&emsp;&emsp;&emsp;&ensp; {!areaSalesDirector}</div>
+            <div>&emsp;&emsp;&emsp;&ensp; {!areaSalesVicePresident}</div>
+            <apex:outputText rendered="{!IF(rowNum < (nbr-1) ,true,false)}">
+                <br style="page-break-after:always" />
+            </apex:outputText>
+            <apex:variable var="rowNum" value="{!rowNum + 1}"/>
+        </apex:repeat>     
+    </apex:form>
+</apex:page>
